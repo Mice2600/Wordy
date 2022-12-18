@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9194808d37224f48b187809a17a2317, type: 3}
+  m_Name: New Project Settings
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  DefalultDialogs: {fileID: 4900000, guid: 5b63242016a4a9449a7cad31eb581e04, type: 3}
+  DefalultWords: {fileID: 4900000, guid: 86a072d49000d7d45929cb2f9f156d77, type: 3}
+  DiscretionViwe: {fileID: 4521354679140055410, guid: c68afc951010c744f988623122471167, type: 3}
+  DiscretionDialog: {fileID: 5128650482689109638, guid: a6eb0c2e56148e049a068416e72bdbc1, type: 3}
