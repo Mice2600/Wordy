@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   DefalultDialogs: {fileID: 4900000, guid: 5b63242016a4a9449a7cad31eb581e04, type: 3}
   DefalultWords: {fileID: 4900000, guid: 86a072d49000d7d45929cb2f9f156d77, type: 3}
-  DiscretionViwe: {fileID: 4521354679140055410, guid: c68afc951010c744f988623122471167, type: 3}
+  DiscretionViwe: {fileID: 8496439981645526867, guid: 349a96abbad001a4489ff5968d91b17f, type: 3}
   DiscretionDialog: {fileID: 5128650482689109638, guid: a6eb0c2e56148e049a068416e72bdbc1, type: 3}

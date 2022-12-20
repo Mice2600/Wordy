@@ -1,7 +1,7 @@
 using Base;
 namespace Servises.SmartText
 {
-    public class WordScore : ContentText
+    public class ContentScore : ContentText
     {
         public override void OnValueChanged(IContent Object)
         {

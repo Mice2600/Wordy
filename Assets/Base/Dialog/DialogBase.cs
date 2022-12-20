@@ -2,6 +2,7 @@ using Base.Dialog;
 using Base.Word;
 using Servises;
 using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using System.IO;
 using SystemBox;
 using UnityEngine;
@@ -32,6 +33,9 @@ namespace Base.Dialog
         {
             ProjectSettings.ProjectSettings.Mine.AddDialog(Dialogs);
         }
+
+
+        
     }
 }
 namespace ProjectSettings

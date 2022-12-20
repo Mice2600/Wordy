@@ -22,7 +22,8 @@ namespace Servises.SmartText
         {
             Vector3 oldpos = transform.position;
             Vector2 ds = NText.GetRenderedValues(true);
-            if (ds.y < 1) return;
+            
+            if (ds.y < 0) ds = new Vector2(0,0);
             ds *= 1.15f;
             rectTransform.offsetMax = ds / OfsetSize;
             rectTransform.offsetMin = -ds / OfsetSize;

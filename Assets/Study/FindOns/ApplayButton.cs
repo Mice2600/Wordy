@@ -50,7 +50,7 @@ namespace Study.FindOns
                 IEnumerator WaitANdTrayAgane()
                 {
                     yield return new WaitForSeconds(2);
-                    DiscretionViwe.ShowWord((FindonesContent.SellectedObject.Content as Word?).Value);
+                    DiscretionViwe.ShowWord((FindonesContent.SellectedObject.Content as Word?).Value, InspectorButtons.SoundButton & InspectorButtons.Score);
                     yield return new WaitForSeconds(0.2f);
                     Done = false;
                     FindOnsSystem.Rondomize();

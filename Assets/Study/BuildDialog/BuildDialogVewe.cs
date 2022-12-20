@@ -29,16 +29,19 @@ namespace Study.BuildDialog
                 string Sours = "";
                 for (int i = 0; i < Listen.Count; i++)
                 {
-                    BuildDialogContent One = Listen[i].GetComponent<BuildDialogContent>();
-                    Sours += One;
+                    ContentObject One = Listen[i].GetComponent<ContentObject>();
+                    Sours += One.Content.EnglishSource;
                     if (i + 1 < Listen.Count) Sours += " ";
                 }
                 return new Dialog(Sours, "", 0);
             }
         }
+        public bool isTrueGrope => Groped.EnglishSource == Content.EnglishSource;
+        public bool isAnyGrope => UpParrent.Contents.Count > 1;
         private void Start()
         {
             Content = new Dialog(Tesss, "", 0);
+            
             TList<string> All = Tesss.Split(" ");
             All.Mix();
             List<Transform> Gamesss = new List<Transform>();
@@ -78,5 +81,17 @@ namespace Study.BuildDialog
             UpParrent.AddNewContent(NShadowUp.GetComponent<RectTransform>());
             buildDialog.CorrentTarget = buildDialog.ShadowUp;
         }
+
+        public bool TryApplay() 
+        {
+            if (isTrueGrope)
+            {
+
+
+                return true;
+            }
+            return false;
+        }
+
     }
 }

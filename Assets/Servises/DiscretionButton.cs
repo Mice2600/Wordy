@@ -17,8 +17,8 @@ namespace Servises
                 if (ToTest.TryGetComponent<ContentObject>(out ContentObject wordContent))
                 {
 
-                    if (wordContent.Content is Word) onClick.AddListener(() => { DiscretionViwe.ShowWord((wordContent.Content as Word?).Value); });
-                    else if (wordContent.Content is Dialog) onClick.AddListener(() => { DiscretionViwe.ShowDialog((wordContent.Content as Dialog?).Value); });
+                    if (wordContent.Content is Word) onClick.AddListener(() => { DiscretionViwe.ShowWord((wordContent.Content as Word?).Value, InspectorButtons.SoundButton & InspectorButtons.Score); });
+                    else if (wordContent.Content is Dialog) onClick.AddListener(() => { DiscretionViwe.ShowDialog((wordContent.Content as Dialog?).Value, InspectorButtons.SoundButton & InspectorButtons.Score); });
                     break;
                 }
                 ToTest = ToTest.parent;

@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -530,6 +530,7 @@ RectTransform:
   m_Children:
   - {fileID: 794624532}
   - {fileID: 1971284782}
+  - {fileID: 2083251456}
   m_Father: {fileID: 888992178}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -867,9 +868,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1212,7 +1221,6 @@ RectTransform:
   m_Children:
   - {fileID: 1545564598}
   - {fileID: 398020201}
-  - {fileID: 2083251456}
   - {fileID: 878226912}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1234,8 +1242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79facdf0e4a11b64d90fb05d5d4e91fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tesss: I love you and your mommy of corse i want your mom to raid my dick so bad
-    so can your mom servise me pls ill try my best for your mom if u aggree
+  Tesss: I love you
   ShadowContentPrefab: {fileID: 6060683883610118322, guid: 3c03127bd0505a04580d3c359d33b64e, type: 3}
   ContentPrefab: {fileID: 5902431362484644048, guid: fd995e0d9f7f75f489e80d306f4bd084, type: 3}
 --- !u!1 &921189504
@@ -1354,6 +1361,8 @@ MonoBehaviour:
     How_Much_Colls: 1
     Time_Count: 0
     DontDestroy: 0
+    ListEventsStoped: 0
+    ListEventsTime: 0
   Message: 0
   systemSends: []
   _RandomSysem: 0
@@ -1370,6 +1379,8 @@ MonoBehaviour:
   PlayerPrefsUtility_Call: []
   _OnInputMouse: 0
   systemInputs: []
+  UI_pressing: 0
+  UI_pressing_Started: 0
 --- !u!114 &921189509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,6 +1543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1584,6 +1596,7 @@ GameObject:
   - component: {fileID: 1545564601}
   - component: {fileID: 1545564599}
   - component: {fileID: 1545564605}
+  - component: {fileID: 1545564606}
   m_Layer: 5
   m_Name: applay Button
   m_TagString: Untagged
@@ -1655,19 +1668,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1545564603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 878226913}
-        m_TargetAssemblyTypeName: ContentGropper, Assembly-CSharp
-        m_MethodName: AddNewContent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1545564601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,7 +1712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.40707052, g: 0.8773585, b: 0.25244746, a: 1}
+  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1751,6 +1752,21 @@ MonoBehaviour:
   Images:
   - {fileID: 1545564603}
   Texts: []
+--- !u!114 &1545564606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545564597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64511f3a414e9ed4a9abf33505a9862e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuildDialogVewe: {fileID: 0}
+  RedyColor: {r: 0.40784317, g: 0.87843144, b: 0.2509804, a: 1}
+  NotRedyColor: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 1}
 --- !u!1 &1971284781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,12 +1849,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 888992178}
+  m_Father: {fileID: 398020201}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 69, y: 755.25256}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 369, y: -24.747314}
   m_SizeDelta: {x: 716.8276, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083251457
@@ -1896,7 +1912,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 6.27
   m_wordSpacing: 34.89

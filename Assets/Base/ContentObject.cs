@@ -12,7 +12,7 @@ namespace Base
                 OnValueChanged?.Invoke(value);
             }
         }
-        public IContent _Content;
+        private IContent _Content;
         public System.Action<IContent> OnValueChanged;
     }
 }
