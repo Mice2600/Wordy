@@ -21,33 +21,27 @@ namespace ProjectSettings
 }
 public class DiscretionViwe : ContentObject
 {
-    public static void ShowWord(Word word, InspectorButtons InspectorButtons) 
+    protected private System.Action OnClose;
+    public static void ShowWord(Word word, System.Action OnClose = null) 
     {
 
         DiscretionViwe N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionViwe, null).GetComponentInChildren<DiscretionViwe>();
         N.Content = word;
-        if(N.RemoveButton != null) N.RemoveButton.SetActive(InspectorButtons.HasFlag(InspectorButtons.RemoveButton));
-        if (N.SoundButton != null) N.SoundButton.SetActive(InspectorButtons.HasFlag(InspectorButtons.SoundButton));
-        if (N.Score != null) N.Score.SetActive(InspectorButtons.HasFlag(InspectorButtons.Score));
-        if (N.EditButton != null) N.EditButton.SetActive(InspectorButtons.HasFlag(InspectorButtons.EditButton));
+        N.OnClose = OnClose;
+       
     }
-    public static void ShowDialog(Dialog dialog, InspectorButtons InspectorButtons)
+    public static void ShowDialog(Dialog dialog, System.Action OnClose = null)
     {
         DiscretionViwe N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionDialog, null).GetComponentInChildren<DiscretionViwe>();
         N.Content = dialog;
-        if (N.RemoveButton != null) N.RemoveButton.SetActive(InspectorButtons.HasFlag(InspectorButtons.RemoveButton));
-        if (N.SoundButton != null) N.SoundButton.SetActive(InspectorButtons.HasFlag(InspectorButtons.SoundButton));
-        if (N.Score != null) N.Score.SetActive(InspectorButtons.HasFlag(InspectorButtons.Score));
-        if (N.EditButton != null) N.EditButton.SetActive(InspectorButtons.HasFlag(InspectorButtons.EditButton));
+        N.OnClose = OnClose;
+        
     }
     public void DestroyUrself() 
     {
         Destroy(transform.root.gameObject);
+        OnClose?.Invoke();
     }
     
     public GameObject SoundButton, RemoveButton, Score, EditButton;
-}
-public enum InspectorButtons 
-{
-    SoundButton, RemoveButton, Score, EditButton
 }

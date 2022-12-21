@@ -11,34 +11,37 @@ namespace Study.BuildDialog
     public class ApplayButton : MonoBehaviour
     {
         public BuildDialogVewe BuildDialogVewe;
-        private bool Done = false;
+        [SerializeField]
+        private GameObject OutBlocker;
         private void Start()
         {
             BuildDialogVewe = GetComponentInParent<BuildDialogVewe>();
             GetComponent<Button>().onClick.AddListener(OnButton);
+            OutBlocker.SetActive(false);
         }
+
         private void OnButton() 
         {
-            if (Done) return;
+            if (OutBlocker.activeSelf) return;
             if (!BuildDialogVewe.isAnyGrope) return;
-            Dialog Groped = BuildDialogVewe.Groped;
-            Done = true;
-            if (BuildDialogVewe.isTrueGrope)
+            OutBlocker.SetActive(true);
+            OutBlocker.transform.SetAsLastSibling();
+            if (BuildDialogVewe.isTrueGrope)ColorChanger.SetColor(TrueAnswer);
+            else ColorChanger.SetColor(WrongAnswer);
+            StartCoroutine(WaitAA());
+            IEnumerator WaitAA() 
             {
-
+                yield return new WaitForSeconds(1);
+                BuildDialogVewe.TryApplay();
             }
-            else 
-            {
-                
-            }
-
         }
         [SerializeField]
-        private Color RedyColor, NotRedyColor;
+        private Color RedyColor, NotRedyColor, WrongAnswer, TrueAnswer;
         private ColorChanger ColorChanger => _ColorChanger ??= GetComponentInChildren<ColorChanger>();
         private ColorChanger _ColorChanger;
         void Update()
         {
+            if (OutBlocker.activeSelf) return;
             if (BuildDialogVewe.isAnyGrope)
             {
                 ColorChanger.SetColor(RedyColor);

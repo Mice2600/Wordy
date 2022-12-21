@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5340450787230161725}
   - component: {fileID: 5340450787230161724}
   - component: {fileID: 5340450787230161727}
-  - component: {fileID: 2514738670211562849}
   m_Layer: 5
   m_Name: 'Word Text Info '
   m_TagString: Untagged
@@ -36,7 +35,7 @@ RectTransform:
   - {fileID: 5340450787979944401}
   - {fileID: 5340450787294512654}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -111,18 +110,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.21960786, g: 0.27450982, b: 0.28627452, a: 1}
   m_EffectDistance: {x: 5.3, y: -5.3}
   m_UseGraphicAlpha: 1
---- !u!114 &2514738670211562849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5340450787230161722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68eaddd530a5ada4db1c0523a12449fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5340450787294512649
 GameObject:
   m_ObjectHideFlags: 0

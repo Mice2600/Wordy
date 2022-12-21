@@ -35,6 +35,7 @@ public class ContentGropper : MonoBehaviour
     }
     public void FixPos() 
     {
+        if (Lines == null) Lines = new TList<RectTransform>();
         //ortiqchalani chiqarvolish
         TList<Transform> Others = new List<Transform>();
         for (int i = 0; i < Lines.Count; i++)
@@ -113,8 +114,10 @@ public class ContentGropper : MonoBehaviour
             return NLists;
         }
     }
+    [Button]
     public void AddNewContent(Transform NObject) 
     {
+        if (NObject == null) return;
         NObject.transform.SetParent(ConcleateLast(NObject.GetComponent<RectTransform>().rect.width));
     }
     

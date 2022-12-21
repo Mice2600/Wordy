@@ -15,14 +15,16 @@ namespace ProjectSettings
     }
 }
 
-public class DiscretionIncorrectContent : DiscretionViwe
+public class DiscretionIncorrectContent : DiscretionResultat
 {
-    public static void ShowIncorrectContent(IContent TrueContent, IContent WrongContent, int RemovedScore)
+    public static DiscretionIncorrectContent ShowIncorrectContent(IContent TrueContent, IContent WrongContent, int RemovedScore, System.Action OnClose = null)
     {
-        DiscretionIncorrectContent N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionViwe, null).GetComponentInChildren<DiscretionIncorrectContent>();
-        N.RemovedScoreText.text = "-" + RemovedScore;
+        DiscretionIncorrectContent N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionIncorrectContentViwe, null).GetComponentInChildren<DiscretionIncorrectContent>();        
+        N.RemovedScoreText.text = "-" + Mathf.Abs(RemovedScore) ;
         N.Content = TrueContent;
         N.WrongContentVewe.Content = WrongContent;
+        N.OnClose = OnClose;
+        return N;
     }
     [SerializeField]
     [Required]

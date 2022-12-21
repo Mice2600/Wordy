@@ -1,12 +1,14 @@
 using Servises;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Base
 {
-    public abstract class DataList<T> : List<T> where T : IContent, new()
+    public abstract class DataList<T> : List<T> where T : IContent, new ()
     {
         public DataList()
         {
@@ -27,6 +29,22 @@ namespace Base
                 GameObject.DontDestroyOnLoad(s);
             }
             s.GetComponent<ListBaseEngine>().OnSaveTime = Save;
+        }
+
+        public T this[T index] 
+        {
+            get
+            {
+                int fIndex = IndexOf(index);
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                return this[fIndex];
+            }
+            set 
+            {
+                int fIndex = IndexOf(index);
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                this[fIndex] = value; 
+            }
         }
 
         protected abstract string DataID { get; }
@@ -104,6 +122,20 @@ namespace Base
             return rezultat;
         }
         public T GetContnet() => this[UnityEngine.Random.Range(0, Count)];
+        private IEnumerator FindContentsFromStringCoroutine(string Todiagnist, System.Action<T> Founded) 
+        {
+            int TCount = 0;
+            for (int i = 0; i < Count; i++)
+            {
+                if (Todiagnist.Contains(this[i].EnglishSource, StringComparison.OrdinalIgnoreCase)) Founded?.Invoke(this[i]);
+                if (TCount > 100) { yield return null; TCount = 0; }
+            }
+        }
+        public void FindContentsFromString(string ToDiagnost, System.Action<T> OnFound) 
+        {
+            GameObject s = GameObject.Find("Save " + DataID + " Engine Dont Touch");
+            s.GetComponent<ListBaseEngine>().StartCoroutine(FindContentsFromStringCoroutine(ToDiagnost, OnFound));
+        }
     }
     public class ListBaseEngine : MonoBehaviour
     {

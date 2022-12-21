@@ -10,7 +10,8 @@ namespace Study.BuildDialog
 {
     public class BuildDialogVewe : ContentObject
     {
-        public string Tesss;
+        [Required]
+        public QuestBuildDialog QuestBuildDialog;
         private ContentGropper StartParrent => _StartParrent ??= GetComponentInChildren<ContentGropper>();
         private ContentGropper _StartParrent;
 
@@ -40,9 +41,10 @@ namespace Study.BuildDialog
         public bool isAnyGrope => UpParrent.Contents.Count > 1;
         private void Start()
         {
-            Content = new Dialog(Tesss, "", 0);
-            
-            TList<string> All = Tesss.Split(" ");
+            List<Dialog> Grr = DialogBase.Dialogs.GetContnetList(2);
+            Content = Grr[0];
+            TList<string> All = Grr[0].EnglishSource.Split(" ");
+            All.AddRange(Grr[1].EnglishSource.Split(" "));
             All.Mix();
             List<Transform> Gamesss = new List<Transform>();
             for (int i = 0; i < All.Count; i++)
@@ -86,11 +88,27 @@ namespace Study.BuildDialog
         {
             if (isTrueGrope)
             {
-
-
+                QuestBuildDialog.OnDialogWin.Invoke((Content as Dialog?).Value);
+                QuestBuildDialog.OnGameWin?.Invoke();
+                DiscretionCorrectContent N = DiscretionCorrectContent.ShowCorrectContent(
+                    DialogBase.Dialogs[(Content as Dialog?).Value], 
+                    QuestBuildDialog.AddScoreDialog, OnClose);
+                WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => N.AddChangin(a, QuestBuildDialog.AddScoreWord));
                 return true;
             }
+            QuestBuildDialog.OnDialogLost?.Invoke((Content as Dialog?).Value);
+            QuestBuildDialog.OnGameLost?.Invoke();
+            DiscretionIncorrectContent K = DiscretionIncorrectContent.ShowIncorrectContent(
+                DialogBase.Dialogs[(Content as Dialog?).Value], Groped, 
+                QuestBuildDialog.RemoveScoreDialog, OnClose);
+            WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => K.AddChangin(a, QuestBuildDialog.RemoveScoreWord));
             return false;
+
+            void OnClose() 
+            {
+                QuestBuildDialog.OnFineshed?.Invoke();
+            }
+
         }
 
     }
