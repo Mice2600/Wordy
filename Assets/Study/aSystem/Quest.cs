@@ -22,7 +22,7 @@ namespace ProjectSettings
 
 namespace Study.aSystem
 {
-    public abstract class Quest : MonoBehaviour
+    public abstract class Quest : MonoBehaviour, IQuestStarter
     {
         public abstract int AddScoreDialog { get; }
         public abstract int RemoveScoreDialog { get; }
@@ -60,6 +60,7 @@ namespace Study.aSystem
             OnFineshed += () => Destroy(gameObject);
         }
 
+        
     }
 
     public interface IQuestStarter 

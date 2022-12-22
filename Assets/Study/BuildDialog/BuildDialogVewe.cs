@@ -1,10 +1,12 @@
 using Base;
 using Base.Dialog;
 using Base.Word;
+using Servises.SmartText;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
+using TMPro;
 using UnityEngine;
 namespace Study.BuildDialog
 {
@@ -39,6 +41,10 @@ namespace Study.BuildDialog
         }
         public bool isTrueGrope => Groped.EnglishSource == Content.EnglishSource;
         public bool isAnyGrope => UpParrent.Contents.Count > 1;
+        [SerializeField]
+        private TMP_Text IDContentText;
+        [SerializeField]
+        private TMP_FontAsset PasswordFont;
         private void Start()
         {
             List<Dialog> Grr = DialogBase.Dialogs.GetContnetList(2);
@@ -46,6 +52,15 @@ namespace Study.BuildDialog
             TList<string> All = Grr[0].EnglishSource.Split(" ");
             All.AddRange(Grr[1].EnglishSource.Split(" "));
             All.Mix();
+
+            IDContentText.text = Grr[0].RussianSource;
+            if (Application.isMobilePlatform && Content.Score > 30 && Random.Range(0, 100) > 40) 
+            {
+                IDContentText.text = Grr[0].RussianSource;
+                IDContentText.font = PasswordFont; 
+            }
+            IDContentText.font = PasswordFont;
+
             List<Transform> Gamesss = new List<Transform>();
             for (int i = 0; i < All.Count; i++)
             {

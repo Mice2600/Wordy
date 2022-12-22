@@ -278,7 +278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &390680359847273813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ RectTransform:
   - {fileID: 390680359847273813}
   - {fileID: 390680360543121505}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -471,6 +471,8 @@ MonoBehaviour:
   QuestBuildDialog: {fileID: 390680359857516643}
   ShadowContentPrefab: {fileID: 6060683883610118322, guid: 3c03127bd0505a04580d3c359d33b64e, type: 3}
   ContentPrefab: {fileID: 5902431362484644048, guid: fd995e0d9f7f75f489e80d306f4bd084, type: 3}
+  IDContentText: {fileID: 390680361078645974}
+  PasswordFont: {fileID: 11400000, guid: 1a214e21992cc634580d7c88c0eadda4, type: 2}
 --- !u!1 &390680359867722760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1005,6 @@ GameObject:
   - component: {fileID: 390680361078645975}
   - component: {fileID: 390680361078645973}
   - component: {fileID: 390680361078645974}
-  - component: {fileID: 390680361078645972}
   m_Layer: 5
   m_Name: Dialog Source
   m_TagString: Untagged
@@ -1059,7 +1060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I love you and your mo
+  m_text: 'I desr you '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7fd8cf975d5ee0246bf1cef1bfd924a6, type: 2}
   m_sharedMaterial: {fileID: 4674436405224765793, guid: 7fd8cf975d5ee0246bf1cef1bfd924a6, type: 2}
@@ -1128,17 +1129,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &390680361078645972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390680361078646056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817aec6fe6c84df4eb9766ce4c531144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BiforText: 
-  AfterTextText: 
