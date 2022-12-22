@@ -7,12 +7,14 @@ using Base.Word;
 using Servises;
 using Unity.Collections.LowLevel.Unsafe;
 using Base.Dialog;
+using Sirenix.OdinInspector;
 
 namespace Study.TwoWordSystem
 {
     public class TwoWordSystem : MonoBehaviour
     {
-        
+        [Required]
+        public QuestTwoWord QuestTwoWord;
         public Transform EnglishContentParrent;
         public Transform RussianContentParrent;
         private TList<ContentObject> EnglishContents;
@@ -176,15 +178,17 @@ namespace Study.TwoWordSystem
                 GameObject G = Instantiate(SingelScorePrefab);
                 if (ScoresResultat[words[i]] > 1) 
                 {
-                    G.GetComponent<ScoreChanginInfo>().Set(words[i], 5);
+                    G.GetComponent<ScoreChanginInfo>().Set(words[i], QuestTwoWord.AddScoreWord);
                     WinGropeParrent.AddNewContent(G.transform);
-                    IsThereWinn = true; 
+                    IsThereWinn = true;
+                    QuestTwoWord.OnWordWin.Invoke(words[i]);
                 }
                 else 
                 {
-                    G.GetComponent<ScoreChanginInfo>().Set(words[i], -5);
+                    G.GetComponent<ScoreChanginInfo>().Set(words[i], QuestTwoWord.RemoveScoreWord);
                     LostGropeParrent.AddNewContent(G.transform);
                     IsThereLost = true;
+                    QuestTwoWord.OnWordLost.Invoke(words[i]);
                 }
             }
             if (!IsThereWinn) 
@@ -200,9 +204,12 @@ namespace Study.TwoWordSystem
                 G.GetComponent<ScoreChanginInfo>().Set(new Word("wow soch empty", "", 0, "", ""), 5);
                 LostGropeParrent.AddNewContent(G.transform);
             }
+            QuestTwoWord.OnGameWin();
         }
-
-
+        public void OnFinsh() 
+        {
+            QuestTwoWord.OnFineshed.Invoke();
+        }
         public Color GetColor(int index)
         {
             index = Mathf.Abs(index);

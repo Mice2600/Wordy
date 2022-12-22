@@ -41,3 +41,10 @@ MonoBehaviour:
     RemoveScoreDialog: -1
     AddScoreWord: 2
     RemoveScoreWord: -1
+  QuestTwoWordSystemPrefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
+  QuestTwoWordSystemSceneName: 
+  QuestTwoWordSystemValumes:
+    AddScoreDialog: 1
+    RemoveScoreDialog: -1
+    AddScoreWord: 1
+    RemoveScoreWord: -1
