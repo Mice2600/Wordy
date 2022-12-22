@@ -61,7 +61,7 @@ public class ContentGropper : MonoBehaviour
 
         for (int i = 0; i < Lines.Count; i++)
         {
-            if (Lines[i].hasChanged) continue;
+            if (Lines[i].childCount > 0) continue;
             Lines[i].SetParent(null);
             Destroy(Lines[i].gameObject);
             Lines.RemoveAt(i);

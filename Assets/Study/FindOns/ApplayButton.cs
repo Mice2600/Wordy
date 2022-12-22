@@ -10,8 +10,7 @@ namespace Study.FindOns
     [RequireComponent(typeof(Button))]
     public class ApplayButton : MonoBehaviour
     {
-        private static FindOnsSystem FindOnsSystem => _FindOnsSystem ??= FindObjectOfType<FindOnsSystem>();
-        private static FindOnsSystem _FindOnsSystem;
+        private FindOnsSystem FindOnsSystem;
         private TMP_Text text => _text ??= GetComponentInChildren<TMP_Text>();
         private TMP_Text _text;
         private ColorChanger ColorChanger => _ColorChanger ??= GetComponentInChildren<ColorChanger>();
@@ -21,6 +20,7 @@ namespace Study.FindOns
         private void Start()
         {
             GetComponent<Button>().onClick.AddListener(OnButton);
+            FindOnsSystem = GetComponentInParent<FindOnsSystem>();
         }
         void Update()
         {
@@ -36,25 +36,16 @@ namespace Study.FindOns
             }
         }
 
-        private static bool Done;
+        private bool Done;
         public void OnButton()
         {
             if (FindonesContent.SellectedObject == null) return;
             if (Done) return;
-            if (FindOnsSystem.GameContent.Equals(FindonesContent.SellectedObject.Content))
+            if (FindonesContent.SellectedObject.transform.parent == FindOnsSystem.QueatinContentParrent) return;
+            if (FindOnsSystem.OnApplayButton((FindonesContent.SellectedObject.Content as Word?).Value))
             {
                 FindonesContent.SellectedObject.GetComponent<ColorChanger>().SetColor(Color.green);
-                if (FindonesContent.SellectedObject.transform.parent == FindOnsSystem.QueatinContentParrent) return;
                 Done = true;
-                StartCoroutine(WaitANdTrayAgane());
-                IEnumerator WaitANdTrayAgane()
-                {
-                    yield return new WaitForSeconds(2);
-                    DiscretionViwe.ShowWord((FindonesContent.SellectedObject.Content as Word?).Value);
-                    yield return new WaitForSeconds(0.2f);
-                    Done = false;
-                    FindOnsSystem.Rondomize();
-                }
             }
             else FindonesContent.SellectedObject.GetComponent<ColorChanger>().SetColor(Color.red);
         }

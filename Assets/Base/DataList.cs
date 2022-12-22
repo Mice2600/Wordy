@@ -31,22 +31,6 @@ namespace Base
             s.GetComponent<ListBaseEngine>().OnSaveTime = Save;
         }
 
-        public T this[T index] 
-        {
-            get
-            {
-                int fIndex = IndexOf(index);
-                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
-                return this[fIndex];
-            }
-            set 
-            {
-                int fIndex = IndexOf(index);
-                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
-                this[fIndex] = value; 
-            }
-        }
-
         protected abstract string DataID { get; }
 
         public void Save()

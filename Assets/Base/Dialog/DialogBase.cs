@@ -22,6 +22,21 @@ namespace Base.Dialog
             Dialogs = new DialogBase();
         }
         public static DialogBase Dialogs { get; private set; }
+        public Dialog this[IContent index]
+        {
+            get
+            {
+                int fIndex = IndexOf(new Dialog(index.EnglishSource, "", 0));
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                return this[fIndex];
+            }
+            set
+            {
+                int fIndex = IndexOf(new Dialog(index.EnglishSource, "", 0));
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                this[fIndex] = value;
+            }
+        }
         private static string ID => "DialogBase";
         protected override string DataID => ID;
         public static new void Sort()

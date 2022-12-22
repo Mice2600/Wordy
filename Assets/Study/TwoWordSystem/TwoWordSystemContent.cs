@@ -1,4 +1,5 @@
 using Base;
+using Base.Word;
 using System.Collections;
 using SystemBox;
 using UnityEngine;
@@ -22,8 +23,8 @@ namespace Study.TwoWordSystem
             da.RandomItem.transform.gameObject.SetActive(true);
         }
 
-        private static TwoWordSystem TwoWordSystem => _TwoWordSystem ??= FindObjectOfType<TwoWordSystem>();
-        private static TwoWordSystem _TwoWordSystem;
+        private TwoWordSystem TwoWordSystem => _TwoWordSystem ??= FindObjectOfType<TwoWordSystem>();
+        private TwoWordSystem _TwoWordSystem;
         public void TrySellect()
         {
             if (Dead) return;
@@ -51,15 +52,20 @@ namespace Study.TwoWordSystem
 
                     IEnumerator DeadTime()
                     {
+                        string OldWord = Content.EnglishSource;
                         yield return new WaitForSeconds(1);
                         TwoWordSystem.TryChange(Ones, Twos);
                         Refresh();
-                        Twos.Dead = false;
-                        Ones.Dead = false;
+                        if (Content.EnglishSource != OldWord) 
+                        {
+                            Twos.Dead = false;
+                            Ones.Dead = false;
+                        }
                     }
                 }
                 else
                 {
+                    TwoWordSystem.WrongChose(EnglishSellected.Content, RussianSellected.Content);
                     EnglishSellected = null;
                     RussianSellected = null;
                 }

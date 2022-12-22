@@ -22,7 +22,7 @@ namespace ProjectSettings
 
 namespace Study.aSystem
 {
-    public abstract class Quest : MonoBehaviour, IQuestStarter
+    public abstract class Quest : MonoBehaviour
     {
         public abstract int AddScoreDialog { get; }
         public abstract int RemoveScoreDialog { get; }

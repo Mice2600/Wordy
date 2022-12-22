@@ -34,3 +34,10 @@ MonoBehaviour:
     RemoveScoreDialog: -10
     AddScoreWord: 3
     RemoveScoreWord: -1
+  QuestFindOnsPrefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
+  QuestFindOnsSceneName: 
+  QuestFindOnsScorevalumes:
+    AddScoreDialog: 2
+    RemoveScoreDialog: -1
+    AddScoreWord: 2
+    RemoveScoreWord: -1

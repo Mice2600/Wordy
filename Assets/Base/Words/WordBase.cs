@@ -20,6 +20,21 @@ namespace Base.Word
             PlayerPrefs.SetInt(ID + " defaul", 1);
             Wordgs = new WordBase(); 
         }
+        public Word this[IContent index]
+        {
+            get
+            {
+                int fIndex = IndexOf(new Word(index.EnglishSource, "", 0, "", "") );
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                return this[fIndex];
+            }
+            set
+            {
+                int fIndex = IndexOf(new Word(index.EnglishSource, "", 0, "", ""));
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                this[fIndex] = value;
+            }
+        }
         public static WordBase Wordgs { get; private set; }
         private static string ID => "WordBase";
         protected override string DataID => ID;
