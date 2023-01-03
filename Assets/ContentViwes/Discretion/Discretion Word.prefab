@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6335602099473324866}
         m_TargetAssemblyTypeName: DiscretionViwe, Assembly-CSharp
         m_MethodName: DestroyUrself
         m_Mode: 1

@@ -59,7 +59,7 @@ namespace Study.BuildDialog
                 IDContentText.text = Grr[0].RussianSource;
                 IDContentText.font = PasswordFont; 
             }
-            IDContentText.font = PasswordFont;
+            //IDContentText.font = PasswordFont;
 
             List<Transform> Gamesss = new List<Transform>();
             for (int i = 0; i < All.Count; i++)

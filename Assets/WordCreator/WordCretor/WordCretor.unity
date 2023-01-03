@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -164,9 +164,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1629,6 +1637,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -1870,7 +1879,7 @@ GameObject:
   - component: {fileID: 985156107}
   - component: {fileID: 985156106}
   - component: {fileID: 985156105}
-  - component: {fileID: 985156104}
+  - component: {fileID: 985156108}
   m_Layer: 5
   m_Name: Back button
   m_TagString: Untagged
@@ -1898,60 +1907,6 @@ RectTransform:
   m_AnchoredPosition: {x: 61.899994, y: 0}
   m_SizeDelta: {x: 84.48999, y: 84.49}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &985156104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985156102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef278d182c0ea62459ca63a52ca41b43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uesSelectionBase: 0
-  DontDestroyer: 0
-  _UesEvent: 2048
-  JustCallList: 0
-  SystemCall: []
-  _UpdateTime: 0
-  SystemUpdate: []
-  UesAnimation: 0
-  SystemAnimation: []
-  UesCoroutine: 0
-  SystemCoroutine: []
-  UesKay: 0
-  SystemKays: []
-  UesDestroy: 0
-  SystemDestroy: []
-  UesInstantiate: 0
-  SystemInstantiate: []
-  _LoadScane: 1
-  SystemScanes:
-  - EventID: Back
-    UesActivScene: 0
-    Scane_Name: GameController
-    LoadMode: 0
-    How_Much_Colls: 1
-    Time_Count: 0
-    DontDestroy: 0
-  Message: 0
-  systemSends: []
-  _RandomSysem: 0
-  systemRandom: []
-  _physicFiller: 0
-  _physicBox: []
-  _AudioPlayer: 0
-  audioPlayers: []
-  _GropeSystem: 0
-  groupSystem: []
-  _MonoMehaverEvents: 0
-  MonoBehaverEvents: []
-  UesPlayerPrefsUtility: 0
-  PlayerPrefsUtility_Call: []
-  _OnInputMouse: 0
-  systemInputs: []
 --- !u!114 &985156105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1995,19 +1950,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 985156106}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 985156104}
-        m_TargetAssemblyTypeName: SystemBox.EventBox, Assembly-CSharp
-        m_MethodName: _LoadScaneFunction
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Back
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &985156106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2046,6 +1989,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985156102}
   m_CullTransparentMesh: 1
+--- !u!114 &985156108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985156102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57282a9ecc075344f812a1f904e8f9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: GameController
 --- !u!1 &1121562391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2230,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

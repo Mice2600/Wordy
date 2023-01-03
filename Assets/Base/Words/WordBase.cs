@@ -61,7 +61,7 @@ namespace ProjectSettings
         
         public void AddWords(TList<Word> Words) 
         {
-            string All = "";
+            string All = "";//
             if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Words.txt"))
                 All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Words.txt");
             else Directory.CreateDirectory("Assets/Base/Resources");
