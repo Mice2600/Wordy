@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using SystemBox;
 using UnityEngine;
 using UnityEngine.UI;
-namespace Servises
+namespace Servises.BaseList
 {
     public abstract class BaseListViwe<T> : MonoBehaviour, RePlaceController where T : IContent
     {
@@ -39,8 +39,9 @@ namespace Servises
             void CreatOne(int Index)
             {
                 GameObject NM = Instantiate(contentPrefab, contentPattent);
-                NM.GetComponent<ContentObject>().Content = Contents[Index];
-                NM.GetComponent<ColorChanger>().SetColor(GetColor(Index));
+                IContent NewContent = Contents[Index];
+                NM.GetComponent<ContentObject>().Content = NewContent;
+                NM.GetComponent<ColorChanger>().SetColor(GetColor(Index, NewContent.Active));
 
 
             }
@@ -62,10 +63,11 @@ namespace Servises
         {
             IContent lastWord = contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>().Content;
             int LastIndex = IndexOf(lastWord);
-            Debug.Log(lastWord.EnglishSource + "  " + LastIndex);
             if (LastIndex + 1 >= Contents.Count) return false;
-            contentPattent.GetChild(0).GetComponent<ContentObject>().Content = Contents[LastIndex + 1];
-            contentPattent.GetChild(0).GetComponent<ColorChanger>().SetColor(GetColor(LastIndex + 1));
+
+            IContent NewContent = Contents[LastIndex + 1];
+            contentPattent.GetChild(0).GetComponent<ContentObject>().Content = NewContent;
+            contentPattent.GetChild(0).GetComponent<ColorChanger>().SetColor(GetColor(LastIndex + 1, NewContent.Active));
             return true;
         }
         public virtual bool TrayUp()
@@ -73,16 +75,21 @@ namespace Servises
             IContent FistWord = contentPattent.GetChild(0).GetComponent<ContentObject>().Content;
             int FirstIndex = IndexOf(FistWord);
             if (FirstIndex < 1) return false;
-            contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>().Content = Contents[FirstIndex - 1];
-            contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ColorChanger>().SetColor(GetColor(FirstIndex - 1));
+
+            IContent NewContent = Contents[FirstIndex - 1];
+
+            contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>().Content = NewContent;
+            contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ColorChanger>().SetColor(GetColor(FirstIndex - 1, NewContent.Active));
             return true;
         }
-        public Color GetColor(int index)
+        public Color GetColor(int index, bool IsActive)
         {
             index = Mathf.Abs(index);
             int levv = (index / 10);
             index -= (levv * 10);
-            return Colors.Evaluate((float)index / 10f);
+            Color color = Colors.Evaluate((float)index / 10f);
+            if (IsActive) return color;
+            return Color.Lerp(color, Color.black, .6f);
         }
     }
 }

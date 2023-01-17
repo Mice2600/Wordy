@@ -88,7 +88,7 @@ namespace Traonsletor
                         Stoop = false;
                     }));
                     while (Stoop) { yield return null; }
-                    Firsts.Add(new Word(English, Tronsleted, 0, Content, ContentTronsleted));
+                    Firsts.Add(new Word(English, Tronsleted, 0, false, Content, ContentTronsleted));
                     Debug.Log(English + "  Done");
                     ConsoleLog.Log(English);
                 }

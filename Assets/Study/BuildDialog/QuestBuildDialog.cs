@@ -1,3 +1,4 @@
+using Base.Dialog;
 using Sirenix.OdinInspector;
 using Study.aSystem;
 using System.Collections;
@@ -20,12 +21,33 @@ namespace ProjectSettings
 }
 namespace Study.BuildDialog
 {
-    public class QuestBuildDialog : Quest
+    public class QuestBuildDialog : Quest, IQuestStarterWithDialogList
     {
         public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.AddScoreDialog;
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.AddScoreWord;
         public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.RemoveScoreWord;
+
+        public List<Dialog> NeedDialogs 
+        {
+            get 
+            {
+                if (_NeedDialogs == null || _NeedDialogs.Count < 2) _NeedDialogs = DialogBase.Dialogs.GetContnetList(2);
+                return _NeedDialogs;
+            } 
+            set 
+            {
+                _NeedDialogs = value;
+            }
+        }
+        public List<Dialog> _NeedDialogs;
+
+        public int MinimalCount => 2;
+        public void CreatQuest(List<Dialog> dialogs)
+        {
+            NeedDialogs = dialogs;
+        }
+
         private protected override void Start()
         {
             base.Start();

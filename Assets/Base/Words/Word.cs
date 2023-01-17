@@ -6,6 +6,7 @@ namespace Base.Word
         public string _EnglishSource;
         public string _RussianSource;
         public float _Score;
+        public bool _Active;
         public string _EnglishDiscretion;
         public string _RusianDiscretion;
     }

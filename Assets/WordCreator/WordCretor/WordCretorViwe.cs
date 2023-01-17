@@ -18,22 +18,27 @@ namespace WordCreator.WordCretor
         {
             Valume = Valume.ToUpper();
             Word Old = (Content as Word?).Value;
-            Content = new Word(Valume, Old.RussianSource, Old.Score, Old.EnglishDiscretion, Old.RusianDiscretion);
+            Content = new Word(Valume, Old.RussianSource, Old.Score, Old.Active, Old.EnglishDiscretion, Old.RusianDiscretion);
         }
 
         public void OnDiscretioValumeChanged(string Valume)
         {
-
-            
             Word Old = (Content as Word?).Value;
-            Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Valume, Old.RusianDiscretion);
+            Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Old.Active, Valume, Old.RusianDiscretion);
         }
         public void OnScoreValumeChanged(float Valume)
         {
             Valume *= 100f;
             Word Old = (Content as Word?).Value;
-            Content = new Word(Old.EnglishSource, Old.RussianSource, Valume, Old.EnglishDiscretion, Old.RusianDiscretion);
+            Content = new Word(Old.EnglishSource, Old.RussianSource, Valume, Old.Active,Old.EnglishDiscretion, Old.RusianDiscretion );
         }
+
+        public void OnActiveValumeChanged(bool Valume) 
+        {
+            Word Old = (Content as Word?).Value;
+            Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Valume, Old.EnglishDiscretion, Old.RusianDiscretion);
+        }
+
         private float TransleteTime = 0;
 
         private void Update()
@@ -48,12 +53,12 @@ namespace WordCreator.WordCretor
                 {
                     Word Old = (Content as Word?).Value;
                     Debug.Log(tt);
-                    Content = new Word(Old.EnglishSource, tt, Old.Score, Old.EnglishDiscretion, Old.RusianDiscretion);
+                    Content = new Word(Old.EnglishSource, tt, Old.Score, Old.Active, Old.EnglishDiscretion, Old.RusianDiscretion);
                 }
                 void onDirectionTransleted(string tt)
                 {
                     Word Old = (Content as Word?).Value;
-                    Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Old.EnglishDiscretion, tt);
+                    Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Old.Active, Old.EnglishDiscretion, tt);
                 }
             }
         }

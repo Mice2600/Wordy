@@ -4,18 +4,20 @@ namespace Base.Word
 {
     public partial struct Word : IContent, IDiscreption, IComparable // Utulity
     {
-        public Word(string EnglishSource, string RussianSource, float Score, string EnglishDiscretion, string RusianDiscretion)
+        public Word(string EnglishSource, string RussianSource, float Score, bool Active, string EnglishDiscretion, string RusianDiscretion)
         {
             EnglishSource.ToUpper();
-            _EnglishSource = EnglishSource;
+            _EnglishSource = EnglishSource.ToUpper();
             _RussianSource = RussianSource;
             _Score = Score;
             _EnglishDiscretion = EnglishDiscretion;
             _RusianDiscretion = RusianDiscretion;
+            _Active = Active;
         }
         public string EnglishSource => _EnglishSource;
         public string RussianSource => _RussianSource;
         public float Score => _Score;
+        public bool Active => _Active;
         public string EnglishDiscretion => _EnglishDiscretion;
         public string RusianDiscretion => _RusianDiscretion;
 
@@ -23,7 +25,7 @@ namespace Base.Word
         {
             if (obj == null) return false;
             if (obj is not IContent) return false;
-            return (obj as IContent).EnglishSource == this.EnglishSource;
+            return (obj as IContent).EnglishSource.ToUpper() == this.EnglishSource.ToUpper();
         }
         public override string ToString() => EnglishSource;
         public override int GetHashCode() => base.GetHashCode();

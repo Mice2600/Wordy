@@ -4,15 +4,17 @@ namespace Base.Dialog
 {
     public partial struct Dialog : IContent, IComparable // Utulity
     {
-        public Dialog(string EnglishSource, string RussianSource, float Score)
+        public Dialog(string EnglishSource, string RussianSource, float Score, bool Active)
         {
             _EnglishSource = EnglishSource;
             _RussianSource = RussianSource;
             _Score = Score;
+            _Active = Active;
         }
         public string EnglishSource => _EnglishSource;
         public string RussianSource => _RussianSource;
         public float Score => _Score;
+        public bool Active => _Active;
 
         public override bool Equals(object obj)
         {

@@ -6,5 +6,6 @@ namespace Base.Dialog
         public string _EnglishSource;
         public string _RussianSource;
         public float _Score;
+        public bool _Active;
     }
 }

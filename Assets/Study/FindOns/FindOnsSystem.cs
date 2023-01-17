@@ -28,17 +28,18 @@ namespace Study.FindOns
         public void Rondomize()
         {
             ContentParrent.ClearChilds();
-            int countToCreat = Random.Range(3, 6);
+            int countToCreat = Random.Range(3, 8);
             string ContentLangvich = (Random.Range(0, 100) > 50) ? "ru" : "en";
 
 
             GameObject ToCreat = null;
+            TList<Word> WordList = QuestFindOns.NeedWords;
 
             for (int i = 0; i < countToCreat; i++)
             {
                 if (ContentLangvich == "en") ToCreat = PrefabRusianText;
                 else ToCreat = (Random.Range(0, 100) > 50) ? PrefabEnglishText : PrefabEnglishSound;
-                Instantiate(ToCreat, ContentParrent).GetComponentInChildren<ContentObject>().Content = WordBase.Wordgs.RandomItem();
+                Instantiate(ToCreat, ContentParrent).GetComponentInChildren<ContentObject>().Content = WordList.RemoveRandomItem();
             }
             Content = ContentParrent.GetChild(Random.Range(0, ContentParrent.childCount)).GetComponentInChildren<ContentObject>().Content;
 

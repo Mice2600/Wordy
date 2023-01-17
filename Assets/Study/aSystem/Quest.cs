@@ -40,21 +40,21 @@ namespace Study.aSystem
         {
             OnWordWin += (W) =>
             {
-                WordBase.Wordgs[W] = new Word(W.EnglishSource, W.RussianSource, W.Score + Mathf.Abs(AddScoreWord), W.EnglishDiscretion, W.RusianDiscretion);
+                WordBase.Wordgs[W] = new Word(W.EnglishSource, W.RussianSource, W.Score + Mathf.Abs(AddScoreWord), W.Active, W.EnglishDiscretion, W.RusianDiscretion);
 
             };
             OnWordLost += (W) =>
             {
-                WordBase.Wordgs[W] = new Word(W.EnglishSource, W.RussianSource, W.Score - Mathf.Abs(RemoveScoreWord), W.EnglishDiscretion, W.RusianDiscretion);
+                WordBase.Wordgs[W] = new Word(W.EnglishSource, W.RussianSource, W.Score - Mathf.Abs(RemoveScoreWord), W.Active, W.EnglishDiscretion, W.RusianDiscretion);
             };
             OnDialogWin += (D) =>
             {
-                DialogBase.Dialogs[D] = new Dialog(D.EnglishSource, D.RussianSource, D.Score + Mathf.Abs(AddScoreDialog));
+                DialogBase.Dialogs[D] = new Dialog(D.EnglishSource, D.RussianSource, D.Score + Mathf.Abs(AddScoreDialog), D.Active);
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordWin.Invoke(Nfound));
             };
             OnDialogLost += (D) =>
             {
-                DialogBase.Dialogs[D] = new Dialog(D.EnglishSource, D.RussianSource, D.Score - Mathf.Abs(RemoveScoreDialog));
+                DialogBase.Dialogs[D] = new Dialog(D.EnglishSource, D.RussianSource, D.Score - Mathf.Abs(RemoveScoreDialog), D.Active);
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordLost.Invoke(Nfound));
             };
             OnFineshed += () => Destroy(gameObject);
@@ -62,7 +62,6 @@ namespace Study.aSystem
 
         
     }
-
     public interface IQuestStarter 
     {
         public void CreatQuest();
@@ -77,10 +76,12 @@ namespace Study.aSystem
     }
     public interface IQuestStarterWithWordList
     {
+        public int MinimalCount { get; }
         public void CreatQuest(List<Word> words);
     }
     public interface IQuestStarterWithDialogList
     {
+        public int MinimalCount { get; }
         public void CreatQuest(List<Dialog> dialogs);
     }
 }

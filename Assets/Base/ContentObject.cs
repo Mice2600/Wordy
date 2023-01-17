@@ -14,5 +14,6 @@ namespace Base
         }
         private IContent _Content;
         public System.Action<IContent> OnValueChanged;
+
     }
 }

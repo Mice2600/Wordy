@@ -36,7 +36,7 @@ namespace Study.BuildDialog
                     Sours += One.Content.EnglishSource;
                     if (i + 1 < Listen.Count) Sours += " ";
                 }
-                return new Dialog(Sours, "", 0);
+                return new Dialog(Sours, "", 0, false);
             }
         }
         public bool isTrueGrope => Groped.EnglishSource == Content.EnglishSource;
@@ -47,7 +47,7 @@ namespace Study.BuildDialog
         private TMP_FontAsset PasswordFont;
         private void Start()
         {
-            List<Dialog> Grr = DialogBase.Dialogs.GetContnetList(2);
+            List<Dialog> Grr = QuestBuildDialog.NeedDialogs;
             Content = Grr[0];
             TList<string> All = Grr[0].EnglishSource.Split(" ");
             All.AddRange(Grr[1].EnglishSource.Split(" "));
@@ -65,10 +65,10 @@ namespace Study.BuildDialog
             for (int i = 0; i < All.Count; i++)
             {
                 GameObject N = Instantiate(ContentPrefab, new Vector3(999, 0, transform.root.position.z), Quaternion.identity, transform);
-                N.GetComponent<ContentObject>().Content = new Word(All[i], "", 0, "", "");
+                N.GetComponent<ContentObject>().Content = new Word(All[i], "", 0, false, "", "");
                 
                 GameObject NShadowDown = Instantiate(ShadowContentPrefab, new Vector3(9999, 99999, transform.position.z), Quaternion.identity, transform);
-                NShadowDown.AddComponent<ContentObject>().Content = new Word(All[i], "", 0, "", "");
+                NShadowDown.AddComponent<ContentObject>().Content = new Word(All[i], "", 0, false, "", "");
                 N.GetComponent<BuildDialogContent>().BuildDialogVewe = this;
                 N.GetComponent<BuildDialogContent>().ShadowDown = NShadowDown.GetComponent<RectTransform>();
                 N.GetComponent<BuildDialogContent>().CorrentTarget = NShadowDown.GetComponent<RectTransform>();
@@ -93,7 +93,7 @@ namespace Study.BuildDialog
         public void TryAddMeUp(BuildDialogContent buildDialog)
         {
             GameObject NShadowUp = Instantiate(ShadowContentPrefab, new Vector3(9999, 99999, transform.root.position.z), Quaternion.identity, transform);
-            NShadowUp.AddComponent<ContentObject>().Content = new Word(buildDialog.Content.EnglishSource, "", 0, "", "");
+            NShadowUp.AddComponent<ContentObject>().Content = new Word(buildDialog.Content.EnglishSource, "", 0, false, "", "");
             buildDialog.GetComponent<BuildDialogContent>().ShadowUp = NShadowUp.GetComponent<RectTransform>();
             UpParrent.AddNewContent(NShadowUp.GetComponent<RectTransform>());
             buildDialog.CorrentTarget = buildDialog.ShadowUp;

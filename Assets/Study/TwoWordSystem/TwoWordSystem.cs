@@ -28,7 +28,7 @@ namespace Study.TwoWordSystem
         public void Start()
         {
             //Words = WordBase.Wordgs;
-            Words = WordBase.Wordgs.GetContnetList(20);
+            Words = QuestTwoWord.NeedWords;
             ScoresResultat = new Dictionary<Word, int>();
             for (int i = 0; i < Words.Count; i++) ScoresResultat.Add(Words[i], 0);
 
@@ -195,13 +195,13 @@ namespace Study.TwoWordSystem
             {
                 
                 GameObject G = Instantiate(SingelScorePrefab);
-                G.GetComponent<ScoreChanginInfo>().Set(new Word("Nothing :(", "",0,"",""), -99);
+                G.GetComponent<ScoreChanginInfo>().Set(new Word("Nothing :(", "",0, false,"",""), -99);
                 WinGropeParrent.AddNewContent(G.transform);
             }
             if (!IsThereLost) 
             {
                 GameObject G = Instantiate(SingelScorePrefab);
-                G.GetComponent<ScoreChanginInfo>().Set(new Word("wow soch empty", "", 0, "", ""), 5);
+                G.GetComponent<ScoreChanginInfo>().Set(new Word("wow soch empty", "", 0, false, "", ""), 5);
                 LostGropeParrent.AddNewContent(G.transform);
             }
             QuestTwoWord.OnGameWin();

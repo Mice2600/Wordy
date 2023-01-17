@@ -1,5 +1,6 @@
 using Base;
 using Base.Dialog;
+using Base.Word;
 using BaseViwe.DialogViwe;
 using System.Collections;
 using SystemBox.Engine;
@@ -17,14 +18,21 @@ namespace WordCreator.DialogCreator
         public void OnWordValumeChanged(string Valume)
         {
             Dialog Old = (Content as Dialog?).Value;
-            Content = new Dialog(Valume, Old.RussianSource, Old.Score);
+            Content = new Dialog(Valume, Old.RussianSource, Old.Score, Old.Active);
         }
         public void OnScoreValumeChanged(float Valume)
         {
             Valume *= 100f;
             Dialog Old = (Content as Dialog?).Value;
-            Content = new Dialog(Old.EnglishSource, Old.RussianSource, Valume);
+            Content = new Dialog(Old.EnglishSource, Old.RussianSource, Valume, Old.Active);
         }
+
+        public void OnActiveValumeChanged(bool Valume)
+        {
+            Dialog Old = (Content as Dialog?).Value;
+            Content = new Dialog(Old.EnglishSource, Old.RussianSource, Old.Score, Valume);
+        }
+
         private float TransleteTime = 0;
 
         private void Update()
@@ -38,7 +46,7 @@ namespace WordCreator.DialogCreator
                 {
                     Dialog Old = (Content as Dialog?).Value;
                     Debug.Log(tt);
-                    Content = new Dialog(Old.EnglishSource, tt, Old.Score);
+                    Content = new Dialog(Old.EnglishSource, tt, Old.Score, Old.Active);
                 }
             }
         }

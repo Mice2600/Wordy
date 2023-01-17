@@ -10,14 +10,15 @@ using SystemBox.Engine;
 using UnityEngine.SceneManagement;
 using Base.Word;
 using Servises;
+using Servises.BaseList;
 using Base;
 namespace BaseViwe.WordViwe
 {
-    public class WordBaseViwe : BaseListViwe<Word>
+    public class WordBaseViwe : BaseListWithSearch<Word>
     {
+        public override List<Word> AllContents => WordBase.Wordgs;
 
-        public override List<Word> Contents => WordBase.Wordgs;
-        private protected override int IndexOf(IContent content) => WordBase.Wordgs.IndexOf((content as Word?).Value);
+        private protected override int IndexOf(IContent content) => base.Contents.IndexOf((content as Word?).Value);
         [Button]
         public override void Lode(int From)
         {
