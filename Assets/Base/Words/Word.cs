@@ -1,13 +1,12 @@
+using Newtonsoft.Json;
+using UnityEngine;
+
 namespace Base.Word
 {
     [System.Serializable]
-    public partial struct Word // Data
+    public partial class Word 
     {
-        public string _EnglishSource;
-        public string _RussianSource;
-        public float _Score;
-        public bool _Active;
-        public string _EnglishDiscretion;
-        public string _RusianDiscretion;
+        [JsonProperty, SerializeField] public string EnglishDiscretion;
+        [JsonProperty, SerializeField] public string RusianDiscretion;
     }
 }

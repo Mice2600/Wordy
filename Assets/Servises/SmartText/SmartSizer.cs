@@ -28,7 +28,6 @@ namespace Servises.SmartText
             rectTransform.offsetMax = ds / OfsetSize;
             rectTransform.offsetMin = -ds / OfsetSize;
             transform.position = oldpos;
-            //transform.position = NText.transform.position;
         }
 
     }

@@ -1,6 +1,7 @@
 using Base;
 using Base.Word;
 using BaseViwe.WordViwe;
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using SystemBox.Engine;
 using Traonsletor;
@@ -12,32 +13,12 @@ namespace WordCreator.WordCretor
     {
         private void Awake()
         {
-            Content = new Word();
+            Content = new Word("","",0,false,"","");
         }
-        public void OnWordValumeChanged(string Valume)
-        {
-            Valume = Valume.ToUpper();
-            Word Old = (Content as Word?).Value;
-            Content = new Word(Valume, Old.RussianSource, Old.Score, Old.Active, Old.EnglishDiscretion, Old.RusianDiscretion);
-        }
-
-        public void OnDiscretioValumeChanged(string Valume)
-        {
-            Word Old = (Content as Word?).Value;
-            Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Old.Active, Valume, Old.RusianDiscretion);
-        }
-        public void OnScoreValumeChanged(float Valume)
-        {
-            Valume *= 100f;
-            Word Old = (Content as Word?).Value;
-            Content = new Word(Old.EnglishSource, Old.RussianSource, Valume, Old.Active,Old.EnglishDiscretion, Old.RusianDiscretion );
-        }
-
-        public void OnActiveValumeChanged(bool Valume) 
-        {
-            Word Old = (Content as Word?).Value;
-            Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Valume, Old.EnglishDiscretion, Old.RusianDiscretion);
-        }
+        public void OnWordValumeChanged(string Valume) => Content.EnglishSource= Valume;
+        public void OnDiscretioValumeChanged(string Valume)=> (Content as IDiscreption).EnglishDiscretion = Valume;
+        public void OnScoreValumeChanged(float Valume) => Content.Score= Valume;
+        public void OnActiveValumeChanged(bool Valume) => Content.Active = Valume;
 
         private float TransleteTime = 0;
 
@@ -51,25 +32,22 @@ namespace WordCreator.WordCretor
                 StartCoroutine(Translator.Process("en", "ru", (Content as IDiscreption).EnglishDiscretion, onDirectionTransleted));
                 void onWordTransleted(string tt)
                 {
-                    Word Old = (Content as Word?).Value;
-                    Debug.Log(tt);
-                    Content = new Word(Old.EnglishSource, tt, Old.Score, Old.Active, Old.EnglishDiscretion, Old.RusianDiscretion);
+                    Debug.Log(tt); 
+                    Content.RussianSource = tt;
                 }
                 void onDirectionTransleted(string tt)
                 {
-                    Word Old = (Content as Word?).Value;
-                    Content = new Word(Old.EnglishSource, Old.RussianSource, Old.Score, Old.Active, Old.EnglishDiscretion, tt);
+                    Debug.Log(tt);
+                    (Content as IDiscreption).RusianDiscretion = tt;
                 }
             }
         }
 
         public void TryAdd()
         {
-
-            WordBase.Wordgs.Add((Content as Word?).Value);
+            WordBase.Wordgs.Add(Content as Word);
             WordBase.Sort();
-
-            SceneComands.OpenSceneSellecetWordBase((Content as Word?).Value);
+            SceneComands.OpenSceneSellecetWordBase(Content as Word);
         }
 
 

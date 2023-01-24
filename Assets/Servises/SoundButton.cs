@@ -8,22 +8,16 @@ namespace Servises
         protected override void Start()
         {
             base.Start();
-            Transform ToTest = transform;
-            for (int i = 0; i < 20; i++)
+            ContentObject wordContent = transform.GetComponentInParent<ContentObject>();
+            if (wordContent == null) return;
+            onClick.AddListener(() =>
             {
-                if (ToTest.TryGetComponent<ContentObject>(out ContentObject wordContent))
-                {
-                    onClick.AddListener(() =>
-                    {
-                        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-                            EasyTTSUtil.SpeechAdd(wordContent.Content.EnglishSource);
-                        else Debug.Log(wordContent.Content.EnglishSource + " Speeking");
-                    });
-                    break;
-                }
-                ToTest = ToTest.parent;
-                if (ToTest == null) break;
-            }
+                if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+                    EasyTTSUtil.SpeechAdd(wordContent.Content.EnglishSource);
+                else Debug.Log(wordContent.Content.EnglishSource + " Speeking");
+            });
+
+            
         }
     }
 }

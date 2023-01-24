@@ -40,21 +40,21 @@ namespace Study.aSystem
         {
             OnWordWin += (W) =>
             {
-                WordBase.Wordgs[W] = new Word(W.EnglishSource, W.RussianSource, W.Score + Mathf.Abs(AddScoreWord), W.Active, W.EnglishDiscretion, W.RusianDiscretion);
+                WordBase.Wordgs[W as Word].Score += Mathf.Abs(AddScoreWord);
 
             };
             OnWordLost += (W) =>
             {
-                WordBase.Wordgs[W] = new Word(W.EnglishSource, W.RussianSource, W.Score - Mathf.Abs(RemoveScoreWord), W.Active, W.EnglishDiscretion, W.RusianDiscretion);
+                WordBase.Wordgs[W as Word].Score -= Mathf.Abs(RemoveScoreWord);
             };
             OnDialogWin += (D) =>
             {
-                DialogBase.Dialogs[D] = new Dialog(D.EnglishSource, D.RussianSource, D.Score + Mathf.Abs(AddScoreDialog), D.Active);
+                DialogBase.Dialogs[D].Score += Mathf.Abs(AddScoreDialog);
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordWin.Invoke(Nfound));
             };
             OnDialogLost += (D) =>
             {
-                DialogBase.Dialogs[D] = new Dialog(D.EnglishSource, D.RussianSource, D.Score - Mathf.Abs(RemoveScoreDialog), D.Active);
+                DialogBase.Dialogs[D].Score -= Mathf.Abs(RemoveScoreDialog);
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordLost.Invoke(Nfound));
             };
             OnFineshed += () => Destroy(gameObject);

@@ -17,7 +17,7 @@ namespace ProjectSettings
 
 public class DiscretionIncorrectContent : DiscretionResultat
 {
-    public static DiscretionIncorrectContent ShowIncorrectContent(IContent TrueContent, IContent WrongContent, int RemovedScore, System.Action OnClose = null)
+    public static DiscretionIncorrectContent ShowIncorrectContent(Content TrueContent, Content WrongContent, int RemovedScore, System.Action OnClose = null)
     {
         DiscretionIncorrectContent N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionIncorrectContentViwe, null).GetComponentInChildren<DiscretionIncorrectContent>();        
         N.RemovedScoreText.text = "-" + Mathf.Abs(RemovedScore) ;

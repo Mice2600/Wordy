@@ -10,6 +10,6 @@ namespace BaseViwe.DialogViwe
     public class DialogBaseViwe : BaseListViwe<Dialog>
     {
         public override List<Dialog> Contents => DialogBase.Dialogs;
-        private protected override int IndexOf(IContent content) => DialogBase.Dialogs.IndexOf((content as Dialog?).Value);
+        private protected override int IndexOf(Content content) => DialogBase.Dialogs.IndexOf((content as Dialog));
     }
 }

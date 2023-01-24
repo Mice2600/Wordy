@@ -14,11 +14,11 @@ using Servises.BaseList;
 using Base;
 namespace BaseViwe.WordViwe
 {
-    public class WordBaseViwe : BaseListWithSearch<Word>
+    public class WordBaseViwe : BaseListWithFillter<Word>
     {
         public override List<Word> AllContents => WordBase.Wordgs;
 
-        private protected override int IndexOf(IContent content) => base.Contents.IndexOf((content as Word?).Value);
+        private protected override int IndexOf(Content content) => base.Contents.IndexOf(content as Word);
         [Button]
         public override void Lode(int From)
         {
@@ -33,7 +33,7 @@ namespace BaseViwe.WordViwe
         }
         public void TryRemove(GameObject Current)
         {
-            Word Content = (Current.GetComponent<ContentObject>().Content as Word?).Value;
+            Word Content = (Current.GetComponent<ContentObject>().Content as Word);
             WordBase.Wordgs.Remove(Content);
             Refresh();
         }

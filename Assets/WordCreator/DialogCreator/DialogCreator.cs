@@ -13,25 +13,12 @@ namespace WordCreator.DialogCreator
     {
         private void Awake()
         {
-            Content = new Dialog();
+            Content = new Dialog("", "",0,false);
         }
-        public void OnWordValumeChanged(string Valume)
-        {
-            Dialog Old = (Content as Dialog?).Value;
-            Content = new Dialog(Valume, Old.RussianSource, Old.Score, Old.Active);
-        }
-        public void OnScoreValumeChanged(float Valume)
-        {
-            Valume *= 100f;
-            Dialog Old = (Content as Dialog?).Value;
-            Content = new Dialog(Old.EnglishSource, Old.RussianSource, Valume, Old.Active);
-        }
+        public void OnWordValumeChanged(string Valume) => Content.EnglishSource= Valume;
+        public void OnScoreValumeChanged(float Valume) => Content.Score = Valume *= 100f;
 
-        public void OnActiveValumeChanged(bool Valume)
-        {
-            Dialog Old = (Content as Dialog?).Value;
-            Content = new Dialog(Old.EnglishSource, Old.RussianSource, Old.Score, Valume);
-        }
+        public void OnActiveValumeChanged(bool Valume) => Content.Active = Valume;
 
         private float TransleteTime = 0;
 
@@ -44,19 +31,17 @@ namespace WordCreator.DialogCreator
                 StartCoroutine(Translator.Process("en", "ru", Content.EnglishSource, onWordTransleted));
                 void onWordTransleted(string tt)
                 {
-                    Dialog Old = (Content as Dialog?).Value;
                     Debug.Log(tt);
-                    Content = new Dialog(Old.EnglishSource, tt, Old.Score, Old.Active);
+                    Content.RussianSource = tt;
                 }
             }
         }
 
         public void TryAdd()
         {
-
-            DialogBase.Dialogs.Add((Content as Dialog?).Value);
+            DialogBase.Dialogs.Add((Content as Dialog));
             DialogBase.Sort();
-            SceneComands.OpenSceneSellecetDialogBase((Content as Dialog?).Value);
+            SceneComands.OpenSceneSellecetDialogBase((Content as Dialog));
         }
     }
 }

@@ -1,19 +1,23 @@
+using Base.Word;
 using Servises;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using SystemBox;
 using Unity.Mathematics;
 using UnityEngine;
 
 namespace Base
 {
-    public abstract class DataList<T> : List<T> where T : IContent, new ()
+    public abstract class DataList<T> : List<T> where T : Content
     {
         public DataList()
         {
 
             T[] DaaaTaa = new List<T>(JsonHelper.FromJson<T>(PlayerPrefs.GetString(DataID))).ToArray();
+            Debug.Log(DaaaTaa[0].EnglishSource);
+            Array.Sort(DaaaTaa);//
             if (DaaaTaa.Length > 1) Array.Sort(DaaaTaa);
             for (int i = 0; i < DaaaTaa.Length; i++)
             {
@@ -35,6 +39,7 @@ namespace Base
 
         public void Save()
         {
+            for (int i = 0; i < Count; i++)if (this[i].Score < 0) this[i].Score = 0;
             PlayerPrefs.SetString(DataID, JsonHelper.ToJson<T>((this as List<T>).ToArray()));
         }
 
@@ -45,11 +50,18 @@ namespace Base
             base.Add(Content);
         }
 
+        public List<T> ActiveItems => new List<T>(this.Where(a => a.Active));
+        public List<T> PassiveItems => new List<T>(this.Where(a => !a.Active));
         public List<T> GetContnetList(int ListCount)
         {
-            TList<T> All = new List<T>(this);
-            if (All.Count <= ListCount) return All.Mix();
-            List<T> NewList = new List<T>();
+            TList<T> All = new List<T>(ActiveItems);
+            if (All.Count < ListCount) 
+            {
+                TList<T> PassiveItems = this.PassiveItems;
+                for (int i = All.Count; i < ListCount; i++)All.Add(PassiveItems.RemoveRandomItem());
+                return All.Mix();
+            }
+            if (All.Count == ListCount) return All.Mix();
 
             // int ListCount
 

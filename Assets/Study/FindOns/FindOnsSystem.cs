@@ -50,7 +50,7 @@ namespace Study.FindOns
             QueatinContentParrent.GetChild(0).SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
         }
 
-        public bool OnApplayButton(IContent content) 
+        public bool OnApplayButton(Content content) 
         {
             if (content.EnglishSource == Content.EnglishSource) 
             {
@@ -59,16 +59,16 @@ namespace Study.FindOns
                 IEnumerator WaitANdTrayAgane()
                 {
                     yield return new WaitForSeconds(1.5f);
-                    QuestFindOns.OnWordWin?.Invoke((Content as Word?).Value);
+                    QuestFindOns.OnWordWin?.Invoke(Content as Word);
                     QuestFindOns.OnGameWin?.Invoke();
-                    DiscretionCorrectContent A = DiscretionCorrectContent.ShowCorrectContent(WordBase.Wordgs[Content], QuestFindOns.AddScoreWord, OnFinsht);
+                    DiscretionCorrectContent A = DiscretionCorrectContent.ShowCorrectContent(WordBase.Wordgs[Content as Word], QuestFindOns.AddScoreWord, OnFinsht);
                 }
             }
-            QuestFindOns.OnWordLost?.Invoke((Content as Word?).Value);
-            QuestFindOns.OnWordLost?.Invoke((content as Word?).Value);
+            QuestFindOns.OnWordLost?.Invoke(Content as Word);
+            QuestFindOns.OnWordLost?.Invoke(content as Word);
             QuestFindOns.OnGameLost?.Invoke();
-            DiscretionIncorrectContent D = DiscretionIncorrectContent.ShowIncorrectContent(WordBase.Wordgs[Content], WordBase.Wordgs[content], QuestFindOns.RemoveScoreWord, OnFinsht);
-            D.AddChangin(WordBase.Wordgs[content], QuestFindOns.RemoveScoreWord);
+            DiscretionIncorrectContent D = DiscretionIncorrectContent.ShowIncorrectContent(WordBase.Wordgs[Content as Word], WordBase.Wordgs[content as Word], QuestFindOns.RemoveScoreWord, OnFinsht);
+            D.AddChangin(WordBase.Wordgs[content as Word], QuestFindOns.RemoveScoreWord);
 
             return false;
             void OnFinsht() 

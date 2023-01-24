@@ -3,7 +3,7 @@ namespace Base
 {
     public class ContentObject : MonoBehaviour
     {
-        public IContent Content
+        public Content Content
         {
             get => _Content;
             set
@@ -12,8 +12,8 @@ namespace Base
                 OnValueChanged?.Invoke(value);
             }
         }
-        private IContent _Content;
-        public System.Action<IContent> OnValueChanged;
+        private Content _Content;
 
+        public System.Action<Content> OnValueChanged;
     }
 }

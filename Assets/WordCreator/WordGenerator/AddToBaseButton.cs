@@ -45,7 +45,7 @@ namespace WordCreator.WordGenerator
             if (_PerTime > .4f)
             {
                 _PerTime = 0;
-                if (WordBase.Wordgs.Contains((Content.Content as Word?).Value))
+                if (WordBase.Wordgs.Contains((Content.Content as Word)))
                 {
                     AddIcon.SetActive(false);
                     CompletedIcon.SetActive(true);

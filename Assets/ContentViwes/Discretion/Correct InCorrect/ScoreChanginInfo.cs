@@ -10,7 +10,7 @@ public class ScoreChanginInfo : ContentObject
     [SerializeField]private Color NiceColor;
     [SerializeField]private Color BadColor;
     [SerializeField]private TMP_Text ScoreText;
-    public void Set(IContent content, int Score) 
+    public void Set(Content content, int Score) 
     {
         this.Content = content;
         ScoreText.text = (Score > 0 ? "+" : "-") + Mathf.Abs(Score);

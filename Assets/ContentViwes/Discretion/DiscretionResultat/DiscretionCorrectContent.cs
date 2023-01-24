@@ -18,7 +18,7 @@ namespace ProjectSettings
 
 public class DiscretionCorrectContent : DiscretionResultat
 {
-    public static DiscretionCorrectContent ShowCorrectContent(IContent TrueContent, int AddScore, System.Action OnClose = null)
+    public static DiscretionCorrectContent ShowCorrectContent(Content TrueContent, int AddScore, System.Action OnClose = null)
     {
         DiscretionCorrectContent N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionCorrectContentViwe, null).GetComponentInChildren<DiscretionCorrectContent>();
         N.AddScoreText.text = "+" + Mathf.Abs(AddScore);

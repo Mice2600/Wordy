@@ -25,15 +25,7 @@ namespace WordCreator.WordCretor
         private void Start()
         {
             GetComponent<Button>().onClick.AddListener(OnClickButton);
-            wordContent.OnValueChanged += SmartUpdate;
-            StartCoroutine(enumerator());
-            IEnumerator enumerator()
-            {
-                ButtonText.text = "UnKnowen";
-                yield return new WaitForEndOfFrame();
-                SmartUpdate(wordContent.Content);
-            }
-
+            ButtonText.text = "UnKnowen";
         }
         [SerializeField, HorizontalGroup("AplayColor")]
         private Color AplayColor, AplayColorText;
@@ -43,7 +35,20 @@ namespace WordCreator.WordCretor
         private Color UnKnowenColor, UnKnowenTextColor;
         [SerializeField, HorizontalGroup("NeedMoreInfo")]
         private Color NeedMoreInfoColor, NeedMoreInfoTextColor;
-        public void SmartUpdate(IContent N)
+
+
+        private float PerTime = 0f;
+        private void Update()
+        {
+            PerTime += Time.deltaTime;
+            if (PerTime > 1f)
+            {
+                PerTime = 0;
+                SmartUpdate(wordContent.Content);
+            }
+        }
+
+        public void SmartUpdate(Content N)
         {
             Find();
             Vector2 ds = ButtonText.GetRenderedValues(true);
@@ -53,7 +58,7 @@ namespace WordCreator.WordCretor
             transform.position = ButtonText.transform.position;
             void Find()
             {
-                if (WordBase.Wordgs.Contains((N as Word?).Value)) { AlredyHavef(); return; }
+                if (WordBase.Wordgs.Contains((N as Word))) { AlredyHavef(); return; }
                 if (string.IsNullOrEmpty(N.EnglishSource)) { UnKnowenf(); return; }
                 if (string.IsNullOrEmpty((N as IDiscreption).EnglishDiscretion)) { NeedMoreInfof(); return; }
                 Aplayf();
@@ -88,7 +93,7 @@ namespace WordCreator.WordCretor
 
         public void OnClickButton()
         {
-            if (WordBase.Wordgs.Contains((wordContent.Content as Word?).Value)) return;
+            if (WordBase.Wordgs.Contains((wordContent.Content as Word))) return;
             if (string.IsNullOrEmpty(wordContent.Content.EnglishSource)) return;
             wordContent.TryAdd();
         }

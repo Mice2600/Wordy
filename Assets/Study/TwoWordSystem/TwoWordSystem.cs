@@ -46,17 +46,17 @@ namespace Study.TwoWordSystem
             {
                 Word N = Words.RemoveRandomItem();
                 _EnglishContents[i].Content = N;
-                (_EnglishContents[i] as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf((_EnglishContents[i].Content as Word?).Value)));
+                (_EnglishContents[i] as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(_EnglishContents[i].Content as Word)));
                 _RussianContents[i].Content = N;
-                (_RussianContents[i] as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf((_RussianContents[i].Content as Word?).Value)));
+                (_RussianContents[i] as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(_RussianContents[i].Content as Word)));
             }
         }
         [Sirenix.OdinInspector.Button]
         public void TryChange(ContentObject EnglishOnes, ContentObject RussiaOnes)
         {
             string OldOne = EnglishOnes.Content.EnglishSource;
-            ScoresResultat[(EnglishOnes.Content as Word?).Value] += 1;
-            ScoresResultat[(RussiaOnes.Content as Word?).Value] += 1;
+            ScoresResultat[EnglishOnes.Content as Word] += 1;
+            ScoresResultat[RussiaOnes.Content as Word] += 1;
 
             TList<Word> EnglishWords = new TList<Word>();
             for (int i = 0; i < EnglishContents.Count; i++)
@@ -64,7 +64,7 @@ namespace Study.TwoWordSystem
                 if (EnglishContents[i] == EnglishOnes) continue;
                 if ((EnglishContents[i] as TwoWordSystemContent).Dead) continue;
                 if (string.IsNullOrEmpty(EnglishContents[i].Content.EnglishSource)) continue;
-                EnglishWords.Add((EnglishContents[i].Content as Word?).Value);
+                EnglishWords.Add(EnglishContents[i].Content as Word);
             }
             TList<Word> RussianWords = new TList<Word>();
             for (int i = 0; i < RussianContents.Count; i++)
@@ -72,7 +72,7 @@ namespace Study.TwoWordSystem
                 if (RussianContents[i] == RussiaOnes) continue;
                 if ((RussianContents[i] as TwoWordSystemContent).Dead) continue;
                 if (string.IsNullOrEmpty(RussianContents[i].Content.EnglishSource)) continue;
-                RussianWords.Add((RussianContents[i].Content as Word?).Value);
+                RussianWords.Add(RussianContents[i].Content as Word);
             }
 
             int IsThereSomeOneTrue = 0;
@@ -90,7 +90,7 @@ namespace Study.TwoWordSystem
             void TryRandom()
             {
 
-                Word NWord = new Word();
+                Word NWord = new Word("","", 0,false, "", "");
 
                 for (int i = 0; i < 20; i++)
                 {
@@ -99,9 +99,9 @@ namespace Study.TwoWordSystem
                 }
                 Words.Remove(NWord);
                 EnglishOnes.Content = NWord;
-                (EnglishOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf((EnglishOnes.Content as Word?).Value)));
+                (EnglishOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(EnglishOnes.Content as Word)));
 
-                NWord = new Word();
+                NWord = new Word("", "", 0, false, "", "");
                 for (int i = 0; i < 20; i++)
                 {
                     NWord = Words.RandomItem;
@@ -109,7 +109,7 @@ namespace Study.TwoWordSystem
                 }
                 Words.Remove(NWord);
                 RussiaOnes.Content = NWord;
-                (RussiaOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf((RussiaOnes.Content as Word?).Value)));
+                (RussiaOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(RussiaOnes.Content as Word)));
             }
 
             void TryFind()
@@ -121,14 +121,14 @@ namespace Study.TwoWordSystem
                 {
                     if (AllEN.Contains(AllRu[i])) continue;
                     EnglishOnes.Content = AllRu[i];
-                    (EnglishOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf((EnglishOnes.Content as Word?).Value)));
+                    (EnglishOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(EnglishOnes.Content as Word)));
                     break;
                 }
                 for (int i = 0; i < AllEN.Count; i++)
                 {
                     if (AllRu.Contains(AllEN[i])) continue;
                     RussiaOnes.Content = AllEN[i];
-                    (RussiaOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf((RussiaOnes.Content as Word?).Value)));
+                    (RussiaOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(RussiaOnes.Content as Word)));
                     break;
                 }
 
@@ -155,10 +155,10 @@ namespace Study.TwoWordSystem
                 
             }
         }
-        public void WrongChose(IContent EnglishOnes, IContent RussiaOnes) 
+        public void WrongChose(Content EnglishOnes, Content RussiaOnes) 
         {
-            ScoresResultat[(EnglishOnes as Word?).Value] -= 1;
-            ScoresResultat[(RussiaOnes as Word?).Value] -= 1;
+            ScoresResultat[EnglishOnes as Word] -= 1;
+            ScoresResultat[RussiaOnes as Word] -= 1;
         }
 
         public GameObject WinWindow;

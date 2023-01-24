@@ -3,6 +3,7 @@ using Base.Dialog;
 using BaseViwe.DialogViwe;
 using UnityEngine;
 using UnityEngine.UI;
+
 namespace BaseViwe.DialogViwe
 {
     public class DialogRemoveButton : Button
@@ -10,21 +11,12 @@ namespace BaseViwe.DialogViwe
         protected override void Start()
         {
             base.Start();
-            Transform ToTest = transform;
-            for (int i = 0; i < 20; i++)
+            ContentObject IDialogContent = transform.GetComponentInParent<ContentObject>();
+            onClick.AddListener(() =>
             {
-                if (ToTest.TryGetComponent<ContentObject>(out ContentObject IDialogContent))
-                {
-                    onClick.AddListener(() =>
-                    {
-                        DialogBase.Dialogs.Remove((IDialogContent.Content as Dialog?).Value);
-                        FindObjectOfType<DialogBaseViwe>().Refresh();
-                    });
-                    break;
-                }
-                ToTest = ToTest.parent;
-                if (ToTest == null) break;
-            }
+                DialogBase.Dialogs.Remove(IDialogContent.Content as Dialog);
+                FindObjectOfType<DialogBaseViwe>().Refresh();
+            });
         }
     }
 }

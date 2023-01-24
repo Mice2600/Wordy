@@ -1,11 +1,8 @@
 namespace Base.Dialog
 {
     [System.Serializable]
-    public partial struct Dialog // Data
+    public partial class Dialog
     {
-        public string _EnglishSource;
-        public string _RussianSource;
-        public float _Score;
-        public bool _Active;
+       
     }
 }

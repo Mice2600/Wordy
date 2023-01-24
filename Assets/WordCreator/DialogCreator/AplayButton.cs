@@ -24,15 +24,7 @@ namespace WordCreator.DialogCreator
         private void Start()
         {
             GetComponent<Button>().onClick.AddListener(OnClickButton);
-            wordContent.OnValueChanged += SmartUpdate;
-            StartCoroutine(enumerator());
-            IEnumerator enumerator()
-            {
-                ButtonText.text = "UnKnowen";
-                yield return new WaitForEndOfFrame();
-                SmartUpdate(wordContent.Content);
-            }
-
+            ButtonText.text = "UnKnowen";
         }
         [SerializeField, HorizontalGroup("AplayColor")]
         private Color AplayColor, AplayColorText;
@@ -40,7 +32,20 @@ namespace WordCreator.DialogCreator
         private Color AlredyHaveColor, AlredyHaveTextColor;
         [SerializeField, HorizontalGroup("UnKnowen")]
         private Color UnKnowenColor, UnKnowenTextColor;
-        public void SmartUpdate(IContent N)
+
+
+        private float PerTime = 0f;
+        private void Update()
+        {
+            PerTime += Time.deltaTime;
+            if (PerTime > 1f) 
+            {
+                PerTime = 0;
+                SmartUpdate(wordContent.Content);
+            }
+        }
+
+        public void SmartUpdate(Content N)
         {
             Find();
             Vector2 ds = ButtonText.GetRenderedValues(true);
@@ -50,7 +55,7 @@ namespace WordCreator.DialogCreator
             transform.position = ButtonText.transform.position;
             void Find()
             {
-                if (DialogBase.Dialogs.Contains((N as Dialog?).Value)) { AlredyHavef(); return; }
+                if (DialogBase.Dialogs.Contains((N as Dialog))) { AlredyHavef(); return; }
                 if (string.IsNullOrEmpty(N.EnglishSource)) { UnKnowenf(); return; }
                 Aplayf();
 
@@ -78,7 +83,7 @@ namespace WordCreator.DialogCreator
 
         public void OnClickButton()
         {
-            if (DialogBase.Dialogs.Contains((wordContent.Content as Dialog?).Value)) return;
+            if (DialogBase.Dialogs.Contains((wordContent.Content as Dialog))) return;
             if (string.IsNullOrEmpty(wordContent.Content.EnglishSource)) return;
             wordContent.TryAdd();
         }

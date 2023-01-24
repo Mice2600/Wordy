@@ -3,26 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
+
 namespace Servises.SmartText
 {
     public abstract class ContentText : SmartText
     {
+        public ContentObject MyContent;
         private void Start()
         {
-            Transform ToTest = transform;
-            for (int i = 0; i < 20; i++)
-            {
-                if (ToTest.TryGetComponent<ContentObject>(out ContentObject wordContent))
-                {
-                    wordContent.OnValueChanged += OnValueChanged;
-                    OnValueChanged(wordContent.Content);
-                    break;
-                }
-                ToTest = ToTest.parent;
-                if (ToTest == null) break;
-            }
+            MyContent = transform.GetComponentInParent<ContentObject>();
         }
-        public abstract void OnValueChanged(IContent Object);
+        public abstract void OnValueChanged(Content Object);
         public override string MyText => MyTextContent;
         private protected string MyTextContent
         {
@@ -34,6 +26,17 @@ namespace Servises.SmartText
             }
         }
         private string _MyText;
-        protected override void Update() { }
+
+        float perTime = 10f;
+
+        protected override void Update() 
+        {
+            perTime += Time.deltaTime;
+            if (perTime > .4f) 
+            {
+                perTime = 0f;
+                OnValueChanged(MyContent.Content);
+            }
+        }
     }
 }

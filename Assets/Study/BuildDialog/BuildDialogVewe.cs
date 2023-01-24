@@ -103,19 +103,15 @@ namespace Study.BuildDialog
         {
             if (isTrueGrope)
             {
-                QuestBuildDialog.OnDialogWin.Invoke((Content as Dialog?).Value);
+                QuestBuildDialog.OnDialogWin.Invoke(Content as Dialog);
                 QuestBuildDialog.OnGameWin?.Invoke();
-                DiscretionCorrectContent N = DiscretionCorrectContent.ShowCorrectContent(
-                    DialogBase.Dialogs[(Content as Dialog?).Value], 
-                    QuestBuildDialog.AddScoreDialog, OnClose);
+                DiscretionCorrectContent N = DiscretionCorrectContent.ShowCorrectContent(Content as Dialog, QuestBuildDialog.AddScoreDialog, OnClose);
                 WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => N.AddChangin(a, QuestBuildDialog.AddScoreWord));
                 return true;
             }
-            QuestBuildDialog.OnDialogLost?.Invoke((Content as Dialog?).Value);
+            QuestBuildDialog.OnDialogLost?.Invoke(Content as Dialog);
             QuestBuildDialog.OnGameLost?.Invoke();
-            DiscretionIncorrectContent K = DiscretionIncorrectContent.ShowIncorrectContent(
-                DialogBase.Dialogs[(Content as Dialog?).Value], Groped, 
-                QuestBuildDialog.RemoveScoreDialog, OnClose);
+            DiscretionIncorrectContent K = DiscretionIncorrectContent.ShowIncorrectContent(Content as Dialog, Groped, QuestBuildDialog.RemoveScoreDialog, OnClose);
             WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => K.AddChangin(a, QuestBuildDialog.RemoveScoreWord));
             return false;
 
