@@ -2165,7 +2165,7 @@ GameObject:
   - component: {fileID: 4158606192455596783}
   - component: {fileID: 251911289950888015}
   - component: {fileID: 2998954357506699707}
-  - component: {fileID: 5080537941513690220}
+  - component: {fileID: 7436380132704117282}
   m_Layer: 5
   m_Name: RemoveButton
   m_TagString: Untagged
@@ -2262,7 +2262,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0.21960786, g: 0.27450982, b: 0.28627452, a: 1}
   m_EffectDistance: {x: 5.3, y: -5.3}
   m_UseGraphicAlpha: 1
---- !u!114 &5080537941513690220
+--- !u!114 &7436380132704117282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2271,7 +2271,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9063348922379345202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e1e8284f77e5545ac44419a71ace89, type: 3}
+  m_Script: {fileID: 11500000, guid: 04871e0f3395a024aaf6c0d4af4570ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:

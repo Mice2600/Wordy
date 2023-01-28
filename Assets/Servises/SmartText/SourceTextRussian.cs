@@ -3,10 +3,10 @@ namespace Servises.SmartText
 {
     public class SourceTextRussian : ContentText
     {
-        public override void OnValueChanged(Content Object)
+        public override string GetValue(Content Object)
         {
-            if (Object == null) MyTextContent = "";
-            else MyTextContent = Object.RussianSource;
+            if (Object == null) return "";
+            else return Object.RussianSource;
         }
     }
 }

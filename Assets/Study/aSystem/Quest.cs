@@ -24,6 +24,7 @@ namespace Study.aSystem
 {
     public abstract class Quest : MonoBehaviour
     {
+        public abstract GameObject QuestPrefab { get; }
         public abstract int AddScoreDialog { get; }
         public abstract int RemoveScoreDialog { get; }
         public abstract int AddScoreWord { get; }
@@ -58,6 +59,7 @@ namespace Study.aSystem
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordLost.Invoke(Nfound));
             };
             OnFineshed += () => Destroy(gameObject);
+            //OnFineshed += () => Instantiate(QuestPrefab);
         }
 
         

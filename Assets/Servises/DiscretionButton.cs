@@ -1,29 +1,23 @@
 using Base;
 using Base.Dialog;
 using Base.Word;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.WSA;
+using static UnityEngine.RuleTile.TilingRuleOutput;
+
 namespace Servises
 {
-    public class DiscretionButton : Button
+    [RequireComponent(typeof(Button))]
+    public class DiscretionButton : MonoBehaviour
     {
-
-        protected override void Start()
+        protected void Start()
         {
-            base.Start();
-            Transform ToTest = transform;
-            for (int i = 0; i < 20; i++)
-            {
-                if (ToTest.TryGetComponent<ContentObject>(out ContentObject wordContent))
-                {
-
-                    if (wordContent.Content is Word) onClick.AddListener(() => { DiscretionViwe.ShowWord((wordContent.Content as Word)); });
-                    else if (wordContent.Content is Dialog) onClick.AddListener(() => { DiscretionViwe.ShowDialog((wordContent.Content as Dialog)); });
-                    break;
-                }
-                ToTest = ToTest.parent;
-                if (ToTest == null) break;
-            }
+            ContentObject s = transform.GetComponentInParent<ContentObject>();
+            if (s == null) return;
+            if (s.Content is Word) GetComponent<Button>().onClick.AddListener(() => { DiscretionViwe.ShowWord((s.Content as Word)); });
+            else if (s.Content is Dialog) GetComponent<Button>().onClick.AddListener(() => { DiscretionViwe.ShowDialog((s.Content as Dialog)); });
         }
     }
 }

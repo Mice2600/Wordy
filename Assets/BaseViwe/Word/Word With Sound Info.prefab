@@ -85,8 +85,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4084660943930495625}
-  - component: {fileID: 4084660943930495637}
   - component: {fileID: 597013342027213708}
+  - component: {fileID: 1868395665209156761}
   m_Layer: 5
   m_Name: Word With Sound Info
   m_TagString: Untagged
@@ -117,26 +117,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -120.3352}
   m_SizeDelta: {x: 920.0557, y: 140.6704}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4084660943930495637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8894941232974717581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558f0a5ddbb78b642a531d2527023768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Images:
-  - {fileID: 8894941233529581929}
-  - {fileID: 0}
-  - {fileID: 8894941233325718358}
-  Texts:
-  - {fileID: 8894941234004466934}
-  - {fileID: 8894941234194159340}
-  - {fileID: 8894941234577327925}
 --- !u!114 &597013342027213708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +129,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b0c009cb254274d9fa94b71d2afb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1868395665209156761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8894941232974717581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0315cd0a230e5ef4ba95279c77e6b1cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Arts:
+  - {fileID: 8894941233325718358}
+  - {fileID: 8894941233529581929}
+  - {fileID: 8894941234004466934}
+  - {fileID: 8894941234194159340}
+  - {fileID: 8894941234577327925}
 --- !u!1 &8894941233325718356
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +237,7 @@ GameObject:
   - component: {fileID: 8894941233460173448}
   - component: {fileID: 8894941233460173455}
   - component: {fileID: 5413438174743467295}
+  - component: {fileID: 769472820582160945}
   m_Layer: 5
   m_Name: WordPlace+DiscretionButton
   m_TagString: Untagged
@@ -348,6 +347,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a5206bad7e5b64484feeb14384796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &769472820582160945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8894941233460173453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -376,7 +387,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 8894941234000446521}
+  m_TargetGraphic: {fileID: 8894941233460173449}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []

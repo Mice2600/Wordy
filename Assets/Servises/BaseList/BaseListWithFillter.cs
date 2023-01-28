@@ -21,7 +21,11 @@ namespace Servises.BaseList
         {
             get 
             {
-                if (SerchedContents == null) return AllContents;
+                if (SerchedContents == null) 
+                {
+                    if (OnlyActive) return  new TList<T>(AllContents.Where(stringToCheck => stringToCheck.Active));
+                    return AllContents; 
+                }
                 return SerchedContents;
             }
         }
@@ -35,7 +39,10 @@ namespace Servises.BaseList
         }
         public override void Refresh() 
         {
-            if (string.IsNullOrEmpty(SearchingString)) { SerchedContents = null; }
+            if (string.IsNullOrEmpty(SearchingString)) 
+            {
+                SerchedContents = null; 
+            }
             else 
             {
                 SerchedContents = Servises.Search.SearchAll<T>(AllContents, SearchingString);

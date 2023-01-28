@@ -7,7 +7,8 @@ namespace ProjectSettings
 {
     public partial class ProjectSettings : TabelScriptableObject
     {
-        public static ProjectSettings Mine => ProjectSettingsTabelResurse.Items[0];
+        public static ProjectSettings Mine => _Mine ??= ProjectSettingsTabelResurse.Items[0];
+        private static ProjectSettings _Mine;
         public override string Name => "";
     }
 }

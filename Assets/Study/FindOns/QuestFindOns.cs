@@ -24,14 +24,11 @@ namespace Study.FindOns
 
     public class QuestFindOns : Quest, IQuestStarterWithWordList
     {
+        public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestFindOnsPrefab;
         public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.AddScoreDialog;
-
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.RemoveScoreDialog;
-
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.AddScoreWord;
-
         public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.RemoveScoreWord;
-
         public List<Word> NeedWords
         {
             get
@@ -45,18 +42,10 @@ namespace Study.FindOns
             }
         }
         public List<Word> _NeedWords;
-
         public int MinimalCount => 8;
         public void CreatQuest(List<Word> Words)
         {
             NeedWords = Words;
-        }
-
-
-        private protected override void Start()
-        {
-            base.Start();
-            OnFineshed += ()=> Instantiate(ProjectSettings.ProjectSettings.Mine.QuestFindOnsPrefab);
         }
     }
 }

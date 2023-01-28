@@ -5,7 +5,7 @@ using UnityEngine;
 using TMPro;
 namespace Servises
 {
-    public class ColorChanger : MonoBehaviour
+    public class ColorChanger : OptimizedBehaver
     {
         public List<Image> Images;
         public List<TMP_Text> Texts;
@@ -16,5 +16,7 @@ namespace Servises
             for (int i = 0; i < Texts.Count; i++)
                 if (Texts[i] != null) Texts[i].color = color;
         }
+
+
     }
 }

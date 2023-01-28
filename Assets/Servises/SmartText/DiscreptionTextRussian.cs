@@ -3,10 +3,10 @@ namespace Servises.SmartText
 {
     public class DiscreptionTextRussian : ContentText
     {
-        public override void OnValueChanged(Content Object)
+        public override string GetValue(Content Object)
         {
-            if (Object == null || Object is not IDiscreption) MyTextContent = "";
-            else MyTextContent = (Object as IDiscreption).RusianDiscretion;
+            if (Object == null || Object is not IDiscreption) return "";
+            else return (Object as IDiscreption).RusianDiscretion;
         }
     }
 }

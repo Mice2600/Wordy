@@ -3,10 +3,10 @@ namespace Servises.SmartText
 {
     public class ContentScore : ContentText
     {
-        public override void OnValueChanged(Content Object)
+        public override string GetValue(Content Object)
         {
-            if (Object == null) MyTextContent = "";
-            else MyTextContent = ((int)Object.Score).ToString();
+            if (Object == null) return "";
+            else return ((int)Object.Score).ToString();
         }
     }
 }

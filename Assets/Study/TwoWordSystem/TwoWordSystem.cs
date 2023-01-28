@@ -84,8 +84,9 @@ namespace Study.TwoWordSystem
                     IsThereSomeOneTrue++;
                 }
             }
+
             if (Words.Count > 0 && (IsThereSomeOneTrue > 4 || (Random.Range(0, 100) > 50 && IsThereSomeOneTrue > 3))) TryRandom();
-            else TryFind();
+            else  TryFind();
 
             void TryRandom()
             {

@@ -21,6 +21,7 @@ namespace Study.TwoWordSystem
 {
     public class QuestTwoWord : Quest , IQuestStarterWithWordList
     {
+        public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemPrefab;
         public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.AddScoreDialog;
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.AddScoreWord;
@@ -42,15 +43,11 @@ namespace Study.TwoWordSystem
         public List<Word> _NeedWords;
 
         public int MinimalCount => 15;
+
+
         public void CreatQuest(List<Word> Words)
         {
             NeedWords = Words;
-        }
-
-        private protected override void Start()
-        {
-            base.Start();
-            OnFineshed += () => Instantiate(ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemPrefab);
         }
     }
 }

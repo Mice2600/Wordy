@@ -23,6 +23,36 @@ MonoBehaviour:
     SerializationNodes: []
   DefalultDialogs: {fileID: 4900000, guid: 5b63242016a4a9449a7cad31eb581e04, type: 3}
   DefalultWords: {fileID: 4900000, guid: 86a072d49000d7d45929cb2f9f156d77, type: 3}
+  ContentLoopColors:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 0, a: 1}
+    key1: {r: 1, g: 0, b: 0, a: 1}
+    key2: {r: 1, g: 0.003921577, b: 1, a: 0}
+    key3: {r: 0, g: 0, b: 1, a: 0}
+    key4: {r: 0, g: 1, b: 1, a: 0}
+    key5: {r: 0, g: 1, b: 0.018627405, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 10601
+    ctime1: 21395
+    ctime2: 33153
+    ctime3: 44911
+    ctime4: 56090
+    ctime5: 65535
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: 0
+    m_NumColorKeys: 6
+    m_NumAlphaKeys: 2
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
   DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
   DiscretionViwe: {fileID: 8496439981645526867, guid: 349a96abbad001a4489ff5968d91b17f, type: 3}
@@ -30,8 +60,8 @@ MonoBehaviour:
   QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
   QuestBuildDialogPrefabSceneName: BuildDialog
   QuestBuildDialogScorevalumes:
-    AddScoreDialog: 5
-    RemoveScoreDialog: -10
+    AddScoreDialog: 7
+    RemoveScoreDialog: -2
     AddScoreWord: 3
     RemoveScoreWord: -1
   QuestFindOnsPrefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
@@ -39,12 +69,12 @@ MonoBehaviour:
   QuestFindOnsScorevalumes:
     AddScoreDialog: 2
     RemoveScoreDialog: -1
-    AddScoreWord: 2
+    AddScoreWord: 5
     RemoveScoreWord: -1
   QuestTwoWordSystemPrefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
   QuestTwoWordSystemSceneName: 
   QuestTwoWordSystemValumes:
     AddScoreDialog: 1
     RemoveScoreDialog: -1
-    AddScoreWord: 1
+    AddScoreWord: 5
     RemoveScoreWord: -1

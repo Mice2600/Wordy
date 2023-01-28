@@ -16,8 +16,7 @@ namespace Servises.BaseList
         protected private GameObject contentPrefab;
         [SerializeField]
         protected private Transform contentPattent;
-        [SerializeField]
-        protected private Gradient Colors;
+        
         public abstract List<T> Contents { get; }
         private protected abstract int IndexOf(Content content);
         private protected virtual void Start()
@@ -42,7 +41,6 @@ namespace Servises.BaseList
                 GameObject NM = Instantiate(contentPrefab, contentPattent);
                 Content NewContent = Contents[Index];
                 NM.GetComponent<ContentObject>().Content = NewContent;
-                NM.GetComponent<ColorChanger>().SetColor(GetColor(Index, NewContent.Active));
 
 
             }
@@ -72,7 +70,6 @@ namespace Servises.BaseList
             if (LastIndex + 1 >= Contents.Count) return false;
             Content NewContent = Contents[LastIndex + 1];
             contentPattent.GetChild(0).GetComponent<ContentObject>().Content = NewContent;
-            contentPattent.GetChild(0).GetComponent<ColorChanger>().SetColor(GetColor(LastIndex + 1, NewContent.Active));
             return true;
         }
         public virtual bool TrayUp()
@@ -84,17 +81,8 @@ namespace Servises.BaseList
             Content NewContent = Contents[FirstIndex - 1];
 
             contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>().Content = NewContent;
-            contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ColorChanger>().SetColor(GetColor(FirstIndex - 1, NewContent.Active));
             return true;
         }
-        public Color GetColor(int index, bool IsActive)
-        {
-            index = Mathf.Abs(index);
-            int levv = (index / 10);
-            index -= (levv * 10);
-            Color color = Colors.Evaluate((float)index / 10f);
-            if (IsActive) return color;
-            return Color.Lerp(color, Color.black, .3f);
-        }
+        
     }
 }

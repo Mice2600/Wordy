@@ -16,8 +16,6 @@ namespace Base
         {
 
             T[] DaaaTaa = new List<T>(JsonHelper.FromJson<T>(PlayerPrefs.GetString(DataID))).ToArray();
-            Debug.Log(DaaaTaa[0].EnglishSource);
-            Array.Sort(DaaaTaa);//
             if (DaaaTaa.Length > 1) Array.Sort(DaaaTaa);
             for (int i = 0; i < DaaaTaa.Length; i++)
             {

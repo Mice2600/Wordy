@@ -23,6 +23,7 @@ namespace Study.BuildDialog
 {
     public class QuestBuildDialog : Quest, IQuestStarterWithDialogList
     {
+        public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogPrefab;
         public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.AddScoreDialog;
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.AddScoreWord;
@@ -43,15 +44,11 @@ namespace Study.BuildDialog
         public List<Dialog> _NeedDialogs;
 
         public int MinimalCount => 2;
+
+
         public void CreatQuest(List<Dialog> dialogs)
         {
             NeedDialogs = dialogs;
-        }
-
-        private protected override void Start()
-        {
-            base.Start();
-            OnFineshed += () => Instantiate(ProjectSettings.ProjectSettings.Mine.QuestBuildDialogPrefab);
         }
     }
     
