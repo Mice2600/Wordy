@@ -18,6 +18,7 @@ namespace Servises
             if (s == null) return;
             if (s.Content is Word) GetComponent<Button>().onClick.AddListener(() => { DiscretionViwe.ShowWord((s.Content as Word)); });
             else if (s.Content is Dialog) GetComponent<Button>().onClick.AddListener(() => { DiscretionViwe.ShowDialog((s.Content as Dialog)); });
+            else if (s.Content is Irregular) GetComponent<Button>().onClick.AddListener(() => { DiscretionViwe.ShowIrregular((s.Content as Irregular)); });
         }
     }
 }

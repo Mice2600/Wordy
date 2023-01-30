@@ -104,5 +104,6 @@ namespace WordCreator.WordGenerator
             WordBase.Wordgs.Add((Content.GetComponent<ContentObject>().Content as Word));
         }
 
+        protected override TList<Word> SearchComand(TList<Word> AllContents, string SearchString) => Servises.Search.SearchAll<Word>(AllContents, SearchingString);
     }
 }

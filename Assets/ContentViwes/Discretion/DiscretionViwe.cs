@@ -17,6 +17,8 @@ namespace ProjectSettings
         public GameObject DiscretionViwe;
         [Required]
         public GameObject DiscretionDialog;
+        [Required]
+        public GameObject DiscretionIrregular;
     }
 }
 public class DiscretionViwe : ContentObject
@@ -34,8 +36,13 @@ public class DiscretionViwe : ContentObject
     {
         DiscretionViwe N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionDialog, null).GetComponentInChildren<DiscretionViwe>();
         N.Content = dialog;
-        N.OnClose = OnClose;
-        
+        N.OnClose = OnClose;   
+    }
+    public static void ShowIrregular(Irregular dialog, System.Action OnClose = null)
+    {
+        DiscretionViwe N = Instantiate(ProjectSettings.ProjectSettings.Mine.DiscretionIrregular, null).GetComponentInChildren<DiscretionViwe>();
+        N.Content = dialog;
+        N.OnClose = OnClose;   
     }
     public void DestroyUrself() 
     {

@@ -64,12 +64,13 @@ namespace Servises.BaseList
             if (string.IsNullOrEmpty(SearchingString)) { SerchedContents = null; }
             else
             {
+                SerchedContents = SearchComand(AllContents, SearchingString);
                 SerchedContents = Servises.Search.SearchAll<T>(AllContents, SearchingString);
                 if (OnlyActive) SerchedContents = new TList<T>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
             }
             Lode(0);
         }
-
+        protected abstract TList<T> SearchComand(TList<T> AllContents, string SearchString);
     }
 
 }

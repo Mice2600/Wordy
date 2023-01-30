@@ -14,7 +14,7 @@ namespace Base
     {
         public DataList()
         {
-
+            if (JsonHelper.FromJson<T>(PlayerPrefs.GetString(DataID)) == null) return;
             T[] DaaaTaa = new List<T>(JsonHelper.FromJson<T>(PlayerPrefs.GetString(DataID))).ToArray();
             if (DaaaTaa.Length > 1) Array.Sort(DaaaTaa);
             for (int i = 0; i < DaaaTaa.Length; i++)

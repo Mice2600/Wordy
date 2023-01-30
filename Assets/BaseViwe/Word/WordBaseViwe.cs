@@ -24,5 +24,6 @@ namespace BaseViwe.WordViwe
             FindObjectOfType<DiscretionViwe>()?.DestroyUrself();
             Refresh();
         }
+        protected override TList<Word> SearchComand(TList<Word> AllContents, string SearchString) => Servises.Search.SearchAll<Word>(AllContents, SearchingString);
     }
 }

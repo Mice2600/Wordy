@@ -13,9 +13,10 @@ namespace ProjectSettings
 }
 public class ColorContent : OptimizedBehaver, IQueueUpdate
 {
-    public List<MaskableGraphic> Arts;
+    [SerializeField]
+    private List<MaskableGraphic> Arts;
     private ContentObject ContentObject;
-    public Gradient ContentLoopColors;
+    private Gradient ContentLoopColors;
     private protected override void Start()
     {
         base.Start();
@@ -33,6 +34,8 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
             Index = WordBase.Wordgs.IndexOf(ContentObject.Content as Word);
         else if (ContentObject.Content is Dialog) 
             Index = DialogBase.Dialogs.IndexOf(ContentObject.Content as Dialog);
+        else if (ContentObject.Content is Irregular)
+            Index = IrregularBase.Irregulars.IndexOf(ContentObject.Content as Irregular);
         else return;
         Color NC = GetColor(Index, ContentObject.Content.Active);
         for (int i = 0; i < Arts.Count; i++) 
