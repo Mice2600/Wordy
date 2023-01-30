@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WordCreator/WordGenerator/WordGenerator.unity
     guid: 428843d4dc54b6c49821959c53e082e1
+  - enabled: 1
+    path: Assets/BaseViwe/Irregular/IrregularBaseViwe.unity
+    guid: c7a5c63af6077ed47a8ff5a931c78f27
   m_configObjects: {}

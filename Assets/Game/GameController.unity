@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57282a9ecc075344f812a1f904e8f9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: DialogBaseViwe
+  SceneName: IrregularBaseViwe
 --- !u!114 &288460014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,10 +1918,10 @@ RectTransform:
   - {fileID: 169325349}
   - {fileID: 461770232}
   - {fileID: 456076359}
+  - {fileID: 288460012}
   - {fileID: 876076214}
   - {fileID: 1943014945}
   - {fileID: 166121304}
-  - {fileID: 288460012}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

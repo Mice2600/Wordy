@@ -8,7 +8,6 @@ using Sirenix.OdinInspector;
 using SystemBox;
 using System.IO;
 using System.Linq;
-using static UnityEditor.ShaderData;
 
 public class IrregularBase : DataList<Irregular>
 {

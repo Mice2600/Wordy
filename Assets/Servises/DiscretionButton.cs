@@ -1,11 +1,8 @@
 using Base;
 using Base.Dialog;
 using Base.Word;
-using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.WSA;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 namespace Servises
 {
