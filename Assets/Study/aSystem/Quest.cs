@@ -76,6 +76,10 @@ namespace Study.aSystem
     {
         public void CreatQuest(Dialog dialog);
     }
+    public interface IQuestStarterWithIrregular
+    {
+        public void CreatQuest(Irregular Irregular);
+    }
     public interface IQuestStarterWithWordList
     {
         public int MinimalCount { get; }
@@ -85,5 +89,10 @@ namespace Study.aSystem
     {
         public int MinimalCount { get; }
         public void CreatQuest(List<Dialog> dialogs);
+    }
+    public interface IQuestStarterWithIrregularList
+    {
+        public int MinimalCount { get; }
+        public void CreatQuest(List<Irregular> Irregulars);
     }
 }

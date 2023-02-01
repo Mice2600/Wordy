@@ -51,6 +51,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
@@ -78,4 +79,11 @@ MonoBehaviour:
     AddScoreDialog: 1
     RemoveScoreDialog: -1
     AddScoreWord: 5
+    RemoveScoreWord: -1
+  QuestWriteWordPrefab: {fileID: 9020605442907867151, guid: d42e49d95e731f244bcc75a1fd93e322, type: 3}
+  QuestWriteWordName: WriteWord
+  QuestWriteWordValumes:
+    AddScoreDialog: 0
+    RemoveScoreDialog: 0
+    AddScoreWord: 10
     RemoveScoreWord: -1

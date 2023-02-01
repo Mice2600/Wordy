@@ -32,7 +32,7 @@ namespace Study.TwoWordSystem
         {
             get
             {
-                if (_NeedWords == null || _NeedWords.Count < 2) _NeedWords = WordBase.Wordgs.GetContnetList(MinimalCount + Random.Range(0, 14));
+                if (_NeedWords == null || _NeedWords.Count < MinimalCount) _NeedWords = WordBase.Wordgs.GetContnetList(MinimalCount + Random.Range(0, 14));
                 return _NeedWords;
             }
             set
