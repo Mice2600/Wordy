@@ -51,7 +51,6 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
@@ -66,6 +65,8 @@ MonoBehaviour:
     RemoveScoreDialog: -2
     AddScoreWord: 3
     RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestFindOnsPrefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
   QuestFindOnsSceneName: 
   QuestFindOnsScorevalumes:
@@ -73,6 +74,8 @@ MonoBehaviour:
     RemoveScoreDialog: -1
     AddScoreWord: 5
     RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestTwoWordSystemPrefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
   QuestTwoWordSystemSceneName: 
   QuestTwoWordSystemValumes:
@@ -80,6 +83,17 @@ MonoBehaviour:
     RemoveScoreDialog: -1
     AddScoreWord: 5
     RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
+  QuestWriteIlrregularPrefab: {fileID: 3935304050576171708, guid: 812647b1a6e179f4a8eb0ad542120f4e, type: 3}
+  QuestWriteIlrregularName: WriteIrregular
+  QuestWriteIlrregularValumes:
+    AddScoreDialog: 0
+    RemoveScoreDialog: 0
+    AddScoreWord: 0
+    RemoveScoreWord: 0
+    AddScoreIrregular: 5
+    RemoveScoreIrregular: -1
   QuestWriteWordPrefab: {fileID: 9020605442907867151, guid: d42e49d95e731f244bcc75a1fd93e322, type: 3}
   QuestWriteWordName: WriteWord
   QuestWriteWordValumes:
@@ -87,3 +101,5 @@ MonoBehaviour:
     RemoveScoreDialog: 0
     AddScoreWord: 10
     RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0

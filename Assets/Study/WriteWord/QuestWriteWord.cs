@@ -24,7 +24,9 @@ public class QuestWriteWord : Quest, IQuestStarterWithWord
     public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.RemoveScoreDialog;
     public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.AddScoreWord;
     public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.RemoveScoreWord;
+    public override int AddScoreIrregular => throw new System.NotImplementedException();
 
+    public override int RemoveScoreIrregular => throw new System.NotImplementedException();
 
     public Word NeedWord
     {
@@ -41,6 +43,8 @@ public class QuestWriteWord : Quest, IQuestStarterWithWord
     private Word _NeedWord;
 
     public int MinimalCount => 1;
+
+    
 
     public void CreatQuest(Word word)
     {

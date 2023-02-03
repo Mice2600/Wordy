@@ -1,53 +1,51 @@
-using Base.Word;
 using Sirenix.OdinInspector;
-using System.Collections;
 using System.Collections.Generic;
+using SystemBox;
 using UnityEngine;
 
 public class WriteIrregularSystem : MonoBehaviour
 {
     [Required]
     public QuestWriteIrregular questWriteWord;
+    [Required]
+    public Transform ContentParrent;
+    [Required]
     public GameObject ContentPrefab;
-    
-
+    public GameObject WI_End_ViwePrefab;
     private void Start()
     {
-    
+        ContentParrent.ClearChilds();
+        int RandomCall = Random.Range(2, questWriteWord.MinimalCount);
+        TList<Irregular> irregulars = questWriteWord.NeedIrregulars;
+        for (int i = 0; i < RandomCall; i++)
+            Instantiate(ContentPrefab, ContentParrent).GetComponent<WI_Conttent>().Content = irregulars.RemoveRandomItem();
     }
-    public bool TrayToComplate(string MadenWord)
+    public bool TrayToComplate()
     {
-        return false;
-        /*
-         
-        if (Content.EnglishSource == MadenWord)
+        WI_Conttent[] Lis = ContentParrent.GetComponentsInChildren<WI_Conttent>();
+        List<(Content content, bool isCurrect, string Answer, int Score)> Contents = new List<(Content content, bool isCurrect, string Answer, int Score)>();
+        for (int i = 0; i < Lis.Length; i++)
         {
-            StartCoroutine(WaitANdTrayAgane());
-            return true;
-            IEnumerator WaitANdTrayAgane()
+            if (Lis[i].IsEvrethingCurrect)
             {
-                yield return new WaitForSeconds(1.5f);
-                questWriteWord.OnWordWin?.Invoke(Content as Word);
-                questWriteWord.OnGameWin?.Invoke();
-                DiscretionCorrectContent A = DiscretionCorrectContent.ShowCorrectContent(WordBase.Wordgs[Content as Word], questWriteWord.AddScoreWord, OnFinsht);
+                questWriteWord.OnIrregularWin?.Invoke(Lis[i].Content as Irregular);
+                Contents.Add((Lis[i].Content, true, "", questWriteWord.AddScoreIrregular));
+            }
+            else
+            {
+                questWriteWord.OnIrregularLost?.Invoke(Lis[i].Content as Irregular);
+                Contents.Add((Lis[i].Content, false, Lis[i].WrotenText, questWriteWord.RemoveScoreIrregular));
             }
         }
+        Instantiate(WI_End_ViwePrefab).GetComponent<WI_End_Viwe>().Set(Contents, onFinsh);
+        questWriteWord.OnGameWin?.Invoke();
 
-
-        questWriteWord.OnWordLost?.Invoke(Content as Word);
-        questWriteWord.OnGameLost?.Invoke();
-        DiscretionIncorrectContent D = DiscretionIncorrectContent.ShowIncorrectContent(WordBase.Wordgs[Content as Word], new Word(MadenWord, "", 0, false, "", ""), questWriteWord.RemoveScoreWord, OnFinsht);
-        D.AddChangin(WordBase.Wordgs[Content as Word], questWriteWord.RemoveScoreWord);
 
         return false;
-
-
-        void OnFinsht()
+        void onFinsh()
         {
             Destroy(gameObject);
             questWriteWord.OnFineshed();
-        } 
-         */
-
+        }
     }
 }

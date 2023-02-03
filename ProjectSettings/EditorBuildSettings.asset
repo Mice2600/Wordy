@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/BaseViwe/Dialog/DialogBaseViwe.unity
     guid: 58d0d10c7107b8043bf22bcf06d40f0f
   - enabled: 1
+    path: Assets/Study/WriteWord/WriteWord.unity
+    guid: b5ebbcd4faf7c3f4cace0ca145d06295
+  - enabled: 1
     path: Assets/WordCreator/DialogCreator/DialogCreator.unity
     guid: d25fbd4249ff63f4a87765cfaebe68b3
   - enabled: 1
@@ -44,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BaseViwe/Irregular/IrregularBaseViwe.unity
     guid: c7a5c63af6077ed47a8ff5a931c78f27
+  - enabled: 1
+    path: Assets/Study/WriteIrregular/WriteIrregular.unity
+    guid: b760fa6f43c0be94b83c9771accdaf63
   m_configObjects: {}

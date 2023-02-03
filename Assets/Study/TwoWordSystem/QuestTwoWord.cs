@@ -26,7 +26,9 @@ namespace Study.TwoWordSystem
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.AddScoreWord;
         public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.RemoveScoreWord;
+        public override int AddScoreIrregular => throw new System.NotImplementedException();
 
+        public override int RemoveScoreIrregular => throw new System.NotImplementedException();
 
         public List<Word> NeedWords
         {
@@ -44,6 +46,7 @@ namespace Study.TwoWordSystem
 
         public int MinimalCount => 15;
 
+        
 
         public void CreatQuest(List<Word> Words)
         {

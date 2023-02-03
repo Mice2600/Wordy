@@ -16,6 +16,8 @@ namespace ProjectSettings
         public int RemoveScoreDialog;
         public int AddScoreWord;
         public int RemoveScoreWord;
+        public int AddScoreIrregular;
+        public int RemoveScoreIrregular;
     }
 
 }
@@ -29,14 +31,21 @@ namespace Study.aSystem
         public abstract int RemoveScoreDialog { get; }
         public abstract int AddScoreWord { get; }
         public abstract int RemoveScoreWord { get; }
+        public abstract int AddScoreIrregular { get; }
+        public abstract int RemoveScoreIrregular { get; }
 
         public System.Action OnGameWin;
         public System.Action OnGameLost;
         public System.Action OnFineshed;
+
         public System.Action<Word> OnWordWin;
         public System.Action<Word> OnWordLost;
         public System.Action<Dialog> OnDialogWin;
         public System.Action<Dialog> OnDialogLost;
+        
+        public System.Action<Irregular> OnIrregularWin;
+        public System.Action<Irregular> OnIrregularLost;
+
         private protected virtual void Start()
         {
             OnWordWin += (W) =>
@@ -58,6 +67,15 @@ namespace Study.aSystem
                 DialogBase.Dialogs[D].Score -= Mathf.Abs(RemoveScoreDialog);
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordLost.Invoke(Nfound));
             };
+            OnIrregularWin += (W) =>
+            {
+                IrregularBase.Irregulars[W].Score += Mathf.Abs(AddScoreIrregular);
+            };
+            OnIrregularLost += (W) =>
+            {
+                IrregularBase.Irregulars[W].Score -= Mathf.Abs(RemoveScoreIrregular);
+            };
+
             OnFineshed += () => Destroy(gameObject);
             //OnFineshed += () => Instantiate(QuestPrefab);
         }

@@ -20,11 +20,13 @@ namespace ProjectSettings
 
 public class QuestWriteIrregular : Quest, IQuestStarterWithIrregularList
 {
-    public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestWriteWordPrefab;
-    public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.AddScoreDialog;
-    public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.RemoveScoreDialog;
-    public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.AddScoreWord;
-    public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.RemoveScoreWord;
+    public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularPrefab;
+    public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.AddScoreDialog;
+    public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.RemoveScoreDialog;
+    public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.AddScoreWord;
+    public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.RemoveScoreWord;
+    public override int AddScoreIrregular => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.AddScoreIrregular;
+    public override int RemoveScoreIrregular => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.RemoveScoreIrregular;
     public List<Irregular> NeedIrregulars
     {
         get
@@ -36,5 +38,8 @@ public class QuestWriteIrregular : Quest, IQuestStarterWithIrregularList
     }
     private List<Irregular> _NeedIrregulars;
     public int MinimalCount => 8;
+
+    
+
     public void CreatQuest(List<Irregular> Irregulars) => NeedIrregulars = Irregulars;
 }

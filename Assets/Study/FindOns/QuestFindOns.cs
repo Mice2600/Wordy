@@ -29,6 +29,9 @@ namespace Study.FindOns
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.AddScoreWord;
         public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.RemoveScoreWord;
+        public override int AddScoreIrregular => throw new System.NotImplementedException();
+
+        public override int RemoveScoreIrregular => throw new System.NotImplementedException();
         public List<Word> NeedWords
         {
             get
@@ -43,6 +46,9 @@ namespace Study.FindOns
         }
         public List<Word> _NeedWords;
         public int MinimalCount => 8;
+
+        
+
         public void CreatQuest(List<Word> Words)
         {
             NeedWords = Words;

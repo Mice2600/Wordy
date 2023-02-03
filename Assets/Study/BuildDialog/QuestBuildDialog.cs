@@ -28,7 +28,9 @@ namespace Study.BuildDialog
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.AddScoreWord;
         public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.RemoveScoreWord;
+        public override int AddScoreIrregular => throw new System.NotImplementedException();
 
+        public override int RemoveScoreIrregular => throw new System.NotImplementedException();
         public List<Dialog> NeedDialogs 
         {
             get 
@@ -45,6 +47,7 @@ namespace Study.BuildDialog
 
         public int MinimalCount => 2;
 
+        
 
         public void CreatQuest(List<Dialog> dialogs)
         {
