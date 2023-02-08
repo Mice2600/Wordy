@@ -51,6 +51,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
@@ -103,3 +104,5 @@ MonoBehaviour:
     RemoveScoreWord: -1
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  DialogChanger: {fileID: 4217812245494058138, guid: 88b99c5c5aa01764eb3e97359707eede, type: 3}
+  WordChanger: {fileID: 4605639253059519219, guid: 94aafd8898a84d34cbe34848be0564ff, type: 3}

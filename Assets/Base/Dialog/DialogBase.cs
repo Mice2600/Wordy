@@ -63,6 +63,14 @@ namespace ProjectSettings
 
 
 
+        public void CC() 
+        {
+            string All = "";
+            if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Dialog.txt"))
+                All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Dialog.txt");
+            TList<Dialog> AllList = JsonHelper.FromJson<Dialog>(All);
+            Debug.Log(AllList.Count);
+        }
         public void AddDialog(TList<Dialog> Dialogs)
         {
 #if UNITY_EDITOR
