@@ -84,7 +84,11 @@ namespace ProjectSettings
                 New.AddIfDirty(a);
             }
             Debug.Log(New.Count);
-            System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Words.txt", JsonHelper.ToJson(New.ToArray()));
+
+            string SD = JsonHelper.ToJson(New.ToArray());
+            SD = SD.Replace("{", "\n{");
+            SD = SD.Replace("},", "\n},");
+            System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Words.txt", SD);
             DefalultWords = UnityEngine.Resources.Load("Default Words", typeof(TextAsset)) as TextAsset;
         }
 #endif

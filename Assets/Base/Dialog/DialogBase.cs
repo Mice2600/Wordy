@@ -2,9 +2,11 @@ using Base.Dialog;
 using Base.Word;
 using Servises;
 using Sirenix.OdinInspector;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using SystemBox;
+using Traonsletor;
 using UnityEngine;
 
 namespace Base.Dialog
@@ -49,7 +51,27 @@ namespace Base.Dialog
             ProjectSettings.ProjectSettings.Mine.AddDialog(Dialogs);
         }
 
+        public static void AddAll(string D) 
+        {
+            string[] DD = D.Split(" format_quote ");
+            Debug.Log(DD.Length);
+            MonoBehaviour MM = GameObject.FindObjectOfType<MonoBehaviour>();
+            for (int i = 0; i < DD.Length; i++) TTR(DD[i]);
 
+
+            void TTR(string ID)
+            {
+                MM.StartCoroutine(Translator.Process("en", "ru", ID, onWordTransleted));
+                
+                void onWordTransleted(string tt)
+                {
+                    Dialog dND = new Dialog(ID, tt, 0, false);
+                    if (DialogBase.Dialogs.Contains(dND)) return;
+                    Debug.Log(ID);
+                    DialogBase.Dialogs.Add(dND);
+                }
+            }
+        }
         
     }
 }
@@ -97,7 +119,10 @@ namespace ProjectSettings
                 New.AddIfDirty(a);
             }
             Debug.Log(New.Count);
-            System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Dialog.txt", JsonHelper.ToJson(New.ToArray()));
+            string SD = JsonHelper.ToJson(New.ToArray());
+            SD = SD.Replace("{", "\n{");
+            SD = SD.Replace("},", "\n},");
+            System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Dialog.txt", SD);
             DefalultDialogs = UnityEngine.Resources.Load("Default Dialog", typeof(TextAsset)) as TextAsset;
 #endif
         }
