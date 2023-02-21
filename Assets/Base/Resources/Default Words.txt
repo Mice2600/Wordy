@@ -4636,4 +4636,462 @@
 },
 {"EnglishSource":"WALLET","RussianSource":"кошелек","Score":0.0,"Active":false,"EnglishDiscretion":"a pocket-sized, flat, folding holder for money and plastic cards.","RusianDiscretion":"карманный плоский складной держатель для денег и пластиковых карт."
 },
-{"EnglishSource":"WEDDING","RussianSource":"свадьба","Score":0.0,"Active":false,"EnglishDiscretion":"a marriage ceremony, especially considered as including the associated celebrations.","RusianDiscretion":"церемония бракосочетания, особенно рассматриваемая как включающая связанные с ней торжества."}]}
+{"EnglishSource":"WEDDING","RussianSource":"свадьба","Score":0.0,"Active":false,"EnglishDiscretion":"a marriage ceremony, especially considered as including the associated celebrations.","RusianDiscretion":"церемония бракосочетания, особенно рассматриваемая как включающая связанные с ней торжества."
+},
+{"EnglishSource":"ACCENT","RussianSource":"акцент","Score":0.0,"Active":false,"EnglishDiscretion":"a distinctive mode of pronunciation of a language, especially one associated with a particular nation, locality, or social class","RusianDiscretion":"особый способ произношения языка, особенно связанный с определенной нацией, местностью или социальным классом"
+},
+{"EnglishSource":"ACIDIC","RussianSource":"кислый","Score":0.0,"Active":false,"EnglishDiscretion":"having the properties of an acid, or containing acid; having a pH below 7","RusianDiscretion":"обладающие свойствами кислоты или содержащие кислоту; "
+},
+{"EnglishSource":"AIR-CONDITIONED","RussianSource":"с кондиционером","Score":0.0,"Active":false,"EnglishDiscretion":"(of a building or vehicle) provided with air conditioning","RusianDiscretion":"(здания или транспортного средства), оснащенного кондиционером"
+},
+{"EnglishSource":"AIR-CONDITIONER","RussianSource":"кондиционер","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"APP","RussianSource":"приложение","Score":0.0,"Active":false,"EnglishDiscretion":"an application, especially as downloaded by a user to a mobile device","RusianDiscretion":"приложение, особенно загруженное пользователем на мобильное устройство"
+},
+{"EnglishSource":"APPLAUD","RussianSource":"аплодировать","Score":0.0,"Active":false,"EnglishDiscretion":"show approval or praise by clapping","RusianDiscretion":"показать одобрение или похвалу, хлопая в ладоши"
+},
+{"EnglishSource":"ART","RussianSource":"искусство","Score":0.0,"Active":false,"EnglishDiscretion":"the expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power","RusianDiscretion":"выражение или применение человеческого творческого мастерства и воображения, как правило, в визуальной форме, такой как живопись или скульптура, создание произведений, которые ценятся в первую очередь за их красоту или эмоциональную силу"
+},
+{"EnglishSource":"BAN","RussianSource":"запрет","Score":0.0,"Active":false,"EnglishDiscretion":"officially or legally prohibit","RusianDiscretion":"официально или юридически запрещать"
+},
+{"EnglishSource":"BAWDY","RussianSource":"непристойный","Score":0.0,"Active":false,"EnglishDiscretion":"dealing with sexual matters in a comical way; humorously indecent","RusianDiscretion":"смешное отношение к сексуальным вопросам; "
+},
+{"EnglishSource":"BEEF","RussianSource":"говядина","Score":0.0,"Active":false,"EnglishDiscretion":"the flesh of a cow, bull, or ox, used as food","RusianDiscretion":"мясо коровы, быка или быка, употребляемое в пищу"
+},
+{"EnglishSource":"BELT","RussianSource":"пояс","Score":0.0,"Active":false,"EnglishDiscretion":"a strip of leather or other material worn around the waist or across the chest, especially in order to support clothes or carry weapons.\r\n","RusianDiscretion":""
+},
+{"EnglishSource":"BLAND","RussianSource":"мягкий","Score":0.0,"Active":false,"EnglishDiscretion":"lacking strong features or characteristics and therefore uninteresting","RusianDiscretion":"отсутствие сильных черт или характеристик и, следовательно, неинтересность"
+},
+{"EnglishSource":"BOLDNESS","RussianSource":"смелость","Score":0.0,"Active":false,"EnglishDiscretion":"willingness to take risks and act innovatively; confidence or courage","RusianDiscretion":"готовность идти на риск и действовать новаторски; "
+},
+{"EnglishSource":"BOWL","RussianSource":"чаша","Score":0.0,"Active":false,"EnglishDiscretion":"a round, deep dish or basin used for food or liquid","RusianDiscretion":"круглая глубокая тарелка или таз, используемая для еды или жидкости"
+},
+{"EnglishSource":"BUCK","RussianSource":"доллар","Score":0.0,"Active":false,"EnglishDiscretion":"the male of some horned animals, especially the fallow deer, roe deer, reindeer, and antelopes","RusianDiscretion":"самец некоторых рогатых животных, особенно лани, косули, северного оленя и антилопы"
+},
+{"EnglishSource":"BUCKET","RussianSource":"ведро","Score":0.0,"Active":false,"EnglishDiscretion":"a roughly cylindrical open container, typically made of metal or plastic, with a handle, used to hold and carry liquids or other material","RusianDiscretion":"примерно цилиндрический открытый контейнер, обычно сделанный из металла или пластика, с ручкой, используемый для хранения и переноски жидкостей или других материалов."
+},
+{"EnglishSource":"BUS","RussianSource":"автобус","Score":0.0,"Active":false,"EnglishDiscretion":"a large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare","RusianDiscretion":"большой автомобиль, перевозящий пассажиров по дороге, обычно обслуживающий общественность по фиксированному маршруту и ​​за плату"
+},
+{"EnglishSource":"CAMP","RussianSource":"лагерь","Score":0.0,"Active":false,"EnglishDiscretion":"a place with temporary accommodations of huts, tents, or other structures, typically used by soldiers, refugees, prisoners, or travelers","RusianDiscretion":"место с временным размещением хижин, палаток или других построек, обычно используемое солдатами, беженцами, заключенными или путешественниками"
+},
+{"EnglishSource":"CAMPING","RussianSource":"Отдых на природе","Score":0.0,"Active":false,"EnglishDiscretion":"the activity of spending a vacation living in a camp, tent, or camper","RusianDiscretion":"деятельность по проведению отпуска в лагере, палатке или кемпере"
+},
+{"EnglishSource":"CAPTIVATE","RussianSource":"пленять","Score":0.0,"Active":false,"EnglishDiscretion":"attract and hold the interest and attention of; charm","RusianDiscretion":"привлекать и удерживать интерес и внимание; "
+},
+{"EnglishSource":"CAPTIVATING","RussianSource":"очаровательный","Score":0.0,"Active":false,"EnglishDiscretion":"capable of attracting and holding interest; charming.\r\na captivating smile\r\n","RusianDiscretion":"способный привлекать и удерживать интерес; "
+},
+{"EnglishSource":"CASTLE","RussianSource":"замок","Score":0.0,"Active":false,"EnglishDiscretion":"a large building, typically of the medieval period, fortified against attack with thick walls, battlements, towers, and in many cases a moat","RusianDiscretion":"большое здание, типично средневекового периода, укрепленное от нападения толстыми стенами, зубчатыми стенами, башнями и, во многих случаях, рвом"
+},
+{"EnglishSource":"CHOP","RussianSource":"нарезать","Score":0.0,"Active":false,"EnglishDiscretion":"cut (something) into pieces with repeated sharp blows of an axe or knife","RusianDiscretion":"разрубать (что-либо) на куски многократными резкими ударами топора или ножа"
+},
+{"EnglishSource":"CLASSROOM","RussianSource":"класс","Score":0.0,"Active":false,"EnglishDiscretion":"a room, typically in a school, in which a class of students is taught.","RusianDiscretion":"комната, обычно в школе, в которой обучается класс учеников."
+},
+{"EnglishSource":"CLIMATE","RussianSource":"климат","Score":0.0,"Active":false,"EnglishDiscretion":"the weather conditions prevailing in an area in general or over a long period","RusianDiscretion":"погодные условия, преобладающие в районе в целом или в течение длительного периода"
+},
+{"EnglishSource":"CLIP","RussianSource":"клип","Score":0.0,"Active":false,"EnglishDiscretion":"a device, typically flexible or worked by a spring, for holding an object or objects together or in place","RusianDiscretion":"устройство, обычно гибкое или приводимое в действие пружиной, для удержания объекта или объектов вместе или на месте"
+},
+{"EnglishSource":"COLOURFUL","RussianSource":"красочный","Score":0.0,"Active":false,"EnglishDiscretion":"having much or varied color; bright","RusianDiscretion":"имеющий много или разнообразный цвет; "
+},
+{"EnglishSource":"COMPASS","RussianSource":"компас","Score":0.0,"Active":false,"EnglishDiscretion":"an instrument containing a magnetized pointer which shows the direction of magnetic north and bearings from it","RusianDiscretion":"инструмент, содержащий намагниченный указатель, показывающий направление магнитного севера и пеленг от него"
+},
+{"EnglishSource":"CONFIDE","RussianSource":"доверять","Score":0.0,"Active":false,"EnglishDiscretion":"tell someone about a secret or private matter while trusting them not to repeat it to others.","RusianDiscretion":"рассказать кому-то о секрете или личном вопросе, доверяя им, чтобы они не повторяли это другим."
+},
+{"EnglishSource":"CONGREGATE","RussianSource":"собираться","Score":0.0,"Active":false,"EnglishDiscretion":"gather into a crowd or mass.","RusianDiscretion":"собираться в толпу или массу."
+},
+{"EnglishSource":"COURSE","RussianSource":"курс","Score":0.0,"Active":false,"EnglishDiscretion":"the route or direction followed by a ship, aircraft, road, or river","RusianDiscretion":"маршрут или направление, по которому следует корабль, самолет, дорога или река"
+},
+{"EnglishSource":"CRAZY","RussianSource":"сумасшедший","Score":0.0,"Active":false,"EnglishDiscretion":"mentally deranged, especially as manifested in a wild or aggressive way","RusianDiscretion":"психически неуравновешенный, особенно проявляющийся в дикой или агрессивной форме"
+},
+{"EnglishSource":"CREAMY","RussianSource":"сливочный","Score":0.0,"Active":false,"EnglishDiscretion":"resembling cream in consistency or color","RusianDiscretion":"напоминающий крем по консистенции или цвету"
+},
+{"EnglishSource":"CULTURE","RussianSource":"культура","Score":0.0,"Active":false,"EnglishDiscretion":"the arts and other manifestations of human intellectual achievement regarded collectively","RusianDiscretion":"искусство и другие проявления человеческих интеллектуальных достижений, рассматриваемые в совокупности"
+},
+{"EnglishSource":"CYCLE","RussianSource":"цикл","Score":0.0,"Active":false,"EnglishDiscretion":"a series of events that are regularly repeated in the same order","RusianDiscretion":"ряд событий, регулярно повторяющихся в одном и том же порядке"
+},
+{"EnglishSource":"DECLINE","RussianSource":"отклонить","Score":0.0,"Active":false,"EnglishDiscretion":"(typically of something regarded as good) become smaller, fewer, or less; decrease","RusianDiscretion":"(обычно чего-то, что считается хорошим) становятся меньше, меньше или меньше; "
+},
+{"EnglishSource":"DELICIOUS","RussianSource":"вкусный","Score":0.0,"Active":false,"EnglishDiscretion":"highly pleasant to the taste","RusianDiscretion":"очень приятный на вкус"
+},
+{"EnglishSource":"DESTINATION","RussianSource":"место назначения","Score":0.0,"Active":false,"EnglishDiscretion":"the place to which someone or something is going or being sent","RusianDiscretion":"место, куда кто-то или что-то направляется или направляется"
+},
+{"EnglishSource":"DRAFT","RussianSource":"черновик","Score":0.0,"Active":false,"EnglishDiscretion":"British spelling of draft (sense 3 of the noun, sense 4 of the noun, sense 6 of the noun, sense 7 of the noun).","RusianDiscretion":"Британское написание черновика (смысл 3 существительного, смысл 4 существительного, смысл 6 существительного, смысл 7 существительного)."
+},
+{"EnglishSource":"EAST","RussianSource":"восток","Score":0.0,"Active":false,"EnglishDiscretion":"the direction toward the point of the horizon where the sun rises at the equinoxes, on the right-hand side of a person facing north, or the point on the horizon itself","RusianDiscretion":"направление на точку горизонта, где солнце встает в дни равноденствий, с правой стороны человека, смотрящего на север, или точку на самом горизонте"
+},
+{"EnglishSource":"ELEVATOR","RussianSource":"лифт","Score":0.0,"Active":false,"EnglishDiscretion":"a platform or compartment housed in a shaft for raising and lowering people or things to different floors or levels","RusianDiscretion":"платформа или отсек, размещенный в шахте для подъема и опускания людей или предметов на разные этажи или уровни"
+},
+{"EnglishSource":"EMPLOYEE","RussianSource":"сотрудник","Score":0.0,"Active":false,"EnglishDiscretion":"a person employed for wages or salary, especially at nonexecutive level","RusianDiscretion":"человек, нанятый за заработную плату или жалованье, особенно на неисполнительном уровне"
+},
+{"EnglishSource":"ENVIRONMENT","RussianSource":"среда","Score":0.0,"Active":false,"EnglishDiscretion":"the surroundings or conditions in which a person, animal, or plant lives or operates","RusianDiscretion":"среда или условия, в которых живет или действует человек, животное или растение"
+},
+{"EnglishSource":"EQUIP","RussianSource":"оборудовать","Score":0.0,"Active":false,"EnglishDiscretion":"supply with the necessary items for a particular purpose","RusianDiscretion":"снабжение необходимыми предметами для конкретной цели"
+},
+{"EnglishSource":"EQUIPMENT","RussianSource":"оборудование","Score":0.0,"Active":false,"EnglishDiscretion":"the necessary items for a particular purpose","RusianDiscretion":"необходимые предметы для определенной цели"
+},
+{"EnglishSource":"EXCELLENT","RussianSource":"отличный","Score":0.0,"Active":false,"EnglishDiscretion":"extremely good; outstanding","RusianDiscretion":"очень хорошо; "
+},
+{"EnglishSource":"FAIRLY","RussianSource":"весьма","Score":0.0,"Active":false,"EnglishDiscretion":"with justice","RusianDiscretion":"по справедливости"
+},
+{"EnglishSource":"FAITH","RussianSource":"вера","Score":0.0,"Active":false,"EnglishDiscretion":"complete trust or confidence in someone or something.","RusianDiscretion":"полное доверие или доверие к кому-либо или чему-либо."
+},
+{"EnglishSource":"FASHION","RussianSource":"мода","Score":0.0,"Active":false,"EnglishDiscretion":"\ra popular trend, especially in styles of dress and ornament or manners of behavior.\r\n","RusianDiscretion":"популярная тенденция, особенно в стилях одежды и украшений или манерах поведения."
+},
+{"EnglishSource":"FATTY","RussianSource":"жирный","Score":0.0,"Active":false,"EnglishDiscretion":"containing a large amount of fat","RusianDiscretion":"содержащие большое количество жира"
+},
+{"EnglishSource":"FISHING","RussianSource":"ловит рыбу","Score":0.0,"Active":false,"EnglishDiscretion":"the activity of catching fish, either for food or as a sport","RusianDiscretion":"ловля рыбы в пищу или в качестве спорта"
+},
+{"EnglishSource":"FLAW","RussianSource":"недостаток","Score":0.0,"Active":false,"EnglishDiscretion":"a mark, fault, or other imperfection that mars a substance or object","RusianDiscretion":"отметина, дефект или другое несовершенство, портящее вещество или объект"
+},
+{"EnglishSource":"FOGGY","RussianSource":"туманный","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"FORK","RussianSource":"вилка","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"FOUNDER","RussianSource":"основатель","Score":0.0,"Active":false,"EnglishDiscretion":"a person who manufactures articles of cast metal; the owner or operator of a foundry.","RusianDiscretion":"лицо, изготавливающее изделия из литого металла; "
+},
+{"EnglishSource":"FREEZING","RussianSource":"замораживание","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"FRUITY","RussianSource":"фруктовый","Score":0.0,"Active":false,"EnglishDiscretion":"(especially of food or drink) resembling or containing fruit","RusianDiscretion":"(особенно еды или питья), напоминающие фрукты или содержащие их"
+},
+{"EnglishSource":"GADGET","RussianSource":"гаджет","Score":0.0,"Active":false,"EnglishDiscretion":"a small mechanical or electronic device or tool, especially an ingenious or novel one","RusianDiscretion":"небольшое механическое или электронное устройство или инструмент, особенно оригинальное или новое"
+},
+{"EnglishSource":"GALLERY","RussianSource":"галерея","Score":0.0,"Active":false,"EnglishDiscretion":"a room or building for the display or sale of works of art","RusianDiscretion":"помещение или здание для демонстрации или продажи произведений искусства"
+},
+{"EnglishSource":"GLORIOUS","RussianSource":"славный","Score":0.0,"Active":false,"EnglishDiscretion":"having, worthy of, or bringing fame or admiration","RusianDiscretion":"имеющий, достойный или приносящий славу или восхищение"
+},
+{"EnglishSource":"HANGOVER","RussianSource":"похмелье","Score":0.0,"Active":false,"EnglishDiscretion":"a severe headache or other after effects caused by drinking an excess of alcohol","RusianDiscretion":"сильная головная боль или другие последствия, вызванные чрезмерным употреблением алкоголя"
+},
+{"EnglishSource":"HERITAGE","RussianSource":"наследство","Score":0.0,"Active":false,"EnglishDiscretion":"property that is or may be inherited; an inheritance","RusianDiscretion":"имущество, которое является или может быть унаследовано; "
+},
+{"EnglishSource":"HEROISM","RussianSource":"героизм","Score":0.0,"Active":false,"EnglishDiscretion":"great bravery","RusianDiscretion":"великая храбрость"
+},
+{"EnglishSource":"HOLIDAY","RussianSource":"праздничный день","Score":0.0,"Active":false,"EnglishDiscretion":"a day of festivity or recreation when no work is done","RusianDiscretion":"день праздника или отдыха, когда не делается никакой работы"
+},
+{"EnglishSource":"HONEY","RussianSource":"мед","Score":0.0,"Active":false,"EnglishDiscretion":"a sweet, sticky yellowish-brown fluid made by bees and other insects from nectar collected from flowers","RusianDiscretion":"сладкая липкая желтовато-коричневая жидкость, вырабатываемая пчелами и другими насекомыми из нектара, собранного с цветов"
+},
+{"EnglishSource":"HORRIBLY","RussianSource":"ужасно","Score":0.0,"Active":false,"EnglishDiscretion":"in a way that causes horror; shockingly","RusianDiscretion":"способом, вызывающим ужас; "
+},
+{"EnglishSource":"HOSTEL","RussianSource":"общежитие","Score":0.0,"Active":false,"EnglishDiscretion":"an establishment which provides inexpensive food and lodging for a specific group of people, such as students, workers, or travelers","RusianDiscretion":"учреждение, которое предоставляет недорогую еду и жилье для определенной группы людей, таких как студенты, рабочие или путешественники"
+},
+{"EnglishSource":"ICE","RussianSource":"лед","Score":0.0,"Active":false,"EnglishDiscretion":"frozen water, a brittle transparent crystalline solid","RusianDiscretion":"замороженная вода, хрупкое прозрачное кристаллическое твердое вещество"
+},
+{"EnglishSource":"INGREDIENT","RussianSource":"ингредиент","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"INSANELY","RussianSource":"безумно","Score":0.0,"Active":false,"EnglishDiscretion":"in a foolish, wild, or uncontrolled manner","RusianDiscretion":"глупым, диким или неконтролируемым образом"
+},
+{"EnglishSource":"INTEREST","RussianSource":"интерес","Score":0.0,"Active":false,"EnglishDiscretion":"the state of wanting to know or learn about something or someone","RusianDiscretion":"состояние желания узнать или узнать о чем-то или о ком-то"
+},
+{"EnglishSource":"INTERESTING","RussianSource":"интересный","Score":0.0,"Active":false,"EnglishDiscretion":"arousing curiosity or interest; holding or catching the attention","RusianDiscretion":"вызывающие любопытство или интерес; "
+},
+{"EnglishSource":"JAM","RussianSource":"варенье","Score":0.0,"Active":false,"EnglishDiscretion":"squeeze or pack tightly into a specified space","RusianDiscretion":"сжать или плотно упаковать в указанное пространство"
+},
+{"EnglishSource":"JOG","RussianSource":"бег трусцой","Score":0.0,"Active":false,"EnglishDiscretion":"run at a steady gentle pace, especially on a regular basis as a form of physical exercise","RusianDiscretion":"бег в стабильном спокойном темпе, особенно на регулярной основе, как форма физических упражнений"
+},
+{"EnglishSource":"JUDO","RussianSource":"дзюдо","Score":0.0,"Active":false,"EnglishDiscretion":"a sport of unarmed combat derived from jujitsu and intended to train the body and mind. It involves using holds and leverage to unbalance the opponent","RusianDiscretion":"спорт рукопашного боя, происходящий от джиу-джитсу и предназначенный для тренировки тела и разума. "
+},
+{"EnglishSource":"JUNGLE","RussianSource":"джунгли","Score":0.0,"Active":false,"EnglishDiscretion":"an area of land overgrown with dense forest and tangled vegetation, typically in the tropics","RusianDiscretion":"участок земли, поросший густым лесом и спутанной растительностью, обычно в тропиках"
+},
+{"EnglishSource":"KIT","RussianSource":"набор","Score":0.0,"Active":false,"EnglishDiscretion":"a set of articles or equipment needed for a specific purpose","RusianDiscretion":"набор предметов или оборудования, необходимых для определенной цели"
+},
+{"EnglishSource":"KNIFE","RussianSource":"нож","Score":0.0,"Active":false,"EnglishDiscretion":"an instrument composed of a blade fixed into a handle, used for cutting or as a weapon.\r\n","RusianDiscretion":"инструмент, состоящий из лезвия, прикрепленного к рукоятке, используемый для рубки или как оружие."
+},
+{"EnglishSource":"LABORER","RussianSource":"рабочий","Score":0.0,"Active":false,"EnglishDiscretion":"a person doing unskilled manual work for wages.\r\na farm laborer","RusianDiscretion":"человек, выполняющий неквалифицированную ручную работу за заработную плату.\r\n"
+},
+{"EnglishSource":"LAKE","RussianSource":"озеро","Score":0.0,"Active":false,"EnglishDiscretion":"a large body of water surrounded by land","RusianDiscretion":"большой водоем, окруженный сушей"
+},
+{"EnglishSource":"LEMON","RussianSource":"лимон","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"LEMONADE","RussianSource":"лимонад","Score":0.0,"Active":false,"EnglishDiscretion":"a drink made from lemon juice and sweetened water","RusianDiscretion":"напиток из лимонного сока и подслащенной воды"
+},
+{"EnglishSource":"LESSEN","RussianSource":"уменьшить","Score":0.0,"Active":false,"EnglishDiscretion":"make or become less; diminish","RusianDiscretion":"сделать или стать меньше; "
+},
+{"EnglishSource":"LIE","RussianSource":"ложь","Score":0.0,"Active":false,"EnglishDiscretion":"(of a person or animal) be in or assume a horizontal or resting position on a supporting surface","RusianDiscretion":"(человека или животного) находиться или принимать горизонтальное положение или положение покоя на опорной поверхности"
+},
+{"EnglishSource":"LIGHTING","RussianSource":"осветительные приборы","Score":0.0,"Active":false,"EnglishDiscretion":"equipment in a home, workplace, studio, theater, or street for producing light","RusianDiscretion":"оборудование в доме, на рабочем месте, в студии, театре или на улице для производства света"
+},
+{"EnglishSource":"LIKE","RussianSource":"нравиться","Score":0.0,"Active":false,"EnglishDiscretion":"having the same characteristics or qualities as; similar to","RusianDiscretion":"обладающий теми же характеристиками или качествами, что и; "
+},
+{"EnglishSource":"LIVE","RussianSource":"жить","Score":0.0,"Active":false,"EnglishDiscretion":"remain alive","RusianDiscretion":"остаться в живых"
+},
+{"EnglishSource":"LUGGAGE","RussianSource":"багаж","Score":0.0,"Active":false,"EnglishDiscretion":"suitcases or other bags in which to pack personal belongings for traveling.\r\nupon landing, we waited and waited for our luggage","RusianDiscretion":"чемоданы или другие сумки, в которые можно упаковать личные вещи для путешествий.\r\n"
+},
+{"EnglishSource":"MACARONI","RussianSource":"макароны","Score":0.0,"Active":false,"EnglishDiscretion":"a variety of pasta formed in narrow tubes","RusianDiscretion":"разнообразные макаронные изделия, сформированные в узких трубочках"
+},
+{"EnglishSource":"MAINTAIN","RussianSource":"поддерживать","Score":0.0,"Active":false,"EnglishDiscretion":"cause or enable (a condition or state of affairs) to continue","RusianDiscretion":"вызвать или позволить (условию или положению дел) продолжаться"
+},
+{"EnglishSource":"MARATHON","RussianSource":"марафон","Score":0.0,"Active":false,"EnglishDiscretion":"a long-distance running race, strictly one of 26 miles 385 yards (42.195 km)","RusianDiscretion":"бег на длинные дистанции, строго один из 26 миль 385 ярдов (42,195 км)"
+},
+{"EnglishSource":"MERIT","RussianSource":"цена","Score":0.0,"Active":false,"EnglishDiscretion":"the quality of being particularly good or worthy, especially so as to deserve praise or reward","RusianDiscretion":"качество быть особенно хорошим или достойным, особенно для того, чтобы заслужить похвалу или награду"
+},
+{"EnglishSource":"MICROWAVE","RussianSource":"микроволновка","Score":0.0,"Active":false,"EnglishDiscretion":"an electromagnetic wave with a wavelength in the range 0.001–0.3 m, shorter than that of a normal radio wave but longer than those of infrared radiation. Microwaves are used in radar, in communications, and for heating in microwave ovens and in various industrial processes","RusianDiscretion":"электромагнитная волна с длиной волны в диапазоне 0,001–0,3 м, короче, чем у обычной радиоволны, но длиннее, чем у инфракрасного излучения. "
+},
+{"EnglishSource":"MILD","RussianSource":"мягкий","Score":0.0,"Active":false,"EnglishDiscretion":"not severe, serious, or harsh","RusianDiscretion":"не тяжелый, серьезный или резкий"
+},
+{"EnglishSource":"MOLLIFY","RussianSource":"смягчать","Score":0.0,"Active":false,"EnglishDiscretion":"appease the anger or anxiety of (someone).\r\n","RusianDiscretion":"успокоить гнев или тревогу (кого-л.)."
+},
+{"EnglishSource":"MUSHROOM","RussianSource":"гриб","Score":0.0,"Active":false,"EnglishDiscretion":"a fungal growth that typically takes the form of a domed cap on a stalk, with gills on the underside of the cap","RusianDiscretion":""
+},
+{"EnglishSource":"NOODLE","RussianSource":"лапша","Score":0.0,"Active":false,"EnglishDiscretion":"a strip, ring, or tube of pasta or a similar dough, typically made with egg and usually eaten with a sauce or in a soup","RusianDiscretion":"полоска, кольцо или трубочка макарон или аналогичного теста, обычно приготовленные из яиц и обычно употребляемые с соусом или в супе"
+},
+{"EnglishSource":"NOODLES","RussianSource":"лапша","Score":0.0,"Active":false,"EnglishDiscretion":"a strip, ring, or tube of pasta or a similar dough, typically made with egg and usually eaten with a sauce or in a soup","RusianDiscretion":"полоска, кольцо или трубочка макарон или аналогичного теста, обычно приготовленные из яиц и обычно употребляемые с соусом или в супе"
+},
+{"EnglishSource":"OASIS","RussianSource":"оазис","Score":0.0,"Active":false,"EnglishDiscretion":"a fertile spot in a desert, where water is found","RusianDiscretion":"плодородное место в пустыне, где есть вода"
+},
+{"EnglishSource":"OILY","RussianSource":"жирный","Score":0.0,"Active":false,"EnglishDiscretion":"containing oil.\r\n","RusianDiscretion":"содержащие масло."
+},
+{"EnglishSource":"OVERCAST","RussianSource":"пасмурная погода","Score":0.0,"Active":false,"EnglishDiscretion":"of the sky or weather) marked by a covering of gray clouds; dull","RusianDiscretion":"неба или погоды), отмеченный покровом серых облаков; "
+},
+{"EnglishSource":"PACKAGE","RussianSource":"упаковка","Score":0.0,"Active":false,"EnglishDiscretion":"an object or group of objects wrapped in paper or plastic, or packed in a box","RusianDiscretion":"предмет или группа предметов, завернутые в бумагу или пластик или упакованные в коробку"
+},
+{"EnglishSource":"PARTICULARLY","RussianSource":"особенно","Score":0.0,"Active":false,"EnglishDiscretion":"to a higher degree than is usual or average","RusianDiscretion":"в большей степени, чем обычно или в среднем"
+},
+{"EnglishSource":"PASSENGER","RussianSource":"пассажир","Score":0.0,"Active":false,"EnglishDiscretion":"a traveler on a public or private conveyance other than the driver, pilot, or crew","RusianDiscretion":"путешественник в общественном или частном транспортном средстве, кроме водителя, пилота или экипажа"
+},
+{"EnglishSource":"PASTA","RussianSource":"макаронные изделия","Score":0.0,"Active":false,"EnglishDiscretion":"a dish originally from Italy consisting of dough made from durum wheat and water, extruded or stamped into various shapes and typically cooked in boiling water","RusianDiscretion":"блюдо родом из Италии, состоящее из теста, сделанного из твердых сортов пшеницы и воды, экструдированного или штампованного в различные формы и обычно приготовленного в кипящей воде."
+},
+{"EnglishSource":"PLATE","RussianSource":"тарелка","Score":0.0,"Active":false,"EnglishDiscretion":"a flat dish, typically circular and made of china, from which food is eaten or served","RusianDiscretion":"плоская тарелка, обычно круглая, сделанная из фарфора, из которой едят или подают еду"
+},
+{"EnglishSource":"PLATFORM","RussianSource":"Платформа","Score":0.0,"Active":false,"EnglishDiscretion":"a raised level surface on which people or things can stand","RusianDiscretion":"приподнятая ровная поверхность, на которой могут стоять люди или предметы"
+},
+{"EnglishSource":"PLEAT","RussianSource":"складка","Score":0.0,"Active":false,"EnglishDiscretion":"a double or multiple fold in a garment or other item made of cloth, held by stitching the top or side.","RusianDiscretion":"двойная или множественная складка одежды или другого изделия из ткани, удерживаемая сшиванием верхней или боковой стороны."
+},
+{"EnglishSource":"PROCESSOR","RussianSource":"процессор","Score":0.0,"Active":false,"EnglishDiscretion":"a machine that processes something","RusianDiscretion":"машина, которая что-то обрабатывает"
+},
+{"EnglishSource":"PRODUCT","RussianSource":"продукт","Score":0.0,"Active":false,"EnglishDiscretion":"an article or substance that is manufactured or refined for sale","RusianDiscretion":"предмет или вещество, которое производится или очищается для продажи"
+},
+{"EnglishSource":"PROGRESS","RussianSource":"прогресс","Score":0.0,"Active":false,"EnglishDiscretion":"forward or onward movement toward a destination","RusianDiscretion":"вперед или поступательное движение к месту назначения"
+},
+{"EnglishSource":"QUAFF","RussianSource":"выпить","Score":0.0,"Active":false,"EnglishDiscretion":"drink (something, especially an alcoholic drink) heartily","RusianDiscretion":"выпить (что-то, особенно алкогольный напиток) от души"
+},
+{"EnglishSource":"QUEUE","RussianSource":"очередь","Score":0.0,"Active":false,"EnglishDiscretion":"a list of data items, commands, etc., stored so as to be retrievable in a definite order, usually the order of insertion.","RusianDiscretion":"список элементов данных, команд и т. д., сохраненных таким образом, чтобы их можно было извлечь в определенном порядке, обычно в порядке вставки."
+},
+{"EnglishSource":"RACY","RussianSource":"пикантный","Score":0.0,"Active":false,"EnglishDiscretion":"(of speech, writing, or behavior) lively, entertaining, and typically mildly titillating sexually.","RusianDiscretion":"(речи, письма или поведения) живой, занимательный и, как правило, слегка возбуждающий в сексуальном плане."
+},
+{"EnglishSource":"RAIL","RussianSource":"рельс","Score":0.0,"Active":false,"EnglishDiscretion":"a bar or series of bars, typically fixed on upright supports, serving as part of a fence or barrier or used to hang things on","RusianDiscretion":"стержень или ряд стержней, обычно закрепленные на вертикальных опорах, служащие частью забора или барьера или используемые для подвешивания вещей."
+},
+{"EnglishSource":"RAINFOREST","RussianSource":"тропический лес","Score":0.0,"Active":false,"EnglishDiscretion":"a luxuriant, dense forest rich in biodiversity, found typically in tropical areas with consistently heavy rainfall.","RusianDiscretion":"пышный, густой лес, богатый биоразнообразием, обычно встречающийся в тропических районах с постоянно обильными дождями."
+},
+{"EnglishSource":"RAINY","RussianSource":"дождливый","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"RATTLE","RussianSource":"погремушка","Score":0.0,"Active":false,"EnglishDiscretion":"make or cause to make a rapid succession of short, sharp knocking sounds, typically as a result of shaking and striking repeatedly against a hard surface or object","RusianDiscretion":"издавать или вызывать быструю последовательность коротких, резких стуков, как правило, в результате многократного встряхивания и ударов по твердой поверхности или предмету"
+},
+{"EnglishSource":"RATTLER","RussianSource":"погремушка","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"RAVISH","RussianSource":"изнасиловать","Score":0.0,"Active":false,"EnglishDiscretion":"seize and carry off (someone) by force","RusianDiscretion":"схватить и увести (кого-либо) силой"
+},
+{"EnglishSource":"REALLY","RussianSource":"Действительно","Score":0.0,"Active":false,"EnglishDiscretion":"in actual fact, as opposed to what is said or imagined to be true or possible","RusianDiscretion":"на самом деле, в отличие от того, что говорится или воображается как истинное или возможное"
+},
+{"EnglishSource":"REMARKABLE","RussianSource":"замечательный","Score":0.0,"Active":false,"EnglishDiscretion":"worthy of attention; striking.","RusianDiscretion":"достойный внимания; "
+},
+{"EnglishSource":"REMARKABLY","RussianSource":"замечательно","Score":0.0,"Active":false,"EnglishDiscretion":"in a way that is worthy of attention","RusianDiscretion":"образом, достойным внимания"
+},
+{"EnglishSource":"RENT","RussianSource":"арендовать","Score":0.0,"Active":false,"EnglishDiscretion":"a tenant's regular payment to a landlord for the use of property or land","RusianDiscretion":""
+},
+{"EnglishSource":"RESEARCH","RussianSource":"исследовать","Score":0.0,"Active":false,"EnglishDiscretion":"the systematic investigation into and study of materials and sources in order to establish facts and reach new conclusions","RusianDiscretion":"систематическое исследование и изучение материалов и источников с целью установления фактов и новых выводов"
+},
+{"EnglishSource":"RIDER","RussianSource":"всадник","Score":0.0,"Active":false,"EnglishDiscretion":"a person who is riding or who can ride something, especially a horse, bicycle, motorcycle, or snowboard.","RusianDiscretion":"человек, который едет верхом или может ездить на чем-либо, особенно на лошади, велосипеде, мотоцикле или сноуборде."
+},
+{"EnglishSource":"RISK","RussianSource":"риск","Score":0.0,"Active":false,"EnglishDiscretion":"a situation involving exposure to danger","RusianDiscretion":"ситуация, связанная с опасностью"
+},
+{"EnglishSource":"RIVER","RussianSource":"река","Score":0.0,"Active":false,"EnglishDiscretion":"a large natural stream of water flowing in a channel to the sea, a lake, or another such stream","RusianDiscretion":"большой естественный поток воды, текущий по каналу к морю, озеру или другому подобному потоку"
+},
+{"EnglishSource":"ROAST","RussianSource":"жарить","Score":0.0,"Active":false,"EnglishDiscretion":"cook (food, especially meat) by prolonged exposure to heat in an oven or over a fire","RusianDiscretion":"готовить (еду, особенно мясо) путем длительного нагревания в духовке или на огне"
+},
+{"EnglishSource":"ROOFTOP","RussianSource":"крыша","Score":0.0,"Active":false,"EnglishDiscretion":"the outer surface of a building's roof","RusianDiscretion":"внешняя поверхность крыши здания"
+},
+{"EnglishSource":"ROUTINE","RussianSource":"рутина","Score":0.0,"Active":false,"EnglishDiscretion":"a sequence of actions regularly followed; a fixed program","RusianDiscretion":"последовательность действий, регулярно выполняемая; "
+},
+{"EnglishSource":"SALAD","RussianSource":"салат","Score":0.0,"Active":false,"EnglishDiscretion":"a cold dish of various mixtures of raw or cooked vegetables, usually seasoned with oil, vinegar, or other dressing and sometimes accompanied by meat, fish, or other ingredients","RusianDiscretion":"холодное блюдо из различных смесей сырых или вареных овощей, обычно приправленное маслом, уксусом или другой заправкой и иногда сопровождаемое мясом, рыбой или другими ингредиентами"
+},
+{"EnglishSource":"SANDY","RussianSource":"Сэнди","Score":0.0,"Active":false,"EnglishDiscretion":"covered in or consisting mostly of sand","RusianDiscretion":"покрытый песком или состоящий в основном из песка"
+},
+{"EnglishSource":"SANELY","RussianSource":"разумно","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"SAUCEPAN","RussianSource":"кастрюля","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"SCORE","RussianSource":"счет","Score":0.0,"Active":false,"EnglishDiscretion":"the number of points, goals, runs, etc. achieved in a game or by a team or an individual","RusianDiscretion":"количество очков, голов, пробежек и т. д., набранных в игре, командой или отдельным лицом"
+},
+{"EnglishSource":"SCULPTURE","RussianSource":"скульптура","Score":0.0,"Active":false,"EnglishDiscretion":"the art of making two- or three-dimensional representative or abstract forms, especially by carving stone or wood or by casting metal or plaster","RusianDiscretion":"искусство создания двух- или трехмерных репрезентативных или абстрактных форм, особенно путем резьбы по камню или дереву, отливки металла или гипса"
+},
+{"EnglishSource":"SEAT","RussianSource":"сиденье","Score":0.0,"Active":false,"EnglishDiscretion":"a thing made or used for sitting on, such as a chair or stool","RusianDiscretion":"вещь, сделанная или используемая для сидения, например стул или табуретка"
+},
+{"EnglishSource":"SECRET","RussianSource":"секрет","Score":0.0,"Active":false,"EnglishDiscretion":"not known or seen or not meant to be known or seen by others","RusianDiscretion":"неизвестен или не виден или не предназначен для того, чтобы быть известным или увиденным другими"
+},
+{"EnglishSource":"SHARP","RussianSource":"острый","Score":0.0,"Active":false,"EnglishDiscretion":"(of an object) having an edge or point that is able to cut or pierce something","RusianDiscretion":"(о предмете) с краем или острием, способным разрезать или проткнуть что-либо"
+},
+{"EnglishSource":"SIGHTSEE","RussianSource":"осмотр достопримечательностей","Score":0.0,"Active":false,"EnglishDiscretion":"visit places of interest in a particular location","RusianDiscretion":"посетить достопримечательности в определенном месте"
+},
+{"EnglishSource":"SIGHTSEEING","RussianSource":"осмотр достопримечательностей","Score":0.0,"Active":false,"EnglishDiscretion":"the activity of visiting places of interest in a particular location","RusianDiscretion":"деятельность по посещению достопримечательностей в определенном месте"
+},
+{"EnglishSource":"SIN","RussianSource":"грех","Score":0.0,"Active":false,"EnglishDiscretion":"an immoral act considered to be a transgression against divine law","RusianDiscretion":"аморальный поступок, считающийся нарушением божественного закона"
+},
+{"EnglishSource":"SKATER","RussianSource":"конькобежец","Score":0.0,"Active":false,"EnglishDiscretion":"a person who skates, especially on ice","RusianDiscretion":"человек, который катается на коньках, особенно на льду"
+},
+{"EnglishSource":"SLEEPER","RussianSource":"спящий","Score":0.0,"Active":false,"EnglishDiscretion":"a person or animal who is asleep or who sleeps in a specified way","RusianDiscretion":"человек или животное, которое спит или спит определенным образом"
+},
+{"EnglishSource":"SOUNDLY","RussianSource":"основательно","Score":0.0,"Active":false,"EnglishDiscretion":"in a way that is secure and reliable","RusianDiscretion":"безопасным и надежным способом"
+},
+{"EnglishSource":"SPECTACULARLY","RussianSource":"эффектно","Score":0.0,"Active":false,"EnglishDiscretion":"in an impressive, dramatic, or eye-catching way","RusianDiscretion":"впечатляющим, драматичным или привлекательным образом"
+},
+{"EnglishSource":"STARTER","RussianSource":"стартер","Score":0.0,"Active":false,"EnglishDiscretion":"a person or thing that starts in a specified way","RusianDiscretion":"человек или вещь, которая начинается определенным образом"
+},
+{"EnglishSource":"STAVE","RussianSource":"посох","Score":0.0,"Active":false,"EnglishDiscretion":"a vertical wooden post or plank in a building or other structure","RusianDiscretion":"вертикальная деревянная стойка или доска в здании или другом сооружении"
+},
+{"EnglishSource":"STAY","RussianSource":"оставаться","Score":0.0,"Active":false,"EnglishDiscretion":"remain in the same place","RusianDiscretion":"оставаться на том же месте"
+},
+{"EnglishSource":"STEER","RussianSource":"управлять","Score":0.0,"Active":false,"EnglishDiscretion":"(of a person) guide or control the movement of (a vehicle, vessel, or aircraft), for example by turning a wheel or operating a rudder","RusianDiscretion":""
+},
+{"EnglishSource":"STORM","RussianSource":"буря","Score":0.0,"Active":false,"EnglishDiscretion":"a violent disturbance of the atmosphere with strong winds and usually rain, thunder, lightning, or snow","RusianDiscretion":"сильное возмущение атмосферы сильным ветром и обычно дождем, громом, молнией или снегом"
+},
+{"EnglishSource":"STOVE","RussianSource":"печь","Score":0.0,"Active":false,"EnglishDiscretion":"an apparatus for cooking or heating that operates by burning fuel or using electricity","RusianDiscretion":"аппарат для приготовления пищи или обогрева, работающий за счет сжигания топлива или электричества"
+},
+{"EnglishSource":"SUBTITLE","RussianSource":"подзаголовок","Score":0.0,"Active":false,"EnglishDiscretion":"captions displayed at the bottom of a movie or television screen that translate or transcribe the dialogue or narrative.\r\n","RusianDiscretion":"субтитры, отображаемые в нижней части экрана фильма или телевизора, которые переводят или расшифровывают диалог или повествование."
+},
+{"EnglishSource":"SUCCESSFUL","RussianSource":"успешный","Score":0.0,"Active":false,"EnglishDiscretion":"accomplishing an aim or purpose","RusianDiscretion":"достижение цели или намерения"
+},
+{"EnglishSource":"SUNRISE","RussianSource":"восход","Score":0.0,"Active":false,"EnglishDiscretion":"the time in the morning when the sun appears or full daylight arrives","RusianDiscretion":"время утром, когда появляется солнце или наступает полный дневной свет"
+},
+{"EnglishSource":"SURVEY","RussianSource":"опрос","Score":0.0,"Active":false,"EnglishDiscretion":"(of a person or their eyes) look carefully and thoroughly at (someone or something), especially so as to appraise them","RusianDiscretion":"(человека или его глаз) смотреть внимательно и внимательно на (кого-то или что-то), особенно для того, чтобы оценить их"
+},
+{"EnglishSource":"TAKEAWAY","RussianSource":"еда на вынос","Score":0.0,"Active":false,"EnglishDiscretion":"a key fact, point, or idea to be remembered, typically one emerging from a discussion or meeting","RusianDiscretion":"ключевой факт, точка или идея, которые следует запомнить, обычно вытекающие из обсуждения или встречи"
+},
+{"EnglishSource":"TAXI","RussianSource":"такси","Score":0.0,"Active":false,"EnglishDiscretion":"short for taxicab","RusianDiscretion":"сокращение от такси"
+},
+{"EnglishSource":"TEMPERATURE","RussianSource":"температура","Score":0.0,"Active":false,"EnglishDiscretion":"the degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch","RusianDiscretion":"степень или интенсивность тепла, присутствующего в веществе или объекте, особенно выраженная по сравнительной шкале и показанная термометром или воспринимаемая на ощупь"
+},
+{"EnglishSource":"TENDER","RussianSource":"нежный","Score":0.0,"Active":false,"EnglishDiscretion":"showing gentleness and concern or sympathy","RusianDiscretion":"проявление мягкости и заботы или сочувствия"
+},
+{"EnglishSource":"TENNIS","RussianSource":"большой теннис","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"TENT","RussianSource":"палатка","Score":0.0,"Active":false,"EnglishDiscretion":"a portable shelter made of cloth, supported by one or more poles and stretched tight by cords or loops attached to pegs driven into the ground","RusianDiscretion":"переносное укрытие из ткани, поддерживаемое одной или несколькими жердями и туго натянутое шнурами или петлями, прикрепленными к колышкам, вбитым в землю"
+},
+{"EnglishSource":"TERRIBLY","RussianSource":"ужасно","Score":0.0,"Active":false,"EnglishDiscretion":"very; extremely","RusianDiscretion":"очень; "
+},
+{"EnglishSource":"TEXT","RussianSource":"текст","Score":0.0,"Active":false,"EnglishDiscretion":"a book or other written or printed work, regarded in terms of its content rather than its physical form","RusianDiscretion":"книга или другое письменное или печатное произведение, рассматриваемое с точки зрения его содержания, а не его физической формы"
+},
+{"EnglishSource":"THANK","RussianSource":"благодарить","Score":0.0,"Active":false,"EnglishDiscretion":"express gratitude to (someone), especially by saying “Thank you”","RusianDiscretion":"выразить благодарность (кому-либо), особенно сказав «Спасибо»"
+},
+{"EnglishSource":"THUGGISH","RussianSource":"бандитский","Score":0.0,"Active":false,"EnglishDiscretion":"characterized by violent behavior","RusianDiscretion":"характеризуется агрессивным поведением"
+},
+{"EnglishSource":"THUNDER","RussianSource":"гром","Score":0.0,"Active":false,"EnglishDiscretion":"a loud rumbling or crashing noise heard after a lightning flash due to the expansion of rapidly heated air","RusianDiscretion":"громкий грохот или грохот, слышимый после вспышки молнии из-за расширения быстро нагретого воздуха"
+},
+{"EnglishSource":"THUNDERSTORM","RussianSource":"гроза","Score":0.0,"Active":false,"EnglishDiscretion":"a storm with thunder and lightning and typically also heavy rain or hail","RusianDiscretion":"буря с громом и молнией, а также, как правило, сильный дождь или град"
+},
+{"EnglishSource":"TINT","RussianSource":"оттенок","Score":0.0,"Active":false,"EnglishDiscretion":"a shade or variety of a color.","RusianDiscretion":"оттенок или разновидность цвета."
+},
+{"EnglishSource":"TIP","RussianSource":"кончик","Score":0.0,"Active":false,"EnglishDiscretion":"the pointed or rounded end or extremity of something slender or tapering","RusianDiscretion":"заостренный или закругленный конец или конец чего-то тонкого или сужающегося"
+},
+{"EnglishSource":"TRADITION","RussianSource":"традиция","Score":0.0,"Active":false,"EnglishDiscretion":"the transmission of customs or beliefs from generation to generation, or the fact of being passed on in this way","RusianDiscretion":"передача обычаев или верований из поколения в поколение или факт передачи таким образом"
+},
+{"EnglishSource":"TRAIN","RussianSource":"тренироваться","Score":0.0,"Active":false,"EnglishDiscretion":"teach (a person or animal) a particular skill or type of behavior through practice and instruction over a period of time","RusianDiscretion":"научить (человека или животное) определенному навыку или типу поведения посредством практики и обучения в течение определенного периода времени"
+},
+{"EnglishSource":"TREK","RussianSource":"поход","Score":0.0,"Active":false,"EnglishDiscretion":"a long arduous journey, especially one made on foot","RusianDiscretion":"долгий трудный путь, особенно пеший"
+},
+{"EnglishSource":"TROPIC","RussianSource":"тропик","Score":0.0,"Active":false,"EnglishDiscretion":"the parallel of latitude 23°26ʹ north (tropic of Cancer) or south (tropic of Capricorn) of the equator","RusianDiscretion":"параллель 23°26' северной широты (тропик Рака) или юга (тропик Козерога) от экватора"
+},
+{"EnglishSource":"TROPICAL","RussianSource":"тропический","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"TUNE","RussianSource":"мелодия","Score":0.0,"Active":false,"EnglishDiscretion":"a melody, especially one that characterizes a particular piece of music.","RusianDiscretion":"мелодия, особенно та, которая характеризует конкретное музыкальное произведение."
+},
+{"EnglishSource":"UNCOMMON","RussianSource":"необычный","Score":0.0,"Active":false,"EnglishDiscretion":"out of the ordinary; unusual","RusianDiscretion":"необычный; "
+},
+{"EnglishSource":"UNCOMMONLY","RussianSource":"необычно","Score":0.0,"Active":false,"EnglishDiscretion":"exceptionally; very","RusianDiscretion":"исключительно; "
+},
+{"EnglishSource":"UNFOLD","RussianSource":"разворачиваться","Score":0.0,"Active":false,"EnglishDiscretion":"open or spread out from a folded position.","RusianDiscretion":"открывать или раскладывать из сложенного положения."
+},
+{"EnglishSource":"UNHEALTHY","RussianSource":"нездоровый","Score":0.0,"Active":false,"EnglishDiscretion":"harmful to health","RusianDiscretion":"вредно для здоровья"
+},
+{"EnglishSource":"VERY","RussianSource":"очень","Score":0.0,"Active":false,"EnglishDiscretion":"in a high degree","RusianDiscretion":"в высокой степени"
+},
+{"EnglishSource":"VICE","RussianSource":"порок","Score":0.0,"Active":false,"EnglishDiscretion":"immoral or wicked behavior","RusianDiscretion":"аморальное или порочное поведение"
+},
+{"EnglishSource":"VIOLENT","RussianSource":"жестокий","Score":0.0,"Active":false,"EnglishDiscretion":"using or involving physical force intended to hurt, damage, or kill someone or something.\r\n","RusianDiscretion":""
+},
+{"EnglishSource":"WATERFALL","RussianSource":"водопад","Score":0.0,"Active":false,"EnglishDiscretion":"a cascade of water falling from a height, formed when a river or stream flows over a precipice or steep incline","RusianDiscretion":"каскад воды, падающий с высоты, образующийся, когда река или ручей течет по обрыву или крутому склону"
+},
+{"EnglishSource":"WEATHER","RussianSource":"погода","Score":0.0,"Active":false,"EnglishDiscretion":"the state of the atmosphere at a place and time as regards heat, dryness, sunshine, wind, rain, etc.\r\n","RusianDiscretion":"состояние атмосферы в данном месте и во времени в отношении жары, сухости, солнечного света, ветра, дождя и т. д."
+},
+{"EnglishSource":"WEST","RussianSource":"запад","Score":0.0,"Active":false,"EnglishDiscretion":"the direction toward the point of the horizon where the sun sets at the equinoxes, on the left-hand side of a person facing north, or the part of the horizon lying in this direction","RusianDiscretion":"направление на точку горизонта, где солнце заходит в дни равноденствий, с левой стороны от лица, обращенного на север, или часть горизонта, лежащая в этом направлении"
+},
+{"EnglishSource":"WINDY","RussianSource":"ветреный","Score":0.0,"Active":false,"EnglishDiscretion":"(of weather, a period of time, or a place) marked by or exposed to strong winds.","RusianDiscretion":"(о погоде, периоде времени или месте), отмеченном или подверженном сильному ветру."
+},
+{"EnglishSource":"WONDERFULLY","RussianSource":"чудесно","Score":0.0,"Active":false,"EnglishDiscretion":"in a way that inspires delight or admiration; extremely well","RusianDiscretion":"способом, вызывающим восторг или восхищение; "
+},
+{"EnglishSource":"WORKMAN","RussianSource":"рабочий","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"YOGHURT","RussianSource":"йогурт","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"AGED","RussianSource":"в возрасте","Score":0.0,"Active":false,"EnglishDiscretion":"having lived for a specified length of time; of a specified age","RusianDiscretion":"прожить определенное время; "
+},
+{"EnglishSource":"ANNIVERSARY","RussianSource":"годовщина","Score":0.0,"Active":false,"EnglishDiscretion":"the date on which an event took place in a previous year","RusianDiscretion":"дата, когда произошло событие в предыдущем году"
+},
+{"EnglishSource":"ANNUAL","RussianSource":"ежегодный","Score":0.0,"Active":false,"EnglishDiscretion":"occurring once every year","RusianDiscretion":"происходит раз в год"
+},
+{"EnglishSource":"ANNUALLY","RussianSource":"ежегодно","Score":0.0,"Active":false,"EnglishDiscretion":"once a year; every year","RusianDiscretion":"раз в год; "
+},
+{"EnglishSource":"AWARD","RussianSource":"награда","Score":0.0,"Active":false,"EnglishDiscretion":"give or order the giving of (something) as an official payment, compensation, or prize to (someone).","RusianDiscretion":"дать или приказать дать (что-то) в качестве официальной оплаты, компенсации или приза (кому-либо)."
+},
+{"EnglishSource":"BARK","RussianSource":"лаять","Score":0.0,"Active":false,"EnglishDiscretion":"the sharp explosive cry of certain animals, especially a dog, fox, or seal","RusianDiscretion":"резкий взрывной крик некоторых животных, особенно собаки, лисы или тюленя"
+},
+{"EnglishSource":"BRILLIANT","RussianSource":"блестящий","Score":0.0,"Active":false,"EnglishDiscretion":"(of light or color) very bright and radiant","RusianDiscretion":"(света или цвета) очень яркий и сияющий"
+},
+{"EnglishSource":"CELEBRATE","RussianSource":"праздновать","Score":0.0,"Active":false,"EnglishDiscretion":"acknowledge (a significant or happy day or event) with a social gathering or enjoyable activity","RusianDiscretion":"отметьте (знаменательный или счастливый день или событие) общественным собранием или приятным занятием"
+},
+{"EnglishSource":"CHARITY","RussianSource":"благотворительность","Score":0.0,"Active":false,"EnglishDiscretion":"an organization set up to provide help and raise money for those in need","RusianDiscretion":"организация, созданная для оказания помощи и сбора денег нуждающимся"
+},
+{"EnglishSource":"COHERENT","RussianSource":"последовательный","Score":0.0,"Active":false,"EnglishDiscretion":"(of an argument, theory, or policy) logical and consistent","RusianDiscretion":"(аргумента, теории или политики) логичный и последовательный"
+},
+{"EnglishSource":"COMMUNITY","RussianSource":"сообщество","Score":0.0,"Active":false,"EnglishDiscretion":"a group of people living in the same place or having a particular characteristic in common","RusianDiscretion":"группа людей, живущих в одном месте или имеющих общие черты"
+},
+{"EnglishSource":"CONSTANTLY","RussianSource":"постоянно","Score":0.0,"Active":false,"EnglishDiscretion":"continuously over a period of time; always","RusianDiscretion":"непрерывно в течение определенного периода времени; "
+},
+{"EnglishSource":"DELIGHTED","RussianSource":"получивший удовольствие","Score":0.0,"Active":false,"EnglishDiscretion":"feeling or showing great pleasure","RusianDiscretion":"чувство или демонстрация большого удовольствия"
+},
+{"EnglishSource":"DIETICIAN","RussianSource":"диетолог","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"DURATION","RussianSource":"продолжительность","Score":0.0,"Active":false,"EnglishDiscretion":"the time during which something continues","RusianDiscretion":"время, в течение которого что-то продолжается"
+},
+{"EnglishSource":"FAIL","RussianSource":"неудача","Score":0.0,"Active":false,"EnglishDiscretion":"be unsuccessful in achieving one's goal","RusianDiscretion":"потерпеть неудачу в достижении цели"
+},
+{"EnglishSource":"GRANT","RussianSource":"грант","Score":0.0,"Active":false,"EnglishDiscretion":"agree to give or allow (something requested) to","RusianDiscretion":"согласиться дать или разрешить (что-то запрошенное)"
+},
+{"EnglishSource":"HOMELESS","RussianSource":"бездомный","Score":0.0,"Active":false,"EnglishDiscretion":"of a person) without a home, and therefore typically living on the streets","RusianDiscretion":"человека) без дома, а потому обычно живут на улице"
+},
+{"EnglishSource":"IMPROVE","RussianSource":"улучшать","Score":0.0,"Active":false,"EnglishDiscretion":"make or become better","RusianDiscretion":"сделать или стать лучше"
+},
+{"EnglishSource":"LAPTOP","RussianSource":"ноутбук","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"MASSIVE","RussianSource":"массивный","Score":0.0,"Active":false,"EnglishDiscretion":"large and heavy or solid","RusianDiscretion":"большой и тяжелый или твердый"
+},
+{"EnglishSource":"MAXIMUM","RussianSource":"максимум","Score":0.0,"Active":false,"EnglishDiscretion":"as great, high, or intense as possible or permitted","RusianDiscretion":"настолько большим, высоким или интенсивным, насколько это возможно или разрешено"
+},
+{"EnglishSource":"MEMBER","RussianSource":"член","Score":0.0,"Active":false,"EnglishDiscretion":"a person, animal, or plant belonging to a particular group","RusianDiscretion":"человек, животное или растение, принадлежащее к определенной группе"
+},
+{"EnglishSource":"ORGANISE","RussianSource":"организовать","Score":0.0,"Active":false,"EnglishDiscretion":"arrange into a structured whole; order","RusianDiscretion":"организовать в структурированное целое; "
+},
+{"EnglishSource":"PLAYER","RussianSource":"игрок","Score":0.0,"Active":false,"EnglishDiscretion":"a person taking part in a sport or game","RusianDiscretion":"человек, принимающий участие в спорте или игре"
+},
+{"EnglishSource":"REGULARLY","RussianSource":"регулярно","Score":0.0,"Active":false,"EnglishDiscretion":"with a constant or definite pattern, especially with the same space between individual items","RusianDiscretion":"с постоянным или определенным узором, особенно с одинаковым расстоянием между отдельными элементами"
+},
+{"EnglishSource":"REMOTE","RussianSource":"удаленный","Score":0.0,"Active":false,"EnglishDiscretion":"situated far from the main centers of population; distant","RusianDiscretion":"удаленность от основных населенных пунктов; "
+},
+{"EnglishSource":"SCARE","RussianSource":"напугать","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"SOIL","RussianSource":"земля","Score":0.0,"Active":false,"EnglishDiscretion":"the upper layer of earth in which plants grow, a black or dark brown material typically consisting of a mixture of organic remains, clay, and rock particles","RusianDiscretion":"верхний слой земли, в котором растут растения, черный или темно-коричневый материал, обычно состоящий из смеси органических остатков, глины и частиц камня."
+},
+{"EnglishSource":"TABLET","RussianSource":"планшет","Score":0.0,"Active":false,"EnglishDiscretion":"a flat slab of stone, clay, or wood, used especially for an inscription","RusianDiscretion":"плоская плита из камня, глины или дерева, используемая специально для надписи"
+},
+{"EnglishSource":"TAX","RussianSource":"налог","Score":0.0,"Active":false,"EnglishDiscretion":"a compulsory contribution to state revenue, levied by the government on workers' income and business profits, or added to the cost of some goods, services, and transactions","RusianDiscretion":"обязательный взнос в государственные доходы, взимаемый государством с доходов рабочих и прибыли бизнеса или добавляемый к стоимости некоторых товаров, услуг и операций"
+},
+{"EnglishSource":"TEACH","RussianSource":"учат","Score":0.0,"Active":false,"EnglishDiscretion":"show or explain to (someone) how to do something","RusianDiscretion":"показать или объяснить (кому-то), как что-то сделать"
+},
+{"EnglishSource":"TEAM","RussianSource":"команда","Score":0.0,"Active":false,"EnglishDiscretion":"a group of players forming one side in a competitive game or sport","RusianDiscretion":"группа игроков, образующих одну сторону в соревновательной игре или спорте"
+},
+{"EnglishSource":"WEFT","RussianSource":"уток","Score":0.0,"Active":false,"EnglishDiscretion":"(in weaving) the crosswise threads on a loom over and under which other threads (the warp) are passed to make cloth","RusianDiscretion":"(в ткачестве) поперечные нити на ткацком станке, над и под которыми проходят другие нити (основа) для изготовления ткани"
+},
+{"EnglishSource":"WOOF","RussianSource":"гав","Score":0.0,"Active":false,"EnglishDiscretion":"the barking sound made by a dog","RusianDiscretion":"лай, издаваемый собакой"
+},
+{"EnglishSource":"WORRIED","RussianSource":"волновался","Score":0.0,"Active":false,"EnglishDiscretion":"anxious or troubled about actual or potential problems","RusianDiscretion":"обеспокоены или обеспокоены реальными или потенциальными проблемами"
+},
+{"EnglishSource":"WORRY","RussianSource":"волноваться","Score":0.0,"Active":false,"EnglishDiscretion":"give way to anxiety or unease; allow one's mind to dwell on difficulty or troubles","RusianDiscretion":"поддаться тревоге или беспокойству; "
+},
+{"EnglishSource":"YEARLY","RussianSource":"ежегодно","Score":0.0,"Active":false,"EnglishDiscretion":"done, produced, or occurring once a year or every year","RusianDiscretion":"делается, производится или происходит один раз в год или каждый год"}]}
