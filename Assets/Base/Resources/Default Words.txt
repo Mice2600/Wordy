@@ -5094,4 +5094,106 @@
 },
 {"EnglishSource":"WORRY","RussianSource":"волноваться","Score":0.0,"Active":false,"EnglishDiscretion":"give way to anxiety or unease; allow one's mind to dwell on difficulty or troubles","RusianDiscretion":"поддаться тревоге или беспокойству; "
 },
-{"EnglishSource":"YEARLY","RussianSource":"ежегодно","Score":0.0,"Active":false,"EnglishDiscretion":"done, produced, or occurring once a year or every year","RusianDiscretion":"делается, производится или происходит один раз в год или каждый год"}]}
+{"EnglishSource":"YEARLY","RussianSource":"ежегодно","Score":0.0,"Active":false,"EnglishDiscretion":"done, produced, or occurring once a year or every year","RusianDiscretion":"делается, производится или происходит один раз в год или каждый год"
+},
+{"EnglishSource":"ACCESS","RussianSource":"доступ","Score":0.0,"Active":false,"EnglishDiscretion":"a means of approaching or entering a place","RusianDiscretion":"средство приближения или входа в место"
+},
+{"EnglishSource":"ACROBAT","RussianSource":"акробат","Score":0.0,"Active":false,"EnglishDiscretion":"an entertainer who performs spectacular gymnastic feats","RusianDiscretion":"артист, демонстрирующий зрелищные гимнастические трюки"
+},
+{"EnglishSource":"ALBUM","RussianSource":"альбом","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"ANIMATION","RussianSource":"анимация","Score":0.0,"Active":false,"EnglishDiscretion":"the state of being full of life or vigor; liveliness","RusianDiscretion":"состояние полного жизни или энергии; "
+},
+{"EnglishSource":"AUTISM","RussianSource":"аутизм","Score":0.0,"Active":false,"EnglishDiscretion":"a developmental disorder of variable severity that is characterized by difficulty in social interaction and communication and by restricted or repetitive patterns of thought and behavior","RusianDiscretion":"расстройство развития различной степени тяжести, которое характеризуется трудностями в социальном взаимодействии и общении, а также ограниченными или повторяющимися моделями мышления и поведения."
+},
+{"EnglishSource":"AUTISTIC","RussianSource":"аутист","Score":0.0,"Active":false,"EnglishDiscretion":"relating to or affected by autism","RusianDiscretion":"связанные с аутизмом или затронутые им"
+},
+{"EnglishSource":"BAND","RussianSource":"группа","Score":0.0,"Active":false,"EnglishDiscretion":"a flat, thin strip or loop of material put around something, typically to hold it together or to decorate it","RusianDiscretion":"плоская тонкая полоска или петля материала, надетая вокруг чего-либо, обычно для скрепления или украшения"
+},
+{"EnglishSource":"BELIEF","RussianSource":"вера","Score":0.0,"Active":false,"EnglishDiscretion":"an acceptance that a statement is true or that something exists","RusianDiscretion":"признание того, что утверждение верно или что что-то существует"
+},
+{"EnglishSource":"CHEAT","RussianSource":"изменять","Score":0.0,"Active":false,"EnglishDiscretion":"act dishonestly or unfairly in order to gain an advantage, especially in a game or examination","RusianDiscretion":"действовать нечестно или несправедливо, чтобы получить преимущество, особенно в игре или на экзамене"
+},
+{"EnglishSource":"CHEATING","RussianSource":"мошенничество","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"CIRCUS","RussianSource":"цирк","Score":0.0,"Active":false,"EnglishDiscretion":"a traveling company of acrobats, clowns, and other entertainers which gives performances, typically in a large tent, in a series of different places","RusianDiscretion":"путешествующая компания акробатов, клоунов и других артистов, которая дает представления, обычно в большой палатке, в разных местах."
+},
+{"EnglishSource":"COMEDY","RussianSource":"комедия","Score":0.0,"Active":false,"EnglishDiscretion":"professional entertainment consisting of jokes and satirical sketches, intended to make an audience laugh","RusianDiscretion":"профессиональное развлечение, состоящее из шуток и сатирических зарисовок, призванное рассмешить публику"
+},
+{"EnglishSource":"CONCERT","RussianSource":"концерт","Score":0.0,"Active":false,"EnglishDiscretion":"a musical performance given in public, typically by several performers or of several separate compositions","RusianDiscretion":"музыкальное представление, данное публично, как правило, несколькими исполнителями или несколькими отдельными композициями"
+},
+{"EnglishSource":"CORD","RussianSource":"шнур","Score":0.0,"Active":false,"EnglishDiscretion":"threads of silk, cotton, or other material woven into a decorative band for edging or trimming garments","RusianDiscretion":"нити из шелка, хлопка или другого материала, сплетенные в декоративную ленту для окантовки или отделки одежды"
+},
+{"EnglishSource":"DEAF","RussianSource":"глухой","Score":0.0,"Active":false,"EnglishDiscretion":"lacking the power of hearing or having impaired hearing","RusianDiscretion":"отсутствие слуха или нарушение слуха"
+},
+{"EnglishSource":"DEPEND","RussianSource":"зависеть","Score":0.0,"Active":false,"EnglishDiscretion":"be controlled or determined by","RusianDiscretion":"контролироваться или определяться"
+},
+{"EnglishSource":"DEPENDENCE","RussianSource":"зависимость","Score":0.0,"Active":false,"EnglishDiscretion":"the state of relying on or being controlled by someone or something else","RusianDiscretion":"состояние зависимости или контроля со стороны кого-либо или чего-либо"
+},
+{"EnglishSource":"DESIGN","RussianSource":"дизайн","Score":0.0,"Active":false,"EnglishDiscretion":"a plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made","RusianDiscretion":"план или рисунок, созданный для демонстрации внешнего вида и функции или работы здания, одежды или другого объекта до того, как он будет построен или изготовлен"
+},
+{"EnglishSource":"DIALECT","RussianSource":"диалект","Score":0.0,"Active":false,"EnglishDiscretion":"a particular form of a language which is peculiar to a specific region or social group","RusianDiscretion":"особая форма языка, характерная для определенного региона или социальной группы"
+},
+{"EnglishSource":"DOWNLOAD","RussianSource":"скачать","Score":0.0,"Active":false,"EnglishDiscretion":"copy (data) from one computer system to another, typically over the internet","RusianDiscretion":"копировать (данные) из одной компьютерной системы в другую, как правило, через Интернет"
+},
+{"EnglishSource":"DRAMA","RussianSource":"драма","Score":0.0,"Active":false,"EnglishDiscretion":"a play for theater, radio, or television","RusianDiscretion":"пьеса для театра, радио или телевидения"
+},
+{"EnglishSource":"ENTREATY","RussianSource":"мольба","Score":0.0,"Active":false,"EnglishDiscretion":"an earnest or humble request","RusianDiscretion":"искренняя или скромная просьба"
+},
+{"EnglishSource":"ETHIC","RussianSource":"этика","Score":0.0,"Active":false,"EnglishDiscretion":"a set of moral principles, especially ones relating to or affirming a specified group, field, or form of conduct","RusianDiscretion":"набор моральных принципов, особенно относящихся к определенной группе, области или форме поведения или подтверждающих их"
+},
+{"EnglishSource":"EVADE","RussianSource":"уклоняться","Score":0.0,"Active":false,"EnglishDiscretion":"escape or avoid, especially by cleverness or trickery","RusianDiscretion":"убежать или избежать, особенно хитростью или хитростью"
+},
+{"EnglishSource":"EXPERIENCE","RussianSource":"опыт","Score":0.0,"Active":false,"EnglishDiscretion":"practical contact with and observation of facts or events","RusianDiscretion":"практический контакт и наблюдение за фактами или событиями"
+},
+{"EnglishSource":"FAVOR","RussianSource":"услуга","Score":0.0,"Active":false,"EnglishDiscretion":"approval, support, or liking for someone or something","RusianDiscretion":"одобрение, поддержка или симпатия к кому-то или чему-то"
+},
+{"EnglishSource":"FAVORITE","RussianSource":"любимый","Score":0.0,"Active":false,"EnglishDiscretion":"preferred before all others of the same kind","RusianDiscretion":"предпочтительнее всех других в том же роде"
+},
+{"EnglishSource":"FICTION","RussianSource":"вымысел","Score":0.0,"Active":false,"EnglishDiscretion":"literature in the form of prose, especially short stories and novels, that describes imaginary events and people","RusianDiscretion":"литература в форме прозы, особенно рассказы и романы, описывающие воображаемые события и людей"
+},
+{"EnglishSource":"GENERATION","RussianSource":"поколение","Score":0.0,"Active":false,"EnglishDiscretion":"all of the people born and living at about the same time, regarded collectively","RusianDiscretion":"все люди, родившиеся и жившие примерно в одно и то же время, взятые вместе"
+},
+{"EnglishSource":"GOBLET","RussianSource":"кубок","Score":0.0,"Active":false,"EnglishDiscretion":"a drinking glass with a foot and a stem","RusianDiscretion":"стакан с ножкой и ножкой"
+},
+{"EnglishSource":"GYMNAST","RussianSource":"гимнастка","Score":0.0,"Active":false,"EnglishDiscretion":"a person trained or skilled in gymnastics","RusianDiscretion":"человек, обученный или опытный в гимнастике"
+},
+{"EnglishSource":"HACK","RussianSource":"взломать","Score":0.0,"Active":false,"EnglishDiscretion":"cut with rough or heavy blows","RusianDiscretion":""
+},
+{"EnglishSource":"HELICOPTER","RussianSource":"вертолет","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"HORROR","RussianSource":"ужастик","Score":0.0,"Active":false,"EnglishDiscretion":"an intense feeling of fear, shock, or disgust","RusianDiscretion":"сильное чувство страха, шока или отвращения"
+},
+{"EnglishSource":"INDEPENDENCE","RussianSource":"независимость","Score":0.0,"Active":false,"EnglishDiscretion":"the fact or state of being independent","RusianDiscretion":"факт или состояние независимости"
+},
+{"EnglishSource":"INSTRUMENT","RussianSource":"инструмент","Score":0.0,"Active":false,"EnglishDiscretion":"a tool or implement, especially one for delicate or scientific work","RusianDiscretion":"инструмент или инструмент, особенно для деликатной или научной работы"
+},
+{"EnglishSource":"JIGGLE","RussianSource":"покачивать","Score":0.0,"Active":false,"EnglishDiscretion":"move about lightly and quickly from side to side or up and down","RusianDiscretion":"легко и быстро двигаться из стороны в сторону или вверх и вниз"
+},
+{"EnglishSource":"LESSON","RussianSource":"урок","Score":0.0,"Active":false,"EnglishDiscretion":"an amount of teaching given at one time; a period of learning or teaching","RusianDiscretion":"количество обучения, даваемого за один раз; "
+},
+{"EnglishSource":"MUSICAL","RussianSource":"музыкальный","Score":0.0,"Active":false,"EnglishDiscretion":"relating to music","RusianDiscretion":"относящийся к музыке"
+},
+{"EnglishSource":"MYTH","RussianSource":"миф","Score":0.0,"Active":false,"EnglishDiscretion":"a traditional story, especially one concerning the early history of a people or explaining some natural or social phenomenon, and typically involving supernatural beings or events","RusianDiscretion":"традиционная история, особенно рассказывающая о ранней истории народа или объясняющая какое-то природное или социальное явление и обычно связанная со сверхъестественными существами или событиями"
+},
+{"EnglishSource":"NORM","RussianSource":"норма","Score":0.0,"Active":false,"EnglishDiscretion":"something that is usual, typical, or standard","RusianDiscretion":"нечто обычное, типичное или стандартное"
+},
+{"EnglishSource":"OPERA","RussianSource":"опера","Score":0.0,"Active":false,"EnglishDiscretion":"a dramatic work in one or more acts, set to music for singers and instrumentalists","RusianDiscretion":"драматическое произведение в одном или нескольких действиях, положенное на музыку для певцов и инструменталистов"
+},
+{"EnglishSource":"OPUS","RussianSource":"опус","Score":0.0,"Active":false,"EnglishDiscretion":"a separate composition or set of compositions by a particular composer, usually ordered by date of publication","RusianDiscretion":"отдельная композиция или набор композиций определенного композитора, обычно упорядоченные по дате публикации"
+},
+{"EnglishSource":"PRIZE","RussianSource":"приз","Score":0.0,"Active":false,"EnglishDiscretion":"a thing given as a reward to the winner of a competition or in recognition of an outstanding achievement","RusianDiscretion":"вещь, вручаемая в награду победителю конкурса или в знак признания выдающихся достижений"
+},
+{"EnglishSource":"ROMANTIC","RussianSource":"романтик","Score":0.0,"Active":false,"EnglishDiscretion":"conducive to or characterized by the expression of love","RusianDiscretion":"способствующий или характеризующийся выражением любви"
+},
+{"EnglishSource":"SMARTPHONE","RussianSource":"смартфон","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"STAGE","RussianSource":"этап","Score":0.0,"Active":false,"EnglishDiscretion":"a point, period, or step in a process or development","RusianDiscretion":"точка, период или шаг в процессе или развитии"
+},
+{"EnglishSource":"SURPRISE","RussianSource":"сюрприз","Score":0.0,"Active":false,"EnglishDiscretion":"an unexpected or astonishing event, fact, or thing","RusianDiscretion":"неожиданное или удивительное событие, факт или вещь"
+},
+{"EnglishSource":"TUMBLER","RussianSource":"стакан","Score":0.0,"Active":false,"EnglishDiscretion":"a drinking glass with straight sides and no handle or stem","RusianDiscretion":"стакан для питья с прямыми сторонами и без ручки или ножки"
+},
+{"EnglishSource":"WEB","RussianSource":"сеть","Score":0.0,"Active":false,"EnglishDiscretion":"a network of fine threads constructed by a spider from fluid secreted by its spinnerets, used to catch its prey","RusianDiscretion":"сеть тонких нитей, созданная пауком из жидкости, выделяемой его фильерами, используемая для ловли добычи."
+},
+{"EnglishSource":"WIGGLE","RussianSource":"покачиваться","Score":0.0,"Active":false,"EnglishDiscretion":"move or cause to move up and down or from side to side with small rapid movements","RusianDiscretion":"двигать или заставлять двигаться вверх-вниз или из стороны в сторону небольшими быстрыми движениями"}]}
