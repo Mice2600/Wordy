@@ -36,13 +36,13 @@ public class DialogChanger : ContentObject
         this.Content = NeedChanger;
         WordWriter.text = NeedChanger.EnglishSource;
         WordTronsleated.text = NeedChanger.RussianSource;
-        ScoreSlider.value = (NeedChanger.Score) / 100f;
+        ScoreSlider.value = (NeedChanger.ScoreConculeated) / 100f;
     }
     public void TryAplay()
     {
         this.Content.EnglishSource = WordWriter.text;
         this.Content.RussianSource = WordTronsleated.text;
-        this.Content.Score = (ScoreSlider.value) * 100f;
+        this.Content.ScoreConculeated = (ScoreSlider.value) * 100f;
         OnDestroyUrself();
     }
     public void TryCancel()

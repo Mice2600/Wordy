@@ -9,16 +9,11 @@ using SystemBox;
 using UnityEngine;
 namespace BaseViwe.DialogViwe
 {
-    public class DialogBaseViwe  : BaseListWithFillter<Dialog> , IRemoveButtonUser
+    public class DialogBaseViwe  : BaseListWithFillter<Dialog> 
     {
         public override List<Dialog> AllContents => DialogBase.Dialogs;
         private protected override int IndexOf(Content content) => base.Contents.IndexOf(content as Dialog);
-        public void OnRemoveButton(Content content)
-        {
-            DialogBase.Dialogs.Remove(content as Dialog);
-            FindObjectOfType<DiscretionViwe>()?.DestroyUrself();
-            Refresh();
-        }
+        
         protected override TList<Dialog> SearchComand(TList<Dialog> AllContents, string SearchString) => Servises.Search.SearchAll<Dialog>(AllContents, SearchingString);
     }
 }

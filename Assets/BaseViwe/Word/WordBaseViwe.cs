@@ -14,16 +14,10 @@ using Servises.BaseList;
 using Base;
 namespace BaseViwe.WordViwe
 {
-    public class WordBaseViwe : BaseListWithFillter<Word>, IRemoveButtonUser
+    public class WordBaseViwe : BaseListWithFillter<Word>
     {
         public override List<Word> AllContents => WordBase.Wordgs;
         private protected override int IndexOf(Content content) => base.Contents.IndexOf(content as Word);
-        public void OnRemoveButton(Content content)
-        {
-            WordBase.Wordgs.Remove(content as Word);
-            FindObjectOfType<DiscretionViwe>()?.DestroyUrself();
-            Refresh();
-        }
         protected override TList<Word> SearchComand(TList<Word> AllContents, string SearchString) => Servises.Search.SearchAll<Word>(AllContents, SearchingString);
     }
 }

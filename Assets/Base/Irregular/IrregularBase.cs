@@ -45,6 +45,7 @@ public class IrregularBase : DataList<Irregular>
         Irregulars = new IrregularBase();
     }
 #if UNITY_EDITOR
+    /*
     public static string AddManural(string Base) 
     {
         
@@ -119,7 +120,7 @@ public class IrregularBase : DataList<Irregular>
         return JsonHelper.ToJson(Irregulars.ToArray());
 
     }
-
+    */
     public static void AddAllToDefaultBase()
     {
         ProjectSettings.ProjectSettings.Mine.AddIrregulars(Irregulars);
@@ -147,7 +148,7 @@ namespace ProjectSettings
             void AddOne(Irregular a)
             {
                 if (string.IsNullOrEmpty(a.EnglishSource)) return;
-                a.Score = 0;
+                a.ScoreConculeated = 0;
                 string newID = a.EnglishSource;
                 newID = newID.ToUpper();
                 newID = newID.Replace("!", "");

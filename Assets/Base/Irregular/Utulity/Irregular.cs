@@ -1,5 +1,7 @@
 using Base;
+using Base.Dialog;
 using Newtonsoft.Json;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +16,9 @@ public partial class Irregular : Content, IDiscreption, IIrregular, ISpeeker
     string IIrregular.PastParticiple { get => PastParticiple; set => PastParticiple = value; }
     string ISpeeker.SpeekText => (this as IIrregular).BaseForm + "  " + SimplePast + "  " + PastParticiple;
 
+    public override IDataListComands BaseCommander => IrregularBase.Irregulars;
+    public override GameObject DiscretioVewe => ProjectSettings.ProjectSettings.Mine.DiscretionIrregular;
+
     public Irregular(string EnglishSource, string RussianSource, string SimplePast, string PastParticiple, float Score, bool Active, string EnglishDiscretion, string RusianDiscretion) : base(EnglishSource, RussianSource, Score, Active)
     {
         EnglishSource.ToUpper();
@@ -22,5 +27,13 @@ public partial class Irregular : Content, IDiscreption, IIrregular, ISpeeker
         
         this.SimplePast = SimplePast;
         this.PastParticiple = PastParticiple;
+    }
+}
+namespace ProjectSettings
+{
+    public partial class ProjectSettings
+    {
+        [FoldoutGroup("Discretion")]
+        public GameObject DiscretionIrregular;
     }
 }

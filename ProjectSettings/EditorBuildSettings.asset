@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/WriteIrregular/WriteIrregular.unity
     guid: b760fa6f43c0be94b83c9771accdaf63
+  - enabled: 1
+    path: Assets/Study/aSystem/Random.unity
+    guid: 52d73c9d2d5b93446b4606442377c353
   m_configObjects: {}

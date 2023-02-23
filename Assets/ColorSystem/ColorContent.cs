@@ -15,7 +15,7 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
 {
     [SerializeField]
     private List<MaskableGraphic> Arts;
-    private ContentObject ContentObject;
+    private protected ContentObject ContentObject;
     private Gradient ContentLoopColors;
     private protected override void Start()
     {
@@ -28,15 +28,7 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
     {
         if (ContentObject == null) return;
         if (ContentObject.Content == null) return;
-        
-        int Index = -1;
-        if (ContentObject.Content is Word)
-            Index = WordBase.Wordgs.IndexOf(ContentObject.Content as Word);
-        else if (ContentObject.Content is Dialog) 
-            Index = DialogBase.Dialogs.IndexOf(ContentObject.Content as Dialog);
-        else if (ContentObject.Content is Irregular)
-            Index = IrregularBase.Irregulars.IndexOf(ContentObject.Content as Irregular);
-        else return;
+        int Index = ContentObject.Content.BaseCommander.IndexOf(ContentObject.Content);
         Color NC = GetColor(Index, ContentObject.Content.Active);
         for (int i = 0; i < Arts.Count; i++) 
         {
@@ -45,7 +37,7 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
         }
     }
 
-    public Color GetColor(int index, bool IsActive)
+    private protected virtual Color GetColor(int index, bool IsActive)
     {
         index = Mathf.Abs(index);
         int levv = (index / 30);

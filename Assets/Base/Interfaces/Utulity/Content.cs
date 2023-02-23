@@ -1,5 +1,6 @@
 using Base;
 using System;
+using UnityEngine;
 
 public abstract partial class Content : IComparable // Utulity
 {
@@ -8,9 +9,28 @@ public abstract partial class Content : IComparable // Utulity
         EnglishSource.ToUpper();
         this.EnglishSource = EnglishSource.ToUpper();
         this.RussianSource = RussianSource;
-        this.Score = Score;
+        ScoreConculeated = Score;
         this.Active = Active;
     }
+
+    public abstract IDataListComands BaseCommander { get; }
+    public abstract GameObject DiscretioVewe { get; }
+    
+    #pragma warning disable 612, 618 
+    public float ScoreConculeated 
+    {
+        get => Score;
+        set 
+        {
+
+            if(value > 100) value = 100;
+            else if(value < 0) value = 0;
+            Score = value;
+
+        }
+    }
+    #pragma warning restore 612, 618 
+
     public int CompareTo(object obj)
     {
         try

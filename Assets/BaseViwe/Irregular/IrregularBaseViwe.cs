@@ -13,15 +13,9 @@ using Servises;
 using Servises.BaseList;
 using Base;
 
-public class IrregularBaseViwe : BaseListWithFillter<Irregular>, IRemoveButtonUser
+public class IrregularBaseViwe : BaseListWithFillter<Irregular>
 {
     public override List<Irregular> AllContents => IrregularBase.Irregulars;
     private protected override int IndexOf(Content content) => base.Contents.IndexOf(content as Irregular);
-    public void OnRemoveButton(Content content)
-    {
-        IrregularBase.Irregulars.Remove(content as Irregular);
-        FindObjectOfType<DiscretionViwe>()?.DestroyUrself();
-        Refresh();
-    }
     protected override TList<Irregular> SearchComand(TList<Irregular> AllContents, string SearchString) => Search.SearchIrregularAll<Irregular>(AllContents, SearchingString);
 }

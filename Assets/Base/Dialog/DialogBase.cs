@@ -108,7 +108,7 @@ namespace ProjectSettings
             void AddOne(Dialog a) 
             {
                 if (string.IsNullOrEmpty(a.EnglishSource)) return;
-                a.Score = 0;
+                a.ScoreConculeated = 0;
                 string newID = a.EnglishSource;
                 newID = newID.ToUpper();
                 newID = newID.Replace("!", "");

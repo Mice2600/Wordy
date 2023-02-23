@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace Servises.BaseList
 {
-    public abstract class BaseListViwe<T> : MonoBehaviour, RePlaceController where T : Content
+    public abstract class BaseListViwe<T> : MonoBehaviour, IRemoveButtonUser, RePlaceController where T : Content
     {
         private ScrollRect scrollRect => _scrollRect ??= GetComponentInChildren<ScrollRect>();
         private ScrollRect _scrollRect;
@@ -83,6 +83,14 @@ namespace Servises.BaseList
             contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>().Content = NewContent;
             return true;
         }
-        
+
+
+        public void OnRemoveButton(Content content)
+        {
+            content.BaseCommander.Remove(content);
+            FindObjectOfType<DiscretionViwe>()?.DestroyUrself();
+            Refresh();
+        }
+
     }
 }

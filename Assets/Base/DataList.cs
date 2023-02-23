@@ -10,7 +10,14 @@ using UnityEngine;
 
 namespace Base
 {
-    public abstract class DataList<T> : List<T> where T : Content
+    public interface IDataListComands 
+    {
+        public void Add(Content Content);
+        public void Save();
+        public int IndexOf(Content Content);
+        public void Remove(Content Content);
+    }
+    public abstract class DataList<T> : List<T>, IDataListComands where T : Content
     {
         public DataList()
         {
@@ -37,17 +44,20 @@ namespace Base
 
         public void Save()
         {
-            for (int i = 0; i < Count; i++)if (this[i].Score < 0) this[i].Score = 0;
+            for (int i = 0; i < Count; i++)if (this[i].ScoreConculeated < 0) this[i].ScoreConculeated = 0;
             PlayerPrefs.SetString(DataID, JsonHelper.ToJson<T>((this as List<T>).ToArray()));
         }
 
-        public new void Add(T Content)
+        public void Add(Content Content)
         {
             if (string.IsNullOrEmpty(Content.EnglishSource)) return;
-            if (Contains(Content)) return;
-            base.Add(Content);
+            if (Contains(Content as T)) return;
+            base.Add(Content as T);
         }
 
+        public void Remove(Content Content)  => base.Remove(Content as T);
+
+        public int IndexOf(Content Content) => base.IndexOf(Content as T);
         public List<T> ActiveItems => new List<T>(this.Where(a => a.Active));
         public List<T> PassiveItems => new List<T>(this.Where(a => !a.Active));
         public List<T> GetContnetList(int ListCount)
@@ -77,7 +87,7 @@ namespace Base
             List<T> L0_10 = new List<T>();
             for (int i = 0; i < All.Count; i++)
             {
-                float Score = All[i].Score;
+                float Score = All[i].ScoreConculeated;
                 if (Score > 90) L90_100.Add(All[i]);
                 else if (Score > 70 && Score <= 90) L70_90.Add(All[i]);
                 else if (Score > 50 && Score <= 70) L50_70.Add(All[i]);

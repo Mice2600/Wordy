@@ -16,7 +16,7 @@ namespace WordCreator.DialogCreator
             Content = new Dialog("", "",0,false);
         }
         public void OnWordValumeChanged(string Valume) => Content.EnglishSource= Valume;
-        public void OnScoreValumeChanged(float Valume) => Content.Score = Valume *= 100f;
+        public void OnScoreValumeChanged(float Valume) => Content.ScoreConculeated = Valume *= 100f;
 
         public void OnActiveValumeChanged(bool Valume) => Content.Active = Valume;
 

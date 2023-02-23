@@ -10,17 +10,48 @@ namespace Study.TwoWordSystem
         public bool IsEnglishSide;
         public static TwoWordSystemContent EnglishSellected;
         public static TwoWordSystemContent RussianSellected;
+
+        [SerializeField]
+        private GameObject TextEnglish, TextTransleated;
+        [SerializeField]
+        private GameObject VoisOB, TextOB;
+
         [System.NonSerialized]
         public bool Dead;
+
         private void Start()
         {
+            OnValueChanged += (s) => Refresh();
             Refresh();
         }
+
         public void Refresh()
         {
-            TList<Transform> da = transform.Childs();
-            da.ForEach(t => t.gameObject.SetActive(false));
-            da.RandomItem.transform.gameObject.SetActive(true);
+            if (IsEnglishSide)
+            {
+                TextEnglish.SetActive(true);
+                TextTransleated.SetActive(false);
+
+                if (Random.Range(0, 10) > 5)
+                {
+                    VoisOB.SetActive(false);
+                    TextOB.SetActive(true);
+                }
+                else 
+                {
+                    VoisOB.SetActive(true);
+                    TextOB.SetActive(false);
+                }
+            }
+            else 
+            {
+                VoisOB.SetActive(false);
+                TextOB.SetActive(true);
+
+                TextEnglish.SetActive(false);
+                TextTransleated.SetActive(true);
+            }
+            
         }
 
         private TwoWordSystem TwoWordSystem => _TwoWordSystem ??= FindObjectOfType<TwoWordSystem>();
@@ -55,7 +86,6 @@ namespace Study.TwoWordSystem
                         string OldWord = Content.EnglishSource;
                         yield return new WaitForSeconds(1);
                         TwoWordSystem.TryChange(Ones, Twos);
-                        Refresh();
                         if (Content.EnglishSource != OldWord) 
                         {
                             Twos.Dead = false;

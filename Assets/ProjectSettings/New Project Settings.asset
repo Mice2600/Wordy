@@ -22,7 +22,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   DefalultDialogs: {fileID: 4900000, guid: 24a41c6d78d9f37449e33b165492a6b9, type: 3}
+  DiscretionDialog: {fileID: 5128650482689109638, guid: a6eb0c2e56148e049a068416e72bdbc1, type: 3}
   DefalultIrregular: {fileID: 4900000, guid: 7e22acab76b277b4095a70a71d2a6630, type: 3}
+  DiscretionIrregular: {fileID: 3940078003728719836, guid: 032d1ad23120f2b4da823d765639fd0a, type: 3}
+  DiscretionWord: {fileID: 8496439981645526867, guid: 349a96abbad001a4489ff5968d91b17f, type: 3}
   DefalultWords: {fileID: 4900000, guid: b8d1528e2cd59734290ca53d7cac67dd, type: 3}
   ContentLoopColors:
     serializedVersion: 2
@@ -56,9 +59,6 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
   DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
-  DiscretionViwe: {fileID: 8496439981645526867, guid: 349a96abbad001a4489ff5968d91b17f, type: 3}
-  DiscretionDialog: {fileID: 5128650482689109638, guid: a6eb0c2e56148e049a068416e72bdbc1, type: 3}
-  DiscretionIrregular: {fileID: 3940078003728719836, guid: 032d1ad23120f2b4da823d765639fd0a, type: 3}
   QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
   QuestBuildDialogPrefabSceneName: BuildDialog
   QuestBuildDialogScorevalumes:

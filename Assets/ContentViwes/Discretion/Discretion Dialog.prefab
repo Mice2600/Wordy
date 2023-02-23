@@ -1172,10 +1172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52c31e228af8ed4482d19414bd54188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundButton: {fileID: 5128650482198288954}
-  RemoveButton: {fileID: 5693306968612963559}
-  Score: {fileID: 3085967370777787415}
-  EditButton: {fileID: 8803798250200861625}
 --- !u!1 &5693306968612963559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1185,7 @@ GameObject:
   - component: {fileID: 825175888423789370}
   - component: {fileID: 3583524648888269210}
   - component: {fileID: 1971352107729709166}
-  - component: {fileID: 8377954257443800505}
+  - component: {fileID: 26747369677925683}
   m_Layer: 5
   m_Name: RemoveButton
   m_TagString: Untagged
@@ -1286,7 +1282,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0.21960786, g: 0.27450982, b: 0.28627452, a: 1}
   m_EffectDistance: {x: 5.3, y: -5.3}
   m_UseGraphicAlpha: 1
---- !u!114 &8377954257443800505
+--- !u!114 &26747369677925683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1295,7 +1291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5693306968612963559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e1e8284f77e5545ac44419a71ace89, type: 3}
+  m_Script: {fileID: 11500000, guid: 04871e0f3395a024aaf6c0d4af4570ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:

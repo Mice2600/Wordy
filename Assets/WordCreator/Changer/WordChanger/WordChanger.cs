@@ -41,7 +41,7 @@ public class WordChanger : ContentObject
         WordTronsleated.text = NeedChanger.RussianSource;
         DiscreptionWriter.text = NeedChanger.EnglishDiscretion;
         DiscreptionTranslated.text = NeedChanger.RusianDiscretion;
-        ScoreSlider.value = (NeedChanger.Score) / 100f;
+        ScoreSlider.value = (NeedChanger.ScoreConculeated) / 100f;
     }
     public void TryAplay() 
     {
@@ -49,7 +49,7 @@ public class WordChanger : ContentObject
         this.Content.RussianSource  = WordTronsleated.text;
         (this.Content as IDiscreption).EnglishDiscretion = DiscreptionWriter.text;
         (this.Content as IDiscreption).RusianDiscretion = DiscreptionTranslated.text;
-        this.Content.Score = (ScoreSlider.value) * 100f;
+        this.Content.ScoreConculeated = (ScoreSlider.value) * 100f;
         OnDestroyUrself();
     }
     public void TryCancel() 

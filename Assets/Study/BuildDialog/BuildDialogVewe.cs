@@ -54,7 +54,7 @@ namespace Study.BuildDialog
             All.Mix();
 
             IDContentText.text = Grr[0].RussianSource;
-            if (Application.isMobilePlatform && Content.Score > 30 && Random.Range(0, 100) > 40) 
+            if (Application.isMobilePlatform && Content.ScoreConculeated > 30 && Random.Range(0, 100) > 40) 
             {
                 IDContentText.text = Grr[0].RussianSource;
                 IDContentText.font = PasswordFont; 

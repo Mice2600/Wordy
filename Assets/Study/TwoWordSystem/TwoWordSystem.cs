@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using SystemBox;
 using Base;
 using Base.Word;
-using Servises;
-using Unity.Collections.LowLevel.Unsafe;
-using Base.Dialog;
 using Sirenix.OdinInspector;
+using System.Collections.Generic;
+using SystemBox;
+using Unity.Collections.LowLevel.Unsafe;
+using UnityEngine;
 
 namespace Study.TwoWordSystem
 {
@@ -15,48 +12,78 @@ namespace Study.TwoWordSystem
     {
         [Required]
         public QuestTwoWord QuestTwoWord;
-        public Transform EnglishContentParrent;
-        public Transform RussianContentParrent;
-        private TList<ContentObject> EnglishContents;
-        private TList<ContentObject> RussianContents;
+
+        public Transform EnglishParrent;
+
 
         [SerializeField]
         private TList<Word> Words;
         public Gradient HelpColor;
 
+        public GameObject ContntPrefab;
+
         [Sirenix.OdinInspector.Button]
         public void Start()
         {
+            EnglishParrent.ClearChilds();
+            int CC = Random.Range(4, 9);
+            Debug.Log(CC);
+            for (int i = 0; i < CC; i++)
+            {
+                Instantiate(ContntPrefab, EnglishParrent);
+                Instantiate(ContntPrefab, EnglishParrent);
+            }
+
             //Words = WordBase.Wordgs;
             Words = QuestTwoWord.NeedWords;
             ScoresResultat = new Dictionary<Word, int>();
             for (int i = 0; i < Words.Count; i++) ScoresResultat.Add(Words[i], 0);
 
-            List<Transform> RuChilds = RussianContentParrent.Childs();
-            RussianContents = new TList<ContentObject>();
-            RuChilds.ForEach(a => RussianContents.Add(a.GetComponent<ContentObject>()));
-            RuChilds = EnglishContentParrent.Childs();
-            EnglishContents = new TList<ContentObject>();
-            RuChilds.ForEach(a => EnglishContents.Add(a.GetComponent<ContentObject>()));
 
-            TList<ContentObject> _EnglishContents = EnglishContents.Mix(true);
-            TList<ContentObject> _RussianContents = RussianContents.Mix(true);
+
+
+
+            TList<TwoWordSystemContent> EnglishContents = new TList<TwoWordSystemContent>();
+            TList<TwoWordSystemContent> RussianContents = new TList<TwoWordSystemContent>();
+            TList<TwoWordSystemContent> AllOthers = EnglishParrent.GetComponentsInChildren<TwoWordSystemContent>();
+
+            AllOthers.Mix();
+            for (int i = 0; i < AllOthers.Count; i++)
+            {
+                if (i < AllOthers.Count / 2) EnglishContents.Add(AllOthers[i]);
+                else RussianContents.Add(AllOthers[i]);
+            }
+
+            EnglishContents.ForEach(a => a.IsEnglishSide = true);
+            RussianContents.ForEach(a => a.IsEnglishSide = false);
+            TList<TwoWordSystemContent> _EnglishContents = EnglishContents.Mix(true);
+            TList<TwoWordSystemContent> _RussianContents = RussianContents.Mix(true);
 
             for (int i = 0; i < _EnglishContents.Count; i++)
             {
                 Word N = Words.RemoveRandomItem();
                 _EnglishContents[i].Content = N;
-                (_EnglishContents[i] as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(_EnglishContents[i].Content as Word)));
                 _RussianContents[i].Content = N;
-                (_RussianContents[i] as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(_RussianContents[i].Content as Word)));
             }
         }
         [Sirenix.OdinInspector.Button]
-        public void TryChange(ContentObject EnglishOnes, ContentObject RussiaOnes)
+        public void TryChange(TwoWordSystemContent EnglishOnes, TwoWordSystemContent RussiaOnes)
         {
             string OldOne = EnglishOnes.Content.EnglishSource;
             ScoresResultat[EnglishOnes.Content as Word] += 1;
             ScoresResultat[RussiaOnes.Content as Word] += 1;
+
+
+            TList<TwoWordSystemContent> EnglishContents = new TList<TwoWordSystemContent>();
+            TList<TwoWordSystemContent> RussianContents = new TList<TwoWordSystemContent>();
+
+            TList<TwoWordSystemContent> AllOthers = EnglishParrent.GetComponentsInChildren<TwoWordSystemContent>();
+
+            AllOthers.Remove(EnglishOnes);
+            AllOthers.Remove(RussiaOnes);
+
+            AllOthers.ForEach((a) => { EnglishContents.AddIf(a, a.IsEnglishSide); RussianContents.AddIf(a, !a.IsEnglishSide); });
+
 
             TList<Word> EnglishWords = new TList<Word>();
             for (int i = 0; i < EnglishContents.Count; i++)
@@ -85,13 +112,21 @@ namespace Study.TwoWordSystem
                 }
             }
 
+            if (Random.Range(0, 10) > 5) 
+            {
+                TwoWordSystemContent d = EnglishOnes;
+                EnglishOnes = RussiaOnes;
+                RussiaOnes = d;
+            }
+            EnglishOnes.IsEnglishSide = true;
+            RussiaOnes.IsEnglishSide = false;
+
             if (Words.Count > 0 && (IsThereSomeOneTrue > 4 || (Random.Range(0, 100) > 50 && IsThereSomeOneTrue > 3))) TryRandom();
-            else  TryFind();
+            else TryFind();
 
             void TryRandom()
             {
-
-                Word NWord = new Word("","", 0,false, "", "");
+                Word NWord = new Word("", "", 0, false, "", "");
 
                 for (int i = 0; i < 20; i++)
                 {
@@ -100,7 +135,7 @@ namespace Study.TwoWordSystem
                 }
                 Words.Remove(NWord);
                 EnglishOnes.Content = NWord;
-                (EnglishOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(EnglishOnes.Content as Word)));
+                if (Words.Count == 0) Words.Add(NWord);//prosta keyin remov boladi
 
                 NWord = new Word("", "", 0, false, "", "");
                 for (int i = 0; i < 20; i++)
@@ -110,53 +145,49 @@ namespace Study.TwoWordSystem
                 }
                 Words.Remove(NWord);
                 RussiaOnes.Content = NWord;
-                (RussiaOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(RussiaOnes.Content as Word)));
             }
 
             void TryFind()
             {
-
                 TList<Word> AllRu = RussianWords.Mix(true);
                 TList<Word> AllEN = EnglishWords.Mix(true);
                 for (int i = 0; i < AllRu.Count; i++)
                 {
                     if (AllEN.Contains(AllRu[i])) continue;
                     EnglishOnes.Content = AllRu[i];
-                    (EnglishOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(EnglishOnes.Content as Word)));
                     break;
                 }
                 for (int i = 0; i < AllEN.Count; i++)
                 {
                     if (AllRu.Contains(AllEN[i])) continue;
                     RussiaOnes.Content = AllEN[i];
-                    (RussiaOnes as MonoBehaviour).GetComponent<ColorChanger>().SetColor(GetColor(WordBase.Wordgs.IndexOf(RussiaOnes.Content as Word)));
                     break;
                 }
 
-                
+
             }
-            if (OldOne == EnglishOnes.Content.EnglishSource) 
+            if (OldOne == EnglishOnes.Content.EnglishSource)
             {
-                if (!WinWindow.activeSelf) 
+                if (!WinWindow.activeSelf)
                 {
                     bool IsThereActiveOnes = false;
 
 
                     for (int i = 0; i < EnglishContents.Count; i++)
                     {
-                        if (!(EnglishContents[i] as TwoWordSystemContent).Dead) 
+                        if (!(EnglishContents[i] as TwoWordSystemContent).Dead)
                         {
                             IsThereActiveOnes = true;
                             break;
                         }
                     }
 
-                    if(!IsThereActiveOnes)ShowWinWindow();
+                    if (!IsThereActiveOnes) ShowWinWindow();
                 }
-                
+
             }
         }
-        public void WrongChose(Content EnglishOnes, Content RussiaOnes) 
+        public void WrongChose(Content EnglishOnes, Content RussiaOnes)
         {
             ScoresResultat[EnglishOnes as Word] -= 1;
             ScoresResultat[RussiaOnes as Word] -= 1;
@@ -168,7 +199,7 @@ namespace Study.TwoWordSystem
         public ContentGropper LostGropeParrent;
         public Dictionary<Word, int> ScoresResultat;
 
-        public void ShowWinWindow() 
+        public void ShowWinWindow()
         {
             WinWindow.SetActive(true);
             List<Word> words = new List<Word>(ScoresResultat.Keys);
@@ -177,14 +208,14 @@ namespace Study.TwoWordSystem
             for (int i = 0; i < words.Count; i++)
             {
                 GameObject G = Instantiate(SingelScorePrefab);
-                if (ScoresResultat[words[i]] > 1) 
+                if (ScoresResultat[words[i]] > 1)
                 {
                     G.GetComponent<ScoreChanginInfo>().Set(words[i], QuestTwoWord.AddScoreWord);
                     WinGropeParrent.AddNewContent(G.transform);
                     IsThereWinn = true;
                     QuestTwoWord.OnWordWin.Invoke(words[i]);
                 }
-                else 
+                else
                 {
                     G.GetComponent<ScoreChanginInfo>().Set(words[i], QuestTwoWord.RemoveScoreWord);
                     LostGropeParrent.AddNewContent(G.transform);
@@ -192,31 +223,25 @@ namespace Study.TwoWordSystem
                     QuestTwoWord.OnWordLost.Invoke(words[i]);
                 }
             }
-            if (!IsThereWinn) 
+            if (!IsThereWinn)
             {
-                
+
                 GameObject G = Instantiate(SingelScorePrefab);
-                G.GetComponent<ScoreChanginInfo>().Set(new Word("Nothing :(", "",0, false,"",""), -99);
+                G.GetComponent<ScoreChanginInfo>().Set(new Word("Nothing :(", "", 0, false, "", ""), -99);
                 WinGropeParrent.AddNewContent(G.transform);
             }
-            if (!IsThereLost) 
+            if (!IsThereLost)
             {
                 GameObject G = Instantiate(SingelScorePrefab);
                 G.GetComponent<ScoreChanginInfo>().Set(new Word("wow soch empty", "", 0, false, "", ""), 5);
                 LostGropeParrent.AddNewContent(G.transform);
             }
-            QuestTwoWord.OnGameWin();
+            QuestTwoWord.OnGameWin?.Invoke();
         }
-        public void OnFinsh() 
+        public void OnFinsh()
         {
             QuestTwoWord.OnFineshed.Invoke();
         }
-        public Color GetColor(int index)
-        {
-            index = Mathf.Abs(index);
-            int levv = (index / 10);
-            index -= (levv * 10);
-            return HelpColor.Evaluate((float)index / 10f);
-        }
+
     }
 }
