@@ -49,8 +49,22 @@ namespace Study.BuildDialog
         {
             List<Dialog> Grr = QuestBuildDialog.NeedDialogs;
             Content = Grr[0];
+            
             TList<string> All = Grr[0].EnglishSource.Split(" ");
-            All.AddRange(Grr[1].EnglishSource.Split(" "));
+            if (Content.ScoreConculeated < 10) 
+            {
+                MergeOnes(ref All);
+                MergeOnes(ref All);
+            }
+            else if (Content.ScoreConculeated < 40) MergeTreple(ref All);
+            else if (Content.ScoreConculeated < 70) MergeOnes(ref All);
+            
+            TList<string> Otherrr = Grr[1].EnglishSource.Split(" ");
+
+            if (Content.ScoreConculeated < 40) MergeTreple(ref Otherrr);
+            else if (Content.ScoreConculeated < 70) MergeOnes(ref Otherrr);
+
+            All.AddRange(Otherrr);
             All.Mix();
 
             IDContentText.text = Grr[0].RussianSource;
@@ -84,6 +98,55 @@ namespace Study.BuildDialog
                 Gamesss.ForEach(StartParrent.AddNewContent);
             }
         }
+
+        private void MergeOnes(ref TList<string> All) 
+        {
+            int Count = All.Count;
+            for (int i = 0; i < Count; i+=2)
+            {
+                if (i >= Count) continue;
+                if (i + 1 >= Count) continue;
+                All[i] += " " + All[i + 1];
+                All[i + 1] = "";
+            }
+            for (int i = 0; i < All.Count; i++)
+            {
+                if (string.IsNullOrEmpty(All[i])) 
+                {
+                    All.RemoveAt(i);
+                    i--;
+                }
+            }
+        }
+        private void MergeTreple(ref TList<string> All) 
+        {
+            int Count = All.Count;
+            for (int i = 0; i < Count; i+=3)
+            {
+                if (i >= Count) continue;
+                if (i + 1 >= Count) continue;
+                if (i + 2 >= Count) 
+                {
+                    All[i] += " " + All[i + 1];
+                    All[i + 1] = "";
+                    continue; 
+                }
+
+                All[i] += " " + All[i + 1];
+                All[i] += " " + All[i + 2];
+                All[i + 1] = "";
+                All[i + 2] = "";
+            }
+            for (int i = 0; i < All.Count; i++)
+            {
+                if (string.IsNullOrEmpty(All[i])) 
+                {
+                    All.RemoveAt(i);
+                    i--;
+                }
+            }
+        }
+
         public void TryAddMeDown(BuildDialogContent buildDialog) 
         {
             buildDialog.CorrentTarget = buildDialog.ShadowDown;
