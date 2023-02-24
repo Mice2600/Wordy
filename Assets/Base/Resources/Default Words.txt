@@ -5196,4 +5196,486 @@
 },
 {"EnglishSource":"WEB","RussianSource":"сеть","Score":0.0,"Active":false,"EnglishDiscretion":"a network of fine threads constructed by a spider from fluid secreted by its spinnerets, used to catch its prey","RusianDiscretion":"сеть тонких нитей, созданная пауком из жидкости, выделяемой его фильерами, используемая для ловли добычи."
 },
-{"EnglishSource":"WIGGLE","RussianSource":"покачиваться","Score":0.0,"Active":false,"EnglishDiscretion":"move or cause to move up and down or from side to side with small rapid movements","RusianDiscretion":"двигать или заставлять двигаться вверх-вниз или из стороны в сторону небольшими быстрыми движениями"}]}
+{"EnglishSource":"WIGGLE","RussianSource":"покачиваться","Score":0.0,"Active":false,"EnglishDiscretion":"move or cause to move up and down or from side to side with small rapid movements","RusianDiscretion":"двигать или заставлять двигаться вверх-вниз или из стороны в сторону небольшими быстрыми движениями"
+},
+{"EnglishSource":"ABUSE","RussianSource":"злоупотреблять","Score":0.0,"Active":false,"EnglishDiscretion":"use (something) to bad effect or for a bad purpose; misuse","RusianDiscretion":"использовать (что-либо) с плохим эффектом или с плохой целью; "
+},
+{"EnglishSource":"ACCESSIBLE","RussianSource":"доступный","Score":0.0,"Active":false,"EnglishDiscretion":"able to be reached or entered","RusianDiscretion":"можно добраться или войти"
+},
+{"EnglishSource":"ACCUSE","RussianSource":"обвинять","Score":0.0,"Active":false,"EnglishDiscretion":"charge (someone) with an offense or crime","RusianDiscretion":"обвинять (кого-либо) в правонарушении или преступлении"
+},
+{"EnglishSource":"ACCUSED","RussianSource":"обвиняемый","Score":0.0,"Active":false,"EnglishDiscretion":"a person or group of people who are charged with or on trial for a crime","RusianDiscretion":"лицо или группа лиц, обвиняемые или находящиеся под судом за совершение преступления"
+},
+{"EnglishSource":"ADORE","RussianSource":"обожать","Score":0.0,"Active":false,"EnglishDiscretion":"love and respect (someone) deeply","RusianDiscretion":"любить и уважать (кого-то) глубоко"
+},
+{"EnglishSource":"ADORED","RussianSource":"обожаемый","Score":0.0,"Active":false,"EnglishDiscretion":"love and respect (someone) deeply","RusianDiscretion":"любить и уважать (кого-то) глубоко"
+},
+{"EnglishSource":"AFFAIR","RussianSource":"роман","Score":0.0,"Active":false,"EnglishDiscretion":"an event or sequence of events of a specified kind or that has previously been referred to or a sexual relationship between two people, one or both of whom are married to someone else","RusianDiscretion":"событие или последовательность событий определенного рода или которые ранее упоминались, или сексуальные отношения между двумя людьми, один или оба из которых состоят в браке с кем-то другим"
+},
+{"EnglishSource":"ALAS","RussianSource":"увы","Score":0.0,"Active":false,"EnglishDiscretion":"an expression of grief, pity, or concern","RusianDiscretion":"выражение горя, жалости или беспокойства"
+},
+{"EnglishSource":"AMEND","RussianSource":"исправлять","Score":0.0,"Active":false,"EnglishDiscretion":"make minor changes in (a text) in order to make it fairer, more accurate, or more up-to-date","RusianDiscretion":"вносить незначительные изменения в (текст), чтобы сделать его более справедливым, точным или более современным"
+},
+{"EnglishSource":"APPRENTICE","RussianSource":"ученик","Score":0.0,"Active":false,"EnglishDiscretion":"a person who is learning a trade from a skilled employer, having agreed to work for a fixed period at low wages","RusianDiscretion":"человек, который учится ремеслу у квалифицированного работодателя, согласившись работать в течение определенного периода времени за низкую заработную плату"
+},
+{"EnglishSource":"APPROPRIATE","RussianSource":"соответствующий","Score":0.0,"Active":false,"EnglishDiscretion":"suitable or proper in the circumstances","RusianDiscretion":"подходящий или подходящий в данных обстоятельствах"
+},
+{"EnglishSource":"ASSIGN","RussianSource":"назначать","Score":0.0,"Active":false,"EnglishDiscretion":"allocate (a job or duty).\r\n","RusianDiscretion":"распределять (работу или обязанность)."
+},
+{"EnglishSource":"ATTEND","RussianSource":"посещать","Score":0.0,"Active":false,"EnglishDiscretion":"be present at (an event, meeting, or function)","RusianDiscretion":"присутствовать на (мероприятии, собрании или мероприятии)"
+},
+{"EnglishSource":"AVAILABLE","RussianSource":"доступный","Score":0.0,"Active":false,"EnglishDiscretion":"able to be used or obtained; at someone's disposal","RusianDiscretion":"возможность использования или получения; "
+},
+{"EnglishSource":"AVERSION","RussianSource":"отвращение","Score":0.0,"Active":false,"EnglishDiscretion":"a strong dislike or disinclination","RusianDiscretion":"сильная неприязнь или нежелание"
+},
+{"EnglishSource":"AWKWARD","RussianSource":"неуклюжий","Score":0.0,"Active":false,"EnglishDiscretion":"causing difficulty; hard to do or deal with","RusianDiscretion":"вызывает трудности; "
+},
+{"EnglishSource":"BREAST","RussianSource":"грудь","Score":0.0,"Active":false,"EnglishDiscretion":"either of the two soft, protruding organs on the upper front of a woman's body that secrete milk after pregnancy","RusianDiscretion":"любой из двух мягких выступающих органов в верхней передней части тела женщины, выделяющих молоко после беременности"
+},
+{"EnglishSource":"BROTHEL","RussianSource":"бордель","Score":0.0,"Active":false,"EnglishDiscretion":"a house where men can visit prostitutes","RusianDiscretion":"дом, где мужчины могут посещать проституток"
+},
+{"EnglishSource":"BROTHELS","RussianSource":"публичные дома","Score":0.0,"Active":false,"EnglishDiscretion":"a house where men can visit prostitutes","RusianDiscretion":"дом, где мужчины могут посещать проституток"
+},
+{"EnglishSource":"BULGE","RussianSource":"выпуклость","Score":0.0,"Active":false,"EnglishDiscretion":"a rounded swelling or protuberance that distorts a flat surface","RusianDiscretion":"округлое вздутие или выпуклость, искажающая плоскую поверхность"
+},
+{"EnglishSource":"BULGING","RussianSource":"выпуклый","Score":0.0,"Active":false,"EnglishDiscretion":"swelling outward; protruding","RusianDiscretion":"отек наружу; "
+},
+{"EnglishSource":"BYSTANDER","RussianSource":"сторонний наблюдатель","Score":0.0,"Active":false,"EnglishDiscretion":"a person who is present at an event or incident but does not take part","RusianDiscretion":"человек, который присутствует на событии или происшествии, но не принимает участия"
+},
+{"EnglishSource":"CAPABLE","RussianSource":"способный","Score":0.0,"Active":false,"EnglishDiscretion":"having the ability, fitness, or quality necessary to do or achieve a specified thing","RusianDiscretion":"наличие способности, пригодности или качества, необходимых для выполнения или достижения определенной цели"
+},
+{"EnglishSource":"CAPTIVE","RussianSource":"пленник","Score":0.0,"Active":false,"EnglishDiscretion":"a person who has been taken prisoner or an animal that has been confined","RusianDiscretion":"человек, который был взят в плен, или животное, которое было заключено в тюрьму"
+},
+{"EnglishSource":"CHARGE","RussianSource":"заряжать","Score":0.0,"Active":false,"EnglishDiscretion":"demand (an amount) as a price from someone for a service rendered or goods supplied","RusianDiscretion":"спрос (сумма) как цена от кого-либо за оказанную услугу или поставленный товар"
+},
+{"EnglishSource":"CISGENDER","RussianSource":"цисгендер","Score":0.0,"Active":false,"EnglishDiscretion":"denoting or relating to a person whose sense of personal identity and gender corresponds with their birth sex","RusianDiscretion":"обозначающий или относящийся к человеку, чье чувство личной идентичности и пола соответствует его полу при рождении"
+},
+{"EnglishSource":"CIVIL","RussianSource":"гражданский","Score":0.0,"Active":false,"EnglishDiscretion":"relating to ordinary citizens and their concerns, as distinct from military or ecclesiastical matters","RusianDiscretion":"относящиеся к обычным гражданам и их заботам, в отличие от военных или церковных вопросов"
+},
+{"EnglishSource":"CLIMAX","RussianSource":"кульминация","Score":0.0,"Active":false,"EnglishDiscretion":"the most intense, exciting, or important point of something; a culmination or apex","RusianDiscretion":"самый напряженный, захватывающий или важный момент чего-либо; "
+},
+{"EnglishSource":"COAXED","RussianSource":"уговорил","Score":0.0,"Active":false,"EnglishDiscretion":"gently and persistently persuade (someone) to do something","RusianDiscretion":"мягко и настойчиво убеждать (кого-либо) сделать что-либо"
+},
+{"EnglishSource":"COCKY","RussianSource":"дерзкий","Score":0.0,"Active":false,"EnglishDiscretion":"conceited or arrogant, especially in a bold or impudent way","RusianDiscretion":"тщеславный или высокомерный, особенно в смелой или дерзкой форме"
+},
+{"EnglishSource":"COMBAT","RussianSource":"бой","Score":0.0,"Active":false,"EnglishDiscretion":"fighting between armed forces","RusianDiscretion":"боевые действия между вооруженными силами"
+},
+{"EnglishSource":"COMMIT","RussianSource":"совершить","Score":0.0,"Active":false,"EnglishDiscretion":"carry out or perpetrate (a mistake, crime, or immoral act).\r\n","RusianDiscretion":"совершить или совершить (ошибку, преступление или аморальный поступок)."
+},
+{"EnglishSource":"COMMITTING","RussianSource":"совершение","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"CONCEIVE","RussianSource":"зачать","Score":0.0,"Active":false,"EnglishDiscretion":"become pregnant with (a child).\r","RusianDiscretion":"забеременеть (ребенком)."
+},
+{"EnglishSource":"CONCEPTION","RussianSource":"зачатие","Score":0.0,"Active":false,"EnglishDiscretion":"the action of conceiving a child or of a child being conceived","RusianDiscretion":"действие по зачатию ребенка или зачатие ребенка"
+},
+{"EnglishSource":"CONFESSION","RussianSource":"признание","Score":0.0,"Active":false,"EnglishDiscretion":"a formal statement admitting that one is guilty of a crime","RusianDiscretion":"официальное заявление о признании виновным в совершении преступления"
+},
+{"EnglishSource":"CONFIRMATION","RussianSource":"подтверждение","Score":0.0,"Active":false,"EnglishDiscretion":"the action of confirming something or the state of being confirmed","RusianDiscretion":"действие по подтверждению чего-либо или состояние подтверждения"
+},
+{"EnglishSource":"CONGRATULATIONS","RussianSource":"Поздравления","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"CONVINCE","RussianSource":"убеждать","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"COUNTER","RussianSource":"прилавок","Score":0.0,"Active":false,"EnglishDiscretion":"a long flat-topped fixture in a store or bank across which business is conducted with customers","RusianDiscretion":"длинное приспособление с плоской вершиной в магазине или банке, через которое ведутся дела с клиентами"
+},
+{"EnglishSource":"COUNTLESS","RussianSource":"бесчисленное количество","Score":0.0,"Active":false,"EnglishDiscretion":"too many to be counted; very many","RusianDiscretion":"слишком много, чтобы сосчитать; "
+},
+{"EnglishSource":"COURT","RussianSource":"суд","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"COURTROOM","RussianSource":"зал суда","Score":0.0,"Active":false,"EnglishDiscretion":"the place or room in which a court of law meets","RusianDiscretion":"место или комната, в которой заседает суд"
+},
+{"EnglishSource":"CREAMPIE","RussianSource":"сперма в жопе","Score":0.0,"Active":false,"EnglishDiscretion":"a pie with a sweet, custard-like filling, often topped with whipped cream","RusianDiscretion":"пирог со сладкой заварной начинкой, часто покрытый взбитыми сливками"
+},
+{"EnglishSource":"CREASE","RussianSource":"складка","Score":0.0,"Active":false,"EnglishDiscretion":"a line or ridge produced on paper or cloth by folding, pressing, or crushing","RusianDiscretion":"линия или гребень, нанесенный на бумагу или ткань путем складывания, прессования или раздавливания"
+},
+{"EnglishSource":"CROTCH","RussianSource":"промежность","Score":0.0,"Active":false,"EnglishDiscretion":"the part of the human body between the legs where they join the torso","RusianDiscretion":"часть человеческого тела между ногами, где они соединяются с туловищем"
+},
+{"EnglishSource":"CRUEL","RussianSource":"жестокий","Score":0.0,"Active":false,"EnglishDiscretion":"willfully causing pain or suffering to others, or feeling no concern about it","RusianDiscretion":"умышленное причинение боли или страданий другим или безразличие к этому"
+},
+{"EnglishSource":"CUNT","RussianSource":"пизда","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"CURIOUS","RussianSource":"Любопытный","Score":0.0,"Active":false,"EnglishDiscretion":"eager to know or learn something","RusianDiscretion":"стремящийся узнать или узнать что-то"
+},
+{"EnglishSource":"DEBT","RussianSource":"долг","Score":0.0,"Active":false,"EnglishDiscretion":"something, typically money, that is owed or due","RusianDiscretion":"что-то, обычно деньги, которые причитаются или причитаются"
+},
+{"EnglishSource":"DECISION","RussianSource":"решение","Score":0.0,"Active":false,"EnglishDiscretion":"a conclusion or resolution reached after consideration","RusianDiscretion":"вывод или решение, принятое после рассмотрения"
+},
+{"EnglishSource":"DECLARE","RussianSource":"объявить","Score":0.0,"Active":false,"EnglishDiscretion":"say something in a solemn and emphatic manner","RusianDiscretion":"сказать что-то торжественно и выразительно"
+},
+{"EnglishSource":"DEFENDANT","RussianSource":"ответчик","Score":0.0,"Active":false,"EnglishDiscretion":"an individual, company, or institution sued or accused in a court of law","RusianDiscretion":"физическое лицо, компания или учреждение, против которых подан иск или которые обвиняются в суде"
+},
+{"EnglishSource":"DEFENDANTS","RussianSource":"подсудимые","Score":0.0,"Active":false,"EnglishDiscretion":"an individual, company, or institution sued or accused in a court of law.","RusianDiscretion":"физическое лицо, компания или учреждение, против которых подан иск или которые обвиняются в суде."
+},
+{"EnglishSource":"DELIVER","RussianSource":"доставлять","Score":0.0,"Active":false,"EnglishDiscretion":"bring and hand over (a letter, parcel, or ordered goods) to the proper recipient or address","RusianDiscretion":"принести и передать (письмо, посылку или заказанный товар) надлежащему получателю или адресу"
+},
+{"EnglishSource":"DELIVERY","RussianSource":"доставка","Score":0.0,"Active":false,"EnglishDiscretion":"the action of delivering letters, packages, or ordered goods","RusianDiscretion":"действие по доставке писем, посылок или заказанных товаров"
+},
+{"EnglishSource":"DESCEND","RussianSource":"спускаться","Score":0.0,"Active":false,"EnglishDiscretion":"move or fall downward","RusianDiscretion":"двигаться или падать вниз"
+},
+{"EnglishSource":"DESCENDED","RussianSource":"спустился","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"DESERVE","RussianSource":"заслуживать","Score":0.0,"Active":false,"EnglishDiscretion":"do something or have or show qualities worthy of (reward or punishment","RusianDiscretion":"делать что-то или иметь или проявлять качества, достойные (награды или наказания"
+},
+{"EnglishSource":"DESIRE","RussianSource":"желание","Score":0.0,"Active":false,"EnglishDiscretion":"a strong feeling of wanting to have something or wishing for something to happen","RusianDiscretion":"сильное чувство желания иметь что-то или желание, чтобы что-то произошло"
+},
+{"EnglishSource":"DESIRED","RussianSource":"желанный","Score":0.0,"Active":false,"EnglishDiscretion":"strongly wished for or intended","RusianDiscretion":"сильно желал или намеревался"
+},
+{"EnglishSource":"DESPITE","RussianSource":"несмотря на","Score":0.0,"Active":false,"EnglishDiscretion":"without being affected by; in spite of","RusianDiscretion":"не подвергаясь воздействию; "
+},
+{"EnglishSource":"DICTATORIAL","RussianSource":"диктаторский","Score":0.0,"Active":false,"EnglishDiscretion":"of or typical of a ruler with total power","RusianDiscretion":"или типичный правитель с полной властью"
+},
+{"EnglishSource":"DISGUSTING","RussianSource":"отвратительный","Score":0.0,"Active":false,"EnglishDiscretion":"arousing revulsion or strong indignation","RusianDiscretion":"вызывающие отвращение или сильное негодование"
+},
+{"EnglishSource":"DISQUALIFY","RussianSource":"дисквалифицировать","Score":0.0,"Active":false,"EnglishDiscretion":"pronounce (someone) ineligible for an office, activity, or competition because of an offense or infringement","RusianDiscretion":"объявить (кого-либо) непригодным для должности, деятельности или конкурса из-за правонарушения или нарушения"
+},
+{"EnglishSource":"DIVINE","RussianSource":"божественный","Score":0.0,"Active":false,"EnglishDiscretion":"of, from, or like God or a god","RusianDiscretion":"от, от или как Бог или бог"
+},
+{"EnglishSource":"DIVISION","RussianSource":"разделение","Score":0.0,"Active":false,"EnglishDiscretion":"the action of separating something into parts or the process of being separated","RusianDiscretion":"действие разделения чего-либо на части или процесс разделения"
+},
+{"EnglishSource":"DOOM","RussianSource":"рок","Score":0.0,"Active":false,"EnglishDiscretion":"death, destruction, or some other terrible fate","RusianDiscretion":"смерть, разрушение или какая-то другая ужасная участь"
+},
+{"EnglishSource":"DOOMED","RussianSource":"обречен","Score":0.0,"Active":false,"EnglishDiscretion":"likely to have an unfortunate and inescapable outcome; ill-fated","RusianDiscretion":"может иметь печальный и неизбежный исход; "
+},
+{"EnglishSource":"DRUG","RussianSource":"лекарство","Score":0.0,"Active":false,"EnglishDiscretion":"a medicine or other substance which has a physiological effect when ingested or otherwise introduced into the body","RusianDiscretion":"лекарство или другое вещество, оказывающее физиологическое действие при проглатывании или ином введении в организм"
+},
+{"EnglishSource":"DUTIE","RussianSource":"обязанность","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"DUTIES","RussianSource":"обязанности","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"DUTY","RussianSource":"долг","Score":0.0,"Active":false,"EnglishDiscretion":"a moral or legal obligation; a responsibility","RusianDiscretion":"моральное или юридическое обязательство; "
+},
+{"EnglishSource":"ENHANCE","RussianSource":"усиливать","Score":0.0,"Active":false,"EnglishDiscretion":"intensify, increase, or further improve the quality, value, or extent of","RusianDiscretion":"интенсифицировать, увеличивать или дополнительно улучшать качество, ценность или степень"
+},
+{"EnglishSource":"EQUITABLE","RussianSource":"справедливый","Score":0.0,"Active":false,"EnglishDiscretion":"fair and impartial","RusianDiscretion":"справедливый и беспристрастный"
+},
+{"EnglishSource":"ESSENTIALLY","RussianSource":"по сути","Score":0.0,"Active":false,"EnglishDiscretion":"used to emphasize the basic, fundamental, or intrinsic nature of a person, thing, or situation","RusianDiscretion":"используется, чтобы подчеркнуть основную, фундаментальную или внутреннюю природу человека, вещи или ситуации"
+},
+{"EnglishSource":"EVALUATION","RussianSource":"оценка","Score":0.0,"Active":false,"EnglishDiscretion":"the making of a judgment about the amount, number, or value of something; assessment.","RusianDiscretion":"вынесение суждения о количестве, количестве или стоимости чего-либо; "
+},
+{"EnglishSource":"EXAMINATION","RussianSource":"экзамен","Score":0.0,"Active":false,"EnglishDiscretion":"a detailed inspection or investigation","RusianDiscretion":"детальный осмотр или расследование"
+},
+{"EnglishSource":"EXEMPT","RussianSource":"освобождать","Score":0.0,"Active":false,"EnglishDiscretion":"free from an obligation or liability imposed on others","RusianDiscretion":"свободен от обязательств или ответственности, возлагаемых на других"
+},
+{"EnglishSource":"EXHAUST","RussianSource":"выхлоп","Score":0.0,"Active":false,"EnglishDiscretion":"drain (someone) of their physical or mental resources; tire out","RusianDiscretion":"истощать (кого-либо) их физические или умственные ресурсы; "
+},
+{"EnglishSource":"EXHAUSTED","RussianSource":"измученный","Score":0.0,"Active":false,"EnglishDiscretion":"drained of one's physical or mental resources; very tired","RusianDiscretion":"истощение физических или умственных ресурсов; "
+},
+{"EnglishSource":"EXPECTING","RussianSource":"ожидание","Score":0.0,"Active":false,"EnglishDiscretion":"regard (something) as likely to happen","RusianDiscretion":"считать (что-то) вероятным"
+},
+{"EnglishSource":"EXPOSE","RussianSource":"разоблачать","Score":0.0,"Active":false,"EnglishDiscretion":"make (something) visible by uncovering it","RusianDiscretion":"сделать (что-то) видимым, раскрыв это"
+},
+{"EnglishSource":"EXPOSES","RussianSource":"разоблачает","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"EXUBERANT","RussianSource":"буйный","Score":0.0,"Active":false,"EnglishDiscretion":"filled with or characterized by a lively energy and excitement","RusianDiscretion":"наполнен или характеризуется живой энергией и волнением"
+},
+{"EnglishSource":"FACILITATE","RussianSource":"способствовать","Score":0.0,"Active":false,"EnglishDiscretion":"make (an action or process) easy or easier","RusianDiscretion":"сделать (действие или процесс) легким или легким"
+},
+{"EnglishSource":"FACILITATOR","RussianSource":"фасилитатор","Score":0.0,"Active":false,"EnglishDiscretion":"a person or thing that makes an action or process easy or easier","RusianDiscretion":"человек или вещь, которые делают действие или процесс легким или легким"
+},
+{"EnglishSource":"FAIRIE","RussianSource":"фея","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"FALSELY","RussianSource":"ложно","Score":0.0,"Active":false,"EnglishDiscretion":"not in accordance with truth or fact; incorrectly","RusianDiscretion":"не в соответствии с истиной или фактом; "
+},
+{"EnglishSource":"FELLATIO","RussianSource":"фелляция","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":"ВЧ"
+},
+{"EnglishSource":"FIDGET","RussianSource":"ерзать","Score":0.0,"Active":false,"EnglishDiscretion":"make small movements, especially of the hands and feet, through nervousness or impatience","RusianDiscretion":"делать небольшие движения, особенно руками и ногами, из-за нервозности или нетерпения"
+},
+{"EnglishSource":"FLATTER","RussianSource":"льстить","Score":0.0,"Active":false,"EnglishDiscretion":"lavish insincere praise and compliments upon (someone), especially to further one's own interests","RusianDiscretion":"расточать неискренние похвалы и комплименты (кому-либо), особенно в своих интересах"
+},
+{"EnglishSource":"FLESH","RussianSource":"плоть","Score":0.0,"Active":false,"EnglishDiscretion":"the soft substance consisting of muscle and fat that is found between the skin and bones of an animal or a human","RusianDiscretion":"мягкое вещество, состоящее из мышц и жира, которое находится между кожей и костями животного или человека"
+},
+{"EnglishSource":"FORCE","RussianSource":"сила","Score":0.0,"Active":false,"EnglishDiscretion":"strength or energy as an attribute of physical action or movement","RusianDiscretion":"сила или энергия как атрибут физического действия или движения"
+},
+{"EnglishSource":"FORCEFULLY","RussianSource":"сильно","Score":0.0,"Active":false,"EnglishDiscretion":"in a strong and assertive manner; vigorously","RusianDiscretion":"в сильной и напористой манере; "
+},
+{"EnglishSource":"GESTATION","RussianSource":"беременность","Score":0.0,"Active":false,"EnglishDiscretion":"the process of carrying or being carried in the womb between conception and birth","RusianDiscretion":"процесс вынашивания или переноски в утробе между зачатием и рождением"
+},
+{"EnglishSource":"GOODNESS","RussianSource":"доброта","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":"черт его знает, почему она не поехала сама\r\n"
+},
+{"EnglishSource":"GREED","RussianSource":"жадность","Score":0.0,"Active":false,"EnglishDiscretion":"intense and selfish desire for something, especially wealth, power, or food","RusianDiscretion":"сильное и эгоистичное желание чего-либо, особенно богатства, власти или еды"
+},
+{"EnglishSource":"GROCERY","RussianSource":"бакалея","Score":0.0,"Active":false,"EnglishDiscretion":"a grocer's store or business","RusianDiscretion":"продуктовый магазин или бизнес"
+},
+{"EnglishSource":"GROSS","RussianSource":"валовой","Score":0.0,"Active":false,"EnglishDiscretion":"especially of wrongdoing) very obvious and unacceptable; blatant","RusianDiscretion":"особенно правонарушений) очень очевидно и неприемлемо; "
+},
+{"EnglishSource":"GRUMPY","RussianSource":"сердитый","Score":0.0,"Active":false,"EnglishDiscretion":"bad-tempered and irritable","RusianDiscretion":"вспыльчивый и раздражительный"
+},
+{"EnglishSource":"GUILTY","RussianSource":"виновный","Score":0.0,"Active":false,"EnglishDiscretion":"culpable of or responsible for a specified wrongdoing","RusianDiscretion":"виновен или несет ответственность за конкретное правонарушение"
+},
+{"EnglishSource":"HEAVENLY","RussianSource":"небесный","Score":0.0,"Active":false,"EnglishDiscretion":"of heaven; divine","RusianDiscretion":"Небесный; "
+},
+{"EnglishSource":"HESITATION","RussianSource":"колебание","Score":0.0,"Active":false,"EnglishDiscretion":"the action of pausing or hesitating before saying or doing something","RusianDiscretion":"действие паузы или колебания, прежде чем сказать или сделать что-то"
+},
+{"EnglishSource":"HOLINESS","RussianSource":"святость","Score":0.0,"Active":false,"EnglishDiscretion":"the state of being holy","RusianDiscretion":"состояние святости"
+},
+{"EnglishSource":"HOLY","RussianSource":"святой","Score":0.0,"Active":false,"EnglishDiscretion":"dedicated or consecrated to God or a religious purpose; sacred","RusianDiscretion":"посвященный или посвященный Богу или религиозной цели; "
+},
+{"EnglishSource":"HONOR","RussianSource":"честь","Score":0.0,"Active":false,"EnglishDiscretion":"high respect; great esteem","RusianDiscretion":"большое уважение; "
+},
+{"EnglishSource":"HORRIFIED","RussianSource":"ужас","Score":0.0,"Active":false,"EnglishDiscretion":"filled with horror; extremely shocked","RusianDiscretion":"наполненный ужасом; "
+},
+{"EnglishSource":"HUMILIATING","RussianSource":"унизительный","Score":0.0,"Active":false,"EnglishDiscretion":"causing someone to feel ashamed and foolish by injuring their dignity and self-respect","RusianDiscretion":"заставляя кого-то чувствовать себя пристыженным и глупым, нанося ущерб его достоинству и самоуважению"
+},
+{"EnglishSource":"HUMILIATION","RussianSource":"унижение","Score":0.0,"Active":false,"EnglishDiscretion":"the action of humiliating someone or the state of being humiliated","RusianDiscretion":"действие по унижению кого-либо или состояние унижения"
+},
+{"EnglishSource":"IMPORTANCE","RussianSource":"важность","Score":0.0,"Active":false,"EnglishDiscretion":"the state or fact of being of great significance or value","RusianDiscretion":"состояние или факт большого значения или ценности"
+},
+{"EnglishSource":"INACCESSIBLE","RussianSource":"недоступный","Score":0.0,"Active":false,"EnglishDiscretion":"unable to be reached","RusianDiscretion":"недоступен"
+},
+{"EnglishSource":"INCARNATION","RussianSource":"воплощение","Score":0.0,"Active":false,"EnglishDiscretion":"a person who embodies in the flesh a deity, spirit, or abstract quality","RusianDiscretion":"человек, воплощающий во плоти божество, дух или абстрактное качество"
+},
+{"EnglishSource":"INNER","RussianSource":"внутренний","Score":0.0,"Active":false,"EnglishDiscretion":"situated inside or further in; internal","RusianDiscretion":"расположенный внутри или дальше; "
+},
+{"EnglishSource":"INSERT","RussianSource":"вставлять","Score":0.0,"Active":false,"EnglishDiscretion":"place, fit, or thrust (something) into another thing, especially with care","RusianDiscretion":"помещать, подгонять или вставлять (что-то) в другую вещь, особенно с осторожностью"
+},
+{"EnglishSource":"INTENTION","RussianSource":"намерение","Score":0.0,"Active":false,"EnglishDiscretion":"a thing intended; an aim or plan","RusianDiscretion":"предназначенная вещь; "
+},
+{"EnglishSource":"INTERCOURSE","RussianSource":"половой акт","Score":0.0,"Active":false,"EnglishDiscretion":"communication or dealings between individuals or groups","RusianDiscretion":"общение или сделки между отдельными лицами или группами"
+},
+{"EnglishSource":"INTRIGUE","RussianSource":"интрига","Score":0.0,"Active":false,"EnglishDiscretion":"arouse the curiosity or interest of; fascinate","RusianDiscretion":"вызвать любопытство или интерес; "
+},
+{"EnglishSource":"INTRIGUING","RussianSource":"интригующий","Score":0.0,"Active":false,"EnglishDiscretion":"arousing one's curiosity or interest, fascinating","RusianDiscretion":"возбуждающий любопытство или интерес, увлекательный"
+},
+{"EnglishSource":"KEG","RussianSource":"бочонок","Score":0.0,"Active":false,"EnglishDiscretion":"a small barrel, especially one of less than 30 gallons or (in the UK) 10 gallons","RusianDiscretion":"небольшая бочка, особенно менее 30 галлонов или (в Великобритании) 10 галлонов"
+},
+{"EnglishSource":"KIDNAP","RussianSource":"похитить","Score":0.0,"Active":false,"EnglishDiscretion":"take (someone) away illegally by force, typically to obtain a ransom","RusianDiscretion":"незаконно увести (кого-либо) силой, как правило, для получения выкупа"
+},
+{"EnglishSource":"KIDNAPPED","RussianSource":"похищен","Score":0.0,"Active":false,"EnglishDiscretion":"take (someone) away illegally by force, typically to obtain a ransom","RusianDiscretion":"незаконно увести (кого-либо) силой, как правило, для получения выкупа"
+},
+{"EnglishSource":"KINGDOM","RussianSource":"Королевство","Score":0.0,"Active":false,"EnglishDiscretion":"a country, state, or territory ruled by a king or queen","RusianDiscretion":"страна, штат или территория, управляемая королем или королевой"
+},
+{"EnglishSource":"LASCIVIOUS","RussianSource":"похотливый","Score":0.0,"Active":false,"EnglishDiscretion":"of a person, manner, or gesture) feeling or revealing an overt and often offensive sexual desire","RusianDiscretion":"человека, манеры или жеста) чувство или проявление явного и часто оскорбительного сексуального желания"
+},
+{"EnglishSource":"LOOSE","RussianSource":"свободный","Score":0.0,"Active":false,"EnglishDiscretion":"not firmly or tightly fixed in place; detached or able to be detached","RusianDiscretion":"не прочно или плотно закреплены на месте; "
+},
+{"EnglishSource":"LOWEST","RussianSource":"самый низкий","Score":0.0,"Active":false,"EnglishDiscretion":"of less than average height from top to bottom or to the top from the ground","RusianDiscretion":"высотой ниже средней от верха до низа или до верха от земли"
+},
+{"EnglishSource":"MANIFEST","RussianSource":"манифест","Score":0.0,"Active":false,"EnglishDiscretion":"clear or obvious to the eye or mind","RusianDiscretion":"ясный или очевидный для глаза или ума"
+},
+{"EnglishSource":"MASOCHIST","RussianSource":"мазохист","Score":0.0,"Active":false,"EnglishDiscretion":"a person who derives sexual gratification from their own pain or humiliation","RusianDiscretion":"человек, который получает сексуальное удовлетворение от собственной боли или унижения"
+},
+{"EnglishSource":"MASOCHISTIC","RussianSource":"мазохистский","Score":0.0,"Active":false,"EnglishDiscretion":"deriving sexual gratification from one's own pain or humiliation","RusianDiscretion":"получение сексуального удовлетворения от собственной боли или унижения"
+},
+{"EnglishSource":"MEND","RussianSource":"исправить","Score":0.0,"Active":false,"EnglishDiscretion":"repair (something that is broken or damaged","RusianDiscretion":"ремонтировать (что-то, что сломано или повреждено"
+},
+{"EnglishSource":"MENTION","RussianSource":"упомянуть","Score":0.0,"Active":false,"EnglishDiscretion":"refer to something briefly and without going into detail","RusianDiscretion":"ссылаться на что-либо кратко и не вдаваясь в подробности"
+},
+{"EnglishSource":"MERCHANDISE","RussianSource":"товар","Score":0.0,"Active":false,"EnglishDiscretion":"goods to be bought and sold","RusianDiscretion":"товары, которые будут покупаться и продаваться"
+},
+{"EnglishSource":"MIMIC","RussianSource":"имитировать","Score":0.0,"Active":false,"EnglishDiscretion":"imitate (someone or their actions or words), especially in order to entertain or ridicule","RusianDiscretion":"подражать (кому-либо или их действиям или словам), особенно для того, чтобы развлечь или высмеять"
+},
+{"EnglishSource":"MINGLING","RussianSource":"смешение","Score":0.0,"Active":false,"EnglishDiscretion":"mix or cause to mix together","RusianDiscretion":"смешивать или заставлять смешиваться вместе"
+},
+{"EnglishSource":"MISCELLANEOUS","RussianSource":"разнообразный","Score":0.0,"Active":false,"EnglishDiscretion":"of items or people gathered or considered together) of various types or from different sources","RusianDiscretion":"предметов или людей, собранных или рассматриваемых вместе) различных типов или из разных источников"
+},
+{"EnglishSource":"MOAN","RussianSource":"стон","Score":0.0,"Active":false,"EnglishDiscretion":"a long, low sound made by a person expressing physical or mental suffering or sexual pleasure","RusianDiscretion":"долгий низкий звук, издаваемый человеком, выражающий физическое или психическое страдание или сексуальное удовольствие"
+},
+{"EnglishSource":"MONGREL","RussianSource":"дворняга","Score":0.0,"Active":false,"EnglishDiscretion":"a dog of no definable type or breed","RusianDiscretion":"собака неопределенного типа или породы"
+},
+{"EnglishSource":"MOODY","RussianSource":"капризный","Score":0.0,"Active":false,"EnglishDiscretion":"of a person) given to unpredictable changes of mood, especially sudden bouts of gloominess or sullenness","RusianDiscretion":"человека) склонны к непредсказуемым сменам настроения, особенно к внезапным приступам угрюмости или угрюмости"
+},
+{"EnglishSource":"MOURN","RussianSource":"оплакивать","Score":0.0,"Active":false,"EnglishDiscretion":"she had to mourn for her friends who died in the accident","RusianDiscretion":"ей пришлось оплакивать своих друзей, погибших в аварии"
+},
+{"EnglishSource":"MUSCLES","RussianSource":"мышцы","Score":0.0,"Active":false,"EnglishDiscretion":"a band or bundle of fibrous tissue in a human or animal body that has the ability to contract, producing movement in or maintaining the position of parts of the body","RusianDiscretion":"пучок или пучок фиброзной ткани в теле человека или животного, способный сокращаться, вызывая движение или сохраняя положение частей тела"
+},
+{"EnglishSource":"NAILS","RussianSource":"гвозди","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"NAIVE","RussianSource":"наивный","Score":0.0,"Active":false,"EnglishDiscretion":"of a person or action) showing a lack of experience, wisdom, or judgment","RusianDiscretion":"человека или действия), свидетельствующие об отсутствии опыта, мудрости или суждения"
+},
+{"EnglishSource":"NULLIFY","RussianSource":"аннулировать","Score":0.0,"Active":false,"EnglishDiscretion":"make legally null and void; invalidate","RusianDiscretion":"признать юридически недействительным; "
+},
+{"EnglishSource":"OBEY","RussianSource":"подчиняться","Score":0.0,"Active":false,"EnglishDiscretion":"comply with the command, direction, or request of (a person or a law); submit to the authority of","RusianDiscretion":"выполнять приказ, указание или просьбу (лица или закона); "
+},
+{"EnglishSource":"OBSERVER","RussianSource":"наблюдатель","Score":0.0,"Active":false,"EnglishDiscretion":"a person who watches or notices something","RusianDiscretion":"человек, который наблюдает или замечает что-либо"
+},
+{"EnglishSource":"OBTAIN","RussianSource":"получать","Score":0.0,"Active":false,"EnglishDiscretion":"get, acquire, or secure (something)","RusianDiscretion":"получить, приобрести или обезопасить (что-то)"
+},
+{"EnglishSource":"OCCASION","RussianSource":"повод","Score":0.0,"Active":false,"EnglishDiscretion":"a particular time or instance of an event","RusianDiscretion":"определенное время или момент события"
+},
+{"EnglishSource":"OFFEND","RussianSource":"обидеть","Score":0.0,"Active":false,"EnglishDiscretion":"cause to feel upset, annoyed, or resentful","RusianDiscretion":"вызывать раздражение, раздражение или возмущение"
+},
+{"EnglishSource":"OPPONENT","RussianSource":"противник","Score":0.0,"Active":false,"EnglishDiscretion":"someone who competes against or fights another in a contest, game, or argument; a rival or adversary.\r\n","RusianDiscretion":"кто-то, кто соревнуется или борется с другим в состязании, игре или споре; "
+},
+{"EnglishSource":"OVERPROTECTIVE","RussianSource":"сверхзащитный","Score":0.0,"Active":false,"EnglishDiscretion":"having a tendency to protect someone, especially a child, excessively","RusianDiscretion":"иметь склонность защищать кого-то, особенно ребенка, чрезмерно"
+},
+{"EnglishSource":"PATRONIZE","RussianSource":"покровительствовать","Score":0.0,"Active":false,"EnglishDiscretion":"treat in a way that is apparently kind or helpful but that betrays a feeling of superiority","RusianDiscretion":"обращаться таким образом, который кажется добрым или полезным, но который выдает чувство превосходства"
+},
+{"EnglishSource":"PENALTY","RussianSource":"штраф","Score":0.0,"Active":false,"EnglishDiscretion":"a punishment imposed for breaking a law, rule, or contract","RusianDiscretion":"наказание, налагаемое за нарушение закона, правила или контракта"
+},
+{"EnglishSource":"PENETRATION","RussianSource":"проникновение","Score":0.0,"Active":false,"EnglishDiscretion":"the action or process of making a way through or into something","RusianDiscretion":"действие или процесс прокладывания пути сквозь что-либо или во что-либо"
+},
+{"EnglishSource":"PERFORM","RussianSource":"выполнять","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"PERINEUM","RussianSource":"промежность","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"PERIOD","RussianSource":"период","Score":0.0,"Active":false,"EnglishDiscretion":"a length or portion of time","RusianDiscretion":"продолжительность или часть времени"
+},
+{"EnglishSource":"PERMISSION","RussianSource":"разрешение","Score":0.0,"Active":false,"EnglishDiscretion":"consent; authorization","RusianDiscretion":"согласие; "
+},
+{"EnglishSource":"PLENTIFUL","RussianSource":"обильный","Score":0.0,"Active":false,"EnglishDiscretion":"existing in or yielding great quantities; abundant","RusianDiscretion":"существующие или дающие большие количества; "
+},
+{"EnglishSource":"POSSESSION","RussianSource":"владение","Score":0.0,"Active":false,"EnglishDiscretion":"the state of having, owning, or controlling something","RusianDiscretion":"состояние обладания, владения или контроля над чем-либо"
+},
+{"EnglishSource":"POURING","RussianSource":"заливка","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"PRAY","RussianSource":"молиться","Score":0.0,"Active":false,"EnglishDiscretion":"address a solemn request or expression of thanks to a deity or other object of worship","RusianDiscretion":"обратиться с торжественной просьбой или выражением благодарности божеству или другому объекту поклонения"
+},
+{"EnglishSource":"PREDICT","RussianSource":"предсказывать","Score":0.0,"Active":false,"EnglishDiscretion":"say or estimate that (a specified thing) will happen in the future or will be a consequence of something","RusianDiscretion":"сказать или оценить, что (определенная вещь) произойдет в будущем или будет следствием чего-то"
+},
+{"EnglishSource":"PREDICTED","RussianSource":"предсказанный","Score":0.0,"Active":false,"EnglishDiscretion":"stated or estimated as likely to happen in the future; forecast","RusianDiscretion":"заявлено или оценено как вероятное в будущем; "
+},
+{"EnglishSource":"PREGNANCY","RussianSource":"беременность","Score":0.0,"Active":false,"EnglishDiscretion":"the condition or period of being pregnant","RusianDiscretion":"состояние или период беременности"
+},
+{"EnglishSource":"PREGNANT","RussianSource":"беременная","Score":0.0,"Active":false,"EnglishDiscretion":"of a woman or female animal) having a child or young developing in the uterus","RusianDiscretion":"женщины или самки животного), имеющего ребенка или детеныша, развивающегося в матке"
+},
+{"EnglishSource":"PREPARATION","RussianSource":"подготовка","Score":0.0,"Active":false,"EnglishDiscretion":"the action or process of making ready or being made ready for use or consideration","RusianDiscretion":"действие или процесс подготовки или подготовки к использованию или рассмотрению"
+},
+{"EnglishSource":"PRESSURE","RussianSource":"давление","Score":0.0,"Active":false,"EnglishDiscretion":"continuous physical force exerted on or against an object by something in contact with it.","RusianDiscretion":"непрерывная физическая сила, воздействующая на объект или против него со стороны чего-либо, находящегося с ним в контакте."
+},
+{"EnglishSource":"PREVENT","RussianSource":"предотвращать","Score":0.0,"Active":false,"EnglishDiscretion":"keep (something) from happening or arising","RusianDiscretion":"не допускать (чего-либо) возникновения или возникновения"
+},
+{"EnglishSource":"PREVENTION","RussianSource":"профилактика","Score":0.0,"Active":false,"EnglishDiscretion":"the action of stopping something from happening or arising","RusianDiscretion":"действие по предотвращению чего-либо, происходящего или возникающего"
+},
+{"EnglishSource":"PRIESTESS","RussianSource":"жрица","Score":0.0,"Active":false,"EnglishDiscretion":"a female priest of a non-Christian religion","RusianDiscretion":"женщина-священник нехристианской религии"
+},
+{"EnglishSource":"PRIVILEGE","RussianSource":"привилегия","Score":0.0,"Active":false,"EnglishDiscretion":"a special right, advantage, or immunity granted or available only to a particular person or group.","RusianDiscretion":"особое право, преимущество или иммунитет, предоставленные или доступные только определенному лицу или группе лиц."
+},
+{"EnglishSource":"PROOF","RussianSource":"доказательство","Score":0.0,"Active":false,"EnglishDiscretion":"evidence or argument establishing or helping to establish a fact or the truth of a statement","RusianDiscretion":"свидетельство или аргумент, устанавливающие или помогающие установить факт или истинность утверждения"
+},
+{"EnglishSource":"PROPER","RussianSource":"правильный","Score":0.0,"Active":false,"EnglishDiscretion":"of the required type; suitable or appropriate","RusianDiscretion":"необходимого типа; "
+},
+{"EnglishSource":"PROSTATE","RussianSource":"предстательная железа","Score":0.0,"Active":false,"EnglishDiscretion":"a gland surrounding the neck of the bladder in male mammals and releasing prostatic fluid","RusianDiscretion":"железа, окружающая шейку мочевого пузыря у самцов млекопитающих и выделяющая простатический секрет"
+},
+{"EnglishSource":"PROTAGONIST","RussianSource":"главный герой","Score":0.0,"Active":false,"EnglishDiscretion":"the leading character or one of the major characters in a drama, movie, novel, or other fictional text","RusianDiscretion":"главный герой или один из главных персонажей драмы, фильма, романа или другого художественного текста"
+},
+{"EnglishSource":"PUNISHMENT","RussianSource":"наказание","Score":0.0,"Active":false,"EnglishDiscretion":"the infliction or imposition of a penalty as retribution for an offense","RusianDiscretion":"наложение или наложение наказания в качестве возмездия за преступление"
+},
+{"EnglishSource":"PURCHASE","RussianSource":"покупка","Score":0.0,"Active":false,"EnglishDiscretion":"acquire (something) by paying for it; buy","RusianDiscretion":"приобрести (что-либо), заплатив за это; "
+},
+{"EnglishSource":"PUSHY","RussianSource":"напористый","Score":0.0,"Active":false,"EnglishDiscretion":"excessively or unpleasantly self-assertive or ambitious","RusianDiscretion":"чрезмерно или неприятно самоуверенный или амбициозный"
+},
+{"EnglishSource":"RATHER","RussianSource":"скорее","Score":0.0,"Active":false,"EnglishDiscretion":"used to indicate one's preference in a particular matter","RusianDiscretion":"используется для обозначения предпочтений в конкретном вопросе"
+},
+{"EnglishSource":"RECOVER","RussianSource":"восстанавливаться","Score":0.0,"Active":false,"EnglishDiscretion":"return to a normal state of health, mind, or strength","RusianDiscretion":"вернуться к нормальному состоянию здоровья, ума или силы"
+},
+{"EnglishSource":"RECTIFY","RussianSource":"исправить","Score":0.0,"Active":false,"EnglishDiscretion":"put right; correct","RusianDiscretion":"исправлять; "
+},
+{"EnglishSource":"REFILL","RussianSource":"пополнение","Score":0.0,"Active":false,"EnglishDiscretion":"fill (a container) again","RusianDiscretion":"снова наполнить (емкость)"
+},
+{"EnglishSource":"REFUSAL","RussianSource":"отказ","Score":0.0,"Active":false,"EnglishDiscretion":"an act or an instance of refusing; the state of being refused","RusianDiscretion":"акт или пример отказа; "
+},
+{"EnglishSource":"RELATE","RussianSource":"иметь отношение к","Score":0.0,"Active":false,"EnglishDiscretion":"make or show a connection between","RusianDiscretion":"установить или показать связь между"
+},
+{"EnglishSource":"RELATED","RussianSource":"связанный","Score":0.0,"Active":false,"EnglishDiscretion":"belonging to the same family, group, or type; connected","RusianDiscretion":"принадлежность к одному семейству, группе или типу; "
+},
+{"EnglishSource":"RESTORE","RussianSource":"восстановить","Score":0.0,"Active":false,"EnglishDiscretion":"bring back (a previous right, practice, custom, or situation); reinstate","RusianDiscretion":"вернуть (предыдущее право, практику, обычай или ситуацию); "
+},
+{"EnglishSource":"RIGOROUS","RussianSource":"тщательный","Score":0.0,"Active":false,"EnglishDiscretion":"extremely thorough, exhaustive, or accurate","RusianDiscretion":"чрезвычайно тщательный, исчерпывающий или точный"
+},
+{"EnglishSource":"SACRIFICE","RussianSource":"жертва","Score":0.0,"Active":false,"EnglishDiscretion":"an act of slaughtering an animal or person or surrendering a possession as an offering to God or to a divine or supernatural figure","RusianDiscretion":"акт забоя животного или человека или передачи имущества в качестве подношения Богу или божественной или сверхъестественной фигуре"
+},
+{"EnglishSource":"SALESMAN","RussianSource":"продавец","Score":0.0,"Active":false,"EnglishDiscretion":"a man whose job involves selling or promoting commercial products, either in a store or visiting locations to get orders","RusianDiscretion":"человек, чья работа связана с продажей или продвижением коммерческих продуктов в магазине или посещением мест для получения заказов"
+},
+{"EnglishSource":"SCREW","RussianSource":"винт","Score":0.0,"Active":false,"EnglishDiscretion":"a short, slender, sharp-pointed metal pin with a raised helical thread running around it and a slotted head, used to join things together by being rotated so that it pierces wood or other material and is held tightly in place","RusianDiscretion":"короткая, тонкая, заостренная металлическая булавка с выпуклой спиральной резьбой, идущей вокруг нее, и прорезной головкой, используемая для соединения предметов друг с другом путем вращения так, что она протыкает дерево или другой материал и плотно удерживается на месте."
+},
+{"EnglishSource":"SCREWED","RussianSource":"облажались","Score":0.0,"Active":false,"EnglishDiscretion":"of a bolt or other device) having a helical ridge or thread running around the outside","RusianDiscretion":"болта или другого устройства), имеющего спиральный выступ или резьбу, идущую снаружи"
+},
+{"EnglishSource":"SENSITIVITY","RussianSource":"чувствительность","Score":0.0,"Active":false,"EnglishDiscretion":"the quality or condition of being sensitive","RusianDiscretion":"качество или состояние чувствительности"
+},
+{"EnglishSource":"SEPARATE","RussianSource":"отдельный","Score":0.0,"Active":false,"EnglishDiscretion":"forming or viewed as a unit apart or by itself","RusianDiscretion":"формирующийся или рассматриваемый как единое целое отдельно или сам по себе"
+},
+{"EnglishSource":"SETTLE","RussianSource":"решить","Score":0.0,"Active":false,"EnglishDiscretion":"resolve or reach an agreement about (an argument or problem","RusianDiscretion":"решить или прийти к соглашению о (аргументе или проблеме"
+},
+{"EnglishSource":"SHAME","RussianSource":"стыд","Score":0.0,"Active":false,"EnglishDiscretion":"a painful feeling of humiliation or distress caused by the consciousness of wrong or foolish behavior","RusianDiscretion":"болезненное чувство унижения или страдания, вызванное сознанием неправильного или глупого поведения"
+},
+{"EnglishSource":"SHOPKEEPER","RussianSource":"лавочник","Score":0.0,"Active":false,"EnglishDiscretion":"the owner and manager of a shop","RusianDiscretion":"владелец и менеджер магазина"
+},
+{"EnglishSource":"SHOPLIFTER","RussianSource":"магазинный вор","Score":0.0,"Active":false,"EnglishDiscretion":"a person who steals goods from a store while pretending to be a customer","RusianDiscretion":"человек, который ворует товары из магазина, притворяясь покупателем"
+},
+{"EnglishSource":"SHRUG","RussianSource":"пожимание плечами","Score":0.0,"Active":false,"EnglishDiscretion":"she gave him a dismissive shrug","RusianDiscretion":"она пренебрежительно пожала плечами"
+},
+{"EnglishSource":"SHRUGGED","RussianSource":"пожал плечами","Score":0.0,"Active":false,"EnglishDiscretion":"raise (one's shoulders) slightly and momentarily to express doubt, ignorance, or indifference","RusianDiscretion":"слегка и на мгновение приподнять (плечи), чтобы выразить сомнение, невежество или безразличие"
+},
+{"EnglishSource":"SINCERITY","RussianSource":"искренность","Score":0.0,"Active":false,"EnglishDiscretion":"the quality of being free from pretense, deceit, or hypocrisy","RusianDiscretion":"качество свободы от притворства, обмана или лицемерия"
+},
+{"EnglishSource":"SLAVERY","RussianSource":"рабство","Score":0.0,"Active":false,"EnglishDiscretion":"the state of being a slave","RusianDiscretion":"состояние раба"
+},
+{"EnglishSource":"SLENDER","RussianSource":"стройный","Score":0.0,"Active":false,"EnglishDiscretion":"of a person or part of the body) gracefully thin","RusianDiscretion":"лица или части тела) изящно худой"
+},
+{"EnglishSource":"SLIP","RussianSource":"соскальзывать","Score":0.0,"Active":false,"EnglishDiscretion":"of a person or animal) slide unintentionally for a short distance, typically losing one's balance or footing","RusianDiscretion":"человека или животного) непреднамеренно скользит на короткое расстояние, обычно теряя равновесие или опору"
+},
+{"EnglishSource":"SLURP","RussianSource":"чавкать","Score":0.0,"Active":false,"EnglishDiscretion":"eat or drink (something) with a loud sloppy sucking noise","RusianDiscretion":"есть или пить (что-то) с громким небрежным всасывающим звуком"
+},
+{"EnglishSource":"SLUTTY","RussianSource":"распутный","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"SPARK","RussianSource":"искра","Score":0.0,"Active":false,"EnglishDiscretion":"a small fiery particle thrown off from a fire, alight in ashes, or produced by striking together two hard surfaces such as stone or metal","RusianDiscretion":"небольшая огненная частица, выброшенная из огня, воспламененная пеплом или образовавшаяся в результате удара двух твердых поверхностей, таких как камень или металл."
+},
+{"EnglishSource":"SPECIAL","RussianSource":"особенный","Score":0.0,"Active":false,"EnglishDiscretion":"better, greater, or otherwise different from what is usual","RusianDiscretion":"лучше, больше или иным образом отличается от того, что обычно"
+},
+{"EnglishSource":"SPIRIT","RussianSource":"дух","Score":0.0,"Active":false,"EnglishDiscretion":"the nonphysical part of a person which is the seat of emotions and character; the soul","RusianDiscretion":"нефизическая часть человека, являющаяся вместилищем эмоций и характера; "
+},
+{"EnglishSource":"SQUEAL","RussianSource":"визжать","Score":0.0,"Active":false,"EnglishDiscretion":"a long, high-pitched cry or noise","RusianDiscretion":"долгий пронзительный крик или шум"
+},
+{"EnglishSource":"STATE","RussianSource":"состояние","Score":0.0,"Active":false,"EnglishDiscretion":"the particular condition that someone or something is in at a specific time","RusianDiscretion":"особое состояние, в котором кто-то или что-то находится в определенное время"
+},
+{"EnglishSource":"STRENGTHEN","RussianSource":"укреплять","Score":0.0,"Active":false,"EnglishDiscretion":"make or become stronger","RusianDiscretion":"сделать или стать сильнее"
+},
+{"EnglishSource":"SUFFER","RussianSource":"страдать","Score":0.0,"Active":false,"EnglishDiscretion":"experience or be subjected to (something bad or unpleasant","RusianDiscretion":"испытывать или подвергаться (чему-то плохому или неприятному"
+},
+{"EnglishSource":"SUMMON","RussianSource":"вызывать","Score":0.0,"Active":false,"EnglishDiscretion":"authoritatively or urgently call on (someone) to be present, especially as a defendant or witness in a law court","RusianDiscretion":"властно или настоятельно призывать (кого-либо) присутствовать, особенно в качестве ответчика или свидетеля в суде"
+},
+{"EnglishSource":"SURPRISINGLY","RussianSource":"как ни странно","Score":0.0,"Active":false,"EnglishDiscretion":"in a way that causes surprise; unexpectedly","RusianDiscretion":"способом, который вызывает удивление; "
+},
+{"EnglishSource":"SUSPECT","RussianSource":"подозревать","Score":0.0,"Active":false,"EnglishDiscretion":"have an idea or impression of the existence, presence, or truth of (something) without certain proof","RusianDiscretion":"иметь представление или впечатление о существовании, присутствии или истинности (чего-либо) без определенных доказательств"
+},
+{"EnglishSource":"TAUNT","RussianSource":"дразнить","Score":0.0,"Active":false,"EnglishDiscretion":"a remark made in order to anger, wound, or provoke someone","RusianDiscretion":"замечание, сделанное с целью рассердить, ранить или спровоцировать кого-либо"
+},
+{"EnglishSource":"TEASE","RussianSource":"дразнить","Score":0.0,"Active":false,"EnglishDiscretion":"make fun of or attempt to provoke (a person or animal) in a playful way","RusianDiscretion":"высмеивать или пытаться спровоцировать (человека или животное) в игровой форме"
+},
+{"EnglishSource":"TERRIFIED","RussianSource":"испуганный","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"TIGHT","RussianSource":"тугой","Score":0.0,"Active":false,"EnglishDiscretion":"fixed, fastened, or closed firmly; hard to move, undo, or open","RusianDiscretion":"закреплены, закреплены или плотно закрыты; "
+},
+{"EnglishSource":"TIGHTEN","RussianSource":"затягивать","Score":0.0,"Active":false,"EnglishDiscretion":"make or become tight or tighter","RusianDiscretion":"сделать или стать плотнее или теснее"
+},
+{"EnglishSource":"TIGHTNESS","RussianSource":"теснота","Score":0.0,"Active":false,"EnglishDiscretion":"the quality of being fixed, fastened, or closed firmly","RusianDiscretion":"качество закрепления, закрепления или плотного закрытия"
+},
+{"EnglishSource":"TORTURE","RussianSource":"пытка","Score":0.0,"Active":false,"EnglishDiscretion":"the action or practice of inflicting severe pain or suffering on someone as a punishment or in order to force them to do or say something","RusianDiscretion":"действие или практика причинения сильной боли или страданий кому-либо в качестве наказания или с целью заставить их сделать или сказать что-либо"
+},
+{"EnglishSource":"TORTURING","RussianSource":"пытать","Score":0.0,"Active":false,"EnglishDiscretion":"inflict severe pain or suffering on","RusianDiscretion":"причинить сильную боль или страдание"
+},
+{"EnglishSource":"TRIAL","RussianSource":"пробный","Score":0.0,"Active":false,"EnglishDiscretion":"a formal examination of evidence before a judge, and typically before a jury, in order to decide guilt in a case of criminal or civil proceedings","RusianDiscretion":"формальное исследование доказательств перед судьей и, как правило, перед присяжными, чтобы определить вину в уголовном или гражданском процессе"
+},
+{"EnglishSource":"TRICK","RussianSource":"обманывать","Score":0.0,"Active":false,"EnglishDiscretion":"a cunning or skillful act or scheme intended to deceive or outwit someone","RusianDiscretion":"хитрое или искусное действие или схема, направленная на то, чтобы обмануть или перехитрить кого-либо"
+},
+{"EnglishSource":"UNDERESTIMATE","RussianSource":"недооценивать","Score":0.0,"Active":false,"EnglishDiscretion":"estimate (something) to be smaller or less important than it actually is.","RusianDiscretion":"оценивать (что-либо) как меньшее или менее важное, чем оно есть на самом деле."
+},
+{"EnglishSource":"UTERUS","RussianSource":"матка","Score":0.0,"Active":false,"EnglishDiscretion":"the organ in the lower body of a woman or female mammal where offspring are conceived and in which they gestate before birth; the womb","RusianDiscretion":"орган в нижней части тела женщины или самки млекопитающего, в котором происходит зачатие потомства и в котором оно вынашивается до рождения; "
+},
+{"EnglishSource":"VARIETY","RussianSource":"разнообразие","Score":0.0,"Active":false,"EnglishDiscretion":"the quality or state of being different or diverse; the absence of uniformity, sameness, or monotony","RusianDiscretion":"качество или состояние отличия или разнообразия; "
+},
+{"EnglishSource":"VICTIM","RussianSource":"жертва","Score":0.0,"Active":false,"EnglishDiscretion":"a person harmed, injured, or killed as a result of a crime, accident, or other event or action","RusianDiscretion":"лицо, которому причинен вред, ранение или смерть в результате преступления, несчастного случая или другого события или действия"
+},
+{"EnglishSource":"VOCAL","RussianSource":"вокал","Score":0.0,"Active":false,"EnglishDiscretion":"relating to the human voice","RusianDiscretion":"относящийся к человеческому голосу"
+},
+{"EnglishSource":"VOLUNTARILY","RussianSource":"добровольно","Score":0.0,"Active":false,"EnglishDiscretion":"of one's own free will","RusianDiscretion":"по собственной воле"
+},
+{"EnglishSource":"WAND","RussianSource":"палочка","Score":0.0,"Active":false,"EnglishDiscretion":"a long, thin stick or rod","RusianDiscretion":"длинная тонкая палка или стержень"
+},
+{"EnglishSource":"WARD","RussianSource":"сторожить","Score":0.0,"Active":false,"EnglishDiscretion":"a separate room in a hospital, typically one allocated to a particular type of patient","RusianDiscretion":"отдельная палата в больнице, обычно предназначенная для определенного типа пациентов"
+},
+{"EnglishSource":"WHEEZE","RussianSource":"хрипеть","Score":0.0,"Active":false,"EnglishDiscretion":"of a person) breathe with a whistling or rattling sound in the chest, as a result of obstruction in the air passages","RusianDiscretion":"человека) дышат со свистом или хрипом в груди, в результате закупорки дыхательных путей"
+},
+{"EnglishSource":"WHEEZING","RussianSource":"хрипы","Score":0.0,"Active":false,"EnglishDiscretion":"breathing with a whistling or rattling sound in the chest","RusianDiscretion":"дыхание со свистом или хрипом в груди"
+},
+{"EnglishSource":"WHIPER","RussianSource":"нытик","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"WHORE","RussianSource":"шлюха","Score":0.0,"Active":false,"EnglishDiscretion":"","RusianDiscretion":""
+},
+{"EnglishSource":"WHOREHOUSE","RussianSource":"публичный дом","Score":0.0,"Active":false,"EnglishDiscretion":"a brothel.","RusianDiscretion":"бордель."
+},
+{"EnglishSource":"WICKED","RussianSource":"безнравственный","Score":0.0,"Active":false,"EnglishDiscretion":"evil or morally wrong","RusianDiscretion":"злой или морально неправильный"
+},
+{"EnglishSource":"WORTHY","RussianSource":"достойный","Score":0.0,"Active":false,"EnglishDiscretion":"having or showing the qualities or abilities that merit recognition in a specified way","RusianDiscretion":"наличие или демонстрация качеств или способностей, которые заслуживают признания определенным образом"
+},
+{"EnglishSource":"WRITHE","RussianSource":"корчиться","Score":0.0,"Active":false,"EnglishDiscretion":"make continual twisting, squirming movements or contortions of the body","RusianDiscretion":"делать постоянные скручивания, извивающиеся движения или искривления тела"}]}

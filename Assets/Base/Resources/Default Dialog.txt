@@ -11622,4 +11622,1788 @@
 },
 {"EnglishSource":"METHODS OF ELECTRICITY GENERATION","RussianSource":"методы производства электроэнергии","Score":0.0,"Active":false
 },
-{"EnglishSource":"A NEW GENERATION OF REAR-ENGINED SPORTS CARS","RussianSource":"новое поколение спортивных автомобилей с задним расположением двигателя","Score":0.0,"Active":false}]}
+{"EnglishSource":"A NEW GENERATION OF REAR-ENGINED SPORTS CARS","RussianSource":"новое поколение спортивных автомобилей с задним расположением двигателя","Score":0.0,"Active":false
+},
+{"EnglishSource":"ALCOHOL ABUSE","RussianSource":"злоупотребление алкоголем","Score":0.0,"Active":false
+},
+{"EnglishSource":"A BLACK EYE AND OTHER SIGNS OF PHYSICAL ABUSE","RussianSource":"синяк под глазом и другие признаки физического насилия","Score":0.0,"Active":false
+},
+{"EnglishSource":"RIDERS WHO ABUSE THEIR HORSES SHOULD BE PROSECUTED","RussianSource":"всадники, которые жестоко обращаются со своими лошадьми, должны быть привлечены к ответственности","Score":0.0,"Active":false
+},
+{"EnglishSource":"PROTECTION AGAINST FRAUD AND ABUSE","RussianSource":"защита от мошенничества и злоупотреблений","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOUNG PEOPLE WHO HAVE SUFFERED SEXUAL ABUSE","RussianSource":"молодые люди, подвергшиеся сексуальному насилию","Score":0.0,"Active":false
+},
+{"EnglishSource":"WAVING HIS FISTS AND HURLING ABUSE AT THE DRIVER","RussianSource":"размахивая кулаками и бросая оскорбления в адрес водителя","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN ABUSE OF PUBLIC FUNDS","RussianSource":"злоупотребление государственными средствами","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WOULD ACCEPT THEIR OFFER AND SEE WHAT HAPPENED","RussianSource":"он примет их предложение и увидит, что произойдет","Score":0.0,"Active":false
+},
+{"EnglishSource":"JENKINS IS WILLING TO ACCEPT HIS RESPONSIBILITY","RussianSource":"Дженкинс готов взять на себя ответственность","Score":0.0,"Active":false
+},
+{"EnglishSource":"THIS ROOM IS NOT ACCESSIBLE TO ELDERLY PEOPLE","RussianSource":"эта комната недоступна для пожилых людей","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS LATIN GRAMMAR IS LUCID AND ACCESSIBLE","RussianSource":"его латинская грамматика ясна и доступна","Score":0.0,"Active":false
+},
+{"EnglishSource":"FEATURES SUCH AS NONSLIP FLOORS AND ACCESSIBLE ENTRANCES","RussianSource":"такие особенности, как нескользкие полы и доступные входы","Score":0.0,"Active":false
+},
+{"EnglishSource":"MAKING LEARNING OPPORTUNITIES MORE ACCESSIBLE TO ADULTS","RussianSource":"сделать возможности обучения более доступными для взрослых","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TOWN IS ACCESSIBLE BY BUS","RussianSource":"до города можно добраться на автобусе","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE IS MORE ACCESSIBLE THAN MOST TYCOONS","RussianSource":"он более доступен, чем большинство магнатов","Score":0.0,"Active":false
+},
+{"EnglishSource":"I RAN ACROSS THE STREET","RussianSource":"я побежал через улицу","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BRIDGE ACROSS THE RIVER","RussianSource":"мост через реку","Score":0.0,"Active":false
+},
+{"EnglishSource":"HALFWAY ACROSS JENNY JUMPED","RussianSource":"на полпути Дженни подпрыгнула","Score":0.0,"Active":false
+},
+{"EnglishSource":"19 ACROSS","RussianSource":"19 через","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE IS TRAVELING ACROSS THE US ON A PROMOTIONAL TOUR","RussianSource":"она путешествует по США в рекламном туре","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY LIVED ACROSS THE STREET FROM ONE ANOTHER","RussianSource":"они жили через дорогу друг от друга","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CRATER SOME 30 FEET ACROSS","RussianSource":"кратер около 30 футов в поперечнике","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD SWUM ACROSS","RussianSource":"он переплыл","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE LOOKED ACROSS AT ME","RussianSource":"он посмотрел на меня","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE ADORED HIS MOTHER","RussianSource":"он обожал свою мать","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE ADORED THE SACRED HOST","RussianSource":"он поклонялся Святому воинству","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS WIFE IS HAVING AN AFFAIR","RussianSource":"у его жены роман","Score":0.0,"Active":false
+},
+{"EnglishSource":"HER DRESS WAS A BLACK LOW-CUT AFFAIR","RussianSource":"ее платье было черным с глубоким вырезом","Score":0.0,"Active":false
+},
+{"EnglishSource":"WHAT YOU DO IN YOUR SPARE TIME IS YOUR AFFAIR","RussianSource":"что ты делаешь в свободное время это твое дело","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BOARD ADMITTED RESPONSIBILITY FOR THE AFFAIR","RussianSource":"совет признал ответственность за дело","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WANTED THE FUNERAL TO BE A FAMILY AFFAIR","RussianSource":"Я хотел, чтобы похороны были семейным делом","Score":0.0,"Active":false
+},
+{"EnglishSource":"ALAS MY FUNDS HAVE SOME LIMITATIONS","RussianSource":"увы, мои средства имеют некоторые ограничения","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE HAD TO MOURN FOR HER FRIENDS WHO DIED IN THE ACCIDENT","RussianSource":"ей пришлось оплакивать своих друзей, погибших в аварии","Score":0.0,"Active":false
+},
+{"EnglishSource":"MERCENARIES WHO HAD ALLOWED GREED TO OVERTAKE THEIR PRINCIPLES","RussianSource":"наемники, позволившие жадности взять верх над своими принципами","Score":0.0,"Active":false
+},
+{"EnglishSource":"GREED HAS TAKEN OVER FOOTBALL","RussianSource":"жадность захватила футбол","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE COLONISTS' GREED FOR AFRICAN LAND","RussianSource":"жадность колонистов к африканской земле","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CABINET WAS A NEST OF INTRIGUE","RussianSource":"кабинет был гнездом интриги","Score":0.0,"Active":false
+},
+{"EnglishSource":"WITHIN THE REGION'S BORDERS IS A WEALTH OF INTEREST AND INTRIGUE","RussianSource":"в границах региона множество интересного и интригующего","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE VICTIM OF A HOAX","RussianSource":"жертва обмана","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ANCIENT LAWS OF ANIMAL SACRIFICE","RussianSource":"древние законы жертвоприношения животных","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE SMILED FALSELY","RussianSource":"она фальшиво улыбнулась","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DEATHS WERE FALSELY ATTRIBUTED TO INFLUENZA","RussianSource":"смерти были ложно приписаны гриппу","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE POLICE FALSELY ACCUSED HIM OF MURDER","RussianSource":"полиция ложно обвинила его в убийстве","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS OFFERED MONEY TO TESTIFY FALSELY AGAINST ME","RussianSource":"ему предложили деньги за ложные показания против меня","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE ADMITTED TWO COUNTS OF FALSELY CLAIMING EXPENSES","RussianSource":"он признал два пункта ложного заявления о расходах","Score":0.0,"Active":false
+},
+{"EnglishSource":"TESTING WILL YIELD FALSELY REASSURING RESULTS","RussianSource":"тестирование даст ложно обнадеживающие результаты","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SECOND ARGUMENT IS MORE DIFFICULT TO COUNTER","RussianSource":"второй аргумент сложнее опровергнуть","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE ANTICIPATES AN OBJECTION AND PLANS HIS COUNTER","RussianSource":"он предвидит возражение и планирует свою встречную","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE COUNTER TELLS YOU HOW MANY PICTURES YOU HAVE TAKEN","RussianSource":"счетчик показывает, сколько снимков вы сделали","Score":0.0,"Active":false
+},
+{"EnglishSource":"SOME ACTIONS BY THE AUTHORITIES RAN COUNTER TO THE CALL FOR LENIENCY","RussianSource":"некоторые действия властей противоречили призыву к снисхождению","Score":0.0,"Active":false
+},
+{"EnglishSource":"AFTER YEARS OF ARGUMENT AND COUNTER ARGUMENT THERE IS NO CONCLUSIVE ANSWER","RussianSource":"после многих лет аргументов и контраргументов нет окончательного ответа","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE STIMULUS TO EMPLOYERS' ORGANIZATION WAS PARTLY A COUNTER TO GROWING UNION POWER","RussianSource":"стимул для организации работодателей частично противоречил растущей силе профсоюзов.","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LEASE VALUED AT SEVEN YEAR'S PURCHASE","RussianSource":"аренда на сумму семилетней покупки","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN ATTEMPT TO GAIN A PURCHASE ON THE SOFT EARTH","RussianSource":"попытка получить покупку на мягкой земле","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE LARGE NUMBER OF VIDEOS CURRENTLY AVAILABLE FOR PURCHASE","RussianSource":"большое количество видео в настоящее время доступно для покупки","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE HORSE'S HOOVES FOUGHT FOR PURCHASE ON THE SLIPPERY PAVEMENT","RussianSource":"копыта коня дрались за покупку на скользкой мостовой","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE SIGNED A CONFESSION TO THE MURDERS","RussianSource":"он подписал признание в убийствах","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE STILL HAD NOT BEEN TO CONFESSION","RussianSource":"она еще не была на исповеди","Score":0.0,"Active":false
+},
+{"EnglishSource":"LEADING FIGURES FROM EVERY CHRISTIAN CONFESSION","RussianSource":"ведущие деятели каждой христианской конфессии","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PROTESTANT CONFESSION OF FAITH","RussianSource":"протестантское исповедание веры","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS WORDS ARE A POLITICAL CONFESSION OF FAITH","RussianSource":"его слова политическое исповедание веры","Score":0.0,"Active":false
+},
+{"EnglishSource":"BY HIS OWN CONFESSION HE HAD STRAYED PERILOUSLY CLOSE TO ALCOHOLISM","RussianSource":"по его собственному признанию, он был опасно близок к алкоголизму","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SYSTEM'S MANIFEST FAILINGS","RussianSource":"явные недостатки системы","Score":0.0,"Active":false
+},
+{"EnglishSource":"RAMA WAS VISHNU'S INCARNATION ON EARTH","RussianSource":"Рама был воплощением Вишну на земле.","Score":0.0,"Active":false
+},
+{"EnglishSource":"IN MY NEXT INCARNATION I'D LIKE TO BE THE SECRETARY OF FUN","RussianSource":"в моем следующем воплощении я хотел бы быть секретарем Fun","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT IS TOO EARLY TO PREDICT A RESULT","RussianSource":"пока рано прогнозировать результат","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PREDICTED GROWTH IN ROAD TRAFFIC","RussianSource":"прогнозируемый рост дорожного движения","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN APPRENTICE ELECTRICIAN","RussianSource":"ученик электрика","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN APPRENTICE CONFIDENCE TRICKSTER","RussianSource":"начинающий мошенник","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE FOUGHT BACK TEARS OF HUMILIATION","RussianSource":"он боролся со слезами унижения","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY SUFFERED THE HUMILIATION OF LOSING IN THE OPENING ROUND","RussianSource":"они испытали унижение проигрыша в первом раунде","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN UNFERTILIZED EGG BEFORE CONCEPTION","RussianSource":"неоплодотворенная яйцеклетка до зачатия","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD NO CONCEPTION OF POLITICS","RussianSource":"он не имел представления о политике","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CONCEPTION OF A BALANCE OF POWER","RussianSource":"концепция баланса сил","Score":0.0,"Active":false
+},
+{"EnglishSource":"OUR CONCEPTION OF HOW LANGUAGE RELATES TO REALITY","RussianSource":"наше представление о том, как язык соотносится с реальностью","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIME BETWEEN A PRODUCT'S CONCEPTION AND ITS LAUNCH","RussianSource":"время между концепцией продукта и его запуском","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'S GOT HER PERIOD","RussianSource":"у нее месячные","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EARLY MEDIEVAL PERIOD","RussianSource":"ранний средневековый период","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ALE WILL BE AVAILABLE FOR A LIMITED PERIOD","RussianSource":"эль будет доступен в течение ограниченного периода времени","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CRETACEOUS PERIOD","RussianSource":"меловой период","Score":0.0,"Active":false
+},
+{"EnglishSource":"PERIOD PAINS","RussianSource":"менструальные боли","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PERIOD 1977–85","RussianSource":"период 1977–85 гг.","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TRAINING PERIOD IS BETWEEN 16 AND 18 MONTHS","RussianSource":"период обучения составляет от 16 до 18 месяцев","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SPLENDID SELECTION OF PERIOD FURNITURE","RussianSource":"прекрасный выбор антикварной мебели","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE INTERVIEWED THE TEACHERS WHEN THEY HAD A FREE PERIOD","RussianSource":"он брал интервью у учителей, когда у них был свободный период","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE LIGHTNINGS RAN AT THE LEAFS HARD IN A VERY ROUGH FIRST PERIOD","RussianSource":"«Лайтнингз» сильно обыграли «Лифс» в очень тяжелом первом периоде.","Score":0.0,"Active":false
+},
+{"EnglishSource":"VARIOUS IDEAS ARE IN THE PROCESS OF GESTATION","RussianSource":"различные идеи находятся в процессе вынашивания","Score":0.0,"Active":false
+},
+{"EnglishSource":"A STRAIGHTFORWARD PREGNANCY","RussianSource":"простая беременность","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FIRST WEEKS OF PREGNANCY","RussianSource":"первые недели беременности","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PREGNANT WOMAN","RussianSource":"беременная женщина","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS HEAVILY PREGNANT WITH HER SECOND CHILD","RussianSource":"она была беременна вторым ребенком","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS SIX MONTHS PREGNANT","RussianSource":"она была на шестом месяце беременности","Score":0.0,"Active":false
+},
+{"EnglishSource":"A DEVELOPMENT PREGNANT WITH IMPLICATIONS","RussianSource":"развитие беременное с последствиями","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PREGNANT PAUSE","RussianSource":"беременная пауза","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE COULD NOT CONCEIVE OF SUCH THINGS HAPPENING TO US","RussianSource":"мы не могли себе представить, чтобы с нами происходило такое","Score":0.0,"Active":false
+},
+{"EnglishSource":"A BREACH OF PARLIAMENTARY PRIVILEGE","RussianSource":"нарушение парламентской привилегии","Score":0.0,"Active":false
+},
+{"EnglishSource":"I HAVE THE PRIVILEGE OF AWARDING YOU THIS SCHOLARSHIP","RussianSource":"Я имею честь присудить вам эту стипендию","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAS BEEN ACCUSTOMED ALL HIS LIFE TO WEALTH AND PRIVILEGE","RussianSource":"он всю жизнь привык к богатству и привилегиям","Score":0.0,"Active":false
+},
+{"EnglishSource":"EDUCATION IS A RIGHT NOT A PRIVILEGE","RussianSource":"образование - это право, а не привилегия","Score":0.0,"Active":false
+},
+{"EnglishSource":"HER SLENDER NECK","RussianSource":"ее тонкая шея","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SLENDER MAJORITY OF FOUR","RussianSource":"незначительное большинство из четырех","Score":0.0,"Active":false
+},
+{"EnglishSource":"SLENDER IRON RAILINGS","RussianSource":"тонкие железные перила","Score":0.0,"Active":false
+},
+{"EnglishSource":"JUST A TRACE OF A SMILE","RussianSource":"просто след улыбки","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE'VE GOT A TRACE ON THE CALL","RussianSource":"у нас есть след на вызов","Score":0.0,"Active":false
+},
+{"EnglishSource":"TRACE QUANTITIES OF PCBS","RussianSource":"следовые количества ПХД","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE AIRCRAFT DISAPPEARED WITHOUT TRACE","RussianSource":"самолет бесследно исчез","Score":0.0,"Active":false
+},
+{"EnglishSource":"TRACE A MAP OF THE WORLD ONTO A LARGE PIECE OF PAPER","RussianSource":"обведите карту мира на большом листе бумаги","Score":0.0,"Active":false
+},
+{"EnglishSource":"LOOK AT THE STATE OF YOU—WHAT A MESS","RussianSource":"посмотри, в каком ты состоянии — какой беспорядок!","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE STATE OF THE COMPANY'S FINANCES","RussianSource":"состояние финансов компании","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN OBLONG PLATE DRY POINT FIRST STATE OF EIGHT","RussianSource":"продолговатая тарелка, сухая точка, первое состояние из восьми","Score":0.0,"Active":false
+},
+{"EnglishSource":"KING FAHD APPOINTED A COUNCIL TO ADVISE HIM ON AFFAIRS OF STATE","RussianSource":"Король Фахд назначил совет, чтобы консультировать его по государственным делам.","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS BURIED IN STATE","RussianSource":"он был похоронен в государстве","Score":0.0,"Active":false
+},
+{"EnglishSource":"JUDGES MUST GIVE BOTH SIDES AN EQUAL OPPORTUNITY TO STATE THEIR CASE","RussianSource":"судьи должны предоставить обеим сторонам равные возможности изложить свою позицию","Score":0.0,"Active":false
+},
+{"EnglishSource":"WATER IN A LIQUID STATE","RussianSource":"вода в жидком состоянии","Score":0.0,"Active":false
+},
+{"EnglishSource":"SERVICES PROVIDED BY THE STATE","RussianSource":"услуги, предоставляемые государством","Score":0.0,"Active":false
+},
+{"EnglishSource":"A STATE VISIT TO HUNGARY BY QUEEN ELIZABETH","RussianSource":"государственный визит в Венгрию королевы Елизаветы","Score":0.0,"Active":false
+},
+{"EnglishSource":"DON'T GET INTO A STATE","RussianSource":"не впадать в состояние","Score":0.0,"Active":false
+},
+{"EnglishSource":"PEOPLE WILL BE INVITED TO STATE THEIR VIEWS","RussianSource":"людям будет предложено высказать свое мнение","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE GERMAN STATE OF BAVARIA","RussianSource":"немецкая земля Бавария","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE'RE WORRIED ABOUT HER STATE OF MIND","RussianSource":"мы беспокоимся о ее душевном состоянии","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FUTURE OF STATE EDUCATION","RussianSource":"будущее государственного образования","Score":0.0,"Active":false
+},
+{"EnglishSource":"A DESIRE TO WORK IN THE DIRT WITH YOUR BARE HANDS","RussianSource":"желание работать в грязи голыми руками","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WERE CLINGING TOGETHER IN FIERCE MUTUAL DESIRE","RussianSource":"они цеплялись друг за друга в яростном взаимном желании","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE POLICE HAVE ISSUED AN ARTIST'S IMPRESSION OF THE ATTACKER","RussianSource":"полиция выдала художественное представление о нападавшем","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SPEAKER'S INNER THOUGHTS","RussianSource":"внутренние мысли говорящего","Score":0.0,"Active":false
+},
+{"EnglishSource":"INNER FEELINGS","RussianSource":"внутренние чувства","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT'S TIME TO GET IN TOUCH WITH YOUR INNER GEEK","RussianSource":"пришло время связаться со своим внутренним компьютерщиком","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE INNER SOLAR SYSTEM","RussianSource":"внутренняя Солнечная система","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE INNER CABINET","RussianSource":"внутренний шкаф","Score":0.0,"Active":false
+},
+{"EnglishSource":"JOIN A CHOIR AND GIVE VOICE TO THAT INNER DIVA WHO HAS BEEN HIDDEN AWAY TOO LONG","RussianSource":"присоединитесь к хору и дайте голос той внутренней диве, которая слишком долго скрывалась","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE INNER THIGH","RussianSource":"внутренняя поверхность бедра","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TEST OF INNER STRENGTH","RussianSource":"испытание внутренней силы","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN INNER COURTYARD","RussianSource":"внутренний двор","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'S LYING THERE IN A STATE OF COLLAPSE","RussianSource":"она лежит там в состоянии коллапса","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD AN OPERATION TO COLLAPSE HIS LUNG","RussianSource":"ему сделали операцию по коллапсу легкого","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CHURCH ROOF IS IN DANGER OF COLLAPSE","RussianSource":"крыша церкви находится под угрозой обрушения","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANY PEOPLE TEND TO COLLAPSE THE DISTINCTION BETWEEN THE TWO CONCEPTS","RussianSource":"многие люди склонны стирать различие между двумя понятиями","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE COLLAPSE OF THE OTTOMAN EMPIRE","RussianSource":"крах Османской империи","Score":0.0,"Active":false
+},
+{"EnglishSource":"SOME COTS COLLAPSE DOWN TO FIT INTO A BAG","RussianSource":"некоторые кроватки складываются, чтобы поместиться в сумку","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE SUFFERED A COLLAPSE FROM OVERWORK","RussianSource":"он потерял сознание от переутомления","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT FEELS AS IF THE SLIGHTEST PRESSURE WOULD COLLAPSE IT","RussianSource":"такое ощущение, что малейшее давление разрушит его","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE COLLAPSE OF A RAILROAD BRIDGE","RussianSource":"обрушение железнодорожного моста","Score":0.0,"Active":false
+},
+{"EnglishSource":"TABULATION PROGRAMS CAN BE USED TO COLLAPSE THIS LIST IN VARIOUS WAYS","RussianSource":"программы табулирования можно использовать для свертывания этого списка различными способами.","Score":0.0,"Active":false
+},
+{"EnglishSource":"INTENTION IS JUST ONE OF THE FACTORS THAT WILL BE CONSIDERED","RussianSource":"намерение является лишь одним из факторов, которые будут учитываться","Score":0.0,"Active":false
+},
+{"EnglishSource":"UKRAINE AND KAZAKHSTAN HAVE BOTH DECLARED THEIR INTENTION TO BE NUCLEAR-FREE","RussianSource":"Украина и Казахстан заявили о своем намерении стать безъядерным государством.","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE WHOLE TEAM IS WORKING TO SATISFY DEMAND","RussianSource":"вся команда работает, чтобы удовлетворить спрос","Score":0.0,"Active":false
+},
+{"EnglishSource":"WEALTH THE PROMISE OF THE EIGHTIES HAS FAILED TO SATISFY","RussianSource":"богатство, обещание восьмидесятых, не смогло удовлетворить","Score":0.0,"Active":false
+},
+{"EnglishSource":"SOCIAL SERVICES IS TRYING TO SATISFY THE NEEDS OF SO MANY DIFFERENT GROUPS","RussianSource":"социальные службы пытаются удовлетворить потребности очень многих различных групп","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE WAS INSUFFICIENT COLLATERAL TO SATISFY THE LOAN","RussianSource":"не хватило залога для погашения кредита","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SOLDIER IN A UN PEACEKEEPING FORCE","RussianSource":"солдат миротворческих сил ООН","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FORCE OF HER WRITING IS UNDIMINISHED","RussianSource":"сила ее письма не уменьшается","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY RULED BY LAW AND NOT BY FORCE","RussianSource":"они правили законом, а не силой","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SALES FORCE","RussianSource":"отдел продаж","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE MIGHT STILL BE A FORCE FOR PEACE AND UNITY","RussianSource":"он все еще может быть силой мира и единства","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FORCE OF POPULAR OPINION","RussianSource":"сила общественного мнения","Score":0.0,"Active":false
+},
+{"EnglishSource":"EAST COULD FORCE DECLARER TO RUFF ANOTHER SPADE","RussianSource":"Восток может заставить разыгрывающего сыграть еще одну пику","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS THROWN BACKWARD BY THE FORCE OF THE EXPLOSION","RussianSource":"его отбросило назад силой взрыва","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE FORCEFULLY SHOVED HER BACK INTO THE WALL","RussianSource":"он силой толкнул ее обратно в стену","Score":0.0,"Active":false
+},
+{"EnglishSource":"EXHALE FORCEFULLY THROUGH YOUR NOSE","RussianSource":"сильно выдохните через нос","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE ARGUED FORCEFULLY AGAINST REFORM","RussianSource":"он решительно выступал против реформы","Score":0.0,"Active":false
+},
+{"EnglishSource":"MAY I OFFER YOU A DRINK","RussianSource":"Можно угостить Вас выпивкой?","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS MOTHER WORRIED HERSELF SILLY OVER HIM","RussianSource":"его мать глупо переживала за него","Score":0.0,"Active":false
+},
+{"EnglishSource":"ANOTHER OF HIS SILLY JOKES","RussianSource":"еще одна его глупая шутка","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WOULD BROOD ABOUT SILLY THINGS","RussianSource":"он будет размышлять о глупостях","Score":0.0,"Active":false
+},
+{"EnglishSource":"“DON'T BE SILLY” SHE SAID","RussianSource":"«Не глупи!» ","Score":0.0,"Active":false
+},
+{"EnglishSource":"COME ON SILLY","RussianSource":"давай, глупый","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE OFTEN DRANK HIMSELF SILLY","RussianSource":"он часто напивался глупо","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT'S THE FIRST TIME THAT I'VE HAD OCCASION TO COMPLAIN","RussianSource":"это первый раз, когда у меня есть повод пожаловаться","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS PRESENTED WITH A GOLD WATCH TO MARK THE OCCASION","RussianSource":"ей подарили золотые часы по этому случаю","Score":0.0,"Active":false
+},
+{"EnglishSource":"ELECTIONS ARE AN OCCASION FOR REGISTERING PROTEST VOTES","RussianSource":"выборы - повод для регистрации протестных голосов","Score":0.0,"Active":false
+},
+{"EnglishSource":"ON ONE OCCASION I STAYED UP UNTIL TWO IN THE MORNING","RussianSource":"однажды я не спал до двух ночи","Score":0.0,"Active":false
+},
+{"EnglishSource":"CONFESSIONS EXTRACTED UNDER TORTURE","RussianSource":"признания, полученные под пытками","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TORTURE CHAMBER","RussianSource":"камера пыток","Score":0.0,"Active":false
+},
+{"EnglishSource":"DANCES WERE ABSOLUTE TORTURE BECAUSE I WAS SO SMALL","RussianSource":"танцы были абсолютной пыткой, потому что я был таким маленьким","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TORTURE I'VE GONE THROUGH BECAUSE OF LOVING YOU SO","RussianSource":"пытки, через которые я прошел из-за того, что так тебя любил","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TORTURE OF POLITICAL PRISONERS","RussianSource":"пытки политических заключенных","Score":0.0,"Active":false
+},
+{"EnglishSource":"ACRYLIC PAINTS IN FLESH RED AND PINK","RussianSource":"акриловые краски телесного, красного и розового цвета","Score":0.0,"Active":false
+},
+{"EnglishSource":"I HAVE NEVER BEEN ONE TO DENY THE PLEASURES OF THE FLESH","RussianSource":"Я никогда не отказывался от плотских удовольствий","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE GASPED AS THE COLD WATER HIT HER FLESH","RussianSource":"она задохнулась, когда холодная вода коснулась ее плоти","Score":0.0,"Active":false
+},
+{"EnglishSource":"HALVE THE AVOCADOS AND SCRAPE OUT THE FLESH","RussianSource":"разрезать авокадо пополам и выскоблить мякоть","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FOOD AN ANIMAL EATS WILL AFFECT THE TASTE AND TEXTURE OF ITS FLESH","RussianSource":"пища, которую ест животное, влияет на вкус и текстуру его мяса.","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE GRABBED ANNA'S ARM HER FINGERS SINKING INTO THE FLESH","RussianSource":"она схватила руку Анны, ее пальцы погрузились в плоть","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD THE MOST DISGUSTING ROTTEN TEETH","RussianSource":"у него были самые отвратительные гнилые зубы","Score":0.0,"Active":false
+},
+{"EnglishSource":"I THINK THE DECISION IS DISGUSTING","RussianSource":"Я считаю решение отвратительным","Score":0.0,"Active":false
+},
+{"EnglishSource":"PERHAPS SURPRISINGLY ALL SURVIVED","RussianSource":"как ни странно, все выжили","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE MOVE WAS SURPRISINGLY EASY","RussianSource":"ход был на удивление легким","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FINALE ENDS SURPRISINGLY","RussianSource":"финал заканчивается неожиданно","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE RATHER SURPRISINGLY TOOK UP THE CAUSE","RussianSource":"он довольно неожиданно взялся за дело","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'S BEEN BEHAVING RATHER STRANGELY","RussianSource":"она ведет себя довольно странно","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE SEEMED INDIFFERENT RATHER THAN ANGRY","RussianSource":"она казалась скорее равнодушной, чем злой","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE'S RATHER AN UNPLEASANT MAN","RussianSource":"он довольно неприятный человек","Score":0.0,"Active":false
+},
+{"EnglishSource":"WOULD YOU LIKE SOME WINE OR WOULD YOU RATHER STICK TO SHERRY","RussianSource":"хочешь вина или предпочитаешь шерри?","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'D RATHER DIE THAN CAUSE A SCENE","RussianSource":"она скорее умрет, чем устроит сцену","Score":0.0,"Active":false
+},
+{"EnglishSource":"I'D RATHER YOU NOT TELL HIM","RussianSource":"Я бы предпочел, чтобы ты не говорил ему","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE WERE RATHER HOPING YOU MIGHT DO THAT FOR US","RussianSource":"мы скорее надеялись, что ты сделаешь это для нас","Score":0.0,"Active":false
+},
+{"EnglishSource":"“YOU'D BETTER ASK HER” “I'D RATHER NOT”","RussianSource":"— Лучше у нее спроси. ","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WALKED OR RATHER LIMPED THE TWO MILES HOME","RussianSource":"Я шел, вернее, хромал, две мили домой","Score":0.0,"Active":false
+},
+{"EnglishSource":"I RATHER THINK HE WANTS ME TO MARRY HIM","RussianSource":"Я скорее думаю, что он хочет, чтобы я вышла за него замуж","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SMALL HARD CORE OF YOUNG CRIMINALS WHO OFFEND AGAIN AND AGAIN","RussianSource":"небольшое ядро ​​молодых преступников, которые снова и снова совершают преступления","Score":0.0,"Active":false
+},
+{"EnglishSource":"THOSE ACTIVITIES WHICH OFFEND AGAINST PUBLIC ORDER AND DECENCY","RussianSource":"те действия, которые нарушают общественный порядок и порядочность","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE WANT TO PRESERVE OUR TOWN'S SPECIAL CHARACTER","RussianSource":"мы хотим сохранить особый характер нашего города","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'S A VERY SPECIAL PERSON","RussianSource":"она очень особенный человек","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY ALWAYS MADE A SPECIAL EFFORT AT CHRISTMAS","RussianSource":"они всегда прилагали особые усилия на Рождество","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE WILL RETURN BY SPECIAL COACHES","RussianSource":"мы вернемся на специальных автобусах","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE GAVE HER A LASCIVIOUS WINK","RussianSource":"он похотливо подмигнул ей","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE HORRIFIED SPECTATORS","RussianSource":"испуганные зрители","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'D APOLOGIZED COUNTLESS TIMES BEFORE","RussianSource":"она извинялась бесчисленное количество раз перед","Score":0.0,"Active":false
+},
+{"EnglishSource":"BELONGING TO THE SAME FAMILY GROUP OR TYPE; CONNECTED","RussianSource":"принадлежность к одному семейству, группе или типу; ","Score":0.0,"Active":false
+},
+{"EnglishSource":"SLEEPING SICKNESS AND RELATED DISEASES","RussianSource":"сонная болезнь и сопутствующие заболевания","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE STUDY EXAMINES SOCIAL CHANGE WITHIN THE CITY AND RELATES IT TO WIDER DEVELOPMENTS IN THE COUNTRY AS A WHOLE","RussianSource":"исследование изучает социальные изменения в городе и связывает их с более широкими событиями в стране в целом.","Score":0.0,"Active":false
+},
+{"EnglishSource":"KIDS RELATED TO HIM BECAUSE HE WAS SO ANTI-ESTABLISHMENT","RussianSource":"дети, связанные с ним, потому что он был таким противником истеблишмента","Score":0.0,"Active":false
+},
+{"EnglishSource":"VARIOUS VERSIONS OF THE CHILLING STORY HAVE BEEN RELATED BY THE LOCALS","RussianSource":"различные версии леденящей кровь истории были рассказаны местными жителями","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT MIGHT NOW BE POSSIBLE TO PRESSURE HIM INTO RESIGNING","RussianSource":"теперь можно заставить его уйти в отставку","Score":0.0,"Active":false
+},
+{"EnglishSource":"OIL PRICES CAME UNDER SOME DOWNWARD PRESSURE","RussianSource":"цены на нефть оказались под некоторым понижательным давлением","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU NEED TO BE ABLE TO WORK UNDER PRESSURE AND NOT GET FLUSTERED","RussianSource":"нужно уметь работать под давлением и не нервничать","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PROPOSALS PUT PRESSURE ON BRITAIN TO DROP ITS DEMAND","RussianSource":"предложения заставляют Великобританию отказаться от спроса","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SLIGHT EXTRA PRESSURE HE APPLIED TO HER HAND","RussianSource":"небольшое дополнительное давление, которое он приложил к ее руке","Score":0.0,"Active":false
+},
+{"EnglishSource":"GAS CAN BE FED TO THE TURBINES AT A PRESSURE OF AROUND 250 PSI","RussianSource":"газ может подаваться на турбины под давлением около 250 фунтов на квадратный дюйм.","Score":0.0,"Active":false
+},
+{"EnglishSource":"MILITANTS KIDNAPPED THE DAUGHTER OF A MINISTER","RussianSource":"боевики похитили дочь министра","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WERE ARRESTED FOR ROBBERY AND KIDNAP","RussianSource":"они были арестованы за грабеж и похищение","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN EQUITABLE BALANCE OF POWER","RussianSource":"справедливый баланс сил","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BENEFICIARIES HAVE AN EQUITABLE INTEREST IN THE PROPERTY","RussianSource":"бенефициары имеют равные доли в имуществе","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ADVANCE CREATED AN EASTWARD-FACING BULGE IN THE LINE","RussianSource":"наступление создало обращенную на восток выпуклость на линии","Score":0.0,"Active":false
+},
+{"EnglishSource":"A BULGE IN THE BIRTH RATE","RussianSource":"всплеск рождаемости","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE AUDIENCE HAD BEGUN TO FIDGET ON THEIR CHAIRS","RussianSource":"публика начала ерзать на стульях","Score":0.0,"Active":false
+},
+{"EnglishSource":"PRESSURING PANAMA TO AMEND ITS BANKING LAWS","RussianSource":"оказание давления на Панаму с целью внесения поправок в банковское законодательство","Score":0.0,"Active":false
+},
+{"EnglishSource":"IF YOU CAN AMEND OR ALTER PEOPLE'S MINDSET","RussianSource":"если вы можете исправить или изменить мышление людей","Score":0.0,"Active":false
+},
+{"EnglishSource":"DID SHE AMEND HER ORIGINAL WILL LATER ON","RussianSource":"она изменила свое первоначальное завещание позже?","Score":0.0,"Active":false
+},
+{"EnglishSource":"A MEASURE APPROPRIATE TO A WARTIME ECONOMY","RussianSource":"мера, соответствующая экономике военного времени","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANAGERS HAPPILY ASSIGN LARGE SUMS OF MONEY TO TRAVEL BUDGETS","RussianSource":"менеджеры с радостью выделяют большие суммы денег на командировочные бюджеты","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WILL ASK YOU TO ASSIGN YOUR RIGHTS AGAINST THE AIRLINE","RussianSource":"они попросят вас передать свои права авиакомпании","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT IS DIFFICULT TO DECIDE WHETHER TO ASSIGN THE VICTORY TO GOODWIN","RussianSource":"сложно решить, приписывать ли победу Гудвину","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SEVERELY WOUNDED HAD TWO MEDICS TO ATTEND TO THEIR WOUNDS","RussianSource":"у тяжелораненых было два медика, которые лечили их раны","Score":0.0,"Active":false
+},
+{"EnglishSource":"ALL CHILDREN ARE REQUIRED TO ATTEND SCHOOL","RussianSource":"все дети обязаны посещать школу","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS UNABLE TO ATTEND THE WEDDING","RussianSource":"она не смогла присутствовать на свадьбе","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE MUTTERED THAT HE HAD BUSINESS TO ATTEND TO","RussianSource":"он пробормотал, что у него есть дело","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE LARGER THE POOL OF AVAILABLE SINGLES THE GREATER YOUR CHANCE OF FINDING SOMEONE SPECIAL","RussianSource":"чем больше пул доступных синглов, тем больше у вас шансов найти кого-то особенного","Score":0.0,"Active":false
+},
+{"EnglishSource":"REFRESHMENTS WILL BE AVAILABLE ALL AFTERNOON","RussianSource":"напитки будут доступны весь день","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SLUSH FUND AVAILABLE TO UNIVERSITIES","RussianSource":"фонд для подкупа, доступный для университетов","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE NURSE IS ONLY AVAILABLE AT CERTAIN TIMES","RussianSource":"медсестра доступна только в определенное время","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE MINISTER WAS NOT AVAILABLE FOR COMMENT","RussianSource":"министр был недоступен для комментариев","Score":0.0,"Active":false
+},
+{"EnglishSource":"DO YOU THINK HE'S AVAILABLE","RussianSource":"как вы думаете, он доступен?","Score":0.0,"Active":false
+},
+{"EnglishSource":"MY DOG'S PET AVERSION IS VISITORS PARTICULARLY MALES","RussianSource":"любимое отвращение моей собаки к посетителям, особенно кобелям","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD A DEEP-SEATED AVERSION TO MOST FORMS OF EXERCISE","RussianSource":"у него было глубоко укоренившееся отвращение к большинству форм упражнений","Score":0.0,"Active":false
+},
+{"EnglishSource":"A GRILLED CHICKEN BREAST","RussianSource":"жареная куриная грудка","Score":0.0,"Active":false
+},
+{"EnglishSource":"HER HEART WAS HAMMERING IN HER BREAST","RussianSource":"ее сердце колотилось в груди","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BREAST FEATHERS OF THE DOVES","RussianSource":"грудные перья голубей","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WATCHED HIM BREAST THE WAVE","RussianSource":"Я смотрел, как он грудь волна","Score":0.0,"Active":false
+},
+{"EnglishSource":"A BREAST POCKET","RussianSource":"нагрудный карман","Score":0.0,"Active":false
+},
+{"EnglishSource":"A HIGHLY CAPABLE MAN","RussianSource":"очень способный человек","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE STRANGE EVENTS ARE CAPABLE OF RATIONAL EXPLANATION","RussianSource":"странные события поддаются рациональному объяснению","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE AIRCRAFT IS CAPABLE OF FLYING 5000 MILES NONSTOP","RussianSource":"самолет способен пролететь 5000 миль без посадки","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE LOOKED ENTHUSIASTIC AND CAPABLE","RussianSource":"она выглядела восторженной и способной","Score":0.0,"Active":false
+},
+{"EnglishSource":"I'M QUITE CAPABLE OF TAKING CARE OF MYSELF","RussianSource":"Я вполне способен позаботиться о себе","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CAPTIVE ANIMAL","RussianSource":"пленное животное","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CAPTIVE POWER PLANT","RussianSource":"пленная электростанция","Score":0.0,"Active":false
+},
+{"EnglishSource":"ADVERTISEMENTS AT THE MOVIE THEATER REACH A CAPTIVE AUDIENCE","RussianSource":"реклама в кинотеатре достигает целевой аудитории","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FARM WAS USED TO HOLD PRISONERS OF WAR CAPTIVE","RussianSource":"ферма использовалась для содержания военнопленных в плену","Score":0.0,"Active":false
+},
+{"EnglishSource":"MUSEUMS SHOULD CHARGE FOR ADMISSION","RussianSource":"музеи должны брать плату за вход","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE JUDGE GAVE A PAINSTAKINGLY CAREFUL CHARGE TO THE JURY","RussianSource":"судья дал кропотливо тщательное поручение присяжным","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY CHARGE THE CALLS TO THEIR CREDIT-CARD ACCOUNTS","RussianSource":"они взимают плату за звонки со счетов своих кредитных карт","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE APPEARED IN COURT ON A CHARGE OF ATTEMPTED MURDER","RussianSource":"он предстал перед судом по обвинению в покушении на убийство","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN ADMISSION CHARGE","RussianSource":"вступительный взнос","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CAVALRY CHARGE","RussianSource":"кавалерийская атака","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN ASSET OF $550000 SHOULD HAVE BEEN TAKEN AS A CHARGE ON EARNINGS","RussianSource":"актив в размере 550 000 долларов должен был быть принят в качестве расходов на прибыль","Score":0.0,"Active":false
+},
+{"EnglishSource":"I DON'T ADVISE ANYONE TO CHARGE THAT BARRICADE","RussianSource":"Я никому не советую заряжать эту баррикаду","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PLAN IS TO CHARGE HEADLONG AT THE ENEMY","RussianSource":"план состоит в том, чтобы атаковать врага сломя голову","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PEOPLE IN HER CHARGE ARE PUPILS AND NOT EXPERIMENTAL SUBJECTS","RussianSource":"люди в ее ведении - ученики, а не подопытные","Score":0.0,"Active":false
+},
+{"EnglishSource":"I GET A REAL CHARGE OUT OF WORKING HARD","RussianSource":"Я получаю реальный заряд от тяжелой работы","Score":0.0,"Active":false
+},
+{"EnglishSource":"I HAVE THEREFORE LAID DOWN THE CHARGE WHICH WAS PLACED UPON ME","RussianSource":"Поэтому я снял обвинение, возложенное на меня","Score":0.0,"Active":false
+},
+{"EnglishSource":"THREE PEOPLE WERE ARRESTED BUT RELEASED WITHOUT CHARGE","RussianSource":"три человека были арестованы, но отпущены без предъявления обвинений","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CLIMAX OF HER SPEECH","RussianSource":"кульминация ее выступления","Score":0.0,"Active":false
+},
+{"EnglishSource":"A MIXED HARDWOOD CLIMAX FOREST","RussianSource":"смешанный лиственный климаксный лес","Score":0.0,"Active":false
+},
+{"EnglishSource":"A THRILLING CLIMAX TO THE GAME","RussianSource":"захватывающая кульминация игры","Score":0.0,"Active":false
+},
+{"EnglishSource":"A COCKY PLAYBOY WITH A DESPERADO MUSTACHE","RussianSource":"дерзкий плейбой с отчаянными усами","Score":0.0,"Active":false
+},
+{"EnglishSource":"INTELLECTUAL COMBAT","RussianSource":"интеллектуальный бой","Score":0.0,"Active":false
+},
+{"EnglishSource":"A COMBAT ZONE","RussianSource":"боевая зона","Score":0.0,"Active":false
+},
+{"EnglishSource":"MEN KILLED IN COMBAT","RussianSource":"мужчины, убитые в бою","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN EFFORT TO COMBAT DRUG TRAFFICKING","RussianSource":"усилия по борьбе с незаконным оборотом наркотиков","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE COMPOSED A LETTER BUT DIDN'T COMMIT IT TO PAPER","RussianSource":"он написал письмо, но не передал его на бумаге","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANUFACTURERS WILL HAVE TO COMMIT SUBSTANTIAL FUNDS TO DEVELOPING NEW ENGINES","RussianSource":"производители должны будут выделить значительные средства на разработку новых двигателей","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE MAGISTRATE DECIDED TO COMMIT HIM FOR TRIAL","RussianSource":"судья решил передать его для суда","Score":0.0,"Active":false
+},
+{"EnglishSource":"TRY IT OUT BEFORE YOU COMMIT TO A PURCHASE","RussianSource":"попробуйте, прежде чем совершить покупку","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WERE RELUCTANT TO COMMIT THEMSELVES TO AN OPINION","RussianSource":"они не хотели соглашаться с мнением","Score":0.0,"Active":false
+},
+{"EnglishSource":"THOSE OF HUMBLER CONDITION","RussianSource":"в более скромном состоянии","Score":0.0,"Active":false
+},
+{"EnglishSource":"I'LL ACCEPT YOUR OFFER ON ONE CONDITION","RussianSource":"Я приму ваше предложение при одном условии","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BRIDGE IS IN AN EXTREMELY DANGEROUS CONDITION","RussianSource":"мост находится в крайне опасном состоянии","Score":0.0,"Active":false
+},
+{"EnglishSource":"BREWS THAT ARE ALLOWED TO CONDITION IN THE BOTTLE","RussianSource":"пиво, которому разрешено кондиционировать в бутылке","Score":0.0,"Active":false
+},
+{"EnglishSource":"ALL PERSONNEL SHOULD COMPLY WITH THIS POLICY AS A CONDITION OF EMPLOYMENT","RussianSource":"весь персонал должен соблюдать эту политику в качестве условия приема на работу","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS IN A SERIOUS CONDITION","RussianSource":"она была в тяжелом состоянии","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CONDITION OF MISERY","RussianSource":"состояние нищеты","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE IS IN FAIRLY GOOD CONDITION CONSIDERING WHAT HE HAS HAS BEEN THROUGH","RussianSource":"он в довольно хорошем состоянии, учитывая, через что он прошел","Score":0.0,"Active":false
+},
+{"EnglishSource":"A HEART CONDITION","RussianSource":"состояние сердца","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE WIRING IS IN GOOD CONDITION","RussianSource":"проводка в хорошем состоянии","Score":0.0,"Active":false
+},
+{"EnglishSource":"I CONDITION MY HAIR REGULARLY","RussianSource":"Я регулярно ухаживаю за волосами","Score":0.0,"Active":false
+},
+{"EnglishSource":"PEOPLE CONSUME A GOOD DEAL OF SUGAR IN DRINKS","RussianSource":"люди потребляют много сахара в напитках","Score":0.0,"Active":false
+},
+{"EnglishSource":"THESE MACHINES CONSUME 5 PERCENT OF THE NATURAL GAS IN THE US","RussianSource":"эти машины потребляют 5 процентов природного газа в США.","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE PICKED UP THE PHONE AND HELD A CONVERSATION IN FRENCH","RussianSource":"она взяла трубку и заговорила на французском языке","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TWO MEN WERE DEEP IN CONVERSATION","RussianSource":"двое мужчин были погружены в разговор","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU COULDN'T CONVINCE HIM THAT A FLOPPY DISK WAS AS GOOD AS A MANUSCRIPT","RussianSource":"вы не могли убедить его, что дискета так же хороша, как рукопись","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WORKED IN CLOSE COOPERATION WITH THE AAA","RussianSource":"они работали в тесном сотрудничестве с ААА","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE WOULD LIKE TO ASK FOR YOUR COOPERATION IN THE SURVEY","RussianSource":"мы хотели бы попросить вашего сотрудничества в опросе","Score":0.0,"Active":false
+},
+{"EnglishSource":"A COURT CASE","RussianSource":"судебное дело","Score":0.0,"Active":false
+},
+{"EnglishSource":"EVERYONE IN THE COURT KNEW HE WAS GOING DOWN INNOCENT OR GUILTY","RussianSource":"все в суде знали, что он идет вниз, невиновен или виновен","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SETTLEMENT WAS REACHED DURING THE FIRST SITTING OF THE COURT","RussianSource":"мировое соглашение было достигнуто на первом заседании суда","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WILL TAKE THE MATTER TO COURT","RussianSource":"она обратится в суд","Score":0.0,"Active":false
+},
+{"EnglishSource":"I PREFER AN INDOOR COURT","RussianSource":"Я предпочитаю крытый корт","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE LIVED FOR FOUR YEARS AT THE COURT OF KING PHILIP","RussianSource":"он прожил четыре года при дворе короля Филиппа","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE NEVER HAD TO COURT THE APPROVAL OF THE POLITICAL ELITE","RussianSource":"ему никогда не приходилось добиваться одобрения политической элиты","Score":0.0,"Active":false
+},
+{"EnglishSource":"RELATIONS BETWEEN THE KING AND THE IMPERIAL COURT","RussianSource":"отношения между королем и императорским двором","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EMPEROR IS SHOWN WITH HIS COURT","RussianSource":"изображен император со своим двором","Score":0.0,"Active":false
+},
+{"EnglishSource":"A BITTER COURTROOM BATTLE","RussianSource":"ожесточенная битва в зале суда","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE SANK INTO THE CHAIR CAREFUL NOT TO CREASE HIS DINNER JACKET","RussianSource":"он опустился на стул, стараясь не помять смокинг","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS CAUGHT IN THE CREASE WITHOUT THE PUCK","RussianSource":"он попал в складку без шайбы","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CRUEL REMARK","RussianSource":"жестокое замечание","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE WINTERS ARE LONG HARD AND CRUEL","RussianSource":"зимы длинные, суровые и жестокие","Score":0.0,"Active":false
+},
+{"EnglishSource":"PEOPLE WHO ARE CRUEL TO ANIMALS","RussianSource":"люди, жестоко обращающиеся с животными","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FIRM IS HEAVILY IN DEBT","RussianSource":"фирма по уши в долгах","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE OWE THEM A DEBT OF THANKS","RussianSource":"мы в долгу перед ними спасибо","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WAY TO REDUCE THIRD WORLD DEBT","RussianSource":"способ уменьшить долг третьего мира","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS A WOMAN OF DECISION","RussianSource":"она была решительной женщиной","Score":0.0,"Active":false
+},
+{"EnglishSource":"I'LL MAKE THE DECISION ON MY OWN","RussianSource":"Я приму решение самостоятельно","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE INFORMATION WAS USED AS THE BASIS FOR DECISION","RussianSource":"информация была использована в качестве основы для решения","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EDITOR'S DECISION IS FINAL","RussianSource":"решение редакции является окончательным","Score":0.0,"Active":false
+},
+{"EnglishSource":"LAST YEAR'S SUPREME COURT DECISION","RussianSource":"прошлогоднее решение Верховного суда","Score":0.0,"Active":false
+},
+{"EnglishSource":"A NUMBER OF INTERESTED PARTIES WHO CAN'T DECLARE THEMSELVES OPENLY","RussianSource":"ряд заинтересованных сторон, которые не могут открыто заявить о себе","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAITED IN VAIN FOR HIM TO DECLARE HIMSELF","RussianSource":"она напрасно ждала, пока он объявит о себе","Score":0.0,"Active":false
+},
+{"EnglishSource":"IF YOU HAVE SOMETHING TO DECLARE CUSTOMS OFFICERS WILL TELL YOU THE DUTY PAYABLE","RussianSource":"если у вас есть что задекларировать таможенники скажут вам подлежащую уплате пошлину","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DEFENDANT TRIED TO CLAIM THAT IT WAS SELF-DEFENSE","RussianSource":"подсудимый пытался утверждать, что это была самооборона","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WILL DEFINITELY BE AT THE AIRPORT TO MEET YOU","RussianSource":"Я обязательно буду в аэропорту, чтобы встретить вас","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE COULDN'T PLAN TO GO ELSEWHERE UNTIL WE HAD HEARD FROM YOU MORE DEFINITELY","RussianSource":"мы не могли планировать идти куда-то еще, пока мы не получили от вас более определенного известия","Score":0.0,"Active":false
+},
+{"EnglishSource":"BRING AND HAND OVER (A LETTER PARCEL OR ORDERED GOODS) TO THE PROPER RECIPIENT OR ADDRESS","RussianSource":"принести и передать (письмо, посылку или заказанный товар) надлежащему получателю или адресу","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD BEEN ABLE TO DELIVER VOTES IN HUGE NUMBERS","RussianSource":"он смог поставить голоса в огромном количестве","Score":0.0,"Active":false
+},
+{"EnglishSource":"TO DELIVER UP TO JUSTICE A MEMBER OF HIS OWN FAMILY","RussianSource":"предать правосудию члена своей семьи","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE'LL DELIVER DIRECT TO YOUR DOOR","RussianSource":"мы доставим прямо к вашей двери","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PITCHER WINDS UP TO DELIVER THE BALL","RussianSource":"питчер подходит, чтобы доставить мяч","Score":0.0,"Active":false
+},
+{"EnglishSource":"DELIVER US FROM MISERY","RussianSource":"избавь нас от беды","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PRESIDENT WILL DELIVER A SPEECH","RussianSource":"Президент выступит с речью","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'S WAITING FOR HIM TO DELIVER ON HIS PROMISE","RussianSource":"она ждет, когда он выполнит свое обещание","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE AIRCRAFT BEGAN TO DESCEND","RussianSource":"самолет начал снижаться","Score":0.0,"Active":false
+},
+{"EnglishSource":"PEOPLE WHO PARK LIKE THAT DESERVE TO BE TOWED AWAY","RussianSource":"люди, которые так паркуются, заслуживают того, чтобы их эвакуировали","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BRIBE HAD ITS DESIRED EFFECT","RussianSource":"взятка возымела желаемый эффект","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE THEATER ONLY EARNS MY DESPITE","RussianSource":"театр только зарабатывает мой вопреки","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DESPITE DONE BY HIM TO THE HOLY RELICS","RussianSource":"презрение, нанесенное им святым мощам","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE REMAINS A GREAT LEADER DESPITE AGE AND INFIRMITY","RussianSource":"он остается великим лидером, несмотря на возраст и немощь","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS DICTATORIAL MANNER","RussianSource":"его диктаторские манеры","Score":0.0,"Active":false
+},
+{"EnglishSource":"A DICTATORIAL REGIME","RussianSource":"диктаторский режим","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DIVISION OF HIS ESTATES BETWEEN THE TWO BRANCHES OF HIS FAMILY","RussianSource":"раздел его имений между двумя ветвями его семьи","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE NEW CLAUSE WAS AGREED WITHOUT A DIVISION","RussianSource":"новый пункт был согласован без разделения","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LICENSING DIVISION OF A DISTRICT","RussianSource":"лицензионный отдел района","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN INFANTRY DIVISION","RussianSource":"пехотная дивизия","Score":0.0,"Active":false
+},
+{"EnglishSource":"A RETAIL DIVISION","RussianSource":"розничное подразделение","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DIVISION OF THE LAND INTO SMALL FIELDS","RussianSource":"разделение земли на небольшие поля","Score":0.0,"Active":false
+},
+{"EnglishSource":"NO MULTIPLICATION OR DIVISION IS NECESSARY","RussianSource":"умножение и деление не требуется","Score":0.0,"Active":false
+},
+{"EnglishSource":"A GENE THAT HELPS REGULATE CELL DIVISION","RussianSource":"ген, который помогает регулировать деление клеток","Score":0.0,"Active":false
+},
+{"EnglishSource":"A GROWING SENSE OF DIVISION BETWEEN NORTH AND SOUTH","RussianSource":"растущее чувство разделения между севером и югом","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PLANT CAN ALSO BE EASILY INCREASED BY DIVISION IN AUTUMN","RussianSource":"растение также можно легко размножить делением осенью","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE AIRCRAFT WAS SENT CRASHING TO ITS DOOM IN THE WATER","RussianSource":"самолет был отправлен на гибель в воду","Score":0.0,"Active":false
+},
+{"EnglishSource":"A DAY LIKE THAT OF THE LAST DOOM","RussianSource":"день, как день последней гибели","Score":0.0,"Active":false
+},
+{"EnglishSource":"A DRUG ADDICT","RussianSource":"наркоман","Score":0.0,"Active":false
+},
+{"EnglishSource":"MASS ADORATION IS A HIGHLY ADDICTIVE DRUG","RussianSource":"массовое обожание - наркотик, вызывающий сильное привыкание","Score":0.0,"Active":false
+},
+{"EnglishSource":"A NEW DRUG AIMED AT SUFFERERS FROM PARKINSON'S DISEASE","RussianSource":"новый препарат, предназначенный для страдающих болезнью Паркинсона","Score":0.0,"Active":false
+},
+{"EnglishSource":"JULIET REPORTED FOR DUTY","RussianSource":"Джульетта явилась на службу","Score":0.0,"Active":false
+},
+{"EnglishSource":"A DUTY NURSE","RussianSource":"дежурная медсестра","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT'S MY DUTY TO UPHOLD THE LAW","RussianSource":"мой долг соблюдать закон","Score":0.0,"Active":false
+},
+{"EnglishSource":"COMBAT DUTY IN THE ARMY","RussianSource":"боевая служба в армии","Score":0.0,"Active":false
+},
+{"EnglishSource":"GOODS SUBJECT TO EXCISE DUTY","RussianSource":"товары, облагаемые акцизом","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS DETERMINED TO DO HER DUTY AS A CITIZEN","RussianSource":"она была полна решимости выполнить свой долг гражданина","Score":0.0,"Active":false
+},
+{"EnglishSource":"A 6 PERCENT DUTY ON IMPORTS","RussianSource":"6-процентная пошлина на импорт","Score":0.0,"Active":false
+},
+{"EnglishSource":"A STRONG SENSE OF DUTY","RussianSource":"сильное чувство долга","Score":0.0,"Active":false
+},
+{"EnglishSource":"A FIFTEEN-MINUTE DUTY VISIT","RussianSource":"пятнадцатиминутный дежурный визит","Score":0.0,"Active":false
+},
+{"EnglishSource":"COMPUTER TECHNIQUES THAT ENHANCE IMAGES","RussianSource":"компьютерные технологии, улучшающие изображения","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS REFUSAL DOES NOTHING TO ENHANCE HIS REPUTATION","RussianSource":"его отказ ничего не делает для улучшения его репутации","Score":0.0,"Active":false
+},
+{"EnglishSource":"ESSENTIALLY THEY ARE AMATEURS","RussianSource":"по сути они любители","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EVALUATION OF EACH METHOD","RussianSource":"оценка каждого метода","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN INITIAL EVALUATION OF THE PROGRAM","RussianSource":"первоначальная оценка программы","Score":0.0,"Active":false
+},
+{"EnglishSource":"A MEDICAL EXAMINATION IS CONDUCTED WITHOUT DELAY","RussianSource":"медицинский осмотр проводится без промедления","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TREATY IS UNDER EXAMINATION BY THE SENATE FOREIGN RELATIONS COMMITTEE","RussianSource":"договор находится на рассмотрении сенатского комитета по международным отношениям.","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN EXAMINATION OF MARKETING BEHAVIOR","RussianSource":"исследование маркетингового поведения","Score":0.0,"Active":false
+},
+{"EnglishSource":"THESE PATIENTS ARE EXEMPT FROM ALL CHARGES","RussianSource":"эти пациенты освобождены от всех сборов","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY ARE NOT EXEMPT FROM CRITICISM","RussianSource":"они не освобождаются от критики","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN EXHAUST PIPE","RussianSource":"выхлопная труба","Score":0.0,"Active":false
+},
+{"EnglishSource":"EXHAUST FUMES","RussianSource":"выхлопные газы","Score":0.0,"Active":false
+},
+{"EnglishSource":"BUSES SPEWING OUT BLACK CLOUDS OF EXHAUST","RussianSource":"автобусы извергают черные облака выхлопа","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU SHOULD NEVER EXHAUST BATHROOM AIR INTO YOUR ATTIC","RussianSource":"Вы никогда не должны выпускать воздух из ванной комнаты на чердак","Score":0.0,"Active":false
+},
+{"EnglishSource":"KARL SPAT HIS PATIENCE SUDDENLY EXHAUSTED","RussianSource":"Карл сплюнул, его терпение внезапно истощилось","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WAS COLD AND EXHAUSTED","RussianSource":"Я был холоден и истощен","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE RETURNED HOME EXHAUSTED FROM HER DAY IN THE CITY","RussianSource":"она вернулась домой, измученная днем ​​в городе","Score":0.0,"Active":false
+},
+{"EnglishSource":"I EXPECT YOU KNOW THEM","RussianSource":"Я полагаю, вы знаете их?","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE EXPECT GREAT THINGS OF YOU","RussianSource":"мы ожидаем от вас многого","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY'RE JUST FRIENDS OF HIS I EXPECT","RussianSource":"они просто его друзья, я полагаю","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE EXPECT THAT FARMERS WILL HARVEST 63 MILLION ACRES OF HAY","RussianSource":"мы ожидаем, что фермеры соберут 63 миллиона акров сена","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE EXPECT EMPLOYERS TO PAY A REASONABLE SALARY","RussianSource":"мы ожидаем, что работодатели будут платить разумную заработную плату","Score":0.0,"Active":false
+},
+{"EnglishSource":"GIDDILY EXUBERANT CROWDS","RussianSource":"головокружительно буйные толпы","Score":0.0,"Active":false
+},
+{"EnglishSource":"EXUBERANT FOLIAGE","RussianSource":"буйная листва","Score":0.0,"Active":false
+},
+{"EnglishSource":"FLAMBOYANT AND EXUBERANT ARCHITECTURAL INVENTION","RussianSource":"яркое и яркое архитектурное изобретение","Score":0.0,"Active":false
+},
+{"EnglishSource":"SCHOOLS WERE LOCATED ON THE SAME CAMPUS TO FACILITATE THE SHARING OF RESOURCES","RussianSource":"школы были расположены в одном кампусе, чтобы облегчить совместное использование ресурсов","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TRUE EDUCATOR ACTS AS A FACILITATOR OF LEARNING","RussianSource":"настоящий педагог действует как фасилитатор обучения","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT TOOK A WHILE TO FIGURE OUT HOW THE CONFOUNDED THINGS FIT TOGETHER","RussianSource":"потребовалось некоторое время, чтобы понять, как смешанные вещи сочетаются друг с другом","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SHOES FIT BETTER AFTER BEING STRETCHED","RussianSource":"обувь лучше сидит после растяжки","Score":0.0,"Active":false
+},
+{"EnglishSource":"I SWIM REGULARLY TO KEEP FIT","RussianSource":"Я регулярно плаваю, чтобы поддерживать себя в форме","Score":0.0,"Active":false
+},
+{"EnglishSource":"IN A FIT OF TEMPER","RussianSource":"сгоряча","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE THOUGHT SHE WAS HAVING A FIT","RussianSource":"он думал, что у нее припадок","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE FELT HIMSELF QUITE FIT FOR BATTLE","RussianSource":"он чувствовал себя вполне готовым к бою","Score":0.0,"Active":false
+},
+{"EnglishSource":"IS THE WATER CLEAN AND FIT TO DRINK","RussianSource":"вода чистая и пригодна для питья?","Score":0.0,"Active":false
+},
+{"EnglishSource":"A FIT SUBJECT ON WHICH TO CORRESPOND","RussianSource":"подходящая тема для переписки","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DRESS WAS A PERFECT FIT","RussianSource":"платье идеально подошло","Score":0.0,"Active":false
+},
+{"EnglishSource":"THOSE JEANS STILL FIT ME","RussianSource":"эти джинсы до сих пор мне подходят","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE MEAT IS FIT FOR HUMAN CONSUMPTION","RussianSource":"мясо пригодно для употребления в пищу человеком","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANY PHYSICISTS TRIED TO FIT TOGETHER THE VARIOUS PIECES OF THE PUZZLE","RussianSource":"многие физики пытались собрать воедино различные части головоломки","Score":0.0,"Active":false
+},
+{"EnglishSource":"WELL ARE YOU FIT","RussianSource":"ну ты в форме?","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE BAITED EVEN HIS CLOSE COMPANIONS UNTIL THEY WERE FIT TO KILL HIM","RussianSource":"он дразнил даже своих близких товарищей, пока они не были в состоянии убить его","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CLOSE FIT BETWEEN TEACHERS' QUALIFICATIONS AND THEIR TEACHING RESPONSIBILITIES","RussianSource":"тесное соответствие между квалификацией учителей и их преподавательскими обязанностями","Score":0.0,"Active":false
+},
+{"EnglishSource":"TED WAS GHASTLY PALE AND FIT TO DO NO MORE THAN SWITCH CHANNELS","RussianSource":"Тед был ужасно бледен и мог только переключать каналы.","Score":0.0,"Active":false
+},
+{"EnglishSource":"ANGELA SAYS WE CAN ALL FIT IN HER CAR","RussianSource":"Анджела говорит, что мы все можем поместиться в ее машине.","Score":0.0,"Active":false
+},
+{"EnglishSource":"I FLATTER MYSELF I'M THE BEST DRESSED MAN HERE","RussianSource":"Я льщу себя тем, что я здесь лучше всего одет.","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE GROSS AMOUNT OF THE GIFT WAS $1000","RussianSource":"общая сумма подарка составила 1000 долларов США.","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PROJECTED GROSS TAKEOFF WEIGHT OF 500000 POUNDS","RussianSource":"прогнозируемый полный взлетный вес 500 000 фунтов","Score":0.0,"Active":false
+},
+{"EnglishSource":"IF THE VALUE OF YOUR BOND IS $50000 OR MORE THE INTEREST WILL BE PAID GROSS","RussianSource":"если стоимость вашей облигации составляет 50 000 долларов США или более, проценты будут выплачены брутто","Score":0.0,"Active":false
+},
+{"EnglishSource":"AT THE GROSS ANATOMICAL LEVEL","RussianSource":"на макроанатомическом уровне","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DUTIES WE FELT CALLED UPON TO PERFORM TOWARD OUR INFERIORS WERE ONLY GROSS MATERIAL ONES","RussianSource":"обязанности, которые мы чувствовали призванными выполнять по отношению к нижестоящим, были только грубыми, материальными","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT'S DISGUSTING AND GROSS BUT IT'S A FACT","RussianSource":"это отвратительно и мерзко, но это факт","Score":0.0,"Active":false
+},
+{"EnglishSource":"GROSS HUMAN RIGHTS ABUSES","RussianSource":"грубые нарушения прав человека","Score":0.0,"Active":false
+},
+{"EnglishSource":"A GROSS EXAGGERATION","RussianSource":"сильное преувеличение","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FILM WENT ON TO GROSS $8 MILLION IN THE US","RussianSource":"фильм собрал в США 8 миллионов долларов.","Score":0.0,"Active":false
+},
+{"EnglishSource":"FIFTY-FIVE GROSS OF TINS OF PROCESSED MILK","RussianSource":"пятьдесят пять брутто банок переработанного молока","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CURRENT RATE OF INTEREST IS ABOUT 61 PERCENT GROSS","RussianSource":"текущая процентная ставка составляет около 6,1 процента брутто","Score":0.0,"Active":false
+},
+{"EnglishSource":"GROSS NEGLIGENCE","RussianSource":"грубая небрежность","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE'S GRUMPY BECAUSE HE HASN'T HEARD FROM YOU","RussianSource":"он сварливый, потому что ничего не слышал от тебя","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS PERFORMANCE AS THE GRUMPY GATEMAN","RussianSource":"его выступление в роли сварливого привратника","Score":0.0,"Active":false
+},
+{"EnglishSource":"A GUILTY VERDICT","RussianSource":"обвинительный приговор","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS FOUND GUILTY OF MANSLAUGHTER","RussianSource":"он был признан виновным в непредумышленном убийстве","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE FOUND THEM GUILTY ON A LESSER CHARGE","RussianSource":"он признал их виновными по меньшему обвинению","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WRESTLED WITH A GUILTY CONSCIENCE AFTER HER ADULTERY","RussianSource":"она боролась с нечистой совестью после ее прелюбодеяния","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS GUILTY OF A SERIOUS ERROR OF JUDGMENT","RussianSource":"она была виновна в серьезной ошибке суждения","Score":0.0,"Active":false
+},
+{"EnglishSource":"JOHN FELT GUILTY AT HAVING DECEIVED THE FAMILY","RussianSource":"Джон чувствовал себя виноватым в том, что обманул семью","Score":0.0,"Active":false
+},
+{"EnglishSource":"I HAVE NO GUILTY SECRET TO REVEAL","RussianSource":"У меня нет секрета вины, чтобы раскрыть","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE POLICE WILL SOON DISCOVER WHO THE GUILTY PARTY IS","RussianSource":"полиция скоро обнаружит виновного","Score":0.0,"Active":false
+},
+{"EnglishSource":"HEAVEN KNOWS","RussianSource":"неизвестно!","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EVERLASTING HAPPINESS WITH GOD THAT WE CALL HEAVEN","RussianSource":"вечное счастье с Богом, которое мы называем небом","Score":0.0,"Active":false
+},
+{"EnglishSource":"CONSTANTINE WAS PERSUADED THAT DISUNITY IN THE CHURCH WAS DISPLEASING TO HEAVEN","RussianSource":"Константин был убежден, что разобщенность в Церкви неугодна небу.","Score":0.0,"Active":false
+},
+{"EnglishSource":"LYING BY THE POOL WITH A GOOD BOOK IS MY IDEA OF HEAVEN","RussianSource":"лежать у бассейна с хорошей книгой - мое представление о рае","Score":0.0,"Active":false
+},
+{"EnglishSource":"THOSE WHO PRACTICED GOOD DEEDS WOULD RECEIVE THE REWARD OF A PLACE IN HEAVEN","RussianSource":"те, кто творил добрые дела, получали в награду место на небесах","Score":0.0,"Active":false
+},
+{"EnglishSource":"HEAVENLY CONSTELLATIONS","RussianSource":"небесные созвездия","Score":0.0,"Active":false
+},
+{"EnglishSource":"HEAVENLY FATHER","RussianSource":"небесный Отец","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT WAS A HEAVENLY MORNING FOR A RIDE","RussianSource":"это было райское утро для поездки","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR SHAMPOOS SMELL HEAVENLY","RussianSource":"их шампуни пахнут божественно","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LIFE OF HOLINESS AND TOTAL DEVOTION TO GOD","RussianSource":"жизнь в святости и полной преданности Богу","Score":0.0,"Active":false
+},
+{"EnglishSource":"HOLY SMOKE","RussianSource":"Святой дым!","Score":0.0,"Active":false
+},
+{"EnglishSource":"I DO NOT LEAD A HOLY LIFE","RussianSource":"Я не веду святую жизнь","Score":0.0,"Active":false
+},
+{"EnglishSource":"SAINTS AND HOLY MEN","RussianSource":"святые и святые люди","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE HOLY MONTH OF RAMADAN","RussianSource":"священный месяц Рамадан","Score":0.0,"Active":false
+},
+{"EnglishSource":"I MUST AS A MATTER OF HONOR AVOID ANY TAINT OF DISHONESTY","RussianSource":"Я должен из соображений чести избегать малейшего намека на нечестность","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE GREAT POET OF WHOM IT IS MY HONOR TO SPEAK TONIGHT","RussianSource":"великий поэт, о котором я имею честь говорить сегодня вечером","Score":0.0,"Active":false
+},
+{"EnglishSource":"MAKE SURE THE FRANCHISEES HONOR THE TERMS OF THE CONTRACT","RussianSource":"убедиться, что франчайзи соблюдают условия контракта","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU ARE AN HONOR TO OUR PROFESSION","RussianSource":"ты честь для нашей профессии","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS PORTRAIT HANGS IN THE PLACE OF HONOR","RussianSource":"его портрет висит на почетном месте","Score":0.0,"Active":false
+},
+{"EnglishSource":"KYLE HAD THE HONOR AT THE LAST HOLE","RussianSource":"Кайл имел честь на последней лунке","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE DIED DEFENDING HER HONOR","RussianSource":"она погибла защищая свою честь","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PERFECTLY TIMED RIGHT HOOK TO THE CHIN","RussianSource":"идеально рассчитанный правый хук в подбородок","Score":0.0,"Active":false
+},
+{"EnglishSource":"COMPANIES ARE LOOKING FOR A SALES HOOK","RussianSource":"компании ищут крючок продаж","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PICTURE HOOK","RussianSource":"крючок для картин","Score":0.0,"Active":false
+},
+{"EnglishSource":"STRONG FUNKY VOCALS WITH A HOOK THAT GETS INTO YOUR HEAD","RussianSource":"сильный, фанковый вокал с зацепкой, которая проникает в голову","Score":0.0,"Active":false
+},
+{"EnglishSource":"HOW ARE YOU SETTLING IN OVER HERE","RussianSource":"как ты здесь устроился","Score":0.0,"Active":false
+},
+{"EnglishSource":"A HUMILIATING DEFEAT","RussianSource":"унизительное поражение","Score":0.0,"Active":false
+},
+{"EnglishSource":"I SENSE GREAT MAGIC IN YOU","RussianSource":"я чувствую в тебе великую магию","Score":0.0,"Active":false
+},
+{"EnglishSource":"I'M IN CHARGE","RussianSource":"я главный","Score":0.0,"Active":false
+},
+{"EnglishSource":"I'M ROOTING FOR YOU","RussianSource":"Я болел за вас","Score":0.0,"Active":false
+},
+{"EnglishSource":"IM STARING","RussianSource":"я смотрю","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE IMPORTANCE OF DEMOCRACY","RussianSource":"важность демократии","Score":0.0,"Active":false
+},
+{"EnglishSource":"A REMOTE AND INACCESSIBLE CAVE","RussianSource":"отдаленная и недоступная пещера","Score":0.0,"Active":false
+},
+{"EnglishSource":"SUCH COSTS WOULD MAKE LITIGATION INACCESSIBLE TO PRIVATE INDIVIDUALS","RussianSource":"такие расходы сделали бы судебный процесс недоступным для частных лиц","Score":0.0,"Active":false
+},
+{"EnglishSource":"INJECT THE FOAM AND ALLOW IT TO EXPAND","RussianSource":"введите пену и дайте ей расшириться","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE TRIED TO INJECT SCORN INTO HER TONE","RussianSource":"она пыталась придать презрение своему тону","Score":0.0,"Active":false
+},
+{"EnglishSource":"A JAIL SENTENCE","RussianSource":"тюремный срок","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE SERVED 15 MONTHS IN JAIL","RussianSource":"он отсидел 15 месяцев в тюрьме","Score":0.0,"Active":false
+},
+{"EnglishSource":"KEEP CIVIL","RussianSource":"вести себя цивилизованно","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE KINGDOM OF DREAMS","RussianSource":"царство снов","Score":0.0,"Active":false
+},
+{"EnglishSource":"LAY OFF WILL YOU","RussianSource":"увольняйся ты","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LOOSE INTERPRETATION","RussianSource":"вольная интерпретация","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE SLIPPED INTO A LOOSE T-SHIRT AND SHORTS","RussianSource":"она надела свободную футболку и шорты","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BULL WAS LOOSE WITH CATTLE IN THE FIELD","RussianSource":"бык бродил со скотом в поле","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE IS TOO MUCH LOOSE TALK ABOUT THE SITUATION","RussianSource":"слишком много свободного разговора о ситуации","Score":0.0,"Active":false
+},
+{"EnglishSource":"WEAR YOUR HAIR LOOSE","RussianSource":"носить волосы распущенными","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANY PATIENTS REPORT LOOSE BOWEL MOVEMENTS","RussianSource":"многие пациенты сообщают о жидком стуле","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LOOSE FEDERATION OF POLITICAL GROUPS","RussianSource":"свободная федерация политических групп","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LOOSE WEAVE","RussianSource":"рыхлое плетение","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LOOSE TOOTH","RussianSource":"шатающийся зуб","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TETHERED HORSES BROKE LOOSE","RussianSource":"привязанные лошади вырвались на свободу","Score":0.0,"Active":false
+},
+{"EnglishSource":"POCKETS BULGING WITH LOOSE CHANGE","RussianSource":"карманы набиты мелочью","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TRUCK'S TRAILER CAME LOOSE","RussianSource":"прицеп грузовика оторвался","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE SWUNG BACK INTO HER EASY LOOSE STRIDE","RussianSource":"она вернулась к своей легкой, свободной походке","Score":0.0,"Active":false
+},
+{"EnglishSource":"WHAT KIND OF MASOCHIST WOULD TAKE PART IN SUCH AN EXPERIMENT ","RussianSource":"какой мазохист стал бы участвовать в таком эксперименте?","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ROLES OF MASOCHIST AND MISTRESS","RussianSource":"роли мазохиста и любовницы","Score":0.0,"Active":false
+},
+{"EnglishSource":"FOOT INJURIES CAN TAKE MONTHS TO MEND","RussianSource":"травмы стопы могут заживать месяцами","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PATCH WAS USED TO MEND THE GARMENT","RussianSource":"заплатка использовалась для починки одежды","Score":0.0,"Active":false
+},
+{"EnglishSource":"TWO OTHER POINTS ARE WORTHY OF MENTION","RussianSource":"два других момента заслуживают упоминания","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE MADE NO MENTION OF HER DISASTROUS TRIP TO PARIS","RussianSource":"она не упомянула о своей неудачной поездке в Париж","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR EYES LIGHT UP AT A MENTION OF SARTRE","RussianSource":"у них глаза загораются при упоминании Сартра","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE RECEIVED A SPECIAL MENTION AND A PRIZE OF $100","RussianSource":"он получил особое упоминание и приз в размере 100 долларов.","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE OFFICIAL MERCHANDISE FOR THE FILM","RussianSource":"официальный товар к фильму","Score":0.0,"Active":false
+},
+{"EnglishSource":"ANYONE WHO IS NOT OF THAT GUILD MAY NOT MERCHANDISE WITH THEM","RussianSource":"любой, кто не состоит в этой гильдии, не может торговать с ними","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT IF BE BELOW GREAT MEN TO BE KIND OF RECOMPENSE AND MERCHANDISE THEIR POWER","RussianSource":"ниже великих людей вознаграждать и торговать своей властью","Score":0.0,"Active":false
+},
+{"EnglishSource":"STORES THAT OFFERED AN ASTONISHING RANGE OF MERCHANDISE","RussianSource":"магазины, которые предлагали удивительный ассортимент товаров","Score":0.0,"Active":false
+},
+{"EnglishSource":"BACTERIAL MENINGITIS CAN PRESENT WITH ACUTE DISTURBANCE OF BEHAVIOR WHICH MAY CLOSELY MIMIC SUBSTANCE ABUSE","RussianSource":"бактериальный менингит может проявляться острым нарушением поведения, которое может близко имитировать злоупотребление психоактивными веществами.","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAS GREAT ABILITY AS A MIMIC","RussianSource":"у него отличные способности мимика","Score":0.0,"Active":false
+},
+{"EnglishSource":"WILD POTATOES MIMIC AN APHID ALARM SIGNAL","RussianSource":"дикий картофель имитирует сигнал тревоги тли","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WERE WAGING MIMIC WAR","RussianSource":"они вели имитацию войны","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE PICKED UP THE MISCELLANEOUS PAPERS","RussianSource":"он взял разные бумаги","Score":0.0,"Active":false
+},
+{"EnglishSource":"A MISCELLANEOUS COLLECTION OF WELL-KNOWN NE'ER-DO-WELLS","RussianSource":"разная коллекция известных бездельников","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE MOAN OF THE WIND IN THE CHIMNEYS","RussianSource":"стон ветра в трубах","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE GAVE A LOW MOAN OF DESPAIR","RussianSource":"она издала низкий стон отчаяния","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LOVABLE MONGREL PUPPY","RussianSource":"милый щенок дворняги","Score":0.0,"Active":false
+},
+{"EnglishSource":"GRAINY FILM THAT GIVES A SOFT MOODY EFFECT","RussianSource":"зернистая пленка, дающая мягкий, капризный эффект","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE MET HIS MOODY ADOLESCENT BROTHER","RussianSource":"она встретила его капризного брата-подростка","Score":0.0,"Active":false
+},
+{"EnglishSource":"ANDY HAD A SWEET NAIVE LOOK WHEN HE SMILED","RussianSource":"У Энди был милый, наивный вид, когда он улыбался","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE RATHER NAIVE YOUNG MAN HAD BEEN TOTALLY MISLED","RussianSource":"довольно наивный молодой человек был полностью введен в заблуждение","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WAS POLITICALLY NAIVE","RussianSource":"я был политически наивен","Score":0.0,"Active":false
+},
+{"EnglishSource":"INSULIN CAN BLOCK THE RELEASE OF THE HORMONE AND THEREBY NULLIFY THE EFFECTS OF TRAINING","RussianSource":"инсулин может блокировать высвобождение гормона и тем самым сводить на нет эффекты тренировок","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT IS AT THE DISCRETION OF THE COURT TO NULLIFY THE DECISION","RussianSource":"решение суда может быть признано недействительным","Score":0.0,"Active":false
+},
+{"EnglishSource":"WHEN THE ORDER WAS REPEATED HE REFUSED TO OBEY","RussianSource":"когда приказ был повторен, он отказался подчиниться","Score":0.0,"Active":false
+},
+{"EnglishSource":"I ALWAYS OBEY MY FATHER","RussianSource":"Я всегда слушаюсь отца","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE OFFICER WAS CONVICTED FOR REFUSING TO OBEY ORDERS","RussianSource":"офицер был осужден за отказ подчиняться приказам","Score":0.0,"Active":false
+},
+{"EnglishSource":"TO A CASUAL OBSERVER HE WAS AT PEACE","RussianSource":"для случайного наблюдателя он был спокоен","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD BEEN INVITED TO ATTEND THE MEETING AS AN OBSERVER","RussianSource":"он был приглашен на собрание в качестве наблюдателя","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN OPPORTUNITY TO OBTAIN ADVANCED DEGREES","RussianSource":"возможность получить ученую степень","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN OPPONENT OF THE ECONOMIC REFORMS","RussianSource":"противник экономических реформ","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE BEAT HIS OPPONENT BY A LANDSLIDE MARGIN","RussianSource":"он обыграл соперника с большим отрывом","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE OVERALL EFFECT IS IMPRESSIVE","RussianSource":"общий эффект впечатляет","Score":0.0,"Active":false
+},
+{"EnglishSource":"OVERALL 10000 JOBS WILL GO","RussianSource":"всего 10 000 рабочих мест уйдет","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT MAY BE THAT PARENTS ARE JUST BEING OVERPROTECTIVE","RussianSource":"возможно, родители просто чрезмерно опекают","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR SUBVERSIVE ACTIVITIES ARE CALCULATED TO OVERTHROW PARLIAMENTARY DEMOCRACY","RussianSource":"их подрывная деятельность рассчитана на свержение парламентской демократии","Score":0.0,"Active":false
+},
+{"EnglishSource":"MILITARY COUPS WHICH HAD ATTEMPTED TO OVERTHROW THE KING","RussianSource":"военные перевороты, предпринятые с целью свержения короля","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PENALTY CORNER","RussianSource":"угловой штрафной","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CHARGE CARRIES A MAXIMUM PENALTY OF TEN YEARS' IMPRISONMENT","RussianSource":"обвинение влечет за собой максимальное наказание в виде десяти лет лишения свободы","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PLANT GROWS IN CLEAR STILL WATERS WHERE THERE IS STRONG SUNLIGHT PENETRATION","RussianSource":"растение растет в чистых, стоячих водах, где есть сильное проникновение солнечного света","Score":0.0,"Active":false
+},
+{"EnglishSource":"JAPANESE IMPORT PENETRATION","RussianSource":"Проникновение японского импорта","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SURVEY SHOWS SUBTLETY AND PENETRATION","RussianSource":"опрос показывает тонкость и проникновение","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SOFTWARE HAS ATTAINED A HIGH DEGREE OF MARKET PENETRATION","RussianSource":"программное обеспечение достигло высокой степени проникновения на рынок","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY HAD ENTERED THE COUNTRY WITHOUT PERMISSION","RussianSource":"они въехали в страну без разрешения","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD RECEIVED PERMISSION TO GO TO BRUSSELS","RussianSource":"он получил разрешение поехать в Брюссель","Score":0.0,"Active":false
+},
+{"EnglishSource":"TELL ME WHAT WILL PLEASURE YOU","RussianSource":"скажи мне, что тебя порадует","Score":0.0,"Active":false
+},
+{"EnglishSource":"RISKY VERBAL EXCHANGES THAT THE PAIR MIGHT PLEASURE IN","RussianSource":"рискованные словесные перепалки, от которых пара могла бы получить удовольствие","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE SMILED WITH PLEASURE AT BEING PRAISED","RussianSource":"она улыбнулась от удовольствия, когда ее похвалили","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE HAD NOT TRAVELED FOR PLEASURE FOR A LONG TIME","RussianSource":"она давно не путешествовала ради удовольствия","Score":0.0,"Active":false
+},
+{"EnglishSource":"PLEASURE BOATS","RussianSource":"прогулочные катера","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CAR MAKES DRIVING IN THE CITY A PLEASURE","RussianSource":"машина превращает езду в городе в удовольствие","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TOUCH OF HIS FINGERS GAVE HER SUCH PLEASURE","RussianSource":"прикосновение его пальцев доставляло ей такое удовольствие","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE WINE IS GOOD CHEAP AND PLENTIFUL","RussianSource":"вино хорошее, дешевое и в изобилии","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY THOUGHT SHE WAS WRONG BUT WERE TOO POLITE TO SAY SO","RussianSource":"они думали, что она была неправа, но были слишком вежливы, чтобы сказать об этом","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PICTURE OUTRAGED POLITE SOCIETY","RussianSource":"картина возмутила приличное общество","Score":0.0,"Active":false
+},
+{"EnglishSource":"THAT PHOTOGRAPH WAS BERT'S MOST PRECIOUS POSSESSION","RussianSource":"эта фотография была самым ценным имуществом Берта","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BOOK CAME INTO MY POSSESSION","RussianSource":"книга попала ко мне","Score":0.0,"Active":false
+},
+{"EnglishSource":"BOTH TEAMS ATTEMPTING TO GAIN POSSESSION OF THE BALL","RussianSource":"обе команды пытаются завладеть мячом","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY PRAYED FOR PROTECTION AGAINST DEMONIC POSSESSION","RussianSource":"они молились о защите от бесовской одержимости","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY'RE CHARGED WITH POSSESSION","RussianSource":"они обвиняются в хранении","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD TAKEN POSSESSION OF ONE OF THE SOFAS","RussianSource":"он завладел одним из диванов","Score":0.0,"Active":false
+},
+{"EnglishSource":"ARE YOU IN POSSESSION OF ANY ITEMS OVER $500 IN VALUE","RussianSource":"Есть ли у вас какие-либо предметы стоимостью более 500 долларов?","Score":0.0,"Active":false
+},
+{"EnglishSource":"FEAR TOOK POSSESSION OF MY SOUL","RussianSource":"страх овладел моей душой","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WERE IMPRISONED FOR POSSESSION OF EXPLOSIVES","RussianSource":"их посадили за хранение взрывчатки","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BALL HIT A DEFENDER AND BROWN'S QUICK REACTION PUT HIM IN POSSESSION","RussianSource":"мяч попал в защитника, и благодаря быстрой реакции Брауна он завладел мячом.","Score":0.0,"Active":false
+},
+{"EnglishSource":"PRAY GOD THIS IS TRUE","RussianSource":"моли бога это правда","Score":0.0,"Active":false
+},
+{"EnglishSource":"PRAY CONTINUE","RussianSource":"молитесь, продолжайте","Score":0.0,"Active":false
+},
+{"EnglishSource":"AND WHAT PRAY WAS THE PURPOSE OF THAT","RussianSource":"и что, скажите на милость, было целью этого?","Score":0.0,"Active":false
+},
+{"EnglishSource":"WINDOW LOCKS WON'T PREVENT A DETERMINED BURGLAR FROM GETTING IN ","RussianSource":"оконные замки не помешают решительному взломщику проникнуть внутрь","Score":0.0,"Active":false
+},
+{"EnglishSource":"ACTION MUST BE TAKEN TO PREVENT FURTHER ACCIDENTS","RussianSource":"необходимо принять меры для предотвращения дальнейших несчастных случаев","Score":0.0,"Active":false
+},
+{"EnglishSource":"CRIME PREVENTION","RussianSource":"предотвращение преступления","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TREATMENT AND PREVENTION OF MALARIA","RussianSource":"лечение и профилактика малярии","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PLAYS WERE PERFORMED WITHIN THE SACRED AREA OF DIONYSUS IN THE PRESENCE OF HIS PRIEST","RussianSource":"пьесы разыгрывались в священной области Диониса в присутствии его жреца.","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PRIEST CELEBRATED MASS AT A SMALL ALTAR OFF THE NORTH TRANSEPT","RussianSource":"священник отслужил мессу у небольшого алтаря у северного трансепта","Score":0.0,"Active":false
+},
+{"EnglishSource":"THIS IS NOT A PROOF FOR THE EXISTENCE OF GOD","RussianSource":"это не доказательство существования бога","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PROOF COPY IS SENT UP FOR CHECKING","RussianSource":"контрольный экземпляр отправляется на проверку","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU WILL BE ASKED TO GIVE PROOF OF YOUR IDENTITY","RussianSource":"вас попросят подтвердить вашу личность","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE MARINE BATTLE ARMOR WAS PROOF AGAINST MOST WEAPONS","RussianSource":"боевая броня морской пехоты была устойчива к большинству видов оружия","Score":0.0,"Active":false
+},
+{"EnglishSource":"IF YOU ARE USING A PIECE OF LIGHTWEIGHT CANVAS IT WILL BE NECESSARY TO PROOF THE FABRIC WHEN COMPLETE","RussianSource":"если вы используете кусок легкого холста, необходимо будет проверить ткань после завершения","Score":0.0,"Active":false
+},
+{"EnglishSource":"PROOF EACH PLATE AND PRINT IT ON ACETATE FIRST","RussianSource":"проверьте каждую пластину и сначала распечатайте ее на ацетате","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT SHIFTS THE ONUS OF PROOF IN CONVICTIONS FROM THE POLICE TO THE PUBLIC","RussianSource":"он перекладывает бремя доказывания в обвинительных приговорах с полиции на общественность","Score":0.0,"Active":false
+},
+{"EnglishSource":"TO JUDGE WITH MY PROPER EYES","RussianSource":"судить своими глазами","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY HAD NOT FOLLOWED THE PROPER PROCEDURES","RussianSource":"они не следовали надлежащим процедурам","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE IS A PROPER YOUTH","RussianSource":"он настоящий юноша!","Score":0.0,"Active":false
+},
+{"EnglishSource":"HER PARENTS' VIEW OF WHAT WAS PROPER FOR A WELL-BRED GIRL","RussianSource":"взгляд ее родителей на то, что прилично воспитанной девушке","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN ARTIST NEEDS THE PROPER TOOLS","RussianSource":"художнику нужны правильные инструменты","Score":0.0,"Active":false
+},
+{"EnglishSource":"A VERY PRIM AND PROPER SWISS LADY","RussianSource":"очень чопорная и правильная швейцарская дама","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TWO ELEPHANT TYPES PROPER TO AFRICA AND TO SOUTHERN ASIA","RussianSource":"два типа слонов, характерных для Африки и Южной Азии","Score":0.0,"Active":false
+},
+{"EnglishSource":"A STRENUOUS PROTAGONIST OF THE NEW AGRICULTURAL POLICY","RussianSource":"активный сторонник новой аграрной политики","Score":0.0,"Active":false
+},
+{"EnglishSource":"CRIME DEMANDS JUST PUNISHMENT","RussianSource":"преступление требует справедливого наказания","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOUR MACHINE CAN TAKE A FAIR AMOUNT OF PUNISHMENT BEFORE FALLING TO PIECES","RussianSource":"ваша машина может выдержать изрядное количество наказаний, прежде чем развалится на куски","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE ASSISTED HER HUSBAND TO ESCAPE PUNISHMENT FOR THE CRIME","RussianSource":"она помогла своему мужу избежать наказания за преступление","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE WAS A NEW SENSE OF PURPOSE IN HER STEP AS SHE SET OFF","RussianSource":"в ее шагах появилось новое чувство цели, когда она отправилась","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PURPOSE OF THE MEETING IS TO APPOINT A TRUSTEE","RussianSource":"целью собрания является назначение доверенного лица","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BUILDING IS NO LONGER NEEDED FOR ITS ORIGINAL PURPOSE","RussianSource":"здание больше не нужно по своему первоначальному назначению","Score":0.0,"Active":false
+},
+{"EnglishSource":"COMMANDING THE ADMIRATION OF PEOPLE OF QUALITY","RussianSource":"вызывает восхищение людей высокого качества","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN IMPROVEMENT IN PRODUCT QUALITY","RussianSource":"улучшение качества продукции","Score":0.0,"Active":false
+},
+{"EnglishSource":"A MASTERPIECE FOR CONNOISSEURS OF QUALITY","RussianSource":"шедевр для ценителей качества","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE HOSPITAL RANKS IN THE TOP TIER IN QUALITY OF CARE","RussianSource":"больница занимает первое место по качеству обслуживания","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WIDE CHOICE OF QUALITY BEERS","RussianSource":"широкий выбор качественного пива","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE'S DAZED AT BEING CALLED ON TO SPEAK BEFORE QUALITY","RussianSource":"он ошеломлен тем, что его призвали говорить перед качеством","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOUR HEART RATE","RussianSource":"твой сердечный ритм","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WERE ASKED TO RATE THEIR ABILITY AT DIFFERENT DRIVING MANEUVERS","RussianSource":"их попросили оценить свои способности при выполнении различных маневров вождения.","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BASIC RATE OF PAY","RussianSource":"базовая ставка заработной платы","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU'LL FIND OUR CURRENT INTEREST RATE VERY COMPETITIVE","RussianSource":"вы найдете нашу текущую процентную ставку очень конкурентоспособной","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ECONOMY HAS BEGUN TO RECOVER","RussianSource":"экономика начала восстанавливаться","Score":0.0,"Active":false
+},
+{"EnglishSource":"BRING THE FIRELOCK TO THE RECOVER","RussianSource":"принести firelock для восстановления","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE ARE WORKING TO RECTIFY THE SITUATION","RussianSource":"мы работаем над исправлением ситуации","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EMPTY POOL WILL RAPIDLY REFILL FROM RAIN AND SNOW","RussianSource":"пустой бассейн будет быстро пополняться от дождя и снега","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE PROFFERED HIS GLASS FOR A REFILL","RussianSource":"он предложил свой стакан для пополнения","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE BECAME TIRED OF HIS FRIEND'S REFUSAL TO SEE HIM","RussianSource":"он устал от отказа своего друга видеть его","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD TO DECLINE TO HIS REGRET","RussianSource":"ему пришлось отказаться, к его сожалению","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE EXPRESSED HER REGRET AT VIRGINIA'S DEATH","RussianSource":"она выразила сожаление по поводу смерти Вирджинии","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE REGRET THAT NO TICKETS MAY BE EXCHANGED","RussianSource":"мы сожалеем, что билеты не подлежат обмену","Score":0.0,"Active":false
+},
+{"EnglishSource":"MY HOME WHEN SHALL I CEASE TO REGRET YOU","RussianSource":"мой дом, когда я перестану сожалеть о тебе!","Score":0.0,"Active":false
+},
+{"EnglishSource":"A RIGOROUS TEETOTALER","RussianSource":"строгий трезвенник","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE RIGOROUS TESTING OF CONSUMER PRODUCTS","RussianSource":"тщательное тестирование потребительских товаров","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE RIGOROUS CLIMATE IN THE REGIONS OF PERPETUAL SNOW HIGH IN THE HIMALAYAS","RussianSource":"суровый климат в районах вечных снегов высоко в Гималаях","Score":0.0,"Active":false
+},
+{"EnglishSource":"RIGOROUS CONTROLS ON MERGERS","RussianSource":"строгий контроль за слияниями","Score":0.0,"Active":false
+},
+{"EnglishSource":"MY EXERCISE REGIME IS A LITTLE MORE RIGOROUS THAN MOST","RussianSource":"мой режим упражнений немного более строгий, чем у большинства","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ROOT FORM OF THE WORD","RussianSource":"корневая форма слова","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE EXPLAINED HOW TO MANUALLY ROOT ALMOST ANY ANDROID DEVICE","RussianSource":"мы объяснили, как вручную получить root права практически на любом устройстве Android","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANY EUROPEAN WORDS STEM FROM THIS LINGUISTIC ROOT","RussianSource":"многие европейские слова происходят от этого лингвистического корня","Score":0.0,"Active":false
+},
+{"EnglishSource":"MAKE SURE THAT THESE FILES CAN ONLY BE ACCESSED BY THE ROOT USER","RussianSource":"убедитесь, что доступ к этим файлам может получить только пользователь root","Score":0.0,"Active":false
+},
+{"EnglishSource":"ROOT YOUR OWN CUTTINGS FROM STOCK PLANTS","RussianSource":"укореняйте собственные черенки от подвоя","Score":0.0,"Active":false
+},
+{"EnglishSource":"JEALOUSY WAS AT THE ROOT OF IT","RussianSource":"зависть была в корне","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TREE ROOT","RussianSource":"корень дерева","Score":0.0,"Active":false
+},
+{"EnglishSource":"LOVE OF MONEY IS THE ROOT OF ALL EVIL","RussianSource":"любовь к деньгам - корень всех зол","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LITTLE LEVER NEAR THE ROOT OF THE BARREL","RussianSource":"маленький рычаг возле корня ствола","Score":0.0,"Active":false
+},
+{"EnglishSource":"FIND THE CUBE ROOT OF THE RESULT","RussianSource":"найти кубический корень результата","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ROOT OF DAVID","RussianSource":"корень Давида","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ROOT CAUSE OF THE PROBLEM","RussianSource":"первопричина проблемы","Score":0.0,"Active":false
+},
+{"EnglishSource":"I NEED TO LOG IN AS ROOT ON MY SYSTEM TO RESOLVE AN ISSUE","RussianSource":"Мне нужно войти в систему как пользователь root, чтобы решить проблему","Score":0.0,"Active":false
+},
+{"EnglishSource":"I HAVE A ROOT THROUGH THE OPEN DRAWERS","RussianSource":"у меня рут через открытые ящики","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN INSURANCE SALESMAN","RussianSource":"страховой агент","Score":0.0,"Active":false
+},
+{"EnglishSource":"SCREW THE HINGE TO YOUR NEW DOOR","RussianSource":"прикрутите петлю к вашей новой двери","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE ENDED UP GETTING MORE MONEY THAN WHAT THEY WERE TRYING TO SCREW US FOR","RussianSource":"в итоге мы получили больше денег, чем они пытались нас обмануть","Score":0.0,"Active":false
+},
+{"EnglishSource":"ANY TAPPINGS THAT AREN'T BEING USED ON THE CYLINDER CAN BE FITTED WITH SCREWED BLANKS","RussianSource":"любые отводы, которые не используются на цилиндре, могут быть снабжены резьбовыми заглушками","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE COULD SENSE THAT HE WASN'T LIKED","RussianSource":"он чувствовал, что его не любят","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE COULD SENSE HER FATHER'S ANGER RISING","RussianSource":"она чувствовала, как гнев ее отца растет","Score":0.0,"Active":false
+},
+{"EnglishSource":"I CAN'T SEE THE SENSE IN LEAVING ALL THE WORK TO YOU","RussianSource":"Я не вижу смысла оставлять всю работу тебе","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BEAR HAS A KEEN SENSE OF SMELL THAT ENABLES IT TO HUNT AT DUSK","RussianSource":"у медведя острое обоняние, что позволяет ему охотиться в сумерках","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU CAN IMPROVE YOUR GENERAL HEALTH AND SENSE OF WELL-BEING","RussianSource":"вы можете улучшить общее самочувствие и самочувствие","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE HAD THE SENSE OF BEING A POLITICAL OUTSIDER","RussianSource":"она чувствовала себя политическим аутсайдером","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE HAD A FINE SENSE OF COMIC TIMING","RussianSource":"у нее было прекрасное чувство юмора","Score":0.0,"Active":false
+},
+{"EnglishSource":"WITH THE FIRST FROST THEY COULD SENSE A CHANGE IN THE DAYS","RussianSource":"с первым морозом они почувствовали смену дней","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT IS NOT CLEAR WHICH SENSE OF THE WORD “CHARACTERS” IS INTENDED IN THIS PASSAGE","RussianSource":"неясно, какое значение слова «персонажи» имеется в виду в этом отрывке.","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE EARNED RESPECT BY THE GOOD SENSE HE SHOWED AT MEETINGS","RussianSource":"он заслужил уважение своим здравым смыслом, который проявлял на собраниях","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CORD DOES NOT BECOME STRAIGHT BUT FORMS A LENGTH OF HELIX IN THE OPPOSITE SENSE","RussianSource":"шнур не становится прямым, а образует длину спирали в обратном направлении","Score":0.0,"Active":false
+},
+{"EnglishSource":"A LACK OF COMMON DECENCY AND SENSITIVITY","RussianSource":"отсутствие общей порядочности и чувствительности","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAS A SENSITIVITY TO COW'S MILK","RussianSource":"у него чувствительность к коровьему молоку","Score":0.0,"Active":false
+},
+{"EnglishSource":"HOSTELS WITH SEPARATE QUARTERS FOR MEN AND WOMEN","RussianSource":"общежития с отдельными помещениями для мужчин и женщин","Score":0.0,"Active":false
+},
+{"EnglishSource":"MELT THE WHITE AND DARK CHOCOLATE IN SEPARATE BOWLS","RussianSource":"растопить белый и темный шоколад в отдельных мисках","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE REGARDS THE STUDY OF LITERATURE AS QUITE SEPARATE FROM LIFE","RussianSource":"он считает изучение литературы совершенно отдельным от жизни","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE NEED TO SEPARATE FACT FROM SPECULATION","RussianSource":"нам нужно отделить факты от предположений","Score":0.0,"Active":false
+},
+{"EnglishSource":"THIS RAISES TWO SEPARATE ISSUES","RussianSource":"это поднимает два отдельных вопроса","Score":0.0,"Active":false
+},
+{"EnglishSource":"BOTH OWNERS WERE TRYING TO SEPARATE THE DOGS","RussianSource":"оба владельца пытались разлучить собак","Score":0.0,"Active":false
+},
+{"EnglishSource":"SEPARATE THE EGGS AND BEAT THE YOLKS","RussianSource":"отделить яйца и взбить желтки","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE CANNOT SEPARATE HIS THINKING FROM HIS ACTIVITY","RussianSource":"мы не можем отделить его мышление от его деятельности","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SECOND STAGE OF THE ROCKET FAILED TO SEPARATE","RussianSource":"вторая ступень ракеты не отделилась","Score":0.0,"Active":false
+},
+{"EnglishSource":"EVERY EFFORT WAS MADE TO SETTLE THE DISPUTE","RussianSource":"были предприняты все усилия для урегулирования спора","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE OFFERED TO SETTLE $150 A YEAR ON HER","RussianSource":"он предложил выплачивать ей 150 долларов в год","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE ALLOWED HIM TO SETTLE HER IN THE TAXI","RussianSource":"она позволила ему поселить ее в такси","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE TOLD ME TO HOLD MY TONGUE OR HE WOULD FIND A WAY TO SETTLE ME","RussianSource":"он сказал мне держать язык за зубами или он найдет способ уладить меня","Score":0.0,"Active":false
+},
+{"EnglishSource":"TRY TO SETTLE YOUR PUPPY DOWN BEFORE GOING TO BED","RussianSource":"постарайтесь уложить щенка перед сном","Score":0.0,"Active":false
+},
+{"EnglishSource":"ONE DAY I WILL SETTLE DOWN AND RAISE A FAMILY","RussianSource":"однажды я остепенюсь и создам семью","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE POURS A GLASS AND LEAVES IT ON THE BAR TO SETTLE","RussianSource":"он наливает стакан и оставляет его на барной стойке, чтобы он отстоялся","Score":0.0,"Active":false
+},
+{"EnglishSource":"FOR SHAME BROTHER","RussianSource":"стыдно, брат!","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE FELT A PANG OF SHAME AT TELLING ALICE A LIE","RussianSource":"ему стало стыдно за то, что он солгал Алисе","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE INCIDENT HAD BROUGHT SHAME ON HIS FAMILY","RussianSource":"инцидент опозорил его семью","Score":0.0,"Active":false
+},
+{"EnglishSource":"IGNORANCE OF LATIN WOULD BE A DISGRACE AND A SHAME TO ANY PUBLIC MAN","RussianSource":"незнание латыни было бы позором и позором для любого публичного человека","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS HOT WITH SHAME","RussianSource":"она была горяча от стыда","Score":0.0,"Active":false
+},
+{"EnglishSource":"I TRIED TO SHAME HIM INTO GIVING SOME AWAY","RussianSource":"Я пытался пристыдить его, чтобы он отдал немного","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT IS A SHAME THAT THEY ARE NOT BETTER KNOWN","RussianSource":"жаль, что они малоизвестны","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHAME ON YOU FOR DREDGING UP SUCH TERRIBLE MEMORIES","RussianSource":"позор вам за то, что выкапываете такие ужасные воспоминания","Score":0.0,"Active":false
+},
+{"EnglishSource":"I DIDN'T SEE THE STOP SIGN","RussianSource":"Я не видел знак остановки","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE LAST FOUR BITS HOLD A PATTERN TO REPRESENT THE SIGN OF THE NUMBER","RussianSource":"последние четыре бита содержат шаблон для представления знака числа","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE GAVE NO SIGN OF HAVING SEEN HIM","RussianSource":"она не подала виду, что видела его","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE STORES ARE FULL WHICH IS A SIGN THAT THE RECESSION IS PAST ITS WORST","RussianSource":"магазины переполнены, что является признаком того, что кризис уже позади","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE INTEGRAL SIGN ∫","RussianSource":"знак интеграла ∫","Score":0.0,"Active":false
+},
+{"EnglishSource":"FLOWERS ARE OFTEN GIVEN AS A SIGN OF AFFECTION","RussianSource":"цветы часто дарят в знак любви","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PERSON BORN UNDER THE SIGN OF VIRGO","RussianSource":"человек, рожденный под знаком Девы","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS LEARNING TO SIGN","RussianSource":"она училась подписывать","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE WAS STILL NO SIGN OF HER","RussianSource":"от нее еще не было никаких признаков","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE GAVE HIM THE THUMBS-UP SIGN","RussianSource":"она показала ему большой палец вверх","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SINCERITY OF HIS BELIEFS IS UNQUESTIONABLE","RussianSource":"искренность его убеждений не вызывает сомнений","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SLAVE CASSETTE DECK","RussianSource":"ведомая кассетная дека","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS NO SLAVE TO FASHION","RussianSource":"она не была рабыней моды","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WAS WORKING AT A CLOTHING COMPANY AT THE TIME AND I WAS A SLAVE TO MY BOSS","RussianSource":"В то время я работал в швейной компании и был рабом своего босса.","Score":0.0,"Active":false
+},
+{"EnglishSource":"FEMALE DOMESTIC SLAVERY","RussianSource":"женское домашнее рабство","Score":0.0,"Active":false
+},
+{"EnglishSource":"SLAVERY TO TRADITION","RussianSource":"рабство традиции","Score":0.0,"Active":false
+},
+{"EnglishSource":"THOUSANDS HAD BEEN SOLD INTO SLAVERY","RussianSource":"тысячи были проданы в рабство","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS RESOLVED TO IMPOSE A NUMBER OF REFORMS INCLUDING THE ABOLITION OF SLAVERY","RussianSource":"он был полон решимости провести ряд реформ, включая отмену рабства","Score":0.0,"Active":false
+},
+{"EnglishSource":"A BEAUTIFUL WOMAN'S ADDRESS WAS NEVER LIKELY TO SLIP HIS MIND","RussianSource":"адрес красивой женщины никогда бы не ускользнул из его памяти","Score":0.0,"Active":false
+},
+{"EnglishSource":"SLIP THE NEXT TWELVE STITCHES ONTO A STITCH HOLDER","RussianSource":"наденьте следующие двенадцать петель на петледержатель","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SLIP IS USED TO GET RID OF EXCESS HEIGHT","RussianSource":"слип используется для избавления от лишней высоты","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE BROUGHT HIS STEAMER TO THE YARD FOR OVERHAUL AT HIS OLD EMPLOYER'S SLIP","RussianSource":"он принес свой пароход на верфь для капитального ремонта по слипу своего старого работодателя","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE JUDGE MADE A SLIP IN HIS SUMMING UP","RussianSource":"судья сделал оговорку в своем подведении итогов","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SINGLE SLIP COULD SEND THEM PLUMMETING DOWN THE MOUNTAINSIDE","RussianSource":"один промах может отправить их вниз по склону горы","Score":0.0,"Active":false
+},
+{"EnglishSource":"ONE COLOR AT A TIME SHOULD BE KNITTED IN STRIPED SLIP","RussianSource":"один цвет за раз следует вязать полосатым комбинезоном","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CONTINUED SLIP IN HOUSE PRICES","RussianSource":"продолжающееся падение цен на жилье","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SLIP PLANE","RussianSource":"самолет скольжения","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS MONTHLY SALARY SLIP","RussianSource":"квитанция о его ежемесячной зарплате","Score":0.0,"Active":false
+},
+{"EnglishSource":"COMPLETE THE TEAR-OFF SLIP BELOW","RussianSource":"заполните отрывной бланк ниже","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FRONT WHEELS BEGAN TO SLIP","RussianSource":"передние колеса начали буксовать","Score":0.0,"Active":false
+},
+{"EnglishSource":"IF YOU TWIST A MARE'S BACK TOO SHARPLY IT CAN SLIP FOAL","RussianSource":"если слишком резко повернуть спину кобылы, она может соскользнуть с жеребенка","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SILK SLIP","RussianSource":"шелковая накладка","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EFFECTS OF SLIGHT SLIP ON TURNS","RussianSource":"эффекты легкого скольжения на поворотах","Score":0.0,"Active":false
+},
+{"EnglishSource":"I'LL NEVER TELL A SOUL","RussianSource":"Я никогда не скажу душе","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS THE SOUL OF DISCRETION","RussianSource":"он был душой осмотрительности","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'S A NICE OLD SOUL","RussianSource":"она хорошая старая душа","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR INTERPRETATION LACKED SOUL","RussianSource":"их интерпретации не хватало души","Score":0.0,"Active":false
+},
+{"EnglishSource":"BREVITY IS THE SOUL OF WIT","RussianSource":"краткость - душа остроумия","Score":0.0,"Active":false
+},
+{"EnglishSource":"IN THE DEPTHS OF HER SOUL SHE KNEW HE WOULD BETRAY HER","RussianSource":"в глубине души она знала, что он предаст ее","Score":0.0,"Active":false
+},
+{"EnglishSource":"SOW A THIN LAYER OF SEEDS ON TOP","RussianSource":"посыпать сверху тонким слоем семян","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE WAS A SPARK BETWEEN THEM AT THEIR FIRST MEETING","RussianSource":"между ними промелькнула искра при первой встрече","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TINY SPARK OF ANGER FLARED WITHIN HER","RussianSource":"крошечная искра гнева вспыхнула в ней","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE WAS A SPARK OF LIGHT","RussianSource":"была искра света","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS ABSOLVED FROM ANY BLAME FOR THE OIL SPILL","RussianSource":"он был освобожден от любой вины за разлив нефти","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR SHIFTING SPILL OF LANTERN-LIGHT","RussianSource":"их движущийся поток света фонаря","Score":0.0,"Active":false
+},
+{"EnglishSource":"GRANDDAD TOOK A SPILL WHILE RIDING THE BAY MARE","RussianSource":"Дедушка облился, катаясь на гнедой кобыле","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE'S NOTHING WORSE THAN FRIENDS WHO SPILL SECRETS","RussianSource":"нет ничего хуже друзей, которые раскрывают секреты","Score":0.0,"Active":false
+},
+{"EnglishSource":"A 25-TON OIL SPILL","RussianSource":"25-тонный разлив нефти","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU'LL SPILL THAT TEA IF YOU'RE NOT CAREFUL","RussianSource":"ты прольешь этот чай, если не будешь осторожен","Score":0.0,"Active":false
+},
+{"EnglishSource":"DINERS CAN SPILL OUT INTO THE COURTYARD","RussianSource":"обедающие могут высыпаться во двор","Score":0.0,"Active":false
+},
+{"EnglishSource":"STUDENTS BEGAN TO SPILL OUT OF THE BUILDING","RussianSource":"студенты начали высыпать из здания","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE SEEK A HARMONY BETWEEN BODY AND SPIRIT","RussianSource":"мы ищем гармонию между телом и духом","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE CONFESSED IN A SPIRIT OF SELF-RESPECT NOT DEFIANCE","RussianSource":"он признался в духе самоуважения, а не неповиновения","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE RULE HAD BEEN BROKEN IN SPIRIT IF NOT IN LETTER","RussianSource":"правило было нарушено если не по букве, то по духу","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE UNIVERSITY IS A SYMBOL OF THE NATION'S EGALITARIAN SPIRIT","RussianSource":"университет является символом эгалитарного духа нации","Score":0.0,"Active":false
+},
+{"EnglishSource":"A PRIEST PERFORMED A RITE OF EXORCISM AND THE WANDERING SPIRIT WAS OUSTED","RussianSource":"священник совершил обряд изгнания нечистой силы, и блуждающий дух был изгнан","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS A LEADING SPIRIT IN THE CONFERENCE","RussianSource":"он был ведущим духом на конференции","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS VISITORS ADMIRED HIS SPIRIT AND GOOD TEMPER","RussianSource":"его посетители восхищались его духом и добрым нравом","Score":0.0,"Active":false
+},
+{"EnglishSource":"I HOPE THE TEAM WILL BUILD ON THIS SPIRIT OF CONFIDENCE","RussianSource":"Я надеюсь, что команда будет опираться на этот дух уверенности.","Score":0.0,"Active":false
+},
+{"EnglishSource":"A YEAR AFTER HE LEFT HIS SPIRIT IS STILL PRESENT","RussianSource":"спустя год после того, как он ушел, его дух все еще присутствует","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE HEARD A SPLASH AND A SQUEAL","RussianSource":"мы услышали всплеск и визг","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS OUT TO EXTRACT SOME SQUEEZE FROM HER","RussianSource":"он хотел выжать из нее немного","Score":0.0,"Active":false
+},
+{"EnglishSource":"INDUSTRY FACED HIGHER COSTS AND A SQUEEZE ON PROFITS","RussianSource":"отрасль столкнулась с более высокими издержками и сокращением прибыли","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SQUEEZE OF LEMON JUICE","RussianSource":"щепотка лимонного сока","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT WAS A TIGHT SQUEEZE IN THE TINY HALL","RussianSource":"было тесно в маленьком зале","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE USED THE OPPORTUNITY TO SQUEEZE HIM FOR INFORMATION","RussianSource":"она использовала возможность выжать из него информацию","Score":0.0,"Active":false
+},
+{"EnglishSource":"A GENTLE SQUEEZE OF THE TRIGGER","RussianSource":"мягкое нажатие на спусковой крючок","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PEACETIME STRENGTH OF THE ARMY WAS 415000","RussianSource":"численность армии мирного времени составляла 415 000 человек.","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT'S DOUBLE THE STRENGTH OF YOUR AVERAGE BEER","RussianSource":"это вдвое крепче обычного пива","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE ARE NOW MORE THAN 100 OFFICERS BELOW STRENGTH","RussianSource":"у нас сейчас больше чем на 100 офицеров не хватает сил","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE POLITICAL AND MILITARY STRENGTH OF EUROPEAN GOVERNMENTS","RussianSource":"политическая и военная мощь европейских правительств","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANY PEOPLE FIND STRENGTH IN RELIGION","RussianSource":"многие люди находят силу в религии","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE STRENGTH OF THE ARGUMENT FOR PROPERTY TAXATION","RussianSource":"сила аргумента в пользу налога на имущество","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT TAKES STRENGTH OF CHARACTER TO ADMIT ONE NEEDS HELP","RussianSource":"нужна сила характера, чтобы признать, что тебе нужна помощь","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE WIND HAD MARKEDLY INCREASED IN STRENGTH","RussianSource":"ветер заметно усилился","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS STRENGTH WAS HIS OBSESSIVE SINGLE-MINDEDNESS","RussianSource":"его сила была в его навязчивой целеустремленности","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEY WERE TAKING NO CHANCES WITH THE STRENGTH OF THE RETAINING WALL","RussianSource":"они не рисковали с прочностью подпорной стены","Score":0.0,"Active":false
+},
+{"EnglishSource":"SOME UNITS WILL BE MAINTAINED AT FULL STRENGTH WHILE OTHERS WILL RELY ON RESERVES","RussianSource":"некоторые подразделения будут поддерживаться в полном составе, в то время как другие будут полагаться на резервы","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE PETITION DEMONSTRATES THE STRENGTH OF FEELING AGAINST THE PROPOSALS","RussianSource":"петиция демонстрирует силу чувства против предложений","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS MY CLOSEST FRIEND MY STRENGTH AND SHIELD","RussianSource":"он был моим самым близким другом, моей силой и щитом","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE WIND WON'T STRENGTHEN UNTIL AFTER DARK","RussianSource":"ветер не усилится до наступления темноты","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE ADVISES AN APPLICATION OF FLUORIDE TO STRENGTHEN THE TEETH","RussianSource":"он советует применять фтор для укрепления зубов","Score":0.0,"Active":false
+},
+{"EnglishSource":"CHARLES WENT ON A CAMPAIGN TO SUBDUE THE SAXONS","RussianSource":"Карл отправился в поход на покорение саксов","Score":0.0,"Active":false
+},
+{"EnglishSource":"SUDDEN THERE SWOOPED AN EAGLE DOWNWARD","RussianSource":"вдруг орел спикировал вниз","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SUDDEN BRIGHT FLASH","RussianSource":"внезапная яркая вспышка","Score":0.0,"Active":false
+},
+{"EnglishSource":"MY CONSCIENCE WOULD NOT SUFFER ME TO ACCEPT ANY MORE","RussianSource":"моя совесть не позволила бы мне принять больше","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS RELATIONSHIP WITH ANNE DID SUFFER","RussianSource":"его отношения с Анной пострадали","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE MANAGED TO SUMMON UP A SMILE","RussianSource":"ей удалось вызвать улыбку","Score":0.0,"Active":false
+},
+{"EnglishSource":"NAMES THAT SUMMON UP IMAGES OF FAR-OFF PLACES","RussianSource":"имена, которые вызывают образы далеких мест","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SUSPECT PACKAGE WAS FOUND ON THE PLATFORM","RussianSource":"на платформе обнаружен подозрительный пакет","Score":0.0,"Active":false
+},
+{"EnglishSource":"IF YOU SUSPECT A GAS LEAK DO NOT TURN ON AN ELECTRIC LIGHT","RussianSource":"если вы подозреваете утечку газа, не включайте электрический свет","Score":0.0,"Active":false
+},
+{"EnglishSource":"A BROKER WHOSE HONESTY HE HAD NO REASON TO SUSPECT","RussianSource":"брокер, в честности которого у него не было причин подозревать","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE POLICE HAVE ARRESTED A SUSPECT","RussianSource":"полиция задержала подозреваемого","Score":0.0,"Active":false
+},
+{"EnglishSource":"PUPILS WILL PLAY TRUANT RATHER THAN FACE THE TAUNTS OF CLASSMATES ABOUT THEIR RAGGED CLOTHES","RussianSource":"ученики будут прогуливать занятия, а не сталкиваться с насмешками одноклассников по поводу их рваной одежды","Score":0.0,"Active":false
+},
+{"EnglishSource":"STUDENTS BEGAN TAUNTING HER ABOUT HER WEIGHT","RussianSource":"студенты начали насмехаться над ее весом","Score":0.0,"Active":false
+},
+{"EnglishSource":"CAUSE TO FEEL EXTREME FEAR","RussianSource":"вызвать крайний страх","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE SHOWED OFF HIS TIGHT ABS","RussianSource":"он показал свой подтянутый пресс","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TIGHT PARKING SPOT","RussianSource":"тесное место для парковки","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TIGHT ARGUMENT","RussianSource":"жесткий аргумент","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WON IN A TIGHT FINISH","RussianSource":"он выиграл в упор","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHT SKIN ON YOUR FACE MAY START TO SAG","RussianSource":"натянутая кожа на лице может начать провисать","Score":0.0,"Active":false
+},
+{"EnglishSource":"DAVID WAS OUT OF WORK AND MONEY WAS TIGHT","RussianSource":"Дэвид был без работы, а с деньгами было туго","Score":0.0,"Active":false
+},
+{"EnglishSource":"LATER AT THE CLUB HE GOT TIGHT ON BRANDY","RussianSource":"позже, в клубе, он подсел на коньяк","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DRESS WAS TOO TIGHT FOR HER","RussianSource":"платье было слишком тесным для нее","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE RELEASED HER TIGHT HOLD ON THE DOG","RussianSource":"она отпустила свою крепкую хватку на собаке","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE GAVE HIM A TIGHT SMILE","RussianSource":"она натянуто улыбнулась ему","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE COACH FAILED TO NEGOTIATE THE TIGHT BEND","RussianSource":"тренеру не удалось пройти крутой вираж","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE WAS A TIGHT FEELING IN HIS GUT","RussianSource":"в животе было стеснение","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT WAS A TIGHT SQUEEZE IN THE TINY VESTIBULE","RussianSource":"это было тесное сжатие в крошечном вестибюле","Score":0.0,"Active":false
+},
+{"EnglishSource":"AN ABILITY TO WORK TO TIGHT DEADLINES","RussianSource":"умение работать в сжатые сроки","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TENANTS WERE FAR TOO TIGHT TO LET ANYONE KNOW","RussianSource":"арендаторы были слишком напряжены, чтобы сообщить кому-либо","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE DRAWCORD PULLS TIGHT","RussianSource":"шнур туго натягивается","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE TWISTED HER HANDKERCHIEF INTO A TIGHT KNOT","RussianSource":"она завязала платок тугим узлом","Score":0.0,"Active":false
+},
+{"EnglishSource":"SECURITY WAS TIGHT AT YESTERDAY'S CEREMONY","RussianSource":"Безопасность на вчерашней церемонии была усилена","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WENT DOWNSTAIRS HOLDING TIGHT TO THE BANISTERS","RussianSource":"он спустился вниз, крепко держась за перила","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE LEVERED THE BISHOP OUT FROM A TIGHT KNOT OF CLERICAL WIVES","RussianSource":"он вырвал епископа из тесного круга клирикальных жен","Score":0.0,"Active":false
+},
+{"EnglishSource":"PRESIDENTIAL ADVISERS KEEP A TIGHT GRIP ON DOMESTIC POLICY","RussianSource":"советники президента жестко контролируют внутреннюю политику","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE VOCALISTS ARE STRONG AND THE BAND IS TIGHT","RussianSource":"вокалисты сильные и группа сплоченная","Score":0.0,"Active":false
+},
+{"EnglishSource":"TIGHTEN THE BOLTS","RussianSource":"затяните болты","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE INCREASED THE TIGHTNESS OF HIS HOLD","RussianSource":"он усилил свою хватку","Score":0.0,"Active":false
+},
+{"EnglishSource":"STRETCHING WILL HELP PREVENT MUSCLE TIGHTNESS","RussianSource":"растяжка поможет предотвратить напряжение мышц","Score":0.0,"Active":false
+},
+{"EnglishSource":"YOU CAN VARY THE TIGHTNESS OF THE KNITTING","RussianSource":"можно варьировать плотность вязания","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS OF THE SEAL WAS TESTED","RussianSource":"была проверена герметичность уплотнения","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE MANAGED TO MAKE HIMSELF COMFORTABLE ON THE CHAIR DESPITE THE TIGHTNESS OF HIS TROUSERS","RussianSource":"ему удалось удобно устроиться на стуле, несмотря на тесноту брюк","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS OF THE SPACE","RussianSource":"теснота в пространстве","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE SPEAKS WITH GREATER IMPACT BECAUSE OF HIS TIGHTNESS WITH WASHINGTON","RussianSource":"он говорит с большим влиянием из-за его тесноты с Вашингтоном","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS OF THE BENDS","RussianSource":"герметичность изгибов","Score":0.0,"Active":false
+},
+{"EnglishSource":"A FILM FOUNDED ON TIGHTNESS OF PLOT","RussianSource":"фильм, основанный на затянутости сюжета","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE FELT THE TIGHTNESS OF HIS BICEP","RussianSource":"она почувствовала напряжение его бицепса","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD AN X-RAY AFTER COMPLAINING OF TIGHTNESS IN HIS CHEST","RussianSource":"ему сделали рентген после того, как он пожаловался на стеснение в груди","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE STRENGTH IN THIS ADAPTATION LIES IN THE TIGHTNESS OF THE SCRIPT","RussianSource":"сила этой адаптации в затянутости сценария","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS OF MY SCHEDULE KEPT ME FROM PLAYING TOURNAMENTS","RussianSource":"плотный график мешал мне играть в турнирах","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS IN MY THROAT RETURNED","RussianSource":"стеснение в горле вернулось","Score":0.0,"Active":false
+},
+{"EnglishSource":"A GOOD MOISTURIZER WOULD PRESERVE HIS SKIN'S TIGHTNESS","RussianSource":"хороший увлажняющий крем сохранил бы стянутость его кожи","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EXTREME TIGHTNESS IN TODAY'S OIL MARKETS","RussianSource":"крайняя напряженность на сегодняшних нефтяных рынках","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS OF THE KNOT","RussianSource":"герметичность узла","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE COOK CHECKED THE ROPES FOR TIGHTNESS","RussianSource":"повар проверил веревки на натяжение","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS OF THE GAME WAS VERY EVIDENT","RussianSource":"напряжённость игры была очень очевидна","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TIGHTNESS OF THE ARGUMENT","RussianSource":"герметичность аргумента","Score":0.0,"Active":false
+},
+{"EnglishSource":"WE REMAIN CONCERNED ABOUT THE TIGHTNESS OF RESOURCES","RussianSource":"мы по-прежнему обеспокоены нехваткой ресурсов","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE EDITOR WAS SUMMONED TO STAND TRIAL FOR LIBEL","RussianSource":"редактор был вызван в суд за клевету","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE CRACKED HIS ANKLE THE WEEK BEFORE THE FINAL TRIAL","RussianSource":"он сломал лодыжку за неделю до финального суда","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE NEWSPAPER ACCOUNTS OF THE TRIAL","RussianSource":"газетные отчеты о суде","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE'S A DOUBLE-DEALER CAPABLE OF ANY MEAN TRICK","RussianSource":"он двурушник, способный на любую подлость","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE HAD A TRICK OF CLIPPING OFF CERTAIN WORDS AND PHRASES","RussianSource":"она умела обрезать определенные слова и фразы","Score":0.0,"Active":false
+},
+{"EnglishSource":"I THOUGHT I SAW A FLICKER OF EMOTION BUT IT WAS PROBABLY A TRICK OF THE LIGHT","RussianSource":"Мне показалось, что я увидел вспышку эмоций, но, вероятно, это была игра света.","Score":0.0,"Active":false
+},
+{"EnglishSource":"A TRICK QUESTION","RussianSource":"вопрос с подвохом","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE THOUGHT ELAINE WAS PLAYING SOME TRICK ON HER","RussianSource":"она думала, что Элейн играет с ней какую-то шутку","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE TRICK IS TO PUT ONE SKI FORWARD AND KNEEL","RussianSource":"хитрость в том, чтобы поставить одну лыжу вперед и встать на колени","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WOULDN'T WANT TO PUT YOU TO ANY TROUBLE","RussianSource":"Я бы не хотел доставлять тебе неприятности","Score":0.0,"Active":false
+},
+{"EnglishSource":"SORRY TO TROUBLE YOU","RussianSource":"Извините, что беспокою вас","Score":0.0,"Active":false
+},
+{"EnglishSource":"FRIENDS SHOULD SUPPORT EACH OTHER WHEN THEY ARE IN TROUBLE","RussianSource":"друзья должны поддерживать друг друга, когда они в беде","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE COPS ARE PREPARING FOR TROUBLE BY BRINGING IN TEAR GAS","RussianSource":"копы готовятся к неприятностям, применяя слезоточивый газ","Score":0.0,"Active":false
+},
+{"EnglishSource":"I HAD TROUBLE FINDING SOMEWHERE TO PARK","RussianSource":"Мне было трудно найти место для парковки","Score":0.0,"Active":false
+},
+{"EnglishSource":"COULD I TROUBLE YOU FOR A RECEIPT","RussianSource":"Могу я побеспокоить вас о квитанции?","Score":0.0,"Active":false
+},
+{"EnglishSource":"OH DON'T TROUBLE TO ANSWER","RussianSource":"о, не трудись отвечать","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE'S NOT THE FIRST GIRL WHO'S GOTTEN HERSELF INTO TROUBLE","RussianSource":"она не первая девушка, которая попала в беду","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT DID NOT TROUBLE ME THAT HE HAD SECRETS","RussianSource":"меня не беспокоило, что у него есть секреты","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS TOO CONCERNED WITH HER OWN FEELINGS TO TROUBLE ABOUT CLARE'S","RussianSource":"она была слишком озабочена своими чувствами, чтобы беспокоиться о Клэр.","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE'S GONE TO A LOT OF TROUBLE TO HELP YOU","RussianSource":"он сильно постарался помочь тебе","Score":0.0,"Active":false
+},
+{"EnglishSource":"THAT'S THE TROUBLE WITH CAPITALISM","RussianSource":"в этом беда капитализма","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE'S BEEN IN TROUBLE WITH THE POLICE","RussianSource":"у него проблемы с полицией","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR HELICOPTER DEVELOPED ENGINE TROUBLE","RussianSource":"у их вертолета возникла проблема с двигателем","Score":0.0,"Active":false
+},
+{"EnglishSource":"MY LEGS STARTED TO TROUBLE ME","RussianSource":"мои ноги начали беспокоить меня","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE KID HAD BEEN NO TROUBLE UP TO NOW","RussianSource":"ребенок до сих пор не был проблемой","Score":0.0,"Active":false
+},
+{"EnglishSource":"THERE IS NOTHING YOU NEED TROUBLE ABOUT","RussianSource":"нет ничего, о чем вам нужно беспокоиться","Score":0.0,"Active":false
+},
+{"EnglishSource":"75 MILLION IS A CONSIDERABLE UNDERESTIMATE","RussianSource":"7,5 миллионов — это сильно заниженная оценка.","Score":0.0,"Active":false
+},
+{"EnglishSource":"A VARIETY SHOW","RussianSource":"варьете","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT'S THE VARIETY THAT MAKES MY JOB SO ENJOYABLE","RussianSource":"разнообразие делает мою работу такой приятной","Score":0.0,"Active":false
+},
+{"EnglishSource":"IN 1937 SHE DID ANOTHER SEASON OF VARIETY","RussianSource":"в 1937 году она сделала еще один сезон варьете","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CENTER OFFERS A VARIETY OF LEISURE ACTIVITIES","RussianSource":"центр предлагает различные виды досуга","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE VOCAL APPARATUS","RussianSource":"голосовой аппарат","Score":0.0,"Active":false
+},
+{"EnglishSource":"A FOUR-PART VOCAL COMPOSITION","RussianSource":"четырехголосное вокальное произведение","Score":0.0,"Active":false
+},
+{"EnglishSource":"NONLINGUISTIC VOCAL EFFECTS LIKE LAUGHS AND SOBS","RussianSource":"нелингвистические вокальные эффекты, такие как смех и рыдания","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS VOCAL IN CONDEMNING THE ACTION","RussianSource":"он открыто осуждал действие","Score":0.0,"Active":false
+},
+{"EnglishSource":"A VOCAL BASSLINE","RussianSource":"вокальный бас","Score":0.0,"Active":false
+},
+{"EnglishSource":"I WAS SINGING ALONG WITH THE VOCAL","RussianSource":"Я пел вместе с вокалом","Score":0.0,"Active":false
+},
+{"EnglishSource":"MANY RESTAURANTS VOLUNTARILY REMOVED IT FROM THEIR MENUS","RussianSource":"многие рестораны добровольно убрали его из своих меню","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE FAIRY GODMOTHER WAVES HER MAGIC WAND AND GRANTS THE HEROINE'S WISHES","RussianSource":"фея-крёстная машет волшебной палочкой и исполняет желание героини","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WARD NURSE","RussianSource":"палатная медсестра","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT WAS HIS DUTY TO WARD THE KING","RussianSource":"его обязанностью было оберегать короля","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SECOND MOST MARGINAL WARD IN WESTMINSTER","RussianSource":"вторая самая маргинальная палата в Вестминстере","Score":0.0,"Active":false
+},
+{"EnglishSource":"I SAW THEM KEEPING WARD AT ONE OF THOSE HUGE GATES","RussianSource":"Я видел, как они охраняли одни из тех огромных ворот.","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CHILDREN'S WARD","RussianSource":"детская палата","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE WARD AND CARE OF THE CROWN","RussianSource":"опека и забота Короны","Score":0.0,"Active":false
+},
+{"EnglishSource":"FOR THE LAST THREE YEARS THE BOY HAS BEEN MY WARD","RussianSource":"последние три года мальчик был моим подопечным","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WEAK MAGNETIC FIELD","RussianSource":"слабое магнитное поле","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WEAK LIGHT FROM A SINGLE STREET LAMP","RussianSource":"слабый свет от единственного уличного фонаря","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE NEW KING USED HIS POWERS TO PROTECT THE WEAK","RussianSource":"новый король использовал свои силы для защиты слабых","Score":0.0,"Active":false
+},
+{"EnglishSource":"PEOPLE HAVE NO FAITH IN WEAK BANKS","RussianSource":"люди не верят в слабые банки","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WEAK PLOT","RussianSource":"слабый сюжет","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS BEARD COVERED A WEAK CHIN","RussianSource":"его борода закрывала слабый подбородок","Score":0.0,"Active":false
+},
+{"EnglishSource":"A CUP OF WEAK COFFEE","RussianSource":"чашка слабого кофе","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR COMMITMENT TO THE PROJECT IS WEAK","RussianSource":"их приверженность проекту слаба","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE SALAMANDER'S TAIL MAY BE BROKEN OFF AT A WEAK SPOT NEAR THE BASE","RussianSource":"хвост саламандры может быть сломан в уязвимом месте у основания","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE MANAGED A WEAK NERVOUS SMILE","RussianSource":"она выдавила слабую, нервную улыбку","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WAS NOT WEAK OR A COMPROMISER","RussianSource":"он не был слабым или соглашателем","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CENTRAL GOVERNMENT HAD GROWN TOO WEAK TO IMPOSE ORDER","RussianSource":"центральное правительство стало слишком слабым, чтобы навести порядок","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE ARGUMENT IS AN EXTREMELY WEAK ONE","RussianSource":"аргумент крайне слабый","Score":0.0,"Active":false
+},
+{"EnglishSource":"THEIR PROBLEMS AROSE FROM FIELDING WEAK TEAMS IN LEAGUE MATCHES","RussianSource":"их проблемы возникли из-за того, что в матчах лиги выставлялись слабые команды.","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE CHORUSES ON THIS RECORDING ARE WEAK","RussianSource":"припевы на этой записи слабые","Score":0.0,"Active":false
+},
+{"EnglishSource":"SHE WAS RECOVERING FROM THE FLU AND WAS VERY WEAK","RussianSource":"она выздоравливала от гриппа и была очень слаба","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE HAD A WEAK STOMACH","RussianSource":"у него был слабый желудок","Score":0.0,"Active":false
+},
+{"EnglishSource":"I TALK WITH A WHEEZE","RussianSource":"я говорю с хрипом","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE COULD BARELY WHEEZE OUT HIS PLEAS FOR A HANDOUT","RussianSource":"он едва мог прохрипеть свои мольбы о подаче","Score":0.0,"Active":false
+},
+{"EnglishSource":"A SHOT THAT WENT WIDE TO THE RIGHT","RussianSource":"выстрел, который пошел далеко вправо","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE PLAYED IN A WIDE LEFT POSITION","RussianSource":"он играл на фланговой левой позиции","Score":0.0,"Active":false
+},
+{"EnglishSource":"FORCED A WIDE THROW TO FIRST","RussianSource":"вынудил широкий бросок к первому","Score":0.0,"Active":false
+},
+{"EnglishSource":"THE BALL WAS WIDE OF THE PLATE","RussianSource":"мяч прошел мимо тарелки","Score":0.0,"Active":false
+},
+{"EnglishSource":"WIDE EYES","RussianSource":"широкие глаза","Score":0.0,"Active":false
+},
+{"EnglishSource":"HE WILL PLAY WIDE ON THE RIGHT","RussianSource":"он будет широко играть справа","Score":0.0,"Active":false
+},
+{"EnglishSource":"HIS EYES OPENED WIDE","RussianSource":"его глаза широко раскрылись","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WIDE ROAD","RussianSource":"широкая дорога","Score":0.0,"Active":false
+},
+{"EnglishSource":"HOW WIDE DO YOU THINK THIS HOUSE IS","RussianSource":"Как вы думаете, насколько широк этот дом?","Score":0.0,"Active":false
+},
+{"EnglishSource":"A WIDE RANGE OF OPINION","RussianSource":"широкий спектр мнений","Score":0.0,"Active":false
+},
+{"EnglishSource":"BODIE'S SHOT WAS INCHES WIDE","RussianSource":"Выстрел Боди был шириной в несколько дюймов","Score":0.0,"Active":false
+},
+{"EnglishSource":"IT MEASURES 15 CM LONG BY 12 CM WIDE","RussianSource":"его размеры 15 см в длину и 12 см в ширину","Score":0.0,"Active":false
+},
+{"EnglishSource":"TAX REVENUES HAVE UNDERSHOT TREASURY PROJECTIONS BY A WIDE MARGIN","RussianSource":"налоговые поступления значительно ниже прогнозов Минфина","Score":0.0,"Active":false
+},
+{"EnglishSource":"GENEROUS DONATIONS TO WORTHY CAUSES","RussianSource":"щедрые пожертвования на достойные цели","Score":0.0,"Active":false
+},
+{"EnglishSource":"ISSUES WORTHY OF FURTHER CONSIDERATION","RussianSource":"вопросы, достойные дальнейшего рассмотрения","Score":0.0,"Active":false
+},
+{"EnglishSource":"NO COMPOSER WAS CONSIDERED WORTHY OF THE NAME UNTIL HE HAD WRITTEN AN OPERA","RussianSource":"ни один композитор не считался достойным этого имени, пока он не написал оперу","Score":0.0,"Active":false}]}
