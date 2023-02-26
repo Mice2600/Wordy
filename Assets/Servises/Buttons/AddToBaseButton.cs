@@ -4,34 +4,24 @@ using UnityEngine.Events;
 using UnityEngine;
 using Base;
 using Base.Word;
+using Sirenix.OdinInspector;
+using UnityEngine.UI;
 
-namespace WordCreator.WordGenerator
+namespace Servises
 {
+    [RequireComponent(typeof(Button))]
     public class AddToBaseButton : MonoBehaviour
     {
         [SerializeField]
         private GameObject AddIcon;
         [SerializeField]
         private GameObject CompletedIcon;
-
-
-
         private ContentObject Content
         {
             get
             {
                 if (_Content != null) return _Content;
-                Transform ToTest = transform;
-                for (int i = 0; i < 20; i++)
-                {
-                    if (ToTest.TryGetComponent<ContentObject>(out ContentObject wordContent))
-                    {
-                        _Content = wordContent;
-                        break;
-                    }
-                    ToTest = ToTest.parent;
-                    if (ToTest == null) break;
-                }
+                _Content = transform.GetComponentInParent<ContentObject>();
                 return _Content;
             }
         }
@@ -44,8 +34,7 @@ namespace WordCreator.WordGenerator
             _PerTime += Time.deltaTime;
             if (_PerTime > .4f)
             {
-                _PerTime = 0;
-                if (WordBase.Wordgs.Contains((Content.Content as Word)))
+                if (Content.Content.BaseCommander.Contains(Content.Content))
                 {
                     AddIcon.SetActive(false);
                     CompletedIcon.SetActive(true);
@@ -55,6 +44,11 @@ namespace WordCreator.WordGenerator
                     AddIcon.SetActive(true);
                     CompletedIcon.SetActive(false);
                 }
+                 
+                
+                              
+                _PerTime = 0;
+                
             }
 
         }

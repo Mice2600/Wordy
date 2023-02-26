@@ -14,9 +14,12 @@ namespace Base.Word
     {
         static WordBase() 
         {
-            if (PlayerPrefs.GetInt(ID + " defaul") == 0) 
-                PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultWords.text);
-            PlayerPrefs.SetInt(ID + " defaul", 1);
+            if (Application.isEditor) 
+            {
+                if (PlayerPrefs.GetInt(ID + " defaul") == 0) 
+                    PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultWords.text);
+                PlayerPrefs.SetInt(ID + " defaul", 1);
+            }
             Wordgs = new WordBase(); 
         }
         public Word this[Word index]

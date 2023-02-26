@@ -60,12 +60,12 @@ namespace Study.aSystem
             OnDialogWin += (D) =>
             {
                 DialogBase.Dialogs[D].ScoreConculeated += Mathf.Abs(AddScoreDialog);
-                WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordWin.Invoke(Nfound));
+                WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordWin.Invoke(Nfound as Word));
             };
             OnDialogLost += (D) =>
             {
                 DialogBase.Dialogs[D].ScoreConculeated -= Mathf.Abs(RemoveScoreDialog);
-                WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordLost.Invoke(Nfound));
+                WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordLost.Invoke(Nfound as Word));
             };
             OnIrregularWin += (W) =>
             {

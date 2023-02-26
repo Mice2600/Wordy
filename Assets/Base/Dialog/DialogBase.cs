@@ -15,12 +15,16 @@ namespace Base.Dialog
     {
         static DialogBase()
         {
-            if (PlayerPrefs.GetInt(ID + "default set") == 0) 
+
+            if (Application.isEditor) 
             {
-                PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text);
-                PlayerPrefs.SetInt(ID + "default set", 1);
+                if (PlayerPrefs.GetInt(ID + "default set") == 0)
+                {
+                    PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text);
+                    PlayerPrefs.SetInt(ID + "default set", 1);
+                }
+                DefaultBase = new List<Dialog>(JsonHelper.FromJson<Dialog>(ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text));
             }
-            
             Dialogs = new DialogBase();
         }
         public Dialog this[Dialog index]
@@ -41,6 +45,9 @@ namespace Base.Dialog
         public static DialogBase Dialogs { get; private set; }
         private static string ID => "DialogBase";
         protected override string DataID => ID;
+
+        public static TList<Dialog> DefaultBase;
+
         public static new void Sort()
         {
             Dialogs.Save();

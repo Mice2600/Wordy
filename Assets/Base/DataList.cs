@@ -16,6 +16,8 @@ namespace Base
         public void Save();
         public int IndexOf(Content Content);
         public void Remove(Content Content);
+        public bool Contains(Content Content);
+        public void FindContentsFromString(string ToDiagnost, System.Action<Content> OnFound);
     }
     public abstract class DataList<T> : List<T>, IDataListComands where T : Content
     {
@@ -41,7 +43,6 @@ namespace Base
         }
 
         protected abstract string DataID { get; }
-
         public void Save()
         {
             for (int i = 0; i < Count; i++)if (this[i].ScoreConculeated < 0) this[i].ScoreConculeated = 0;
@@ -58,6 +59,7 @@ namespace Base
         public void Remove(Content Content)  => base.Remove(Content as T);
 
         public int IndexOf(Content Content) => base.IndexOf(Content as T);
+        public bool Contains(Content Content) => base.Contains(Content as T);
         public List<T> ActiveItems => new List<T>(this.Where(a => a.Active));
         public List<T> PassiveItems => new List<T>(this.Where(a => !a.Active));
         public List<T> GetContnetList(int ListCount)
@@ -70,7 +72,23 @@ namespace Base
                 return All.Mix();
             }
             if (All.Count == ListCount) return All.Mix();
+            if (true) 
+            {
 
+                int sasas = 0;
+                List<T> dsa = new List<T>();
+                while (dsa.Count < ListCount)
+                {
+                    int d = UnityEngine.Random.Range(0, All.Count);
+                    sasas++;
+                    if (sasas > 800) break;
+                    if (All.Count < 1) continue;
+                    dsa.Add(All.RemoveRandomItem());
+                }
+
+                return dsa;
+            
+            }
             // int ListCount
 
             //5% 90-100    -5
@@ -135,7 +153,7 @@ namespace Base
                 if (TCount > 100) { yield return null; TCount = 0; }
             }
         }
-        public void FindContentsFromString(string ToDiagnost, System.Action<T> OnFound) 
+        public void FindContentsFromString(string ToDiagnost, System.Action<Content> OnFound) 
         {
             GameObject s = GameObject.Find("Save " + DataID + " Engine Dont Touch");
             s.GetComponent<ListBaseEngine>().StartCoroutine(FindContentsFromStringCoroutine(ToDiagnost, OnFound));
