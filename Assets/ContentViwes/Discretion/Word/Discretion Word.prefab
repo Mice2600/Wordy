@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 4100092024796855395}
   - component: {fileID: 4953227262940789550}
   - component: {fileID: 4625020927692788421}
+  - component: {fileID: 6741285526910038335}
   m_Layer: 5
   m_Name: BaseFounder
   m_TagString: Untagged
@@ -231,6 +232,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6741285526910038335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595648570150293800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ba91236f1445242b3103709cd94ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogSceneName: DialogBaseViwe
+  textMesh: {fileID: 8022570005706141320}
 --- !u!1 &1735651313567294914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,7 +1295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4 dialog founded in base
+  m_text: 0 dialog founded in base
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7fd8cf975d5ee0246bf1cef1bfd924a6, type: 2}
   m_sharedMaterial: {fileID: 4674436405224765793, guid: 7fd8cf975d5ee0246bf1cef1bfd924a6, type: 2}

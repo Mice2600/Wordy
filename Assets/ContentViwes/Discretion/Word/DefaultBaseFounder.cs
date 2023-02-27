@@ -5,7 +5,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+[RequireComponent(typeof(Button))]
 public class DefaultBaseFounder : MonoBehaviour
 {
     public string DefaultDialogSceneName;

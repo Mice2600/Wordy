@@ -23,8 +23,8 @@ namespace Base.Dialog
                     PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text);
                     PlayerPrefs.SetInt(ID + "default set", 1);
                 }
-                DefaultBase = new List<Dialog>(JsonHelper.FromJson<Dialog>(ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text));
             }
+            DefaultBase = new List<Dialog>(JsonHelper.FromJson<Dialog>(ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text));
             Dialogs = new DialogBase();
         }
         public Dialog this[Dialog index]
