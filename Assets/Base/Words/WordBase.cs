@@ -14,7 +14,7 @@ namespace Base.Word
     {
         static WordBase() 
         {
-            if (Application.isEditor) 
+            if (Application.isEditor && false) 
             {
                 if (PlayerPrefs.GetInt(ID + " defaul") == 0) 
                     PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultWords.text);

@@ -1145,7 +1145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817fffc21ece70349a7853e125064543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMesh: {fileID: 0}
+  DefaultDialogSceneName: DialogDefaultBase
+  textMesh: {fileID: 2720264493862624080}
 --- !u!1 &2939814907052411810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,8 +2630,8 @@ RectTransform:
   m_Children:
   - {fileID: 8496439980926703367}
   - {fileID: 1417902141207527612}
-  - {fileID: 2720264495024657138}
   - {fileID: 7239938280850541354}
+  - {fileID: 2720264495024657138}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -425,7 +425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -812,17 +811,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2578,7 +2569,6 @@ MonoBehaviour:
   contentPattent: {fileID: 1218133415}
   CloseSearchingButton: {fileID: 722643223}
   OnlyActive: 0
-  SearchingString: 
 --- !u!1 &1821948765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,7 +3161,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 1218133415}
     m_Modifications:
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
@@ -3192,7 +3182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchorMin.x
@@ -3200,7 +3190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3240,11 +3230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 540
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -120.3352
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3266,8 +3256,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Word With Sound Info
       objectReference: {fileID: 0}
+    - target: {fileID: 8894941234577327925, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
+      propertyPath: m_text
+      value: New <#FF00006B><s><u><size=50>Long</size></u></s></color> Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 8894941234577327925, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
+      propertyPath: m_fontSize
+      value: 64.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}

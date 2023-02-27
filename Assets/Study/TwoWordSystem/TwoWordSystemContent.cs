@@ -14,7 +14,7 @@ namespace Study.TwoWordSystem
         [SerializeField]
         private GameObject TextEnglish, TextTransleated;
         [SerializeField]
-        private GameObject VoisOB, TextOB;
+        private GameObject VoisOB;
 
         [System.NonSerialized]
         public bool Dead;
@@ -29,25 +29,21 @@ namespace Study.TwoWordSystem
         {
             if (IsEnglishSide)
             {
-                TextEnglish.SetActive(true);
                 TextTransleated.SetActive(false);
-
                 if (Random.Range(0, 10) > 5)
                 {
                     VoisOB.SetActive(false);
-                    TextOB.SetActive(true);
+                    TextEnglish.SetActive(true);
                 }
                 else 
                 {
                     VoisOB.SetActive(true);
-                    TextOB.SetActive(false);
+                    TextEnglish.SetActive(false);
                 }
             }
             else 
             {
                 VoisOB.SetActive(false);
-                TextOB.SetActive(true);
-
                 TextEnglish.SetActive(false);
                 TextTransleated.SetActive(true);
             }
@@ -59,13 +55,16 @@ namespace Study.TwoWordSystem
         public void TrySellect()
         {
             if (Dead) return;
+            
             if (IsEnglishSide)
             {
-                EnglishSellected = this;
+                if (EnglishSellected == this) EnglishSellected = null;
+                else EnglishSellected = this;
             }
             else
             {
-                RussianSellected = this;
+                if (RussianSellected == this) RussianSellected = null;
+                else RussianSellected = this;
             }
             if (EnglishSellected != null && RussianSellected != null)
             {

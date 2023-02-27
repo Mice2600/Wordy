@@ -26,7 +26,13 @@ namespace Servises
             }
         }
         private ContentObject _Content;
-
+        private void Start()
+        {
+            GetComponent<Button>().onClick.AddListener(() =>
+            {
+                Content.Content.BaseCommander.Add(Content.Content);
+            });
+        }
 
         private float _PerTime;
         private void Update()

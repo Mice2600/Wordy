@@ -8,11 +8,15 @@ using System.Collections.Generic;
 using System.Linq;
 using SystemBox;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Servises.BaseList
 {
-    public abstract class BaseListWithFillter<T> : BaseListViwe<T> where T : Content
+    public interface ISearchList 
+    {
+        public void OnShearchValueChanged(string Value);
+        public string SearchingString { get; }
+    }
+    public abstract class BaseListWithFillter<T> : BaseListViwe<T>, ISearchList where T : Content
     {
         [Required,SerializeField]
         private GameObject CloseSearchingButton;
@@ -50,8 +54,8 @@ namespace Servises.BaseList
             }
             base.Refresh();
         }
-        [ReadOnly]
-        public string SearchingString;
+        
+        public string SearchingString { get; set; }
 
         protected virtual void Update() 
         {
@@ -65,7 +69,7 @@ namespace Servises.BaseList
             else
             {
                 SerchedContents = SearchComand(AllContents, SearchingString);
-                SerchedContents = Servises.Search.SearchAll<T>(AllContents, SearchingString);
+                //SerchedContents = Servises.Search.SearchAll<T>(AllContents, SearchingString);
                 if (OnlyActive) SerchedContents = new TList<T>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
             }
             Lode(0);

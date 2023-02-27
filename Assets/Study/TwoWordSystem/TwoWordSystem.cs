@@ -26,7 +26,7 @@ namespace Study.TwoWordSystem
         public void Start()
         {
             EnglishParrent.ClearChilds();
-            int CC = Random.Range(4, 9);
+            int CC = Random.Range(5, 10);
             Debug.Log(CC);
             for (int i = 0; i < CC; i++)
             {
