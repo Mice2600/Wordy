@@ -68,6 +68,15 @@ MonoBehaviour:
     RemoveScoreWord: -1
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  QuestBuildIlrregularPrefab: {fileID: 3906864097593926266, guid: dcdf077ba389ec343b4e1b99f0ce8192, type: 3}
+  QuestBuildIlrregularPrefabSceneName: 
+  QuestBuildIlrregularScorevalumes:
+    AddScoreDialog: 0
+    RemoveScoreDialog: 0
+    AddScoreWord: 0
+    RemoveScoreWord: 0
+    AddScoreIrregular: 5
+    RemoveScoreIrregular: -1
   QuestFindOnsPrefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
   QuestFindOnsSceneName: 
   QuestFindOnsScorevalumes:

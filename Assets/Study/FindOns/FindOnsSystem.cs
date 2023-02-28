@@ -27,8 +27,9 @@ namespace Study.FindOns
         }
         public void Rondomize()
         {
+            int MaxCount = ContentParrent.childCount;
             ContentParrent.ClearChilds();
-            int countToCreat = Random.Range(3, 8);
+            int countToCreat = Random.Range(3, MaxCount);
             string ContentLangvich = (Random.Range(0, 100) > 50) ? "ru" : "en";
 
 

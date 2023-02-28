@@ -325,9 +325,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2550693946343939695}
-  - component: {fileID: 694313717376538981}
   - component: {fileID: 8938976497183213719}
   - component: {fileID: -8878441697981904632}
+  - component: {fileID: 8797574666340585148}
   m_Layer: 5
   m_Name: RusainText
   m_TagString: Untagged
@@ -356,21 +356,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &694313717376538981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2550693946343939692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558f0a5ddbb78b642a531d2527023768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Images: []
-  Texts:
-  - {fileID: 2550693946129417026}
 --- !u!114 &8938976497183213719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,3 +380,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde8b8b55b3eb2e41855b6d761bb460b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8797574666340585148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550693946343939692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a276230f38b3ce43b0749a4faaeea25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Arts:
+  - {fileID: 2550693946129417026}

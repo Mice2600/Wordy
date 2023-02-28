@@ -51,18 +51,22 @@ namespace Study.BuildDialog
             Content = Grr[0];
             
             TList<string> All = Grr[0].EnglishSource.Split(" ");
-            if (Content.ScoreConculeated < 10) 
+            if (All.Count > 3)
             {
-                MergeOnes(ref All);
-                MergeOnes(ref All);
+                if (Content.ScoreConculeated < 10)
+                {
+                    MergeOnes(ref All);
+                    MergeOnes(ref All);
+                }
+                else if (Content.ScoreConculeated < 25) MergeTreple(ref All);
+                else if (Content.ScoreConculeated < 50) MergeOnes(ref All);
             }
-            else if (Content.ScoreConculeated < 40) MergeTreple(ref All);
-            else if (Content.ScoreConculeated < 70) MergeOnes(ref All);
-            
             TList<string> Otherrr = Grr[1].EnglishSource.Split(" ");
-
-            if (Content.ScoreConculeated < 40) MergeTreple(ref Otherrr);
-            else if (Content.ScoreConculeated < 70) MergeOnes(ref Otherrr);
+            if (Otherrr.Count > 3) 
+            {
+                if (Content.ScoreConculeated < 20) MergeTreple(ref Otherrr);
+                else if (Content.ScoreConculeated < 50) MergeOnes(ref Otherrr);
+            }
 
             All.AddRange(Otherrr);
             All.Mix();
