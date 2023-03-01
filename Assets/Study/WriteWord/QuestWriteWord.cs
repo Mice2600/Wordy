@@ -20,6 +20,7 @@ namespace ProjectSettings
 public class QuestWriteWord : Quest, IQuestStarterWithWord
 {
     public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestWriteWordPrefab;
+    public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestWriteWordName;
     public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.AddScoreDialog;
     public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.RemoveScoreDialog;
     public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteWordValumes.AddScoreWord;

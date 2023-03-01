@@ -123,10 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52c31e228af8ed4482d19414bd54188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundButton: {fileID: 0}
-  RemoveButton: {fileID: 0}
-  Score: {fileID: 0}
-  EditButton: {fileID: 0}
 --- !u!114 &5486948498273100783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,7 +1471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4698584d61afc824c88b536333d9a8f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spacing: {x: 10, y: 0}
+  Spacing: {x: 20, y: 0}
   ScreenSize: 0.868
 --- !u!1 &7371039722521097288
 GameObject:
@@ -1869,10 +1865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9062df3eafb9e76458c79d27cc6e64e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundButton: {fileID: 0}
-  RemoveButton: {fileID: 0}
-  Score: {fileID: 0}
-  EditButton: {fileID: 0}
   ScoreContentGropper: {fileID: 4488656136756121094}
   ChengingContentObject: {fileID: 7753236627495892659, guid: 6e2aa9919e30bc74dbaa3ba77dc8a317, type: 3}
   WrongContentVewe: {fileID: 800113735557735977}
@@ -1905,7 +1897,7 @@ RectTransform:
   m_GameObject: {fileID: 8987251105849476304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.4939346, y: 3.2801569, z: 3.2801569}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8987251105467294846}
@@ -1937,7 +1929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16037738, g: 0, b: 0, a: 0.5254902}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.70980394}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

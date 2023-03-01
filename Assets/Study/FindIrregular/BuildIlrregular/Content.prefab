@@ -513,7 +513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BiforText: 
   AfterTextText: 
-  ShowType: Both of them
+  ShowType: Only First
 --- !u!1 &7593274277993441214
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BiforText: 
   AfterTextText: 
-  ShowType: Both of them
+  ShowType: Only First
 --- !u!1 &7593274278353637460
 GameObject:
   m_ObjectHideFlags: 0

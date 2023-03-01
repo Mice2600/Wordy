@@ -11,10 +11,11 @@ namespace ProjectSettings
     {
         [BoxGroup("Quest")]
         [FoldoutGroup("Quest/FindOns")]
+        [FoldoutGroup("Quest/FindOns/E2T")]
         public GameObject QuestFindOnsPrefab;
-        [FoldoutGroup("Quest/FindOns")]
+        [FoldoutGroup("Quest/FindOns/E2T")]
         public string QuestFindOnsSceneName;
-        [FoldoutGroup("Quest/FindOns")]
+        [FoldoutGroup("Quest/FindOns/E2T")]
         public StudyScoreValumes QuestFindOnsScorevalumes;
     }
 }
@@ -25,6 +26,7 @@ namespace Study.FindOns
     public class QuestFindOns : Quest, IQuestStarterWithWordList
     {
         public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestFindOnsPrefab;
+        public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestFindOnsSceneName;
         public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.AddScoreDialog;
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestFindOnsScorevalumes.AddScoreWord;

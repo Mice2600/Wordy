@@ -64,7 +64,7 @@ public class BI_ContentBox : ContentObject, IPointerDownHandler, IPointerUpHandl
     private void Update()
     {
         if (isControlling) transform.position = Ofsete + new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z);
-        else if (dd != null) transform.position = Vector3.MoveTowards(transform.position, dd.transform.position, 10);
-        else if(StartPos != Vector3.zero) transform.position = Vector3.MoveTowards(transform.position, StartPos, 10);
+        else if (dd != null) transform.position = Vector3.MoveTowards(transform.position, dd.transform.position, Time.deltaTime * 1000);
+        else if(StartPos != Vector3.zero) transform.position = Vector3.MoveTowards(transform.position, StartPos, Time.deltaTime * 1000);
     }
 }

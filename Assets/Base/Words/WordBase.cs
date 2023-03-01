@@ -3,6 +3,7 @@ using Base.Word;
 using Servises;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using SystemBox;
@@ -20,6 +21,7 @@ namespace Base.Word
                     PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultWords.text);
                 PlayerPrefs.SetInt(ID + " defaul", 1);
             }
+            DefaultBase = new List<Word>(JsonHelper.FromJson<Word>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text));
             Wordgs = new WordBase(); 
         }
         public Word this[Word index]
@@ -38,6 +40,7 @@ namespace Base.Word
             }
         }
         public static WordBase Wordgs { get; private set; }
+        public static TList<Word> DefaultBase;
         private static string ID => "WordBase";
         protected override string DataID => ID;
         public static new void Sort()

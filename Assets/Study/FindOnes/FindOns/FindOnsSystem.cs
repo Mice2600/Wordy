@@ -2,6 +2,7 @@ using Base;
 using Base.Word;
 using Servises;
 using Sirenix.OdinInspector;
+using Study.aSystem;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -13,8 +14,8 @@ namespace Study.FindOns
     
     public class FindOnsSystem : ContentObject
     {
-        [Required]
-        public QuestFindOns QuestFindOns;
+        public Quest Quest => _Quest ??= GetComponent<Quest>();
+        private Quest _Quest;
         public GameObject PrefabEnglishText;
         public GameObject PrefabEnglishSound;
         public GameObject PrefabRusianText;
@@ -30,11 +31,12 @@ namespace Study.FindOns
             int MaxCount = ContentParrent.childCount;
             ContentParrent.ClearChilds();
             int countToCreat = Random.Range(3, MaxCount);
-            string ContentLangvich = (Random.Range(0, 100) > 50) ? "ru" : "en";
+            string ContentLangvich = (Quest is not QuestFindOns) ? "ru" : "en";
 
 
             GameObject ToCreat = null;
-            TList<Word> WordList = QuestFindOns.NeedWords;
+            
+            TList<Word> WordList = (Quest is QuestFindOns)? (Quest as QuestFindOns).NeedWords : (Quest as QuestFindOns_T2E).NeedWords;
 
             for (int i = 0; i < countToCreat; i++)
             {
@@ -60,22 +62,22 @@ namespace Study.FindOns
                 IEnumerator WaitANdTrayAgane()
                 {
                     yield return new WaitForSeconds(1.5f);
-                    QuestFindOns.OnWordWin?.Invoke(Content as Word);
-                    QuestFindOns.OnGameWin?.Invoke();
-                    DiscretionCorrectContent A = DiscretionCorrectContent.ShowCorrectContent(WordBase.Wordgs[Content as Word], QuestFindOns.AddScoreWord, OnFinsht);
+                    Quest.OnWordWin?.Invoke(Content as Word);
+                    Quest.OnGameWin?.Invoke();
+                    DiscretionCorrectContent A = DiscretionCorrectContent.ShowCorrectContent(WordBase.Wordgs[Content as Word], Quest.AddScoreWord, OnFinsht);
                 }
             }
-            QuestFindOns.OnWordLost?.Invoke(Content as Word);
-            QuestFindOns.OnWordLost?.Invoke(content as Word);
-            QuestFindOns.OnGameLost?.Invoke();
-            DiscretionIncorrectContent D = DiscretionIncorrectContent.ShowIncorrectContent(WordBase.Wordgs[Content as Word], WordBase.Wordgs[content as Word], QuestFindOns.RemoveScoreWord, OnFinsht);
-            D.AddChangin(WordBase.Wordgs[content as Word], QuestFindOns.RemoveScoreWord);
+            Quest.OnWordLost?.Invoke(Content as Word);
+            Quest.OnWordLost?.Invoke(content as Word);
+            Quest.OnGameLost?.Invoke();
+            DiscretionIncorrectContent D = DiscretionIncorrectContent.ShowIncorrectContent(WordBase.Wordgs[Content as Word], WordBase.Wordgs[content as Word], Quest.RemoveScoreWord, OnFinsht);
+            D.AddChangin(WordBase.Wordgs[content as Word], Quest.RemoveScoreWord);
 
             return false;
             void OnFinsht() 
             {
                 Destroy(gameObject);
-                QuestFindOns.OnFineshed();
+                Quest.OnFineshed();
             }
         }
 

@@ -22,6 +22,7 @@ namespace Study.TwoWordSystem
     public class QuestTwoWord : Quest , IQuestStarterWithWordList
     {
         public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemPrefab;
+        public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemSceneName;
         public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.AddScoreDialog;
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTwoWordSystemValumes.AddScoreWord;

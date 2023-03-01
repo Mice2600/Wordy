@@ -60,7 +60,7 @@ MonoBehaviour:
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
   DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
   QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
-  QuestBuildDialogPrefabSceneName: BuildDialog
+  QuestBuildDialogPrefabSceneName: Build Dialog
   QuestBuildDialogScorevalumes:
     AddScoreDialog: 7
     RemoveScoreDialog: -2
@@ -69,7 +69,7 @@ MonoBehaviour:
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
   QuestBuildIlrregularPrefab: {fileID: 3906864097593926266, guid: dcdf077ba389ec343b4e1b99f0ce8192, type: 3}
-  QuestBuildIlrregularPrefabSceneName: 
+  QuestBuildIlrregularPrefabSceneName: Build Irregular
   QuestBuildIlrregularScorevalumes:
     AddScoreDialog: 0
     RemoveScoreDialog: 0
@@ -77,26 +77,8 @@ MonoBehaviour:
     RemoveScoreWord: 0
     AddScoreIrregular: 5
     RemoveScoreIrregular: -1
-  QuestFindOnsPrefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
-  QuestFindOnsSceneName: 
-  QuestFindOnsScorevalumes:
-    AddScoreDialog: 2
-    RemoveScoreDialog: -1
-    AddScoreWord: 5
-    RemoveScoreWord: -1
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestTwoWordSystemPrefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
-  QuestTwoWordSystemSceneName: 
-  QuestTwoWordSystemValumes:
-    AddScoreDialog: 1
-    RemoveScoreDialog: -1
-    AddScoreWord: 5
-    RemoveScoreWord: -1
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
   QuestWriteIlrregularPrefab: {fileID: 3935304050576171708, guid: 812647b1a6e179f4a8eb0ad542120f4e, type: 3}
-  QuestWriteIlrregularName: WriteIrregular
+  QuestWriteIlrregularName: Write Irregular
   QuestWriteIlrregularValumes:
     AddScoreDialog: 0
     RemoveScoreDialog: 0
@@ -104,8 +86,35 @@ MonoBehaviour:
     RemoveScoreWord: 0
     AddScoreIrregular: 5
     RemoveScoreIrregular: -1
+  QuestFindOnsPrefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
+  QuestFindOnsSceneName: Find Ons E2T
+  QuestFindOnsScorevalumes:
+    AddScoreDialog: 2
+    RemoveScoreDialog: -1
+    AddScoreWord: 3
+    RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
+  QuestFindOns_T2E_Prefab: {fileID: 1157004485089459125, guid: 8c9380315b22c6b4d8428d8d643453dc, type: 3}
+  QuestFindOns_T2E_SceneName: Find Ons T2E
+  QuestFindOns_T2E_Scorevalumes:
+    AddScoreDialog: 2
+    RemoveScoreDialog: -1
+    AddScoreWord: 5
+    RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
+  QuestTwoWordSystemPrefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
+  QuestTwoWordSystemSceneName: Two Word
+  QuestTwoWordSystemValumes:
+    AddScoreDialog: 1
+    RemoveScoreDialog: -1
+    AddScoreWord: 5
+    RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestWriteWordPrefab: {fileID: 9020605442907867151, guid: d42e49d95e731f244bcc75a1fd93e322, type: 3}
-  QuestWriteWordName: WriteWord
+  QuestWriteWordName: Write Word
   QuestWriteWordValumes:
     AddScoreDialog: 0
     RemoveScoreDialog: 0

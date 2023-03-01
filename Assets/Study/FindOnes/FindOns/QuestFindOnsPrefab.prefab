@@ -154,7 +154,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405740835686348974}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -166,7 +166,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1405740835686348974}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 988606051597090489}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6402291996986190517}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -773,7 +773,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6402291996986190517}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -929,7 +929,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1177141250008145671}
-  - component: {fileID: 6101982632324341357}
   - component: {fileID: 8746084096419980521}
   - component: {fileID: 4505428730389931716}
   - component: {fileID: 4650412927550834751}
@@ -963,22 +962,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6101982632324341357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109654102289841219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &8746084096419980521
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1160,7 +1143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7333f45bca4c5d6488d84a4a8d240767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QuestFindOns: {fileID: 1229372442596780954}
   PrefabEnglishText: {fileID: 100753299628570390, guid: 228afc08b28068149b329654d6fb7933, type: 3}
   PrefabEnglishSound: {fileID: 2083661883776173523, guid: 95ad61c6420671444874d18c45ac2f88, type: 3}
   PrefabRusianText: {fileID: 2550693946343939692, guid: a6b70f5a2f9dcac44a4c85c045d3b2ba, type: 3}
@@ -1323,11 +1305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1229372443016357646}
-  - component: {fileID: 1229372443016357647}
   - component: {fileID: 1229372443016357643}
-  - component: {fileID: 1229372443016357642}
-  - component: {fileID: 1229372443016357645}
-  - component: {fileID: 1229372443016357644}
   m_Layer: 5
   m_Name: Englishons (7)
   m_TagString: Untagged
@@ -1358,22 +1336,6 @@ RectTransform:
   m_AnchoredPosition: {x: -10, y: -245}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1229372443016357647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229372443016357681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &1229372443016357643
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1386,55 +1348,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1229372443016357642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229372443016357681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558f0a5ddbb78b642a531d2527023768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Images:
-  - {fileID: 0}
-  - {fileID: 0}
-  Texts:
-  - {fileID: 0}
---- !u!95 &1229372443016357645
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229372443016357681}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ce15fee2ccd00f04c98ed94b301eeb95, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
---- !u!114 &1229372443016357644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229372443016357681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20feeb3db7d44a0439fdf5e3a5c9db1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1229372443382992486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,7 +1716,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1229372443948675705}
-  - component: {fileID: 1229372443948675702}
   - component: {fileID: 1229372443948675703}
   - component: {fileID: 1229372443948675701}
   - component: {fileID: 1229372443948675700}
@@ -1837,22 +1749,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1229372443948675702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229372443948675704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &1229372443948675703
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2108,7 +2004,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7109385622518786733}
-  - component: {fileID: 8953073008101839344}
   - component: {fileID: 499888099602477793}
   - component: {fileID: 9069613112672710792}
   - component: {fileID: 5669689521898531994}
@@ -2142,22 +2037,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8953073008101839344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306856438199481629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &499888099602477793
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2228,7 +2107,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 171011596658418366}
-  - component: {fileID: 3857582055923208668}
   - component: {fileID: 8784783108580722144}
   - component: {fileID: 8441896355971841227}
   - component: {fileID: 1120980865675572092}
@@ -2262,22 +2140,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3857582055923208668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821271792135857706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &8784783108580722144
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2702,7 +2564,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6402291996986190517}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -3003,7 +2865,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8953073008101839344}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -3169,7 +3031,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 988606051597090489}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -3181,7 +3043,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 988606051597090489}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -3693,7 +3555,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6101982632324341357}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -3886,7 +3748,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3513154937951701392}
-  - component: {fileID: 1405740835686348974}
   - component: {fileID: 3242071230851326813}
   - component: {fileID: 8207432564133929972}
   - component: {fileID: 8807355819243517349}
@@ -3920,22 +3781,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1405740835686348974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3628378888396142478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &3242071230851326813
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4006,7 +3851,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4844533700751798874}
-  - component: {fileID: 3878317989650626672}
   - component: {fileID: 5291115253914472671}
   - component: {fileID: 1632392501377234056}
   - component: {fileID: 7879481924200808844}
@@ -4040,22 +3884,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3878317989650626672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4550510069449580181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &5291115253914472671
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4271,7 +4099,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3857582055923208668}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -4283,7 +4111,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3857582055923208668}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -4417,7 +4245,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7213342475966482236}
-  - component: {fileID: 6402291996986190517}
   - component: {fileID: 3971979196461071920}
   - component: {fileID: 8076604144325342616}
   - component: {fileID: 4095982220074966836}
@@ -4451,22 +4278,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6402291996986190517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5674743617148020254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &3971979196461071920
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4682,7 +4493,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405740835686348974}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -4848,7 +4659,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3156991330822197813}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -5014,7 +4825,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8953073008101839344}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -5026,7 +4837,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8953073008101839344}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -5268,7 +5079,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3878317989650626672}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -5434,7 +5245,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6101982632324341357}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -5446,7 +5257,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6101982632324341357}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -5612,7 +5423,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3878317989650626672}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -5624,7 +5435,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3878317989650626672}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -5790,7 +5601,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3156991330822197813}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -5802,7 +5613,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3156991330822197813}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -5823,7 +5634,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347065306732502153}
-  - component: {fileID: 988606051597090489}
   - component: {fileID: 6688799576405147521}
   - component: {fileID: 7584782331876896767}
   - component: {fileID: 658924877740182397}
@@ -5857,22 +5667,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &988606051597090489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6823617707399724918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &6688799576405147521
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6260,7 +6054,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1229372443948675702}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -6674,7 +6468,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3857582055923208668}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -6840,7 +6634,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1229372443948675702}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WordWithSound, Assembly-CSharp
         m_MethodName: OnSoundButton
         m_Mode: 1
@@ -6852,7 +6646,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1229372443948675702}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TwoWordSystemContent, Assembly-CSharp
         m_MethodName: TrySellect
         m_Mode: 1
@@ -7025,7 +6819,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8979490154845574599}
-  - component: {fileID: 3156991330822197813}
   - component: {fileID: 26360617055847734}
   - component: {fileID: 4296621897844273953}
   - component: {fileID: 7938234866303564619}
@@ -7059,22 +6852,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 423.7874, y: 92.7564}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3156991330822197813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8824761223195225115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d38ab2c4ed4444faf7f0521f332a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsEnglishSide: 1
-  TextEnglish: {fileID: 0}
-  TextTransleated: {fileID: 0}
-  VoisOB: {fileID: 0}
 --- !u!225 &26360617055847734
 CanvasGroup:
   m_ObjectHideFlags: 0

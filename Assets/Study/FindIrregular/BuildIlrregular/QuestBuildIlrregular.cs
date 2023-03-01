@@ -24,6 +24,7 @@ public class QuestBuildIlrregular : Quest, IQuestStarterWithIrregularList
 {
 
     public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestBuildIlrregularPrefab;
+    public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestBuildIlrregularPrefabSceneName;
     public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildIlrregularScorevalumes.AddScoreDialog;
     public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildIlrregularScorevalumes.RemoveScoreDialog;
     public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestBuildIlrregularScorevalumes.AddScoreWord;
@@ -41,7 +42,6 @@ public class QuestBuildIlrregular : Quest, IQuestStarterWithIrregularList
     }
     private List<Irregular> _NeedIrregulars;
     public int MinimalCount => 5;
-
 
 
     public void CreatQuest(List<Irregular> Irregulars) => NeedIrregulars = Irregulars;

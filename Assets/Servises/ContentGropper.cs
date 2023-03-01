@@ -27,7 +27,7 @@ public class ContentGropper : MonoBehaviour
     private void Update()
     {
         Pertime += Time.deltaTime;
-        if (Pertime > 1f) 
+        if (Pertime > .2f) 
         {
             FixPos();
             Pertime = 0;

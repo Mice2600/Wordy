@@ -24,6 +24,7 @@ namespace Study.BuildDialog
     public class QuestBuildDialog : Quest, IQuestStarterWithDialogList
     {
         public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogPrefab;
+        public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogPrefabSceneName;
         public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.AddScoreDialog;
         public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.RemoveScoreDialog;
         public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestBuildDialogScorevalumes.AddScoreWord;

@@ -42,12 +42,9 @@ namespace Study.FindOns
             if (FindonesContent.SellectedObject == null) return;
             if (Done) return;
             if (FindonesContent.SellectedObject.transform.parent == FindOnsSystem.QueatinContentParrent) return;
-            if (FindOnsSystem.OnApplayButton(FindonesContent.SellectedObject.Content as Word))
-            {
-                FindonesContent.SellectedObject.GetComponent<ColorChanger>().SetColor(Color.green);
-                Done = true;
-            }
-            else FindonesContent.SellectedObject.GetComponent<ColorChanger>().SetColor(Color.red);
+            FindOnsSystem.OnApplayButton(FindonesContent.SellectedObject.Content as Word);
+            Done = true;
+            
         }
     }
 }

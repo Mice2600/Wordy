@@ -21,6 +21,7 @@ namespace ProjectSettings
 public class QuestWriteIrregular : Quest, IQuestStarterWithIrregularList
 {
     public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularPrefab;
+    public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularName;
     public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.AddScoreDialog;
     public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.RemoveScoreDialog;
     public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestWriteIlrregularValumes.AddScoreWord;

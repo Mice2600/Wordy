@@ -14,8 +14,8 @@ public class ScoreChanginInfo : ContentObject
     {
         this.Content = content;
         ScoreText.text = (Score > 0 ? "+" : "-") + Mathf.Abs(Score);
-        GetComponent<ColorChanger>().SetColor(Score > 0 ? NiceColor : BadColor);
-        if (Score == 0) Destroy(gameObject); // TF?
+        if (Score == 0) ScoreText.text = "";
+        if(Score != 0) GetComponent<ColorChanger>().SetColor(Score > 0 ? NiceColor : BadColor);
     }
 
 }

@@ -27,7 +27,6 @@ namespace Study.TwoWordSystem
         {
             EnglishParrent.ClearChilds();
             int CC = Random.Range(5, 10);
-            Debug.Log(CC);
             for (int i = 0; i < CC; i++)
             {
                 Instantiate(ContntPrefab, EnglishParrent);
