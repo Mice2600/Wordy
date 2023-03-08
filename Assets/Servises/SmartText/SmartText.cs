@@ -38,9 +38,9 @@ namespace Servises.SmartText
                     {
                         if (DS.Contains(SearChSystem.SearchingString, StringComparison.OrdinalIgnoreCase)) 
                         {
-                            DS = TextUtulity.Color(DS, Color.Lerp(textMesh.color, Color.black, .2f));
                             DS = DS.Replace(SearChSystem.SearchingString,
                                 TextUtulity.UnderLine(TextUtulity.Color(SearChSystem.SearchingString, textMesh.color * 1.6f)));
+                            DS = TextUtulity.Color(DS, Color.Lerp(textMesh.color, Color.black, .2f));
                         }
                     }
                 }

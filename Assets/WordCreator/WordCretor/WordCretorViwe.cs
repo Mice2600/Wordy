@@ -53,19 +53,3 @@ namespace WordCreator.WordCretor
 
     }
 }
-public static partial class SceneComands // WordBaseViwe 
-{
-    public static void OpenSceneSellecetWordBase(Word word)
-    {
-        Engine.Get_Engine("Game").StartCoroutine(enumerator());
-        IEnumerator enumerator()
-        {
-
-            SceneManager.LoadScene("WordBaseViwe", LoadSceneMode.Single);
-            yield return null;
-            yield return null;
-            yield return null;
-            GameObject.FindObjectOfType<WordBaseViwe>().Lode(WordBase.Wordgs.IndexOf(word));
-        }
-    }
-}
