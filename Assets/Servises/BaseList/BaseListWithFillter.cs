@@ -59,7 +59,7 @@ namespace Servises.BaseList
 
         protected virtual void Update() 
         {
-            CloseSearchingButton.SetActive(!string.IsNullOrEmpty(SearchingString));
+            if(CloseSearchingButton != null) CloseSearchingButton.SetActive(!string.IsNullOrEmpty(SearchingString));
         }
 
         public void OnShearchValueChanged(string Value) 

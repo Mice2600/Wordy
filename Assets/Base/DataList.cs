@@ -36,7 +36,8 @@ namespace Base
             GameObject s = GameObject.Find("Save " + DataID + " Engine Dont Touch");
             if (s == null)
             {
-                s = new GameObject("Save " + DataID + " Engine Dont Touch", typeof(ListBaseEngine));
+                s = new GameObject("Save " + DataID + " Engine Dont Touch");
+                s.AddComponent<ListBaseEngine>();
                 GameObject.DontDestroyOnLoad(s);
             }
             s.GetComponent<ListBaseEngine>().OnSaveTime = Save;

@@ -1,8 +1,12 @@
+using Servises.SmartText;
 using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
+using Sirenix.Utilities;
+using SystemBox;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.WSA;
+using static UnityEngine.RuleTile.TilingRuleOutput;
+
 namespace Servises
 {
     public interface RePlaceController
@@ -13,51 +17,14 @@ namespace Servises
 
     public class RePlaceContents : MonoBehaviour
     {
-        private ScrollRect scrollRect
-        {
-            get
-            {
-                if (_scrollRect == null)
-                {
-                    Transform ToTest = transform;
-                    for (int i = 0; i < 20; i++)
-                    {
-                        if (ToTest.TryGetComponent<ScrollRect>(out ScrollRect wordContent))
-                        {
-                            _scrollRect = wordContent;
-                            break;
-                        }
-                        ToTest = ToTest.parent;
-                        if (ToTest == null) break;
-                    }
-                }
-                return _scrollRect;
-            }
-        }
+        private ScrollRect scrollRect => _scrollRect ??= transform.GetComponentInParent<ScrollRect>();
         private ScrollRect _scrollRect;
-        private RePlaceController wordBaseViwe
-        {
-            get
-            {
-                if (_wordBaseViwe == null)
-                {
-                    Transform ToTest = transform;
-                    for (int i = 0; i < 20; i++)
-                    {
-                        if (ToTest.TryGetComponent<RePlaceController>(out RePlaceController wordContent))
-                        {
-                            _wordBaseViwe = wordContent;
-                            break;
-                        }
-                        ToTest = ToTest.parent;
-                        if (ToTest == null) break;
-                    }
-                }
-                return _wordBaseViwe;
-            }
-        }
+        private RePlaceController wordBaseViwe => _wordBaseViwe ??= transform.GetComponentInParent<RePlaceController>();
         private RePlaceController _wordBaseViwe;
-
+        private void OnTransformChildrenChanged()
+        {
+            scrollRect.content.Childs().ForEach((a) => { if (a.TryGetComponent(out SmartSizer daa) && daa.OnSizeChanged != OnSizeChanged) { daa.OnSizeChanged += OnSizeChanged; } });
+        }
         public VerticalLayoutGroup VerticalLayoutGroup;
         public float Dddd;
         private void Update()
@@ -72,7 +39,7 @@ namespace Servises
                     if (!wordBaseViwe.TrayUp()) break;
                     scrollRect.content.GetChild(scrollRect.content.childCount - 1).SetAsFirstSibling();
                     scrollRect.content.position += new Vector3(0, scrollRect.content.GetChild(0).GetComponent<RectTransform>().rect.height + (VerticalLayoutGroup.spacing), 0);
-
+                    
                 }
             }
             if (Dddd < 30)
@@ -81,21 +48,18 @@ namespace Servises
                 {
                     if (!wordBaseViwe.TrayDown()) break;
                     scrollRect.content.GetChild(0).SetAsLastSibling();
-                    scrollRect.content.position -= new Vector3(0, scrollRect.content.GetChild(0).GetComponent<RectTransform>().rect.height + (VerticalLayoutGroup.spacing), 0);
+                    scrollRect.content.position -= new Vector3(0, scrollRect.content.GetChild(scrollRect.content.childCount -1).GetComponent<RectTransform>().rect.height + (VerticalLayoutGroup.spacing), 0);
                 }
             }
         }
-        [Button]
-        public void TrayUp()
+        public void OnSizeChanged((RectTransform rectTransform, Vector2 OlldSize) Value)
         {
-            scrollRect.content.GetChild(scrollRect.content.childCount - 1).SetAsFirstSibling();
-            scrollRect.content.position += new Vector3(0, scrollRect.content.GetChild(0).GetComponent<RectTransform>().rect.height + (VerticalLayoutGroup.spacing), 0);
+            if (Value.rectTransform.transform.GetSiblingIndex() < 4)
+            {
+                float result = Value.rectTransform.rect.height - Value.OlldSize.y;   
+                scrollRect.content.position += new Vector3(0, result, 0);
+            }
         }
-        [Button]
-        public void TrayDown()
-        {
-            scrollRect.content.GetChild(0).SetAsLastSibling();
-            scrollRect.content.position -= new Vector3(0, scrollRect.content.GetChild(0).GetComponent<RectTransform>().rect.height + (VerticalLayoutGroup.spacing), 0);
-        }
+
     }
 }
