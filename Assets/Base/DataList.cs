@@ -12,10 +12,6 @@ namespace Base
 {
     public interface IDataListComands 
     {
-        public this[int dd] 
-        {
-            get => null;
-        }
         static IDataListComands() 
         {
             DataLists = new List<IDataListComands>();
@@ -28,6 +24,9 @@ namespace Base
         public void Remove(Content Content);
         public bool Contains(Content Content);
         public bool Contains(string Content);
+        public Content GetContent(int Index);
+        public Content GetContent(string Index);
+        public void SetContent(int Index, Content content);
         public void FindContentsFromString(string ToDiagnost, System.Action<Content> OnFound);
     }
     public abstract class DataList<T> : List<T>, IDataListComands where T : Content
@@ -74,7 +73,7 @@ namespace Base
         }
         public Content GetContent(int Index) => this[Index];
         public Content GetContent(string Index) => this[IndexOf(tryCreat(Index))];
-        public void SetContent(int Index, Content content) => this[Index] = content;
+        public void SetContent(int Index, Content content) => this[Index] = content as T;
 
         public void Remove(Content Content)  => base.Remove(Content as T);
         public int IndexOf(Content Content) => base.IndexOf(Content as T);

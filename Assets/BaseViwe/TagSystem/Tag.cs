@@ -5,8 +5,19 @@ using UnityEngine;
 
 public class Tag 
 {
-    public Tag(string ID) => this.ID = ID;
-    public string ID { get; private set; }
+    public Tag(string ID) => this._ID = ID;
+    public string ID { get => _ID;
+        set 
+        {
+            if (_ID != value) 
+            {
+                PlayerPrefs.SetString(_ID, PlayerPrefs.GetString(ID));
+                PlayerPrefs.SetString(ID, "");
+            }
+            _ID = value;
+        } 
+    }
+    private string _ID;
     public string this[int Index] 
     {
         get

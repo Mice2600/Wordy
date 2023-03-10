@@ -44,6 +44,7 @@ public class IrregularBase : DataList<Irregular>
         Irregulars.Save();
         Irregulars = new IrregularBase();
     }
+    public override Irregular tryCreat(string Id) => new Irregular(Id, "", "", "", 0, false, "", "");
 #if UNITY_EDITOR
     /*
     public static string AddManural(string Base) 
@@ -125,6 +126,8 @@ public class IrregularBase : DataList<Irregular>
     {
         ProjectSettings.ProjectSettings.Mine.AddIrregulars(Irregulars);
     }
+
+    
 #endif
 }
 

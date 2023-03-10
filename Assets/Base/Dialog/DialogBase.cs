@@ -79,7 +79,7 @@ namespace Base.Dialog
                 }
             }
         }
-        
+        public override Dialog tryCreat(string Id) => new Dialog(Id, "", 0, false);
     }
 }
 namespace ProjectSettings

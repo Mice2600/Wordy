@@ -239,8 +239,9 @@ GameObject:
   - component: {fileID: 3360475617558948632}
   - component: {fileID: 2402829234710527417}
   - component: {fileID: 2418257204837509062}
+  - component: {fileID: 8916261957203143751}
   m_Layer: 0
-  m_Name: Ignore Tags
+  m_Name: ContentTagViwe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,3 +357,15 @@ MonoBehaviour:
   Arts:
   - {fileID: 2679848433033261195}
   - {fileID: 1497534902567195780}
+--- !u!114 &8916261957203143751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7260616998939960474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c123e7ba3f02049b17e32399ec0671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

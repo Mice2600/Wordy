@@ -48,12 +48,13 @@ namespace Base.Word
             Wordgs.Save();
             Wordgs = new WordBase();
         }//
+        public override Word tryCreat(string Id) => new Word(ID, "", 0, false, "", "");
 #if UNITY_EDITOR
         public static void AddAllToDefaultBase() 
         {
             ProjectSettings.ProjectSettings.Mine.AddWords(Wordgs);
         }
-
+        
 #endif
     }
 }
