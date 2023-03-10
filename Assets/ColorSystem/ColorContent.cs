@@ -1,7 +1,12 @@
 using Base;
 using Base.Dialog;
 using Base.Word;
+using Sirenix.OdinInspector;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using SystemBox;
 using UnityEngine;
 using UnityEngine.UI;
 namespace ProjectSettings 
@@ -46,4 +51,5 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
         if (IsActive) return color;
         return Color.Lerp(color, Color.black, .3f);
     }
+
 }

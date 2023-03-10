@@ -13,9 +13,8 @@ using Servises;
 using Servises.BaseList;
 using Base;
 
-public class IrregularBaseViwe : BaseListWithFillter<Irregular>
+public class IrregularBaseViwe : BaseListWithFillter
 {
-    public override List<Irregular> AllContents => IrregularBase.Irregulars;
-    private protected override int IndexOf(Content content) => base.Contents.IndexOf(content as Irregular);
-    protected override TList<Irregular> SearchComand(TList<Irregular> AllContents, string SearchString) => Search.SearchIrregularAll<Irregular>(AllContents, SearchingString);
+    public override List<Content> AllContents => new List<Content>(IrregularBase.Irregulars);
+    protected override TList<Content> SearchComand(TList<Content> AllContents, string SearchString) => Search.SearchIrregularAll<Content>(AllContents, SearchString);
 }

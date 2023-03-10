@@ -14,11 +14,9 @@ using Servises.BaseList;
 using Base;
 namespace BaseViwe.WordViwe
 {
-    public class WordBaseViwe : BaseListWithFillter<Word>
+    public class WordBaseViwe : BaseListWithFillter
     {
-        public override List<Word> AllContents => WordBase.Wordgs;
-        private protected override int IndexOf(Content content) => base.Contents.IndexOf(content as Word);
-        protected override TList<Word> SearchComand(TList<Word> AllContents, string SearchString) => Servises.Search.SearchAll<Word>(AllContents, SearchingString);
+        public override List<Content> AllContents => new List<Content>(WordBase.Wordgs);
         public void CreatNewContent() 
         {
             WordChanger.StartChanging();

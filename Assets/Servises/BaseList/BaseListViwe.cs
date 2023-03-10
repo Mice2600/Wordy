@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace Servises.BaseList
 {
-    public abstract class BaseListViwe<T> : MonoBehaviour, IRemoveButtonUser, RePlaceController where T : Content
+    public abstract class BaseListViwe : MonoBehaviour, IRemoveButtonUser, RePlaceController
     {
         private ScrollRect scrollRect => _scrollRect ??= GetComponentInChildren<ScrollRect>();
         private ScrollRect _scrollRect;
@@ -17,8 +17,8 @@ namespace Servises.BaseList
         [SerializeField]
         protected private Transform contentPattent;
         
-        public abstract List<T> Contents { get; }
-        private protected abstract int IndexOf(Content content);
+        public abstract List<Content> Contents { get; }
+        private protected virtual int IndexOf(Content content) => Contents.IndexOf(content);
         private protected virtual void Start()
         {
             Lode(0);
@@ -27,7 +27,7 @@ namespace Servises.BaseList
         {
             contentPattent.ClearChilds();
             if (From < 0) From = 0;
-            List<T> Contents = this.Contents;
+            List<Content> Contents = this.Contents;
             if (Contents.Count > 20)
             {
                 if (From + 20 > Contents.Count)
@@ -66,7 +66,7 @@ namespace Servises.BaseList
         {
             Content lastWord = contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>().Content;
             int LastIndex = IndexOf(lastWord);
-            List<T> Contents = this.Contents;
+            List<Content> Contents = this.Contents;
             if (LastIndex + 1 >= Contents.Count) return false;
             Content NewContent = Contents[LastIndex + 1];
             contentPattent.GetChild(0).GetComponent<ContentObject>().Content = NewContent;

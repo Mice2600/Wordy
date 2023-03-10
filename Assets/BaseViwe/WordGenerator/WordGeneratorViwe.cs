@@ -13,26 +13,25 @@ using UnityEngine.UIElements;
 
 namespace WordCreator.WordGenerator
 {
-    public class WordGeneratorViwe : BaseListWithFillter<Word>
+    public class WordGeneratorViwe : BaseListWithFillter
     {
 
-        private protected override int IndexOf(Content content) => Contents.IndexOf((content as Word));
-        public List<Word> WordsGenereted;
+        public List<Content> WordsGenereted;
         [SerializeField]
         private GameObject LodingObject;
 
-        public static List<Word> OflineData
+        public static List<Content> OflineData
         {
             get 
             {
                 if (_OflineData == null) 
                 {
-                    _OflineData = new List<Word>();
-                    Word[] DaaaTaa = new List<Word>(JsonHelper.FromJson<Word>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text)).ToArray();
+                    _OflineData = new List<Content>();
+                    Content[] DaaaTaa = new List<Content>(JsonHelper.FromJson<Word>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text)).ToArray();
                     if (DaaaTaa.Length > 1) Array.Sort(DaaaTaa);
                     for (int i = 0; i < DaaaTaa.Length; i++)
                     {
-                        Word dialog = DaaaTaa[i];
+                        Content dialog = DaaaTaa[i];
                         if (string.IsNullOrEmpty(dialog.EnglishSource)) continue;
                         _OflineData.Add(dialog);
                     }
@@ -41,7 +40,7 @@ namespace WordCreator.WordGenerator
             }
         }
 
-        public override List<Word> AllContents 
+        public override List<Content> AllContents 
         {
             get 
             {
@@ -50,7 +49,7 @@ namespace WordCreator.WordGenerator
             }
         }
 
-        public static List<Word> _OflineData;
+        public static List<Content> _OflineData;
 
 
         private protected override void Start()
@@ -75,9 +74,9 @@ namespace WordCreator.WordGenerator
             void LoadNewOffline() 
             {
                 
-                TList<Word> O = OflineData;
+                TList<Content> O = OflineData;
                 List<Word> gann = new List<Word>();
-                for (int i = 0; i < 150; i++) gann.Add(O.RemoveRandomItem());
+                for (int i = 0; i < 150; i++) gann.Add(O.RemoveRandomItem() as Word);
                 Resulrat(gann);
             }
             void LoadNewOnline() 
@@ -88,7 +87,7 @@ namespace WordCreator.WordGenerator
             }
             void Resulrat(List<Word> words)
             {
-                WordsGenereted = words;
+                WordsGenereted = new List<Content>(words) ;
                 Lode(0);
                 contentPattent.Childs().ForEach(child =>
                 {
@@ -103,7 +102,5 @@ namespace WordCreator.WordGenerator
         {
             WordBase.Wordgs.Add((Content.GetComponent<ContentObject>().Content as Word));
         }
-
-        protected override TList<Word> SearchComand(TList<Word> AllContents, string SearchString) => Servises.Search.SearchAll<Word>(AllContents, SearchingString);
     }
 }

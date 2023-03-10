@@ -12,11 +12,22 @@ namespace Base
 {
     public interface IDataListComands 
     {
+        public this[int dd] 
+        {
+            get => null;
+        }
+        static IDataListComands() 
+        {
+            DataLists = new List<IDataListComands>();
+        }
+        public static List<IDataListComands> DataLists;
+        public void SetUp_Commands() => DataLists.Add(this);
         public void Add(Content Content);
         public void Save();
         public int IndexOf(Content Content);
         public void Remove(Content Content);
         public bool Contains(Content Content);
+        public bool Contains(string Content);
         public void FindContentsFromString(string ToDiagnost, System.Action<Content> OnFound);
     }
     public abstract class DataList<T> : List<T>, IDataListComands where T : Content
@@ -32,15 +43,20 @@ namespace Base
                 if (string.IsNullOrEmpty(dialog.EnglishSource)) continue;
                 base.Add(dialog);
             }
-            if (!Application.isPlaying) return;
-            GameObject s = GameObject.Find("Save " + DataID + " Engine Dont Touch");
-            if (s == null)
+
+            if (Application.isPlaying) 
             {
-                s = new GameObject("Save " + DataID + " Engine Dont Touch");
-                s.AddComponent<ListBaseEngine>();
-                GameObject.DontDestroyOnLoad(s);
+                GameObject s = GameObject.Find("Save " + DataID + " Engine Dont Touch");
+                if (s == null)
+                {
+                    s = new GameObject("Save " + DataID + " Engine Dont Touch");
+                    s.AddComponent<ListBaseEngine>();
+                    GameObject.DontDestroyOnLoad(s);
+                }
+                s.GetComponent<ListBaseEngine>().OnSaveTime = Save;
             }
-            s.GetComponent<ListBaseEngine>().OnSaveTime = Save;
+
+            (this as IDataListComands).SetUp_Commands();
         }
 
         protected abstract string DataID { get; }
@@ -56,11 +72,15 @@ namespace Base
             if (Contains(Content as T)) return;
             base.Add(Content as T);
         }
+        public Content GetContent(int Index) => this[Index];
+        public Content GetContent(string Index) => this[IndexOf(tryCreat(Index))];
+        public void SetContent(int Index, Content content) => this[Index] = content;
 
         public void Remove(Content Content)  => base.Remove(Content as T);
-
         public int IndexOf(Content Content) => base.IndexOf(Content as T);
         public bool Contains(Content Content) => base.Contains(Content as T);
+        public bool Contains(string Content) => base.Contains(tryCreat(Content));
+        public abstract T tryCreat(string Id);
         public List<T> ActiveItems => new List<T>(this.Where(a => a.Active));
         public List<T> PassiveItems => new List<T>(this.Where(a => !a.Active));
         public List<T> GetContnetList(int ListCount)

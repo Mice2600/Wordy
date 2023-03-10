@@ -16,24 +16,24 @@ namespace Servises.BaseList
         public void OnShearchValueChanged(string Value);
         public string SearchingString { get; }
     }
-    public abstract class BaseListWithFillter<T> : BaseListViwe<T>, ISearchList where T : Content
+    public abstract class BaseListWithFillter : BaseListViwe, ISearchList
     {
         [Required,SerializeField]
         private GameObject CloseSearchingButton;
-        public abstract List<T> AllContents { get; }
-        public override List<T> Contents 
+        public abstract List<Content> AllContents { get; }
+        public override List<Content> Contents 
         {
             get 
             {
                 if (SerchedContents == null) 
                 {
-                    if (OnlyActive) return  new TList<T>(AllContents.Where(stringToCheck => stringToCheck.Active));
+                    if (OnlyActive) return  new TList<Content>(AllContents.Where(stringToCheck => stringToCheck.Active));
                     return AllContents; 
                 }
                 return SerchedContents;
             }
         }
-        private List<T> SerchedContents;
+        private List<Content> SerchedContents;
         
         public bool OnlyActive;
         public void SetOnlyActive(bool Value) 
@@ -49,8 +49,8 @@ namespace Servises.BaseList
             }
             else 
             {
-                SerchedContents = Servises.Search.SearchAll<T>(AllContents, SearchingString);
-                if(OnlyActive) SerchedContents = new TList<T>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
+                SerchedContents = Servises.Search.SearchAll<Content>(AllContents, SearchingString);
+                if(OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
             }
             base.Refresh();
         }
@@ -70,11 +70,11 @@ namespace Servises.BaseList
             {
                 SerchedContents = SearchComand(AllContents, SearchingString);
                 //SerchedContents = Servises.Search.SearchAll<T>(AllContents, SearchingString);
-                if (OnlyActive) SerchedContents = new TList<T>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
+                if (OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
             }
             Lode(0);
         }
-        protected abstract TList<T> SearchComand(TList<T> AllContents, string SearchString);
+        protected virtual TList<Content> SearchComand(TList<Content> AllContents, string SearchString) => Servises.Search.SearchAll(AllContents, SearchString);
     }
 
 }

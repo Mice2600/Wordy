@@ -13,19 +13,16 @@ using UnityEngine;
 
 namespace WordCreator.DialogDefaultBase
 {
-    public class DialogDefaultBaseViwe : BaseListWithFillter<Dialog>
+    public class DialogDefaultBaseViwe : BaseListWithFillter
     {
-
-        private protected override int IndexOf(Content content) => Contents.IndexOf((content as Dialog));
-        public List<Dialog> WordsGenereted;
-
-        public static List<Dialog> OflineData
+        public List<Content> WordsGenereted;
+        public static List<Content> OflineData
         {
             get
             {
                 if (_OflineData == null)
                 {
-                    _OflineData = new List<Dialog>();
+                    _OflineData = new List<Content>();
                     Dialog[] DaaaTaa = new List<Dialog>(JsonHelper.FromJson<Dialog  >(ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text)).ToArray();
                     if (DaaaTaa.Length > 1) Array.Sort(DaaaTaa);
                     for (int i = 0; i < DaaaTaa.Length; i++)
@@ -39,7 +36,7 @@ namespace WordCreator.DialogDefaultBase
             }
         }
 
-        public override List<Dialog> AllContents
+        public override List<Content> AllContents
         {
             get
             {
@@ -48,7 +45,7 @@ namespace WordCreator.DialogDefaultBase
             }
         }
 
-        public static List<Dialog> _OflineData;
+        public static List<Content> _OflineData;
 
 
         private protected override void Start()
@@ -63,12 +60,12 @@ namespace WordCreator.DialogDefaultBase
             void LoadNewOffline()
             {
 
-                TList<Dialog> O = OflineData;
-                List<Dialog> gann = new List<Dialog>();
+                TList<Content> O = OflineData;
+                List<Content> gann = new List<Content>();
                 for (int i = 0; i < 150; i++) gann.Add(O.RemoveRandomItem());
                 Resulrat(gann);
             }
-            void Resulrat(List<Dialog> words)
+            void Resulrat(List<Content> words)
             {
                 WordsGenereted = words;
                 Lode(0);
@@ -84,7 +81,5 @@ namespace WordCreator.DialogDefaultBase
         {
             DialogBase.Dialogs.Add((Content.GetComponent<ContentObject>().Content as Dialog));
         }
-
-        protected override TList<Dialog> SearchComand(TList<Dialog> AllContents, string SearchString) => Servises.Search.SearchAll<Dialog>(AllContents, SearchingString);
     }
 }
