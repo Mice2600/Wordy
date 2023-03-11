@@ -12,6 +12,12 @@ public static class TagSystem
         JsonHelper.FromJsonList<string>(PlayerPrefs.GetString("TagSystemIDSaver")).ForEach((a)=> Tags.Add(new Tag(a)));
     }
     private static List<Tag> Tags;
+    public static TList<string> GetAllTagIdes() 
+    {
+        TList<string> TagNames = new TList<string>();
+        for (int i = 0; i < Tags.Count; i++) TagNames.Add(Tags[i].ID);
+        return TagNames;
+    }
     public static Tag GetTag(string ID) => Tags.Find((a) => a.ID == ID);
     public static TList<string> GetBlongTags(string contentID) 
     {
@@ -70,4 +76,17 @@ public static class TagSystem
         Tags.ForEach((a) => TagIdes.Add(a.ID));
         PlayerPrefs.SetString("TagSystemIDSaver", JsonHelper.ToJson<string>(TagIdes));
     }
+
+
+    public static void AddContent(string TagID, string ContentID) 
+    {
+        if (!ContainsTag(TagID)) return;
+        GetTag(TagID).Add(ContentID);
+    }
+    public static void RemoveContent(string TagID, string ContentID) 
+    {
+        if (!ContainsTag(TagID)) return;
+        GetTag(TagID).Remove(ContentID);
+    }
+
 }

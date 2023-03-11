@@ -25,7 +25,7 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
     private protected override void Start()
     {
         base.Start();
-        ContentObject = GetComponent<ContentObject>();
+        ContentObject = GetComponentInParent<ContentObject>();
         ContentLoopColors = ProjectSettings.ProjectSettings.Mine.ContentLoopColors;
     }
 

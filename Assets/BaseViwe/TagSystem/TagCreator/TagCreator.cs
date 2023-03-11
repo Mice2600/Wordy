@@ -1,10 +1,23 @@
+using Newtonsoft.Json.Linq;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
+namespace ProjectSettings 
+{
+    public partial class ProjectSettings 
+    {
+        [Required]
+        public GameObject TagCreatorViwe;
+    }
+}
+
 public class TagCreator : MonoBehaviour
 {
+    public static void Open(System.Action OnNewTagCreated) => Instantiate(ProjectSettings.ProjectSettings.Mine.TagCreatorViwe).GetComponent<TagCreator>().OnNewTagCreated = OnNewTagCreated;
     private TMPro.TMP_InputField textContainer => _textContainer ??= GetComponentInChildren<TMPro.TMP_InputField>();
     private TMPro.TMP_InputField _textContainer;
     public System.Action OnNewTagCreated;
@@ -23,8 +36,10 @@ public class TagCreator : MonoBehaviour
             Replace(@"=", "").Replace(@"+", "").Replace(@"`", "").Replace(@"~", "").
             Replace(@"|", "").Replace(@"'", "").Replace('"', ' ').Replace(@";", "").
             Replace(@":", "").Replace(@"?", "").Replace(@".", "").Replace(@",", "");
-        Value = Value.Remove(15);
+        
+        if (Value.Length > 15)Value = Value.Remove(15);
         textContainer.text = Value;
+        CurrentValue = Value;
     }
     
     
@@ -34,9 +49,11 @@ public class TagCreator : MonoBehaviour
         if (TagSystem.CreatTag(CurrentValue)) { Destroy(gameObject); OnNewTagCreated?.Invoke(); }
     }
 
-    public bool TestText(out string Massage) 
+    public bool TestText(out string Massage)
     {
-        if (string.IsNullOrEmpty(CurrentValue)) { Massage = "Write"; return false;}
+        if (string.IsNullOrEmpty(this.CurrentValue)) { Massage = "Write"; return false;}
+        string CurrentValue = "@" + this.CurrentValue;
+        if (TagSystem.ContainsTag(CurrentValue)) { Massage = "Allredy Have"; return false; }
         Massage = "Applay";
         return true;
     }

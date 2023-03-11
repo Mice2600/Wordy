@@ -24,7 +24,10 @@ public class ContentTagViwe : MonoBehaviour
         Resolt = Resolt.Replace("@", " @");
         MoveText.Text = Resolt;
     }
-
+    public void onButton() 
+    {
+        TagContentList.Open(ContentObject.Content, () => { Change(ContentObject.Content); });
+    }
 
 
 }

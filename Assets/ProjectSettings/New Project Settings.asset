@@ -25,8 +25,12 @@ MonoBehaviour:
   DiscretionDialog: {fileID: 5128650482689109638, guid: a6eb0c2e56148e049a068416e72bdbc1, type: 3}
   DefalultIrregular: {fileID: 4900000, guid: 7e22acab76b277b4095a70a71d2a6630, type: 3}
   DiscretionIrregular: {fileID: 3940078003728719836, guid: 032d1ad23120f2b4da823d765639fd0a, type: 3}
-  DiscretionWord: {fileID: 8496439981645526867, guid: 349a96abbad001a4489ff5968d91b17f, type: 3}
+  DiscretionWord: {fileID: 8284152216871096949, guid: 5887a96017b852d42bee61c51a794b1e, type: 3}
   DefalultWords: {fileID: 4900000, guid: b8d1528e2cd59734290ca53d7cac67dd, type: 3}
+  DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
+  DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
+  TagContentListViwe: {fileID: 2726195047587263085, guid: 6f89b5a20b2290846a7aaf149b8a222d, type: 3}
+  TagCreatorViwe: {fileID: 6608090224564072103, guid: 9957a4fa4ce74de47aa835febb52c857, type: 3}
   ContentLoopColors:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 0, a: 1}
@@ -57,8 +61,6 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
-  DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
-  DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
   QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
   QuestBuildDialogPrefabSceneName: Build Dialog
   QuestBuildDialogScorevalumes:

@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/WordCreator/WordCretor/WordCretor.unity
     guid: 89be3827c5ba1584bbc516d6d05c5661
   - enabled: 1
-    path: Assets/BaseViwe/WordGenerator/WordGenerator.unity
+    path: Assets/BaseViwe/Word/WordGenerator/WordGenerator.unity
     guid: 428843d4dc54b6c49821959c53e082e1
   - enabled: 1
     path: Assets/BaseViwe/Irregular/IrregularBaseViwe.unity
@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/Study/FindIrregular/WriteIrregular/WriteIrregular.unity
     guid: b760fa6f43c0be94b83c9771accdaf63
   - enabled: 1
-    path: Assets/BaseViwe/DialogDefaultBase/DialogDefaultBase.unity
+    path: Assets/BaseViwe/Dialog/DialogDefaultBase/DialogDefaultBase.unity
     guid: db7dfda7e53590f429af7dcf887c8348
   - enabled: 1
     path: Assets/Study/aSystem/Random/Random.unity

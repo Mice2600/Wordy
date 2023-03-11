@@ -11,7 +11,7 @@ public class MoveText : OptimizedBehaver
     private protected override void Start()
     {
         base.Start();
-        Text = "@Hefaw @dasdj @tsadwf @fksofh @fsodiuf @dasdjikh ";
+        //Text = "@Hefaw @dasdj @tsadwf @fksofh @fsodiuf @dasdjikh ";
     }
     private string Orginal;
     private string ParsedText; 
@@ -31,12 +31,11 @@ public class MoveText : OptimizedBehaver
 
     protected override void PerUpdate()
     {
-        Debug.Log("d");
         if (TMP_Text.GetParsedText().Contains("…"))
         {
             ParsedText += ParsedText[0];
             ParsedText = ParsedText.Remove(0, 1);
-            TMP_Text.text = ParsedText;
         }
+        TMP_Text.text = ParsedText;
     }
 }

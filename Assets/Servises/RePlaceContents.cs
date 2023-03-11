@@ -4,8 +4,6 @@ using Sirenix.Utilities;
 using SystemBox;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.WSA;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 namespace Servises
 {
