@@ -58,6 +58,8 @@ namespace Base
             (this as IDataListComands).SetUp_Commands();
         }
 
+        public void Avake() { }
+
         protected abstract string DataID { get; }
         public void Save()
         {

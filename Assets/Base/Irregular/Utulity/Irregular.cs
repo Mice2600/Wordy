@@ -18,6 +18,7 @@ public partial class Irregular : Content, IDiscreption, IIrregular, ISpeeker
 
     public override IDataListComands BaseCommander => IrregularBase.Irregulars;
     public override GameObject DiscretioVewe => ProjectSettings.ProjectSettings.Mine.DiscretionIrregular;
+    public override GameObject ContentObject => ProjectSettings.ProjectSettings.Mine.ContentObjectIrregular;
 
     public Irregular(string EnglishSource, string RussianSource, string SimplePast, string PastParticiple, float Score, bool Active, string EnglishDiscretion, string RusianDiscretion) : base(EnglishSource, RussianSource, Score, Active)
     {
@@ -28,12 +29,19 @@ public partial class Irregular : Content, IDiscreption, IIrregular, ISpeeker
         this.SimplePast = SimplePast;
         this.PastParticiple = PastParticiple;
     }
+    
+
+    
+    public override bool Equals(object obj) => base.Equals(obj) && obj is Irregular;
+    public override int GetHashCode() => base.GetHashCode();
 }
 namespace ProjectSettings
 {
     public partial class ProjectSettings
     {
-        [FoldoutGroup("Discretion")]
+        [FoldoutGroup("Discretion"), Required]
         public GameObject DiscretionIrregular;
+        [FoldoutGroup("ContentObject"), Required]
+        public GameObject ContentObjectIrregular;
     }
 }

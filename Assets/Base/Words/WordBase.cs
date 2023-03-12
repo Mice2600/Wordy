@@ -48,7 +48,8 @@ namespace Base.Word
             Wordgs.Save();
             Wordgs = new WordBase();
         }//
-        public override Word tryCreat(string Id) => new Word(ID, "", 0, false, "", "");
+        public override Word tryCreat(string EnglishID) => new Word(EnglishID, "", 0, false, "", "");
+
 #if UNITY_EDITOR
         public static void AddAllToDefaultBase() 
         {

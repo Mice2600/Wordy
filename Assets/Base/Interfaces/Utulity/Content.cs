@@ -15,6 +15,7 @@ public abstract partial class Content : IComparable // Utulity
 
     public abstract IDataListComands BaseCommander { get; }
     public abstract GameObject DiscretioVewe { get; }
+    public abstract GameObject ContentObject { get; }
     
     #pragma warning disable 612, 618 
     public float ScoreConculeated 

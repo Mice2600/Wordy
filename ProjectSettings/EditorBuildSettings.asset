@@ -27,11 +27,17 @@ EditorBuildSettings:
     path: Assets/Study/WriteWord/WriteWord.unity
     guid: b5ebbcd4faf7c3f4cace0ca145d06295
   - enabled: 1
+    path: Assets/BaseViwe/TagSystem/TagViwe.unity
+    guid: f097142853274734d9900c8b389b5252
+  - enabled: 1
     path: Assets/WordCreator/DialogCreator/DialogCreator.unity
     guid: d25fbd4249ff63f4a87765cfaebe68b3
   - enabled: 1
     path: Assets/Study/FindOnes/FindOns/FindOns.unity
     guid: 4f5c473586be971479638b91cbcd6beb
+  - enabled: 1
+    path: Assets/Study/aSystem/StadyScene.unity
+    guid: 83719a376f2af974f954773bdaa71b80
   - enabled: 1
     path: Assets/Study/TwoWordSystem/TwoWordSystem.unity
     guid: b830123fad04d154d912856e3d54aa33

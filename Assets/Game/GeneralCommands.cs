@@ -5,10 +5,21 @@ using SystemBox.Engine;
 using System.Linq;
 using UnityEngine.SceneManagement;
 using Servises.BaseList;
+using Servises;
+using Base.Dialog;
+using Base.Word;
 
-public static class GeneralCommands 
+public class GeneralCommands : MonoBehaviour
 {
-    
+    public string FirsSceneName;
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+        SceneManager.LoadScene(FirsSceneName, LoadSceneMode.Single);
+        DialogBase.Dialogs.Avake();
+        WordBase.Wordgs.Avake();
+        IrregularBase.Irregulars.Avake();
+    }
 }
 public static partial class SceneComands
 {

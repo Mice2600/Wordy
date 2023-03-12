@@ -9,6 +9,10 @@ public static class TagSystem
     static TagSystem() 
     {
         Tags = new List<Tag>();
+        PlayerPrefs.GetString("TagSystemIDSaver");
+
+
+
         JsonHelper.FromJsonList<string>(PlayerPrefs.GetString("TagSystemIDSaver")).ForEach((a)=> Tags.Add(new Tag(a)));
     }
     private static List<Tag> Tags;

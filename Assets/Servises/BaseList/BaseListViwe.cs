@@ -36,21 +36,18 @@ namespace Servises.BaseList
 
             }
             else for (int i = 0; i < Contents.Count; i++) CreatOne(i);
-            void CreatOne(int Index)
-            {
-                GameObject NM = Instantiate(contentPrefab, contentPattent);
-                Content NewContent = Contents[Index];
-                NM.GetComponent<ContentObject>().Content = NewContent;
-
-
-            }
             //contentPattent.GetComponent<RectTransform>().rect.Set(0, 0, 0, 0);
 
             scrollRect.velocity = Vector2.zero;
             scrollRect.verticalNormalizedPosition = 1;
 
         }
-
+        private void CreatOne(int Index) 
+        {
+            GameObject NM = Instantiate((contentPrefab != null) ? contentPrefab : Contents[Index].ContentObject, contentPattent);
+            Content NewContent = Contents[Index];
+            NM.GetComponent<ContentObject>().Content = NewContent;
+        }
         public virtual void Refresh()
         {
             if (contentPattent.childCount == 0) 
@@ -69,8 +66,22 @@ namespace Servises.BaseList
             List<Content> Contents = this.Contents;
             if (LastIndex + 1 >= Contents.Count) return false;
             Content NewContent = Contents[LastIndex + 1];
-            contentPattent.GetChild(0).GetComponent<ContentObject>().Content = NewContent;
+
+
+            ContentObject FirsesCurrentContnet = contentPattent.GetChild(0).GetComponent<ContentObject>();
+            if (contentPrefab == null && NewContent.ContentObject != FirsesCurrentContnet.Content.ContentObject)
+            {
+                Destroy(FirsesCurrentContnet.gameObject);
+                GameObject NM = Instantiate(NewContent.ContentObject, contentPattent);
+                NM.transform.SetAsFirstSibling();
+                NM.GetComponent<ContentObject>().Content = NewContent;
+            }
+            else FirsesCurrentContnet.Content = NewContent;
             return true;
+
+            
+            
+
         }
         public virtual bool TrayUp()
         {
@@ -80,7 +91,19 @@ namespace Servises.BaseList
 
             Content NewContent = Contents[FirstIndex - 1];
 
-            contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>().Content = NewContent;
+            
+
+            ContentObject LastsCurrentContnet = contentPattent.GetChild(contentPattent.childCount - 1).GetComponent<ContentObject>();
+            if (contentPrefab == null && NewContent.ContentObject != LastsCurrentContnet.Content.ContentObject)
+            {
+                Destroy(LastsCurrentContnet.gameObject);
+                GameObject NM = Instantiate(NewContent.ContentObject, contentPattent);
+                NM.transform.SetAsLastSibling();
+                NM.GetComponent<ContentObject>().Content = NewContent;
+            }
+            else LastsCurrentContnet.Content = NewContent;
+
+
             return true;
         }
 

@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -425,7 +425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -812,17 +811,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2681,7 +2672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a9a93eab00bb047a9399fb270a8f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentPrefab: {fileID: 8894941232974717581, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
+  contentPrefab: {fileID: 0}
   contentPattent: {fileID: 1218133415}
   CloseSearchingButton: {fileID: 722643223}
   OnlyActive: 0
@@ -3113,6 +3104,7 @@ GameObject:
   - component: {fileID: 2082200175}
   - component: {fileID: 2082200174}
   - component: {fileID: 2082200178}
+  - component: {fileID: 2082200179}
   m_Layer: 5
   m_Name: DefaulBase
   m_TagString: Untagged
@@ -3252,19 +3244,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2082200176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1794469995}
-        m_TargetAssemblyTypeName: BaseViwe.WordViwe.WordBaseViwe, Assembly-CSharp
-        m_MethodName: CreatNewContent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2082200179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082200172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57282a9ecc075344f812a1f904e8f9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: WordGenerator
 --- !u!224 &4890500795772230381 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
@@ -3275,7 +3268,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 1218133415}
     m_Modifications:
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
@@ -3296,7 +3289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchorMin.x
@@ -3304,7 +3297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3344,11 +3337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 540
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -120.3352
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084660943930495625, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3379,7 +3372,5 @@ PrefabInstance:
       value: 64.55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}

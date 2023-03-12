@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 2729453610191597610}
   - component: {fileID: 1719066567872739222}
   m_Layer: 5
-  m_Name: Word With Sound Info
+  m_Name: Dialog Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

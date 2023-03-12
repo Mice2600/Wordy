@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -674,7 +674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1061,17 +1060,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1362,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57282a9ecc075344f812a1f904e8f9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: DialogCreator
+  SceneName: DialogDefaultBase
 --- !u!114 &1076897772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2336,7 +2327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b7e72ecbe611da459ce6d32de5fbef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentPrefab: {fileID: 983941666089937557, guid: 80e28cb604d4a554981e5c271d25900e, type: 3}
+  contentPrefab: {fileID: 0}
   contentPattent: {fileID: 1218133415}
   CloseSearchingButton: {fileID: 1927808717}
   OnlyActive: 0
@@ -3274,7 +3265,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 1218133415}
     m_Modifications:
     - target: {fileID: 983941666089937557, guid: 80e28cb604d4a554981e5c271d25900e, type: 3}
@@ -3366,9 +3357,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e28cb604d4a554981e5c271d25900e, type: 3}
 --- !u!224 &4890500795772230381 stripped
 RectTransform:

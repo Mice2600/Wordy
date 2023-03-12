@@ -32,7 +32,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4084660943930495625}
+  m_Father: {fileID: 8894941233460173454}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.375
+  m_FillAmount: 0.557
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 597013342027213708}
   - component: {fileID: 1868395665209156761}
   m_Layer: 5
-  m_Name: Word With Sound Info
+  m_Name: Word Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,14 +134,13 @@ RectTransform:
   m_Children:
   - {fileID: 8894941233460173454}
   - {fileID: 8894941234156319976}
-  - {fileID: 4995239778832415365}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 540, y: -120.3352}
-  m_SizeDelta: {x: 920.0557, y: 140.6704}
+  m_SizeDelta: {x: 988.6, y: 140.6704}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &597013342027213708
 MonoBehaviour:
@@ -284,13 +283,14 @@ RectTransform:
   m_Children:
   - {fileID: 8894941234577327927}
   - {fileID: 8894941234194159342}
+  - {fileID: 4995239778832415365}
   m_Father: {fileID: 4084660943930495625}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 374.81, y: 0}
-  m_SizeDelta: {x: 749.61, y: 140.6704}
+  m_AnchoredPosition: {x: 412.19553, y: 0}
+  m_SizeDelta: {x: 824.3812, y: 140.6704}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8894941233460173450
 CanvasRenderer:

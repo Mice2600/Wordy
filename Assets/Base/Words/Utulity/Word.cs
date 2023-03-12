@@ -12,6 +12,7 @@ namespace Base.Word
         string ISpeeker.SpeekText => EnglishSource;
         public override IDataListComands BaseCommander => WordBase.Wordgs;
         public override GameObject DiscretioVewe => ProjectSettings.ProjectSettings.Mine.DiscretionWord;
+        public override GameObject ContentObject => ProjectSettings.ProjectSettings.Mine.ContentObjectWord;
 
         public Word(string EnglishSource, string RussianSource, float Score, bool Active, string EnglishDiscretion, string RusianDiscretion) : base(EnglishSource, RussianSource, Score, Active)
         {
@@ -19,6 +20,8 @@ namespace Base.Word
             this.EnglishDiscretion = EnglishDiscretion;
             this.RusianDiscretion = RusianDiscretion;
         }
+        public override bool Equals(object obj) => base.Equals(obj) && obj is Word;
+        public override int GetHashCode() => base.GetHashCode();
     }
 
   
@@ -28,7 +31,9 @@ namespace ProjectSettings
 {
     public partial class ProjectSettings
     {
-        [FoldoutGroup("Discretion")]
+        [FoldoutGroup("Discretion"), Required]
         public GameObject DiscretionWord;
+        [FoldoutGroup("ContentObject"), Required]
+        public GameObject ContentObjectWord;
     }
 }
