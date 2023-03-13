@@ -9,7 +9,7 @@ using System;
 namespace Servises.SmartText
 {
     [RequireComponent(typeof(TMP_Text))]
-    public abstract class SmartText : OptimizedBehaver, IQueueUpdate
+    public abstract class SmartText : OptimizedBehaver//, IQueueUpdate
     {
         private ISearchList SearChSystem;
         private protected override void Start()
@@ -25,7 +25,11 @@ namespace Servises.SmartText
         public string BiforText, AfterTextText;
         private protected TMP_Text textMesh => _textMesh ??= GetComponent<TMP_Text>();
         private protected TMP_Text _textMesh;
-
+        protected override void Update()
+        {
+            base.Update();
+            TurnUpdate();
+        }
         public virtual void TurnUpdate() 
         {
             

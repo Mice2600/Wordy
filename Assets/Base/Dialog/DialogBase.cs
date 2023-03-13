@@ -16,7 +16,7 @@ namespace Base.Dialog
         static DialogBase()
         {
 
-            if (Application.isEditor && false) 
+            if (Application.isEditor) 
             {
                 if (PlayerPrefs.GetInt(ID + "default set") == 0)
                 {

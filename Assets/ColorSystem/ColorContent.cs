@@ -16,7 +16,7 @@ namespace ProjectSettings
         public Gradient ContentLoopColors;
     }
 }
-public class ColorContent : OptimizedBehaver, IQueueUpdate
+public class ColorContent : OptimizedBehaver//, IQueueUpdate
 {
     [SerializeField]
     private List<MaskableGraphic> Arts;
@@ -28,7 +28,11 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
         ContentObject = GetComponentInParent<ContentObject>();
         ContentLoopColors = ProjectSettings.ProjectSettings.Mine.ContentLoopColors;
     }
-
+    protected override void Update()
+    {
+        base.Update();
+        TurnUpdate();
+    }
     public void TurnUpdate()
     {
         if (ContentObject == null) return;
