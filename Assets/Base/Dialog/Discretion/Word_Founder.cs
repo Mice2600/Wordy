@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WordFounder : MonoBehaviour
+public class Word_Founder : MonoBehaviour
 {
     public GameObject SingleWord;
     void Start()

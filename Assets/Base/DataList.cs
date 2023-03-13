@@ -111,15 +111,8 @@ namespace Base
                 return dsa;
             
             }
-            // int ListCount
-
-            //5% 90-100    -5
-            //10% 70-90    -15
-            //30% 50-70    -45
-            //40% 35-50    -85
-            //10% 10-35    -95
-            //5% 0-10      -10
-            List<T> L90_100 = new List<T>();
+            /*
+             List<T> L90_100 = new List<T>();
             List<T> L70_90 = new List<T>();
             List<T> L50_70 = new List<T>();
             List<T> L35_50 = new List<T>();
@@ -164,6 +157,16 @@ namespace Base
 
 
             return rezultat;
+             */
+            // int ListCount
+
+            //5% 90-100    -5
+            //10% 70-90    -15
+            //30% 50-70    -45
+            //40% 35-50    -85
+            //10% 10-35    -95
+            //5% 0-10      -10
+
         }
         public T GetContnet() => this[UnityEngine.Random.Range(0, Count)];
         private IEnumerator FindContentsFromStringCoroutine(string Todiagnist, System.Action<T> Founded) 
@@ -184,7 +187,19 @@ namespace Base
     public class ListBaseEngine : MonoBehaviour
     {
         public System.Action OnSaveTime;
-        private void OnLevelWasLoaded(int level) => OnSaveTime?.Invoke();
+        private void Start()
+        {
+            StartCoroutine(enumerator());
+            IEnumerator enumerator() 
+            {
+                while (true) 
+                {
+                    yield return new WaitForSeconds(10);
+                    OnSaveTime.Invoke();
+                }
+            }
+
+        }
         private void OnApplicationQuit() => OnSaveTime?.Invoke();
     }
 }

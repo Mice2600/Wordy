@@ -111,7 +111,7 @@ namespace Servises.BaseList
         public void OnRemoveButton(Content content)
         {
             content.BaseCommander.Remove(content);
-            FindObjectOfType<DiscretionViwe>()?.DestroyUrself();
+            FindObjectOfType<DiscretionObject>()?.DestroyUrself();
             Refresh();
         }
 

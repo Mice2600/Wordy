@@ -10,13 +10,13 @@ using Base.Dialog;
 using System;
 
 
-public class DiscretionViwe : ContentObject
+public class DiscretionObject : ContentObject
 {
     protected private System.Action OnClose;
     public static void Show(Content Content, System.Action OnClose = null) 
     {
 
-        DiscretionViwe N = Instantiate(Content.DiscretioVewe, null).GetComponentInChildren<DiscretionViwe>();
+        DiscretionObject N = Instantiate(Content.DiscretioVewe, null).GetComponentInChildren<DiscretionObject>();
         N.Content = Content;
         N.OnClose = OnClose;      
     }

@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiscretionResultat : DiscretionViwe
+public class DiscretionResultat : DiscretionObject
 {
     [SerializeField]
     [Required]

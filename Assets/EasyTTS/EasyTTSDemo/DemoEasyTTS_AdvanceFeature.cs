@@ -14,11 +14,12 @@ public class DemoEasyTTS_AdvanceFeature: MonoBehaviour {
 	float rate = 0.5f;
 
 	void Start(){
+		/*
 		float screenRate = (float)600 / Screen.width;
 		if( screenRate > 1 ) screenRate = 1;
 		int width = (int)(Screen.width * screenRate);
 		int height = (int)(Screen.height * screenRate);
-		Screen.SetResolution( width , height, true, 15);
+		Screen.SetResolution( width , height, true, 15);*/
 	}
 
 	void OnGUI ()

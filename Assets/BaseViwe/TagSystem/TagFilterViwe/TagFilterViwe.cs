@@ -22,7 +22,7 @@ public class TagFilterViwe : MonoBehaviour
         {
             Toggle Toggel = Instantiate(TagButtonPrefab, ConentParrent).GetComponent<Toggle>();
             Toggel.isOn = TagViwe.TagFillterValues[a];
-            Toggel.GetComponentInChildren<TextMeshProUGUI>().text = a + " " +  TagSystem.GetAllContentsFromTag(a);
+            Toggel.GetComponentInChildren<TextMeshProUGUI>().text = a + " " +  TagSystem.GetAllContentsFromTag(a).Count;
             string Ass = a;
             Toggel.onValueChanged.AddListener((GG) => { TagViwe.TagFillterValues[Ass] = GG; });
         });

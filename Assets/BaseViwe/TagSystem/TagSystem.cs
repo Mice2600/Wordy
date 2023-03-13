@@ -8,14 +8,22 @@ public static class TagSystem
 {
     static TagSystem() 
     {
-        Tags = new List<Tag>();
-        PlayerPrefs.GetString("TagSystemIDSaver");
-
-
-
-        JsonHelper.FromJsonList<string>(PlayerPrefs.GetString("TagSystemIDSaver")).ForEach((a)=> Tags.Add(new Tag(a)));
+        
+        
     }
-    private static List<Tag> Tags;
+    private static List<Tag> Tags 
+    {
+        get 
+        {
+            if (_Tags == null) 
+            {
+                _Tags = new List<Tag>();
+                JsonHelper.FromJsonList<string>(PlayerPrefs.GetString("TagSystemIDSaver")).ForEach((a) => Tags.Add(new Tag(a)));
+            }
+            return _Tags;
+        }
+    }
+    private static List<Tag> _Tags;
     public static TList<string> GetAllTagIdes() 
     {
         TList<string> TagNames = new TList<string>();

@@ -11,15 +11,30 @@ public class TagViwe : BaseListWithFillter
 {
     public TagViwe() 
     {
-        TagFillterValues = new Dictionary<string, bool>();
-        TagSystem.GetAllTagIdes().ForEach((a) => {TagFillterValues.Add(a, true);});
+        
     }
-    public static Dictionary<string, bool> TagFillterValues;
+    private void Awake()
+    {
+        
+    }
+    public static Dictionary<string, bool> TagFillterValues 
+    {
+        get 
+        {
+            if (_TagFillterValues == null) 
+            {
+                _TagFillterValues = new Dictionary<string, bool>();
+                TagSystem.GetAllTagIdes().ForEach((a) => { _TagFillterValues.Add(a, true); });
+            }
+            return _TagFillterValues;
+        }
+    }
+    private static Dictionary<string, bool> _TagFillterValues;
 
     public GameObject FillterViwe;
     public void OnFilterButton() 
     {
-        Instantiate(FillterViwe).GetComponent<TagFilterViwe>().OnDone += () =>Lode(0);
+        Instantiate(FillterViwe).GetComponent<TagFilterViwe>().OnDone += Start;
     }
     private protected override void Start()
     {

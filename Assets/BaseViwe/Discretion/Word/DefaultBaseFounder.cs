@@ -41,7 +41,7 @@ public class DefaultBaseFounder : MonoBehaviour
     }
     public void OnButton()
     {
-        transform.GetComponentInParent<DiscretionViwe>().DestroyUrself();
+        transform.GetComponentInParent<DiscretionObject>().DestroyUrself();
         SceneComands.OpenSceneBaseSearch(Content.EnglishSource, DefaultDialogSceneName);
     }
 

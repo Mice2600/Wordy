@@ -1,7 +1,7 @@
+using Base.Dialog;
 using Base;
-using Base.Word;
-using Servises;
 using Servises.BaseList;
+using Servises;
 using Sirenix.OdinInspector;
 using System;
 using System.Collections;
@@ -9,29 +9,25 @@ using System.Collections.Generic;
 using SystemBox;
 using Traonsletor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-namespace WordCreator.WordGenerator
+
+namespace WordCreator.DialogDefaultBase
 {
-    public class WordGeneratorViwe : BaseListWithFillter
+    public class DialogDefaultBase_Viwe : BaseListWithFillter
     {
-
         public List<Content> WordsGenereted;
-        [SerializeField]
-        private GameObject LodingObject;
-
         public static List<Content> OflineData
         {
-            get 
+            get
             {
-                if (_OflineData == null) 
+                if (_OflineData == null)
                 {
                     _OflineData = new List<Content>();
-                    Content[] DaaaTaa = new List<Content>(JsonHelper.FromJson<Word>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text)).ToArray();
+                    Dialog[] DaaaTaa = new List<Dialog>(JsonHelper.FromJson<Dialog  >(ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text)).ToArray();
                     if (DaaaTaa.Length > 1) Array.Sort(DaaaTaa);
                     for (int i = 0; i < DaaaTaa.Length; i++)
                     {
-                        Content dialog = DaaaTaa[i];
+                        Dialog dialog = DaaaTaa[i];
                         if (string.IsNullOrEmpty(dialog.EnglishSource)) continue;
                         _OflineData.Add(dialog);
                     }
@@ -40,9 +36,9 @@ namespace WordCreator.WordGenerator
             }
         }
 
-        public override List<Content> AllContents 
+        public override List<Content> AllContents
         {
-            get 
+            get
             {
                 if (string.IsNullOrEmpty(SearchingString)) return WordsGenereted;
                 return OflineData;
@@ -56,38 +52,22 @@ namespace WordCreator.WordGenerator
         {
             LoadNew();
         }
-        private bool InternetMode;
-        
-        public void OnInternetModeChanged(bool Value) 
+        public void LoadNew()
         {
-            InternetMode = Value;
-            LoadNew();
-        }
+            LoadNewOffline();
+            
 
-        [Button]
-        public void LoadNew() 
-        {
-            LodingObject.SetActive(true);
-            if (Application.internetReachability == NetworkReachability.NotReachable || !InternetMode) LoadNewOffline();
-            else LoadNewOnline();
-
-            void LoadNewOffline() 
+            void LoadNewOffline()
             {
-                
+
                 TList<Content> O = OflineData;
-                List<Word> gann = new List<Word>();
-                for (int i = 0; i < 150; i++) gann.Add(O.RemoveRandomItem() as Word);
+                List<Content> gann = new List<Content>();
+                for (int i = 0; i < 150; i++) gann.Add(O.RemoveRandomItem());
                 Resulrat(gann);
             }
-            void LoadNewOnline() 
+            void Resulrat(List<Content> words)
             {
-                Translator.GetRandomWord(Resulrat);
-                contentPattent.ClearChilds();
-                
-            }
-            void Resulrat(List<Word> words)
-            {
-                WordsGenereted = new List<Content>(words) ;
+                WordsGenereted = words;
                 Lode(0);
                 contentPattent.Childs().ForEach(child =>
                 {
@@ -95,12 +75,11 @@ namespace WordCreator.WordGenerator
                     GameObject DD = child.gameObject;
                     for (int i = 0; i < UIButtons.Length; i++) UIButtons[i].onClick.AddListener(() => TryAdd(DD));
                 });
-                LodingObject.SetActive(false);
             }
         }
         public void TryAdd(GameObject Content)
         {
-            WordBase.Wordgs.Add((Content.GetComponent<ContentObject>().Content as Word));
+            DialogBase.Dialogs.Add((Content.GetComponent<ContentObject>().Content as Dialog));
         }
     }
 }

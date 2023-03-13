@@ -987,8 +987,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 481355496279986429}
-        m_TargetAssemblyTypeName: DiscretionViwe, Assembly-CSharp
+      - m_Target: {fileID: 8781359346984319441}
+        m_TargetAssemblyTypeName: DiscretionObject, Assembly-CSharp
         m_MethodName: DestroyUrself
         m_Mode: 1
         m_Arguments:
@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 5128650482689109634}
   - component: {fileID: 5128650482689109635}
   - component: {fileID: 5128650482689109632}
-  - component: {fileID: 481355496279986429}
+  - component: {fileID: 8781359346984319441}
   - component: {fileID: 5174067280962771794}
   m_Layer: 0
   m_Name: Discretion Dialog
@@ -1252,7 +1252,7 @@ RectTransform:
   - {fileID: 5128650481822437074}
   - {fileID: 2407364394184431977}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1321,7 +1321,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 55
---- !u!114 &481355496279986429
+--- !u!114 &8781359346984319441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

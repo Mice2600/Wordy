@@ -37,6 +37,7 @@ namespace Servises
         private float _PerTime;
         private void Update()
         {
+            if (Content.Content == null) return;
             _PerTime += Time.deltaTime;
             if (_PerTime > .4f)
             {

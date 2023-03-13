@@ -13,7 +13,9 @@ namespace Servises
         {
             ContentObject s = transform.GetComponentInParent<ContentObject>();
             if (s == null) return;
-            GetComponent<Button>().onClick.AddListener(() => { DiscretionViwe.Show(s.Content); });
+            GetComponent<Button>().onClick.AddListener(() => {
+                DiscretionObject.Show(s.Content);
+            });
         }
     }
 }
