@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace Servises
 {
     [RequireComponent(typeof(Button))]
-    public class AddToBaseButton : MonoBehaviour
+    public class AddToBaseButton : OptimizedBehaver, IQueueUpdate
     {
         [SerializeField]
         private GameObject AddIcon;
@@ -26,38 +26,28 @@ namespace Servises
             }
         }
         private ContentObject _Content;
-        private void Start()
+
+        private protected override void Start()
         {
+            base.Start();
             GetComponent<Button>().onClick.AddListener(() =>
             {
                 Content.Content.BaseCommander.Add(Content.Content);
             });
         }
-
-        private float _PerTime;
-        private void Update()
+        public void TurnUpdate()
         {
             if (Content.Content == null) return;
-            _PerTime += Time.deltaTime;
-            if (_PerTime > .4f)
+            if (Content.Content.BaseCommander.Contains(Content.Content))
             {
-                if (Content.Content.BaseCommander.Contains(Content.Content))
-                {
-                    AddIcon.SetActive(false);
-                    CompletedIcon.SetActive(true);
-                }
-                else
-                {
-                    AddIcon.SetActive(true);
-                    CompletedIcon.SetActive(false);
-                }
-                 
-                
-                              
-                _PerTime = 0;
-                
+                AddIcon.SetActive(false);
+                CompletedIcon.SetActive(true);
             }
-
+            else
+            {
+                AddIcon.SetActive(true);
+                CompletedIcon.SetActive(false);
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using Base.Dialog;
 using Base.Word;
 using Servises.BaseList;
 using Sirenix.Utilities;
@@ -9,14 +10,7 @@ using UnityEngine;
 
 public class TagViwe : BaseListWithFillter
 {
-    public TagViwe() 
-    {
-        
-    }
-    private void Awake()
-    {
-        
-    }
+    
     public static Dictionary<string, bool> TagFillterValues 
     {
         get 
@@ -44,5 +38,17 @@ public class TagViwe : BaseListWithFillter
     }
     public TList<Content> _AllContents;
     public override List<Content> AllContents => _AllContents;
+
+    private float CCSize;
+    public override float GetSizeOfContent(Content content)
+    {
+        if (content is not Dialog) 
+        {
+            if (CCSize == 0f) CCSize = content.ContentObject.GetComponent<RectTransform>().rect.height;
+            return CCSize;
+        }
+        return base.GetSizeOfContent(content);
+    }
+
 
 }

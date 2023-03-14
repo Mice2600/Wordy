@@ -82,25 +82,22 @@ namespace WordCreator.WordGenerator
             void LoadNewOnline() 
             {
                 Translator.GetRandomWord(Resulrat);
-                contentPattent.ClearChilds();
-                
             }
             void Resulrat(List<Word> words)
             {
                 WordsGenereted = new List<Content>(words) ;
                 Lode(0);
-                contentPattent.Childs().ForEach(child =>
-                {
-                    AddButton[] UIButtons = child.GetComponentsInChildren<AddButton>();
-                    GameObject DD = child.gameObject;
-                    for (int i = 0; i < UIButtons.Length; i++) UIButtons[i].onClick.AddListener(() => TryAdd(DD));
-                });
                 LodingObject.SetActive(false);
             }
         }
-        public void TryAdd(GameObject Content)
+        
+
+        private float CCSize;
+        public override float GetSizeOfContent(Content content)
         {
-            WordBase.Wordgs.Add((Content.GetComponent<ContentObject>().Content as Word));
+            if (CCSize == 0f) CCSize = content.ContentObject.GetComponent<RectTransform>().rect.height;
+            return CCSize;
         }
+
     }
 }

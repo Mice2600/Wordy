@@ -21,14 +21,8 @@ namespace Servises.SmartText
             FixtSize();
         }
 
-        [Button]
-        private void TT( float w, float h) 
-        {
-            Debug.Log(NText.GetPreferredValues(NText.text, w, h));
-        }
         private protected void FixtSize()
         {
-
 
             Vector2 OlldSize = new Vector2(rectTransform.rect.width, rectTransform.rect.height);
             Vector3 oldpos = transform.position;

@@ -34,10 +34,10 @@ RectTransform:
   m_Father: {fileID: 5654591674986420881}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 994, y: 162}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &983941664486002478
 CanvasRenderer:
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 293354416911202547}
   - component: {fileID: 8459330690599021031}
   - component: {fileID: 2729453610191597610}
-  - component: {fileID: 1719066567872739222}
+  - component: {fileID: 645319092781250163}
   m_Layer: 5
   m_Name: Dialog Content
   m_TagString: Untagged
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0.21960786, g: 0.27450982, b: 0.28627452, a: 1}
   m_EffectDistance: {x: 5.23, y: -5.23}
   m_UseGraphicAlpha: 1
---- !u!114 &1719066567872739222
+--- !u!114 &645319092781250163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -341,12 +341,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 983941666089937557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395e69fb5c8aee946bad881e544af297, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a0660653fb0f6246a24ce78e279a2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeX: 0
-  ChangeY: 1
-  OfsetSize: 2
+  cellIdentifier: 
   NText: {fileID: 983941664486002477}
 --- !u!1 &9133359456004881920
 GameObject:

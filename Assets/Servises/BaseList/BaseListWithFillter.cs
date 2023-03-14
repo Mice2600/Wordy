@@ -27,17 +27,25 @@ namespace Servises.BaseList
             {
                 if (SerchedContents == null) 
                 {
-                    if (OnlyActive) return  new TList<Content>(AllContents.Where(stringToCheck => stringToCheck.Active));
-                    return AllContents; 
+                    if(ActiveSorted == null) return AllContents;
+                    return ActiveSorted; 
                 }
                 return SerchedContents;
             }
         }
         private List<Content> SerchedContents;
+        private List<Content> ActiveSorted;
         
         public bool OnlyActive;
         public void SetOnlyActive(bool Value) 
         {
+            if (Value == false) ActiveSorted = null;
+            else 
+            {
+                if (SerchedContents == null)
+                    ActiveSorted = new TList<Content>(AllContents.Where(stringToCheck => stringToCheck.Active));
+                else ActiveSorted = new TList<Content>(SerchedContents.Where(stringToCheck => stringToCheck.Active)); 
+            }
             OnlyActive = Value;
             Refresh();
         }
@@ -69,7 +77,6 @@ namespace Servises.BaseList
             else
             {
                 SerchedContents = SearchComand(AllContents, SearchingString);
-                //SerchedContents = Servises.Search.SearchAll<T>(AllContents, SearchingString);
                 if (OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
             }
             Lode(0);

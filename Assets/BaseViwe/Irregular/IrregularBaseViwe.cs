@@ -17,4 +17,10 @@ public class IrregularBaseViwe : BaseListWithFillter
 {
     public override List<Content> AllContents => new List<Content>(IrregularBase.Irregulars);
     protected override TList<Content> SearchComand(TList<Content> AllContents, string SearchString) => Search.SearchIrregularAll<Content>(AllContents, SearchString);
+    private float CCSize;
+    public override float GetSizeOfContent(Content content)
+    {
+        if (CCSize == 0f) CCSize = content.ContentObject.GetComponent<RectTransform>().rect.height;
+        return CCSize;
+    }
 }

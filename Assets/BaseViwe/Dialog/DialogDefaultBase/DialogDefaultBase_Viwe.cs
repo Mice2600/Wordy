@@ -55,8 +55,6 @@ namespace WordCreator.DialogDefaultBase
         public void LoadNew()
         {
             LoadNewOffline();
-            
-
             void LoadNewOffline()
             {
 
@@ -69,17 +67,8 @@ namespace WordCreator.DialogDefaultBase
             {
                 WordsGenereted = words;
                 Lode(0);
-                contentPattent.Childs().ForEach(child =>
-                {
-                    AddButton[] UIButtons = child.GetComponentsInChildren<AddButton>();
-                    GameObject DD = child.gameObject;
-                    for (int i = 0; i < UIButtons.Length; i++) UIButtons[i].onClick.AddListener(() => TryAdd(DD));
-                });
+                
             }
-        }
-        public void TryAdd(GameObject Content)
-        {
-            DialogBase.Dialogs.Add((Content.GetComponent<ContentObject>().Content as Dialog));
         }
     }
 }

@@ -21,5 +21,12 @@ namespace BaseViwe.WordViwe
         {
             WordChanger.StartChanging();
         }
+
+        private float CCSize;
+        public override float GetSizeOfContent(Content content) 
+        {
+            if (CCSize == 0f) CCSize = content.ContentObject.GetComponent<RectTransform>().rect.height;
+            return CCSize;
+        }
     }
 }
