@@ -25,11 +25,11 @@ public class ActivePasiveButton : MonoBehaviour
     {
         if (contentObject == null) throw new System.ArgumentNullException(typeof(ContentObject).Name + " not found", transform.name + "'s patent dosnt exits " + typeof(ContentObject).Name);
         if (contentObject.Content == null) return;
-        if (contentObject.Content.Active )OnActive?.Invoke();
+        if ((contentObject.Content as IPersanalData).Active)OnActive?.Invoke();
         else OnPassive?.Invoke();
     }
     public void OnButton() 
     {
-        contentObject.Content.Active = !contentObject.Content.Active;
+        (contentObject.Content as IPersanalData).Active = !(contentObject.Content as IPersanalData).Active;
     }
 }

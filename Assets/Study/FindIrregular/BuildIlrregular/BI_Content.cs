@@ -51,7 +51,7 @@ public class BI_Content : ContentObject
         List.ForEach(a => { a.InT.gameObject.SetActive(false); a.Te.SetActive(true); });
 
         PasOne();
-        if (Content.ScoreConculeated > 25) PasOne();
+        if ((Content as IPersanalData).ScoreConculeated > 25) PasOne();
 
 
         void PasOne()

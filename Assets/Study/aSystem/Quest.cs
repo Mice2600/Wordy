@@ -51,30 +51,30 @@ namespace Study.aSystem
         {
             OnWordWin += (W) =>
             {
-                WordBase.Wordgs[W as Word].ScoreConculeated += Mathf.Abs(AddScoreWord);
+                (WordBase.Wordgs[W as Word] as IPersanalData).ScoreConculeated += Mathf.Abs(AddScoreWord);
 
             };
             OnWordLost += (W) =>
             {
-                WordBase.Wordgs[W as Word].ScoreConculeated -= Mathf.Abs(RemoveScoreWord);
+                (WordBase.Wordgs[W as Word] as IPersanalData) .ScoreConculeated -= Mathf.Abs(RemoveScoreWord);
             };
             OnDialogWin += (D) =>
             {
-                DialogBase.Dialogs[D].ScoreConculeated += Mathf.Abs(AddScoreDialog);
+                (DialogBase.Dialogs[D] as IPersanalData).ScoreConculeated += Mathf.Abs(AddScoreDialog);
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordWin.Invoke(Nfound as Word));
             };
             OnDialogLost += (D) =>
             {
-                DialogBase.Dialogs[D].ScoreConculeated -= Mathf.Abs(RemoveScoreDialog);
+                (DialogBase.Dialogs[D] as IPersanalData).ScoreConculeated -= Mathf.Abs(RemoveScoreDialog);
                 WordBase.Wordgs.FindContentsFromString(D.EnglishSource, Nfound => OnWordLost.Invoke(Nfound as Word));
             };
             OnIrregularWin += (W) =>
             {
-                IrregularBase.Irregulars[W].ScoreConculeated += Mathf.Abs(AddScoreIrregular);
+                (IrregularBase.Irregulars[W] as IPersanalData).ScoreConculeated += Mathf.Abs(AddScoreIrregular);
             };
             OnIrregularLost += (W) =>
             {
-                IrregularBase.Irregulars[W].ScoreConculeated -= Mathf.Abs(RemoveScoreIrregular);
+                (IrregularBase.Irregulars[W] as IPersanalData).ScoreConculeated -= Mathf.Abs(RemoveScoreIrregular);
             };
 
             OnFineshed += () => Destroy(gameObject);

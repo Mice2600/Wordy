@@ -15,13 +15,13 @@ namespace Base.Word
     {
         static WordBase() 
         {
-            if (Application.isEditor ) 
+            if (Application.isEditor && false ) 
             {
                 if (PlayerPrefs.GetInt(ID + " defaul") == 0) 
                     PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultWords.text);
                 PlayerPrefs.SetInt(ID + " defaul", 1);
             }
-            DefaultBase = new List<Word>(JsonHelper.FromJson<Word>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text));
+            DefaultBase = new List<WordDefoult>(JsonHelper.FromJson<WordDefoult>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text));
             Wordgs = new WordBase(); 
         }
         public Word this[Word index]
@@ -40,7 +40,7 @@ namespace Base.Word
             }
         }
         public static WordBase Wordgs { get; private set; }
-        public static TList<Word> DefaultBase;
+        public static TList<WordDefoult> DefaultBase;
         private static string ID => "WordBase";
         protected override string DataID => ID;
         public static new void Sort()
@@ -49,13 +49,22 @@ namespace Base.Word
             Wordgs = new WordBase();
         }//
         public override Word tryCreat(string EnglishID) => new Word(EnglishID, "", 0, false, "", "");
+        public override Word tryCreat(Content Id)
+        {
+            if(Id is Word)return Id as Word;
+            if (Id is WordDefoult) return new Word(Id.EnglishSource, Id.RussianSource, 0, false, (Id as IDiscreption).EnglishDiscretion, (Id as IDiscreption).RusianDiscretion);
+            else return tryCreat(Id.EnglishSource);
+        }
+
 
 #if UNITY_EDITOR
         public static void AddAllToDefaultBase() 
         {
             ProjectSettings.ProjectSettings.Mine.AddWords(Wordgs);
         }
-        
+
+       
+
 #endif
     }
 }
@@ -70,29 +79,28 @@ namespace ProjectSettings
 #if UNITY_EDITOR
         public void AddWords(TList<Word> Words) 
         {
+            TList<WordDefoult> NN = new TList<WordDefoult>();
+            Words.ForEach(d => NN.Add(new WordDefoult(d.EnglishSource, d.RussianSource, d.EnglishDiscretion,d.RusianDiscretion)));
+            AddWords(NN);
+        }
+        public void AddWords(TList<WordDefoult> Words) 
+        {
             string All = "";//
             if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Words.txt"))
                 All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Words.txt");
             else Directory.CreateDirectory("Assets/Base/Resources");
-            TList<Word> AllList = JsonHelper.FromJson<Word>(All);
-            TList<Word> New = new TList<Word>();
+            TList<WordDefoult> AllList = JsonHelper.FromJson<WordDefoult>(All);
+            TList<WordDefoult> New = new TList<WordDefoult>();
             AllList.ForEach(AddOne);
             Words.ForEach(AddOne);
-            void AddOne(Word a)
+
+            void AddOne(WordDefoult a)
             {
                 if (string.IsNullOrEmpty(a.EnglishSource)) return;
-                a.ScoreConculeated = 0;
-                string newID = a.EnglishSource;
-                newID = newID.ToUpper();
-                newID = newID.Replace("!", "");
-                newID = newID.Replace("?", "");
-                newID = newID.Replace(",", "");
-                newID = newID.Replace(".", "");
-                a.EnglishSource = newID;
+                a.EnglishSource = a.EnglishSource.ToUpper().Replace("!", "").Replace("?", "").Replace(",", "").Replace(".", "");
                 New.AddIfDirty(a);
             }
             Debug.Log(New.Count);
-
             string SD = JsonHelper.ToJson(New.ToArray());
             SD = SD.Replace("{", "\n{");
             SD = SD.Replace("},", "\n},");

@@ -4,34 +4,16 @@ using UnityEngine;
 
 public abstract partial class Content : IComparable // Utulity
 {
-    public Content(string EnglishSource, string RussianSource, float Score, bool Active)
+    public Content(string EnglishSource, string RussianSource)
     {
         EnglishSource.ToUpper();
         this.EnglishSource = EnglishSource.ToUpper();
         this.RussianSource = RussianSource;
-        ScoreConculeated = Score;
-        this.Active = Active;
     }
 
     public abstract IDataListComands BaseCommander { get; }
     public abstract GameObject DiscretioVewe { get; }
     public abstract GameObject ContentObject { get; }
-    
-    #pragma warning disable 612, 618 
-    public float ScoreConculeated 
-    {
-        get => Score;
-        set 
-        {
-
-            if(value > 100) value = 100;
-            else if(value < 0) value = 0;
-            Score = value;
-
-        }
-    }
-    #pragma warning restore 612, 618 
-
     public int CompareTo(object obj)
     {
         try
@@ -46,7 +28,8 @@ public abstract partial class Content : IComparable // Utulity
         if (obj is not Content) return false;
         return (obj as Content).EnglishSource.ToUpper() == this.EnglishSource.ToUpper();
     }
+    
+
     public override string ToString() => EnglishSource;
     public override int GetHashCode() => base.GetHashCode();
-
 }

@@ -16,9 +16,9 @@ namespace WordCreator.DialogCreator
             Content = new Dialog("", "",0,false);
         }
         public void OnWordValumeChanged(string Valume) => Content.EnglishSource= Valume;
-        public void OnScoreValumeChanged(float Valume) => Content.ScoreConculeated = Valume *= 100f;
+        public void OnScoreValumeChanged(float Valume) => (Content as IPersanalData).ScoreConculeated = Valume *= 100f;
 
-        public void OnActiveValumeChanged(bool Valume) => Content.Active = Valume;
+        public void OnActiveValumeChanged(bool Valume) => (Content as IPersanalData).Active = Valume;
 
         private float TransleteTime = 0;
 
@@ -42,22 +42,6 @@ namespace WordCreator.DialogCreator
             DialogBase.Dialogs.Add((Content as Dialog));
             DialogBase.Sort();
             SceneComands.OpenSceneSellecetDialogBase((Content as Dialog));
-        }
-    }
-}
-public static partial class SceneComands // WordBaseViwe 
-{
-    public static void OpenSceneSellecetDialogBase(Dialog dialog)
-    {
-        Engine.Get_Engine("Game").StartCoroutine(enumerator());
-        IEnumerator enumerator()
-        {
-
-            SceneManager.LoadScene("DialogBaseViwe", LoadSceneMode.Single);
-            yield return null;
-            yield return null;
-            yield return null;
-            GameObject.FindObjectOfType<DialogBaseViwe>().Lode(DialogBase.Dialogs.IndexOf(dialog));
         }
     }
 }

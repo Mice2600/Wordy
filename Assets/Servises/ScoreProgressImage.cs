@@ -9,8 +9,8 @@ public class ScoreProgressImage : OptimizedBehaver, IQueueUpdate
     private Image _Image;
     public void TurnUpdate()
     {
-        if (ContentObject.Content != null)
-            Image.fillAmount = ContentObject.Content.ScoreConculeated / 100f;
+        if (ContentObject.Content != null && ContentObject.Content is IPersanalData)
+            Image.fillAmount = (ContentObject.Content as IPersanalData).ScoreConculeated / 100f;
         else Image.fillAmount = 0;
     }
 }

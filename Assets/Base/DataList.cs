@@ -63,15 +63,15 @@ namespace Base
         protected abstract string DataID { get; }
         public void Save()
         {
-            for (int i = 0; i < Count; i++)if (this[i].ScoreConculeated < 0) this[i].ScoreConculeated = 0;
             PlayerPrefs.SetString(DataID, JsonHelper.ToJson<T>((this as List<T>).ToArray()));
         }
 
         public void Add(Content Content)
         {
             if (string.IsNullOrEmpty(Content.EnglishSource)) return;
-            if (Contains(Content as T)) return;
-            base.Add(Content as T);
+            T NN = tryCreat(Content);
+            if (Contains(NN)) return;
+            base.Add(NN);
         }
         public Content GetContent(int Index) => this[Index];
         public Content GetContent(string Index) => this[IndexOf(tryCreat(Index))];
@@ -79,11 +79,16 @@ namespace Base
 
         public void Remove(Content Content)  => base.Remove(Content as T);
         public int IndexOf(Content Content) => base.IndexOf(Content as T);
-        public bool Contains(Content Content) => base.Contains(Content as T);
+        public bool Contains(Content Content) 
+        {
+            if(Content is not T) return base.Contains(tryCreat(Content));
+            return base.Contains(Content as T); 
+        }
         public bool Contains(string Content) => base.Contains(tryCreat(Content));
         public abstract T tryCreat(string Id);
-        public List<T> ActiveItems => new List<T>(this.Where(a => a.Active));
-        public List<T> PassiveItems => new List<T>(this.Where(a => !a.Active));
+        public abstract T tryCreat(Content Id);
+        public List<T> ActiveItems => new List<T>(this.Where(a => (a as IPersanalData).Active));
+        public List<T> PassiveItems => new List<T>(this.Where(a => !(a as IPersanalData).Active));
         public List<T> GetContnetList(int ListCount)
         {
             TList<T> All = new List<T>(ActiveItems);

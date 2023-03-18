@@ -6,7 +6,7 @@ namespace Servises.SmartText
         public override string GetValue(Content Object)
         {
             if (Object == null) return "";
-            else return ((int)Object.ScoreConculeated).ToString();
+            else return ((int)(Object as IPersanalData).ScoreConculeated).ToString();
         }
     }
 }

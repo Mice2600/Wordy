@@ -2,6 +2,7 @@ using Base.Dialog;
 using Base.Word;
 using Servises;
 using Sirenix.OdinInspector;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -16,7 +17,7 @@ namespace Base.Dialog
         static DialogBase()
         {
 
-            if (Application.isEditor) 
+            if (Application.isEditor && false) 
             {
                 if (PlayerPrefs.GetInt(ID + "default set") == 0)
                 {
@@ -24,7 +25,7 @@ namespace Base.Dialog
                     PlayerPrefs.SetInt(ID + "default set", 1);
                 }
             }
-            DefaultBase = new List<Dialog>(JsonHelper.FromJson<Dialog>(ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text));
+            DefaultBase = new List<DialogDefoult>(JsonHelper.FromJson<DialogDefoult>(ProjectSettings.ProjectSettings.Mine.DefalultDialogs.text));
             Dialogs = new DialogBase();
         }
         public Dialog this[Dialog index]
@@ -46,7 +47,7 @@ namespace Base.Dialog
         private static string ID => "DialogBase";
         protected override string DataID => ID;
 
-        public static TList<Dialog> DefaultBase;
+        public static TList<DialogDefoult> DefaultBase;
 
         public static new void Sort()
         {
@@ -80,6 +81,12 @@ namespace Base.Dialog
             }
         }
         public override Dialog tryCreat(string Id) => new Dialog(Id, "", 0, false);
+        public override Dialog tryCreat(Content Id)
+        {
+            if (Id is Dialog) return Id as Dialog;
+            if (Id is DialogDefoult) return new Dialog(Id.EnglishSource, Id.RussianSource, 0, false);
+            else return tryCreat(Id.EnglishSource);
+        }
     }
 }
 namespace ProjectSettings
@@ -91,40 +98,31 @@ namespace ProjectSettings
         public TextAsset DefalultDialogs;
 
 
-
-        public void CC() 
+        public void AddDialog(TList<Dialog> Dialogs) 
         {
-            string All = "";
-            if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Dialog.txt"))
-                All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Dialog.txt");
-            TList<Dialog> AllList = JsonHelper.FromJson<Dialog>(All);
-            Debug.Log(AllList.Count);
+            TList<DialogDefoult> NN = new TList<DialogDefoult>();
+            Dialogs.ForEach(d => NN.Add(new DialogDefoult(d.EnglishSource, d.RussianSource) ));
+            AddDialog(NN);
         }
-        public void AddDialog(TList<Dialog> Dialogs)
+        public void AddDialog(TList<DialogDefoult> Dialogs)
         {
 #if UNITY_EDITOR
             string All = "";
             if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Dialog.txt"))
                 All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Dialog.txt");
             else Directory.CreateDirectory("Assets/Base/Resources");
-            TList<Dialog> AllList = JsonHelper.FromJson<Dialog>(All);
-            TList<Dialog> New = new TList<Dialog>();
+            TList<DialogDefoult> AllList = JsonHelper.FromJson<DialogDefoult>(All);
+            TList<DialogDefoult> New = new TList<DialogDefoult>();
             AllList.ForEach(AddOne);
             Dialogs.ForEach(AddOne);
 
-            void AddOne(Dialog a) 
+            void AddOne(DialogDefoult a) 
             {
                 if (string.IsNullOrEmpty(a.EnglishSource)) return;
-                a.ScoreConculeated = 0;
-                string newID = a.EnglishSource;
-                newID = newID.ToUpper();
-                newID = newID.Replace("!", "");
-                newID = newID.Replace("?", "");
-                newID = newID.Replace(",", "");
-                newID = newID.Replace(".", "");
-                a.EnglishSource = newID;
+                a.EnglishSource = a.EnglishSource.ToUpper().Replace("!", "").Replace("?", "").Replace(",", "").Replace(".", "");
                 New.AddIfDirty(a);
             }
+            Array.Sort(New);
             Debug.Log(New.Count);
             string SD = JsonHelper.ToJson(New.ToArray());
             SD = SD.Replace("{", "\n{");

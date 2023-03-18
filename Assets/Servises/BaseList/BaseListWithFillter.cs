@@ -43,8 +43,8 @@ namespace Servises.BaseList
             else 
             {
                 if (SerchedContents == null)
-                    ActiveSorted = new TList<Content>(AllContents.Where(stringToCheck => stringToCheck.Active));
-                else ActiveSorted = new TList<Content>(SerchedContents.Where(stringToCheck => stringToCheck.Active)); 
+                    ActiveSorted = new TList<Content>(AllContents.Where(stringToCheck => (stringToCheck as IPersanalData).Active));
+                else ActiveSorted = new TList<Content>(SerchedContents.Where(stringToCheck => (stringToCheck as IPersanalData).Active)); 
             }
             OnlyActive = Value;
             Refresh();
@@ -58,7 +58,7 @@ namespace Servises.BaseList
             else 
             {
                 SerchedContents = Servises.Search.SearchAll<Content>(AllContents, SearchingString);
-                if(OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
+                if(OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => (stringToCheck as IPersanalData).Active));
             }
             base.Refresh();
         }
@@ -67,7 +67,20 @@ namespace Servises.BaseList
 
         protected virtual void Update() 
         {
-            if(CloseSearchingButton != null) CloseSearchingButton.SetActive(!string.IsNullOrEmpty(SearchingString));
+            if (CloseSearchingButton != null) 
+            {
+
+                if (string.IsNullOrEmpty(SearchingString))
+                {
+                    CloseSearchingButton.SetActive(false);
+                    if (HideFromShearchingObject != null) HideFromShearchingObject.SetActive(true);
+                }
+                else 
+                {
+                    CloseSearchingButton.SetActive(true);
+                    if (HideFromShearchingObject != null) HideFromShearchingObject.SetActive(false);
+                }
+            }
         }
 
         public void OnShearchValueChanged(string Value) 
@@ -77,10 +90,13 @@ namespace Servises.BaseList
             else
             {
                 SerchedContents = SearchComand(AllContents, SearchingString);
-                if (OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => stringToCheck.Active));
+                if (OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => (stringToCheck as IPersanalData).Active));
             }
             Lode(0);
         }
+
+        public GameObject HideFromShearchingObject;
+
         protected virtual TList<Content> SearchComand(TList<Content> AllContents, string SearchString) => Servises.Search.SearchAll(AllContents, SearchString);
     }
 

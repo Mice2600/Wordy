@@ -16,7 +16,7 @@ public class DefaultBaseFounder : MonoBehaviour
         int Founded = 0;
         Content = transform.GetComponentInParent<ContentObject>().Content;
         FindContentsFromString(Content.EnglishSource, OnResultat);
-        void OnResultat(Dialog d)
+        void OnResultat(Content d)
         {
             Founded++;
             textMesh.text = $"{Founded} dialog founded in default base";
@@ -26,10 +26,10 @@ public class DefaultBaseFounder : MonoBehaviour
 
     // Update is called once per frame
     
-    public void FindContentsFromString(string ToDiagnost, System.Action<Dialog> OnFound)
+    public void FindContentsFromString(string ToDiagnost, System.Action<Content> OnFound)
     {
         StartCoroutine(FindContentsFromStringCoroutine(ToDiagnost, OnFound));
-        IEnumerator FindContentsFromStringCoroutine(string Todiagnist, System.Action < Dialog > Founded)
+        IEnumerator FindContentsFromStringCoroutine(string Todiagnist, System.Action < Content > Founded)
         {
             int TCount = 0;
             for (int i = 0; i < DialogBase.DefaultBase.Count; i++)

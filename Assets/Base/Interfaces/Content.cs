@@ -10,8 +10,4 @@ public  abstract partial class Content // Data
     [JsonProperty] public string EnglishSource;
     [JsonProperty] public string RussianSource;
     
-    [Obsolete("Dont use Score use ScoreConculeated")] 
-    [JsonProperty] public float Score;
-    
-    [JsonProperty] public bool Active;
 }

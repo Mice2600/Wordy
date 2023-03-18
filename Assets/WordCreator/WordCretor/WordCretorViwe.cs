@@ -17,8 +17,8 @@ namespace WordCreator.WordCretor
         }
         public void OnWordValumeChanged(string Valume) => Content.EnglishSource= Valume;
         public void OnDiscretioValumeChanged(string Valume)=> (Content as IDiscreption).EnglishDiscretion = Valume;
-        public void OnScoreValumeChanged(float Valume) => Content.ScoreConculeated = Valume;
-        public void OnActiveValumeChanged(bool Valume) => Content.Active = Valume;
+        public void OnScoreValumeChanged(float Valume) => (Content as IPersanalData).ScoreConculeated = Valume;
+        public void OnActiveValumeChanged(bool Valume) => (Content as IPersanalData).Active = Valume;
 
         private float TransleteTime = 0;
 

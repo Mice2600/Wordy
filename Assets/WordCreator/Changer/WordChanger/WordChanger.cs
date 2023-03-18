@@ -45,7 +45,7 @@ public class WordChanger : ContentObject
         WordTronsleated.text = NeedChanger.RussianSource;
         DiscreptionWriter.text = NeedChanger.EnglishDiscretion;
         DiscreptionTranslated.text = NeedChanger.RusianDiscretion;
-        ScoreSlider.value = (NeedChanger.ScoreConculeated) / 100f;
+        ScoreSlider.value = ((NeedChanger as IPersanalData).ScoreConculeated) / 100f;
     }
     public void TryAplay() 
     {
@@ -53,7 +53,7 @@ public class WordChanger : ContentObject
         this.Content.RussianSource  = WordTronsleated.text;
         (this.Content as IDiscreption).EnglishDiscretion = DiscreptionWriter.text;
         (this.Content as IDiscreption).RusianDiscretion = DiscreptionTranslated.text;
-        this.Content.ScoreConculeated = (ScoreSlider.value) * 100f;
+        (this.Content as IPersanalData).ScoreConculeated = (ScoreSlider.value) * 100f;
         if (!WordBase.Wordgs.Contains(Content as Word)) 
         {
             WordBase.Wordgs.Add(Content as Word);

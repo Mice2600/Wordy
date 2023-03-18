@@ -24,11 +24,17 @@ MonoBehaviour:
   DefalultDialogs: {fileID: 4900000, guid: 24a41c6d78d9f37449e33b165492a6b9, type: 3}
   DiscretionDialog: {fileID: 5128650482689109638, guid: a6eb0c2e56148e049a068416e72bdbc1, type: 3}
   ContentObjectDialog: {fileID: 983941666089937557, guid: 80e28cb604d4a554981e5c271d25900e, type: 3}
+  DiscretionDialogDefoult: {fileID: 5128650482689109638, guid: 6f3c198d34a658142893b9cb9d8709ec, type: 3}
+  ContentObjectDialogDefoult: {fileID: 7788728164050202616, guid: c7b9b8396b2ee6d40816902fbe49188e, type: 3}
+  DiscretionIrregularDefoult: {fileID: 0}
+  ContentObjectIrregularDefoult: {fileID: 0}
   DefalultIrregular: {fileID: 4900000, guid: 7e22acab76b277b4095a70a71d2a6630, type: 3}
   DiscretionIrregular: {fileID: 3940078003728719836, guid: 032d1ad23120f2b4da823d765639fd0a, type: 3}
   ContentObjectIrregular: {fileID: 5484883712623103126, guid: 1ea2a1edfeec77640bce5f173eb31151, type: 3}
   DiscretionWord: {fileID: 8284152216871096949, guid: 5887a96017b852d42bee61c51a794b1e, type: 3}
   ContentObjectWord: {fileID: 8894941232974717581, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
+  DiscretionWordDefoult: {fileID: 8284152216871096949, guid: fa1d010ee96cfe34bb8b0189384a2fda, type: 3}
+  ContentObjectWordDefoult: {fileID: 1345737973540849240, guid: dc3f872f46add924fa828d7dd93f4c61, type: 3}
   DefalultWords: {fileID: 4900000, guid: b8d1528e2cd59734290ca53d7cac67dd, type: 3}
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
   DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
@@ -61,6 +67,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}

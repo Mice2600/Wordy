@@ -8,6 +8,7 @@ using Sirenix.OdinInspector;
 using SystemBox;
 using System.IO;
 using System.Linq;
+using Base.Dialog;
 
 public class IrregularBase : DataList<Irregular>
 {
@@ -45,6 +46,13 @@ public class IrregularBase : DataList<Irregular>
         Irregulars = new IrregularBase();
     }
     public override Irregular tryCreat(string Id) => new Irregular(Id, "", "", "", 0, false, "", "");
+    public override Irregular tryCreat(Content Id)
+    {
+        if (Id is Irregular) return Id as Irregular;
+        if (Id is IrregularDefoult) return new Irregular(Id.EnglishSource, Id.RussianSource, (Id as IIrregular).SimplePast, (Id as IIrregular).PastParticiple, 0, false, (Id as IDiscreption).EnglishDiscretion, (Id as IDiscreption).RusianDiscretion);
+        else return tryCreat(Id.EnglishSource);
+    }
+
 #if UNITY_EDITOR
     /*
     public static string AddManural(string Base) 
@@ -151,14 +159,7 @@ namespace ProjectSettings
             void AddOne(Irregular a)
             {
                 if (string.IsNullOrEmpty(a.EnglishSource)) return;
-                a.ScoreConculeated = 0;
-                string newID = a.EnglishSource;
-                newID = newID.ToUpper();
-                newID = newID.Replace("!", "");
-                newID = newID.Replace("?", "");
-                newID = newID.Replace(",", "");
-                newID = newID.Replace(".", "");
-                a.EnglishSource = newID;
+                a.EnglishSource = a.EnglishSource.ToUpper().Replace("!", "").Replace("?", "").Replace(",", "").Replace(".", "");
                 New.AddIfDirty(a);
             }
             Debug.Log(New.Count);

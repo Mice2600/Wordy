@@ -53,26 +53,26 @@ namespace Study.BuildDialog
             TList<string> All = Grr[0].EnglishSource.Split(" ");
             if (All.Count > 3)
             {
-                if (Content.ScoreConculeated < 10)
+                if ((Content as IPersanalData) .ScoreConculeated < 10)
                 {
                     MergeOnes(ref All);
                     MergeOnes(ref All);
                 }
-                else if (Content.ScoreConculeated < 25) MergeTreple(ref All);
-                else if (Content.ScoreConculeated < 50) MergeOnes(ref All);
+                else if ((Content as IPersanalData).ScoreConculeated < 25) MergeTreple(ref All);
+                else if ((Content as IPersanalData).ScoreConculeated < 50) MergeOnes(ref All);
             }
             TList<string> Otherrr = Grr[1].EnglishSource.Split(" ");
             if (Otherrr.Count > 3) 
             {
-                if (Content.ScoreConculeated < 20) MergeTreple(ref Otherrr);
-                else if (Content.ScoreConculeated < 50) MergeOnes(ref Otherrr);
+                if ((Content as IPersanalData).ScoreConculeated < 20) MergeTreple(ref Otherrr);
+                else if ((Content as IPersanalData).ScoreConculeated < 50) MergeOnes(ref Otherrr);
             }
 
             All.AddRange(Otherrr);
             All.Mix();
 
             IDContentText.text = Grr[0].RussianSource;
-            if (Application.isMobilePlatform && Content.ScoreConculeated > 30 && Random.Range(0, 100) > 40) 
+            if (Application.isMobilePlatform && (Content as IPersanalData).ScoreConculeated > 30 && Random.Range(0, 100) > 40) 
             {
                 IDContentText.text = Grr[0].RussianSource;
                 IDContentText.font = PasswordFont; 

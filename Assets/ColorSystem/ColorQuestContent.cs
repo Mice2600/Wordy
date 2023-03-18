@@ -6,7 +6,7 @@ public class ColorQuestContent : ColorContent
 {
     private protected override Color GetColor(int index, bool IsActive)
     {
-        if(ContentObject.Content.ScoreConculeated > 40)
+        if((ContentObject.Content as IPersanalData).ScoreConculeated > 40)
             return Color.white;
         return base.GetColor(index, true);
 

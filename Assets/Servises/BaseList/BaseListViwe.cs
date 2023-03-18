@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -14,6 +15,7 @@ namespace Servises.BaseList
 {
     public abstract class BaseListViwe : MonoBehaviour, IRemoveButtonUser, IEnhancedScrollerDelegate
     {
+        
         [Required]
         public EnhancedScroller scroller;
         [Required]
@@ -28,10 +30,25 @@ namespace Servises.BaseList
         public int GetNumberOfCells(EnhancedScroller scroller) => Contents.Count;
 
         public float GetCellViewSize(EnhancedScroller scroller, int dataIndex) => GetSizeOfContent(Contents[dataIndex]);
-        public virtual float GetSizeOfContent(Content content) => (cellViewPrefab).NText.GetPreferredValues(content.EnglishSource, scroller.ScrollRect.content.rect.width, 100).y + 20f;
+
+
+        private static Dictionary<GameObject, (TMP_Text T, float H)> SavedObjectTexts = new Dictionary<GameObject, (TMP_Text T, float H)>();
+        public virtual float GetSizeOfContent(Content content) 
+        {
+            if (!SavedObjectTexts.ContainsKey(content.ContentObject)) 
+            {
+                TMP_Text t = content.ContentObject.GetComponent<CellView>().NText;
+                if(t != null) SavedObjectTexts.Add(content.ContentObject, (t, 0));
+                else SavedObjectTexts.Add(content.ContentObject, (null, content.ContentObject.GetComponent<RectTransform>().rect.height));
+            }
+            if (SavedObjectTexts[content.ContentObject].T !=null)
+                return SavedObjectTexts[content.ContentObject].T.GetPreferredValues(content.EnglishSource, scroller.ScrollRect.content.rect.width, 100).y + 20f;
+            return SavedObjectTexts[content.ContentObject].H;
+        } 
+            
         public EnhancedScrollerCellView GetCellView(EnhancedScroller scroller, int dataIndex, int cellIndex)
         {
-            CellView cellView = scroller.GetCellView(cellViewPrefab) as CellView;
+            CellView cellView = scroller.GetCellView(Contents[dataIndex].ContentObject.GetComponent<EnhancedScrollerCellView>()) as CellView;
             cellView.SetData(Contents[dataIndex]);
             return cellView;
         }

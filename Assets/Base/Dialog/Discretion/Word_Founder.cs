@@ -22,7 +22,7 @@ public class Word_Founder : MonoBehaviour
         GetComponent<ContentGropper>().AddNewContent(N.transform);
     }
 
-    private IEnumerator FindContentsFromStringCoroutine(string Todiagnist, System.Action<Word> Founded)
+    private IEnumerator FindContentsFromStringCoroutine(string Todiagnist, System.Action<Content> Founded)
     {
         int TCount = 0;
         for (int i = 0; i < WordBase.DefaultBase.Count; i++)
