@@ -44,7 +44,7 @@ namespace WordCreator.WordGenerator
         {
             get 
             {
-                if (string.IsNullOrEmpty(SearchingString)) return WordsGenereted;
+                //if (string.IsNullOrEmpty(SearchingString)) return WordsGenereted;
                 return OflineData;
             }
         }

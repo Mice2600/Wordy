@@ -35,7 +35,7 @@ public static partial class SceneComands
             yield return null;
             yield return null;
             yield return null;
-            List<ISearchList> Lis = new List<ISearchList>(GameObject.FindObjectsOfType<MonoBehaviour>().OfType<ISearchList>());
+            List<SearchViwe> Lis = new List<SearchViwe>(GameObject.FindObjectsOfType<MonoBehaviour>().OfType<SearchViwe>());
             Lis.ForEach(a => a.OnShearchValueChanged(SearchID));
             GameObject.FindObjectOfType<TMPro.TMP_InputField>().text = SearchID;
 

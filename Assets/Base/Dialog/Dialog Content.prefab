@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0660653fb0f6246a24ce78e279a2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cellIdentifier: 
+  cellIdentifier: dsa
   NText: {fileID: 983941664486002477}
 --- !u!1 &9133359456004881920
 GameObject:

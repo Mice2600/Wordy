@@ -11,15 +11,11 @@ using UnityEngine;
 
 namespace Servises.BaseList
 {
-    public interface ISearchList 
+    
+    public abstract class BaseListWithFillter : BaseListViwe
     {
-        public void OnShearchValueChanged(string Value);
-        public string SearchingString { get; }
-    }
-    public abstract class BaseListWithFillter : BaseListViwe, ISearchList
-    {
-        [Required,SerializeField]
-        private GameObject CloseSearchingButton;
+        private SearchViwe searchViwe => _searchViwe ??= GameObject.FindObjectOfType<SearchViwe>();
+        private SearchViwe _searchViwe;
         public abstract List<Content> AllContents { get; }
         public override List<Content> Contents 
         {
@@ -35,7 +31,16 @@ namespace Servises.BaseList
         }
         private List<Content> SerchedContents;
         private List<Content> ActiveSorted;
-        
+
+        private protected override void Start()
+        {
+            base.Start();
+
+            searchViwe.OnSearchEnded += OnSerchEnded;
+            searchViwe.OnSearchStarted += OnSerchStarted;
+            searchViwe.OnValueChanged += OnShearchValueChanged;
+        }
+
         public bool OnlyActive;
         public void SetOnlyActive(bool Value) 
         {
@@ -51,52 +56,28 @@ namespace Servises.BaseList
         }
         public override void Refresh() 
         {
-            if (string.IsNullOrEmpty(SearchingString)) 
-            {
+            if (!searchViwe.IsSearching) 
                 SerchedContents = null; 
-            }
-            else 
-            {
-                SerchedContents = Servises.Search.SearchAll<Content>(AllContents, SearchingString);
-                if(OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => (stringToCheck as IPersanalData).Active));
-            }
+            else  SerchedContents = Servises.Search.SearchAll<Content>(AllContents, searchViwe.SearchingString);
             base.Refresh();
         }
-        
-        public string SearchingString { get; set; }
 
-        protected virtual void Update() 
+
+        public void OnSerchStarted() 
         {
-            if (CloseSearchingButton != null) 
-            {
-
-                if (string.IsNullOrEmpty(SearchingString))
-                {
-                    CloseSearchingButton.SetActive(false);
-                    if (HideFromShearchingObject != null) HideFromShearchingObject.SetActive(true);
-                }
-                else 
-                {
-                    CloseSearchingButton.SetActive(true);
-                    if (HideFromShearchingObject != null) HideFromShearchingObject.SetActive(false);
-                }
-            }
-        }
-
-        public void OnShearchValueChanged(string Value) 
-        {
-            SearchingString = Value.ToUpper();
-            if (string.IsNullOrEmpty(SearchingString)) { SerchedContents = null; }
-            else
-            {
-                SerchedContents = SearchComand(AllContents, SearchingString);
-                if (OnlyActive) SerchedContents = new TList<Content>(SerchedContents.Where(stringToCheck => (stringToCheck as IPersanalData).Active));
-            }
+            SerchedContents = new List<Content>();
             Lode(0);
         }
-
-        public GameObject HideFromShearchingObject;
-
+        public void OnSerchEnded() 
+        {
+            SerchedContents = null;
+            Lode(0);
+        }
+        public void OnShearchValueChanged(string Value) 
+        {
+            SerchedContents = SearchComand(AllContents, Value);
+            Lode(0);
+        }
         protected virtual TList<Content> SearchComand(TList<Content> AllContents, string SearchString) => Servises.Search.SearchAll(AllContents, SearchString);
     }
 

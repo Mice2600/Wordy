@@ -11,11 +11,11 @@ namespace Servises.SmartText
     [RequireComponent(typeof(TMP_Text))]
     public abstract class SmartText : OptimizedBehaver, IQueueUpdate
     {
-        private ISearchList SearChSystem;
+        private SearchViwe SearChSystem;
         private protected override void Start()
         {
             base.Start();
-            List<ISearchList> Lis = new List<ISearchList>(GameObject.FindObjectsOfType<MonoBehaviour>().OfType<ISearchList>());
+            List<SearchViwe> Lis = new List<SearchViwe>(GameObject.FindObjectsOfType<MonoBehaviour>().OfType<SearchViwe>());
             if (Lis.Count > 0) SearChSystem = Lis[0];
         }
         public abstract string MyText { get; }
@@ -30,7 +30,7 @@ namespace Servises.SmartText
             string DS = MargeText;
             if (SearChSystem != null) 
             {
-                if (!string.IsNullOrEmpty(SearChSystem.SearchingString)) 
+                if (SearChSystem.IsSearching) 
                 {
                     if (!string.IsNullOrWhiteSpace(SearChSystem.SearchingString))
                     {

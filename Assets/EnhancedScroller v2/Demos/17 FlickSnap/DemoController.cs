@@ -67,7 +67,7 @@ namespace EnhancedScrollerDemos.FlickSnap
         {
             // set up some simple data
             _data = new SmallList<Data>();
-            for (var i = 0; i < 30; i++)
+            for (var i = 0; i < 3; i++)
                 _data.Add(new Data() { someText = "Cell Data Index " + i.ToString() });
 
             flickSnap.MaxDataElements = _data.Count;
