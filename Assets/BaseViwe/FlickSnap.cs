@@ -48,9 +48,8 @@ namespace EnhancedScrollerDemos.FlickSnap
             Vector3 delta = TInput.mousePosition(0) - _dragStartPosition;
             int OldIndex = _currentIndex;
 
-
-
-            if (Mathf.Abs(delta.y) > Mathf.Abs(delta.x) && !scroller.IsTweening) 
+            if (Vector2.Distance(_dragStartPosition, TInput.mousePosition(0)) < 100f ||
+                (Mathf.Abs(delta.y) > Mathf.Abs(delta.x) && !scroller.IsTweening)) 
             {
                 scroller.JumpToDataIndex(_currentIndex, tweenType: snapTweenType, tweenTime: snapTweenTime);
                 return; 

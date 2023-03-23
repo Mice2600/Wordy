@@ -9,29 +9,14 @@ EditorBuildSettings:
     path: Assets/Game/GameController.unity
     guid: 010fc014acdce634cadeb2a47f159bd6
   - enabled: 1
+    path: Assets/BaseViwe/TotleBaseViwe.unity
+    guid: 7d6a82a3755ec8641ba2e73d0830b227
+  - enabled: 1
     path: Assets/Study/BuildDialog/BuildDialog.unity
     guid: 23893d0e40a18df4a9bc6c75be59d0a8
   - enabled: 1
-    path: Assets/EasyTTS/EasyTTSDemo/DemoEasyTTS.unity
-    guid: 31621a684064b401884b3007240c568a
-  - enabled: 1
-    path: Assets/EasyTTS/EasyTTSDemo/DemoEasyTTS_AdvanceFeature.unity
-    guid: d1adb3f95071544b9a079c237c0828cd
-  - enabled: 1
-    path: Assets/EasyTTS/EasyTTSDemo/DemoEasyTTS_SelectEngine.unity
-    guid: e104290b4e48f4d7daa3538fe416857c
-  - enabled: 1
-    path: Assets/BaseViwe/Dialog/DialogBaseViwe.unity
-    guid: 58d0d10c7107b8043bf22bcf06d40f0f
-  - enabled: 1
     path: Assets/Study/WriteWord/WriteWord.unity
     guid: b5ebbcd4faf7c3f4cace0ca145d06295
-  - enabled: 1
-    path: Assets/BaseViwe/TagSystem/TagViwe.unity
-    guid: f097142853274734d9900c8b389b5252
-  - enabled: 1
-    path: Assets/WordCreator/DialogCreator/DialogCreator.unity
-    guid: d25fbd4249ff63f4a87765cfaebe68b3
   - enabled: 1
     path: Assets/Study/FindOnes/FindOns/FindOns.unity
     guid: 4f5c473586be971479638b91cbcd6beb
@@ -42,23 +27,8 @@ EditorBuildSettings:
     path: Assets/Study/TwoWordSystem/TwoWordSystem.unity
     guid: b830123fad04d154d912856e3d54aa33
   - enabled: 1
-    path: Assets/BaseViwe/Word/WordBaseViwe.unity
-    guid: 0bbd79bfc835b374b9bd6a200b7485ee
-  - enabled: 1
-    path: Assets/WordCreator/WordCretor/WordCretor.unity
-    guid: 89be3827c5ba1584bbc516d6d05c5661
-  - enabled: 1
-    path: Assets/BaseViwe/Word/WordGenerator/WordGenerator.unity
-    guid: 428843d4dc54b6c49821959c53e082e1
-  - enabled: 1
-    path: Assets/BaseViwe/Irregular/IrregularBaseViwe.unity
-    guid: c7a5c63af6077ed47a8ff5a931c78f27
-  - enabled: 1
     path: Assets/Study/FindIrregular/WriteIrregular/WriteIrregular.unity
     guid: b760fa6f43c0be94b83c9771accdaf63
-  - enabled: 1
-    path: Assets/BaseViwe/Dialog/DialogDefaultBase/DialogDefaultBase.unity
-    guid: db7dfda7e53590f429af7dcf887c8348
   - enabled: 1
     path: Assets/Study/aSystem/Random/Random.unity
     guid: 52d73c9d2d5b93446b4606442377c353
