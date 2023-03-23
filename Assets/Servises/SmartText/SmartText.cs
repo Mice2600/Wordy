@@ -15,7 +15,7 @@ namespace Servises.SmartText
         private protected override void Start()
         {
             base.Start();
-            List<SearchViwe> Lis = new List<SearchViwe>(GameObject.FindObjectsOfType<MonoBehaviour>().OfType<SearchViwe>());
+            List<SearchViwe> Lis = new List<SearchViwe>(GameObject.FindObjectsOfType<MonoBehaviour>(true).OfType<SearchViwe>());
             if (Lis.Count > 0) SearChSystem = Lis[0];
         }
         public abstract string MyText { get; }

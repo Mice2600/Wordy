@@ -15,12 +15,14 @@ public class CreatNewButton : MonoBehaviour, IBaseToolItem
     {
         GetComponent<Button>().onClick.AddListener(OnButton);
     }
+    ICreatNewUser CorrentUser;
     public void OnNewViweOpend(BaseListViwe baseList)
     {
         gameObject.SetActive(baseList is ICreatNewUser);
+        CorrentUser = baseList as ICreatNewUser;
     }
     public void OnButton()
     {
-        new List<ICreatNewUser>(FindObjectsOfType<MonoBehaviour>(true).OfType<ICreatNewUser>()).ForEach((a) => a.OnButton());
+        if (CorrentUser != null) CorrentUser.OnButton();
     }
 }

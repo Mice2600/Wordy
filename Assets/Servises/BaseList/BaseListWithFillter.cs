@@ -12,9 +12,9 @@ using UnityEngine;
 namespace Servises.BaseList
 {
     
-    public abstract class BaseListWithFillter : BaseListViwe
+    public abstract class BaseListWithFillter : BaseListViwe, ISearchUser
     {
-        private SearchViwe searchViwe => _searchViwe ??= GameObject.FindObjectOfType<SearchViwe>();
+        private SearchViwe searchViwe => _searchViwe ??= GameObject.FindObjectOfType<SearchViwe>(true);
         private SearchViwe _searchViwe;
         public abstract List<Content> AllContents { get; }
         public override List<Content> Contents 
@@ -35,13 +35,9 @@ namespace Servises.BaseList
         private protected override void Start()
         {
             base.Start();
-
-            searchViwe.OnSearchEnded += OnSerchEnded;
-            searchViwe.OnSearchStarted += OnSerchStarted;
-            searchViwe.OnValueChanged += OnShearchValueChanged;
         }
 
-        public bool OnlyActive;
+        private bool OnlyActive;
         public void SetOnlyActive(bool Value) 
         {
             if (Value == false) ActiveSorted = null;
@@ -63,17 +59,17 @@ namespace Servises.BaseList
         }
 
 
-        public void OnSerchStarted() 
+        void ISearchUser.OnSearchStarted() 
         {
             SerchedContents = new List<Content>();
             Lode(0);
         }
-        public void OnSerchEnded() 
+        void ISearchUser.OnSearchEnded() 
         {
             SerchedContents = null;
             Lode(0);
         }
-        public void OnShearchValueChanged(string Value) 
+        void ISearchUser.OnValueChanged(string Value) 
         {
             SerchedContents = SearchComand(AllContents, Value);
             Lode(0);

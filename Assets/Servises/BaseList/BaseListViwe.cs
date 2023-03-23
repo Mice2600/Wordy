@@ -13,13 +13,11 @@ using UnityEngine.UIElements;
 
 namespace Servises.BaseList
 {
+    [RequireComponent(typeof(EnhancedScroller))]
     public abstract class BaseListViwe : MonoBehaviour, IRemoveButtonUser, IEnhancedScrollerDelegate
     {
-        
-        [Required]
-        public EnhancedScroller scroller;
-        [Required]
-        public CellView cellViewPrefab;
+        private EnhancedScroller scroller => _scroller ??= GetComponent<EnhancedScroller>();
+        private EnhancedScroller _scroller;
         public abstract List<Content> Contents { get; }
         private protected virtual int IndexOf(Content content) => Contents.IndexOf(content);
         private protected virtual void Start()

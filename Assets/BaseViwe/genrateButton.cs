@@ -14,24 +14,27 @@ public interface IGenrateUser
 [RequireComponent(typeof(Button), typeof(CanvasGroup))]
 public class genrateButton : MonoBehaviour, IBaseToolItem
 {
-    private CanvasGroup CanvasGroup;
+    private CanvasGroup CanvasGroup => _CanvasGroup ??= GetComponent<CanvasGroup>();
+    private CanvasGroup _CanvasGroup;
     private void Start()
     {
         Value = false;
         CanvasGroup.alpha = .5f;
         GetComponent<Button>().onClick.AddListener(OnButton);
     }
-    
+    IGenrateUser CorrentUser;
     public void OnNewViweOpend(BaseListViwe baseList)
     {
         gameObject.SetActive(baseList is IGenrateUser);
+        CorrentUser = baseList as IGenrateUser;
+        if (CorrentUser != null) CorrentUser.OnValueChanged(Value);
     }
     private bool Value;
     public void OnButton()
     {
         Value = !Value;
         CanvasGroup.alpha = (Value) ? 1f : .5f;
-        new List<IGenrateUser>(FindObjectsOfType<MonoBehaviour>(true).OfType<IGenrateUser>()).ForEach((a) => a.OnValueChanged(Value));
+        if (CorrentUser != null) CorrentUser.OnValueChanged(Value);
+        
     }
-
 }
