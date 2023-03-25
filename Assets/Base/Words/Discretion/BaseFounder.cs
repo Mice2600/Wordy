@@ -8,7 +8,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class BaseFounder : MonoBehaviour
 {
-    public string DialogSceneName;
     public TextMeshProUGUI textMesh;
     private Content Content;
     void Start()
@@ -39,6 +38,6 @@ public class BaseFounder : MonoBehaviour
     public void OnButton()
     {
         transform.GetComponentInParent<DiscretionObject>().DestroyUrself();
-        SceneComands.OpenSceneBaseSearch(Content.EnglishSource, DialogSceneName);
+        SceneComands.OpenSceneBaseSearch(Content.EnglishSource, 1);
     }
 }

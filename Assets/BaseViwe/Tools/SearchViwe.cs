@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public interface ISearchUser 
 {
@@ -21,6 +22,8 @@ public class SearchViwe : MonoBehaviour, IBaseToolItem
     private TMPro.TMP_InputField InputField;
     public bool IsSearching =>  gameObject.activeSelf;
     public string SearchingString => InputField.text;
+    [Required]
+    public GameObject OpenButton;
     public void OnShearchValueChanged(string Value)
     {
         InputField.text = Value.ToUpper();
@@ -39,9 +42,20 @@ public class SearchViwe : MonoBehaviour, IBaseToolItem
         if(CorrentUser != null) CorrentUser.OnSearchEnded();
     }
     ISearchUser CorrentUser;
-    public void OnNewViweOpend(BaseListViwe baseList)
+    public void OnNewViweOpend(GameObject baseList)
     {
-        CorrentUser = (baseList as ISearchUser);
+        var r = baseList.GetComponent<ISearchUser>();
+
+        OpenButton.SetActive(r != null);
+
+        if (r == null) 
+        {
+            gameObject.SetActive(false);
+            InputField.text = "";
+            return;
+        }
+
+        CorrentUser = r;
         if (CorrentUser != null && IsSearching) 
         {
             CorrentUser.OnSearchStarted();

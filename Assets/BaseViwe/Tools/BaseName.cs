@@ -12,22 +12,25 @@ public interface IBaseNameUser
 }
 public class BaseName : MonoBehaviour, IBaseToolItem
 {
+    
     [SerializeField, Required]
     private Image BaseImage;
     [SerializeField, Required]
     private TMP_Text NameText;
     public Sprite DefaultImage;
-    public void OnNewViweOpend(BaseListViwe baseList)
+    public void OnNewViweOpend(GameObject baseList)
     {
-        if (baseList is not IBaseNameUser)
+        var r = baseList.GetComponent<IBaseNameUser>();
+
+        if (r == null)
         {
             BaseImage.sprite = DefaultImage;
             NameText.text = "BASE";
         }
         else 
         {
-            BaseImage.sprite = (baseList as IBaseNameUser).BaseImage;
-            NameText.text = (baseList as IBaseNameUser).BaseName;
+            BaseImage.sprite = (r).BaseImage;
+            NameText.text = (r).BaseName;
         }
     }
 }

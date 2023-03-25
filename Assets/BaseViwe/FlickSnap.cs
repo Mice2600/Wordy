@@ -11,7 +11,7 @@ namespace EnhancedScrollerDemos.FlickSnap
     {
         private EnhancedScroller scroller => _scroller ??= GetComponent<EnhancedScroller>();
         private EnhancedScroller _scroller;
-        public System.Action<BaseListViwe> OnNewViweOpend;
+        public System.Action<GameObject> OnNewViweOpend;
         public EnhancedScroller.TweenType snapTweenType;
 
         public float snapTweenTime;
@@ -29,7 +29,7 @@ namespace EnhancedScrollerDemos.FlickSnap
             IEnumerator AfterFrem() 
             {
                 yield return new WaitUntil(() => scroller.GetCellViewAtDataIndex(0) != null);
-                OnNewViweOpend?.Invoke(scroller.GetCellViewAtDataIndex(0).GetComponent<BaseListViwe>());
+                OnNewViweOpend?.Invoke(scroller.GetCellViewAtDataIndex(0).gameObject);
             }
         }
 
@@ -71,14 +71,26 @@ namespace EnhancedScrollerDemos.FlickSnap
             IEnumerator WaitUntilActivation() 
             {
                 yield return new WaitUntil(()=> scroller.GetCellViewAtDataIndex(_currentIndex) != null);
-                OnNewViweOpend?.Invoke(scroller.GetCellViewAtDataIndex(_currentIndex).GetComponent<BaseListViwe>());
+                OnNewViweOpend?.Invoke(scroller.GetCellViewAtDataIndex(_currentIndex).gameObject);
             }
 
             
         }
 
 
-        
+        public void JumpToDataIndex(int index) 
+        {
+            int OldIndex = _currentIndex;
+            _currentIndex = Mathf.Clamp(index, 0, MaxDataElements - 1);
+            scroller.JumpToDataIndex(_currentIndex, tweenType: snapTweenType, tweenTime: snapTweenTime);
+            
+            if (_currentIndex != OldIndex) StartCoroutine(WaitUntilActivation());
+            IEnumerator WaitUntilActivation()
+            {
+                yield return new WaitUntil(() => scroller.GetCellViewAtDataIndex(_currentIndex) != null);
+                OnNewViweOpend?.Invoke(scroller.GetCellViewAtDataIndex(_currentIndex).gameObject);
+            }
+        }
 
     }
 }

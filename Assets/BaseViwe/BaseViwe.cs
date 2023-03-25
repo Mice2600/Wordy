@@ -30,7 +30,7 @@ namespace BaseViwe
             scroller.ReloadData();
         }
 
-        private void OnNewViweOpend(BaseListViwe Corrent)
+        private void OnNewViweOpend(GameObject Corrent)
         {
             new List<IBaseToolItem>(FindObjectsOfType<MonoBehaviour>(true).OfType<IBaseToolItem>()).ForEach((a) => a.OnNewViweOpend(Corrent));
         }

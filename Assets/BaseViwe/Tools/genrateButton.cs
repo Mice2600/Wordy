@@ -23,10 +23,11 @@ public class genrateButton : MonoBehaviour, IBaseToolItem
         GetComponent<Button>().onClick.AddListener(OnButton);
     }
     IGenrateUser CorrentUser;
-    public void OnNewViweOpend(BaseListViwe baseList)
+    public void OnNewViweOpend(GameObject baseList)
     {
-        gameObject.SetActive(baseList is IGenrateUser);
-        CorrentUser = baseList as IGenrateUser;
+        var r = baseList.GetComponent<IGenrateUser>();
+        gameObject.SetActive(r != null);
+        CorrentUser = r;
         if (CorrentUser != null) CorrentUser.OnValueChanged(Value);
     }
     private bool Value;

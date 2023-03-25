@@ -16,10 +16,11 @@ public class CreatNewButton : MonoBehaviour, IBaseToolItem
         GetComponent<Button>().onClick.AddListener(OnButton);
     }
     ICreatNewUser CorrentUser;
-    public void OnNewViweOpend(BaseListViwe baseList)
+    public void OnNewViweOpend(GameObject baseList)
     {
-        gameObject.SetActive(baseList is ICreatNewUser);
-        CorrentUser = baseList as ICreatNewUser;
+        var r = baseList.GetComponent<ICreatNewUser>();
+        gameObject.SetActive(r != null);
+        CorrentUser = r;
     }
     public void OnButton()
     {
