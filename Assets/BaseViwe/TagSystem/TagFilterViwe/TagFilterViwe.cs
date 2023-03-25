@@ -1,3 +1,4 @@
+using Servises.BaseList;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,10 +22,10 @@ public class TagFilterViwe : MonoBehaviour
         AllTages.ForEach((a) =>
         {
             Toggle Toggel = Instantiate(TagButtonPrefab, ConentParrent).GetComponent<Toggle>();
-            Toggel.isOn = TagViwe.TagFillterValues[a];
+            Toggel.isOn = BaseListWithFillter.TagFillterValues[a];
             Toggel.GetComponentInChildren<TextMeshProUGUI>().text = a + " " +  TagSystem.GetAllContentsFromTag(a).Count;
             string Ass = a;
-            Toggel.onValueChanged.AddListener((GG) => { TagViwe.TagFillterValues[Ass] = GG; });
+            Toggel.onValueChanged.AddListener((GG) => { BaseListWithFillter.TagFillterValues[Ass] = GG; });
         });
     }
     public void OnAddButton() => TagCreator.Open(Start);
@@ -32,5 +33,11 @@ public class TagFilterViwe : MonoBehaviour
     {
         OnDone?.Invoke();
         Destroy(gameObject);
+    }
+    public void OnDefaultButton() 
+    {
+        List<string> kk = new List<string>(BaseListWithFillter.TagFillterValues.Keys);
+        kk.ForEach(a => BaseListWithFillter.TagFillterValues[a] = false);
+        new List<Toggle>(GetComponentsInChildren<Toggle>()).ForEach(a => a.isOn = false);
     }
 }

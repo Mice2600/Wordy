@@ -244,7 +244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62ba91236f1445242b3103709cd94ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogSceneName: DialogBaseViwe
   textMesh: {fileID: 7515301903088274350}
 --- !u!1 &1334136508963489116
 GameObject:
@@ -996,7 +995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817fffc21ece70349a7853e125064543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultDialogSceneName: DialogDefaultBase
   textMesh: {fileID: 2512447344897670774}
 --- !u!1 &2512447344897670772
 GameObject:
@@ -2096,6 +2094,7 @@ GameObject:
   - component: {fileID: 8284152216871096944}
   - component: {fileID: 8284152216871096947}
   - component: {fileID: 5832943423621316196}
+  - component: {fileID: 5514404140805029702}
   m_Layer: 0
   m_Name: Discretion Default Word
   m_TagString: Untagged
@@ -2199,6 +2198,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a52c31e228af8ed4482d19414bd54188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5514404140805029702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284152216871096949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4dfb4166e6633f489696d401b519391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8284152217070976520

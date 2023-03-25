@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
 public interface ISearchUser 
@@ -35,6 +36,16 @@ public class SearchViwe : MonoBehaviour, IBaseToolItem
     {
         OnSearchStarted?.Invoke();
         if (CorrentUser != null) CorrentUser.OnSearchStarted();
+
+        StartCoroutine(dd());
+        IEnumerator dd() 
+        {
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            EventSystem.current.SetSelectedGameObject(gameObject);
+            InputField.OnSelect(new BaseEventData(EventSystem.current));
+        }
+        
     }
     private void OnDisable()
     {

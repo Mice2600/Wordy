@@ -19,10 +19,12 @@ public static class TagSystem
             {
                 _Tags = new List<Tag>();
                 JsonHelper.FromJsonList<string>(PlayerPrefs.GetString("TagSystemIDSaver")).ForEach((a) => Tags.Add(new Tag(a)));
+                if (_Tags.Count == 0) _Tags.Add(new Tag(ActiveID));
             }
             return _Tags;
         }
     }
+    public static string ActiveID => "Active";
     private static List<Tag> _Tags;
     public static TList<string> GetAllTagIdes() 
     {

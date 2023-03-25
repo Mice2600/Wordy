@@ -49,7 +49,7 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
         index -= (levv * 30);
         Color color = ContentLoopColors.Evaluate((float)index / 30f);
         if (IsActive) return color;
-        return Color.Lerp(color, Color.black, .3f);
+        return Color.Lerp(color, Color.black, .5f);
     }
 
 }

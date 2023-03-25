@@ -14,6 +14,7 @@ public class ContentTagViwe : MonoBehaviour
     private void Start()
     {
         ContentObject.OnValueChanged += Change;
+        MoveText.Text = "";
         Change(ContentObject.Content);
     }
     private void Change(Content content) 

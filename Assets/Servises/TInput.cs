@@ -3,27 +3,21 @@ using UnityEngine.EventSystems;
 
 public static class TInput
 {
-
-
-    private static bool Starter = false;
     public static bool Is_Using_Touch = true;
-
-    private static void Start()
+    static TInput() 
     {
-        if (Starter) return;
-        Starter = true;
         Is_Using_Touch = true;
 #if UNITY_EDITOR
         Is_Using_Touch = false;
 #elif UNITY_STANDALONE
         Is_Using_Touch = false;
 #endif
-
     }
+
 
     public static bool GetMouseButton(int Item, bool Fill_If_One = false)
     {
-        Start();
+        if (InputBlocker.Blockers.Count > 0) return false;
 
         if (Is_Using_Touch)
         {
@@ -44,7 +38,7 @@ public static class TInput
 
     public static bool GetMouseButtonDown(int Item, bool Fill_If_One = false)
     {
-        Start();
+        if (InputBlocker.Blockers.Count > 0) return false;
 
         if (Is_Using_Touch)
         {
@@ -62,7 +56,7 @@ public static class TInput
     }
     public static bool GetMouseButtonUp(int Item, bool Fill_If_One = false)
     {
-        Start();
+        if (InputBlocker.Blockers.Count > 0) return false;
 
         if (Is_Using_Touch)
         {

@@ -22,7 +22,7 @@ public class QuestRandom : MonoBehaviour
                 List<string> AllllKays = new List<string>(AllVV.Keys);
                 TList<GameObject> AlllGGAm = new List<GameObject>();
                 for (int i = 0; i < AllVV.Count; i++)
-                    if (AllVV[AllllKays[i]] != null && AllVV[AllllKays[i]] is GameObject)
+                    if (AllVV[AllllKays[i]] != null && AllVV[AllllKays[i]] is GameObject && (AllVV[AllllKays[i]] as GameObject) != null )
                         if ((AllVV[AllllKays[i]] as GameObject).TryGetComponent(out Quest D))
                             AlllGGAm.Add(AllVV[AllllKays[i]] as GameObject);
 
@@ -42,7 +42,7 @@ public class QuestRandom : MonoBehaviour
         List<string> Kays = new List<string>(All.Keys);
         TList<GameObject> gameObjects = new List<GameObject>();
         for (int i = 0; i < All.Count; i++)
-            if (All[Kays[i]] != null && All[Kays[i]] is GameObject)
+            if (All[Kays[i]] != null && All[Kays[i]] is GameObject && (All[Kays[i]] as GameObject) != null)
                 if ((All[Kays[i]] as GameObject).TryGetComponent(out Quest D))
                     gameObjects.Add(All[Kays[i]] as GameObject);
 

@@ -518,6 +518,7 @@ GameObject:
   - component: {fileID: 2726195047587263080}
   - component: {fileID: 2726195047587263083}
   - component: {fileID: 5287806923282151324}
+  - component: {fileID: 6502991671022486910}
   m_Layer: 0
   m_Name: ContentTagSettings
   m_TagString: Untagged
@@ -623,6 +624,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TagButtonPrefab: {fileID: 2878854915392133141, guid: 2cdc8c153c5747c418de5f0b492d61a3, type: 3}
   ConentParrent: {fileID: 2726195047786896913}
+--- !u!114 &6502991671022486910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2726195047587263085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4dfb4166e6633f489696d401b519391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2726195047786896912
 GameObject:
   m_ObjectHideFlags: 0
