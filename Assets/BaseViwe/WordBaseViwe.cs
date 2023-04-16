@@ -69,14 +69,41 @@ namespace BaseViwe.WordViwe
             return CCSize;
         }
 
+        List<Coroutine> SearchCoroutines = new List<Coroutine>();
+        public override void StopSearching()
+        {
+            for (int i = 0; i < SearchCoroutines.Count; i++)
+                if (SearchCoroutines[i] != null) StopCoroutine(SearchCoroutines[i]);
+            SearchCoroutines = new List<Coroutine>();
+        }
         protected override TList<Content> SearchComand(TList<Content> AllContents, string SearchString)
         {
-            TList < Content > FromMee =   base.SearchComand(new List<Content>(WordBase.Wordgs), SearchString);
-            TList<Content> FromDefalt = base.SearchComand(new List<Content>(WordBase.DefaultBase), SearchString);
-            for (int i = 0; i < FromDefalt.Count; i++)
-                if(!FromMee.Contains(FromDefalt[i])) 
-                    FromMee.Add(FromDefalt[i]);
-            return FromMee;
+            StopSearching();
+            TList<Content> FromMee = new TList<Content>();
+            TList<Content> FromDefalt = new TList<Content>();
+            SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.Wordgs), SearchString, (l) => {
+
+                FromMee = l;
+                List<Content> N = new List<Content>(FromMee);
+                N.AddRange(FromDefalt);
+                SerchedContents = N;
+                Refresh();
+            })));
+            SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.DefaultBase), SearchString, (l) => {
+                FromDefalt = l;
+
+                List<Content> N = new List<Content>(FromMee);
+                N.AddRange(FromDefalt);
+                SerchedContents = N;
+                Refresh();
+            })));
+            return new TList<Content>();
         }
+
+
+
+
+
+
     }
 }

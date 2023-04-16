@@ -17,8 +17,6 @@ public static class TInput
 
     public static bool GetMouseButton(int Item, bool Fill_If_One = false)
     {
-        if (InputBlocker.Blockers.Count > 0) return false;
-
         if (Is_Using_Touch)
         {
             if (Fill_If_One && Input.touchCount > 1) return false;
@@ -38,8 +36,6 @@ public static class TInput
 
     public static bool GetMouseButtonDown(int Item, bool Fill_If_One = false)
     {
-        if (InputBlocker.Blockers.Count > 0) return false;
-
         if (Is_Using_Touch)
         {
             if (Fill_If_One && Input.touchCount > 1) return false;
@@ -56,7 +52,6 @@ public static class TInput
     }
     public static bool GetMouseButtonUp(int Item, bool Fill_If_One = false)
     {
-        if (InputBlocker.Blockers.Count > 0) return false;
 
         if (Is_Using_Touch)
         {

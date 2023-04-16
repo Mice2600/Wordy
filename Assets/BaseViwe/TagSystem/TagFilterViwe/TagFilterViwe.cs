@@ -11,7 +11,7 @@ public class TagFilterViwe : MonoBehaviour
 {
     public System.Action OnDone;
     [SerializeField, Required]
-    private GameObject TagButtonPrefab;
+    private TogelContent TagButtonPrefab;
     [SerializeField, Required]
     private Transform ConentParrent;
     private void Start()
@@ -21,11 +21,12 @@ public class TagFilterViwe : MonoBehaviour
         toggle.DestroyAll(true);
         AllTages.ForEach((a) =>
         {
-            Toggle Toggel = Instantiate(TagButtonPrefab, ConentParrent).GetComponent<Toggle>();
+            TogelContent Toggel = Instantiate(TagButtonPrefab, ConentParrent);
             Toggel.isOn = BaseListWithFillter.TagFillterValues[a];
             Toggel.GetComponentInChildren<TextMeshProUGUI>().text = a + " " +  TagSystem.GetAllContentsFromTag(a).Count;
             string Ass = a;
-            Toggel.onValueChanged.AddListener((GG) => { BaseListWithFillter.TagFillterValues[Ass] = GG; });
+            Toggel.OnBoolChanged += (GG) => { BaseListWithFillter.TagFillterValues[Ass] = GG; };
+            Toggel.OnDestroyButton += () => TagDeleter.Delet(Start, TagSystem.GetTag(Ass));
         });
     }
     public void OnAddButton() => TagCreator.Open(Start);

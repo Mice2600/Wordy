@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 3940078003728719833}
   - component: {fileID: 3940078003728719834}
   - component: {fileID: 1488448193089729485}
-  - component: {fileID: 4496124464329040729}
+  - component: {fileID: 9192916861584232287}
   m_Layer: 0
   m_Name: Discretion Irregular
   m_TagString: Untagged
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52c31e228af8ed4482d19414bd54188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4496124464329040729
+--- !u!114 &9192916861584232287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1092,9 +1092,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3940078003728719836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4dfb4166e6633f489696d401b519391, type: 3}
+  m_Script: {fileID: 11500000, guid: 0315cd0a230e5ef4ba95279c77e6b1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Arts:
+  - {fileID: 3940078003246459755}
+  - {fileID: 6147695263485646197}
+  - {fileID: 1293707078511373043}
 --- !u!1 &3940078003929674657
 GameObject:
   m_ObjectHideFlags: 0

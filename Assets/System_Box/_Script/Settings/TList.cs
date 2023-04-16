@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,7 +61,6 @@ namespace SystemBox
 
 
         #region ListOrginal
-
         [SerializeField]
         private List<T> NList = new List<T>();
         public T this[int index]

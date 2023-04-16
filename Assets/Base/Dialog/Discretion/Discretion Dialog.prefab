@@ -1045,7 +1045,6 @@ GameObject:
   - component: {fileID: 5128650482689109632}
   - component: {fileID: 8781359346984319441}
   - component: {fileID: 5174067280962771794}
-  - component: {fileID: 24727380672000114}
   m_Layer: 0
   m_Name: Discretion Dialog
   m_TagString: Untagged
@@ -1162,26 +1161,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Arts:
-  - {fileID: 0}
   - {fileID: 2273728714714243665}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 6535113318266061984}
   - {fileID: 646172172937081561}
+  - {fileID: 494499394855896832}
+  - {fileID: 825175888423789370}
+  - {fileID: 5128650482198288945}
   - {fileID: 5128650481561630683}
   - {fileID: 4621253601106572670}
---- !u!114 &24727380672000114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5128650482689109638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4dfb4166e6633f489696d401b519391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5693306968612963559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,7 +1955,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 2407364394184431977}
     m_Modifications:
     - target: {fileID: 6899772805140884957, guid: 455d0147ca047b443b57325ece1e5d6b, type: 3}
@@ -2061,9 +2047,7 @@ PrefabInstance:
       value: Ignore Tags
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455d0147ca047b443b57325ece1e5d6b, type: 3}
 --- !u!224 &840407735297176906 stripped
 RectTransform:

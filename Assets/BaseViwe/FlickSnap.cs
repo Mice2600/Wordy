@@ -3,6 +3,7 @@ using UnityEngine;
 using EnhancedUI.EnhancedScroller;
 using Servises.BaseList;
 using UnityEngine.UIElements;
+using System.Linq;
 
 namespace EnhancedScrollerDemos.FlickSnap
 {
@@ -39,8 +40,16 @@ namespace EnhancedScrollerDemos.FlickSnap
         }
         private void Update()
         {
-            if(TInput.GetMouseButtonDown(0, true)) OnBeginDrag();
-            if(TInput.GetMouseButtonUp(0, true)) OnEndDrag();
+            if (TInput.GetMouseButtonDown(0, true)) 
+            {
+                if (FindObjectsOfType<Canvas>().Where((c) => c.transform.root == c.transform).Count() > 1) return;
+                OnBeginDrag(); 
+            }
+            if (TInput.GetMouseButtonUp(0, true)) 
+            {
+                if (FindObjectsOfType<Canvas>().Where((c) => c.transform.root == c.transform).Count() > 1) return;
+                OnEndDrag(); 
+            }
 
         }
         public void OnEndDrag()

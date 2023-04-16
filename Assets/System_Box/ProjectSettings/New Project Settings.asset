@@ -26,11 +26,11 @@ MonoBehaviour:
   ContentObjectDialog: {fileID: 983941666089937557, guid: 80e28cb604d4a554981e5c271d25900e, type: 3}
   DiscretionDialogDefoult: {fileID: 5128650482689109638, guid: 6f3c198d34a658142893b9cb9d8709ec, type: 3}
   ContentObjectDialogDefoult: {fileID: 7788728164050202616, guid: c7b9b8396b2ee6d40816902fbe49188e, type: 3}
-  DiscretionIrregularDefoult: {fileID: 0}
-  ContentObjectIrregularDefoult: {fileID: 0}
   DefalultIrregular: {fileID: 4900000, guid: 7e22acab76b277b4095a70a71d2a6630, type: 3}
   DiscretionIrregular: {fileID: 3940078003728719836, guid: 032d1ad23120f2b4da823d765639fd0a, type: 3}
   ContentObjectIrregular: {fileID: 5484883712623103126, guid: 1ea2a1edfeec77640bce5f173eb31151, type: 3}
+  DiscretionIrregularDefoult: {fileID: 0}
+  ContentObjectIrregularDefoult: {fileID: 0}
   DiscretionWord: {fileID: 8284152216871096949, guid: 5887a96017b852d42bee61c51a794b1e, type: 3}
   ContentObjectWord: {fileID: 8894941232974717581, guid: 5cde44f867792664fa2d2d1631167d11, type: 3}
   DiscretionWordDefoult: {fileID: 8284152216871096949, guid: fa1d010ee96cfe34bb8b0189384a2fda, type: 3}
@@ -39,7 +39,8 @@ MonoBehaviour:
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
   DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
   TagContentListViwe: {fileID: 2726195047587263085, guid: 6f89b5a20b2290846a7aaf149b8a222d, type: 3}
-  TagCreatorViwe: {fileID: 6608090224564072103, guid: 9957a4fa4ce74de47aa835febb52c857, type: 3}
+  TagCreatorViwe: {fileID: 6608090224564072100, guid: 9957a4fa4ce74de47aa835febb52c857, type: 3}
+  TagDeletViwe: {fileID: 2907046969659145311, guid: ed99d274d69b6804bb627eda7d02f062, type: 3}
   ContentLoopColors:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 0, a: 1}
@@ -67,7 +68,6 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}

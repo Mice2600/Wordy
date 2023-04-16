@@ -27,6 +27,7 @@ public class SearchViwe : MonoBehaviour, IBaseToolItem
     public GameObject OpenButton;
     public void OnShearchValueChanged(string Value)
     {
+        if (!SystemBox.Simpls.Comand.OneFream("Search")) return;
         InputField.text = Value.ToUpper();
         OnValueChanged?.Invoke(Value);
         if (CorrentUser != null) CorrentUser.OnValueChanged(Value);

@@ -53,5 +53,37 @@ namespace BaseViwe.DialogViwe
         {
             DialogChanger.StartChanging();
         }
+
+        List<Coroutine> SearchCoroutines = new List<Coroutine>();
+        public override void StopSearching() 
+        {
+            for (int i = 0; i < SearchCoroutines.Count; i++)
+                if (SearchCoroutines[i] != null) StopCoroutine(SearchCoroutines[i]);
+            SearchCoroutines = new List<Coroutine>();
+        }
+        protected override TList<Content> SearchComand(TList<Content> AllContents, string SearchString)
+        {
+            StopSearching();
+            TList<Content> FromMee = new TList<Content>();
+            TList<Content> FromDefalt = new TList<Content>();
+            SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(DialogBase.Dialogs), SearchString, (l) => {
+
+                FromMee = l;
+                List<Content> N = new List<Content>(FromMee);
+                N.AddRange(FromDefalt);
+                SerchedContents = N;
+                Refresh();
+            })));
+            SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(DialogBase.DefaultBase), SearchString, (l) => {
+                FromDefalt = l;
+
+                List<Content> N = new List<Content>(FromMee);
+                N.AddRange(FromDefalt);
+                SerchedContents = N;
+                Refresh();
+            })));
+            return new TList<Content>();
+        }
+
     }
 }

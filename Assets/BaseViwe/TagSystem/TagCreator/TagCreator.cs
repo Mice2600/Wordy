@@ -10,14 +10,15 @@ namespace ProjectSettings
 {
     public partial class ProjectSettings 
     {
-        [Required]
-        public GameObject TagCreatorViwe;
+        [Required, HorizontalGroup("TagCreat")]
+        public TagCreator TagCreatorViwe;
     }
 }
 
 public class TagCreator : MonoBehaviour
 {
-    public static void Open(System.Action OnNewTagCreated) => Instantiate(ProjectSettings.ProjectSettings.Mine.TagCreatorViwe).GetComponent<TagCreator>().OnNewTagCreated = OnNewTagCreated;
+    public static void Open(System.Action OnNewTagCreated) => Instantiate(ProjectSettings.ProjectSettings.Mine.TagCreatorViwe).OnNewTagCreated = OnNewTagCreated;
+    
     private TMPro.TMP_InputField textContainer => _textContainer ??= GetComponentInChildren<TMPro.TMP_InputField>();
     private TMPro.TMP_InputField _textContainer;
     public System.Action OnNewTagCreated;

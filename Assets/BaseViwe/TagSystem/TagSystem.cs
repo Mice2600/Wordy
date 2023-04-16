@@ -1,16 +1,15 @@
 using Base;
+using Base.Word;
 using Servises;
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using SystemBox;
 using UnityEngine;
 
 public static class TagSystem 
 {
-    static TagSystem() 
-    {
-        
-        
-    }
     private static List<Tag> Tags 
     {
         get 
@@ -18,8 +17,13 @@ public static class TagSystem
             if (_Tags == null) 
             {
                 _Tags = new List<Tag>();
-                JsonHelper.FromJsonList<string>(PlayerPrefs.GetString("TagSystemIDSaver")).ForEach((a) => Tags.Add(new Tag(a)));
-                if (_Tags.Count == 0) _Tags.Add(new Tag(ActiveID));
+                if (PlayerPrefs.GetInt("TagSystemDefaultLode") == 0) 
+                {
+                    PlayerPrefs.SetInt("TagSystemDefaultLode", 1);//
+                    PlayerPrefs.SetString("TagSystemSaver", ProjectSettings.ProjectSettings.Mine.DefaultTags.text);
+                }
+                JsonHelper.FromJsonList<Tag>(PlayerPrefs.GetString("TagSystemSaver")).ForEach((a) => Tags.Add(a));
+                if(_Tags.Find((a) => a.ID == ActiveID) == null) _Tags.AddTo(0, new Tag(ActiveID));
             }
             return _Tags;
         }
@@ -33,6 +37,7 @@ public static class TagSystem
         return TagNames;
     }
     public static Tag GetTag(string ID) => Tags.Find((a) => a.ID == ID);
+    public static List<Tag> GetAllTags() => Tags;
     public static TList<string> GetBlongTags(string contentID) 
     {
         TList<string> TagNames = new TList<string>();
@@ -84,11 +89,23 @@ public static class TagSystem
         Save();
         return true;
     }
+    public static void SaveToDefault() 
+    {
+        Save();
+    }
     public static void Save() 
     {
-        List<string> TagIdes = new List<string>();
-        Tags.ForEach((a) => TagIdes.Add(a.ID));
-        PlayerPrefs.SetString("TagSystemIDSaver", JsonHelper.ToJson<string>(TagIdes));
+        PlayerPrefs.SetString("TagSystemSaver", JsonHelper.ToJson<Tag>(Tags));
+        string All = "";/////
+        if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Tags.txt"))
+            All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Tags.txt");
+        else Directory.CreateDirectory("Assets/Base/Resources");
+        string SD = JsonHelper.ToJson(TagSystem.GetAllTags());
+        SD = SD.Replace("{", "\n{");
+        SD = SD.Replace("},", "\n},");
+        SD = SD.Replace("\",\"", "\",\n\"");
+        System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Tags.txt", SD);
+        ProjectSettings.ProjectSettings.Mine.DefaultTags = UnityEngine.Resources.Load("Default Tags", typeof(TextAsset)) as TextAsset;
     }
 
 
@@ -96,11 +113,42 @@ public static class TagSystem
     {
         if (!ContainsTag(TagID)) return;
         GetTag(TagID).Add(ContentID);
+        Save();
     }
     public static void RemoveContent(string TagID, string ContentID) 
     {
         if (!ContainsTag(TagID)) return;
         GetTag(TagID).Remove(ContentID);
+        Save();
+    }
+    public static void AddDeafauldText(string TagID, string Text)
+    {
+        
+        if (!ContainsTag(TagID)) return;
+        Tag tag = GetTag(TagID);
+        Debug.Log(tag.Contents.Count);
+        Text = Text.Replace("\n", "|").Replace("\t", "|").Replace(" ", "|").Replace("||", "|");
+        Text.Split("|").ToList().ForEach((OneN)=> { if(!tag.Contents.Contains(OneN.ToUpper())) tag.Contents.Add(OneN.ToUpper()); });
+        Debug.Log(Text.Split("|").Length);
+        string All = "";///
+        if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Tags.txt"))
+            All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Tags.txt");
+        else Directory.CreateDirectory("Assets/Base/Resources");
+        string SD = JsonHelper.ToJson(TagSystem.GetAllTags());
+        SD = SD.Replace("{", "\n{");
+        SD = SD.Replace("},", "\n},");
+        System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Tags.txt", SD);
+        ProjectSettings.ProjectSettings.Mine.DefaultTags = UnityEngine.Resources.Load("Default Tags", typeof(TextAsset)) as TextAsset;
+        Save();
     }
 
+}
+namespace ProjectSettings
+{
+    public partial class ProjectSettings
+    {
+        //[BoxGroup("Defalult Base/Dialog")]
+        [HorizontalGroup("DefalultBaseWord")]//
+        public TextAsset DefaultTags;
+    }
 }

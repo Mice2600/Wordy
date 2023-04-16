@@ -64,12 +64,12 @@ namespace Servises.BaseList
                 return SerchedContents;
             }
         }
-        private List<Content> SerchedContents;
+        private protected List<Content> SerchedContents;
         
         public override void Refresh() 
         {
             if (!searchViwe.IsSearching) SerchedContents = null; 
-            else  SerchedContents = Servises.Search.SearchAll<Content>(AllContents, searchViwe.SearchingString);
+            else if(SerchedContents.Count == 0) SerchedContents = Servises.Search.SearchAll<Content>(AllContents, searchViwe.SearchingString);
 
             Filtered = new List<Content>();
             TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
@@ -91,7 +91,11 @@ namespace Servises.BaseList
         {
             SerchedContents = null;
             Lode(0);
+            StopSearching();
         }
+
+        public virtual void StopSearching(){}
+
         void ISearchUser.OnValueChanged(string Value) 
         {
             if (string.IsNullOrEmpty(Value)) 
