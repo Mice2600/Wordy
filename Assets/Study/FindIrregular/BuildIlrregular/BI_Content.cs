@@ -47,7 +47,7 @@ public class BI_Content : ContentObject
         IIrregular sd = (Content as IIrregular);
         BuildIlrregularSystem SS = GetComponentInParent<BuildIlrregularSystem>();
 
-        TList<(BI_Place InT, GameObject Te, int Type)> List = new List<(BI_Place InT, GameObject Te, int Type)>() { (Base_Place, Base_Text, 0), (Past_Place, Past_Text, 0), (Participle_Place, Participle_Text, 0) };
+        TList<(BI_Place InT, GameObject Te, int Type)> List = new List<(BI_Place InT, GameObject Te, int Type)>() { (Base_Place, Base_Text, 0), (Past_Place, Past_Text, 1), (Participle_Place, Participle_Text, 2) };
         List.ForEach(a => { a.InT.gameObject.SetActive(false); a.Te.SetActive(true); });
 
         PasOne();

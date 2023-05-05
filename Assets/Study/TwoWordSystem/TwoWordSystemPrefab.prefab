@@ -700,7 +700,6 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
     m_NumColorKeys: 7
     m_NumAlphaKeys: 2
   ContntPrefab: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
@@ -1123,12 +1122,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1215,9 +1222,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &9205489530168487469 stripped
 RectTransform:
@@ -1229,12 +1234,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1321,9 +1334,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &6596386605014568205 stripped
 RectTransform:
@@ -1335,12 +1346,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1427,9 +1446,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &5605848889023988273 stripped
 RectTransform:
@@ -1441,12 +1458,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1533,9 +1558,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &3520247645468308502 stripped
 RectTransform:
@@ -1547,12 +1570,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1639,9 +1670,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &2659460166386963050 stripped
 RectTransform:
@@ -1653,12 +1682,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1745,9 +1782,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &1487637970715618334 stripped
 RectTransform:
@@ -1759,12 +1794,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1851,9 +1894,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &1084251492170474781 stripped
 RectTransform:
@@ -1865,12 +1906,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 8993692134469213303}
     m_Modifications:
     - target: {fileID: 784318424066134192, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Name
       value: Content (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350682693454490949, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790674973298692288, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
+      propertyPath: m_fontSize
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8948780352857649486, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1957,9 +2006,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca81e696baecfe45b1d0fae77e35eb9, type: 3}
 --- !u!224 &350811833489294579 stripped
 RectTransform:

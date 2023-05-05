@@ -26,7 +26,7 @@ namespace Study.TwoWordSystem
         public void Start()
         {
             EnglishParrent.ClearChilds();
-            int CC = Random.Range(5, 10);
+            int CC = Random.Range(2, 11);
             for (int i = 0; i < CC; i++)
             {
                 Instantiate(ContntPrefab, EnglishParrent);
@@ -214,7 +214,7 @@ namespace Study.TwoWordSystem
                     IsThereWinn = true;
                     QuestTwoWord.OnWordWin.Invoke(words[i]);
                 }
-                else
+                else if(ScoresResultat[words[i]] < 0)
                 {
                     G.GetComponent<ScoreChanginInfo>().Set(words[i], QuestTwoWord.RemoveScoreWord);
                     LostGropeParrent.AddNewContent(G.transform);

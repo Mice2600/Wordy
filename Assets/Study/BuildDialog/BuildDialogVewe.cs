@@ -40,7 +40,7 @@ namespace Study.BuildDialog
             }
         }
         public bool isTrueGrope => Groped.EnglishSource == Content.EnglishSource;
-        public bool isAnyGrope => UpParrent.Contents.Count > 1;
+        public bool isAnyGrope => UpParrent.Contents.Count > 0;
         [SerializeField]
         private TMP_Text IDContentText;
         [SerializeField]
