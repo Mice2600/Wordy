@@ -83,9 +83,10 @@ public class WordChanger : ContentObject
         }
     }
 
-    public void OnTranllateButton() 
+    public void OnTranllateButton(string TronslateType) 
     {
-        StartCoroutine(Translator.Process("en", "ru", WordWriter.text, onWordTransleted));
+        if (TronslateType != "ru" && TronslateType != "uz") TronslateType = "ru";
+        StartCoroutine(Translator.Process("en", TronslateType, WordWriter.text, onWordTransleted));
         void onWordTransleted(string tt)
         {
             Debug.Log(tt);
