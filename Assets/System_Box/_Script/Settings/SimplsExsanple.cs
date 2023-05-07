@@ -209,6 +209,37 @@ namespace SystemBox
 
         #endregion
 
+
+
+
+
+
+        public enum Sides { Left = 0, Right = 1, Up = 2, Down = 3, None = 4 }
+
+        public static Vector3 VectorOneSide(Sides sides) =>
+            new Vector3[] { Vector3.left, Vector3.right, Vector3.up, Vector3.down, Vector3.zero }[(int)sides];
+        public static Vector3Int VectorIntOneSide(Sides sides) =>
+            new Vector3Int[] { Vector3Int.left, Vector3Int.right, Vector3Int.up, Vector3Int.down, Vector3Int.zero }[(int)sides];
+
+
+
+        public static Vector3Int ToInt(this Vector3 vector) => new Vector3Int(vector.x.ToInt(), vector.y.ToInt(), 0);
+
+
+
+        public static Vector3Int ToV3Int(this Vector2 vector) => new Vector3Int(vector.x.ToInt(), vector.y.ToInt(), 0);
+        public static Vector2Int ToInt(this Vector2 vector) => new Vector2Int(vector.x.ToInt(), vector.y.ToInt());
+        public static Vector2Int ToVectorInt2(this Vector3 vector) => new Vector2Int(vector.x.ToInt(), vector.y.ToInt());
+        public static int ToInt(this float x) => Mathf.RoundToInt(x);
+        public static string AsString(this List<char> tlis) => AsString(new TList<char>(tlis));
+        public static string AsString(this TList<char> tlis)
+        {
+            string fffs = "";
+            for (int gg = 0; gg < tlis.Count; gg++)
+                fffs += tlis[gg];
+            return fffs;
+        }
+
     }
     public static class ListTools
     {

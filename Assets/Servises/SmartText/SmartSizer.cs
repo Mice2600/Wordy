@@ -20,7 +20,7 @@ namespace Servises.SmartText
         {
             FixtSize();
         }
-
+        [Button]
         private protected void FixtSize()
         {
 
