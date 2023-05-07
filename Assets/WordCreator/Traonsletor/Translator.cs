@@ -27,18 +27,22 @@ namespace Traonsletor
             }
         }
 
+        public static void Test(string sourceLang, string targetLang, string sourceText) 
+        {
+            GameObject.FindObjectOfType<MonoBehaviour>().StartCoroutine(Process(sourceLang, targetLang, sourceText, (s) => Debug.Log(s)));
+        }
         // Exactly the same as above but allow the user to change from Auto, for when google get's all Jerk Butt-y
         public static IEnumerator Process(string sourceLang, string targetLang, string sourceText, System.Action<string> FineshedOne = null)
         {
             string url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl="
                 + sourceLang + "&tl=" + targetLang + "&dt=t&q=" + UnityWebRequest.EscapeURL(sourceText);
-            
             using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
             {
                 yield return webRequest.SendWebRequest();
                 if (string.IsNullOrEmpty(webRequest.error))
                 {
                     var N = JSONNode.Parse(webRequest.downloadHandler.text);
+                    Debug.Log(N);
                     try
                     {
                         //Debug.Log(N[0][0][0]);
