@@ -5,17 +5,17 @@ using SystemBox;
 using TMPro;
 using UnityEngine;
 using System.Linq;
-using Sirenix.Utilities;
-using Sirenix.OdinInspector;
 
 public class Builder : MonoBehaviour
 {
     public GameObject OneBox;
 
-    public LevlData ToBuild;
+    public static LevlData ToBuild;
     void Start()
     {
-        ToBuild = Generaton.tryGnereat((Vector2Int.one * 10, -(Vector2Int.one * 10)));
+        TList<string> vs = new TList<string>();
+        FindObjectOfType<QuestCrossword>().NeedDialogs.ForEach(a => vs.Add(a.EnglishSource));
+        ToBuild = Generaton.tryGnereat(vs, (Vector2Int.one * 10, -(Vector2Int.one * 10)));
         
         
         Dictionary<string, GameObject> Gropps = new Dictionary<string, GameObject>();
@@ -171,5 +171,64 @@ public class Builder : MonoBehaviour
         return LastTrue;
     }
 
+    public static void TrayJoin(Transform ToTest)
+    {
 
+        List<OneBox> AllOtheres = FindObjectsOfType<OneBox>().ToList();
+        List<OneBox> ToCheakBoxes = new List<OneBox>();
+        ToTest.transform.Childs().ForEach(a => ToCheakBoxes.Add(a.GetComponent<OneBox>()));
+        ToCheakBoxes.ForEach(a => AllOtheres.Remove(a));
+
+
+        for (int i = 0; i < ToCheakBoxes.Count; i++)
+        {
+
+            TList<OneBox> Nears = new List<OneBox>();
+            AllOtheres.ForEach(a => Nears.AddIf(a, Vector3.Distance(a.transform.position, ToCheakBoxes[i].transform.position) == 1f));
+
+
+            if (Cheak(ToCheakBoxes[i], Nears, out OneBox NeedToMarge))
+            {
+                Marge(ToCheakBoxes[i].transform.parent, NeedToMarge.transform.parent);
+                TrayJoin(ToCheakBoxes[i].transform.parent);
+                return;
+            }
+        }
+
+        FindObjectOfType<CrosswordSystem>().StartCoroutine(DD());
+        IEnumerator DD() 
+        {
+            yield return new WaitForSeconds(1f);
+
+            if (FindObjectsOfType<InputTest>().Length == 1)
+            {
+                FindObjectOfType<CrosswordSystem>().OnWin();
+            }
+        }
+
+        
+
+        
+
+        bool Cheak(OneBox ToCheak, List<OneBox> Nears, out OneBox NeedToMarge)
+        {
+            NeedToMarge = null;
+            for (int i = 0; i < Nears.Count; i++)
+                if (LevlData.CanBeJoined(ToCheak.MinInfo, Nears[i].MinInfo, ToCheak.transform.position.x == Nears[i].transform.position.x))
+                {
+                    NeedToMarge = Nears[i];
+                    return true;
+                }
+            return false;
+        }
+
+        void Marge(Transform First, Transform Second)
+        {
+            Second.Childs().ForEach(a => a.SetParent(First));
+            GameObject ss = Second.gameObject;
+            Destroy(ss);
+        }
+
+
+    }
 }

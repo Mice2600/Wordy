@@ -31,7 +31,6 @@ namespace Study.FindOns
             int MaxCount = ContentParrent.childCount;
             ContentParrent.ClearChilds();
             int nicoint = 3;
-            if ((Content as IPersanalData).ScoreConculeated > 35) nicoint = MaxCount - 2;
             int countToCreat = Random.Range(nicoint, MaxCount);
             string ContentLangvich = (Quest is not QuestFindOns) ? "ru" : "en";
 

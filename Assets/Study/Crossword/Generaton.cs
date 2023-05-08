@@ -15,15 +15,12 @@ public class Generaton : MonoBehaviour
     private static Dictionary<Vector3Int, Box> _AllCreated;
     private static (Vector2Int Max, Vector2Int Min) Limits;
     [Button]
-    public static LevlData tryGnereat((Vector2Int Max, Vector2Int Min) Limits)
+    public static LevlData tryGnereat(List<string> Contents, (Vector2Int Max, Vector2Int Min) Limits)
     {
         Generaton.Limits = Limits;
         GameObject.FindObjectsOfType<TextMesh>().ToList().ForEach(t =>  { GameObject g = t.gameObject; DestroyImmediate(g); });
 
-        TList<string> vs = new TList<string>();
-
-
-        WordBase.Wordgs.GetContnetList(30).ForEach(a => vs.Add(a.EnglishSource));
+        TList<string> vs = Contents;
         
 
         _AllCreated = new Dictionary<Vector3Int, Box>();
@@ -138,7 +135,7 @@ public class Generaton : MonoBehaviour
 
 
 
-        if (AllPoseIDWord.Count != _AllCreated.Count) return tryGnereat(Limits);
+        if (AllPoseIDWord.Count != _AllCreated.Count) return tryGnereat(Contents, Limits);
 
         return Resolt;
     }
@@ -386,12 +383,12 @@ public struct LevlData //transleted
     {
         get 
         {
-            List<string> Resolt = new List<string>();
+            TList<string> Resolt = new List<string>();
             AllPoseIDWord.ForEach(One => {
                 string Id = One.ID;
                 Id = Id.Replace("Full_ID_<", "").Replace(">_|_Count_<", "|").Replace(">_|_Text_<", "|").Replace(">_End", "").Replace("<DubleID>","|");
                 string RID = Id.Split("|")[0];
-                Resolt.Add(RID);
+                Resolt.AddIfDirty(RID);
             });
             return Resolt;
         }
@@ -468,10 +465,13 @@ public struct LevlData //transleted
     }
 
 
-    public static bool CanBeJoined((Vector3Int pos, string ID, char Word, string GropeID) Firs, (Vector3Int pos, string ID, char Word, string GropeID) Second)
+    public static bool CanBeJoined((Vector3Int pos, string ID, char Word, string GropeID) Firs, (Vector3Int pos, string ID, char Word, string GropeID) Second, bool isHorizontal)
     {
+        if(isHorizontal && Second.pos.x != Firs.pos.x) return false;
         
         bool IsThereId = false;
+
+
         new List<string>(Firs.ID.Split("<DubleID>")).ForEach(NID =>
         {
             

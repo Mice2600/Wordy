@@ -69,6 +69,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
@@ -78,6 +79,15 @@ MonoBehaviour:
     RemoveScoreDialog: -2
     AddScoreWord: 3
     RemoveScoreWord: -1
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
+  QuestCrosswordPrefab: {fileID: 43604296319545888, guid: d9dfb447727319742855447db2746f31, type: 3}
+  QuestCrosswordSceneName: Crossword
+  QuestCrosswordScorevalumes:
+    AddScoreDialog: 1
+    RemoveScoreDialog: 0
+    AddScoreWord: 5
+    RemoveScoreWord: 0
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
   QuestBuildIlrregularPrefab: {fileID: 3906864097593926266, guid: dcdf077ba389ec343b4e1b99f0ce8192, type: 3}

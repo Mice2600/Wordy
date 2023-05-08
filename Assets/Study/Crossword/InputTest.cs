@@ -10,7 +10,7 @@ public class InputTest : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         isControlling = true;
         ControllingObject = this;
-        Vector3 ppp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 ppp = Camera.GameCamera.ScreenToWorldPoint(Input.mousePosition);
         Ofsete = transform.position - new Vector3(ppp.x, ppp.y, transform.position.z);
         transform.SetAsLastSibling();
     }
@@ -26,6 +26,7 @@ public class InputTest : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     void Start()
     {
         NearPos = transform.position;
+        Camera = transform.root.GetComponentInChildren<TCamera>();
     }
 
     private bool isControlling;
@@ -33,10 +34,12 @@ public class InputTest : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Vector3 NearPos;
 
     bool IsMoving = true;
+    TCamera Camera;
 
     private void Update()
     {
-        Vector3 ppp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Camera == null) return;
+        Vector3 ppp = Camera.GameCamera.ScreenToWorldPoint(Input.mousePosition);
         if (isControlling) 
         {
             transform.position = Ofsete + new Vector3(ppp.x, ppp.y, transform.position.z);
@@ -44,13 +47,13 @@ public class InputTest : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, NearPos, Time.deltaTime * 3);
+            transform.position = Vector3.MoveTowards(transform.position, NearPos, Time.deltaTime * 30);
             if (transform.position != NearPos) IsMoving = false;
             else 
             {
                 if (IsMoving == false) 
                 {
-                    JoinSystem.TrayJoin(transform);
+                    Builder.TrayJoin(transform);
                 }
                 IsMoving = true;
             }

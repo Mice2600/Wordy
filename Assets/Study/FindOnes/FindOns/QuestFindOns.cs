@@ -38,7 +38,7 @@ namespace Study.FindOns
         {
             get
             {
-                if (_NeedWords == null || _NeedWords.Count < 2) _NeedWords = WordBase.Wordgs.GetContnetList(MinimalCount);
+                if (_NeedWords == null || _NeedWords.Count < MinimalCount) _NeedWords = WordBase.Wordgs.GetContnetList(MinimalCount);
                 return _NeedWords;
             }
             set
@@ -46,7 +46,7 @@ namespace Study.FindOns
                 _NeedWords = value;
             }
         }
-        public List<Word> _NeedWords;
+        private List<Word> _NeedWords;
         public int MinimalCount => 8;
 
         

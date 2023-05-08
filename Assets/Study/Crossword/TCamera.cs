@@ -1,24 +1,39 @@
 using System.Collections;
+using System.Linq;
 using SystemBox.Engine;
 using SystemBox.Simpls;
 using UnityEngine;
 
 public class TCamera : MonoBehaviour
 {
-    public Camera GameCamera => _GameCamera ??= (Camera.main ?? GameObject.FindObjectOfType<Camera>(true));
+    public Camera GameCamera => _GameCamera ??= GetComponent<Camera>();
     private Camera _GameCamera;
     private BitBenderGames.MobileTouchCamera CameraTouchController => (_CameraTouchController ??= GameCamera.GetComponent<BitBenderGames.MobileTouchCamera>());
     private BitBenderGames.MobileTouchCamera _CameraTouchController;
     public void OnDragSceneObject() => CameraTouchController.OnDragSceneObject();
     public void Start()
-    {   
+    {
+        FindObjectsOfType<Camera>().ToList().ForEach(c => c.gameObject.SetActive(false));
+        gameObject.SetActive(true);
         //TLend.DobleClick += Fox;
     }
+    bool IsDragging;
     private void Update()
     {
         Vector2 vector = GameCamera.ScreenToWorldPoint(TInput.mousePosition(0), Camera.MonoOrStereoscopicEye.Left);
-        CameraTouchController.enabled = InputTest.ControllingObject == null;
+       // CameraTouchController.enabled = InputTest.ControllingObject == null;
 
+        if (!IsDragging && InputTest.ControllingObject != null)
+        {
+            CameraTouchController.OnDragSceneObject();
+            IsDragging = true;
+        }
+        else if (InputTest.ControllingObject == null)
+        {
+            IsDragging = false;
+        }
+        
+        
         if (InputTest.ControllingObject != null)
         {
             if (vector.x > 0.85f)
@@ -76,4 +91,10 @@ public class TCamera : MonoBehaviour
             Engine.Get_Engine("Came").StopCoroutine(ZoomTime);
         GameCamera.transform.position = new Vector3(0, 0, GameCamera.transform.position.z);
     }
+
+    private void OnDestroy()
+    {
+        FindObjectsOfType<Camera>().ToList().ForEach(c => c.gameObject.SetActive(true));
+    }
+
 }

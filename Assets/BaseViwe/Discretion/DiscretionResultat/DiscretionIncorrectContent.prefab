@@ -1768,7 +1768,6 @@ GameObject:
   - component: {fileID: 8987251105467294848}
   - component: {fileID: 8987251105467294851}
   - component: {fileID: 8987251105467294847}
-  - component: {fileID: 560035148518024543}
   m_Layer: 0
   m_Name: DiscretionIncorrectContent
   m_TagString: Untagged
@@ -1876,18 +1875,6 @@ MonoBehaviour:
   ChengingContentObject: {fileID: 7753236627495892659, guid: 6e2aa9919e30bc74dbaa3ba77dc8a317, type: 3}
   WrongContentVewe: {fileID: 800113735557735977}
   RemovedScoreText: {fileID: 800113736399646011}
---- !u!114 &560035148518024543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8987251105467294853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4dfb4166e6633f489696d401b519391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8987251105849476304
 GameObject:
   m_ObjectHideFlags: 0
