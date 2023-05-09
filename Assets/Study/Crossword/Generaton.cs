@@ -470,8 +470,6 @@ public struct LevlData //transleted
         if(isHorizontal && Second.pos.x != Firs.pos.x) return false;
         
         bool IsThereId = false;
-
-
         new List<string>(Firs.ID.Split("<DubleID>")).ForEach(NID =>
         {
             
