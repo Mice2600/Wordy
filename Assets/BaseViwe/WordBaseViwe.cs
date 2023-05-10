@@ -81,22 +81,43 @@ namespace BaseViwe.WordViwe
             StopSearching();
             TList<Content> FromMee = new TList<Content>();
             TList<Content> FromDefalt = new TList<Content>();
-            SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.Wordgs), SearchString, (l) => {
+            if (Servises.Search.IsThereKays(SearchString))
+            {
+                SearchCoroutines.Add(StartCoroutine(Servises.Search.SmartSearch(new TList<Content>(WordBase.Wordgs), SearchString, this, (l) => {
+                    FromMee = l;
+                    List<Content> N = new List<Content>(FromMee);
+                    N.AddRange(FromDefalt);
+                    SerchedContents = N;
+                    Refresh();
+                })));
+                SearchCoroutines.Add(StartCoroutine(Servises.Search.SmartSearch(new TList<Content>(WordBase.DefaultBase), SearchString, this, (l) => {
+                    FromDefalt = l;
+                    List<Content> N = new List<Content>(FromMee);
+                    N.AddRange(FromDefalt);
+                    SerchedContents = N;
+                    Refresh();
+                })));
+            }
+            else 
+            {
+                SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.Wordgs), SearchString, (l) => {
 
-                FromMee = l;
-                List<Content> N = new List<Content>(FromMee);
-                N.AddRange(FromDefalt);
-                SerchedContents = N;
-                Refresh();
-            })));
-            SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.DefaultBase), SearchString, (l) => {
-                FromDefalt = l;
+                    FromMee = l;
+                    List<Content> N = new List<Content>(FromMee);
+                    N.AddRange(FromDefalt);
+                    SerchedContents = N;
+                    Refresh();
+                })));
+                SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.DefaultBase), SearchString, (l) => {
+                    FromDefalt = l;
 
-                List<Content> N = new List<Content>(FromMee);
-                N.AddRange(FromDefalt);
-                SerchedContents = N;
-                Refresh();
-            })));
+                    List<Content> N = new List<Content>(FromMee);
+                    N.AddRange(FromDefalt);
+                    SerchedContents = N;
+                    Refresh();
+                })));
+            }
+            
             return new TList<Content>();
         }
 

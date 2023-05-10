@@ -65,12 +65,25 @@ namespace Servises.BaseList
             }
         }
         private protected List<Content> SerchedContents;
-        
+
+        public void RefreshWithSearch() 
+        {
+            if (!searchViwe.IsSearching) SerchedContents = null;
+            else if (SerchedContents.Count == 0) SerchedContents = Servises.Search.SearchAll<Content>(AllContents, searchViwe.SearchingString);
+
+            Filtered = new List<Content>();
+            TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
+                ForEach((id) => {
+                    List<Content> BlongsContents = TagSystem.GetAllContentsFromTag(id);
+                    List<Content> CorrentContents = AllContents;
+                    Filtered.AddRange(CorrentContents.Where(er => BlongsContents.Contains(er)));
+                });
+            base.Refresh();
+        }
         public override void Refresh() 
         {
             if (!searchViwe.IsSearching) SerchedContents = null; 
-            else if(SerchedContents.Count == 0) SerchedContents = Servises.Search.SearchAll<Content>(AllContents, searchViwe.SearchingString);
-
+            
             Filtered = new List<Content>();
             TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
                 ForEach((id) => {
