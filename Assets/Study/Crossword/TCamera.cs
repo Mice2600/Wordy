@@ -94,7 +94,7 @@ public class TCamera : MonoBehaviour
 
     private void OnDestroy()
     {
-        FindObjectsOfType<Camera>().ToList().ForEach(c => c.gameObject.SetActive(true));
+        FindObjectsOfType<Camera>(true).ToList().ForEach(c => { if(c != null) c.gameObject.SetActive(true); });
     }
 
 }

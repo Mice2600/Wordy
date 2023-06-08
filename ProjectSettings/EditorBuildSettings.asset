@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/Crossword/Crossword.unity
     guid: aebeb12e66fe9c94f91eb3f29687911f
+  - enabled: 1
+    path: Assets/EasyTTS/EasyTTSDemo/DemoEasyTTS_AdvanceFeature.unity
+    guid: d1adb3f95071544b9a079c237c0828cd
   m_configObjects: {}
