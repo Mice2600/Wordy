@@ -107,6 +107,7 @@ public class ContentGropperTrueSorted : MonoBehaviour
             NLists.GetComponent<HorizontalLayoutGroup>().childControlWidth = false;
             NLists.GetComponent<HorizontalLayoutGroup>().childAlignment = TextAnchor.MiddleCenter;
             NLists.GetComponent<HorizontalLayoutGroup>().spacing = Spacing.x;
+            //NLists.GetComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.MinSize;
             return NLists;
         }
     }

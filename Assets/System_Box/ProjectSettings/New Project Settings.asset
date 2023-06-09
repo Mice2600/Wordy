@@ -90,6 +90,15 @@ MonoBehaviour:
     RemoveScoreWord: 0
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  QuestFillTheSpacePrefab: {fileID: 3118217960735825422, guid: f9531d27d334f3547b0c433ea15a0827, type: 3}
+  QuestFillTheSpaceName: FillTheSpace
+  QuestFillTheSpaceValumes:
+    AddScoreDialog: 0
+    RemoveScoreDialog: 0
+    AddScoreWord: 5
+    RemoveScoreWord: 5
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestBuildIlrregularPrefab: {fileID: 3906864097593926266, guid: dcdf077ba389ec343b4e1b99f0ce8192, type: 3}
   QuestBuildIlrregularPrefabSceneName: Build Irregular
   QuestBuildIlrregularScorevalumes:
