@@ -25,9 +25,10 @@ public class MuseControll : MonoBehaviour
 
     private void Start()
     {
+        
         //int Fixer = (transform.childCount % 2 == 0) ? 100 : 0;
         //UpLimit = transform.TransformPoint(transform.GetChild(0).transform.localPosition).y - Fixer;
-        UpLimit = transform.position.y + Mathf.Abs(transform.GetChild(transform.childCount - 1).transform.localPosition.y );// transform.TransformPoint(transform.GetChild(transform.childCount -1).transform.localPosition).y;
+        UpLimit = transform.position.y + ((transform.childCount -1)  * 100);// transform.TransformPoint(transform.GetChild(transform.childCount -1).transform.localPosition).y;
         //DownLimit = transform.position.y - (transform.TransformPoint(transform.GetChild(0).transform.localPosition).y - transform.position.y);
         DownLimit = transform.position.y;// - (transform.TransformPoint(transform.GetChild(0).transform.localPosition).y - transform.position.y);
     }

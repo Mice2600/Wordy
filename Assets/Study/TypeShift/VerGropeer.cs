@@ -4,7 +4,7 @@ using SystemBox;
 [ExecuteAlways]
 public class VerGropeer : MonoBehaviour
 {
-    private void Update()
+    public void Update()
     {
         TList<Transform> Childs = transform.Childs();
 

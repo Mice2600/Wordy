@@ -1,3 +1,4 @@
+using Base.Word;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -5,12 +6,8 @@ using UnityEngine;
 
 public class SenterSortedContent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private TypeShift MTypeShift => _TypeShift ??= FindObjectOfType<TypeShift>();
+    private TypeShift _TypeShift;
     public string Answer;
     void Update()
     {
@@ -35,6 +32,11 @@ public class SenterSortedContent : MonoBehaviour
                         }
                     });
                     Answer += near.GetComponentInChildren<TMPro.TMP_Text>().text;
+
+                }
+                if (MTypeShift.UsingContent.Contains(new Base.Word.Word(Answer, "", 0, false, "", ""))) 
+                {
+                    MTypeShift.onCorrectContentSorted(new Base.Word.Word(Answer, "", 0, false, "", ""));
                 }
             }
         }

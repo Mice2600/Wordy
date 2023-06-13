@@ -144,6 +144,15 @@ MonoBehaviour:
     RemoveScoreWord: -1
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  QuestTypeShiftPrefab: {fileID: 1896414613481627126, guid: b365709140cf09840a5101b719a19bdf, type: 3}
+  QuestTypeShiftSceneName: TypeShift
+  QuestTypeShiftValumes:
+    AddScoreDialog: 0
+    RemoveScoreDialog: 0
+    AddScoreWord: 6
+    RemoveScoreWord: 6
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestWriteWordPrefab: {fileID: 9020605442907867151, guid: d42e49d95e731f244bcc75a1fd93e322, type: 3}
   QuestWriteWordName: Write Word
   QuestWriteWordValumes:

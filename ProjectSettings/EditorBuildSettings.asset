@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/FillTheSpace/FillTheSpace.unity
     guid: 6396f0d67bd933746b577f78c72ae6af
+  - enabled: 1
+    path: Assets/Study/TypeShift/TypeShift.unity
+    guid: c627b06e3ba86fe4b8259ba2bba618b0
   m_configObjects: {}
