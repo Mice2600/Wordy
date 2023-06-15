@@ -12,8 +12,8 @@ public class TypeShift : MonoBehaviour
 {
     QuestTypeShift Quest => _Quest ??= GetComponentInChildren<QuestTypeShift>();
     QuestTypeShift _Quest;
-    [Required, SerializeField]
-    private GameObject Horizontal;
+    [Required]
+    public GameObject Horizontal;
     [Required, SerializeField]
     private GameObject SingelLetter;
     public TList<Word> UsingContent;
@@ -44,7 +44,7 @@ public class TypeShift : MonoBehaviour
             if (UsingContent.Count < 3) ds[i].AddIfDirty((char)('a' + Random.Range(0, 26)));
             ds[i].Mix();
             GameObject v = Creatvertical();
-            ds[i].ForEach((a) => Instantiate(SingelLetter, v.transform).GetComponentInChildren<TMPro.TMP_Text>().text = a.ToString());
+            ds[i].ForEach((a) => Instantiate(SingelLetter, v.transform).GetComponentInChildren<SingelBox>().MyLetter = a);
         }
     }
     
