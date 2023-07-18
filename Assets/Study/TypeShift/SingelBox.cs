@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using SystemBox;
+using SystemBox.Simpls;
 using UnityEngine;
 
 public class SingelBox : MonoBehaviour
@@ -33,7 +34,7 @@ public class SingelBox : MonoBehaviour
         
         GetComponentsInChildren<TMPro.TMP_Text>().ToList().ForEach((j, i)=> {
             j.text = MyLetter.ToString();
-            j.color = GetColor(WordBase.Wordgs.IndexOf(contents[i] as Word));
+            j.color = GetColor(i);
         });
 
 
@@ -49,7 +50,7 @@ public class SingelBox : MonoBehaviour
 
                 GetComponentsInChildren<TMPro.TMP_Text>().ToList().ForEach((j, i) => {
                     if (ActualContents.Count == 0) j.color = Color.white;
-                    else j.color = GetColor(WordBase.Wordgs.IndexOf(ActualContents[i] as Word));
+                    else j.color = GetColor(i);
                 });
 
             }
@@ -59,11 +60,7 @@ public class SingelBox : MonoBehaviour
 
     Color GetColor(int index)
     {
-        if(index == -1) return Color.white;
-        index = Mathf.Abs(index);
-        int levv = (index / 30);
-        index -= (levv * 30);
-        return ProjectSettings.ProjectSettings.Mine.ContentLoopColors.Evaluate((float)index / 30f);
+        return new LoopList<Color>() { Color.red, Color.blue, Color.green, Color.yellow, TColor.Pink, TColor.Mint, TColor.Light_green }[index];
     } 
 
 }

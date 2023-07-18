@@ -32,6 +32,10 @@ public class TypeShift : MonoBehaviour
 
         UsingContent[0].EnglishSource.ToList().ForEach (s => ds.Add(new TList<char>()));
 
+        if (UsingContent.Count > 5) 
+        {
+            UsingContent.RemoveRange(5, UsingContent.Count - 5);
+        }
         int Length = UsingContent[0].EnglishSource.ToList().Count;
         for (int ss = 0; ss < Length; ss++)
         {
