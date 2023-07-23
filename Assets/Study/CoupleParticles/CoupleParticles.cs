@@ -60,7 +60,6 @@ namespace Study.CoupleParticles
                             Instantiate(Win);
                             QuestCoupleParticles d = GetComponent<QuestCoupleParticles>();
                             CompleatedContents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
-                            
                             d.OnGameWin?.Invoke();
                         }
                     }
