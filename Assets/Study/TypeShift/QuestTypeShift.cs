@@ -17,38 +17,41 @@ namespace ProjectSettings
         public StudyScoreValumes QuestTypeShiftValumes;
     }
 }
-public class QuestTypeShift : Quest, IQuestStarterWithWordList
+namespace Study.TypeShift
 {
-    public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftPrefab;
-    public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftSceneName;
-    public override int AddScoreDialog => throw new System.NotImplementedException();
-    public override int RemoveScoreDialog => throw new System.NotImplementedException();
-    public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftValumes.AddScoreWord;
-    public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftValumes.RemoveScoreWord;
-    public override int AddScoreIrregular => throw new System.NotImplementedException();
-
-    public override int RemoveScoreIrregular => throw new System.NotImplementedException();
-
-    public List<Word> NeedWords
+    public class QuestTypeShift : Quest, IQuestStarterWithWordList
     {
-        get
+        public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftPrefab;
+        public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftSceneName;
+        public override int AddScoreDialog => throw new System.NotImplementedException();
+        public override int RemoveScoreDialog => throw new System.NotImplementedException();
+        public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftValumes.AddScoreWord;
+        public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestTypeShiftValumes.RemoveScoreWord;
+        public override int AddScoreIrregular => throw new System.NotImplementedException();
+
+        public override int RemoveScoreIrregular => throw new System.NotImplementedException();
+
+        public List<Word> NeedWords
         {
-            if (_NeedWords == null || _NeedWords.Count < MinimalCount) _NeedWords = WordBase.Wordgs.ActiveItems;
-            return _NeedWords;
+            get
+            {
+                if (_NeedWords == null || _NeedWords.Count < MinimalCount) _NeedWords = WordBase.Wordgs.ActiveItems;
+                return _NeedWords;
+            }
+            set
+            {
+                _NeedWords = value;
+            }
         }
-        set
+        public List<Word> _NeedWords;
+
+        public int MinimalCount => 15;
+
+
+
+        public void CreatQuest(List<Word> Words)
         {
-            _NeedWords = value;
+            NeedWords = Words;
         }
-    }
-    public List<Word> _NeedWords;
-
-    public int MinimalCount => 15;
-
-
-
-    public void CreatQuest(List<Word> Words)
-    {
-        NeedWords = Words;
     }
 }

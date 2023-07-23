@@ -20,37 +20,39 @@ namespace ProjectSettings
         public StudyScoreValumes QuestCrosswordScorevalumes;
     }
 }
-
-public class QuestCrossword : Quest, IQuestStarterWithWordList
+namespace Study.Crossword
 {
-    public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestCrosswordPrefab;
-    public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestCrosswordSceneName;
-    public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.AddScoreDialog;
-    public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.RemoveScoreDialog;
-    public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.AddScoreWord;
-    public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.RemoveScoreWord;
-    public override int AddScoreIrregular => throw new System.NotImplementedException();
-
-    public override int RemoveScoreIrregular => throw new System.NotImplementedException();
-    public List<Word> NeedDialogs
+    public class QuestCrossword : Quest, IQuestStarterWithWordList
     {
-        get
+        public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestCrosswordPrefab;
+        public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestCrosswordSceneName;
+        public override int AddScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.AddScoreDialog;
+        public override int RemoveScoreDialog => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.RemoveScoreDialog;
+        public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.AddScoreWord;
+        public override int RemoveScoreWord => ProjectSettings.ProjectSettings.Mine.QuestCrosswordScorevalumes.RemoveScoreWord;
+        public override int AddScoreIrregular => throw new System.NotImplementedException();
+
+        public override int RemoveScoreIrregular => throw new System.NotImplementedException();
+        public List<Word> NeedDialogs
         {
-            if (_NeedDialogs == null || _NeedDialogs.Count < MinimalCount) _NeedDialogs = WordBase.Wordgs.GetContnetList(MinimalCount);
-            return _NeedDialogs;
+            get
+            {
+                if (_NeedDialogs == null || _NeedDialogs.Count < MinimalCount) _NeedDialogs = WordBase.Wordgs.GetContnetList(MinimalCount);
+                return _NeedDialogs;
+            }
+            set
+            {
+                _NeedDialogs = value;
+            }
         }
-        set
+        private List<Word> _NeedDialogs;
+
+        public int MinimalCount => 25;
+
+
+        public void CreatQuest(List<Word> words)
         {
-            _NeedDialogs = value;
+            NeedDialogs = words;
         }
-    }
-    private List<Word> _NeedDialogs;
-
-    public int MinimalCount => 25;
-
-
-    public void CreatQuest(List<Word> words)
-    {
-        NeedDialogs = words;
     }
 }

@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/TypeShift/TypeShift.unity
     guid: c627b06e3ba86fe4b8259ba2bba618b0
+  - enabled: 1
+    path: Assets/Study/CoupleParticles/CoupleParticles.unity
+    guid: bf11c22e76ae3404d9867bfe1c5d2ced
   m_configObjects: {}

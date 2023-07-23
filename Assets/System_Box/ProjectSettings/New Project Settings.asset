@@ -81,6 +81,15 @@ MonoBehaviour:
     RemoveScoreWord: -1
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  QuestCoupleParticlesPrefab: {fileID: 7780279792343907558, guid: 7f717f0cecf7d924cb2812fbe6f89793, type: 3}
+  QuestCoupleParticlesSceneName: CoupleParticles
+  QuestCoupleParticlesScorevalumes:
+    AddScoreDialog: 0
+    RemoveScoreDialog: 0
+    AddScoreWord: 5
+    RemoveScoreWord: 0
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestCrosswordPrefab: {fileID: 43604296319545888, guid: d9dfb447727319742855447db2746f31, type: 3}
   QuestCrosswordSceneName: Crossword
   QuestCrosswordScorevalumes:
