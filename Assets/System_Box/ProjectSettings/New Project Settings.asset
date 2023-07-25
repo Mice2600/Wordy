@@ -162,6 +162,15 @@ MonoBehaviour:
     RemoveScoreWord: 6
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  QuestWordSurfPrefab: {fileID: 6565041498530126776, guid: 011e63baaac48f149a81d79bae33f701, type: 3}
+  QuestWordSurfSceneName: WordSurf
+  QuestWordSurfScorevalumes:
+    AddScoreDialog: 6
+    RemoveScoreDialog: 0
+    AddScoreWord: 6
+    RemoveScoreWord: 0
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestWriteWordPrefab: {fileID: 9020605442907867151, guid: d42e49d95e731f244bcc75a1fd93e322, type: 3}
   QuestWriteWordName: Write Word
   QuestWriteWordValumes:

@@ -1,6 +1,7 @@
 using Base.Word;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using Study.CoupleParticles;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,29 +10,54 @@ using TMPro;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
-public class Builder : MonoBehaviour
+public class WordSurf : MonoBehaviour
 {
     [SerializeField]
     private GameObject LatterPrefab;
     [SerializeField]
     public List<string> WordsSS;
+    public List<Content> Contents;
     [SerializeField, Required]
     private Transform ContentParrent;
+    public GameObject Win;
     private void Start()
     {
         Build(WordBase.Wordgs.GetContnetList(25));
+
+        Contents = new List<Content>();
+        WordsSS.ForEach(w => Contents.Add(WordBase.Wordgs.GetContent(w)));
+
+
         StartCoroutine(enumerator());
         IEnumerator enumerator() 
         {
             yield return new WaitForSeconds(10);
             while (true) 
             {
-                yield return new WaitForSeconds(.5f);
-                if (Letter.ReadyToDo != null && Letter.ReadyToDo.IsEnpty()) break;
-            }
-            if (WordsSS.IsEnpty()) { }
+                yield return new WaitForSeconds(2.5f);
+                if (Letter.ReadyToDo != null && Letter.ReadyToDo.IsEnpty()) 
+                {
+                    if (WordsSS.IsEnpty())
+                    {
 
-            ReBuild();
+                        QuestWordSurf d = GetComponent<QuestWordSurf>();
+                        Contents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
+                        d.OnGameWin?.Invoke();
+                        
+                        Instantiate(Win).GetComponent<WinViwe>().contents = Contents;
+
+                        break;
+                    }
+                    else 
+                    {
+                        ReBuild();
+                        yield return new WaitForSeconds(10f);
+                    }
+
+                    
+                }
+            }
+            
         }
     }
 
@@ -82,12 +108,14 @@ public class Builder : MonoBehaviour
          
 
         WordsSS = new List<string>();
+        
         for (int i = 0; i < Words.Count; i++)
         {
             string w = Words[i].EnglishSource;
+            if (Words[i].EnglishSource.Contains(" ")) continue;
             FindSoitablePlace(w, true, out int HorizontalPos);
             FindSoitablePlace(w, true, out int VerticalPos);
-            if (HorizontalPos != -1 || VerticalPos != -1) WordsSS.Add(w);
+            if (HorizontalPos != -1 || VerticalPos != -1) { WordsSS.Add(w); }
             if (HorizontalPos == -1 && VerticalPos != -1) PlaceIt(w, false, VerticalPos, Random.Range(0, 100) > 50);
             else if (HorizontalPos != -1 && VerticalPos == -1) PlaceIt(w, true, HorizontalPos, Random.Range(0, 100) > 50);
             else if (HorizontalPos != -1 && VerticalPos != -1)

@@ -62,13 +62,13 @@ public class Letter : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPo
         Builder.WordsSS.Remove(Text);
         Sellecting = new TList<GameObject>();
     }
-    Builder Builder;
+    WordSurf Builder;
     [ShowInInspector]
     public static List<Letter> ReadyToDo;
     void Start()
     {
         ReadyToDo = new List<Letter>();
-        Builder = FindObjectOfType<Builder>();
+        Builder = FindObjectOfType<WordSurf>();
         Sellecting = new List<GameObject>();
         MovePos = transform.position;
         if (Place == null)

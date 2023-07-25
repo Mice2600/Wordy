@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/CoupleParticles/CoupleParticles.unity
     guid: bf11c22e76ae3404d9867bfe1c5d2ced
+  - enabled: 1
+    path: Assets/Study/WordSurf/WordSurf.unity
+    guid: a2080fafe7561684ea6a35f732aa20f8
   m_configObjects: {}
