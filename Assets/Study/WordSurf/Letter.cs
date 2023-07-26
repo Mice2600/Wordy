@@ -3,6 +3,7 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
+using SystemBox.Simpls;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -16,6 +17,7 @@ public class Letter : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPo
     private Vector3 MovePos;
     [SerializeField, Required]
     private GameObject AvtiveObject;
+    TextMeshProUGUI textMeshProUGUI;
     public void OnPointerDown(PointerEventData eventData)
     {
         Sellecting = new TList<GameObject>(gameObject);
@@ -67,6 +69,8 @@ public class Letter : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPo
     public static List<Letter> ReadyToDo;
     void Start()
     {
+        textMeshProUGUI = GetComponentInChildren<TextMeshProUGUI>();
+         
         ReadyToDo = new List<Letter>();
         Builder = FindObjectOfType<WordSurf>();
         Sellecting = new List<GameObject>();
@@ -111,8 +115,14 @@ public class Letter : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPo
                 }
             }
         }
+        
         AvtiveObject.SetActive(Sellecting.Contains(gameObject));
         transform.position = Vector3.MoveTowards(transform.position, MovePos, Time.deltaTime * 2000f);
+        if (ReadyToDo.Contains(this))
+        {
+            textMeshProUGUI.color = TColor.Peach;
+        }
+        else textMeshProUGUI.color = Color.white;
     }
 
 
