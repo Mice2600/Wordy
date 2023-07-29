@@ -54,7 +54,7 @@ namespace Study.Ring
         }
 
         [Required]
-        public RectTransform Liner;
+        public Sellecter Liner;
         [Required]
         public GameObject Activer;
 
@@ -70,6 +70,24 @@ namespace Study.Ring
                 Sellected = new TList<Letter>();
 
             }
+            if (Sellected == null || Sellected.IsEnpty() || !Sellected.Contains(this))
+            {
+                Liner.gameObject.SetActive(false);
+                return;
+            }
+            else { Liner.gameObject.SetActive(true); }
+
+            if (Sellected.Count > 2 && Sellected[Sellected.Count - 2] == this)
+            {
+                Liner.S = Vector3.MoveTowards(Sellected.Last.transform.position, transform.position, 80f);
+                Liner.F = Vector3.MoveTowards(Liner.F, Liner.S, Time.deltaTime * 1000f);
+            }
+            else if(Sellected.Last == this)
+            {
+                Liner.F = transform.position;
+                Liner.S = TInput.mousePosition(0);
+            }else Liner.gameObject.SetActive(false);
+
         }
     }
 }

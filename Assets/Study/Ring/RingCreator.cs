@@ -13,6 +13,10 @@ namespace Study.Ring
     {
         public GameObject WordPrefab;
         public List<string> Used;
+        private void Start()
+        {
+            FindWords();
+        }
         [Button]
         public void FindWords()
         {
