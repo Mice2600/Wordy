@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
-public class Indecator : MonoBehaviour
+namespace Study.WordSurf
 {
-
-    TextMeshProUGUI tt;
-    private void Start()
+    public class Indecator : MonoBehaviour
     {
-        tt = GetComponentInChildren<TextMeshProUGUI>();
-    }
 
-    void Update()
-    {
-        tt.text = "";
-        Letter.Sellecting.ForEach(a => tt.text += a.GetComponentInChildren<TextMeshProUGUI>().text);   
+        TextMeshProUGUI tt;
+        private void Start()
+        {
+            tt = GetComponentInChildren<TextMeshProUGUI>();
+        }
+
+        void Update()
+        {
+            tt.text = "";
+            Letter.Sellecting.ForEach(a => tt.text += a.GetComponentInChildren<TextMeshProUGUI>().text);
+        }
     }
 }
