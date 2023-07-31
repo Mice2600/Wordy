@@ -14,33 +14,29 @@ public class Generation : MonoBehaviour
 {
     System.Action FoundedWay;
     public static Dictionary<Vector2Int, Box> Places;
+
+    public Vector2Int Size = new Vector2Int(6, 6);
+
     static Box EndBox;
     static Box StartBox;
 
     public GameObject Prefab;
     public Transform Parrent;
+    public List<Map> maps;
 
     private void Start()
     {
-        Creat();
+        Creat(new Vector2Int(6,6));
     }
-
-    public void Creat() 
+    public void Creat(Vector2Int Size) 
     {
+        this.Size = Size;
         Places = new Dictionary<Vector2Int, Box>();
-        for (int i = 0; i < 6; i++) 
-            for (int S = 0; S < 6; S++) 
+        for (int i = 0; i < Size.y; i++) 
+            for (int S = 0; S < Size.x; S++) 
                 Places.Add(new Vector2Int(S, i), new Box(S, i));
-
-
-
         FindOneWay();
-
         //FindOneWay(Places, Distanetion, Index);
-        
-
-
-
     }
 
 
@@ -74,8 +70,23 @@ public class Generation : MonoBehaviour
 
         };
         GenereatAllStrateWays(EndBox, StartBox);
+        if (Ps.Count == 0) { Start(); return; }
         Debug.Log(Ps.Count);
-        InstalateAll(Ps);
+        //InstalateAll(Ps);
+
+        Ps.ForEach((OneMap) => {
+            Map NewPap = new Map();
+            List<BoxData> boxDatas = OneMap.Select(DD => new BoxData() {  Qoundition = DD.Qoundition, Side = DD.Side, X = DD.X, Y = DD.Y}).ToList();
+            NewPap.boxes = boxDatas;
+            NewPap.Size = Size;
+            NewPap.StartPosition = OneMap.IndexOf(StartBox);
+            NewPap.EndPosition = OneMap.IndexOf(EndBox);
+            maps.Add(NewPap);
+        });
+
+        GetComponent<Snake>().Creat(maps.RandomItem());
+
+
     }
     /*
     void FindAllWay(List<List<(int Place, string Side)>> Places, Vector2Int Distanetion, Vector2Int Index) 
@@ -106,9 +117,6 @@ public class Generation : MonoBehaviour
 
     */
     
-    
-
-
     public void InstalateAll(List<List<Box>> Ps) 
     {
 
@@ -334,6 +342,7 @@ public class Generation : MonoBehaviour
     }
     */
 }
+[Serializable]
 public class Box
 {
     public Box(Box Clone)
@@ -410,5 +419,45 @@ public enum Side {None, Up, Down, Left, Right }
 public enum Qoundition
 {
     None, Way, Wall
+}
+
+
+
+
+[Serializable]
+public class BoxData 
+{
+    public int Y;
+    public int X;
+    public Side Side;
+    public Qoundition Qoundition;
+} 
+[Serializable]
+public class Map 
+{
+    public List<BoxData> boxes;
+    public int UseCount => boxes.Count - 1;
+    public Vector2Int Size;
+    public int StartPosition;
+    public int EndPosition;
+    public List<int> WayToWin 
+    {
+        get 
+        {
+            Dictionary<Vector2Int, BoxData> Places = new Dictionary<Vector2Int, BoxData>();
+            boxes.ForEach(s => Places.Add(new Vector2Int(s.X, s.Y), s));
+            List<int> Way = new List<int>();
+            Cheak(boxes[StartPosition]);
+            void Cheak(BoxData Mowing) 
+            {
+                Way.Add(boxes.IndexOf(Mowing));
+                if (Mowing.Side == Side.Right) Cheak(Places[new Vector2Int(Mowing.X + 1, Mowing.Y)]);
+                else if (Mowing.Side == Side.Left) Cheak(Places[new Vector2Int(Mowing.X - 1, Mowing.Y)]);
+                else if(Mowing.Side == Side.Up) Cheak(Places[new Vector2Int(Mowing.X, Mowing.Y + 1)]);
+                else if(Mowing.Side == Side.Down) Cheak(Places[new Vector2Int(Mowing.X, Mowing.Y - 1)]);
+            }
+            return Way;
+        }
+    }
 }
 
