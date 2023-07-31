@@ -47,10 +47,10 @@ namespace Study.Ring
             if (Sellected == null) return;
             if (Sellected.IsEnpty()) return;
             string String = "";
-            Debug.Log(Sellected.Count);
             Sellected.ForEach(x => String += x.GetComponentInChildren<TextMeshProUGUI>().text);
             Sellected = new TList<Letter>();
             Debug.Log(String);
+            FindObjectOfType<RingCreator>().CheakWord(String);
         }
 
         [Required]

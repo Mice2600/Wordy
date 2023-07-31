@@ -1,5 +1,6 @@
 using Base.Word;
 using Sirenix.OdinInspector;
+using Study.Ring;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -64,6 +65,7 @@ namespace Study.WordSurf
             if (Builder.WordsSS.Contains(Text)) Sellecting.DestroyAll();
             Builder.WordsSS.Remove(Text);
             Sellecting = new TList<GameObject>();
+            
         }
         WordSurf Builder;
         [ShowInInspector]

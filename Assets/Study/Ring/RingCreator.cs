@@ -1,5 +1,7 @@
+using Base;
 using Base.Word;
 using Sirenix.OdinInspector;
+using Study.CoupleParticles;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,17 +9,62 @@ using SystemBox;
 using TMPro;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
+
 namespace Study.Ring
 {
     public class RingCreator : MonoBehaviour
     {
+
+
+        public System.Action<Content> OncontentFound;
+
+
         public GameObject WordPrefab;
         public List<string> Used;
+        [System.NonSerialized]
+        public List<Content> Contents;
+        [SerializeField, Required]
+        private Transform RingParrent;
+        [SerializeField, Required]
+        private GameObject Win;
+        [SerializeField, Required]
+        private GameObject ContentPrefab;
+
+        [SerializeField, Required]
+        private ContentGropper ContentParrent;
         private void Start()
         {
             FindWords();
         }
-        [Button]
+
+
+        public bool CheakWord(string W) 
+        {
+            
+            if (Used.Contains(W)) 
+            {
+                OncontentFound?.Invoke(WordBase.Wordgs.GetContent(W));
+                
+                Used.Remove(W);
+                if (Used.IsEnpty()) 
+                {
+                    StartCoroutine(Ww());
+                    IEnumerator Ww() 
+                    {
+                        yield return new WaitForSeconds(2);
+                        Instantiate(Win).GetComponent<WinViwe>().contents = Contents;
+                        QuestRing d = GetComponent<QuestRing>();
+                        Contents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
+                        d.OnGameWin?.Invoke();
+                    }
+                    
+                }
+                return true;
+            }
+            return false;
+        }
+
         public void FindWords()
         {
 
@@ -50,7 +97,16 @@ namespace Study.Ring
 
             }
             Used = UsingContents;
+            Contents = Used.Select(W => WordBase.Wordgs.GetContent(W)).ToList();
 
+            Contents.ForEach(
+                C =>
+                {
+                    GameObject d = Instantiate(ContentPrefab, transform);
+                    d.GetComponentInChildren<ContentObject>().Content = C;
+                    ContentParrent.AddNewContent(d.transform);
+                }
+                );
 
             bool FindBestOptin(List<string> Sellected, List<string> OnQuawe, out string Option)
             {
@@ -77,7 +133,7 @@ namespace Study.Ring
         }
         public void Load(TList<string> Words)
         {
-            transform.ClearChilds();
+            RingParrent.ClearChilds();
             TList<char> NeedChars = new TList<char>();
             Words.ForEach(w =>
             {
@@ -89,7 +145,7 @@ namespace Study.Ring
             TList<GameObject> CreatedWords = new TList<GameObject>();
             NeedChars.ForEach(w =>
             {
-                CreatedWords += Instantiate(WordPrefab, transform);
+                CreatedWords += Instantiate(WordPrefab, RingParrent);
                 CreatedWords.Last.GetComponentInChildren<TextMeshProUGUI>().text = w.ToString();
             });
 
@@ -98,9 +154,9 @@ namespace Study.Ring
             GameObject go = new GameObject("Worker");
             for (int i = 0; i < CreatedWords.Count; i++)
             {
-                go.transform.position = transform.position;
+                go.transform.position = RingParrent.position;
                 go.transform.Rotate(0, 0, 360f / CreatedWords.Count);
-                go.transform.Translate(Vector3.up * GetComponent<RectTransform>().rect.width / 2);
+                go.transform.Translate(Vector3.up * RingParrent.GetComponent<RectTransform>().rect.width / 2);
                 CreatedWords[i].transform.position = go.transform.position;
             }
             Destroy(go);
