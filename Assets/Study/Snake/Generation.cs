@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -26,7 +25,8 @@ public class Generation : MonoBehaviour
 
     private void Start()
     {
-        Creat(new Vector2Int(6,6));
+        int RR = Random.Range(4, 7);
+        Creat(new Vector2Int(RR, RR));
     }
     public void Creat(Vector2Int Size) 
     {
@@ -46,10 +46,11 @@ public class Generation : MonoBehaviour
         EndBox = Places.Values.ToList().RandomItem();
         StartBox = Places.Values.ToList().RandomItem();
         if (EndBox == StartBox) { FindOneWay(); return; }
-        List<List<Box>> Ps = new List<List<Box>>();
+        List<(List<Box> Map, int FreChois)> Ps = new List<(List<Box> Map, int FreChois)>();
+
         FoundedWay = () =>
         {
-            if (!CheakForMultuWayes(EndBox, StartBox)) return;
+            if (!CheakForMultuWayes(EndBox, StartBox, out int FreChois)) return;
             
 
             int COO = 0;
@@ -59,15 +60,7 @@ public class Generation : MonoBehaviour
                 NewP.Add(new Box(B));
                 if (B.Qoundition ==  Qoundition.Way) COO++;
             });
-            if (COO > 19) Ps.Add(NewP);
-
-
-
-
-
-
-
-
+            if (COO > 19) Ps.Add((NewP, FreChois));
         };
         GenereatAllStrateWays(EndBox, StartBox);
         if (Ps.Count == 0) { Start(); return; }
@@ -76,15 +69,19 @@ public class Generation : MonoBehaviour
 
         Ps.ForEach((OneMap) => {
             Map NewPap = new Map();
-            List<BoxData> boxDatas = OneMap.Select(DD => new BoxData() {  Qoundition = DD.Qoundition, Side = DD.Side, X = DD.X, Y = DD.Y}).ToList();
+            List<BoxData> boxDatas = OneMap.Map.Select(DD => new BoxData() {  Qoundition = DD.Qoundition, Side = DD.Side, X = DD.X, Y = DD.Y}).ToList();
             NewPap.boxes = boxDatas;
             NewPap.Size = Size;
-            NewPap.StartPosition = OneMap.IndexOf(StartBox);
-            NewPap.EndPosition = OneMap.IndexOf(EndBox);
+            NewPap.FreChois = OneMap.FreChois;
             maps.Add(NewPap);
         });
 
-        GetComponent<Snake>().Creat(maps.RandomItem());
+
+
+        int ThempScore = 0;
+        Map ToCreat = null;
+        maps.ForEach(s => { if (s.FreChois > ThempScore) { ThempScore = s.FreChois; ToCreat = s; } });
+        GetComponent<Snake>().Creat(ToCreat);
 
 
     }
@@ -225,16 +222,17 @@ public class Generation : MonoBehaviour
         Index.Side = Side.None;
         Index.Qoundition = Qoundition.None;
     }
-    bool CheakForMultuWayes(Box Distanetion, Box Index) 
+    bool CheakForMultuWayes(Box Distanetion, Box Index, out int FreeChois) 
     {
+        FreeChois = 0;
         if (Index.CorrectBoxes.Where(e => e.Item1.Qoundition == Qoundition.Way).Count() == 1) return false;
         if (Distanetion.CorrectBoxes.Where(e => e.Item1.Qoundition == Qoundition.Way).Count() == 1) return false;
         int Ways = 0;
-        int FreeChois = 0;
         
+        int FreeChoisLocal = 0;
         Cheak(Index, new List<Box>());
+        FreeChois = FreeChoisLocal;
 
-        if (FreeChois < 20) return false;
         return Ways > 2;
         void Cheak(Box Index, List<Box> UsedList, Side Diraction = Side.None) 
         {
@@ -248,7 +246,7 @@ public class Generation : MonoBehaviour
             {
                 List<(Box, Side)> NewPoss = Index.CorrectBoxes;
                 int FreeChoisCount = NewPoss.Where((d => !UsedList.Contains(d.Item1) && d.Item1.Qoundition == Qoundition.Way)).Count();
-                if(FreeChoisCount > 1) FreeChois += FreeChoisCount -1;
+                if(FreeChoisCount > 1) FreeChoisLocal += FreeChoisCount -1;
                 bool isThereWays = false;
                 for (int i = 0; i < NewPoss.Count; i++)
                 {
@@ -272,77 +270,8 @@ public class Generation : MonoBehaviour
         }
 
     }
-
-
-    /*
-
-    // 0 = enpty, 1 = Filled  ↑ ↓ → ←
-    void GenereatAllWays(List<List<(int Place, string Side)>> Placeses, Vector2Int Distanetion, Vector2Int Index) 
-    {
-        Placeses[Index.x][Index.y] = (1, Placeses[Index.x][Index.y].Side);
-        if (Distanetion == Index) {
-            FoundedWay.Invoke(Placeses);
-            return; 
-        }
-        List<(Vector2Int, string)> NewPoss = new List<(Vector2Int, string)>() {(Index + Vector2Int.up, "↑" ), (Index + Vector2Int.down, "↓"), (Index + Vector2Int.left, "←"), (Index + Vector2Int.right , "→")};
-        NewPoss.Mix();
-        for (int i = 0; i < NewPoss.Count; i++)
-        {
-            if (NewPoss[i].Item1.x >= Placeses.Count ||
-                 NewPoss[i].Item1.y >= Placeses[0].Count ||
-                NewPoss[i].Item1.y < 0 || NewPoss[i].Item1.x < 0) continue;
-
-            if (Placeses[NewPoss[i].Item1.x][NewPoss[i].Item1.y].Place ==  0)
-            {
-                Placeses[NewPoss[i].Item1.x][NewPoss[i].Item1.y] = (1, NewPoss[i].Item2);
-                GenereatAllWays(Placeses, Distanetion, NewPoss[i].Item1);        
-                Placeses[NewPoss[i].Item1.x][NewPoss[i].Item1.y] = (0, "");
-            }
-        }
-        Placeses[Index.x][Index.y] = (0, "");
-    }
-
-    bool GenereatFirstWay(List<List<(int Place, string Side)>> Placeses, Vector2Int Distanetion, Vector2Int Index, int BlocksCount, int CorrentCount = -1) 
-    {
-        CorrentCount++;
-        if (CorrentCount > BlocksCount) { return false; }
-        Placeses[Index.x][Index.y] = (1, Placeses[Index.x][Index.y].Side);
-        if (CorrentCount == BlocksCount) 
-        {
-            if (Distanetion == Index)
-            {
-                FoundedWay.Invoke(new List<List<(int Place, string Side)>>(Placeses));
-                return true;
-            }
-            else { return false;  }
-        }
-        List<(Vector2Int, string)> NewPoss = new List<(Vector2Int, string)>() { (Index + Vector2Int.up, "↑"), (Index + Vector2Int.down, "↓"), (Index + Vector2Int.left, "←"), (Index + Vector2Int.right, "→") };
-        NewPoss.Mix();
-
-        int CCSS = CorrentCount;
-
-        for (int i = 0; i < NewPoss.Count; i++)
-        {
-
-            if (NewPoss[i].Item1.x >= Placeses.Count ||
-                 NewPoss[i].Item1.y >= Placeses[0].Count ||
-                NewPoss[i].Item1.y < 0 || NewPoss[i].Item1.x < 0) continue;
-            if (Placeses[NewPoss[i].Item1.x][NewPoss[i].Item1.y].Place == 0)
-            {
-
-                Placeses[NewPoss[i].Item1.x][NewPoss[i].Item1.y] = (1, NewPoss[i].Item2);
-                bool Ans = GenereatFirstWay(Placeses, Distanetion, NewPoss[i].Item1, BlocksCount, CCSS);
-                if (Ans) return true;
-                Placeses[NewPoss[i].Item1.x][NewPoss[i].Item1.y] = (0, "");
-                
-            }
-        }
-        Placeses[Index.x][Index.y] = (0, "");
-        return false; 
-    }
-    */
 }
-[Serializable]
+[System.Serializable]
 public class Box
 {
     public Box(Box Clone)
@@ -424,33 +353,68 @@ public enum Qoundition
 
 
 
-[Serializable]
+[System.Serializable]
 public class BoxData 
 {
     public int Y;
     public int X;
     public Side Side;
     public Qoundition Qoundition;
-} 
-[Serializable]
+}
+[System.Serializable]
 public class Map 
 {
+    public int FreChois;
     public List<BoxData> boxes;
     public int UseCount => boxes.Count - 1;
     public Vector2Int Size;
-    public int StartPosition;
-    public int EndPosition;
-    public List<int> WayToWin 
+    public BoxData StartPosition
+    {
+        get
+        {
+
+            Dictionary<Vector2Int, BoxData> Places = new Dictionary<Vector2Int, BoxData>();
+
+            BoxData StartBB = null;
+
+            boxes.ForEach(s => { Places.Add(new Vector2Int(s.X, s.Y), s); if (StartBB == null && s.Qoundition == Qoundition.Way) StartBB = s; });
+            BoxData StartIndex = null;
+
+            Cheak(StartBB);
+            return StartIndex;
+            void Cheak(BoxData Mowing)
+            {
+                Vector2Int Right = new Vector2Int(Mowing.X + 1, Mowing.Y);
+                Vector2Int Left = new Vector2Int(Mowing.X - 1, Mowing.Y);
+                Vector2Int Up = new Vector2Int(Mowing.X, Mowing.Y + 1);
+                Vector2Int Down = new Vector2Int(Mowing.X, Mowing.Y - 1);
+                if (Places.ContainsKey(Right) && Places[Right].Side == Side.Left) Cheak(Places[Right]);
+                else if (Places.ContainsKey(Left) && Places[Left].Side == Side.Right) Cheak(Places[Left]);
+                else if (Places.ContainsKey(Up) && Places[Up].Side == Side.Down) Cheak(Places[Up]);
+                else if (Places.ContainsKey(Down) && Places[Down].Side == Side.Up) Cheak(Places[Down]);
+                else { StartIndex = Mowing; return; }
+            }
+
+        }
+    }
+    public BoxData EndPosition 
+    {
+        get 
+        {
+            return boxes.Find(o => o.Side == Side.None);
+        }
+    }
+    public List<BoxData> WayToWin 
     {
         get 
         {
             Dictionary<Vector2Int, BoxData> Places = new Dictionary<Vector2Int, BoxData>();
             boxes.ForEach(s => Places.Add(new Vector2Int(s.X, s.Y), s));
-            List<int> Way = new List<int>();
-            Cheak(boxes[StartPosition]);
+            List<BoxData> Way = new List<BoxData>();
+            Cheak(StartPosition);
             void Cheak(BoxData Mowing) 
             {
-                Way.Add(boxes.IndexOf(Mowing));
+                Way.Add(Mowing);
                 if (Mowing.Side == Side.Right) Cheak(Places[new Vector2Int(Mowing.X + 1, Mowing.Y)]);
                 else if (Mowing.Side == Side.Left) Cheak(Places[new Vector2Int(Mowing.X - 1, Mowing.Y)]);
                 else if(Mowing.Side == Side.Up) Cheak(Places[new Vector2Int(Mowing.X, Mowing.Y + 1)]);
