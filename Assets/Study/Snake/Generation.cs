@@ -377,7 +377,8 @@ public class Map
 
             BoxData StartBB = null;
 
-            boxes.ForEach(s => { Places.Add(new Vector2Int(s.X, s.Y), s); if (StartBB == null && s.Qoundition == Qoundition.Way) StartBB = s; });
+            boxes.ForEach(s => { Places.Add(new Vector2Int(s.X, s.Y), s); 
+                if (StartBB == null && s.Qoundition == Qoundition.Way) StartBB = s; });
             BoxData StartIndex = null;
 
             Cheak(StartBB);

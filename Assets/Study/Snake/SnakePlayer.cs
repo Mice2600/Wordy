@@ -1,4 +1,6 @@
+using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using System;
 using System.Collections.Generic;
 using SystemBox;
 using UnityEngine;
@@ -8,11 +10,20 @@ public class SnakePlayer : MonoBehaviour
     [System.NonSerialized]
     public TList<Letter> UsedLetters;
     [System.NonSerialized]
+    public TList<Letter> ToShowLetters;
+    [System.NonSerialized]
     public Letter LastLetter;
     [System.NonSerialized]
     public Letter MyLetter;
+    [SerializeField, Required]
+    private GameObject TrackObject;
+    Dictionary<Vector2Int, Track> Tracks;
+    public Func<bool> CanMove;
+
     void Start()
     {
+        ToShowLetters = new TList<Letter>();
+        Tracks = new Dictionary<Vector2Int, Track>();
         Map = new Dictionary<Vector2Int, Letter>();
         FindObjectsOfType<Letter>().ForEach( (L) => {
             Map.Add(new Vector2Int(L.boxData.X, L.boxData.Y) , L);
@@ -28,6 +39,10 @@ public class SnakePlayer : MonoBehaviour
         transform.SetAsLastSibling();
     }
 
+
+
+
+
     float SpeedDefault = 30;
     float Speed = 30;
 
@@ -36,7 +51,27 @@ public class SnakePlayer : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, LastLetter.transform.position, Time.deltaTime * Speed);
         if (transform.position == LastLetter.transform.position) 
         {
-            if (UsedLetters.Last != LastLetter) LastLetter = UsedLetters.NextOf(LastLetter);
+            if (CanMove != null) 
+            {
+                bool Waiter = CanMove.Invoke();
+                if (!Waiter) return;
+            }
+            
+            if (!Tracks.ContainsKey(new Vector2Int(LastLetter.boxData.X, LastLetter.boxData.Y))) 
+            {
+                Track dd = Instantiate(TrackObject, transform.parent).GetComponent<Track>();
+                dd.transform.position = transform.position;
+                dd.gameObject.SetActive(true);
+                dd.MyLetter = LastLetter;
+                Tracks.Add(new Vector2Int(LastLetter.boxData.X, LastLetter.boxData.Y), dd);
+                
+            }
+
+            if (UsedLetters.Last != LastLetter) 
+            {
+                LastLetter = UsedLetters.NextOf(LastLetter);
+                ToShowLetters.Add(LastLetter);
+            }
             else Speed = SpeedDefault;
         }
     }
@@ -44,7 +79,7 @@ public class SnakePlayer : MonoBehaviour
 
     void OnSwipeUp()
     {
-        transform.rotation = Quaternion.Euler(0, 0, 0);
+        //transform.rotation = Quaternion.Euler(0, 0, 0);
         if (Map.ContainsKey(new Vector2Int(MyLetter.boxData.X, MyLetter.boxData.Y + 1)) &&
             !UsedLetters.Contains(Map[new Vector2Int(MyLetter.boxData.X, MyLetter.boxData.Y + 1)]))
             if (transform.position != MyLetter.transform.position) { Speed *= 1.6f; return; }
@@ -58,7 +93,7 @@ public class SnakePlayer : MonoBehaviour
     }
     void OnSwipeDown()
     {
-        transform.rotation = Quaternion.Euler(0, 0, -180);
+        //transform.rotation = Quaternion.Euler(0, 0, -180);
         if (Map.ContainsKey(new Vector2Int(MyLetter.boxData.X, MyLetter.boxData.Y - 1)) &&
             !UsedLetters.Contains(Map[new Vector2Int(MyLetter.boxData.X, MyLetter.boxData.Y - 1)]))
             if (transform.position != MyLetter.transform.position) { Speed *= 1.6f; return; }
@@ -72,7 +107,7 @@ public class SnakePlayer : MonoBehaviour
     }
     void OnSwipeLeft()
     {
-        transform.rotation = Quaternion.Euler(0,0,90);
+       // transform.rotation = Quaternion.Euler(0,0,90);
         if (Map.ContainsKey(new Vector2Int(MyLetter.boxData.X - 1, MyLetter.boxData.Y)) &&
             !UsedLetters.Contains(Map[new Vector2Int(MyLetter.boxData.X - 1, MyLetter.boxData.Y)]))
             if (transform.position != MyLetter.transform.position) { Speed *= 1.6f; return; }
@@ -86,7 +121,7 @@ public class SnakePlayer : MonoBehaviour
     }
     void OnSwipeRight()
     {
-        transform.rotation = Quaternion.Euler(0, 0, -90);
+        //transform.rotation = Quaternion.Euler(0, 0, -90);
         if (Map.ContainsKey(new Vector2Int(MyLetter.boxData.X + 1, MyLetter.boxData.Y)) &&
             !UsedLetters.Contains(Map[new Vector2Int(MyLetter.boxData.X + 1, MyLetter.boxData.Y)]))
             if (transform.position != MyLetter.transform.position) { Speed *= 1.6f; return; }

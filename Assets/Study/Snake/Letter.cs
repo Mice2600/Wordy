@@ -21,11 +21,11 @@ public class Letter : MonoBehaviour
             LetttereessDiicc = new Dictionary<Vector2Int, Letter>();
             LetttereessDiicc = Letttereess.ToDictionary((d) => new Vector2Int(d.boxData.X, d.boxData.Y));
         }
-        LeftSide.SetActive(!LetttereessDiicc.ContainsKey(new Vector2Int(boxData.X, boxData.Y) + Vector2Int.left));
+       /* LeftSide.SetActive(!LetttereessDiicc.ContainsKey(new Vector2Int(boxData.X, boxData.Y) + Vector2Int.left));
         RightSide.SetActive(!LetttereessDiicc.ContainsKey(new Vector2Int(boxData.X, boxData.Y) + Vector2Int.right));
         UpSide.SetActive(!LetttereessDiicc.ContainsKey(new Vector2Int(boxData.X, boxData.Y) + Vector2Int.up));
         DownSide.SetActive(!LetttereessDiicc.ContainsKey(new Vector2Int(boxData.X, boxData.Y) + Vector2Int.down));
-        
+        */
 
     }
 }
