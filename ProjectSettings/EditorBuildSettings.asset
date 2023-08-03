@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/Ring/Ring.unity
     guid: 4767be6bb4293de4fb4d1a9ae1a08855
+  - enabled: 1
+    path: Assets/Study/Snake/Snake.unity
+    guid: 8a7ee2d32a070374fa7bd3ef8243fae2
   m_configObjects: {}

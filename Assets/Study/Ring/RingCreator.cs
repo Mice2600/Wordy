@@ -1,15 +1,12 @@
 using Base;
 using Base.Word;
 using Sirenix.OdinInspector;
-using Study.CoupleParticles;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using SystemBox;
 using TMPro;
-using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 namespace Study.Ring
 {

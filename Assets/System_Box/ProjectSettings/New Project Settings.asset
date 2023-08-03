@@ -153,6 +153,15 @@ MonoBehaviour:
     RemoveScoreWord: 0
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  QuestSnakePrefab: {fileID: 3384037081357820529, guid: b05ded041efc93a498028b9a8922cefa, type: 3}
+  QuestSnakeSceneName: Snake
+  QuestSnakeScoreValumes:
+    AddScoreDialog: 0
+    RemoveScoreDialog: 5
+    AddScoreWord: 5
+    RemoveScoreWord: 5
+    AddScoreIrregular: 0
+    RemoveScoreIrregular: 0
   QuestTwoWordSystemPrefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
   QuestTwoWordSystemSceneName: Two Word
   QuestTwoWordSystemValumes:
