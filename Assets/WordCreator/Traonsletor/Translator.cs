@@ -42,7 +42,7 @@ namespace Traonsletor
                 if (string.IsNullOrEmpty(webRequest.error))
                 {
                     var N = JSONNode.Parse(webRequest.downloadHandler.text);
-                    Debug.Log(N);
+                    //Debug.Log(N);
                     try
                     {
                         //Debug.Log(N[0][0][0]);

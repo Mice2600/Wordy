@@ -38,6 +38,8 @@ MonoBehaviour:
   DefalultWords: {fileID: 4900000, guid: b8d1528e2cd59734290ca53d7cac67dd, type: 3}
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
   DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
+  DefaultOppositeWords: {fileID: 4900000, guid: 9c18300e0ce21eb45967df550309273a, type: 3}
+  DefaultSynonymWords: {fileID: 4900000, guid: 09c8ddbf76631f944bdf3478d8baff45, type: 3}
   TagContentListViwe: {fileID: 2726195047587263085, guid: 6f89b5a20b2290846a7aaf149b8a222d, type: 3}
   TagCreatorViwe: {fileID: 6608090224564072100, guid: 9957a4fa4ce74de47aa835febb52c857, type: 3}
   TagDeletViwe: {fileID: 2907046969659145311, guid: ed99d274d69b6804bb627eda7d02f062, type: 3}
