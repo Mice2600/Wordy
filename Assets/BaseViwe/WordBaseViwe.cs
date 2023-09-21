@@ -60,7 +60,7 @@ namespace BaseViwe.WordViwe
         }
         void ICreatNewUser.OnButton()
         {
-            WordChanger.StartChanging();
+            WordCreator.WordCretor.WordChanger.StartChanging();
         }
         private float CCSize;
         public override float GetSizeOfContent(Content content) 

@@ -20,82 +20,76 @@ namespace ProjectSettings
         public GameObject WordChanger;
     }
 }
-
-public class WordChanger : ContentObject
+namespace WordCreator.WordCretor
 {
-    public static void StartChanging(Word NeedChanger = null) 
+    public class WordChanger : ContentObject
     {
-        NeedChanger ??= new Word("", "", 0, false, "", "");
-        Instantiate(ProjectSettings.ProjectSettings.Mine.WordChanger).GetComponent<WordChanger>().StartSet(NeedChanger); 
-    }
-    [Required]
-    public TMP_InputField WordWriter;
-    [Required]
-    public TMP_InputField WordTronsleated;
-    [Required]
-    public TMP_InputField DiscreptionWriter;
-    [Required]
-    public TextMeshProUGUI DiscreptionTranslated;
-    [Required]
-    public Slider ScoreSlider;
-    private void StartSet(Word NeedChanger)
-    {
-        this.Content = NeedChanger;
-        WordWriter.text = NeedChanger.EnglishSource;
-        WordTronsleated.text = NeedChanger.RussianSource;
-        DiscreptionWriter.text = NeedChanger.EnglishDiscretion;
-        DiscreptionTranslated.text = NeedChanger.RusianDiscretion;
-        ScoreSlider.value = ((NeedChanger as IPersanalData).ScoreConculeated) / 100f;
-    }
-    public void TryAplay() 
-    {
-        this.Content.EnglishSource = WordWriter.text;
-        this.Content.RussianSource  = WordTronsleated.text;
-        (this.Content as IDiscreption).EnglishDiscretion = DiscreptionWriter.text;
-        (this.Content as IDiscreption).RusianDiscretion = DiscreptionTranslated.text;
-        (this.Content as IPersanalData).ScoreConculeated = (ScoreSlider.value) * 100f;
-        if (!WordBase.Wordgs.Contains(Content as Word)) 
+        public static void StartChanging(Word NeedChanger = null)
         {
-            WordBase.Wordgs.Add(Content as Word);
-            WordBase.Sort();
+            NeedChanger ??= new Word("", "", 0, false, "", "");
+            Instantiate(ProjectSettings.ProjectSettings.Mine.WordChanger).GetComponent<WordChanger>().StartSet(NeedChanger);
         }
-        OnDestroyUrself();
-        SceneComands.OpenSceneSellecetWordBase(Content as Word);
-    }
-    public void TryCancel() 
-    {
-        OnDestroyUrself();
-    }
-    private float TransleteTime = 0;
+        [Required]
+        public TMP_InputField DiscreptionWriter;
+        public System.Action OnApple;
+        
 
-    private void Update()
-    {
-        TransleteTime += Time.deltaTime;
-        if (TransleteTime > 1)
+        [Required]
+        public Slider ScoreSlider;
+        public Content OrginalContent;
+        private void StartSet(Word NeedChanger)
         {
-            TransleteTime = 0;
-            StartCoroutine(Translator.Process("en", "ru", DiscreptionWriter.text, onDirectionTransleted));
-            void onDirectionTransleted(string tt)
+            OrginalContent = NeedChanger;
+            this.Content = new Word(NeedChanger);
+            DiscreptionWriter.text = NeedChanger.EnglishDiscretion;
+            ScoreSlider.value = ((NeedChanger as IPersanalData).ScoreConculeated) / 100f;
+            ScoreSlider.onValueChanged.AddListener(C => (this.Content as IPersanalData).ScoreConculeated = (C) * 100f);
+            DiscreptionWriter.onValueChanged.AddListener((T) => (this.Content as IDiscreption).EnglishDiscretion = T);
+
+        }
+        public void TryAplay()
+        {
+            OrginalContent.EnglishSource = this.Content.EnglishSource;
+            Debug.Log(this.Content.RussianSource);
+            OrginalContent.RussianSource = this.Content.RussianSource;
+            (OrginalContent as IDiscreption).EnglishDiscretion = (this.Content as IDiscreption).EnglishDiscretion;
+            (OrginalContent as IDiscreption).RusianDiscretion = (this.Content as IDiscreption).RusianDiscretion;
+            (OrginalContent as IPersanalData).ScoreConculeated = (this.Content as IPersanalData).ScoreConculeated;
+            if (!WordBase.Wordgs.Contains(OrginalContent as Word))
             {
-                Debug.Log(tt);
-                DiscreptionTranslated.text = tt;
+                WordBase.Wordgs.Add(OrginalContent as Word);
+                WordBase.Sort();
+            }
+            OnDestroyUrself();
+            SceneComands.OpenSceneSellecetWordBase(OrginalContent as Word);
+            OnApple?.Invoke();
+        }
+        public void TryCancel()
+        {
+            OnDestroyUrself();
+        }
+        private float TransleteTime = 0;
+
+        private void Update()
+        {
+            TransleteTime += Time.deltaTime;
+            if (TransleteTime > 1)
+            {
+                TransleteTime = 0;
+                StartCoroutine(Translator.Process("en", "ru", DiscreptionWriter.text, onDirectionTransleted));
+                void onDirectionTransleted(string tt)
+                {
+                    Debug.Log(tt);
+                    (this.Content as IDiscreption).RusianDiscretion = tt;
+                }
             }
         }
-    }
 
-    public void OnTranllateButton(string TronslateType) 
-    {
-        if (TronslateType != "ru" && TronslateType != "uz") TronslateType = "ru";
-        StartCoroutine(Translator.Process("en", TronslateType, WordWriter.text, onWordTransleted));
-        void onWordTransleted(string tt)
+        
+        public void OnDestroyUrself()
         {
-            Debug.Log(tt);
-            WordTronsleated.text = tt;
+            Destroy(gameObject);
         }
-    }
-    public void OnDestroyUrself()
-    {
-        Destroy(gameObject);
     }
 }
 public static partial class SceneComands // WordBaseViwe 
@@ -105,14 +99,17 @@ public static partial class SceneComands // WordBaseViwe
         Engine.Get_Engine("Game").StartCoroutine(enumerator());
         IEnumerator enumerator()
         {
+            yield return null;
+            /*
             if (SceneManager.GetActiveScene().name != "WordBaseViwe") 
             {
                 SceneManager.LoadScene("WordBaseViwe", LoadSceneMode.Single);
                 yield return null;
                 yield return null;
                 yield return null;
-            }
-            GameObject.FindObjectOfType<WordBaseViwe>().Lode(WordBase.Wordgs.IndexOf(word));
+            }*/
+            WordBaseViwe d = GameObject.FindObjectOfType<WordBaseViwe>();
+            if(d!= null)d.Lode(WordBase.Wordgs.IndexOf(word)); 
         }
     }
 }
