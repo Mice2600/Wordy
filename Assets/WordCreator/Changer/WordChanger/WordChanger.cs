@@ -50,11 +50,11 @@ namespace WordCreator.WordCretor
         public void TryAplay()
         {
             OrginalContent.EnglishSource = this.Content.EnglishSource;
-            Debug.Log(this.Content.RussianSource);
             OrginalContent.RussianSource = this.Content.RussianSource;
             (OrginalContent as IDiscreption).EnglishDiscretion = (this.Content as IDiscreption).EnglishDiscretion;
             (OrginalContent as IDiscreption).RusianDiscretion = (this.Content as IDiscreption).RusianDiscretion;
             (OrginalContent as IPersanalData).ScoreConculeated = (this.Content as IPersanalData).ScoreConculeated;
+            (OrginalContent as IPersanalData).Active = (this.Content as IPersanalData).Active;
             if (!WordBase.Wordgs.Contains(OrginalContent as Word))
             {
                 WordBase.Wordgs.Add(OrginalContent as Word);

@@ -28,6 +28,17 @@ namespace Base.Word
             this.Score = Clone.Score;
             this.Active = Clone.Active;
         }
+
+        public Word(WordDefoult Clone) : base(Clone.EnglishSource, Clone.RussianSource)
+        {
+            this.EnglishDiscretion = Clone.EnglishDiscretion;
+            this.EnglishDiscretion.ToUpper();
+            this.RusianDiscretion = Clone.RusianDiscretion;
+            this.RusianDiscretion.ToUpper();
+            this.Score = 0;
+            this.Active = false;
+        }
+
         public Word(string EnglishSource, string RussianSource, float Score, bool Active, string EnglishDiscretion, string RusianDiscretion) : base(EnglishSource, RussianSource)
         {
             EnglishSource.ToUpper();

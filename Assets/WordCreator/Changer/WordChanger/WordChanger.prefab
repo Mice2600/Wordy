@@ -630,6 +630,7 @@ MonoBehaviour:
   English: {fileID: 4605639252115959525}
   TranslatorsParent: {fileID: 2685097596433350444}
   MineTranslators: {fileID: 6617900875319673168}
+  Translators: []
   PerfabField: {fileID: 2240665494046626845, guid: eedac94ed62be8647aad4c50d57b376c, type: 3}
 --- !u!1 &989778739275150635
 GameObject:

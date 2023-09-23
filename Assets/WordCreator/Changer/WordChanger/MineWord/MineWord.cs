@@ -75,12 +75,8 @@ namespace WordCreator.WordCretor
         public void OnChange(TMP_InputField Transttion) 
         {
             if (contentObject.Content.RussianSource == "") 
-            {
                 contentObject.Content.RussianSource = Transttion.text;
-            }
-            Debug.Log(contentObject.Content.RussianSource);
             (contentObject.Content as IMultiTranslation).ChangeTranslationAt(Translators.IndexOf(Transttion), Transttion.text);
-            Debug.Log(contentObject.Content.RussianSource + "               AFF");
         }
         public void OnTranllateButton(string TronslateType)
         {

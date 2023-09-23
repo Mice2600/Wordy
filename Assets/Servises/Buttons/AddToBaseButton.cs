@@ -32,7 +32,8 @@ namespace Servises
             base.Start();
             GetComponent<Button>().onClick.AddListener(() =>
             {
-                Content.Content.BaseCommander.Add(Content.Content);
+                if (Content.Content is WordDefoult) { WordCreator.WordCretor.WordChanger.StartChanging(new Word(Content.Content as WordDefoult));  }
+                else Content.Content.BaseCommander.Add(Content.Content);
             });
         }
         public void TurnUpdate()
