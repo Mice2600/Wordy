@@ -1,14 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using SystemBox.Engine;
-using SystemBox;
-using TMPro;
-using Sirenix.OdinInspector;
-using System.Globalization;
-using System;
-using UnityEngine.UI;
-
 public class ConsoleLog : MonoBehaviour
 {
 

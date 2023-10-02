@@ -1,5 +1,6 @@
 using Base.Word;
 using Servises;
+using Sirenix.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -57,7 +58,19 @@ namespace Base
 
             (this as IDataListComands).SetUp_Commands();
         }
-
+        public string Export() 
+        {
+            if (JsonHelper.FromJson<T>(PlayerPrefs.GetString(DataID)) == null) return "";
+            return PlayerPrefs.GetString(DataID);
+        }
+        public void Import(string ImportData) 
+        {
+            if (JsonHelper.FromJson<T>(ImportData) == null) return;
+            T[] DaaaTaa = new List<T>(JsonHelper.FromJson<T>(ImportData)).ToArray();
+            foreach (var item in DaaaTaa)
+                if (!this.Contains(item))
+                    this.Add(item);
+        }
         public void Avake() { }
 
         protected abstract string DataID { get; }
