@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2550693946129417027}
   - component: {fileID: 2550693946129417029}
   - component: {fileID: 2550693946129417026}
-  - component: {fileID: 6180932538287899539}
+  - component: {fileID: 8812029412261468020}
   m_Layer: 5
-  m_Name: EnglishText
+  m_Name: translationText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6180932538287899539
+--- !u!114 &8812029412261468020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,11 +145,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2550693946129417024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817aec6fe6c84df4eb9766ce4c531144, type: 3}
+  m_Script: {fileID: 11500000, guid: ddae415b3dcc0a34790f4471e124350b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BiforText: 
   AfterTextText: 
+  ChosenOne: -1
 --- !u!1 &2550693946166321411
 GameObject:
   m_ObjectHideFlags: 0

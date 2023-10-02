@@ -6,6 +6,12 @@ using UnityEngine;
 
 namespace SystemBox
 {
+
+    public enum ListGetType
+    {
+        Loop, Infinity
+    }
+
     /// <summary>
     /// List Utulity SystemBox
     /// </summary>
@@ -58,7 +64,7 @@ namespace SystemBox
             }
             catch (System.Exception XX) { throw Tools.ExceptionThrow(XX, 2); }
         }
-
+        
 
         #region ListOrginal
         [SerializeField]
@@ -82,6 +88,58 @@ namespace SystemBox
                 catch (System.Exception XX) { throw Tools.ExceptionThrow(XX, 2); }
             }
         }
+
+        public T this[int index, ListGetType GetType]
+        {
+
+            get
+            {
+                try
+                {
+                    if (GetType == ListGetType.Loop)
+                    {
+                        index = Mathf.Abs(index);
+                        int levv = (index / NList.Count);
+                        index -= (levv * NList.Count);
+                        return NList[index];
+                    }
+                    else if (GetType == ListGetType.Infinity)
+                    {
+                        if (index >= Count) index = Count - 1;
+                        if (index < 0) index = 0;
+                        return NList[index];
+
+                    }
+                    else throw Tools.ExceptionThrow(new System.Exception("WTF"), 2);
+
+                }
+                catch (System.Exception XX) { throw Tools.ExceptionThrow(XX, 2); }
+            }
+            set
+            {
+                try
+                {
+                    if (GetType == ListGetType.Loop)
+                    {
+                        int levv = (index / NList.Count);
+                        index -= (levv * NList.Count);
+                        NList[index] = value;
+                    }
+                    else if (GetType == ListGetType.Infinity)
+                    {
+                        if (index >= Count) index = Count - 1;
+                        if (index < 0) index = 0;
+                        NList[index] = value;
+                    }
+                    else throw Tools.ExceptionThrow(new System.Exception("WTF"), 2);
+                }
+                catch (System.Exception XX) { throw Tools.ExceptionThrow(XX, 2); }
+            }
+
+
+
+        }
+
         public int Count
         {
             get

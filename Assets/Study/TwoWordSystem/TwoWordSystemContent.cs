@@ -2,17 +2,17 @@ using Base;
 using Base.Word;
 using System.Collections;
 using SystemBox;
+using TMPro;
 using UnityEngine;
 namespace Study.TwoWordSystem
 {
     public class TwoWordSystemContent : ContentObject
     {
+        [System.NonSerialized]
         public bool IsEnglishSide;
         public static TwoWordSystemContent EnglishSellected;
         public static TwoWordSystemContent RussianSellected;
 
-        [SerializeField]
-        private GameObject TextEnglish, TextTransleated;
         [SerializeField]
         private GameObject VoisOB;
 
@@ -21,33 +21,34 @@ namespace Study.TwoWordSystem
 
         private void Start()
         {
+            if (Content == null) return;
             OnValueChanged += (s) => Refresh();
             Refresh();
         }
 
         public void Refresh()
         {
+            TMP_Text InsideText = GetComponentInChildren<TMP_Text>(true);
+            InsideText.gameObject.SetActive(true);
             if (IsEnglishSide)
             {
-                TextTransleated.SetActive(false);
+                InsideText.text = Content.EnglishSource;
                 if (Random.Range(0, 10) > 5)
                 {
                     VoisOB.SetActive(false);
-                    TextEnglish.SetActive(true);
                 }
                 else 
                 {
                     VoisOB.SetActive(true);
-                    TextEnglish.SetActive(false);
+                    InsideText.gameObject.SetActive(false);
                 }
             }
             else 
             {
+                
+                InsideText.text = (Content as IMultiTranslation).Translations.RandomItem;
                 VoisOB.SetActive(false);
-                TextEnglish.SetActive(false);
-                TextTransleated.SetActive(true);
             }
-            
         }
 
         private TwoWordSystem TwoWordSystem => _TwoWordSystem ??= FindObjectOfType<TwoWordSystem>();
@@ -55,6 +56,13 @@ namespace Study.TwoWordSystem
         public void TrySellect()
         {
             if (Dead) return;
+
+            if (IsEnglishSide) 
+            {
+                if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+                    EasyTTSUtil.SpeechAdd((Content as ISpeeker).SpeekText);
+                else Debug.Log(Content.EnglishSource + " Speeking");
+            }
             
             if (IsEnglishSide)
             {

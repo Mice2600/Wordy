@@ -152,8 +152,7 @@
 "asd",
 "dsaaa",
 "ssss",
-"dww",
-"GRACEFUL"]
+"dww"]
 },
 {"ID":"@Noun",
 "Contents":["ABILITY",

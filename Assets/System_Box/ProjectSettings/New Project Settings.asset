@@ -146,6 +146,8 @@ MonoBehaviour:
     RemoveScoreWord: -1
     AddScoreIrregular: 0
     RemoveScoreIrregular: 0
+  QuestNumberExercisePrefab: {fileID: 2554459776758359372, guid: 9b31dff5d1b90024c82f5d2c90060a60, type: 3}
+  QuestNumberExerciseSceneName: NumberExercise
   QuestRingPrefab: {fileID: 1983320220219004727, guid: d37b8016fbe2b4145b51945540772d4d, type: 3}
   QuestRingSceneName: QuestRing
   QuestRingScorevalumes:

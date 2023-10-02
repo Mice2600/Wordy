@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/Snake/Snake.unity
     guid: 8a7ee2d32a070374fa7bd3ef8243fae2
+  - enabled: 1
+    path: Assets/Study/NumberExercise/NumberExercise.unity
+    guid: 3eae4d9b84e57474eb2dd9912fd363b9
   m_configObjects: {}
