@@ -3,6 +3,7 @@ using Base.Dialog;
 using Base.Word;
 using Servises.SmartText;
 using Sirenix.OdinInspector;
+using Study.aSystem;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -47,7 +48,8 @@ namespace Study.BuildDialog
         private TMP_FontAsset PasswordFont;
         private void Start()
         {
-            List<Dialog> Grr = QuestBuildDialog.NeedDialogs;
+            List<Dialog> Grr = new TList<Dialog>(QuestBuildDialog.NeedDialog, DialogBase.Dialogs.RandomItem());
+            Debug.Log((Grr[0].EnglishSource, Grr[1].EnglishSource));
             Content = Grr[0];
             
             TList<string> All = Grr[0].EnglishSource.Split(" ");
@@ -172,14 +174,14 @@ namespace Study.BuildDialog
             {
                 QuestBuildDialog.OnDialogWin.Invoke(Content as Dialog);
                 QuestBuildDialog.OnGameWin?.Invoke();
-                DiscretionCorrectContent N = DiscretionCorrectContent.ShowCorrectContent(Content as Dialog, QuestBuildDialog.AddScoreDialog, OnClose);
-                WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => N.AddChangin(a, QuestBuildDialog.AddScoreWord));
+                DiscretionCorrectContent N = DiscretionCorrectContent.ShowCorrectContent(Content as Dialog, (QuestBuildDialog.QuestData as IDialogScorer).AddScoreDialog, OnClose);
+                WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => N.AddChangin(a, (QuestBuildDialog.QuestData as IWordScorer).AddScoreWord));
                 return true;
             }
             QuestBuildDialog.OnDialogLost?.Invoke(Content as Dialog);
             QuestBuildDialog.OnGameLost?.Invoke();
-            DiscretionIncorrectContent K = DiscretionIncorrectContent.ShowIncorrectContent(Content as Dialog, Groped, QuestBuildDialog.RemoveScoreDialog, OnClose);
-            WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => K.AddChangin(a, QuestBuildDialog.RemoveScoreWord));
+            DiscretionIncorrectContent K = DiscretionIncorrectContent.ShowIncorrectContent(Content as Dialog, Groped, (QuestBuildDialog.QuestData as IDialogScorer).RemoveScoreDialog, OnClose);
+            WordBase.Wordgs.FindContentsFromString(Groped.EnglishSource, (a) => K.AddChangin(a, (QuestBuildDialog.QuestData as IWordScorer).RemoveScoreWord));
             return false;
 
             void OnClose() 

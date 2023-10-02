@@ -1,6 +1,7 @@
 using Base;
 using Base.Word;
 using Sirenix.OdinInspector;
+using Study.aSystem;
 using System.Collections.Generic;
 using SystemBox;
 using Unity.Collections.LowLevel.Unsafe;
@@ -34,7 +35,7 @@ namespace Study.TwoWordSystem
             }
 
             //Words = WordBase.Wordgs;
-            Words = QuestTwoWord.NeedWords;
+            Words = QuestTwoWord.NeedWordList;
             ScoresResultat = new Dictionary<Word, int>();
             for (int i = 0; i < Words.Count; i++) ScoresResultat.Add(Words[i], 0);
 
@@ -209,14 +210,14 @@ namespace Study.TwoWordSystem
                 GameObject G = Instantiate(SingelScorePrefab);
                 if (ScoresResultat[words[i]] > 1)
                 {
-                    G.GetComponent<ScoreChanginInfo>().Set(words[i], QuestTwoWord.AddScoreWord);
+                    G.GetComponent<ScoreChanginInfo>().Set(words[i], (QuestTwoWord.QuestData as IWordScorer).AddScoreWord);
                     WinGropeParrent.AddNewContent(G.transform);
                     IsThereWinn = true;
                     QuestTwoWord.OnWordWin.Invoke(words[i]);
                 }
                 else if(ScoresResultat[words[i]] < 0)
                 {
-                    G.GetComponent<ScoreChanginInfo>().Set(words[i], QuestTwoWord.RemoveScoreWord);
+                    G.GetComponent<ScoreChanginInfo>().Set(words[i], (QuestTwoWord.QuestData as IWordScorer).RemoveScoreWord);
                     LostGropeParrent.AddNewContent(G.transform);
                     IsThereLost = true;
                     QuestTwoWord.OnWordLost.Invoke(words[i]);

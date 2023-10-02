@@ -20,7 +20,7 @@ public class RContent : ContentObject
         {
             if (C == Content)
             {
-                Flayer.transform.position = FindObjectOfType<Indecator>().transform.position;
+                Flayer.transform.position = FindObjectOfType<Study.Ring.Indecator>().transform.position;
                 Flayer.transform.SetAsLastSibling();
                 StartCoroutine(AA());
             }

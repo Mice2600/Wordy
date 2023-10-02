@@ -1,3 +1,5 @@
+using Base.Dialog;
+using Base.Word;
 using Newtonsoft.Json.Linq;
 using Sirenix.OdinInspector;
 using Study.aSystem;
@@ -18,16 +20,14 @@ public class QuestRandom : MonoBehaviour
             if (_Values == null)
             {
                 _Values = new Dictionary<string, bool>();
-                Dictionary<string, object> AllVV = DictionaryFromType(ProjectSettings.ProjectSettings.Mine);
-                List<string> AllllKays = new List<string>(AllVV.Keys);
-                TList<GameObject> AlllGGAm = new List<GameObject>();
-                for (int i = 0; i < AllVV.Count; i++)
-                    if (AllVV[AllllKays[i]] != null && AllVV[AllllKays[i]] is GameObject && (AllVV[AllllKays[i]] as GameObject) != null )
-                        if ((AllVV[AllllKays[i]] as GameObject).TryGetComponent(out Quest D))
-                            AlllGGAm.Add(AllVV[AllllKays[i]] as GameObject);
-
-                for (int i = 0; i < AlllGGAm.Count; i++)
-                    _Values.Add(AlllGGAm[i].GetComponent<Quest>().QuestName, true);
+                Dictionary<string, object> All = DictionaryFromType(ProjectSettings.ProjectSettings.Mine);
+                List<string> Kays = new List<string>(All.Keys);
+                TList<StudyContentData> gameObjects = new List<StudyContentData>();
+                for (int i = 0; i < All.Count; i++)
+                    if (All[Kays[i]] != null && All[Kays[i]] is StudyContentData && (All[Kays[i]] as StudyContentData) != null)
+                        gameObjects.Add(All[Kays[i]] as StudyContentData);
+                for (int i = 0; i < gameObjects.Count; i++)
+                    _Values.Add(gameObjects[i].SceneName, true);
             }
             return _Values;
 
@@ -40,11 +40,10 @@ public class QuestRandom : MonoBehaviour
     {
         Dictionary<string, object> All = DictionaryFromType(ProjectSettings.ProjectSettings.Mine);
         List<string> Kays = new List<string>(All.Keys);
-        TList<GameObject> gameObjects = new List<GameObject>();
+        TList<StudyContentData> gameObjects = new List<StudyContentData>();
         for (int i = 0; i < All.Count; i++)
-            if (All[Kays[i]] != null && All[Kays[i]] is GameObject && (All[Kays[i]] as GameObject) != null)
-                if ((All[Kays[i]] as GameObject).TryGetComponent(out Quest D))
-                    gameObjects.Add(All[Kays[i]] as GameObject);
+            if (All[Kays[i]] != null && All[Kays[i]] is StudyContentData && (All[Kays[i]] as StudyContentData) != null)
+                gameObjects.Add(All[Kays[i]] as StudyContentData);
 
         Quest quest = FindObjectOfType<Quest>();
         if (quest == null)
@@ -55,19 +54,35 @@ public class QuestRandom : MonoBehaviour
         quest.OnFineshed += OnFinsh;
         void OnFinsh()
         {
-            TList<GameObject> HH = (new TList<GameObject>(gameObjects)).Mix();
+            TList<StudyContentData> HH = (new TList<StudyContentData>(gameObjects)).Mix();
 
             for (int i = 0; i < HH.Count; i++)
             {
-                if (Values[HH[i].GetComponent<Quest>().QuestName]) 
+                if (Values[HH[i].SceneName]) 
                 {
-                    Instantiate(HH[i]).GetComponent<Quest>().OnFineshed += OnFinsh; 
+                    LodeOne(HH[i]).GetComponent<Quest>().OnFineshed += OnFinsh;
                     return;
                 }
             }
-
-            GameObject D = Instantiate(gameObjects.RandomItem);
-            D.GetComponent<Quest>().OnFineshed += OnFinsh;
+            LodeOne(gameObjects.RandomItem).GetComponent<Quest>().OnFineshed += OnFinsh;
+        }
+        GameObject LodeOne(StudyContentData QuestPrefab) 
+        {
+            if (QuestPrefab is IQuestStarter)
+                return(QuestPrefab as IQuestStarter).CreatQuest();
+            else if (QuestPrefab is IQuestStarterWithWord)
+                return (QuestPrefab as IQuestStarterWithWord).CreatQuest(WordBase.Wordgs.GetContnetList(1)[0]);
+            else if (QuestPrefab is IQuestStarterWithDialog)
+                return (QuestPrefab as IQuestStarterWithDialog).CreatQuest(DialogBase.Dialogs.GetContnetList(1)[0]);
+            else if (QuestPrefab is IQuestStarterWithIrregular)
+                return (QuestPrefab as IQuestStarterWithIrregular).CreatQuest(IrregularBase.Irregulars.GetContnetList(1)[0]);
+            else if (QuestPrefab is IQuestStarterWithWordList)
+                return (QuestPrefab as IQuestStarterWithWordList).CreatQuest(WordBase.Wordgs.GetContnetList((QuestPrefab as IQuestStarterWithWordList).MinimalCount));
+            else if (QuestPrefab is IQuestStarterWithDialogList)
+                return (QuestPrefab as IQuestStarterWithDialogList).CreatQuest(DialogBase.Dialogs.GetContnetList((QuestPrefab as IQuestStarterWithDialogList).MinimalCount));
+            else if (QuestPrefab is IQuestStarterWithIrregularList)
+                return (QuestPrefab as IQuestStarterWithIrregularList).CreatQuest(IrregularBase.Irregulars.GetContnetList((QuestPrefab as IQuestStarterWithIrregularList).MinimalCount));
+            else throw new System.Exception("Countinue the List");
         }
     }
     public static Dictionary<string, object> DictionaryFromType(object atype)

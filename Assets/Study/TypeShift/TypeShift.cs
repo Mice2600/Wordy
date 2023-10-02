@@ -24,7 +24,7 @@ namespace Study.TypeShift
             Horizontal.ClearChilds();
 
 
-            TList<Word> ActiveItems = Quest.NeedWords;
+            TList<Word> ActiveItems = Quest.NeedWordList;
             UsingContent = new TList<Word>(ActiveItems.RemoveRandomItem());
             FoundedContent = new TList<Word>();
             ActiveItems.ForEach(s => UsingContent.AddIf(s, s.EnglishSource.Length == UsingContent[0].EnglishSource.Length));

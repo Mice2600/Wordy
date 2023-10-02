@@ -15,7 +15,7 @@ namespace Study.Crossword
         void Start()
         {
             TList<string> vs = new TList<string>();
-            FindObjectOfType<QuestCrossword>().NeedDialogs.ForEach(a => vs.Add(a.EnglishSource));
+            FindObjectOfType<QuestCrossword>().NeedWordList.ForEach(a => vs.Add(a.EnglishSource));
             ToBuild = Generaton.tryGnereat(vs, (Vector2Int.one * 10, -(Vector2Int.one * 10)));
 
 

@@ -1,5 +1,6 @@
 using Base.Word;
 using Sirenix.OdinInspector;
+using Study.aSystem;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -58,7 +59,7 @@ public class Indecator : MonoBehaviour
             {
                 yield return new WaitForSeconds(1);
                 TList<Content> contents = new List<Content>();
-                QuestSnake d = FindObjectOfType<QuestSnake>();
+                Quest d = FindObjectOfType<Quest>();
                 Founded.ForEach(ss => { contents.Add(WordBase.Wordgs.GetContent(ss)); d.OnWordWin?.Invoke(contents.Last as Word); });
                 d.OnGameWin?.Invoke();
                 Instantiate(Win).GetComponent<WinViwe>().contents = contents;

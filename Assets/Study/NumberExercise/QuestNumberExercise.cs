@@ -1,6 +1,7 @@
 using Base.Word;
 using Sirenix.OdinInspector;
 using Study.aSystem;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -10,29 +11,23 @@ namespace ProjectSettings
 {
     public partial class ProjectSettings
     {
-        [BoxGroup("Quest")]
-        [FoldoutGroup("Quest/NumberExercise")]
-        public GameObject QuestNumberExercisePrefab;
-        [FoldoutGroup("Quest/NumberExercise")]
-        public string QuestNumberExerciseSceneName;
+        [Serializable]
+        public class QuestNumberExercise : StudyContentData,  IQuestStarter
+        {
+
+        }
+        [FoldoutGroup("questNumberExercise")]
+        public QuestNumberExercise questNumberExercise;
     }
 }
-
-public class QuestNumberExercise : Quest, IQuestStarter
+namespace Study.NumberExercise
 {
-    public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestNumberExercisePrefab;
-    public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestNumberExerciseSceneName;
-    public override int AddScoreDialog => throw new System.NotImplementedException();
-    public override int RemoveScoreDialog => throw new System.NotImplementedException();
-    public override int AddScoreWord => throw new System.NotImplementedException();
-    public override int RemoveScoreWord => throw new System.NotImplementedException();
-    public override int AddScoreIrregular => throw new System.NotImplementedException();
-    public override int RemoveScoreIrregular => throw new System.NotImplementedException();
-    public void Done() 
+    public class QuestNumberExercise : Quest
     {
-        OnFineshed.Invoke();
-    }
-    public void CreatQuest()
-    {
+        public void Done()
+        {
+            OnFineshed.Invoke();
+        }
+
     }
 }

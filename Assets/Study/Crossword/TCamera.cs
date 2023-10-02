@@ -95,7 +95,7 @@ namespace Study.Crossword
 
         private void OnDestroy()
         {
-            FindObjectsOfType<Camera>(true).ToList().ForEach(c => { if (c != null) c.gameObject.SetActive(true); });
+            FindObjectsOfType<Camera>(true).ToList().ForEach(c => { if (c != null && c.gameObject != null && c.gameObject != gameObject) c.gameObject.SetActive(true); });
         }
 
     }

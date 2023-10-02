@@ -74,133 +74,80 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
-  QuestBuildDialogPrefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
-  QuestBuildDialogPrefabSceneName: Build Dialog
-  QuestBuildDialogScorevalumes:
-    AddScoreDialog: 7
-    RemoveScoreDialog: -2
-    AddScoreWord: 3
-    RemoveScoreWord: -1
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestCoupleParticlesPrefab: {fileID: 7780279792343907558, guid: 7f717f0cecf7d924cb2812fbe6f89793, type: 3}
-  QuestCoupleParticlesSceneName: CoupleParticles
-  QuestCoupleParticlesScorevalumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 0
-    AddScoreWord: 5
-    RemoveScoreWord: 0
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestCrosswordPrefab: {fileID: 43604296319545888, guid: d9dfb447727319742855447db2746f31, type: 3}
-  QuestCrosswordSceneName: Crossword
-  QuestCrosswordScorevalumes:
-    AddScoreDialog: 1
-    RemoveScoreDialog: 0
-    AddScoreWord: 5
-    RemoveScoreWord: 0
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestFillTheSpacePrefab: {fileID: 3118217960735825422, guid: f9531d27d334f3547b0c433ea15a0827, type: 3}
-  QuestFillTheSpaceName: FillTheSpace
-  QuestFillTheSpaceValumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 0
-    AddScoreWord: 5
-    RemoveScoreWord: 5
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestBuildIlrregularPrefab: {fileID: 3906864097593926266, guid: dcdf077ba389ec343b4e1b99f0ce8192, type: 3}
-  QuestBuildIlrregularPrefabSceneName: Build Irregular
-  QuestBuildIlrregularScorevalumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 0
-    AddScoreWord: 0
-    RemoveScoreWord: 0
-    AddScoreIrregular: 5
-    RemoveScoreIrregular: -1
-  QuestWriteIlrregularPrefab: {fileID: 3935304050576171708, guid: 812647b1a6e179f4a8eb0ad542120f4e, type: 3}
-  QuestWriteIlrregularName: Write Irregular
-  QuestWriteIlrregularValumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 0
-    AddScoreWord: 0
-    RemoveScoreWord: 0
-    AddScoreIrregular: 5
-    RemoveScoreIrregular: -1
-  QuestFindOnsPrefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
-  QuestFindOnsSceneName: Find Ons E2T
-  QuestFindOnsScorevalumes:
-    AddScoreDialog: 2
-    RemoveScoreDialog: -1
-    AddScoreWord: 3
-    RemoveScoreWord: -1
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestFindOns_T2E_Prefab: {fileID: 1157004485089459125, guid: 8c9380315b22c6b4d8428d8d643453dc, type: 3}
-  QuestFindOns_T2E_SceneName: Find Ons T2E
-  QuestFindOns_T2E_Scorevalumes:
-    AddScoreDialog: 2
-    RemoveScoreDialog: -1
-    AddScoreWord: 5
-    RemoveScoreWord: -1
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestNumberExercisePrefab: {fileID: 2554459776758359372, guid: 9b31dff5d1b90024c82f5d2c90060a60, type: 3}
-  QuestNumberExerciseSceneName: NumberExercise
-  QuestRingPrefab: {fileID: 1983320220219004727, guid: d37b8016fbe2b4145b51945540772d4d, type: 3}
-  QuestRingSceneName: QuestRing
-  QuestRingScorevalumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 0
-    AddScoreWord: 5
-    RemoveScoreWord: 0
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestSnakePrefab: {fileID: 3384037081357820529, guid: b05ded041efc93a498028b9a8922cefa, type: 3}
-  QuestSnakeSceneName: Snake
-  QuestSnakeScoreValumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 5
-    AddScoreWord: 5
-    RemoveScoreWord: 5
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestTwoWordSystemPrefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
-  QuestTwoWordSystemSceneName: Two Word
-  QuestTwoWordSystemValumes:
-    AddScoreDialog: 1
-    RemoveScoreDialog: -1
-    AddScoreWord: 5
-    RemoveScoreWord: -1
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestTypeShiftPrefab: {fileID: 1896414613481627126, guid: b365709140cf09840a5101b719a19bdf, type: 3}
-  QuestTypeShiftSceneName: TypeShift
-  QuestTypeShiftValumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 0
-    AddScoreWord: 6
-    RemoveScoreWord: 6
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestWordSurfPrefab: {fileID: 6565041498530126776, guid: 011e63baaac48f149a81d79bae33f701, type: 3}
-  QuestWordSurfSceneName: WordSurf
-  QuestWordSurfScorevalumes:
-    AddScoreDialog: 6
-    RemoveScoreDialog: 0
-    AddScoreWord: 6
-    RemoveScoreWord: 0
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
-  QuestWriteWordPrefab: {fileID: 9020605442907867151, guid: d42e49d95e731f244bcc75a1fd93e322, type: 3}
-  QuestWriteWordName: Write Word
-  QuestWriteWordValumes:
-    AddScoreDialog: 0
-    RemoveScoreDialog: 0
-    AddScoreWord: 10
-    RemoveScoreWord: -1
-    AddScoreIrregular: 0
-    RemoveScoreIrregular: 0
+  BuildDialog:
+    Prefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
+    SceneName: BuildDialog
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+    <AddScoreDialog>k__BackingField: 5
+    <RemoveScoreDialog>k__BackingField: 5
+  questCoupleParticles:
+    Prefab: {fileID: 7780279792343907558, guid: 7f717f0cecf7d924cb2812fbe6f89793, type: 3}
+    SceneName: CoupleParticles
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  questCrossword:
+    Prefab: {fileID: 43604296319545888, guid: d9dfb447727319742855447db2746f31, type: 3}
+    SceneName: Crossword
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  questFillTheSpace:
+    Prefab: {fileID: 3118217960735825422, guid: f9531d27d334f3547b0c433ea15a0827, type: 3}
+    SceneName: FillTheSpace
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  questBuildIlrregular:
+    Prefab: {fileID: 3906864097593926266, guid: dcdf077ba389ec343b4e1b99f0ce8192, type: 3}
+    SceneName: BuildIlrregular
+    <AddScorIrregular>k__BackingField: 5
+    <RemoveScoreIrregular>k__BackingField: 5
+  QuestWriteIlrregular:
+    Prefab: {fileID: 3935304050576171708, guid: 812647b1a6e179f4a8eb0ad542120f4e, type: 3}
+    SceneName: WriteIrregular
+    <AddScorIrregular>k__BackingField: 5
+    <RemoveScoreIrregular>k__BackingField: 5
+  questFindOns:
+    Prefab: {fileID: 1229372442596780928, guid: fb8adf7f89e95c4419cab62d00f3f8e2, type: 3}
+    SceneName: FindOns
+    <AddScoreWord>k__BackingField: 4
+    <RemoveScoreWord>k__BackingField: 4
+  questFindOns_T2E:
+    Prefab: {fileID: 1157004485089459125, guid: 8c9380315b22c6b4d8428d8d643453dc, type: 3}
+    SceneName: FindOns_T2E
+    <AddScoreWord>k__BackingField: 4
+    <RemoveScoreWord>k__BackingField: 5
+  questNumberExercise:
+    Prefab: {fileID: 2554459776758359372, guid: 9b31dff5d1b90024c82f5d2c90060a60, type: 3}
+    SceneName: NumberExercise
+  questRing:
+    Prefab: {fileID: 1983320220219004727, guid: d37b8016fbe2b4145b51945540772d4d, type: 3}
+    SceneName: Ring
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  questSnake:
+    Prefab: {fileID: 3384037081357820529, guid: b05ded041efc93a498028b9a8922cefa, type: 3}
+    SceneName: Snake
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  questTwoWord:
+    Prefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
+    SceneName: TwoWordSystem
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  questTypeShift:
+    Prefab: {fileID: 1896414613481627126, guid: b365709140cf09840a5101b719a19bdf, type: 3}
+    SceneName: TypeShift
+    <AddScoreWord>k__BackingField: 4
+    <RemoveScoreWord>k__BackingField: 5
+  questWordSurf:
+    Prefab: {fileID: 6565041498530126776, guid: 011e63baaac48f149a81d79bae33f701, type: 3}
+    SceneName: WordSurf
+    <AddScoreWord>k__BackingField: 4
+    <RemoveScoreWord>k__BackingField: 5
+  questWriteWord:
+    Prefab: {fileID: 9020605442907867151, guid: d42e49d95e731f244bcc75a1fd93e322, type: 3}
+    SceneName: WriteWord
+    <AddScoreWord>k__BackingField: 4
+    <RemoveScoreWord>k__BackingField: 5
   DialogChanger: {fileID: 4217812245494058138, guid: 88b99c5c5aa01764eb3e97359707eede, type: 3}
   WordChanger: {fileID: 4605639253059519219, guid: 94aafd8898a84d34cbe34848be0564ff, type: 3}

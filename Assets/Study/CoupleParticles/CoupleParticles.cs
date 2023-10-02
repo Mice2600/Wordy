@@ -80,7 +80,7 @@ namespace Study.CoupleParticles
         private void Start()
         {
 
-            List<Content> contents = new List<Content>(GetComponent<QuestCoupleParticles>().NeedWords.Mix());
+            List<Content> contents = new List<Content>(GetComponent<QuestCoupleParticles>().NeedWordList.Mix());
             List<string> strings = contents.Select(x => x.EnglishSource).ToList();
             List<string> Latters = SeparateAllCantent(strings, out List<string> UsedContents).Mix();
             contents = new List<Content>();

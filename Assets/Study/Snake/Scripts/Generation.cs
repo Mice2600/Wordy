@@ -64,7 +64,7 @@ public class Generation : MonoBehaviour
         };
         GenereatAllStrateWays(EndBox, StartBox);
         if (Ps.Count == 0) { Start(); return; }
-        Debug.Log(Ps.Count);
+        
         //InstalateAll(Ps);
 
         Ps.ForEach((OneMap) => {

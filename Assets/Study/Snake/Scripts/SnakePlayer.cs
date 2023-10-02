@@ -1,6 +1,7 @@
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using Study.aSystem;
 using Study.Crossword;
 using System;
 using System.Collections;
@@ -79,7 +80,7 @@ public class SnakePlayer : MonoBehaviour
                 IEnumerator enumerator() 
                 {
                     yield return new WaitForSeconds(1);
-                    FindObjectOfType<QuestSnake>().OnFineshed?.Invoke();
+                    FindObjectOfType<Quest>().OnFineshed?.Invoke();
                 }
             }
 

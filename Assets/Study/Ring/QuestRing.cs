@@ -1,6 +1,7 @@
 using Base.Word;
 using Sirenix.OdinInspector;
 using Study.aSystem;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,42 +9,21 @@ namespace ProjectSettings
 {
     public partial class ProjectSettings
     {
-        [BoxGroup("Quest")]
-        [FoldoutGroup("Quest/Ring")]
-        public GameObject QuestRingPrefab;
-        [FoldoutGroup("Quest/Ring")]
-        public string QuestRingSceneName;
-        [FoldoutGroup("Quest/Ring")]
-        public StudyScoreValumes QuestRingScorevalumes;
+        [Serializable]
+        public class QuestRing : StudyContentData, IWordScorer, IQuestStarterWithWordList
+        {
+            [field: SerializeField] public int AddScoreWord { get; set; }
+            [field: SerializeField] public int RemoveScoreWord { get; set; }
+            public int MinimalCount => 40;
+        }
+        [FoldoutGroup("questRing")]
+        public QuestRing questRing;
     }
 }
-
-public class QuestRing : Quest, IQuestStarterWithWordList
+namespace Study.Ring
 {
-    public override GameObject QuestPrefab => ProjectSettings.ProjectSettings.Mine.QuestRingPrefab;
-    public override string QuestName => ProjectSettings.ProjectSettings.Mine.QuestRingSceneName;
-    public override int AddScoreWord => ProjectSettings.ProjectSettings.Mine.QuestRingScorevalumes.AddScoreWord;
-    public override int AddScoreIrregular => throw new System.NotImplementedException();
-    public override int RemoveScoreIrregular => throw new System.NotImplementedException();
-    public override int AddScoreDialog => throw new System.NotImplementedException();
-    public override int RemoveScoreDialog => throw new System.NotImplementedException();
-    public override int RemoveScoreWord => throw new System.NotImplementedException();
-    public List<Word> NeedWords
+    public class QuestRing : Quest
     {
-        get
-        {
-            if (_NeedDialogs == null || _NeedDialogs.Count < MinimalCount) _NeedDialogs = WordBase.Wordgs.GetContnetList(MinimalCount);
-            return _NeedDialogs;
-        }
-        set
-        {
-            _NeedDialogs = value;
-        }
-    }
-    private List<Word> _NeedDialogs;
-    public int MinimalCount => 25;
-    public void CreatQuest(List<Word> words)
-    {
-        NeedWords = words;
+
     }
 }

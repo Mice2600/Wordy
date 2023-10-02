@@ -37,7 +37,7 @@ RectTransform:
   m_Children:
   - {fileID: 5141645323040736823}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &43604296319545887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f106e01bb05ef3040a81a69bd6f43ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WinPrefab: {fileID: 4429018961440203097, guid: cd91a51a4fb36094c8141be373845561, type: 3}
+  WinPrefab: {fileID: 4791788466054964576, guid: 95d382ca6e181904e9aa0333d0712383, type: 3}
 --- !u!114 &43604296319545883
 MonoBehaviour:
   m_ObjectHideFlags: 0

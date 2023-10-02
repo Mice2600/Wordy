@@ -3,7 +3,10 @@ using Sirenix.OdinInspector;
 using Study.TwoWordSystem;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using SystemBox;
 using UnityEngine;
+
 namespace Study.Crossword
 {
     public class CrosswordSystem : MonoBehaviour
@@ -22,9 +25,11 @@ namespace Study.Crossword
             if (isdone) return;
             isdone = true;
 
-            List<Content> contents = new List<Content>();
-            Builder.ToBuild.AllContentIDes.ForEach(a => QuestCrosswor.OnWordWin.Invoke(WordBase.Wordgs.GetContent(a) as Word));
-            Instantiate(WinPrefab);
+            TList<Content> contents = new List<Content>();
+            Builder.ToBuild.AllContentIDes.ForEach(a => { 
+                contents.Add(WordBase.Wordgs.GetContent(a) as Word); 
+                QuestCrosswor.OnWordWin.Invoke(contents.Last as Word);  });
+            Instantiate(WinPrefab).GetComponent<WinViwe>().contents = contents;
             QuestCrosswor.OnGameWin?.Invoke();
 
         }

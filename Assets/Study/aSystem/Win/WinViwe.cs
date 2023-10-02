@@ -18,7 +18,7 @@ public class WinViwe : MonoBehaviour
         contents.ForEach(a =>
         {
             GameObject G = Instantiate(SingelScorePrefab);
-            G.GetComponent<ScoreChanginInfo>().Set(a, Quest.AddScoreWord);
+            G.GetComponent<ScoreChanginInfo>().Set(a, (Quest.QuestData as IWordScorer).AddScoreWord);
             LLD.AddNewContent(G.transform);
         });
     }

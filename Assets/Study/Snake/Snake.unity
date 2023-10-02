@@ -875,7 +875,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3142802788871119294
+--- !u!1001 &1673995568
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -929,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3384037081357820529, guid: b05ded041efc93a498028b9a8922cefa, type: 3}
       propertyPath: m_Name
-      value: QuestSnek
+      value: QuestSnake
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

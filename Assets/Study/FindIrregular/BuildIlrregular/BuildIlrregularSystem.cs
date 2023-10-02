@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using Study.aSystem;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -8,7 +9,7 @@ public class BuildIlrregularSystem : MonoBehaviour
 {
     public ContentGropper DownContentsParrent;
     [Required]
-    public QuestBuildIlrregular questWriteWord;
+    public Quest questWriteWord;
     [Required]
     public Transform ContentParrent;
     [Required]
@@ -17,9 +18,8 @@ public class BuildIlrregularSystem : MonoBehaviour
     private void Start()
     {
         ContentParrent.ClearChilds();
-        int RandomCall = Random.Range(2, questWriteWord.MinimalCount);
-        TList<Irregular> irregulars = questWriteWord.NeedIrregulars;
-        for (int i = 0; i < RandomCall; i++)
+        TList<Irregular> irregulars = questWriteWord.NeedIrregularList;
+        for (int i = 0; i < questWriteWord.NeedIrregularList.Count; i++)
             Instantiate(ContentPrefab, ContentParrent).GetComponent<BI_Content>().Content = irregulars.RemoveRandomItem();
     }
     public bool TrayToComplate()
@@ -31,12 +31,12 @@ public class BuildIlrregularSystem : MonoBehaviour
             if (Lis[i].IsEvrethingCurrect)
             {
                 questWriteWord.OnIrregularWin?.Invoke(Lis[i].Content as Irregular);
-                Contents.Add((Lis[i].Content, true, "", questWriteWord.AddScoreIrregular));
+                Contents.Add((Lis[i].Content, true, "", (questWriteWord.QuestData as IIrregularScorer).AddScorIrregular));
             }
             else
             {
                 questWriteWord.OnIrregularLost?.Invoke(Lis[i].Content as Irregular);
-                Contents.Add((Lis[i].Content, false, Lis[i].WrotenText, questWriteWord.RemoveScoreIrregular));
+                Contents.Add((Lis[i].Content, false, Lis[i].WrotenText, (questWriteWord.QuestData as IIrregularScorer).RemoveScoreIrregular));
             }
         }
         Instantiate(WI_End_ViwePrefab).GetComponent<WI_End_Viwe>().Set(Contents, onFinsh);

@@ -1,5 +1,6 @@
 using Base.Word;
 using Sirenix.OdinInspector;
+using Study.aSystem;
 using System.Collections.Generic;
 using System.Linq;
 using SystemBox;
@@ -12,8 +13,8 @@ namespace FillTheSpace
     public class FillTheSpace : MonoBehaviour
     {
 
-        QuestFillTheSpace Quest => _Quest ??= GetComponentInChildren<QuestFillTheSpace>();
-        QuestFillTheSpace _Quest;
+        Quest Quest => _Quest ??= GetComponentInChildren<Quest>();
+        Quest _Quest;
 
         [Required]
         public Transform MainContentParent;

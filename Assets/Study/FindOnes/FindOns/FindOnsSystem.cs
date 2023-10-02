@@ -28,7 +28,7 @@ namespace Study.FindOns
         }
         public void Rondomize()
         {
-            int MaxCount = ContentParrent.childCount;
+            int MaxCount = Quest.NeedWordList.Count;
             ContentParrent.ClearChilds();
             int nicoint = 3;
             int countToCreat = Random.Range(nicoint, MaxCount);
@@ -37,8 +37,8 @@ namespace Study.FindOns
 
             GameObject ToCreat = null;
             
-            TList<Word> WordList = (Quest is QuestFindOns)? (Quest as QuestFindOns).NeedWords : (Quest as QuestFindOns_T2E).NeedWords;
-
+            TList<Word> WordList = Quest.NeedWordList;
+            
             for (int i = 0; i < countToCreat; i++)
             {
                 if (ContentLangvich == "en") ToCreat = PrefabRusianText;
@@ -65,14 +65,14 @@ namespace Study.FindOns
                     yield return new WaitForSeconds(1.5f);
                     Quest.OnWordWin?.Invoke(Content as Word);
                     Quest.OnGameWin?.Invoke();
-                    DiscretionCorrectContent A = DiscretionCorrectContent.ShowCorrectContent(WordBase.Wordgs[Content as Word], Quest.AddScoreWord, OnFinsht);
+                    DiscretionCorrectContent A = DiscretionCorrectContent.ShowCorrectContent(WordBase.Wordgs[Content as Word], (Quest.QuestData as IWordScorer).AddScoreWord, OnFinsht);
                 }
             }
             Quest.OnWordLost?.Invoke(Content as Word);
             Quest.OnWordLost?.Invoke(content as Word);
             Quest.OnGameLost?.Invoke();
-            DiscretionIncorrectContent D = DiscretionIncorrectContent.ShowIncorrectContent(WordBase.Wordgs[Content as Word], WordBase.Wordgs[content as Word], Quest.RemoveScoreWord, OnFinsht);
-            D.AddChangin(WordBase.Wordgs[content as Word], Quest.RemoveScoreWord);
+            DiscretionIncorrectContent D = DiscretionIncorrectContent.ShowIncorrectContent(WordBase.Wordgs[Content as Word], WordBase.Wordgs[content as Word], (Quest.QuestData as IWordScorer).RemoveScoreWord, OnFinsht);
+            D.AddChangin(WordBase.Wordgs[content as Word], (Quest.QuestData as IWordScorer).RemoveScoreWord);
 
             return false;
             void OnFinsht() 
