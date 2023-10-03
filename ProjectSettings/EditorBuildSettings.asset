@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/NumberExercise/NumberExercise.unity
     guid: 3eae4d9b84e57474eb2dd9912fd363b9
+  - enabled: 1
+    path: Assets/Study/SpellingExercise/SpellingExercise.unity
+    guid: 8c1401faa4848d04d8ba6494921964ca
   m_configObjects: {}

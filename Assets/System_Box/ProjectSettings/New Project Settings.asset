@@ -129,6 +129,11 @@ MonoBehaviour:
     SceneName: Snake
     <AddScoreWord>k__BackingField: 5
     <RemoveScoreWord>k__BackingField: 5
+  questSpellingExercise:
+    Prefab: {fileID: 4627617075472594311, guid: 4700a66c18272cb48a700147101fbdb4, type: 3}
+    SceneName: SpellingExercise
+    <AddScoreWord>k__BackingField: 8
+    <RemoveScoreWord>k__BackingField: 10
   questTwoWord:
     Prefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
     SceneName: TwoWordSystem
