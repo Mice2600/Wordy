@@ -58,7 +58,7 @@ namespace Study.SpellingExercise
         public void OnApplyButton()
         {
             WonViwe.SetActive(true);
-            if (NumberViwe.text == ContentWord)
+            if (NumberViwe.text.ToUpper() == ContentWord.ToUpper())
             {
                 WonViwe.GetComponentInChildren<Button>().onClick.AddListener(() => GetComponent<QuestSpellingExercise>().Win());
                 WonViwe.GetComponentInChildren<TextMeshProUGUI>().text =

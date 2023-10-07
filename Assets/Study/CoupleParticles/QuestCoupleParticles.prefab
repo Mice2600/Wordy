@@ -37,7 +37,7 @@ RectTransform:
   - {fileID: 7967679766392615348}
   - {fileID: 7967679765181962042}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_StartAxis: 1
   m_CellSize: {x: 189.9571, y: 96.678}
   m_Spacing: {x: 30.22, y: 30.22}
-  m_Constraint: 0
-  m_ConstraintCount: 2
+  m_Constraint: 1
+  m_ConstraintCount: 4
 --- !u!1 &7967679766493830714
 GameObject:
   m_ObjectHideFlags: 0

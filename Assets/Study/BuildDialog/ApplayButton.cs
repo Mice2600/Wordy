@@ -20,20 +20,15 @@ namespace Study.BuildDialog
             OutBlocker.SetActive(false);
         }
 
-        private void OnButton() 
+        private void OnButton()
         {
             if (OutBlocker.activeSelf) return;
             if (!BuildDialogVewe.isAnyGrope) return;
             OutBlocker.SetActive(true);
             OutBlocker.transform.SetAsLastSibling();
-            if (BuildDialogVewe.isTrueGrope)ColorChanger.SetColor(TrueAnswer);
-            else ColorChanger.SetColor(WrongAnswer);
-            StartCoroutine(WaitAA());
-            IEnumerator WaitAA() 
-            {
-                yield return new WaitForSeconds(1);
-                BuildDialogVewe.TryApplay();
-            }
+
+            BuildDialogVewe.TryApplay();
+
         }
         [SerializeField]
         private Color RedyColor, NotRedyColor, WrongAnswer, TrueAnswer;

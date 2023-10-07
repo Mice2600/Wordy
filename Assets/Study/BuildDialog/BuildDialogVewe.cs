@@ -40,7 +40,7 @@ namespace Study.BuildDialog
                 return new Dialog(Sours, "", 0, false);
             }
         }
-        public bool isTrueGrope => Groped.EnglishSource == Content.EnglishSource;
+        public bool isTrueGrope => Groped.EnglishSource.ToUpper() == Content.EnglishSource.ToUpper();
         public bool isAnyGrope => UpParrent.Contents.Count > 0;
         [SerializeField]
         private TMP_Text IDContentText;

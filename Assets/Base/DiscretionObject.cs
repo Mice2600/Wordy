@@ -12,13 +12,14 @@ using System;
 
 public class DiscretionObject : ContentObject
 {
-    protected private System.Action OnClose;
-    public static void Show(Content Content, System.Action OnClose = null) 
+    public System.Action OnClose;
+    public static DiscretionObject Show(Content Content, System.Action OnClose = null) 
     {
 
         DiscretionObject N = Instantiate(Content.DiscretioVewe, null).GetComponentInChildren<DiscretionObject>();
         N.Content = Content;
-        N.OnClose = OnClose;      
+        N.OnClose = OnClose;
+        return N;
     }
     public void DestroyUrself() 
     {
