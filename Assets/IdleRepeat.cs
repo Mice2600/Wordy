@@ -1,8 +1,11 @@
 using Base;
+using Base.Dialog;
+using Base.Word;
 using BaseViwe.DialogViwe;
 using BaseViwe.WordViwe;
 using Servises;
 using Servises.BaseList;
+using Study.aSystem;
 using System.Collections;
 using System.Collections.Generic;
 using SystemBox;
@@ -26,22 +29,34 @@ public class IdleRepeat : MonoBehaviour, IBaseToolItem
     public void OnButton()
     {
         if (ListWithFillter == null) return;
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
+
+        Content content = null;
         coroutine = StartCoroutine(DDDD());
-
         IEnumerator DDDD() 
         {
             while (true) 
             {
-
-                Content content = new TList<Content>(ListWithFillter.Contents).Mix().Find(a => (a as IPersanalData).Active);
+                if(content == null) content = new TList<Content>(ListWithFillter.Contents).Mix().Find(a => (a as IPersanalData).Active);
                 if (content == null) content = ListWithFillter.Contents.RandomItem();
-                DiscretionObject D = DiscretionObject.Show(content, () => { if (coroutine != null) StopCoroutine(coroutine); });
+                DiscretionObject D = DiscretionObject.Show(content, () => { if (coroutine != null) StopCoroutine(coroutine);
+                    Screen.sleepTimeout = SleepTimeout.SystemSetting;
+                });
+                Dialog Dialog = null;
+                if (content is Word) 
+                {
+                    List<Dialog> dialogs = Servises.Search.SearchAll<Dialog>(DialogBase.Dialogs, content.EnglishSource);
+                    if(dialogs != null || dialogs.Count > 0) Dialog = dialogs.RandomItem();
+                    else Dialog = null;
+                }
                 yield return new WaitForSeconds(1);
+                
                 D.GetComponentInChildren<SoundButton>().onClick.Invoke();
                 yield return new WaitForSeconds(4);
                 D.OnClose = null;
                 D.gameObject.ToDestroy();
+                content = Dialog;
             }
         }
 
