@@ -46,8 +46,8 @@ public class IdleRepeat : MonoBehaviour, IBaseToolItem
                 Dialog Dialog = null;
                 if (content is Word) 
                 {
-                    List<Dialog> dialogs = Servises.Search.SearchAll<Dialog>(DialogBase.Dialogs, content.EnglishSource);
-                    if(dialogs != null || dialogs.Count > 0) Dialog = dialogs.RandomItem();
+                    List<Dialog> dlist = Servises.Search.SearchAll<Dialog>(DialogBase.Dialogs, content.EnglishSource);
+                    if(dlist != null && dlist.Count > 0) Dialog = dlist.RandomItem();
                     else Dialog = null;
                 }
                 yield return new WaitForSeconds(1);
