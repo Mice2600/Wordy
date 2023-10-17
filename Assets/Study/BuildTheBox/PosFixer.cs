@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using SystemBox;
 using SystemBox.Simpls;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PosFixer : OptimizedBehaver
 {
@@ -14,17 +13,9 @@ public class PosFixer : OptimizedBehaver
     private protected override bool UesPerUpdate => true;
     private protected override int PerUpdateTime => 10;
 
+    [Button]
     protected override void PerUpdate()
     {
-        Start();
-    }
-
-    [Button]
-    private protected override void Start()
-    {
-
-        base.Start();
-
         float MaxUp = 0;
         transform.Childs().ForEach(d => { if (d.transform.position.y > MaxUp) MaxUp = d.transform.position.y; });
         MaxUp = MaxUp - transform.transform.position.y;
@@ -36,6 +27,17 @@ public class PosFixer : OptimizedBehaver
 
         float NeedY = 4 - MaxUp;
         transform.position = new Vector3(-(MaxHorizontal / 2), NeedY, transform.position.z);
+        
+    }
+
+    
+    private protected override void Start()
+    {
+
+        base.Start();
+        PerUpdate();
+
+
 
 
     }

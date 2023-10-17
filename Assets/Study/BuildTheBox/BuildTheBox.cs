@@ -1,5 +1,6 @@
 using Base.Word;
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ public class BuildTheBox : MonoBehaviour
     }
 
     public GameObject BackBoxPrefab;
-    public GameObject BoxPrefab;
+    public List<GameObject> BoxPrefab;
     public GameObject Parrent;
     public void CreatG() 
     {
@@ -30,12 +31,14 @@ public class BuildTheBox : MonoBehaviour
         Generator.Gropes.ForEach((Grope, GropeIndex) => {
             GameObject GropeObject = new GameObject("Grope " + GropeIndex);
             GropeObject.transform.SetParent(Parrent.transform);
+            GropeObject.transform.localScale = Vector3.one;
+            GropeObject.transform.localPosition = new Vector3(0, 0, 0);
+            GameObject BoxPrefab = this.BoxPrefab.RandomItem();
             Grope.ForEach(item => {
-                GameObject dd = Instantiate(BoxPrefab, Parrent.transform);
+                GameObject dd = Instantiate(BoxPrefab, GropeObject.transform);
                 dd.name = item.Item2.ToString();
                 dd.transform.localPosition = new Vector3(item.Item1.x, item.Item1.y, 0);
                 dd.GetComponentInChildren<TMP_Text>().text = item.Item2.ToString();
-                dd.transform.SetParent(GropeObject.transform);
 
 
                 GameObject Bass = Instantiate(BackBoxPrefab, Parrent.transform);

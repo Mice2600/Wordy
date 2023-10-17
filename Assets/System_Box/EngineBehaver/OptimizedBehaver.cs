@@ -11,7 +11,6 @@ public abstract class OptimizedBehaver : MonoBehaviour
     public virtual int QueuecallCount => 1;
     private protected virtual void Start()
     {
-        PlayerPrefs.SetString("LastCommand", "14");
         if (this is IQueueUpdate)(this as IQueueUpdate).AddMe();
     }
     private protected virtual void OnDestroy()
@@ -19,13 +18,14 @@ public abstract class OptimizedBehaver : MonoBehaviour
         if (this is IQueueUpdate) (this as IQueueUpdate).RemoveMe();
     }
 
-    protected private virtual bool UesPerUpdate { get => PerUpdateTime != 0; }
+    protected private virtual bool UesPerUpdate { get => PerUpdateTime > 0; }
     protected private virtual int PerUpdateTime => 0;
     private int _OnUpdate;
 
     protected virtual void Update()
     {
         if (!UesPerUpdate) return;
+
         _OnUpdate++;
         if (_OnUpdate >= PerUpdateTime) 
         {

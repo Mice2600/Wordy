@@ -12,15 +12,10 @@ public class BackBlock : MonoBehaviour
 
 
 
-
-
-    private void Awake(){}
-
-
     [SerializeField, Required]
     private GameObject LineUp, LineDown, LineLeft, LineRight;
     [SerializeField, Required]
-    private GameObject ShadowRight, ShadowDown, ShadwoConer, ConerDownLeft, ConerDownRight, ConerUpLeft, ConerUpRight;
+    private GameObject  ConerDownLeft, ConerDownRight, ConerUpLeft, ConerUpRight;
 
     [SerializeField, HideInEditorMode]
     private BackBlock Up, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight;
@@ -35,8 +30,6 @@ public class BackBlock : MonoBehaviour
         IEnumerator AfterFrame() 
         {
             yield return new WaitForEndOfFrame();
-
-
 
             Up = FindBox(new Vector2Int(transform.localPosition.x.ToInt(), transform.localPosition.y.ToInt()) + Vector2Int.up);
             Down = FindBox(new Vector2Int(transform.localPosition.x.ToInt(), transform.localPosition.y.ToInt()) + Vector2Int.down);
@@ -54,9 +47,6 @@ public class BackBlock : MonoBehaviour
             LineDown.SetActive(Down == null);
             LineLeft.SetActive(Left == null);
             LineRight.SetActive(Right == null);
-            ShadowDown.SetActive(Down == null);
-            ShadowRight.SetActive(Right == null);
-            ShadwoConer.SetActive(Right == null && Down == null);
 
             ConerUpRight.SetActive(UpRight == null);
             ConerUpLeft.SetActive(UpLeft == null);
