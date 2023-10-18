@@ -7,7 +7,7 @@ namespace SystemBox.Simpls
 
     public static class TMath
     {
-        public static int ToInt(this float value) => Mathf.RoundToInt(value);
+        //public static int ToInt(this float value) => Mathf.RoundToInt(value);
         public static float ToDeltaTime(this float value) => value * Time.deltaTime;
         public static float ToDeltaTime(this int value) => value * Time.deltaTime;
 
