@@ -6,7 +6,8 @@ using UnityEngine;
 
 public static class Generator
 {
-    public static Dictionary<Vector2Int, char> Places;
+    public static TList<Vector2Int> Places;
+    public static Dictionary<Vector2Int, char> PlacesAndLetters;
     public static TList<TList<(Vector2Int, char)>> Gropes;
     
     public static void Generate()
@@ -14,7 +15,7 @@ public static class Generator
         TList<Content> Contents = new TList<Content>(WordBase.Wordgs.GetContnetList(25));
 
 
-        Places = new Dictionary<Vector2Int, char>();
+        PlacesAndLetters = new Dictionary<Vector2Int, char>();
 
 
 
@@ -27,14 +28,14 @@ public static class Generator
         });
         ChosenContents.ForEach((C, i) => {
             List<(Vector2Int, char)> values = Acomadate(C.EnglishSource, i);
-            values.ForEach(d => Places.Add(d.Item1, d.Item2));
+            values.ForEach(d => PlacesAndLetters.Add(d.Item1, d.Item2));
         });
-
+        Places = new TList<Vector2Int>(PlacesAndLetters.Keys);
         Gropes = new TList<TList<(Vector2Int, char)>>();
-        TList<TList<Vector2Int>>  Giz = Divorce(new List<Vector2Int>(Places.Keys));
+        TList<TList<Vector2Int>>  Giz = Divorce(new List<Vector2Int>(PlacesAndLetters.Keys));
         Giz.ForEach((Grupe) => {
             Gropes.Add(new TList<(Vector2Int, char)>());
-            Grupe.ForEach((Item) => Gropes.Last.Add((Item, Places[Item])));
+            Grupe.ForEach((Item) => Gropes.Last.Add((Item, PlacesAndLetters[Item])));
         });
 
 

@@ -17,12 +17,11 @@ public class PosFixer : OptimizedBehaver
     protected override void PerUpdate()
     {
         float MaxUp = 0;
-        transform.Childs().ForEach(d => { if (d.transform.position.y > MaxUp) MaxUp = d.transform.position.y; });
+        transform.GetComponentsInChildren<BackBlock>().ForEach(d => { if (d.transform.position.y > MaxUp) MaxUp = d.transform.position.y; });
         MaxUp = MaxUp - transform.transform.position.y;
 
         float MaxHorizontal = 0;
-        transform.Childs().ForEach(d => { if (TMath.Distance(transform.position.x, d.position.x) > MaxHorizontal) MaxHorizontal = TMath.Distance(transform.position.x, d.position.x); });
-
+        transform.GetComponentsInChildren<BackBlock>().ForEach(d => { if (TMath.Distance(transform.position.x, d.transform.position.x) > MaxHorizontal) MaxHorizontal = TMath.Distance(transform.position.x, d.transform.position.x); });
 
 
         float NeedY = 4 - MaxUp;

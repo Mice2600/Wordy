@@ -9,30 +9,40 @@ using System.Linq;
 using SystemBox;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 using static UnityEditor.Progress;
 
 public class BuildTheBox : MonoBehaviour
 {
+    public static BuildTheBox buildTheBox => _BuildTheBox ??= FindObjectOfType<BuildTheBox>();
+    static BuildTheBox _BuildTheBox;
 
     public List<GameObject> Objects;
     [ShowInInspector]
     public List<(GameObject, Vector2Int Size)> ObjectsAndSize;
+    
     void Start()
     {
         Generator.Generate();
         CreatG();
     }
 
+    public GameObject ShadowPrefab;
     public GameObject BackBoxPrefab;
     public List<GameObject> BoxPrefab;
     public GameObject Parrent;
+    public GameObject BlocksParrent;
     public void CreatG() 
     {
         Parrent.ClearChilds();
+        BlocksParrent.ClearChilds();
         Objects = new List<GameObject>();
         Generator.Gropes.ForEach((Grope, GropeIndex) => {
             GameObject GropeObject = new GameObject("Grope " + GropeIndex);
-            GropeObject.transform.SetParent(Parrent.transform);
+            GropeObject.AddComponent<ContentGrope>().MyPlace = Grope;
+            
+
+            GropeObject.transform.SetParent(BlocksParrent.transform);
             GropeObject.transform.localScale = Vector3.one;
             GropeObject.transform.localPosition = new Vector3(0, 0, 0);
             GameObject BoxPrefab = this.BoxPrefab.RandomItem();
@@ -89,76 +99,69 @@ public class BuildTheBox : MonoBehaviour
             });
             return new Vector2Int(SystemBox.Simpls.TMath.Distance(Max_X, Min_X).ToInt(), SystemBox.Simpls.TMath.Distance(Max_Y, Min_Y).ToInt()) + Vector2Int.one;
         }
-
-        AccomadatePositions(new(4, 5));
+        AccomadatePositions(new(4, 7));
     }
+    public TList<Vector2Int> Arrea = new List<Vector2Int>();
+    [ShowInInspector]
+    List<(GameObject Object, Vector2Int Size)> Biggest;
     public void AccomadatePositions(Vector2Int Size) 
     {
-        
         TList<Vector2Int> Arrea = new List<Vector2Int>();
         for (int y = 0; y < Size.y; y++)
-            for (int x = 0; x < Size.x * 2; x++)
-                Arrea.AddIfDirty(new Vector2Int(-2, -9) + new Vector2Int(x, y));
-        List<(GameObject Object, Vector2Int Pos)> FinelResult = new List<(GameObject Object, Vector2Int Pos)>();
-
-
-
-
-
-        /*
-        List<(GameObject Object, Vector2Int Size)> Biggest = new List<(GameObject Object, Vector2Int Size)>();
-        Biggest.Sort(new Comparison<(GameObject Object, Vector2Int Size)>((d, s)) =>{ })
-
-
-        if (Accomadate(Arrea, ObjectsAndSize.Mix(), new List<(GameObject Object, Vector2Int Pos)>()))
-            FinelResult.ForEach(s => s.Object.transform.localPosition = new Vector3(s.Pos.x, s.Pos.y, s.Object.transform.localPosition.z));
-        //else AccomadatePositions(Size + Vector2Int.one);
-
-        */
-
-        bool Accomadate(TList<Vector2Int>  Arrea, (GameObject Object, Vector2Int Size) OtherBoxes, out TList<Vector2Int> ArreaDevorsed, out (GameObject Object, Vector2Int Pos)? Result) 
-        {
-            Result = null;
-            ArreaDevorsed = new TList<Vector2Int>();
-            foreach (var Pos in Arrea)
+            for (int x = 0; x < Size.x; x++) 
             {
+                Arrea.AddIfDirty(new Vector2Int(x, y));
+                Arrea.AddIfDirty(new Vector2Int(-x, y));
+            }
+                
 
-                if (isSuitble(Pos, OtherBoxes.Size))
+        this.Arrea = new TList<Vector2Int>(Arrea) ;
+
+        //List<(GameObject Object, Vector2Int Size)> Biggest = new List<(GameObject Object, Vector2Int Size)>(ObjectsAndSize);
+        Biggest = new List<(GameObject Object, Vector2Int Size)>(ObjectsAndSize);
+        Biggest.Sort(Compare);
+        int Compare((GameObject Object, Vector2Int Size) x, (GameObject Object, Vector2Int Size) y)
+        {
+            if (x.Size.y + x.Size.x > y.Size.y + y.Size.x) return -1;
+            else return 1;
+        }
+        Biggest.ForEach(a => {
+            for (int i = 0; i < 5; i++)
+            {
+                if (Accomadate(a, out Vector2Int ResoltPos) )
                 {
-                    List<Vector2Int> newVErsion = DevorseVertion(Pos, OtherBoxes.Size, out TList<Vector2Int> LocalArreaDevorsed);
-                    ArreaDevorsed = LocalArreaDevorsed;
-                    Result = (OtherBoxes.Object, Pos);
-                    return true;
+                    a.Object.transform.localPosition =
+                    new Vector3(ResoltPos.x, ResoltPos.y, a.Object.transform.localPosition.z);
+                    a.Object.transform.localScale = a.Object.transform.localScale * .9f;
+                    break;
                 }
             }
             
+        });
+        bool Accomadate((GameObject Object, Vector2Int Size) OtherBoxes, out Vector2Int ResoltPos) 
+        {
+            ResoltPos = Vector2Int.zero;
+            for (int i = 0; i < Arrea.Count; i++)
+            {
+                if (isSuitble(Arrea[i], OtherBoxes.Size))
+                {
+                    
+                    ResoltPos = Arrea[i];
+                    for (int y = 0; y < OtherBoxes.Size.y + 0; y++)
+                        for (int x = 0; x < OtherBoxes.Size.x + 0; x++)
+                            Debug.Log((Arrea.Remove(ResoltPos + new Vector2Int(x, y)), ResoltPos + new Vector2Int(x, y)));
+                    return true;
+                }
+            }
             return false;
-
             bool isSuitble(Vector2Int NeedPos, Vector2Int NeedSize) 
             {
                 for (int y = 0; y < NeedSize.y; y++)
                     for (int x = 0; x < NeedSize.x; x++)
-                        if (!Arrea.Contains(NeedPos + new Vector2Int(NeedSize.x, NeedSize.y))) return false;
+                        if (!Arrea.Contains(NeedPos + new Vector2Int(x, y))) return false;
                 return true;
 
             }
-
-            List<Vector2Int> DevorseVertion(Vector2Int NeedPos, Vector2Int NeedSize, out TList<Vector2Int> LocalArreaDevorsed)
-            {
-                List<Vector2Int> NewList = new List<Vector2Int>(Arrea);
-                LocalArreaDevorsed = new TList<Vector2Int>();
-                for (int y = 0; y < NeedSize.y; y++)
-                {
-                    for (int x = 0; x < NeedSize.x; x++)
-                    {
-                        LocalArreaDevorsed.Add(NeedPos + new Vector2Int(NeedSize.x, NeedSize.y));
-                        NewList.Remove(NeedPos + new Vector2Int(NeedSize.x, NeedSize.y));
-                    }
-                }
-                        
-                return NewList;
-            }
-
         }
 
     }
