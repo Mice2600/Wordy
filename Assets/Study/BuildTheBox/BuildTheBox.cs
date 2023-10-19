@@ -1,6 +1,7 @@
 using Base.Word;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,6 +9,7 @@ using System.Linq;
 using SystemBox;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class BuildTheBox : MonoBehaviour
 {
@@ -94,48 +96,43 @@ public class BuildTheBox : MonoBehaviour
     {
         
         TList<Vector2Int> Arrea = new List<Vector2Int>();
-        for (int y = 0; y < 5; y++)
-        {
-            for (int x = 0; x < 4; x++)
-            {
-                Arrea.AddIfDirty(new Vector2Int(3, -9) + new Vector2Int(x, y));
-                Arrea.AddIfDirty(new Vector2Int(3, -9) - new Vector2Int(x, y));
-            }
-        }
-
-
+        for (int y = 0; y < Size.y; y++)
+            for (int x = 0; x < Size.x * 2; x++)
+                Arrea.AddIfDirty(new Vector2Int(-2, -9) + new Vector2Int(x, y));
         List<(GameObject Object, Vector2Int Pos)> FinelResult = new List<(GameObject Object, Vector2Int Pos)>();
+
+
+
+
+
+        /*
+        List<(GameObject Object, Vector2Int Size)> Biggest = new List<(GameObject Object, Vector2Int Size)>();
+        Biggest.Sort(new Comparison<(GameObject Object, Vector2Int Size)>((d, s)) =>{ })
+
 
         if (Accomadate(Arrea, ObjectsAndSize.Mix(), new List<(GameObject Object, Vector2Int Pos)>()))
             FinelResult.ForEach(s => s.Object.transform.localPosition = new Vector3(s.Pos.x, s.Pos.y, s.Object.transform.localPosition.z));
         //else AccomadatePositions(Size + Vector2Int.one);
-        bool Accomadate(TList<Vector2Int>  Arrea, List<(GameObject Object, Vector2Int Size)> OtherBoxes, List<(GameObject Object, Vector2Int Pos)> Result) 
+
+        */
+
+        bool Accomadate(TList<Vector2Int>  Arrea, (GameObject Object, Vector2Int Size) OtherBoxes, out TList<Vector2Int> ArreaDevorsed, out (GameObject Object, Vector2Int Pos)? Result) 
         {
+            Result = null;
+            ArreaDevorsed = new TList<Vector2Int>();
             foreach (var Pos in Arrea)
             {
-                foreach (var item in OtherBoxes)
+
+                if (isSuitble(Pos, OtherBoxes.Size))
                 {
-                    if (isSuitble(Pos, item.Size)) 
-                    {
-                        List<Vector2Int>  newVErsion = DevorseVertion(Pos, item.Size);
-                        List<(GameObject Object, Vector2Int Pos)> NewResult = new List<(GameObject Object, Vector2Int Pos)>(Result) { (item.Object, Pos) };
-                        List<(GameObject Object, Vector2Int Pos)> NewOtherBoxes = new List<(GameObject Object, Vector2Int Pos)>(OtherBoxes);
-                        Debug.Log(NewResult);
-                        NewOtherBoxes.Remove(item);
-                        if (NewOtherBoxes.Count == 0) 
-                        {
-                            Debug.Log("ddd");
-                            FinelResult = NewResult;
-                            return true; 
-                        }
-                        Accomadate(newVErsion, NewOtherBoxes, NewResult);
-                    }
+                    List<Vector2Int> newVErsion = DevorseVertion(Pos, OtherBoxes.Size, out TList<Vector2Int> LocalArreaDevorsed);
+                    ArreaDevorsed = LocalArreaDevorsed;
+                    Result = (OtherBoxes.Object, Pos);
+                    return true;
                 }
             }
+            
             return false;
-
-
-
 
             bool isSuitble(Vector2Int NeedPos, Vector2Int NeedSize) 
             {
@@ -146,12 +143,19 @@ public class BuildTheBox : MonoBehaviour
 
             }
 
-            List<Vector2Int> DevorseVertion(Vector2Int NeedPos, Vector2Int NeedSize)
+            List<Vector2Int> DevorseVertion(Vector2Int NeedPos, Vector2Int NeedSize, out TList<Vector2Int> LocalArreaDevorsed)
             {
                 List<Vector2Int> NewList = new List<Vector2Int>(Arrea);
+                LocalArreaDevorsed = new TList<Vector2Int>();
                 for (int y = 0; y < NeedSize.y; y++)
+                {
                     for (int x = 0; x < NeedSize.x; x++)
+                    {
+                        LocalArreaDevorsed.Add(NeedPos + new Vector2Int(NeedSize.x, NeedSize.y));
                         NewList.Remove(NeedPos + new Vector2Int(NeedSize.x, NeedSize.y));
+                    }
+                }
+                        
                 return NewList;
             }
 
