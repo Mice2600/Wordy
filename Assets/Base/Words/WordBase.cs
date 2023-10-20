@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using SystemBox;
 using Traonsletor;
 using UnityEngine;
@@ -24,7 +25,7 @@ namespace Base.Word
                 PlayerPrefs.SetInt(ID + " defaul", 1);
             }
             DefaultBase = new List<WordDefoult>(JsonHelper.FromJson<WordDefoult>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text));
-            Wordgs = new WordBase(); 
+            Wordgs = new WordBase();
         }
         public Word this[Word index]
         {
@@ -41,10 +42,10 @@ namespace Base.Word
                 this[fIndex] = value;
             }
         }
-        public static WordBase Wordgs { get; private set; }
+        public static WordBase Wordgs { get; set; }
         public static TList<WordDefoult> DefaultBase;
         private static string ID => "WordBase";
-        protected override string DataID => ID;
+        public override string DataID => ID;
         public static new void Sort()
         {
             Wordgs.Save();

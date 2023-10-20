@@ -12,10 +12,10 @@ public class ConsoleLog : MonoBehaviour
         }
     }
     private static ConsoleLog _consoleLog;
-    public static void Log(string Massage)
+    public static void Log(string Massage, float TimeToCount = 3f)
     {
         consoleLog.Massage = Massage;
-        consoleLog.TimeToCount = 3f;
+        consoleLog.TimeToCount = TimeToCount;
     }
 
     float TimeToCount;

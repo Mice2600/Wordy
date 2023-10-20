@@ -43,9 +43,9 @@ namespace Base.Dialog
                 this[fIndex] = value;
             }
         }
-        public static DialogBase Dialogs { get; private set; }
+        public static DialogBase Dialogs { get; set; }
         private static string ID => "DialogBase";
-        protected override string DataID => ID;
+        public override string DataID => ID;
 
         public static TList<DialogDefoult> DefaultBase;
 

@@ -35,11 +35,11 @@ public class IrregularBase : DataList<Irregular>
         }
     }
 
-    public static IrregularBase Irregulars { get; private set; }
+    public static IrregularBase Irregulars { get; set; }
 
     private static string ID => "IrregularBase";
 
-    protected override string DataID => ID;
+    public override string DataID => ID;
     public static new void Sort()
     {
         Irregulars.Save();

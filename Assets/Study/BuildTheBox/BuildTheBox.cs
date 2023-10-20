@@ -9,8 +9,6 @@ using System.Linq;
 using SystemBox;
 using TMPro;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
-using static UnityEditor.Progress;
 
 public class BuildTheBox : MonoBehaviour
 {

@@ -73,7 +73,7 @@ namespace Base
         }
         public void Avake() { }
 
-        protected abstract string DataID { get; }
+        public abstract string DataID { get; }
         public void Save()
         {
             PlayerPrefs.SetString(DataID, JsonHelper.ToJson<T>((this as List<T>).ToArray()));

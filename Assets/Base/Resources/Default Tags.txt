@@ -461,7 +461,13 @@
 "recall",
 "refer",
 "signify",
-"stutter"]
+"stutter",
+"FARMER",
+"FURTHER",
+"INFLAME",
+"LULLABY",
+"PETTY",
+"QUESTIONABLE"]
 },
 {"ID":"@Noun",
 "Contents":["ABILITY",
