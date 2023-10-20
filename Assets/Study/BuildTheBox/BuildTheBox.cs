@@ -14,9 +14,7 @@ using static UnityEditor.Progress;
 
 public class BuildTheBox : MonoBehaviour
 {
-    public static BuildTheBox buildTheBox => _BuildTheBox ??= FindObjectOfType<BuildTheBox>();
-    static BuildTheBox _BuildTheBox;
-
+    
     public List<GameObject> Objects;
     [ShowInInspector]
     public List<(GameObject, Vector2Int Size)> ObjectsAndSize;
@@ -32,15 +30,19 @@ public class BuildTheBox : MonoBehaviour
     public List<GameObject> BoxPrefab;
     public GameObject Parrent;
     public GameObject BlocksParrent;
+    public GameObject WinViwe;
+    private TList<ContentGrope> contentGropes;
+
     public void CreatG() 
     {
         Parrent.ClearChilds();
         BlocksParrent.ClearChilds();
         Objects = new List<GameObject>();
+        contentGropes = new TList<ContentGrope>();
         Generator.Gropes.ForEach((Grope, GropeIndex) => {
             GameObject GropeObject = new GameObject("Grope " + GropeIndex);
-            GropeObject.AddComponent<ContentGrope>().MyPlace = Grope;
-            
+            contentGropes.Add(GropeObject.AddComponent<ContentGrope>());
+            contentGropes.Last.MyGrope = Grope;
 
             GropeObject.transform.SetParent(BlocksParrent.transform);
             GropeObject.transform.localScale = Vector3.one;
@@ -149,7 +151,7 @@ public class BuildTheBox : MonoBehaviour
                     ResoltPos = Arrea[i];
                     for (int y = 0; y < OtherBoxes.Size.y + 0; y++)
                         for (int x = 0; x < OtherBoxes.Size.x + 0; x++)
-                            Debug.Log((Arrea.Remove(ResoltPos + new Vector2Int(x, y)), ResoltPos + new Vector2Int(x, y)));
+                            Arrea.Remove(ResoltPos + new Vector2Int(x, y));
                     return true;
                 }
             }
@@ -165,6 +167,40 @@ public class BuildTheBox : MonoBehaviour
         }
 
     }
+
+
+
+
+    bool IsDone = false;
+    private void Update()
+    {
+        if(IsDone) return;
+
+        bool isTrue = true;
+        contentGropes.ForEach(a => { if (!a.OnPlace) isTrue = false; });
+        if (isTrue) 
+        {
+            IsDone = true;
+
+            contentGropes.ForEach(a => a.enabled = false);
+
+            StartCoroutine(OnWin());
+            IEnumerator OnWin()
+            {
+                yield return new WaitForSeconds(1f);
+                Instantiate(WinViwe).GetComponent<WinViwe>().contents = Generator.ChosenContents;
+            }
+        }
+    }
+
+
+
+
+
+    
+
+
+
     /*
     private void OnDrawGizmos()
     {

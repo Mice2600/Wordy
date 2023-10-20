@@ -58,9 +58,6 @@ namespace Study.CoupleParticles
                         {
                             yield return new WaitForSeconds(2f);
                             Instantiate(Win).GetComponent<WinViwe>().contents = CompleatedContents;
-                            QuestCoupleParticles d = GetComponent<QuestCoupleParticles>();
-                            CompleatedContents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
-                            d.OnGameWin?.Invoke();
                         }
                     }
 

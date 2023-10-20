@@ -1,4 +1,5 @@
 using Base.Word;
+using Study.aSystem;
 using System.Collections.Generic;
 using System.Linq;
 using SystemBox;
@@ -9,18 +10,19 @@ public static class Generator
     public static TList<Vector2Int> Places;
     public static Dictionary<Vector2Int, char> PlacesAndLetters;
     public static TList<TList<(Vector2Int, char)>> Gropes;
-    
+    public static TList<Content> ChosenContents;
     public static void Generate()
     {
-        TList<Content> Contents = new TList<Content>(WordBase.Wordgs.GetContnetList(25));
 
+        
+        TList<Content> Contents = new TList<Content>(GameObject.FindObjectOfType<Quest>().NeedWordList);
 
         PlacesAndLetters = new Dictionary<Vector2Int, char>();
 
 
 
         // mac cound = 7 item max count = 6
-        TList<Content> ChosenContents = new TList<Content>();
+        ChosenContents = new TList<Content>();
         int YSize = Random.Range(4, 8);
 
         Contents.ForEach(c => {

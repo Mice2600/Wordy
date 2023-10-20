@@ -14,6 +14,11 @@ public class WinViwe : MonoBehaviour
     public GameObject SingelScorePrefab;
     void Start()
     {
+
+        Quest d = FindObjectOfType<Quest>();
+        contents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
+        d.OnGameWin?.Invoke();
+
         ContentGropper LLD = GetComponentInChildren<ContentGropper>();
         contents.ForEach(a =>
         {

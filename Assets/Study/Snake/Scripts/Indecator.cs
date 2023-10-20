@@ -59,9 +59,8 @@ public class Indecator : MonoBehaviour
             {
                 yield return new WaitForSeconds(1);
                 TList<Content> contents = new List<Content>();
-                Quest d = FindObjectOfType<Quest>();
-                Founded.ForEach(ss => { contents.Add(WordBase.Wordgs.GetContent(ss)); d.OnWordWin?.Invoke(contents.Last as Word); });
-                d.OnGameWin?.Invoke();
+                Founded.ForEach(ss => { contents.Add(WordBase.Wordgs.GetContent(ss)); });
+                
                 Instantiate(Win).GetComponent<WinViwe>().contents = contents;
 
                 

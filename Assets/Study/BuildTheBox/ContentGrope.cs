@@ -12,7 +12,9 @@ public class ContentGrope : MonoBehaviour
     {
         TekkenPlaces = new List<Vector2Int>();
     }
-    public TList<(Vector2Int, char)> MyPlace;
+    public TList<(Vector2Int, char)> MyGrope;
+    private TList<Vector2Int> OnlyPlaces;
+    public bool OnPlace = false;
     public List<Vector2Int> MyPattern;
     GameObject ShadowGrope;
     Vector3 StartPosition;
@@ -23,14 +25,20 @@ public class ContentGrope : MonoBehaviour
     float Max_Y = 0;
     float Min_Y = 100;
 
+    private static BuildTheBox _BuildTheBox;
+
     private void Start()
     {
+        if (_BuildTheBox == null) _BuildTheBox = GameObject.FindObjectOfType<BuildTheBox>();
+        TekkenPlaces = new List<Vector2Int>();
+        OnlyPlaces = new TList<Vector2Int>();
+        MyGrope.ForEach(a => OnlyPlaces.Add(a.Item1));
         ShadowGrope = new GameObject("Shadow");
-        ShadowGrope.transform.SetParent(BuildTheBox.buildTheBox.Parrent.transform);
+        ShadowGrope.transform.SetParent(_BuildTheBox.Parrent.transform);
         ShadowGrope.transform.localScale = Vector3.one;
-        MyPlace.ForEach(a =>
+        MyGrope.ForEach(a =>
         {
-            GameObject D = Instantiate(BuildTheBox.buildTheBox.ShadowPrefab, ShadowGrope.transform);
+            GameObject D = Instantiate(_BuildTheBox.ShadowPrefab, ShadowGrope.transform);
             D.transform.localScale = Vector3.one;
             D.transform.localPosition = new Vector3(a.Item1.x, a.Item1.y, .9f);
             
@@ -55,7 +63,7 @@ public class ContentGrope : MonoBehaviour
         StartPosition = transform.localPosition;
         StartSize = transform.localScale;
         MyPattern = new List<Vector2Int>();
-        MyPlace.ForEach(a => {MyPattern.Add(a.Item1 - new Vector2Int(Min_X.ToInt(), Min_Y.ToInt()));});
+        MyGrope.ForEach(a => {MyPattern.Add(a.Item1 - new Vector2Int(Min_X.ToInt(), Min_Y.ToInt()));});
         
 
     }
@@ -94,12 +102,25 @@ public class ContentGrope : MonoBehaviour
     public void TryToStey() 
     {
         transform.parent.Childs().ForEach(a => a.transform.position = new Vector3(a.transform.position.x, a.transform.position.y, 0));
-        Vector3 WorldPos = BuildTheBox.buildTheBox.Parrent.transform.InverseTransformPoint(transform.position).ToInt();
+        Vector3 WorldPos = _BuildTheBox.Parrent.transform.InverseTransformPoint(transform.position).ToInt();
         Vector2Int MyPos = new Vector2Int(WorldPos.x.ToInt(), WorldPos.y.ToInt());
-        if (IsSuitblePos()) 
+        if (IsSuitblePos())
         {
-            transform.DOMove(BuildTheBox.buildTheBox.Parrent.transform.TransformPoint(WorldPos), .1f);
+            transform.DOMove(_BuildTheBox.Parrent.transform.TransformPoint(WorldPos), .1f);
             for (int i = 0; i < MyPattern.Count; i++) TekkenPlaces.Add(MyPos + MyPattern[i]);
+
+            OnPlace = true;
+            for (int i = 0; i < MyPattern.Count; i++)
+            {
+                if (!OnlyPlaces.Contains(MyPos + MyPattern[i]))
+                {
+
+                    OnPlace = false;
+                    break;
+                }
+            }
+
+
         }
         else transform.DOLocalMove(StartPosition, .4f);
 
@@ -116,11 +137,17 @@ public class ContentGrope : MonoBehaviour
     public void StartFollowing() 
     {
         transform.parent.Childs().ForEach(a => a.transform.position = new Vector3(a.transform.position.x, a.transform.position.y, 0));
-        Vector3 WorldPos = BuildTheBox.buildTheBox.Parrent.transform.InverseTransformPoint(transform.position).ToInt();
+        Vector3 WorldPos = _BuildTheBox.Parrent.transform.InverseTransformPoint(transform.position).ToInt();
         Vector2Int MyPos = new Vector2Int(WorldPos.x.ToInt(), WorldPos.y.ToInt());
         for (int i = 0; i < MyPattern.Count; i++) TekkenPlaces.Remove(MyPos + MyPattern[i]);
+
+
+        OnPlace = false;
         
+
+
+
     }
 
-
+    
 }

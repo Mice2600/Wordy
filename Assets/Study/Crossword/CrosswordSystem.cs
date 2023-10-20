@@ -26,11 +26,8 @@ namespace Study.Crossword
             isdone = true;
 
             TList<Content> contents = new List<Content>();
-            Builder.ToBuild.AllContentIDes.ForEach(a => { 
-                contents.Add(WordBase.Wordgs.GetContent(a) as Word); 
-                QuestCrosswor.OnWordWin.Invoke(contents.Last as Word);  });
+            Builder.ToBuild.AllContentIDes.ForEach(a => { contents.Add(WordBase.Wordgs.GetContent(a) as Word); });
             Instantiate(WinPrefab).GetComponent<WinViwe>().contents = contents;
-            QuestCrosswor.OnGameWin?.Invoke();
 
         }
 

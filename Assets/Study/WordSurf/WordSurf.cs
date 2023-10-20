@@ -41,10 +41,6 @@ namespace Study.WordSurf
                         if (WordsSS.IsEnpty())
                         {
 
-                            QuestWordSurf d = GetComponent<QuestWordSurf>();
-                            Contents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
-                            d.OnGameWin?.Invoke();
-
                             Instantiate(Win).GetComponent<WinViwe>().contents = Contents;
 
                             break;

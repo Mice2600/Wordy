@@ -51,9 +51,6 @@ namespace Study.Ring
                     {
                         yield return new WaitForSeconds(2);
                         Instantiate(Win).GetComponent<WinViwe>().contents = Contents;
-                        QuestRing d = GetComponent<QuestRing>();
-                        Contents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
-                        d.OnGameWin?.Invoke();
                     }
                     
                 }

@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/SpellingExercise/SpellingExercise.unity
     guid: 8c1401faa4848d04d8ba6494921964ca
+  - enabled: 1
+    path: Assets/Study/BuildTheBox/BuildTheBox.unity
+    guid: 35e8fe91876bb2f4d838dd4deeb178df
   m_configObjects: {}

@@ -81,6 +81,11 @@ MonoBehaviour:
     <RemoveScoreWord>k__BackingField: 5
     <AddScoreDialog>k__BackingField: 5
     <RemoveScoreDialog>k__BackingField: 5
+  buildTheBox:
+    Prefab: {fileID: 5398382320760977100, guid: 102c34c94c7a00b4f9bc1bfb5add8894, type: 3}
+    SceneName: BuildTheBox
+    <AddScoreWord>k__BackingField: 4
+    <RemoveScoreWord>k__BackingField: 10
   questCoupleParticles:
     Prefab: {fileID: 7780279792343907558, guid: 7f717f0cecf7d924cb2812fbe6f89793, type: 3}
     SceneName: CoupleParticles

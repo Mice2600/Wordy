@@ -1,15 +1,13 @@
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using SystemBox;
 using UnityEngine;
 
 public class BackBlock : MonoBehaviour
 {
-    static BackBlock(){ Boxes = new Dictionary<Vector2Int, BackBlock>(); }
-    public static Dictionary<Vector2Int, BackBlock> Boxes;
-
-
+    
 
 
     [SerializeField, Required]
@@ -23,13 +21,17 @@ public class BackBlock : MonoBehaviour
     private void Start()
     {
 
-        Boxes.Add(new Vector2Int(transform.localPosition.x.ToInt(), transform.localPosition.y.ToInt()), this);
+        
 
         StartCoroutine(AfterFrame());
 
         IEnumerator AfterFrame() 
         {
             yield return new WaitForEndOfFrame();
+
+            Dictionary<Vector2Int, BackBlock> Boxes = new Dictionary<Vector2Int, BackBlock>();
+            Boxes = FindObjectsOfType<BackBlock>().ToDictionary((B) => new Vector2Int(B.transform.localPosition.x.ToInt(), B.transform.localPosition.y.ToInt()));
+            
 
             Up = FindBox(new Vector2Int(transform.localPosition.x.ToInt(), transform.localPosition.y.ToInt()) + Vector2Int.up);
             Down = FindBox(new Vector2Int(transform.localPosition.x.ToInt(), transform.localPosition.y.ToInt()) + Vector2Int.down);
