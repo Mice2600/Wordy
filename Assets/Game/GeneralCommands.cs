@@ -24,6 +24,12 @@ public class GeneralCommands : MonoBehaviour
     private TMPro.TMP_InputField UserName, password;
     private async void Awake()
     {
+
+        if (Application.internetReachability == NetworkReachability.NotReachable)
+        {
+            Debug.Log("Error. Check internet connection!");
+            return;
+        }
         await UnityServices.InitializeAsync();
     }
     private async Task ListAllKeys()
@@ -51,6 +57,14 @@ public class GeneralCommands : MonoBehaviour
 
     private void Start()
     {
+
+        if (Application.internetReachability == NetworkReachability.NotReachable)
+        {
+            Debug.Log("Error. Check internet connection!");
+            SceneManager.LoadScene(FirsSceneName, LoadSceneMode.Single);
+            return;
+        }
+
         DontDestroyOnLoad(gameObject);
         if (SystemBox.Data.Bool("UsernamePassword")) 
             SignIn(SystemBox.Data.String("Username"), SystemBox.Data.String("Password"));
@@ -128,8 +142,6 @@ public class GeneralCommands : MonoBehaviour
         IrregularBase.Irregulars = new IrregularBase();
     }
 
-
-    
     [Button]
     public void SignUp(string username, string password) => SignUpWithUsernamePassword(username, password);
     public void SignUp() => SignUp(UserName.text, password.text);
