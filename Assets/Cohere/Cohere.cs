@@ -41,6 +41,9 @@ public static class Cohere
             Debug.Log(body);
         }
     }
+    public static async void GenerateDefenition(string Word, System.Action<List<string>> Resolt) {}
+    public static async void GenerateSinonim(string Word, System.Action<List<string>> Resolt) {}
+    public static async void GenerateAntonium(string Word, System.Action<List<string>> Resolt) {}
     public static async void Generate(string Word, System.Action<List<string>> Resolt)
     {
         if (Application.internetReachability == NetworkReachability.NotReachable)
