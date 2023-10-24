@@ -683,6 +683,23 @@ namespace SystemBox
                     if (TransformTuyp == TransformTuyp.Local) OnObject.transform.localRotation = NeedRotetion;
                     else OnObject.transform.rotation = NeedRotetion;
                 }
+                if (PositionTuyp == Need_Transform_Position.Vector3_Random)
+                {
+
+                    if (UesPosition)
+                    {
+                        if (TransformTuyp == TransformTuyp.Local) OnObject.transform.localPosition = getRandomVector3(MinPos, MaxPos);
+                        else OnObject.transform.position = getRandomVector3(MinPos, MaxPos);
+                    }
+
+                    if (UesRotetion)
+                    {
+                        if (TransformTuyp == TransformTuyp.Local) OnObject.transform.localRotation = getRandomQuaterion(MinRot, MaxRot);
+                        else OnObject.transform.rotation = getRandomQuaterion(MinRot, MaxRot);
+                    }
+                    if (UesLocalScale) OnObject.transform.localScale = Vector3.one * Random.Range(MinScale.x, MaxScale.x);
+
+                }
                 OnInstantiate?.Invoke();
             }
 
