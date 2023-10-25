@@ -21,9 +21,12 @@ namespace ProjectSettings
         public QuestBuildTheBox buildTheBox;
     }
 }
-namespace Study.CoupleParticles 
+namespace Study.BuildTheBox
 {
-    public class QuestBuildTheBox : Quest
+    namespace Study.CoupleParticles
     {
+        public class QuestBuildTheBox : Quest
+        {
+        }
     }
 }
