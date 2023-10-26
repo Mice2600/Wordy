@@ -11,27 +11,33 @@ using UnityEngine;
 public class WaterMelonContent : ContentObject
 {
     [SerializeField, Required]
-    private TextMeshPro Letter;
+    private TextMeshPro Letter => GetComponentInChildren<TextMeshPro>();
     [SerializeField, Required]
     private Transform LetterParrents;
-    [System.NonSerialized]
-    public int Type = -1; //0 en 1 ru
 
     public int MaxCount = 8;
-    public int MinCount => (MaxCount / 2) + 2;
+    
 
     [Button, SerializeField]
     public void Sort() 
     {
         TList<Content> contents = new TList<Content>(WordBase.Wordgs);
-        Sort(contents.Mix().FindAll(d => d.EnglishSource.Length < MaxCount + 1 && d.EnglishSource.Length > MinCount).RandomItem());
+        Sort(contents.Mix().FindAll(d => d.EnglishSource.Length < MaxCount + 1 && (d as IMultiTranslation).Translations.FindAll(x => d.RussianSource.Length <= MaxCount).Count > 0).RandomItem());
     }
+
     public void Sort(Content content)
     {
         Content = content;
         LetterParrents.ClearChilds();
+        Debug.Log((Content as IMultiTranslation).Translations.FindAll(x => Content.RussianSource.Length <= MaxCount).Count);
+        string RU = (Content as IMultiTranslation).Translations.FindAll(x => Content.RussianSource.Length <= MaxCount).RandomItem();
 
+        
 
+        Letter.text = content.EnglishSource; 
+        
+
+        /*
 
         string Word = Find();
         for (int i = 0; i < Word.Length; i++)
@@ -62,7 +68,7 @@ public class WaterMelonContent : ContentObject
                 return RU;
             }
 
-        }
+        }*/
 
     }
 
@@ -72,10 +78,7 @@ public class WaterMelonContent : ContentObject
         {
             if (contentObject.Content == Content)
             {
-                if (contentObject.Type != Type)
-                {
                     FindObjectOfType<Creator>().Creat(contentObject, this);
-                }
             }
         }
     }

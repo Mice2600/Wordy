@@ -10,9 +10,33 @@ using UnityEngine;
 
 public class Creator : MonoBehaviour
 {
+
+
     [SerializeField, Required]
-    private TList<GameObject> WaterMelonContentPrefabs;
+    private TList<TList<GameObject>> WaterMelonContentPrefabs;
+
+    public struct WayRuntime
+    {
+        public List<GameObject> Prefab;
+        public Content Content;
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            if (obj is not WayRuntime) return false;
+            if ((obj as WayRuntime?).Value.Content != Content) return false;
+            return true;
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+    }
+
+
+    
+
     private TList<Content> Contents;
+
     private TList<WaterMelonContent> Created;
     private void Start()
     {
@@ -21,17 +45,18 @@ public class Creator : MonoBehaviour
         Contents = new TList<Content>();
         WaterMelonContentPrefabs.ForEach(G =>
         {
-            Contents.Add(Find(G.GetComponent<WaterMelonContent>(), contents));
+
+            Contents.Add(Find(G.RandomItem.GetComponent<WaterMelonContent>(), contents));
             contents.Remove(Contents.Last);
         });
         Content Find(WaterMelonContent waterMelonContent, TList<Content> contents) 
         {
             TList<Content> NeedConttents= contents.FindAll(C => 
             {
-                if (C.EnglishSource.Length <= waterMelonContent.MaxCount && C.EnglishSource.Length >= waterMelonContent.MinCount) 
+                if (C.EnglishSource.Length <= waterMelonContent.MaxCount) 
                 {
                     bool Isthere = false;
-                    (C as IMultiTranslation).Translations.ForEach(x => { if (C.RussianSource.Length <= waterMelonContent.MaxCount && C.RussianSource.Length >= waterMelonContent.MinCount) Isthere = true; });
+                    (C as IMultiTranslation).Translations.ForEach(x => { if (C.RussianSource.Length <= waterMelonContent.MaxCount) Isthere = true; });
                     return Isthere;
                 }
                 return false;
@@ -49,13 +74,13 @@ public class Creator : MonoBehaviour
         if (Right == null) return;
         if (DontUse == null) DontUse = new List<WaterMelonContent>();
         if (DontUse.Contains(Left) || DontUse.Contains(Right)) return;
-        GameObject W = Instantiate(WaterMelonContentPrefabs[(Contents.IndexOf(Right.Content) + 1), ListGetType.Loop], transform);
+        GameObject W = Instantiate(WaterMelonContentPrefabs[(Contents.IndexOf(Right.Content) + 1), ListGetType.Loop].RandomItem, transform);
         W.transform.position = (Right.transform.position + Left.transform.position) / 2;
         W.GetComponent<WaterMelonContent>().Sort(Contents[Contents.IndexOf(Right.Content) + 1, ListGetType.Loop]);
         Created.Add(W.GetComponent<WaterMelonContent>());
         DontUse.Add(Right);
         DontUse.Add(Left);
-
+       
 
         Destroy(Left.gameObject);
         Destroy(Right.gameObject);
@@ -110,7 +135,7 @@ public class Creator : MonoBehaviour
             {
                 if (FirsRB.TryGetComponent<WaterMelonContent>(out WaterMelonContent CC)) 
                 {
-                    NeedContents.AddIfDirty((CC.Content, CC.Type == 0 ? 1 : 0));
+                    NeedContents.AddIfDirty((CC.Content, 1 ));
                 }
             }
         });
@@ -128,31 +153,22 @@ public class Creator : MonoBehaviour
 
         (Content, int)? NeedContent = null;
 
-        if (NeedContents.Count > 0 && Random.Range(0, 100) > 40) 
-        {
-            NeedContents = NeedContents.FindAll(DD => { if (Contents.IndexOf(DD.Item1) > 3) return false; return true; });
-            if (NeedContents.Count > 0) NeedContent = NeedContents.RandomItem; 
-        
-        }
+        if (NeedContents.Count > 0 && Random.Range(0, 100) > 70) NeedContent = NeedContents.RandomItem; 
         
 
 
         
-
-
 
         //int NewIndex = Random.Range(0, (MaxIndexes > 4) ? 5 : 3);
 
         if (!NeedContent.HasValue)
-            NeedContent = (Contents[Random.Range(0, (MaxIndexes > 4) ? 5 : 3)], -1);
+            NeedContent = (Contents[Random.Range(0, MaxIndexes)], -1);
         int NewIndex = Contents.IndexOf(NeedContent.Value.Item1);
 
 
-        GameObject W = Instantiate(WaterMelonContentPrefabs[NewIndex], transform);
-        W.GetComponent<WaterMelonContent>().Type = NeedContent.Value.Item2;
+        GameObject W = Instantiate(WaterMelonContentPrefabs[NewIndex].RandomItem, transform);
         W.GetComponent<WaterMelonContent>().Sort(Contents[NewIndex]);
-        if(NeedContent.Value.Item2 == 0) NexText.text = Contents[NewIndex].EnglishSource;
-        else NexText.text = Contents[NewIndex].RussianSource;
+        NexText.text = Contents[NewIndex].RussianSource;
         OnControll = W;
         Created.Add(W.GetComponent<WaterMelonContent>());
     }

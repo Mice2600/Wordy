@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/BuildTheBox/BuildTheBox.unity
     guid: 35e8fe91876bb2f4d838dd4deeb178df
+  - enabled: 1
+    path: Assets/Study/Watermelon/Watermelon.unity
+    guid: 7b3ab51161859a64e95ffd0f48441eb9
   m_configObjects: {}
