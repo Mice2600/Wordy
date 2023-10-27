@@ -1,5 +1,6 @@
 using Base;
 using Base.Word;
+using Servises;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,12 +13,9 @@ public class WaterMelonContent : ContentObject
 {
     [SerializeField, Required]
     private TextMeshPro Letter => GetComponentInChildren<TextMeshPro>();
-    [SerializeField, Required]
-    private Transform LetterParrents;
-
+    
     public int MaxCount = 8;
     
-
     [Button, SerializeField]
     public void Sort() 
     {
@@ -28,48 +26,7 @@ public class WaterMelonContent : ContentObject
     public void Sort(Content content)
     {
         Content = content;
-        LetterParrents.ClearChilds();
-        Debug.Log((Content as IMultiTranslation).Translations.FindAll(x => Content.RussianSource.Length <= MaxCount).Count);
-        string RU = (Content as IMultiTranslation).Translations.FindAll(x => Content.RussianSource.Length <= MaxCount).RandomItem();
-
-        
-
         Letter.text = content.EnglishSource; 
-        
-
-        /*
-
-        string Word = Find();
-        for (int i = 0; i < Word.Length; i++)
-        {
-            GameObject L = Instantiate(Letter.gameObject, LetterParrents);
-            L.SetActive(true);
-            L.transform.localPosition = Vector3.zero;
-            L.transform.Rotate(0,0, -((360 / MaxCount) * i));
-            L.transform.Translate(Vector3.up * Letter.transform.localPosition.y);
-            L.GetComponent<TextMeshPro>().text = Word[i].ToString();
-            if(i + 1 == Word.Length) L.GetComponent<TextMeshPro>().text += ".";
-        }
-        string Find()
-        {
-
-
-
-            string RU = (Content as IMultiTranslation).Translations.FindAll(x => Content.RussianSource.Length <= MaxCount && content.RussianSource.Length >= MinCount).RandomItem();
-            if(Type != -1)if(Type == 0) return content.EnglishSource; else return RU;
-            if (Random.Range(0, 100) > 50)
-            {
-                Type = 0;
-                return content.EnglishSource;
-            }
-            else 
-            {
-                Type = 1;
-                return RU;
-            }
-
-        }*/
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -81,5 +38,16 @@ public class WaterMelonContent : ContentObject
                     FindObjectOfType<Creator>().Creat(contentObject, this);
             }
         }
+    }
+    public void OnMouseUpAsButton()
+    {
+        EasyTTSUtil.SpeechAdd("");
+        ContentObject wordContent = transform.GetComponentInParent<ContentObject>();
+        if (wordContent == null) return;
+        if (wordContent.Content == null) return;
+        if (wordContent.Content is not ISpeeker) return;
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            EasyTTSUtil.SpeechAdd((wordContent.Content as ISpeeker).SpeekText, 1, .5f, 1);
+        else Debug.Log(wordContent.Content.EnglishSource + " Speeking");
     }
 }

@@ -150,6 +150,11 @@ MonoBehaviour:
     SceneName: TypeShift
     <AddScoreWord>k__BackingField: 4
     <RemoveScoreWord>k__BackingField: 5
+  watermelon:
+    Prefab: {fileID: 5705946344668705077, guid: 0fba6196a45b7554093a501a4b911c75, type: 3}
+    SceneName: Watermelon
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
   questWordSurf:
     Prefab: {fileID: 6565041498530126776, guid: 011e63baaac48f149a81d79bae33f701, type: 3}
     SceneName: WordSurf
