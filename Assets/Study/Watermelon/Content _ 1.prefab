@@ -182,7 +182,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7611539451467678112}
   - component: {fileID: 7611539451467678115}
-  - component: {fileID: 7611539451467678114}
   - component: {fileID: 7611539451467678141}
   m_Layer: 0
   m_Name: Content _ 1
@@ -235,36 +234,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7611539451467678114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7611539451467678140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 263957a44502a19459de65ceda0c7223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UsingSystem: 4
-  UesMoveTowards: 0
-  System_MoveTowards: []
-  UesMouseControler: 1
-  MC_UesEvent: 0
-  EvntOnMouseDown:
-    m_PersistentCalls:
-      m_Calls: []
-  EvntOnMouseDrag:
-    m_PersistentCalls:
-      m_Calls: []
-  EvntOnMouseUp:
-    m_PersistentCalls:
-      m_Calls: []
-  X: 0
-  Y: 0
-  UesAnimationController: 0
-  animationC: []
 --- !u!114 &7611539451467678141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,8 +246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c36db7f657db0489ac3025a4a440f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Letter: {fileID: 3192401475744504247}
-  LetterParrents: {fileID: 0}
   MaxCount: 7
 --- !u!1 &8472256693285836200
 GameObject:

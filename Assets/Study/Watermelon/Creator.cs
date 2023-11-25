@@ -1,3 +1,4 @@
+using Base;
 using Base.Word;
 using Sirenix.OdinInspector;
 using System.Collections;
@@ -38,8 +39,15 @@ public class Creator : MonoBehaviour
     private TList<Content> Contents;
 
     private TList<WaterMelonContent> Created;
+    [SerializeField]
+    private GameObject LeftObstecl, FightObstecl;
+    [SerializeField]
+    private GameObject WinViwe;
     private void Start()
     {
+        FightObstecl.transform.position = new Vector3(Camera.main.ViewportToWorldPoint(Vector3.right).x, FightObstecl.transform.position.y, FightObstecl.transform.position.z);
+        LeftObstecl.transform.position = new Vector3(-FightObstecl.transform.position.x, FightObstecl.transform.position.y, FightObstecl.transform.position.z);
+
         Created = new TList<WaterMelonContent>();
         TList<Content> contents = new TList<Content>(WordBase.Wordgs);
         Contents = new TList<Content>();
@@ -89,23 +97,49 @@ public class Creator : MonoBehaviour
 
     public GameObject OnControll;
     public TextMeshPro NexText;
+    float LosseTime;
+    bool StopDone;
 
     void Update()
     {
 
+        if (StopDone) return;
+        float OldVV = LosseTime;
+        Created.ForEach(a => {
+            if (a == null) return;
+            if (a.gameObject == OnControll) return;
+            if (a.transform.position.y > 4) LosseTime += Time.deltaTime;
+        });
+        if (OldVV == LosseTime) LosseTime = 0f;
+        if (LosseTime > 3) 
+        {
+            StopDone = true;
+            Instantiate(WinViwe).GetComponent<WinViwe>().contents = Contents;
+
+
+        }
         Offcet += Time.deltaTime;
         if (Offcet < 1) return;
         if (OnControll == null) Creat();
-        OnControll.transform.position = new Vector3(0, 5.5f, 0f);
+        OnControll.transform.position = new Vector3(0, 7.5f, 0f);
         if (TInput.GetMouseButton(0)) 
         {
-            OnControll.transform.position = new Vector3(TInput.mouseWorldPoint(0).x, 5.5f, 0f);
+            OnControll.transform.position = new Vector3(TInput.mouseWorldPoint(0).x, 7.5f, 0f);
         }
         if (TInput.GetMouseButtonUp(0)) 
         {
-            OnControll.transform.position = new Vector3(TInput.mouseWorldPoint(0).x, 5.5f, 0f);
+            
+
+            
+            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+                EasyTTSUtil.SpeechAdd((OnControll.GetComponent<ContentObject>().Content as ISpeeker).SpeekText, 1, .5f, 1);
+            else Debug.Log(OnControll.GetComponent<ContentObject>().Content.EnglishSource + " Speeking");
+
+
+            OnControll.transform.position = new Vector3(TInput.mouseWorldPoint(0).x, 7.5f, 0f);
             OnControll = null;
             Offcet = 0;
+
         }
     }
     private void OnDrawGizmos()

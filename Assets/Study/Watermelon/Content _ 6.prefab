@@ -130,7 +130,6 @@ GameObject:
   m_Component:
   - component: {fileID: 360465444557545409}
   - component: {fileID: 360465444557545414}
-  - component: {fileID: 360465444557545415}
   - component: {fileID: 360465444557545412}
   m_Layer: 0
   m_Name: Content _ 6
@@ -154,7 +153,7 @@ Transform:
   - {fileID: 360465443549066952}
   - {fileID: 8982435662177324512}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &360465444557545414
 Rigidbody2D:
@@ -183,36 +182,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &360465444557545415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360465444557545413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 263957a44502a19459de65ceda0c7223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UsingSystem: 4
-  UesMoveTowards: 0
-  System_MoveTowards: []
-  UesMouseControler: 1
-  MC_UesEvent: 0
-  EvntOnMouseDown:
-    m_PersistentCalls:
-      m_Calls: []
-  EvntOnMouseDrag:
-    m_PersistentCalls:
-      m_Calls: []
-  EvntOnMouseUp:
-    m_PersistentCalls:
-      m_Calls: []
-  X: 0
-  Y: 0
-  UesAnimationController: 0
-  animationC: []
 --- !u!114 &360465444557545412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c36db7f657db0489ac3025a4a440f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LetterParrents: {fileID: 0}
   MaxCount: 14
 --- !u!1 &1359228845391127572
 GameObject:
