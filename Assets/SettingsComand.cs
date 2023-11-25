@@ -75,7 +75,7 @@ public class SettingsComand : MonoBehaviour
 
         string toSs = $"speech rate is {speed}";
 
-        
+        EasyTTSUtil.DefaultPitch = speed;
 
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             EasyTTSUtil.SpeechAdd(toSs, 1, speed, 1);

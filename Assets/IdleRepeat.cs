@@ -53,7 +53,7 @@ public class IdleRepeat : MonoBehaviour, IBaseToolItem
                 yield return new WaitForSeconds(1);
                 
                 D.GetComponentInChildren<SoundButton>().onClick.Invoke();
-                yield return new WaitForSeconds(4);
+                yield return new WaitForSeconds(6);
                 D.OnClose = null;
                 D.gameObject.ToDestroy();
                 content = Dialog;

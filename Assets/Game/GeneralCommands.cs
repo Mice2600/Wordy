@@ -67,7 +67,11 @@ public class GeneralCommands : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         if (SystemBox.Data.Bool("UsernamePassword")) 
+        {
             SignIn(SystemBox.Data.String("Username"), SystemBox.Data.String("Password"));
+            Debug.Log((SystemBox.Data.String("Username"), SystemBox.Data.String("Password")));
+        
+        }
     }
 
     float SaveTime;

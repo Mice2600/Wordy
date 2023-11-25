@@ -10,6 +10,7 @@ using System.Runtime.InteropServices;
 /// </summary>
 public class EasyTTSUtil
 {
+	static EasyTTSUtil() { DefaultPitch = 0.5f; }
 	#if UNITY_IPHONE && !UNITY_EDITOR
 	[DllImport("__Internal")]
 	private static extern void  EasyTTSUtilSpeech(string text,string local);
@@ -41,46 +42,38 @@ public class EasyTTSUtil
 		#endif
 	}
 
-	/// <summary>
-	/// SpeechAdd is a function where you will add the text you want to make as text to speech.
-	/// This is a kind of reading that needs to be executed all the words that you input before repeating it, in case you double tap
-	/// the button for it.
-	/// <example>Example code
-	/// <code>if (GUI.Button (new Rect (30, 230, 440, 40), "Speak")) {
-	/// EasyTTSUtil.SpeechAdd (stringToEdit);
-	/// }</code>
-	/// </example>
-	/// </summary>
-	/// <param name="text">The text or message that you want to add in order to read on text to speech.</param>
-	public static void SpeechAdd(string text)
+    /// <summary>
+    /// SpeechAdd is a function where you will add the text you want to make as text to speech.
+    /// This is a kind of reading that needs to be executed all the words that you input before repeating it, in case you double tap
+    /// the button for it.
+    /// <example>Example code
+    /// <code>if (GUI.Button (new Rect (30, 230, 440, 40), "Speak")) {
+    /// EasyTTSUtil.SpeechAdd (stringToEdit);
+    /// }</code>
+    /// </example>
+    /// </summary>
+    /// <param name="text">The text or message that you want to add in order to read on text to speech.</param>
+    public static float DefaultPitch = 0.5f;
+    public static void SpeechAdd(string text)
 	{
-		if (string.IsNullOrEmpty (text)) {
-			return;
-		}
-		#if UNITY_ANDROID && !UNITY_EDITOR
-		AndroidJavaClass cls_jni = new AndroidJavaClass("com.frecre.plugin.EasyTTSUtil");
-		AndroidJavaClass cls_UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-		AndroidJavaObject obj_Activity = cls_UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-		cls_jni.CallStatic("speechAdd",obj_Activity,text);
-		#elif UNITY_IPHONE && !UNITY_EDITOR
-		EasyTTSUtilSpeech(text,localSetting);
-		#endif
-	}
-	/// <summary>
-	/// SpeechAdd is a function where you will add the text you want to make as text to speech.
-	/// This is a kind of reading that needs to be executed all the words that you input before repeating it, in case you double tap
-	/// the button for it.
-	/// <example>Example code
-	/// <code>if (GUI.Button (new Rect (30, 230, 440, 40), "Speak")) {
-	/// EasyTTSUtil.SpeechAdd (stringToEdit);
-	/// }</code>
-	/// </example>
-	/// </summary>
-	/// <param name="text">The text or message that you want to add in order to read on text to speech.</param>
-	/// <param name="volume">speech volume 0~1(1 is normal) if 0,it will be used before setting</param>
-	/// <param name="rate">speech rate 0~1(0.5 is normal) if 0,it will be used before setting</param>
-	/// <param name="pitch">speech pitch 0.5~2(1 is normal) if 0,it be used before setting</param>
-	public static void SpeechAdd(string text,float volume,float rate,float pitch)
+		SpeechAdd(text, 1, DefaultPitch, 1);
+    }
+    /// <summary>
+    /// SpeechAdd is a function where you will add the text you want to make as text to speech.
+    /// This is a kind of reading that needs to be executed all the words that you input before repeating it, in case you double tap
+    /// the button for it.
+    /// <example>Example code
+    /// <code>if (GUI.Button (new Rect (30, 230, 440, 40), "Speak")) {
+    /// EasyTTSUtil.SpeechAdd (stringToEdit);
+    /// }</code>
+    /// </example>
+    /// </summary>
+    /// <param name="text">The text or message that you want to add in order to read on text to speech.</param>
+    /// <param name="volume">speech volume 0~1(1 is normal) if 0,it will be used before setting</param>
+    /// <param name="rate">speech rate 0~1(0.5 is normal) if 0,it will be used before setting</param>
+    /// <param name="pitch">speech pitch 0.5~2(1 is normal) if 0,it be used before setting</param>
+
+    public static void SpeechAdd(string text,float volume,float rate,float pitch)
 	{
 		if (string.IsNullOrEmpty (text)) {
 			return;
