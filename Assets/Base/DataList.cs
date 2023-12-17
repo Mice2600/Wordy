@@ -28,6 +28,7 @@ namespace Base
         public Content GetContent(int Index);
         public Content GetContent(string Index);
         public void SetContent(int Index, Content content);
+        public int GetCount();
         public void FindContentsFromString(string ToDiagnost, System.Action<Content> OnFound);
     }
     public abstract class DataList<T> : List<T>, IDataListComands where T : Content
@@ -92,6 +93,7 @@ namespace Base
 
         public void Remove(Content Content)  => base.Remove(Content as T);
         public int IndexOf(Content Content) => base.IndexOf(Content as T);
+        public int GetCount() => base.Count;
         public bool Contains(Content Content) 
         {
             if(Content is not T) return base.Contains(tryCreat(Content));

@@ -78,7 +78,7 @@ public class SettingsComand : MonoBehaviour
         EasyTTSUtil.DefaultPitch = speed;
 
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            EasyTTSUtil.SpeechAdd(toSs, 1, speed, 1);
+            EasyTTSUtil.SpeechAdd(toSs);
         else Debug.Log(toSs + " Speeking");
     }
 }

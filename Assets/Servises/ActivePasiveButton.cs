@@ -31,7 +31,5 @@ public class ActivePasiveButton : MonoBehaviour
     public void OnButton() 
     {
         (contentObject.Content as IPersanalData).Active = !(contentObject.Content as IPersanalData).Active;
-        if((contentObject.Content as IPersanalData).Active) TagSystem.AddContent(TagSystem.ActiveID, contentObject.Content.EnglishSource);
-        else TagSystem.RemoveContent(TagSystem.ActiveID, contentObject.Content.EnglishSource);
     }
 }

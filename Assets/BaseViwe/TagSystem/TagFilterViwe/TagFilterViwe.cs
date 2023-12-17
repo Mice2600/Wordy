@@ -21,7 +21,6 @@ public class TagFilterViwe : MonoBehaviour
         toggle.DestroyAll(true);
         AllTages.ForEach((a) =>
         {
-            Debug.Log("ss");
             TogelContent Toggel = Instantiate(TagButtonPrefab, ConentParrent);
             Toggel.isOn = BaseListWithFillter.TagFillterValues[a];
             Toggel.GetComponentInChildren<TextMeshProUGUI>().text = a + " ";// +  TagSystem.GetAllContentsFromTag(a).Count;

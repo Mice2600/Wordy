@@ -44,19 +44,31 @@ public static class TagSystem
         for (int i = 0; i < Tags.Count; i++) TagNames.AddIf(Tags[i].ID, Tags[i].Contains(contentID));
         return TagNames;
     }
-    public static TList<Content> GetAllContentsFromTag(string TagID) 
+    public static TList<string> GetAllContentsFromTag(string TagID) 
     {
-        TList<Content> contents = new TList<Content>();
-        Tag NTag = GetTag(TagID);
-        IDataListComands.DataLists.ForEach(
-            (Lisss) =>
-            {
-                for (int i = 0; i < NTag.Count; i++)
-                    if (Lisss.Contains(NTag[i])) 
-                        contents.Add(Lisss.GetContent(NTag[i]));
-            }
-        );
-        return contents;
+        if (TagID == ActiveID) 
+        {
+            Debug.Log("aaa");
+            TList<string> contents = new TList<string>();
+            IDataListComands.DataLists.ForEach(
+                (Lisss) =>
+                {
+                    int Count = Lisss.GetCount();
+                    for (int i = 0; i < Count; i++)
+                    {
+                        Content content = Lisss.GetContent(i);
+                        if ((content is IPersanalData))
+                            if ((Lisss.GetContent(i) as IPersanalData).Active)
+                                contents.Add(content.EnglishSource);
+                    }
+                }
+            );
+            return contents;
+        }
+
+        return GetTag(TagID).Contents;
+        /*
+        */
     }
     public static bool ContainsTag(string ID) => GetTag(ID) != null;
     public static bool CreatTag(string NewID) 

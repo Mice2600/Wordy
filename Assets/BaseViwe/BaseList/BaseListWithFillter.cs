@@ -24,12 +24,6 @@ namespace Servises.BaseList
         #region FilterViwe
         private protected override void Start()
         {
-            Filtered = new List<Content>();
-            TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
-                ForEach((id) => {
-                    List<Content> BlongsContents = TagSystem.GetAllContentsFromTag(id);
-                    List<Content> CorrentContents = AllContents;
-                    Filtered.AddRange(CorrentContents.Where(er => BlongsContents.Contains(er)));});
             base.Start();
         }
 
@@ -48,7 +42,7 @@ namespace Servises.BaseList
             }
         }
         private static Dictionary<string, bool> _TagFillterValues;
-        public void OnFilter() => Start();
+        public void OnFilter() => Refresh();
         #endregion
 
         public abstract List<Content> AllContents { get; }
@@ -58,7 +52,10 @@ namespace Servises.BaseList
             {
                 if (SerchedContents == null) 
                 {
-                    if(Filtered.Count == 0) return AllContents;
+                    if (Filtered.Count == 0) 
+                    {
+                        return AllContents; 
+                    }
                     return Filtered; 
                 }
                 return SerchedContents;
@@ -70,27 +67,24 @@ namespace Servises.BaseList
         {
             if (!searchViwe.IsSearching) SerchedContents = null;
             else if (SerchedContents.Count == 0) SerchedContents = Servises.Search.SearchAll<Content>(AllContents, searchViwe.SearchingString);
-
-            Filtered = new List<Content>();
-            TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
-                ForEach((id) => {
-                    List<Content> BlongsContents = TagSystem.GetAllContentsFromTag(id);
-                    List<Content> CorrentContents = AllContents;
-                    Filtered.AddRange(CorrentContents.Where(er => BlongsContents.Contains(er)));
-                });
-            base.Refresh();
+            Refresh();
         }
         public override void Refresh() 
         {
-            if (!searchViwe.IsSearching) SerchedContents = null; 
+            if (!searchViwe.IsSearching) 
+            {
+
+                SerchedContents = null;
+
+                Filtered = new List<Content>();
+                TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
+                    ForEach((id) => {
+                        List<string> BlongsContents = TagSystem.GetAllContentsFromTag(id);
+                        List<Content> CorrentContents = AllContents;
+                        Filtered.AddRange(CorrentContents.Where(er => BlongsContents.Contains(er.EnglishSource)));
+                    });
+            }
             
-            Filtered = new List<Content>();
-            TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
-                ForEach((id) => {
-                    List<Content> BlongsContents = TagSystem.GetAllContentsFromTag(id);
-                    List<Content> CorrentContents = AllContents;
-                    Filtered.AddRange(CorrentContents.Where(er => BlongsContents.Contains(er)));
-                });
             base.Refresh();
         }
 
