@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using SystemBox;
-using Sirenix.OdinInspector;
+//using Sirenix.OdinInspector;
 using UnityEngine;
 using System.Reflection;
 
-public abstract class TabelScriptableObject : SerializedScriptableObject
+public abstract class TabelScriptableObject : ScriptableObject
 {
-    public abstract string Name { get; }
+    //public abstract string Name { get; }
 }
 public abstract class TabelRessursSettings<T> : ScriptableObject where T : TabelScriptableObject
 {
@@ -24,7 +24,7 @@ public abstract class TabelRessursSettings<T> : ScriptableObject where T : Tabel
                 TList<string> vs = new TList<string>(_ItemsDictionary.Keys);
                 for (int i = 0; i < vs.Count; i++)
                 {
-                    if (_ItemsDictionary[vs[i]].Name != vs[i])
+                    if (_ItemsDictionary[vs[i]].name != vs[i])
                     {
                         _ItemsDictionary = null;
                         break;
@@ -35,7 +35,7 @@ public abstract class TabelRessursSettings<T> : ScriptableObject where T : Tabel
             {
                 _ItemsDictionary = new Dictionary<string, T>();
                 for (int i = 0; i < Items.Count; i++)
-                    _ItemsDictionary.Add(Items[i].Name, Items[i]);
+                    _ItemsDictionary.Add(Items[i].name, Items[i]);
             }
             return _ItemsDictionary;
         }
@@ -139,12 +139,8 @@ public abstract class TabelRessursSettings<T> : ScriptableObject where T : Tabel
 
 
     [SerializeField]
-    [ListDrawerSettings(AddCopiesLastElement = false, DraggableItems = false, HideAddButton = true, HideRemoveButton = true)]
-    [ReadOnly]
+    //[ListDrawerSettings(AddCopiesLastElement = false, DraggableItems = false, HideAddButton = true, HideRemoveButton = true)]
+    //[ReadOnly]
     private List<T> SavedItems;
     public List<T> Get_SavedItems { get => (SavedItems ??= new List<T>()); set => SavedItems = value; }
-
-
-    
-
 }

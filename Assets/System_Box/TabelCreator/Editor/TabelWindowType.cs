@@ -52,7 +52,7 @@ public abstract class TabelWindowType<T> : OdinMenuEditorWindow  where T : Tabel
         OdinMenuTree tree = new OdinMenuTree();
         List<T> _Itemss = TabelRessursSettings<T>.Items;
         for (int i = 0; i < _Itemss.Count; i++)//
-            tree.Add(GetCostumeItemName(_Itemss[i].Name), _Itemss[i], EditorIcons.Image);
+            tree.Add(GetCostumeItemName(_Itemss[i].name), _Itemss[i], EditorIcons.Image);
         return tree;
     }
     protected override void DrawMenu()
