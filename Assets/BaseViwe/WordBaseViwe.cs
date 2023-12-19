@@ -100,25 +100,14 @@ namespace BaseViwe.WordViwe
             }
             else 
             {
-                SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.Wordgs), SearchString, (l) => {
+                SerchedContents = new List<Content>();
+                SerchedContents.AddRange(Servises.Search.SearchAll(new TList<Content>(WordBase.Wordgs), SearchString));
+                SerchedContents.AddRange(Servises.Search.SearchAll(new TList<Content>(WordBase.DefaultBase), SearchString));
+                //Refresh();
 
-                    FromMee = l;
-                    List<Content> N = new List<Content>(FromMee);
-                    N.AddRange(FromDefalt);
-                    SerchedContents = N;
-                    Refresh();
-                })));
-                SearchCoroutines.Add(StartCoroutine(Servises.Search.SearchAllEnumerator(new TList<Content>(WordBase.DefaultBase), SearchString, (l) => {
-                    FromDefalt = l;
-
-                    List<Content> N = new List<Content>(FromMee);
-                    N.AddRange(FromDefalt);
-                    SerchedContents = N;
-                    Refresh();
-                })));
             }
-            
-            return new TList<Content>();
+
+            return SerchedContents;
         }
 
 

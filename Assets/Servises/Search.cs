@@ -18,7 +18,32 @@ namespace Servises
     {
         public static TList<T> SearchAll<T>(TList<T> AllContents, string SearchString) where T : Content
         {
-            return new TList<T>(AllContents.Where(stringToCheck => stringToCheck.EnglishSource.Contains(SearchString, StringComparison.OrdinalIgnoreCase)));
+
+
+            var jobs = AllContents;
+
+
+
+
+            var processedQuery = SearchString.ToUpper();
+
+            
+            var fuzzyScores = new List<(T, int score)>();
+            foreach (var job in jobs)
+            {
+                var titleScore = Fuzz.PartialRatio(processedQuery, job.EnglishSource.ToUpper());
+                fuzzyScores.Add((job, titleScore));
+            }
+
+            // Filter the jobs that have a fuzzy score above a certain threshold
+            var threshold = 60;
+            var filteredJobs = fuzzyScores.Where(x => x.score >= threshold).Select(x => x.Item1);
+
+            // Sort the filtered jobs by their fuzzy score in descending order
+            
+            var sortedJobs = filteredJobs.OrderByDescending(x => fuzzyScores.FirstOrDefault(y => y.Item1 == x).score);
+            //sortedJobs.ToList().Sort();
+            return new TList<T>(sortedJobs);
         }
         public static IEnumerator SearchAllEnumerator<T>(TList<T> AllContents, string SearchString, System.Action<TList<T>> ResaltOne) where T : Content 
         {
