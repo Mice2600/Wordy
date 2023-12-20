@@ -1,0 +1,152 @@
+using Base.Word;
+using Newtonsoft.Json.Linq;
+using Sirenix.OdinInspector;
+using Sirenix.Utilities;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using SystemBox;
+using Traonsletor;
+using UnityEngine;
+using UnityEngine.ProBuilder.Shapes;
+namespace Base.Synonym
+{
+    public class SynonymBase : DataList<Synonym>
+    {
+        static SynonymBase()
+        {
+            //if (Application.isEditor && false)
+            //{
+            //    if (PlayerPrefs.GetInt(ID + " defaul") == 0)
+            //        PlayerPrefs.SetString(ID, ProjectSettings.ProjectSettings.Mine.DefalultSynonym.text);
+            //    PlayerPrefs.SetInt(ID + " defaul", 1);
+            //}
+            //DefaultBase = new List<WordDefoult>(JsonHelper.FromJson<WordDefoult>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text));
+            Synonyms = new SynonymBase();
+        }
+        public Synonym this[Content index]
+        {
+            get
+            {
+                int fIndex = IndexOf(new Synonym(index.EnglishSource, "", null));
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                return this[fIndex];
+            }
+            private set
+            {
+                int fIndex = IndexOf(new Synonym(index.EnglishSource, "", null));
+                if (fIndex < 0) throw Tools.ExceptionThrow(new System.IndexOutOfRangeException(), 2);
+                this[fIndex] = value;
+            }
+        }
+        public static SynonymBase Synonyms { get; set; }
+        public override string DataID => "SynonymBase";
+
+        public static TList<Synonym> SynonymOf(Content Content) => SynonymOf(Content.EnglishSource);
+        public static TList<Synonym> SynonymOf(string Source)
+        {
+            TList<Synonym> dd = Synonyms.FindAll(d => d.attachments.Contains(Source));
+            if (dd == null) return new TList<Synonym>();
+            return dd;
+        }
+
+
+        public static void AddSynonym(Content Source, string Synonyms) => AddSynonym(Source, new TList<string>(Synonyms));
+        public static void AddSynonym(Content Source, TList<string> Synonyms)
+        {
+            for (int i = 0; i < Synonyms.Count; i++) Synonyms[i] = Synonyms[i].ToUpper();
+            Synonym SynonymWord = SynonymBase.Synonyms.Find(d => d.EnglishSource.ToUpper() == Source.EnglishSource.ToUpper());
+
+
+            if (SynonymWord == null) 
+            {
+                SynonymBase.Synonyms.Add(new Synonym(Source.EnglishSource, Source.RussianSource, Synonyms));
+            }
+            else SynonymWord.Attach(Synonyms);
+
+
+            for (int i = 0; i < Synonyms.Count; i++)
+            {
+                Synonym SynonymOne = SynonymBase.Synonyms.Find(d => d.EnglishSource.ToUpper() == Synonyms[i]);
+                if (SynonymOne == null)
+                    SynonymBase.Synonyms.Add(new Synonym(Synonyms[i], "", new TList<string>(Source.EnglishSource)));
+                else SynonymOne.Attach(Source.EnglishSource);    
+            }
+            SynonymBase.Synonyms.Save();
+        }
+
+
+        public static void RemoveSynonym(string Synonym) 
+        { 
+            Synonym = Synonym.ToUpper();
+            Synonym SynonymWord = SynonymBase.Synonyms.Find(d => d.EnglishSource.ToUpper() == Synonym);
+            if (SynonymWord != null) {SynonymBase.Synonyms.Remove(SynonymWord);}
+            Synonyms.ForEach(Ot =>{Ot.attachments.Remove(Synonym);});
+            SynonymBase.Synonyms.Save();
+        }
+
+        public override Synonym tryCreat(string EnglishID) => new Synonym(EnglishID, "", null);
+        public override Synonym tryCreat(Content Id)
+        {
+            if (Id is Synonym) return Id as Synonym;
+            if (Id is Base.Word.Word) 
+            {
+                int fIndex = IndexOf(new Synonym(Id.EnglishSource, "", null));
+                if (fIndex < 0) return new Synonym(Id.EnglishSource, Id.RussianSource, null);
+                return this[fIndex];
+            }
+            else return tryCreat(Id.EnglishSource);
+        }
+
+
+#if UNITY_EDITOR
+
+        //public static void AddAllToDefaultBase()
+        //{
+        //    //ProjectSettings.ProjectSettings.Mine.AddWords(Wordgs);
+        //}
+#endif
+    }
+}
+namespace ProjectSettings
+{
+    public partial class ProjectSettings
+    {
+        //[BoxGroup("Defalult Base/Dialog")]
+        //[HorizontalGroup("DefalultBaseSynonym")]//
+        //public TextAsset DefalultSynonym;
+        //
+#if UNITY_EDITOR
+        //public void AddWords(TList<Word> Words)
+        //{
+        //    TList<WordDefoult> NN = new TList<WordDefoult>();
+        //    Words.ForEach(d => NN.Add(new WordDefoult(d.EnglishSource, d.RussianSource, d.EnglishDiscretion, d.RusianDiscretion)));
+        //    AddWords(NN);
+        //}
+        //public void AddWords(TList<WordDefoult> Words)
+        //{
+        //    string All = "";//
+        //    if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Words.txt"))
+        //        All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Words.txt");
+        //    else Directory.CreateDirectory("Assets/Base/Resources");
+        //    TList<WordDefoult> AllList = JsonHelper.FromJson<WordDefoult>(All);
+        //    TList<WordDefoult> New = new TList<WordDefoult>();
+        //    AllList.ForEach(AddOne);
+        //    Words.ForEach(AddOne);
+
+        //    void AddOne(WordDefoult a)
+        //    {
+        //        if (string.IsNullOrEmpty(a.EnglishSource)) return;
+        //        a.EnglishSource = a.EnglishSource.ToUpper().Replace("!", "").Replace("?", "").Replace(",", "").Replace(".", "");
+        //        New.AddIfDirty(a);
+        //    }
+        //    Debug.Log(New.Count);
+        //    string SD = JsonHelper.ToJson(New.ToArray());
+        //    SD = SD.Replace("{", "\n{");
+        //    SD = SD.Replace("},", "\n},");
+        //    System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Words.txt", SD);
+        //    DefalultWords = UnityEngine.Resources.Load("Default Words", typeof(TextAsset)) as TextAsset;
+        //}
+#endif
+    }
+}

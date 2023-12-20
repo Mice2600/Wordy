@@ -7,6 +7,8 @@ public static class JsonHelper
     {
         if (string.IsNullOrEmpty(json)) return new T[0];
         Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
+        if(wrapper == null)return new T[0];
+        if(wrapper.Items == null)return new T[0];
         return wrapper.Items.ToArray();
     }
     public static List<T> FromJsonList<T>(string json)

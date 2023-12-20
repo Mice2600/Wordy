@@ -12,7 +12,7 @@ using UnityEngine.UI;
 
 namespace WordCreator.WordCretor
 {
-    public class MineWord : MonoBehaviour
+    public class MineWord : MonoBehaviour, IApplyers
     {
         [SerializeField, Required]
         private TMP_InputField English;
@@ -36,7 +36,7 @@ namespace WordCreator.WordCretor
             TranslatorsParent.ClearChilds();
             Translators = new List<TMP_InputField>();
             English.text = contentObject.Content.EnglishSource;
-            English.onValueChanged.AddListener((T) => contentObject.Content.EnglishSource = T);
+            English.onValueChanged.AddListener((T) => contentObject.Content.EnglishSource = T.ToUpper());
             /*if ((GetComponentInParent<ContentObject>().Content as IMultiTranslation).TranslationCount == 0) 
             {
                 (GetComponentInParent<ContentObject>().Content as IMultiTranslation).AddTranslation("");
@@ -51,7 +51,6 @@ namespace WordCreator.WordCretor
                 {
                     GameObject K = Instantiate(PerfabField, TranslatorsParent);
                     K.GetComponentInChildren<TMP_InputField>().text = Translation;
-                    int II = Translators.Count;
                     AddToTranslationList(K.GetComponentInChildren<TMP_InputField>(), Translation);
                     K.GetComponentInChildren<Button>().onClick.AddListener(() => OnRemoveButton(K));
                 }
@@ -75,7 +74,7 @@ namespace WordCreator.WordCretor
         public void OnChange(TMP_InputField Transttion) 
         {
             if (contentObject.Content.RussianSource == "") 
-                contentObject.Content.RussianSource = Transttion.text;
+                contentObject.Content.RussianSource = Transttion.text.ToUpper();
             (contentObject.Content as IMultiTranslation).ChangeTranslationAt(Translators.IndexOf(Transttion), Transttion.text);
         }
         public void OnTranllateButton(string TronslateType)
@@ -97,5 +96,12 @@ namespace WordCreator.WordCretor
             Item.onValueChanged.AddListener((T) => OnChange(DD));
             Translators.Add(Item);
         }
+
+        public void TryApply(Content content) 
+        {
+            content.EnglishSource = English.text;
+            content.RussianSource = MineTranslators.text;
+        }
+
     }
 }

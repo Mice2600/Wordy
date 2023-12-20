@@ -1,4 +1,5 @@
 using Base;
+using Base.Synonym;
 using Base.Word;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ public class SynonymWordViwe : MonoBehaviour
     void Start()
     {
         string Contents = "";
-        SynonymSystem.SynonymOf(GetComponentInParent<ContentObject>().Content).ForEach(x => Contents += x + "   ");
+        SynonymBase.SynonymOf(GetComponentInParent<ContentObject>().Content).ForEach(x => Contents += x + "   ");
         if (string.IsNullOrEmpty(Contents) || string.IsNullOrWhiteSpace(Contents))
         {
             gameObject.SetActive(false);

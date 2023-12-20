@@ -10,6 +10,7 @@ using Traonsletor;
 using BaseViwe.WordViwe;
 using SystemBox.Engine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 namespace ProjectSettings 
 {
@@ -49,8 +50,10 @@ namespace WordCreator.WordCretor
         }
         public void TryAplay()
         {
-            OrginalContent.EnglishSource = this.Content.EnglishSource;
-            OrginalContent.RussianSource = this.Content.RussianSource;
+
+            
+            GetComponentsInChildren<IApplyers>().ToList().ForEach(x => x.TryApply(OrginalContent));
+
             (OrginalContent as IDiscreption).EnglishDiscretion = (this.Content as IDiscreption).EnglishDiscretion;
             (OrginalContent as IDiscreption).RusianDiscretion = (this.Content as IDiscreption).RusianDiscretion;
             (OrginalContent as IPersanalData).ScoreConculeated = (this.Content as IPersanalData).ScoreConculeated;

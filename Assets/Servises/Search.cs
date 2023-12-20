@@ -355,53 +355,6 @@ namespace Servises
             }
             OnFinsh.Invoke(Resolt);
         }
-        
-        
-        
-        
-        
-        public static void TryFuzzy(string query = "acquire")
-        {
-
-            var jobs = new List<WordDefoult>(WordBase.DefaultBase);
-            
-
-            
-
-            var processedQuery = query;
-
-            // Iterate over the job data and calculate the fuzzy score
-            var fuzzyScores = new List<(WordDefoult, int score)>();
-            foreach (var job in jobs)
-            {
-                var titleScore = Fuzz.PartialRatio(processedQuery, job.EnglishSource);
-                fuzzyScores.Add((job, titleScore));
-            }
-
-            // Filter the jobs that have a fuzzy score above a certain threshold
-            var threshold = 60;
-            var filteredJobs = fuzzyScores.Where(x => x.score >= threshold).Select(x => x.Item1);
-
-            // Sort the filtered jobs by their fuzzy score in descending order
-            var sortedJobs = filteredJobs.OrderByDescending(x => fuzzyScores.FirstOrDefault(y => y.Item1 == x).score);
-
-            // Return the top N jobs as search results
-            var topN = 100;
-            var searchResults = sortedJobs.Take(topN);
-
-            Debug.Log(searchResults.Count());
-            foreach (var job in searchResults) 
-            {
-                Debug.Log(job.EnglishSource);
-            }
-
-
-
-
-
-
-        }
-
     }
 }
 
