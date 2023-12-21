@@ -20,12 +20,11 @@ namespace ProjectSettings
         public QuestWatermelon watermelon;
     }
 }
-namespace Study.BuildTheBox
+
+
+namespace Study.Watermelon
 {
-    namespace Study.Watermelon
+    public class QuestWatermelon : Quest
     {
-        public class QuestWatermelon : Quest
-        {
-        }
     }
 }

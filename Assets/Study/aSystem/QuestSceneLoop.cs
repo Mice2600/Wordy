@@ -1,4 +1,6 @@
+using Base.Antonym;
 using Base.Dialog;
+using Base.Synonym;
 using Base.Word;
 using Study.aSystem;
 using System.Collections;
@@ -47,6 +49,14 @@ public class QuestSceneLoop : MonoBehaviour
             else if (QuestPrefab is IQuestStarterWithIrregularList)
             {
                 D = (QuestPrefab as IQuestStarterWithIrregularList).CreatQuest(IrregularBase.Irregulars.GetContnetList((QuestPrefab as IQuestStarterWithIrregularList).MinimalCount));
+            }
+            else if (QuestPrefab is IQuestStarterWithSynonymList)
+            {
+                D = (QuestPrefab as IQuestStarterWithSynonymList).CreatQuest(SynonymBase.Synonyms.GetContnetList((QuestPrefab as IQuestStarterWithSynonymList).MinimalCount));
+            }
+            else if (QuestPrefab is IQuestStarterWithAntonymList)
+            {
+                D = (QuestPrefab as IQuestStarterWithAntonymList).CreatQuest(AntonymBase.Antonyms.GetContnetList((QuestPrefab as IQuestStarterWithAntonymList).MinimalCount));
             }
             else throw new System.Exception("Countinue the List");
             D.GetComponent<Quest>().OnFineshed += OnFinsh;

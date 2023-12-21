@@ -1,4 +1,6 @@
+using Base.Antonym;
 using Base.Dialog;
+using Base.Synonym;
 using Base.Word;
 using Newtonsoft.Json.Linq;
 using Sirenix.OdinInspector;
@@ -82,6 +84,10 @@ public class QuestRandom : MonoBehaviour
                 return (QuestPrefab as IQuestStarterWithDialogList).CreatQuest(DialogBase.Dialogs.GetContnetList((QuestPrefab as IQuestStarterWithDialogList).MinimalCount));
             else if (QuestPrefab is IQuestStarterWithIrregularList)
                 return (QuestPrefab as IQuestStarterWithIrregularList).CreatQuest(IrregularBase.Irregulars.GetContnetList((QuestPrefab as IQuestStarterWithIrregularList).MinimalCount));
+            else if (QuestPrefab is IQuestStarterWithSynonymList)
+                return (QuestPrefab as IQuestStarterWithSynonymList).CreatQuest(SynonymBase.Synonyms.GetContnetList((QuestPrefab as IQuestStarterWithSynonymList).MinimalCount));
+            else if (QuestPrefab is IQuestStarterWithAntonymList)
+                return (QuestPrefab as IQuestStarterWithAntonymList).CreatQuest(AntonymBase.Antonyms.GetContnetList((QuestPrefab as IQuestStarterWithAntonymList).MinimalCount));
             else throw new System.Exception("Countinue the List");
         }
     }

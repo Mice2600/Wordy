@@ -1,36 +1,59 @@
 using Base.Word;
+using Sirenix.OdinInspector;
 using Study.aSystem;
 using Study.Crossword;
 using System.Collections;
 using System.Collections.Generic;
+using SystemBox;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
-public class WinViwe : MonoBehaviour
+namespace Study.aSystem 
 {
-    [System.NonSerialized]
-    public List<Content> contents;
-    private Quest Quest => _Quest ??= FindObjectOfType<Quest>();
-    private Quest _Quest;
-    public GameObject SingelScorePrefab;
-    void Start()
+    public class WinViwe : MonoBehaviour
     {
 
-        Quest d = FindObjectOfType<Quest>();
-        contents.ForEach(ss => d.OnWordWin?.Invoke(ss as Word));
-        d.OnGameWin?.Invoke();
-
-        ContentGropper LLD = GetComponentInChildren<ContentGropper>();
-        contents.ForEach(a =>
+        public static void Creat(TList<Content> contents) 
         {
-            GameObject G = Instantiate(SingelScorePrefab);
-            G.GetComponent<ScoreChanginInfo>().Set(a, (Quest.QuestData as IWordScorer).AddScoreWord);
-            LLD.AddNewContent(G.transform);
-        });
-    }
-    public void DestroyUrself()
-    {
-        Destroy(gameObject);
-        Quest.OnFineshed.Invoke();
+            Instantiate(ProjectSettings.ProjectSettings.Mine.StandartWinUI).
+                GetComponent<WinViwe>().contents = contents;
+        }
+
+        [System.NonSerialized]
+        public List<Content> contents;
+        private Quest Quest => _Quest ??= FindObjectOfType<Quest>();
+        private Quest _Quest;
+        public GameObject SingelScorePrefab;
+        void Start()
+        {
+
+            Quest d = FindObjectOfType<Quest>();
+            contents.ForEach(ss => { if (ss is Word) d.OnWordWin?.Invoke(ss as Word); });
+            d.OnGameWin?.Invoke();
+            ContentGropper LLD = GetComponentInChildren<ContentGropper>();
+            contents.ForEach(a =>
+            {
+                GameObject G = Instantiate(SingelScorePrefab);
+                G.GetComponent<ScoreChanginInfo>().Set(a, (Quest.QuestData as IWordScorer).AddScoreWord);
+                LLD.AddNewContent(G.transform);
+            });
+        }
+        public void DestroyUrself()
+        {
+            Destroy(gameObject);
+            Quest.OnFineshed.Invoke();
+        }
+
     }
 
 }
+namespace ProjectSettings 
+{
+    public partial class ProjectSettings 
+    {
+        [Required]
+        public GameObject StandartWinUI;
+
+    }
+}
+

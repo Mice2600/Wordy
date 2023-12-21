@@ -1,15 +1,13 @@
 using Base.Word;
 using Base;
 using Sirenix.OdinInspector;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using SystemBox;
-using TMPro;
-using Traonsletor;
 using UnityEngine;
 using UnityEngine.UI;
 using Base.Synonym;
+
 namespace WordCreator.WordCretor
 {
     public class SynonimusPart : MonoBehaviour, IApplyers
@@ -21,8 +19,14 @@ namespace WordCreator.WordCretor
         private GameObject PerfabField;
         ContentObject contentObject => _contentObject ??= GetComponentInParent<ContentObject>();
         ContentObject _contentObject;
-        [Button]
-        public void Start()
+        public void Start() 
+        {
+            MineWord dd = transform.root.GetComponentInChildren<MineWord>();
+            if(dd != null) dd.OnEnglishValueChanged += (a) => ManualUpdate();
+            ManualUpdate();
+        }
+        
+        public void ManualUpdate()
         {
             TranslatorsParent.ClearChilds();
             
@@ -44,7 +48,11 @@ namespace WordCreator.WordCretor
         public void TryApply(Content content) 
         {
             List<string> strings = new List<string>();
-            GetComponentsInChildren<SynonymField>().ToList().ForEach(x => {strings.Add(x.Text);});
+            GetComponentsInChildren<SynonymField>().ToList().ForEach(x => {strings.Add(x.Text.ToUpper());});
+            if (WordBase.Wordgs.Contains(content)) 
+            {
+                SynonymBase.RemoveSynonym(content.EnglishSource);
+            }
             SynonymBase.AddSynonym(content, strings);
         }
     }

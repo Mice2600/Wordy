@@ -9,6 +9,8 @@ using System.Linq;
 using SystemBox;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
+
 namespace Study.BuildTheBox
 {
     public class BuildTheBox : MonoBehaviour
@@ -191,7 +193,7 @@ namespace Study.BuildTheBox
                 IEnumerator OnWin()
                 {
                     yield return new WaitForSeconds(1f);
-                    Instantiate(WinViwe).GetComponent<WinViwe>().contents = Generator.ChosenContents;
+                    aSystem.WinViwe.Creat(Generator.ChosenContents);
                 }
             }
         }

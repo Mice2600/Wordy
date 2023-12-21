@@ -1,5 +1,6 @@
 using Base.Word;
 using Sirenix.OdinInspector;
+using Study.BuildTheBox;
 using Study.TwoWordSystem;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace Study.Crossword
 
             TList<Content> contents = new List<Content>();
             Builder.ToBuild.AllContentIDes.ForEach(a => { contents.Add(WordBase.Wordgs.GetContent(a) as Word); });
-            Instantiate(WinPrefab).GetComponent<WinViwe>().contents = contents;
+            aSystem.WinViwe.Creat(Generator.ChosenContents);
 
         }
 

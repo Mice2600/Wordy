@@ -1,4 +1,6 @@
+using Base.Antonym;
 using Base.Dialog;
+using Base.Synonym;
 using Base.Word;
 using Servises;
 using Study.aSystem;
@@ -23,14 +25,15 @@ public class QuestStartSceneButton : SceneLodeButton
                 gameObjects.Add(All[Kays[i]] as StudyContentData);
         StudyContentData QuestPrefab = gameObjects.Find(x => x.SceneName == SceneName);
 
-
-
         if (QuestPrefab is IQuestStarterWithWord && WordBase.Wordgs.Count < 2) return;
         else if (QuestPrefab is IQuestStarterWithDialog && DialogBase.Dialogs.Count < 2) return;
         else if (QuestPrefab is IQuestStarterWithIrregular && IrregularBase.Irregulars.Count < 2) return;
         else if (QuestPrefab is IQuestStarterWithWordList && WordBase.Wordgs.Count < (QuestPrefab as IQuestStarterWithWordList).MinimalCount) return;
         else if (QuestPrefab is IQuestStarterWithDialogList && DialogBase.Dialogs.Count < (QuestPrefab as IQuestStarterWithDialogList).MinimalCount) return;
         else if (QuestPrefab is IQuestStarterWithIrregularList && IrregularBase.Irregulars.Count < (QuestPrefab as IQuestStarterWithIrregularList).MinimalCount) return;
+        else if (QuestPrefab is IQuestStarterWithIrregularList && IrregularBase.Irregulars.Count < (QuestPrefab as IQuestStarterWithIrregularList).MinimalCount) return;
+        else if (QuestPrefab is IQuestStarterWithSynonymList && SynonymBase.Synonyms.UsebleCount < (QuestPrefab as IQuestStarterWithSynonymList).MinimalCount) return;
+        else if (QuestPrefab is IQuestStarterWithAntonymList && AntonymBase.Antonyms.UsebleCount < (QuestPrefab as IQuestStarterWithAntonymList).MinimalCount) return;
         
         base.OpenScene();
 

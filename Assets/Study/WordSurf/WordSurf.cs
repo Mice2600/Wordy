@@ -40,8 +40,8 @@ namespace Study.WordSurf
                     {
                         if (WordsSS.IsEnpty())
                         {
-
-                            Instantiate(Win).GetComponent<WinViwe>().contents = Contents;
+                            Study.aSystem.WinViwe.Creat(Contents);
+                            
 
                             break;
                         }

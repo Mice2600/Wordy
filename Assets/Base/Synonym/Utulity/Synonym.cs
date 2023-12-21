@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Base.Synonym
 {
-    public partial class Synonym : Content, ISpeeker, IMultiTranslation // Utulity
+    [System.Serializable]
+    public partial class Synonym : Content, ISpeeker // Utulity
     {
         public Synonym(string EnglishSource, string RussianSource, List<string> attachments) : base(EnglishSource, RussianSource)
         {
@@ -16,17 +17,32 @@ namespace Base.Synonym
         {
             Words.ForEach(s => Attach(s));
         }
+        
         public void Attach(string Word) 
         {
+            Word = Word.ToUpper();
             if (!this.attachments.Contains(Word)) 
             {
                 this.attachments.Add(Word);
             }
                 
         }
+        public void DetachAll() 
+        {
+            this.attachments = new List<string>();
+        }
+        public void Detach(List<string> Words)
+        {
+            Words.ForEach(s => Detach(s));
+        }
+        public void Detach(string Words) 
+        {
+            Words = Words.ToUpper();
+            this.attachments.Remove(Words);
+        }
 
         string ISpeeker.SpeekText => EnglishSource;
-        public override IDataListComands BaseCommander => WordBase.Wordgs;
+        public override IDataListComands BaseCommander => SynonymBase.Synonyms;
         public override GameObject DiscretioVewe => null;
         public override GameObject ContentObject => null;
         public override bool Equals(object obj)
@@ -36,6 +52,7 @@ namespace Base.Synonym
             {
                 return true;
             }
+
             return false;
         }
         public override int GetHashCode() => base.GetHashCode();

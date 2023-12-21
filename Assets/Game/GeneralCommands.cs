@@ -16,6 +16,8 @@ using System.Threading.Tasks;
 using EnhancedScrollerDemos.FlickSnap;
 using Sirenix.OdinInspector;
 using SystemBox;
+using Base.Synonym;
+using Base.Antonym;
 
 public class GeneralCommands : MonoBehaviour
 {
@@ -87,7 +89,9 @@ public class GeneralCommands : MonoBehaviour
     }
     public async Task Save() 
     {
-        List<string> Keys = new List<string>() { WordBase.Wordgs.DataID, DialogBase.Dialogs.DataID, IrregularBase.Irregulars.DataID };
+        List<string> Keys = new List<string>() { WordBase.Wordgs.DataID, DialogBase.Dialogs.DataID, IrregularBase.Irregulars.DataID,
+            SynonymBase.Synonyms.DataID, AntonymBase.Antonyms.DataID
+        };
 
         List<string> Values = new List<string>();
         for (int i = 0; i < Keys.Count; i++) Values.Add(PlayerPrefs.GetString(Keys[i]));
@@ -114,7 +118,9 @@ public class GeneralCommands : MonoBehaviour
     }
     public async Task Lode() 
     {
-        List<string> Keys = new List<string>() { WordBase.Wordgs.DataID, DialogBase.Dialogs.DataID, IrregularBase.Irregulars.DataID };
+        List<string> Keys = new List<string>() { WordBase.Wordgs.DataID, DialogBase.Dialogs.DataID, IrregularBase.Irregulars.DataID,
+            SynonymBase.Synonyms.DataID, AntonymBase.Antonyms.DataID
+        };
         for (int i = 0; i < Keys.Count; i++)
         {
             try

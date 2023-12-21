@@ -12,15 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9194808d37224f48b187809a17a2317, type: 3}
   m_Name: New Project Settings
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
   DefalultDialogs: {fileID: 4900000, guid: 24a41c6d78d9f37449e33b165492a6b9, type: 3}
   DiscretionDialog: {fileID: 5128650482689109638, guid: a6eb0c2e56148e049a068416e72bdbc1, type: 3}
   ContentObjectDialog: {fileID: 983941666089937557, guid: 80e28cb604d4a554981e5c271d25900e, type: 3}
@@ -38,8 +29,6 @@ MonoBehaviour:
   DefalultWords: {fileID: 4900000, guid: b8d1528e2cd59734290ca53d7cac67dd, type: 3}
   DiscretionCorrectContentViwe: {fileID: 8801719674038865055, guid: 21465e786a26b9d4f94aa2923850ac2b, type: 3}
   DiscretionIncorrectContentViwe: {fileID: 8987251105467294853, guid: e6182e112037a0b408439aa9a3db011a, type: 3}
-  DefaultOppositeWords: {fileID: 4900000, guid: 9c18300e0ce21eb45967df550309273a, type: 3}
-  DefaultSynonymWords: {fileID: 4900000, guid: 09c8ddbf76631f944bdf3478d8baff45, type: 3}
   TagContentListViwe: {fileID: 2726195047587263085, guid: 6f89b5a20b2290846a7aaf149b8a222d, type: 3}
   TagCreatorViwe: {fileID: 6608090224564072100, guid: 9957a4fa4ce74de47aa835febb52c857, type: 3}
   TagDeletViwe: {fileID: 2907046969659145311, guid: ed99d274d69b6804bb627eda7d02f062, type: 3}
@@ -75,6 +64,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
+  StandartWinUI: {fileID: 4791788466054964576, guid: 95d382ca6e181904e9aa0333d0712383, type: 3}
   BuildDialog:
     Prefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
     SceneName: BuildDialog
@@ -87,6 +77,21 @@ MonoBehaviour:
     SceneName: BuildTheBox
     <AddScoreWord>k__BackingField: 4
     <RemoveScoreWord>k__BackingField: 10
+  antonymMatch:
+    Prefab: {fileID: 638417258625810546, guid: a55bbeb277aa0594d9cce812c1803f86, type: 3}
+    SceneName: AntonymMatch
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  synonymMatch:
+    Prefab: {fileID: 7739608610790372431, guid: 1ab6a7f405bbc424cade33c190b50f5d, type: 3}
+    SceneName: SynonymMatch
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
+  questTwoWord:
+    Prefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
+    SceneName: TwoWordSystem
+    <AddScoreWord>k__BackingField: 5
+    <RemoveScoreWord>k__BackingField: 5
   questCoupleParticles:
     Prefab: {fileID: 7780279792343907558, guid: 7f717f0cecf7d924cb2812fbe6f89793, type: 3}
     SceneName: CoupleParticles
@@ -140,15 +145,15 @@ MonoBehaviour:
     SceneName: SpellingExercise
     <AddScoreWord>k__BackingField: 8
     <RemoveScoreWord>k__BackingField: 10
-  questTwoWord:
-    Prefab: {fileID: 5068626531444593966, guid: ea0fc20202620bb4c981c29900e6c311, type: 3}
-    SceneName: TwoWordSystem
-    <AddScoreWord>k__BackingField: 5
-    <RemoveScoreWord>k__BackingField: 5
   questTypeShift:
     Prefab: {fileID: 1896414613481627126, guid: b365709140cf09840a5101b719a19bdf, type: 3}
     SceneName: TypeShift
     <AddScoreWord>k__BackingField: 4
+    <RemoveScoreWord>k__BackingField: 5
+  watermelon:
+    Prefab: {fileID: 5705946344668705077, guid: 0fba6196a45b7554093a501a4b911c75, type: 3}
+    SceneName: Watermelon
+    <AddScoreWord>k__BackingField: 5
     <RemoveScoreWord>k__BackingField: 5
   questWordSurf:
     Prefab: {fileID: 6565041498530126776, guid: 011e63baaac48f149a81d79bae33f701, type: 3}

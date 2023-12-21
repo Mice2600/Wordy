@@ -14,7 +14,7 @@ public class EditButton : Button
         onClick.AddListener(()=>{
 
             Content d = transform.GetComponentInParent<ContentObject>().Content;
-            if (d == null) return;
+            if (d == null) return   ;
             if (d is Word) WordCreator.WordCretor.WordChanger.StartChanging(d as Word);
             if (d is Dialog) DialogChanger.StartChanging(d as Dialog);
         });

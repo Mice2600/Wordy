@@ -48,7 +48,6 @@ public static class TagSystem
     {
         if (TagID == ActiveID) 
         {
-            Debug.Log("aaa");
             TList<string> contents = new TList<string>();
             IDataListComands.DataLists.ForEach(
                 (Lisss) =>

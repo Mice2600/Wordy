@@ -20,11 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/FindOnes/FindOns/FindOns.unity
     guid: 4f5c473586be971479638b91cbcd6beb
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Study/aSystem/StadyScene.unity
-    guid: 83719a376f2af974f954773bdaa71b80
-  - enabled: 1
-    path: Assets/Study/TwoWordSystem/TwoWordSystem.unity
+    path: Assets/Study/CopleFinder/TwoWordSystem/TwoWordSystem.unity
     guid: b830123fad04d154d912856e3d54aa33
   - enabled: 1
     path: Assets/Study/FindIrregular/WriteIrregular/WriteIrregular.unity
@@ -71,4 +71,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Study/Watermelon/Watermelon.unity
     guid: 7b3ab51161859a64e95ffd0f48441eb9
+  - enabled: 1
+    path: Assets/Study/CopleFinder/SynonymMatch/SynonymMatch.unity
+    guid: e4e3b28a6b2767f4aaba0abdc06d69b9
+  - enabled: 1
+    path: Assets/Study/CopleFinder/AntonymMatch/AntonymMatch.unity
+    guid: 4d301d55581b0404ebfd59d15587be5e
   m_configObjects: {}

@@ -1,14 +1,5 @@
-using Base.Word;
-using Newtonsoft.Json.Linq;
-using Sirenix.OdinInspector;
-using Sirenix.Utilities;
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Linq;
 using SystemBox;
-using Traonsletor;
-using UnityEngine;
-using UnityEngine.ProBuilder.Shapes;
 namespace Base.Synonym
 {
     public class SynonymBase : DataList<Synonym>
@@ -40,7 +31,23 @@ namespace Base.Synonym
             }
         }
         public static SynonymBase Synonyms { get; set; }
+        public int UsebleCount { 
+            get {
+                return Synonyms.Where(a => Word.WordBase.Wordgs.Contains(a)).Count();
+            } 
+        }
         public override string DataID => "SynonymBase";
+
+        public override System.Collections.Generic.List<Synonym> ActiveItems => Synonyms.Where(s =>
+        {
+
+            int I = Word.WordBase.Wordgs.IndexOf(s);
+            if (I > -1)
+            {
+                return (Word.WordBase.Wordgs[I] as IPersanalData).Active == true;
+            }
+            return false;
+        }).ToList();
 
         public static TList<Synonym> SynonymOf(Content Content) => SynonymOf(Content.EnglishSource);
         public static TList<Synonym> SynonymOf(string Source)
@@ -60,7 +67,7 @@ namespace Base.Synonym
 
             if (SynonymWord == null) 
             {
-                SynonymBase.Synonyms.Add(new Synonym(Source.EnglishSource, Source.RussianSource, Synonyms));
+                SynonymBase.Synonyms.Add(new Synonym(Source.EnglishSource.ToUpper(), Source.RussianSource, Synonyms));
             }
             else SynonymWord.Attach(Synonyms);
 
@@ -69,8 +76,8 @@ namespace Base.Synonym
             {
                 Synonym SynonymOne = SynonymBase.Synonyms.Find(d => d.EnglishSource.ToUpper() == Synonyms[i]);
                 if (SynonymOne == null)
-                    SynonymBase.Synonyms.Add(new Synonym(Synonyms[i], "", new TList<string>(Source.EnglishSource)));
-                else SynonymOne.Attach(Source.EnglishSource);    
+                    SynonymBase.Synonyms.Add(new Synonym(Synonyms[i], "", new TList<string>(Source.EnglishSource.ToUpper())));
+                else SynonymOne.Attach(Source.EnglishSource.ToUpper());
             }
             SynonymBase.Synonyms.Save();
         }
@@ -97,15 +104,6 @@ namespace Base.Synonym
             }
             else return tryCreat(Id.EnglishSource);
         }
-
-
-#if UNITY_EDITOR
-
-        //public static void AddAllToDefaultBase()
-        //{
-        //    //ProjectSettings.ProjectSettings.Mine.AddWords(Wordgs);
-        //}
-#endif
     }
 }
 namespace ProjectSettings

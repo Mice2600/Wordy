@@ -16,7 +16,7 @@ namespace WordCreator.WordCretor
     {
         [SerializeField, Required]
         private TMP_InputField English;
-
+        public System.Action<string> OnEnglishValueChanged;
         [SerializeField, Required]
         private Transform TranslatorsParent;
 
@@ -35,8 +35,11 @@ namespace WordCreator.WordCretor
         {
             TranslatorsParent.ClearChilds();
             Translators = new List<TMP_InputField>();
-            English.text = contentObject.Content.EnglishSource;
-            English.onValueChanged.AddListener((T) => contentObject.Content.EnglishSource = T.ToUpper());
+            English.text = contentObject.Content.EnglishSource.ToUpper();
+
+
+            OnEnglishValueChanged += (T) => contentObject.Content.EnglishSource = T.ToUpper();
+            English.onValueChanged.AddListener( (a) => OnEnglishValueChanged.Invoke(a));
             /*if ((GetComponentInParent<ContentObject>().Content as IMultiTranslation).TranslationCount == 0) 
             {
                 (GetComponentInParent<ContentObject>().Content as IMultiTranslation).AddTranslation("");
@@ -44,13 +47,13 @@ namespace WordCreator.WordCretor
             (contentObject.Content as IMultiTranslation).Translations.ForEach((Translation, i) => {
                 if (i == 0) 
                 {
-                    MineTranslators.text = Translation;
+                    MineTranslators.text = Translation.ToUpper();
                     AddToTranslationList(MineTranslators, Translation);   
                 }
                 else
                 {
                     GameObject K = Instantiate(PerfabField, TranslatorsParent);
-                    K.GetComponentInChildren<TMP_InputField>().text = Translation;
+                    K.GetComponentInChildren<TMP_InputField>().text = Translation.ToUpper();
                     AddToTranslationList(K.GetComponentInChildren<TMP_InputField>(), Translation);
                     K.GetComponentInChildren<Button>().onClick.AddListener(() => OnRemoveButton(K));
                 }
@@ -73,6 +76,7 @@ namespace WordCreator.WordCretor
         }
         public void OnChange(TMP_InputField Transttion) 
         {
+            
             if (contentObject.Content.RussianSource == "") 
                 contentObject.Content.RussianSource = Transttion.text.ToUpper();
             (contentObject.Content as IMultiTranslation).ChangeTranslationAt(Translators.IndexOf(Transttion), Transttion.text);
@@ -99,8 +103,8 @@ namespace WordCreator.WordCretor
 
         public void TryApply(Content content) 
         {
-            content.EnglishSource = English.text;
-            content.RussianSource = MineTranslators.text;
+            content.EnglishSource = English.text.ToUpper();
+            content.RussianSource = MineTranslators.text.ToUpper();
         }
 
     }

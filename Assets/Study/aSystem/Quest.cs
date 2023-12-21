@@ -1,9 +1,12 @@
+using Base.Antonym;
 using Base.Dialog;
+using Base.Synonym;
 using Base.Word;
 using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using SystemBox;
 using Unity.Collections.LowLevel.Unsafe;
@@ -71,6 +74,13 @@ namespace Study.aSystem
         public Irregular NeedIrregular;
         [System.NonSerialized]
         public TList<Irregular> NeedIrregularList;
+        [System.NonSerialized]
+        public TList<Synonym> NeedSynonymList;
+        [System.NonSerialized]
+        public TList<Antonym> NeedAntonymList;
+        [System.NonSerialized]
+        public TList<Content> NeedContentList;
+
 
         private protected virtual void Start()
         {
@@ -141,9 +151,6 @@ namespace Study.aSystem
         public int AddScorIrregular { get; }
         public int RemoveScoreIrregular { get; }
     }
-
-
-
     public interface IQuestStarter 
     {
         public GameObject CreatQuest() 
@@ -192,6 +199,11 @@ namespace Study.aSystem
             GameObject D = GameObject.Instantiate((this as StudyContentData).Prefab);
             D.name = (this as StudyContentData).Prefab.name;
             D.GetComponentInChildren<Quest>().NeedWordList = words;
+
+            List<Content> contents = new List<Content>();
+            words.ForEach(a => contents.Add(a as Content));
+            D.GetComponentInChildren<Quest>().NeedContentList = contents;
+
             return D;
         }
     }
@@ -203,6 +215,11 @@ namespace Study.aSystem
             GameObject D = GameObject.Instantiate((this as StudyContentData).Prefab);
             D.name = (this as StudyContentData).Prefab.name;
             D.GetComponentInChildren<Quest>().NeedDialogList = dialogs;
+
+            List<Content> contents = new List<Content>();
+            dialogs.ForEach(a => contents.Add(a as Content));
+            D.GetComponentInChildren<Quest>().NeedContentList = contents;
+
             return D;
         }
     }
@@ -214,7 +231,48 @@ namespace Study.aSystem
             GameObject D = GameObject.Instantiate((this as StudyContentData).Prefab);
             D.name = (this as StudyContentData).Prefab.name;
             D.GetComponentInChildren<Quest>().NeedIrregularList = Irregulars;
+
+            List<Content> contents = new List<Content>();
+            Irregulars.ForEach(a => contents.Add(a as Content));
+            D.GetComponentInChildren<Quest>().NeedContentList = contents;
+
             return D;
         }
     }
+    public interface IQuestStarterWithSynonymList 
+    {
+        public int MinimalCount { get; }
+        public GameObject CreatQuest(List<Synonym> Synonyms)
+        {
+            GameObject D = GameObject.Instantiate((this as StudyContentData).Prefab);
+            D.name = (this as StudyContentData).Prefab.name;
+            D.GetComponentInChildren<Quest>().NeedSynonymList = Synonyms;
+
+
+            List<Content> contents = new List<Content>();
+            Synonyms.ForEach(a => contents.Add(a as Content));
+            D.GetComponentInChildren<Quest>().NeedContentList = contents;
+
+
+            return D;
+        }
+    }
+
+    public interface IQuestStarterWithAntonymList
+    {
+        public int MinimalCount { get; }
+        public GameObject CreatQuest(List<Antonym> Antonyms)
+        {
+            GameObject D = GameObject.Instantiate((this as StudyContentData).Prefab);
+            D.name = (this as StudyContentData).Prefab.name;
+            D.GetComponentInChildren<Quest>().NeedAntonymList = Antonyms;
+
+            List<Content> contents = new List<Content>();
+            Antonyms.ForEach(a => contents.Add(a as Content));
+            D.GetComponentInChildren<Quest>().NeedContentList = contents;
+
+            return D;
+        }
+    }
+
 }

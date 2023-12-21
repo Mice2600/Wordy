@@ -77,6 +77,7 @@ namespace Base
         public abstract string DataID { get; }
         public void Save()
         {
+            //Debug.Log(JsonHelper.ToJson<T>((this as List<T>).ToArray()));
             PlayerPrefs.SetString(DataID, JsonHelper.ToJson<T>((this as List<T>).ToArray()));
         }
 
@@ -102,8 +103,8 @@ namespace Base
         public bool Contains(string Content) => base.Contains(tryCreat(Content));
         public abstract T tryCreat(string Id);
         public abstract T tryCreat(Content Id);
-        public List<T> ActiveItems => new List<T>(this.Where(a => (a as IPersanalData).Active));
-        public List<T> PassiveItems => new List<T>(this.Where(a => !(a as IPersanalData).Active));
+        public virtual List<T> ActiveItems => new List<T>(this.Where(a => { if (a is IPersanalData) return (a as IPersanalData).Active; return true; }));
+        public virtual List<T> PassiveItems => new List<T>(this.Where(a => { if (a is IPersanalData) return !(a as IPersanalData).Active; return true; }));
         public List<T> GetContnetList(int ListCount)
         {
             TList<T> All = new List<T>(ActiveItems);

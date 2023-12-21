@@ -23,10 +23,7 @@ namespace ProjectSettings
 }
 namespace Study.BuildTheBox
 {
-    namespace Study.CoupleParticles
+    public class QuestBuildTheBox : Quest
     {
-        public class QuestBuildTheBox : Quest
-        {
-        }
     }
 }

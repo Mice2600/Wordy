@@ -25,10 +25,12 @@ namespace WordCreator.WordCretor
 {
     public class WordChanger : ContentObject
     {
-        public static void StartChanging(Word NeedChanger = null)
+        public static void StartChanging(Word NeedChanger = null, System.Action OnFinsh = null)
         {
             NeedChanger ??= new Word("", "", 0, false, "", "");
-            Instantiate(ProjectSettings.ProjectSettings.Mine.WordChanger).GetComponent<WordChanger>().StartSet(NeedChanger);
+            WordChanger dd =Instantiate(ProjectSettings.ProjectSettings.Mine.WordChanger).GetComponent<WordChanger>();
+            dd.OnApple += OnFinsh;
+            dd.StartSet(NeedChanger);
         }
         [Required]
         public TMP_InputField DiscreptionWriter;

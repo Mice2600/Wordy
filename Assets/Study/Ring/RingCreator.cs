@@ -50,7 +50,7 @@ namespace Study.Ring
                     IEnumerator Ww() 
                     {
                         yield return new WaitForSeconds(2);
-                        Instantiate(Win).GetComponent<WinViwe>().contents = Contents;
+                        Study.aSystem.WinViwe.Creat(Contents);
                     }
                     
                 }

@@ -30,6 +30,7 @@ public class DialogChanger : ContentObject
         NeedChanger ??= new Dialog("", "", 0, false);
         Instantiate(ProjectSettings.ProjectSettings.Mine.DialogChanger).GetComponent<DialogChanger>().StartSet(NeedChanger);
     }
+
     [Required]
     public TMP_InputField WordWriter;
     [Required]
