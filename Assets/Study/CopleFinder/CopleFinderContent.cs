@@ -49,8 +49,8 @@ namespace Study.CopleFinder
             }
         }
 
-        private static CopleFinder CopleFinder => _CopleFinder ??= FindObjectOfType<CopleFinder>();
-        private static CopleFinder _CopleFinder;
+        private CopleFinder CopleFinder => _CopleFinder ??= FindObjectOfType<CopleFinder>();
+        private CopleFinder _CopleFinder;
         public void TrySellect()
         {
             if (Dead) return;
@@ -74,7 +74,7 @@ namespace Study.CopleFinder
             }
             if (FirstSellected != null && SecondSellected != null)
             {
-                if (FirstSellected.Content.Equals(SecondSellected.Content))
+                if (IsThereEqualnest())
                 {
                     CopleFinderContent Ones = FirstSellected;
                     FirstSellected = null;
@@ -106,5 +106,8 @@ namespace Study.CopleFinder
                 }
             }
         }
+
+        public virtual bool IsThereEqualnest() => FirstSellected.Content.Equals(SecondSellected.Content);
+
     }
 }

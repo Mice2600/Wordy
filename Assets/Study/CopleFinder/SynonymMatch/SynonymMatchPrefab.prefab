@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7739608610790372432}
   - component: {fileID: 7739608610790372433}
   - component: {fileID: 7739608610790372430}
-  - component: {fileID: 4971592868075552884}
+  - component: {fileID: 2949299251899903004}
   - component: {fileID: 5574443754298094238}
   m_Layer: 5
   m_Name: SynonymMatchPrefab
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 55
---- !u!114 &4971592868075552884
+--- !u!114 &2949299251899903004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7739608610790372431}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddabe48c1aa0d54b98942ab97161dae, type: 3}
+  m_Script: {fileID: 11500000, guid: dba75789e5b108b4ba33611566419691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ContntPrefab: {fileID: 4756695513660698567, guid: 1084c799cf8bfce4d89f4617839aaef4, type: 3}

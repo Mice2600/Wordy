@@ -12,8 +12,8 @@ namespace Study.CopleFinder
         public GameObject ContntPrefab;
         public Transform ContentParrent;
         public Gradient HelpColor;
-        private protected virtual TList<Content> Contents { get => GetComponent<Quest>().NeedContentList;}
-        private TList<Content> ContentsUse { get; set; }
+        private protected virtual TList<Content> Contents { get => GetComponent<Quest>().NeedContentList; }
+        private protected TList<Content> ContentsUse { get; set; }
         private TList<Content> ContentsUSED { get; set; }
 
         public void Start()
@@ -85,15 +85,7 @@ namespace Study.CopleFinder
                 SecondWords.Add(SecondContents[i].Content);
             }
 
-            int IsThereSomeOneTrue = 0;
-
-            for (int i = 0; i < FirstWords.Count; i++)
-            {
-                if (SecondWords.Contains(FirstWords[i]))
-                {
-                    IsThereSomeOneTrue++;
-                }
-            }
+            
 
             if (Random.Range(0, 10) > 5)
             {
@@ -104,51 +96,21 @@ namespace Study.CopleFinder
             FirstOnes.SideType = true;
             SecondOnes.SideType = false;
 
-            if (ContentsUse.Count > 0 && (IsThereSomeOneTrue > 4 || (Random.Range(0, 100) > 50 && IsThereSomeOneTrue > 3))) TryRandom();
-            else TryFind();
 
-            void TryRandom()
+            if (GiveNewContent(FirstWords, SecondWords, out Content _FirstOne, out Content _SecondOne))
             {
-                Content NWord = null;
+                FirstOnes.Content = _FirstOne;
+                SecondOnes.Content = _SecondOne;
+            }
+            else 
+            {
+                FindInList(FirstWords, SecondWords, out Content _1FirstOne, out Content _1SecondOne);
+                FirstOnes.Content = _1FirstOne;
+                SecondOnes.Content = _1SecondOne;
 
-                for (int i = 0; i < 20; i++)
-                {
-                    NWord = ContentsUse.RandomItem;
-                    if (!FirstWords.Contains(NWord)) break;
-                }
-                ContentsUse.Remove(NWord);
-                FirstOnes.Content = NWord;
-                if (ContentsUse.Count == 0) ContentsUse.Add(NWord);//prosta keyin remov boladi
-
-                NWord = null;
-                for (int i = 0; i < 20; i++)
-                {
-                    NWord = ContentsUse.RandomItem;
-                    if (!SecondWords.Contains(NWord)) break;
-                }
-                ContentsUse.Remove(NWord);
-                SecondOnes.Content = NWord;
             }
 
-            void TryFind()
-            {
-                TList<Content> AllRu = SecondWords.Mix(true);
-                TList<Content> AllEN = FirstWords.Mix(true);
-                for (int i = 0; i < AllRu.Count; i++)
-                {
-                    if (AllEN.Contains(AllRu[i])) continue;
-                    FirstOnes.Content = AllRu[i];
-                    break;
-                }
-                for (int i = 0; i < AllEN.Count; i++)
-                {
-                    if (AllRu.Contains(AllEN[i])) continue;
-                    SecondOnes.Content = AllEN[i];
-                    break;
-                }
-
-
-            }
+            
             if (OldOne == FirstOnes.Content.EnglishSource)
             {
                 if (!Done)
@@ -167,6 +129,73 @@ namespace Study.CopleFinder
 
             }
         }
+
+
+        public virtual bool GiveNewContent(
+            TList<Content> FirstWords, 
+            TList<Content> SecondWords,
+            out Content FirstOne, out Content SecondOne)
+        {
+            FirstOne = null;
+            SecondOne = null;
+            int IsThereSomeOneTrue = 0;
+
+            for (int i = 0; i < FirstWords.Count; i++)
+            {
+                if (SecondWords.Contains(FirstWords[i]))
+                {
+                    IsThereSomeOneTrue++;
+                }
+            }
+            if (ContentsUse.Count > 0 && (IsThereSomeOneTrue > 4 ||
+                (Random.Range(0, 100) > 50 && IsThereSomeOneTrue > 3))) 
+            {
+                Content NWord = null;
+
+                for (int i = 0; i < 20; i++)
+                {
+                    NWord = ContentsUse.RandomItem;
+                    if (!FirstWords.Contains(NWord)) break;
+                }
+                ContentsUse.Remove(NWord);
+                FirstOne = NWord;
+                if (ContentsUse.Count == 0) ContentsUse.Add(NWord);//prosta keyin remov boladi
+
+                NWord = null;
+                for (int i = 0; i < 20; i++)
+                {
+                    NWord = ContentsUse.RandomItem;
+                    if (!SecondWords.Contains(NWord)) break;
+                }
+                ContentsUse.Remove(NWord);
+                SecondOne = NWord;
+                return true;
+            }else return false;
+        }
+
+        public virtual void FindInList(
+            TList<Content> FirstWords,
+            TList<Content> SecondWords,
+            out Content FirstOne, out Content SecondOne) 
+        {
+            FirstOne = null;
+            SecondOne = null;
+            TList<Content> AllRu = SecondWords.Mix(true);
+            TList<Content> AllEN = FirstWords.Mix(true);
+            for (int i = 0; i < AllRu.Count; i++)
+            {
+                if (AllEN.Contains(AllRu[i])) continue;
+                FirstOne = AllRu[i];
+                break;
+            }
+            for (int i = 0; i < AllEN.Count; i++)
+            {
+                if (AllRu.Contains(AllEN[i])) continue;
+                SecondOne = AllEN[i];
+                break;
+            }
+        }
+
         public void WrongChose(Content FirstOnes, Content SecondOnes)
         {
 

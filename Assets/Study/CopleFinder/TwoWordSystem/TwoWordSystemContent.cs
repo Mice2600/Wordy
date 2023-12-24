@@ -13,7 +13,7 @@ namespace Study.TwoWordSystem
             get 
             {
                 if (SideType) return Content.EnglishSource;
-                return Content.RussianSource;
+                return (Content as IMultiTranslation).Translations.RandomItem;
             }
         }
 
