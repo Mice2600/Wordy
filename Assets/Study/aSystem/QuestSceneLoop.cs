@@ -5,6 +5,7 @@ using Base.Word;
 using Study.aSystem;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using SystemBox;
 using UnityEngine;
 
@@ -52,11 +53,30 @@ public class QuestSceneLoop : MonoBehaviour
             }
             else if (QuestPrefab is IQuestStarterWithSynonymList)
             {
-                D = (QuestPrefab as IQuestStarterWithSynonymList).CreatQuest(SynonymBase.Synonyms.GetContnetList((QuestPrefab as IQuestStarterWithSynonymList).MinimalCount));
+                TList<Synonym> synonyms = new List<Synonym>();
+                List<Word> ActiveContents = Base.Word.WordBase.Wordgs.ActiveItems;
+                ActiveContents.ForEach(A => {
+
+                    if (SynonymBase.Synonyms.Contains(A)) 
+                    {
+                        synonyms.Add(SynonymBase.Synonyms[A]);
+                    }
+                });
+                D = (QuestPrefab as IQuestStarterWithSynonymList).CreatQuest(synonyms.Take((QuestPrefab as IQuestStarterWithSynonymList).MinimalCount).ToList());
             }
             else if (QuestPrefab is IQuestStarterWithAntonymList)
+
             {
-                D = (QuestPrefab as IQuestStarterWithAntonymList).CreatQuest(AntonymBase.Antonyms.GetContnetList((QuestPrefab as IQuestStarterWithAntonymList).MinimalCount));
+                TList<Antonym> Antonyms = new List<Antonym>();
+                List<Word> ActiveContents = Base.Word.WordBase.Wordgs.ActiveItems;
+                ActiveContents.ForEach(A => {
+
+                    if (AntonymBase.Antonyms.Contains(A))
+                    {
+                        Antonyms.Add(AntonymBase.Antonyms[A]);
+                    }
+                });
+                D = (QuestPrefab as IQuestStarterWithAntonymList).CreatQuest(Antonyms.Take((QuestPrefab as IQuestStarterWithAntonymList).MinimalCount).ToList());
             }
             else throw new System.Exception("Countinue the List");
             D.GetComponent<Quest>().OnFineshed += OnFinsh;

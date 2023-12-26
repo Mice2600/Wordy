@@ -14,7 +14,13 @@ public class SynonymWordViwe : MonoBehaviour
     void Start()
     {
         string Contents = "";
-        SynonymBase.SynonymOf(GetComponentInParent<ContentObject>().Content).ForEach(x => Contents += x + "   ");
+        Content dd = GetComponentInParent<ContentObject>().Content;
+        if(SynonymBase.Synonyms[dd] != null) 
+        {
+            SynonymBase.Synonyms[dd].attachments.ForEach(x => { Contents += x + "   "; });
+        }
+        Contents = Contents.Replace("\r", "");
+        Contents = Contents.Replace("\\r", "");
         if (string.IsNullOrEmpty(Contents) || string.IsNullOrWhiteSpace(Contents))
         {
             gameObject.SetActive(false);

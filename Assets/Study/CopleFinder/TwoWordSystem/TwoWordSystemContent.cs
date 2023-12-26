@@ -12,11 +12,13 @@ namespace Study.TwoWordSystem
         protected override string Text {
             get 
             {
-                if (SideType) return Content.EnglishSource;
+                if (IsFirst) return Content.EnglishSource;
                 return (Content as IMultiTranslation).Translations.RandomItem;
             }
         }
 
-        protected override bool CanUseVoiceToBothSids => false;
+        protected override bool CanUseVoiceToFirst => (!Application.isEditor);
+
+        protected override bool CanUseVoiceToSecond => false;
     }
 }

@@ -1,4 +1,5 @@
 using Base;
+using Base.Synonym;
 using Base.Word;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,7 +14,10 @@ public class AntonymWordViwe : MonoBehaviour
     void Start()
     {
         string Contents = "";
-        Base.Antonym.AntonymBase.AntonymOf(GetComponentInParent<ContentObject>().Content).ForEach(x => Contents += x + "   ");
+        Content dd = GetComponentInParent<ContentObject>().Content;
+        Base.Antonym.AntonymBase.AntonymOf(dd).ForEach(x => { Contents += x + "   "; });
+        Contents = Contents.Replace("\r", "");
+        Contents = Contents.Replace("\\r", "");
         if (string.IsNullOrEmpty(Contents) || string.IsNullOrWhiteSpace(Contents)) 
         {
             gameObject.SetActive(false);

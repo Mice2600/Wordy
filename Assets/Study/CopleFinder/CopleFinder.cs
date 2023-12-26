@@ -37,8 +37,8 @@ namespace Study.CopleFinder
                 else SecondContents.Add(AllOthers[i]);
             }
 
-            FirstContents.ForEach(a => a.SideType = true);
-            SecondContents.ForEach(a => a.SideType = false);
+            FirstContents.ForEach(a => a.IsFirst = true);
+            SecondContents.ForEach(a => a.IsFirst = false);
             TList<CopleFinderContent> _FirstContents = FirstContents.Mix(true);
             TList<CopleFinderContent> _SecondContents = SecondContents.Mix(true);
 
@@ -65,7 +65,7 @@ namespace Study.CopleFinder
 
             AllOthers.Remove(FirstOnes);
             AllOthers.Remove(SecondOnes);
-            AllOthers.ForEach((a) => { FirstContents.AddIf(a, a.SideType); SecondContents.AddIf(a, !a.SideType); });
+            AllOthers.ForEach((a) => { FirstContents.AddIf(a, a.IsFirst); SecondContents.AddIf(a, !a.IsFirst); });
 
 
             TList<Content> FirstWords = new TList<Content>();
@@ -93,8 +93,8 @@ namespace Study.CopleFinder
                 FirstOnes = SecondOnes;
                 SecondOnes = d;
             }
-            FirstOnes.SideType = true;
-            SecondOnes.SideType = false;
+            FirstOnes.IsFirst = true;
+            SecondOnes.IsFirst = false;
 
 
             if (GiveNewContent(FirstWords, SecondWords, out Content _FirstOne, out Content _SecondOne))

@@ -11,12 +11,13 @@ namespace Study.CopleFinder
     public abstract class CopleFinderContent : ContentObject
     {
         [System.NonSerialized]
-        public bool SideType;
+        public bool IsFirst;
         public static CopleFinderContent FirstSellected;
         public static CopleFinderContent SecondSellected;
 
         protected abstract string Text { get; }
-        protected abstract bool CanUseVoiceToBothSids { get; }
+        protected abstract bool CanUseVoiceToFirst { get; }
+        protected abstract bool CanUseVoiceToSecond { get; }
         //protected abstract bool CanUseVoiceToBothSids { get; }
 
         [SerializeField]
@@ -32,21 +33,22 @@ namespace Study.CopleFinder
             Refresh();
         }
 
-        public void Refresh()
+        public virtual void Refresh()
         {
             TMP_Text InsideText = GetComponentInChildren<TMP_Text>(true);
             InsideText.gameObject.SetActive(true);
             InsideText.text = Text;
-
-            if (Random.Range(0, 10) > 5 && CanUseVoiceToBothSids)
+            VoisOB.SetActive(false);
+            if (Random.Range(0, 10) > 5)
             {
-                VoisOB.SetActive(true);
-                InsideText.gameObject.SetActive(false);
+                    if ((IsFirst && CanUseVoiceToFirst) || (!IsFirst && CanUseVoiceToSecond))
+                    {
+                    VoisOB.SetActive(true);
+                    InsideText.gameObject.SetActive(false);
+                }
+                
             }
-            else
-            {
-                VoisOB.SetActive(false);
-            }
+            
         }
 
         private CopleFinder CopleFinder => _CopleFinder ??= FindObjectOfType<CopleFinder>();
@@ -55,14 +57,15 @@ namespace Study.CopleFinder
         {
             if (Dead) return;
 
-            if (SideType || CanUseVoiceToBothSids)
+
+            if (IsFirst || CanUseVoiceToFirst)
             {
                 if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
                     EasyTTSUtil.SpeechAdd(GetComponentInChildren<TMP_Text>(true).text);
                 else Debug.Log(GetComponentInChildren<TMP_Text>(true).text + " Speeking");
             }
 
-            if (SideType)
+            if (IsFirst)
             {
                 if (FirstSellected == this) FirstSellected = null;
                 else FirstSellected = this;
@@ -74,7 +77,7 @@ namespace Study.CopleFinder
             }
             if (FirstSellected != null && SecondSellected != null)
             {
-                if (IsThereEqualnest())
+                if (FirstSellected.IsThereEqualnest())
                 {
                     CopleFinderContent Ones = FirstSellected;
                     FirstSellected = null;

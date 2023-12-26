@@ -1,7 +1,9 @@
+using Sirenix.OdinInspector;
 using System.Linq;
 using SystemBox;
 namespace Base.Synonym
 {
+    
     public class SynonymBase : DataList<Synonym>
     {
         static SynonymBase()
@@ -30,6 +32,7 @@ namespace Base.Synonym
                 this[fIndex] = value;
             }
         }
+        [Searchable]
         public static SynonymBase Synonyms { get; set; }
         public int UsebleCount { 
             get {
@@ -48,15 +51,6 @@ namespace Base.Synonym
             }
             return false;
         }).ToList();
-
-        public static TList<Synonym> SynonymOf(Content Content) => SynonymOf(Content.EnglishSource);
-        public static TList<Synonym> SynonymOf(string Source)
-        {
-            TList<Synonym> dd = Synonyms.FindAll(d => d.attachments.Contains(Source));
-            if (dd == null) return new TList<Synonym>();
-            return dd;
-        }
-
 
         public static void AddSynonym(Content Source, string Synonyms) => AddSynonym(Source, new TList<string>(Synonyms));
         public static void AddSynonym(Content Source, TList<string> Synonyms)
