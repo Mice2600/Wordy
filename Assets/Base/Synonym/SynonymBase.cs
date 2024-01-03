@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using System.Linq;
 using SystemBox;
+using UnityEngine;
 namespace Base.Synonym
 {
     
@@ -98,6 +99,13 @@ namespace Base.Synonym
             }
             else return tryCreat(Id.EnglishSource);
         }
+
+
+        public static string LogData() 
+        {
+            return PlayerPrefs.GetString(SynonymBase.Synonyms.DataID);
+        }
+
     }
 }
 namespace ProjectSettings

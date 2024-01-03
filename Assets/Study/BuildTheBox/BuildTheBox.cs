@@ -1,15 +1,9 @@
-using Base.Word;
 using Sirenix.OdinInspector;
-using Sirenix.Utilities;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
 using SystemBox;
 using TMPro;
 using UnityEngine;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 namespace Study.BuildTheBox
 {

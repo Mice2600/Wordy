@@ -32,9 +32,18 @@ public class ColorContent : OptimizedBehaver, IQueueUpdate
     {
         if (ContentObject == null) return;
         if (ContentObject.Content == null) return;
-        if (ContentObject.Content is not IPersanalData) return;
-        int Index = ContentObject.Content.BaseCommander.IndexOf(ContentObject.Content);
-        Color NC = GetColor(Index, (ContentObject.Content as IPersanalData).Active);
+        Color NC = Color.white;
+        if (ContentObject.Content is not IPersanalData)
+        {
+            int Index = ContentObject.Content.BaseCommander.IndexOf(ContentObject.Content);
+            NC = GetColor(Index, true);
+        }
+        else 
+        {
+            int Index = ContentObject.Content.BaseCommander.IndexOf(ContentObject.Content);
+            NC = GetColor(Index, (ContentObject.Content as IPersanalData).Active);
+        }
+        
         for (int i = 0; i < Arts.Count; i++) 
         {
             if (Arts[i] == null) continue;

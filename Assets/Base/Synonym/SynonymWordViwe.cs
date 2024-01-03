@@ -15,7 +15,7 @@ public class SynonymWordViwe : MonoBehaviour
     {
         string Contents = "";
         Content dd = GetComponentInParent<ContentObject>().Content;
-        if(SynonymBase.Synonyms[dd] != null) 
+        if(SynonymBase.Synonyms.Contains(dd)) 
         {
             SynonymBase.Synonyms[dd].attachments.ForEach(x => { Contents += x + "   "; });
         }

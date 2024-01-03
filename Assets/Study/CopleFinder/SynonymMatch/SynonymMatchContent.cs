@@ -10,7 +10,6 @@ namespace Study.CopleFinder.SynonymMatch
 {
     public class SynonymMatchContent : CopleFinderContent
     {
-
         protected string TextSEllectedtext;
         protected override string Text
         {
@@ -22,18 +21,11 @@ namespace Study.CopleFinder.SynonymMatch
                     return TextUtulity.UnderLine(TextSEllectedtext);
 
                 }
-                    
-                
-
                 else return Content.EnglishSource;
-
             }
         }
-
         protected override bool CanUseVoiceToFirst => (!Application.isEditor);
-
         protected override bool CanUseVoiceToSecond => (!Application.isEditor);
-
         public override bool IsThereEqualnest()
         {
             string d = (SecondSellected as SynonymMatchContent).TextSEllectedtext;
@@ -54,6 +46,5 @@ namespace Study.CopleFinder.SynonymMatch
             }
             return false;
         }
-
     }
 }

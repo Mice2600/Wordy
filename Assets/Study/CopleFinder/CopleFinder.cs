@@ -1,4 +1,5 @@
 using Base.Word;
+using Sirenix.OdinInspector;
 using Study.aSystem;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace Study.CopleFinder
         public Transform ContentParrent;
         public Gradient HelpColor;
         private protected virtual TList<Content> Contents { get => GetComponent<Quest>().NeedContentList; }
+        [ShowInInspector]
+        [SerializeField]
         private protected TList<Content> ContentsUse { get; set; }
         private TList<Content> ContentsUSED { get; set; }
 
@@ -102,34 +105,19 @@ namespace Study.CopleFinder
                 FirstOnes.Content = _FirstOne;
                 SecondOnes.Content = _SecondOne;
             }
-            else 
+            else if (FirstWords.Count > 0)
             {
                 FindInList(FirstWords, SecondWords, out Content _1FirstOne, out Content _1SecondOne);
                 FirstOnes.Content = _1FirstOne;
                 SecondOnes.Content = _1SecondOne;
-
             }
-
-            
-            if (OldOne == FirstOnes.Content.EnglishSource)
+            else if (ContentsUse.Count > 0)
             {
-                if (!Done)
-                {
-                    bool IsThereActiveOnes = false;
-                    for (int i = 0; i < FirstContents.Count; i++)
-                    {
-                        if (!(FirstContents[i]).Dead)
-                        {
-                            IsThereActiveOnes = true;
-                            break;
-                        }
-                    }
-                    if (!IsThereActiveOnes) ShowWinWindow();
-                }
-
+                FirstOnes.Content = ContentsUse.RemoveRandomItem();
+                SecondOnes.Content = FirstOnes.Content;
             }
+            else ShowWinWindow();
         }
-
 
         public virtual bool GiveNewContent(
             TList<Content> FirstWords, 
@@ -203,6 +191,7 @@ namespace Study.CopleFinder
         bool Done = false;
         public void ShowWinWindow()
         {
+            if (Done) return;
             Done = true;
             aSystem.WinViwe.Creat(ContentsUSED);
         }
