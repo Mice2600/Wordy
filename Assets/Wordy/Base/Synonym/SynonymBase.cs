@@ -105,6 +105,11 @@ namespace Base.Synonym
         {
             return PlayerPrefs.GetString(SynonymBase.Synonyms.DataID);
         }
+        public static void SetData(string d)
+        {
+            PlayerPrefs.SetString(SynonymBase.Synonyms.DataID, d);
+            Synonyms = new SynonymBase();
+        }
 
     }
 }

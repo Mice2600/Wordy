@@ -60,6 +60,10 @@ public class GeneralCommands : MonoBehaviour
     private void Start()
     {
 
+
+        
+        
+
         if (Application.internetReachability == NetworkReachability.NotReachable)
         {
             Debug.Log("Error. Check internet connection!");
@@ -89,6 +93,9 @@ public class GeneralCommands : MonoBehaviour
     }
     public async Task Save() 
     {
+
+        
+
         List<string> Keys = new List<string>() { WordBase.Wordgs.DataID, DialogBase.Dialogs.DataID, IrregularBase.Irregulars.DataID,
             SynonymBase.Synonyms.DataID, AntonymBase.Antonyms.DataID
         };
@@ -96,7 +103,11 @@ public class GeneralCommands : MonoBehaviour
         List<string> Values = new List<string>();
         for (int i = 0; i < Keys.Count; i++) Values.Add(PlayerPrefs.GetString(Keys[i]));
         Dictionary<string, object> oneElement = new Dictionary<string, object>();
-        for (int i = 0; i < Keys.Count; i++) oneElement.Add(Keys[i], PlayerPrefs.GetString(Keys[i]));
+        for (int i = 0; i < Keys.Count; i++) 
+        {
+            oneElement.Add(Keys[i], PlayerPrefs.GetString(Keys[i]));
+            //Debug.Log(("Save - ", Keys[i], PlayerPrefs.GetString(Keys[i])));
+        }
         try
         {
             await CloudSaveService.Instance.Data.ForceSaveAsync(oneElement);
@@ -129,8 +140,6 @@ public class GeneralCommands : MonoBehaviour
                 if (results.TryGetValue(Keys[i], out string value))
                 {
                     PlayerPrefs.SetString(Keys[i], value);
-
-                    PlayerPrefs.SetString(Keys[i], value);
                     //Debug.Log((Keys[i], value));
                 }
             }
@@ -150,6 +159,8 @@ public class GeneralCommands : MonoBehaviour
         WordBase.Wordgs = new WordBase();
         DialogBase.Dialogs = new DialogBase();
         IrregularBase.Irregulars = new IrregularBase();
+        SynonymBase.Synonyms = new SynonymBase();
+        AntonymBase.Antonyms = new AntonymBase();
     }
 
     [Button]

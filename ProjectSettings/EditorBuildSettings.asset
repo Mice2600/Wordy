@@ -9,72 +9,72 @@ EditorBuildSettings:
     path: Assets/Game/GameController.unity
     guid: 010fc014acdce634cadeb2a47f159bd6
   - enabled: 1
-    path: Assets/BaseViwe/TotleBaseViwe.unity
+    path: Assets/Wordy/BaseViwe/TotleBaseViwe.unity
     guid: 7d6a82a3755ec8641ba2e73d0830b227
   - enabled: 1
-    path: Assets/Study/BuildDialog/BuildDialog.unity
+    path: Assets/Wordy/Study/BuildDialog/BuildDialog.unity
     guid: 23893d0e40a18df4a9bc6c75be59d0a8
   - enabled: 1
-    path: Assets/Study/WriteWord/WriteWord.unity
+    path: Assets/Wordy/Study/WriteWord/WriteWord.unity
     guid: b5ebbcd4faf7c3f4cace0ca145d06295
   - enabled: 1
-    path: Assets/Study/FindOnes/FindOns/FindOns.unity
+    path: Assets/Wordy/Study/FindOnes/FindOns/FindOns.unity
     guid: 4f5c473586be971479638b91cbcd6beb
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Study/CopleFinder/TwoWordSystem/TwoWordSystem.unity
+    path: Assets/Wordy/Study/CopleFinder/TwoWordSystem/TwoWordSystem.unity
     guid: b830123fad04d154d912856e3d54aa33
   - enabled: 1
-    path: Assets/Study/FindIrregular/WriteIrregular/WriteIrregular.unity
+    path: Assets/Wordy/Study/FindIrregular/WriteIrregular/WriteIrregular.unity
     guid: b760fa6f43c0be94b83c9771accdaf63
   - enabled: 1
-    path: Assets/Study/aSystem/Random/Random.unity
+    path: Assets/Wordy/Study/aSystem/Random/Random.unity
     guid: 52d73c9d2d5b93446b4606442377c353
   - enabled: 1
-    path: Assets/Study/FindIrregular/BuildIlrregular/BuildIlrregular.unity
+    path: Assets/Wordy/Study/FindIrregular/BuildIlrregular/BuildIlrregular.unity
     guid: 83f5a72b164ead5419293874b64cdf74
   - enabled: 1
-    path: Assets/Study/FindOnes/FindOns_T2E/FindOns_T2E.unity
+    path: Assets/Wordy/Study/FindOnes/FindOns_T2E/FindOns_T2E.unity
     guid: abbe14764d4d0d04b9cf1fc9e5d59f81
   - enabled: 1
-    path: Assets/Study/Crossword/Crossword.unity
+    path: Assets/Wordy/Study/Crossword/Crossword.unity
     guid: aebeb12e66fe9c94f91eb3f29687911f
   - enabled: 1
-    path: Assets/Study/FillTheSpace/FillTheSpace.unity
+    path: Assets/Wordy/Study/FillTheSpace/FillTheSpace.unity
     guid: 6396f0d67bd933746b577f78c72ae6af
   - enabled: 1
-    path: Assets/Study/TypeShift/TypeShift.unity
+    path: Assets/Wordy/Study/TypeShift/TypeShift.unity
     guid: c627b06e3ba86fe4b8259ba2bba618b0
   - enabled: 1
-    path: Assets/Study/CoupleParticles/CoupleParticles.unity
+    path: Assets/Wordy/Study/CoupleParticles/CoupleParticles.unity
     guid: bf11c22e76ae3404d9867bfe1c5d2ced
   - enabled: 1
-    path: Assets/Study/WordSurf/WordSurf.unity
+    path: Assets/Wordy/Study/WordSurf/WordSurf.unity
     guid: a2080fafe7561684ea6a35f732aa20f8
   - enabled: 1
-    path: Assets/Study/Ring/Ring.unity
+    path: Assets/Wordy/Study/Ring/Ring.unity
     guid: 4767be6bb4293de4fb4d1a9ae1a08855
   - enabled: 1
-    path: Assets/Study/Snake/Snake.unity
+    path: Assets/Wordy/Study/Snake/Snake.unity
     guid: 8a7ee2d32a070374fa7bd3ef8243fae2
   - enabled: 1
-    path: Assets/Study/NumberExercise/NumberExercise.unity
+    path: Assets/Wordy/Study/NumberExercise/NumberExercise.unity
     guid: 3eae4d9b84e57474eb2dd9912fd363b9
   - enabled: 1
-    path: Assets/Study/SpellingExercise/SpellingExercise.unity
+    path: Assets/Wordy/Study/SpellingExercise/SpellingExercise.unity
     guid: 8c1401faa4848d04d8ba6494921964ca
   - enabled: 1
-    path: Assets/Study/BuildTheBox/BuildTheBox.unity
+    path: Assets/Wordy/Study/BuildTheBox/BuildTheBox.unity
     guid: 35e8fe91876bb2f4d838dd4deeb178df
   - enabled: 1
-    path: Assets/Study/Watermelon/Watermelon.unity
+    path: Assets/Wordy/Study/Watermelon/Watermelon.unity
     guid: 7b3ab51161859a64e95ffd0f48441eb9
   - enabled: 1
-    path: Assets/Study/CopleFinder/SynonymMatch/SynonymMatch.unity
+    path: Assets/Wordy/Study/CopleFinder/SynonymMatch/SynonymMatch.unity
     guid: e4e3b28a6b2767f4aaba0abdc06d69b9
   - enabled: 1
-    path: Assets/Study/CopleFinder/AntonymMatch/AntonymMatch.unity
+    path: Assets/Wordy/Study/CopleFinder/AntonymMatch/AntonymMatch.unity
     guid: 4d301d55581b0404ebfd59d15587be5e
   m_configObjects: {}
