@@ -14,8 +14,6 @@ namespace Study.CopleFinder
         public Transform ContentParrent;
         public Gradient HelpColor;
         private protected virtual TList<Content> Contents { get => GetComponent<Quest>().NeedContentList; }
-        [ShowInInspector]
-        [SerializeField]
         private protected TList<Content> ContentsUse { get; set; }
         private TList<Content> ContentsUSED { get; set; }
 

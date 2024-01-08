@@ -15,6 +15,7 @@ namespace Study.CopleFinder
         public static CopleFinderContent FirstSellected;
         public static CopleFinderContent SecondSellected;
 
+        protected string TextSEllectedtext;
         protected abstract string Text { get; }
         protected abstract bool CanUseVoiceToFirst { get; }
         protected abstract bool CanUseVoiceToSecond { get; }
@@ -61,8 +62,8 @@ namespace Study.CopleFinder
             if (IsFirst || CanUseVoiceToFirst)
             {
                 if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-                    EasyTTSUtil.SpeechAdd(GetComponentInChildren<TMP_Text>(true).text);
-                else Debug.Log(GetComponentInChildren<TMP_Text>(true).text + " Speeking");
+                    EasyTTSUtil.SpeechAdd(TextSEllectedtext);
+                else Debug.Log(TextSEllectedtext + " Speeking");
             }
 
             if (IsFirst)

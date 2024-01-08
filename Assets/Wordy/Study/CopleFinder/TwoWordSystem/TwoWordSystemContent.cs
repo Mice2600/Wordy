@@ -12,8 +12,12 @@ namespace Study.TwoWordSystem
         protected override string Text {
             get 
             {
-                if (IsFirst) return Content.EnglishSource;
-                return (Content as IMultiTranslation).Translations.RandomItem;
+                if (IsFirst) {
+                     TextSEllectedtext = Content.EnglishSource;
+                    return TextSEllectedtext;
+                }
+                TextSEllectedtext = (Content as IMultiTranslation).Translations.RandomItem;
+                return TextSEllectedtext;
             }
         }
 

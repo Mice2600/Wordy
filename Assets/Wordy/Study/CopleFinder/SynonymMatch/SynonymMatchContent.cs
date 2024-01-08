@@ -10,7 +10,6 @@ namespace Study.CopleFinder.SynonymMatch
 {
     public class SynonymMatchContent : CopleFinderContent
     {
-        protected string TextSEllectedtext;
         protected override string Text
         {
             get
@@ -21,7 +20,8 @@ namespace Study.CopleFinder.SynonymMatch
                     return TextUtulity.UnderLine(TextSEllectedtext);
 
                 }
-                else return Content.EnglishSource;
+                TextSEllectedtext = Content.EnglishSource;
+                return TextSEllectedtext;
             }
         }
         protected override bool CanUseVoiceToFirst => (!Application.isEditor);

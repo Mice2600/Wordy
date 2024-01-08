@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 638417258625810541}
   - component: {fileID: 638417258625810540}
   - component: {fileID: 638417258625810547}
-  - component: {fileID: 2831116290581230665}
+  - component: {fileID: 4572804365637633376}
   - component: {fileID: 3288285282132985886}
   m_Layer: 5
   m_Name: AntonymMatch
@@ -35,7 +35,7 @@ RectTransform:
   m_Children:
   - {fileID: 3628633272868522283}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 55
---- !u!114 &2831116290581230665
+--- !u!114 &4572804365637633376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,10 +113,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 638417258625810546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddabe48c1aa0d54b98942ab97161dae, type: 3}
+  m_Script: {fileID: 11500000, guid: 029d4dd52d2059f408c840d4f9f4a640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ContntPrefab: {fileID: 4756695513660698567, guid: 1084c799cf8bfce4d89f4617839aaef4, type: 3}
+  ContntPrefab: {fileID: 8089574881208422610, guid: d2f8b770c2dd2634a89480768bd5a941, type: 3}
   ContentParrent: {fileID: 3628633272868522283}
   HelpColor:
     serializedVersion: 2
