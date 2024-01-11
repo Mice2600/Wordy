@@ -22,7 +22,7 @@ namespace Study.CopleFinder
             ContentsUse = Contents;
             ContentsUSED = new TList<Content>();
             ContentParrent.ClearChilds();
-            int CC = Random.Range(2, 11);
+            int CC = Random.Range(3, 9);
             for (int i = 0; i < CC; i++)
             {
                 Instantiate(ContntPrefab, ContentParrent);
@@ -103,9 +103,8 @@ namespace Study.CopleFinder
                 FirstOnes.Content = _FirstOne;
                 SecondOnes.Content = _SecondOne;
             }
-            else if (FirstWords.Count > 0)
+            else if (FirstWords.Count > 0 && FindInList(FirstWords, SecondWords, out Content _1FirstOne, out Content _1SecondOne))
             {
-                FindInList(FirstWords, SecondWords, out Content _1FirstOne, out Content _1SecondOne);
                 FirstOnes.Content = _1FirstOne;
                 SecondOnes.Content = _1SecondOne;
             }
@@ -114,7 +113,7 @@ namespace Study.CopleFinder
                 FirstOnes.Content = ContentsUse.RemoveRandomItem();
                 SecondOnes.Content = FirstOnes.Content;
             }
-            else ShowWinWindow();
+            else if(FirstWords.Count == 0) ShowWinWindow();
         }
 
         public virtual bool GiveNewContent(
@@ -159,7 +158,7 @@ namespace Study.CopleFinder
             }else return false;
         }
 
-        public virtual void FindInList(
+        public virtual bool FindInList(
             TList<Content> FirstWords,
             TList<Content> SecondWords,
             out Content FirstOne, out Content SecondOne) 
@@ -180,6 +179,7 @@ namespace Study.CopleFinder
                 SecondOne = AllEN[i];
                 break;
             }
+            return FirstOne != null && SecondOne != null; 
         }
 
         public void WrongChose(Content FirstOnes, Content SecondOnes)

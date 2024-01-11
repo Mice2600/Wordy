@@ -52,7 +52,7 @@ namespace Study.CopleFinder.AntonymMatch
         }
 
 
-        public override void FindInList(TList<Content> FirstWords, TList<Content> SecondWords, out Content FirstOne, out Content SecondOne)
+        public override bool FindInList(TList<Content> FirstWords, TList<Content> SecondWords, out Content FirstOne, out Content SecondOne)
         {
             FirstOne = null;
             SecondOne = null;
@@ -77,6 +77,7 @@ namespace Study.CopleFinder.AntonymMatch
             if (SecondCopleless.Count == 0)
                 SecondOne = FirstWords.RandomItem;
             else SecondOne = SecondCopleless.RandomItem;
+            return FirstOne != null && SecondOne != null;
 
         }
     }

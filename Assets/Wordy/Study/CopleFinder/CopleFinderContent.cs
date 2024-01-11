@@ -59,7 +59,7 @@ namespace Study.CopleFinder
             if (Dead) return;
 
 
-            if (IsFirst || CanUseVoiceToFirst)
+            if (IsFirst || CanUseVoiceToSecond)
             {
                 if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
                     EasyTTSUtil.SpeechAdd(TextSEllectedtext);

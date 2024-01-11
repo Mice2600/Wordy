@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,21 @@ using System.Reflection;
 using AICommand;
 using System.IO;
 using System.Net.Http;
+using System.Net;
+using System.Net.Http.Headers;
+using System.Text;
+using static OpenAIWrapper;
+using SystemBox;
 
 
 //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
+//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
 public class TestOpenAI : MonoBehaviour
 {
-    public static string apiKey = "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";
+
+
+
+    public static string apiKey => "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";
     public static async void DDA() 
     {
         System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
@@ -37,17 +47,16 @@ public class TestOpenAI : MonoBehaviour
         /*string WrapPrompt(string input)
           => "Write a Unity Editor script.\n" +
              " - It provides its functionality as a menu item placed \"Edit\" > \"Do Task\".\n" +
-             " - It doesn’t provide any editor window. It immediately does the task when the menu item is invoked.\n" +
-             " - Don’t use GameObject.FindGameObjectsWithTag.\n" +
+             " - It doesnï¿½t provide any editor window. It immediately does the task when the menu item is invoked.\n" +
+             " - Donï¿½t use GameObject.FindGameObjectsWithTag.\n" +
              " - There is no selected object. Find game objects manually.\n" +
-             " - I only need the script body. Don’t add any explanation.\n" +
+             " - I only need the script body. Donï¿½t add any explanation.\n" +
              "The task is described as follows:\n" + input;
         */
     }
 
     static async Task Main()
     {
-        string apiKey = "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";
         string model = "tts-1";
         string voice = "alloy";
         string inputText = "Today is a wonderful day to build something people love!";
@@ -101,7 +110,6 @@ public class TestOpenAI : MonoBehaviour
 
     static async Task Main2()
     {
-        string apiKey = "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";
         string model = "tts-1";
         string voice = "alloy";
         string inputText = "Today is a wonderful day to build something people love!";
@@ -133,31 +141,32 @@ public class TestOpenAI : MonoBehaviour
             {
                 byte[] audioData = await response.Content.ReadAsByteArrayAsync();
 
+
+
+
+
+
+                float[] samples = new float[audioData.Length / 4]; //size of a float is 4 bytes
+
+                Buffer.BlockCopy(audioData, 0, samples, 0, audioData.Length);
+
+
                 int frequency = 44100;  // Sample rate
                 int channels = 1;      // Number of channels (1 for mono, 2 for stereo)
                 bool stream = false;   // Set to true if you want to stream the audio
 
-                AudioClip audioClip = AudioClip.Create("YourAudioClipName", audioData.Length / 2, channels, frequency, stream);
-
-
-                float myFloat = System.BitConverter.ToSingle(mybyteArray, startIndex);
+                AudioClip clip = AudioClip.Create("ClipName", samples.Length, channels, frequency, false);
+                clip.SetData(samples, 0);
 
 
 
-                float[] floatData = new float[audioData.Length / 2];
-                for (int i = 0; i < floatData.Length; i++)
-                {
-                    short sample = BitConverter.ToInt16(audioData, i * 2);
-                    floatData[i] = sample / 32768.0f;
-                }
-                audioClip.SetData(floatData, 0);
 
 
                 // Use the audioClip as needed (e.g., play it)
-                if (audioClip != null)
+                if (clip != null)
                 {
                     AudioSource audioSource = new GameObject("DD").AddComponent<AudioSource>();
-                    audioSource.clip = audioClip;
+                    audioSource.clip = clip;
                     audioSource.Play();
                 }
 
@@ -173,28 +182,79 @@ public class TestOpenAI : MonoBehaviour
     }
 
 
+    public static void RequestTTS(string text)
+    {
+        FindObjectOfType<MonoBehaviour>().StartCoroutine(PostRequest(text));
+    }
+
+    static IEnumerator PostRequest(string text)
+    {
+
+
+
+        string jsonPayload = "{\"text\":\"" + text + "\"}";
+
+        // UnityWebRequest request = UnityWebRequest.Post("https://api.openai.com/v1/tts", jsonPayload);
+        string ttsEndpoint = "https://api.openai.com/v1/audio/speech";
+
+        UnityWebRequest request = UnityWebRequest.PostWwwForm(ttsEndpoint, jsonPayload);
+        request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("Authorization", "Bearer " + apiKey);
+
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            byte[] audioData = request.downloadHandler.data;
+
+            // Play the audio
+            AudioSource audioSource = new GameObject("DD").AddComponent<AudioSource>();
+            audioSource.clip = WavUtility.ToAudioClip(audioData, 0, audioData.Length, 0, 44100, false);
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogError("TTS request failed: " + request.error);
+        }
+    }
 }
 public static class WavUtility
 {
-    public static byte[] FromAudioClip(AudioClip audioClip, out AudioClip audioClipWav, bool downsample = true)
+    public static AudioClip ToAudioClip(byte[] audioData, int offset, int length, int offsetSamples, int frequency, bool stereo)
     {
-        // Implementation for converting AudioClip to WAV
-        // ...
+        if (audioData == null || audioData.Length == 0)
+        {
+            Debug.LogError("Audio data is null or empty.");
+            return null;
+        }
 
-        // Example: Convert audioClip to WAV and return the byte array
-        audioClipWav = audioClip; // Replace this line with actual implementation
-        return new byte[0]; // Replace this line with actual implementation
+        // Convert 16-bit PCM to float
+        float[] floatData = new float[length / 2];
+        for (int i = 0; i < length / 2; i++)
+        {
+            floatData[i] = BitConverter.ToInt16(audioData, offset + i * 2) / 32768.0f;
+        }
+
+        // Create AudioClip
+        AudioClip audioClip = AudioClip.Create("GeneratedAudio", length / 2, stereo ? 2 : 1, frequency, false);
+        audioClip.SetData(floatData, 0);
+
+        return audioClip;
     }
 
-    public static AudioClip ToAudioClip(byte[] wavData, int offset, int length, int samples, int frequency, bool isStereo)
-    {
-        // Implementation for converting WAV to AudioClip
-        // ...
-
-        // Example: Convert wavData to AudioClip and return it
-        return AudioClip.Create("AudioClip", length, isStereo ? 2 : 1, frequency, false); // Replace this line with actual implementation
-    }
 }
+
+
+[System.Serializable]
+public class TTSPayload
+{
+    public string model;
+    public string input;
+    public string voice;
+    public string response_format;
+    public float speed;
+}
+
 
 
 namespace AICommand.OpenAI
@@ -292,3 +352,4 @@ namespace AICommand
     }
 
 } // namespace AICommand
+#endif
