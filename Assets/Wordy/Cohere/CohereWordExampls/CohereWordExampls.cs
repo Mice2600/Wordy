@@ -22,7 +22,8 @@ public class CohereWordExampls : ContentObject
     {
         CohereWordExampls D = Instantiate(ProjectSettings.ProjectSettings.Mine.CohereWordExamplsViwe).GetComponent<CohereWordExampls>();
         D.Content = content;
-        Cohere.Generate(content.EnglishSource, (List) => { if (D != null) D.Set(List); D.Sentences = List; });
+        GPTAI.GenerateSentences(content.EnglishSource, 
+            (List) => { if (D != null) D.Set(List); D.Sentences = List; });
     }
     public List<string> Sentences = new List<string>();
     public Transform ContentParrent;
