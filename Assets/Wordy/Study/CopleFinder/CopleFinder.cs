@@ -22,7 +22,7 @@ namespace Study.CopleFinder
             ContentsUse = Contents;
             ContentsUSED = new TList<Content>();
             ContentParrent.ClearChilds();
-            int CC = Random.Range(3, 9);
+            int CC = Random.Range(2, 9);
             for (int i = 0; i < CC; i++)
             {
                 Instantiate(ContntPrefab, ContentParrent);
@@ -132,29 +132,38 @@ namespace Study.CopleFinder
                     IsThereSomeOneTrue++;
                 }
             }
-            if (ContentsUse.Count > 0 && (IsThereSomeOneTrue > 4 ||
-                (Random.Range(0, 100) > 50 && IsThereSomeOneTrue > 3))) 
+            if (ContentsUse.Count > 0) 
             {
-                Content NWord = null;
-
-                for (int i = 0; i < 20; i++)
+                
+                    bool CountExeption = false;
+                    if (FirstWords.Count == 1 && IsThereSomeOneTrue > 0) CountExeption = true;
+                    if (FirstWords.Count == 3 && IsThereSomeOneTrue > 1) CountExeption = true;
+                    else if (FirstWords.Count == 2 && IsThereSomeOneTrue > 0) { CountExeption = true; }
+                    else if (Random.Range(0, 100) > 50 && IsThereSomeOneTrue > 2) CountExeption = true;
+                if (CountExeption || IsThereSomeOneTrue > 4)
                 {
-                    NWord = ContentsUse.RandomItem;
-                    if (!FirstWords.Contains(NWord)) break;
-                }
-                ContentsUse.Remove(NWord);
-                FirstOne = NWord;
-                if (ContentsUse.Count == 0) ContentsUse.Add(NWord);//prosta keyin remov boladi
+                    Content NWord = null;
+                    for (int i = 0; i < 20; i++)
+                    {
+                        NWord = ContentsUse.RandomItem;
+                        if (!FirstWords.Contains(NWord)) break;
+                    }
+                    ContentsUse.Remove(NWord);
+                    FirstOne = NWord;
+                    if (ContentsUse.Count == 0) ContentsUse.Add(NWord);//prosta keyin remov boladi
 
-                NWord = null;
-                for (int i = 0; i < 20; i++)
-                {
-                    NWord = ContentsUse.RandomItem;
-                    if (!SecondWords.Contains(NWord)) break;
+                    NWord = null;
+                    for (int i = 0; i < 20; i++)
+                    {
+                        NWord = ContentsUse.RandomItem;
+                        if (!SecondWords.Contains(NWord)) break;
+                    }
+                    ContentsUse.Remove(NWord);
+                    SecondOne = NWord;
+                    return true;
                 }
-                ContentsUse.Remove(NWord);
-                SecondOne = NWord;
-                return true;
+                else return false;
+                
             }else return false;
         }
 
@@ -189,6 +198,7 @@ namespace Study.CopleFinder
         bool Done = false;
         public void ShowWinWindow()
         {
+            EasyTTSUtil.Initialize(EasyTTSUtil.UnitedStates);
             if (Done) return;
             Done = true;
             aSystem.WinViwe.Creat(ContentsUSED);

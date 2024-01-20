@@ -7,7 +7,44 @@ using UnityEngine.Networking;
 
 public class GPTAI : MonoBehaviour
 {
-    public static string apiKey => "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";
+    public static string apiKey { 
+        get 
+        {
+            /*
+            char[] CharArrey = apiKey.ToCharArray();
+            string CharNumbered = "";
+            for (int i = 0; i < CharArrey.Length; i++) 
+            {
+                int NC = (int)CharArrey[i];
+                string NIW = "";
+                if (NC < 10)
+                    NIW = NC + "**";
+                else if (NC < 100)
+                    NIW = NC + "*";
+                else NIW = NC.ToString();
+                CharNumbered += NIW;
+            }*/
+            //115*107*45*118*55*111*52*113*111*48*72*101*55*72*71*76*119*100*105*113*89*111*73*84*51*66*108*98*107*70*74*52*113*112*50*111*108*70*118*86*121*112*119*117*122*78*121*100*90*66*117
+            //11510745*11855*11152*11311148*72*10155*72*71*76*11910010511389*11173*84*51*66*10898*10770*74*52*11311250*11110870*11886*12111211911712278*12110090*66*117
+
+
+            string SikretKey = "11510745*11855*11152*11311148*72*10155*72*71*76*11910010511389*11173*84*51*66*10898*10770*74*52*11311250*11110870*11886*12111211911712278*12110090*66*117";
+            string AAKKK = "";
+            while (SikretKey.Length > 0) 
+            {
+                string NCH= (SikretKey[0].ToString() + SikretKey[1] + SikretKey[2]);
+                NCH = NCH.Replace("*", "");
+                AAKKK += (char)int.Parse(NCH);
+                SikretKey = SikretKey.Remove(0, 3);
+            }
+
+            
+            //CharNumbered.Split('*').ToList().ForEach(c => AAKKK += (char)int.Parse(c));
+
+            
+            return AAKKK;
+        } 
+    } 
     [Button]
     public static void GenerateSentences(string Word, System.Action<List<string>> Resolt, System.Action OnFailed = null)
     {

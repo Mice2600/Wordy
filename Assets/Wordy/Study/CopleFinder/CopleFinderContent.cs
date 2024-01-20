@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 namespace Study.CopleFinder
 {
@@ -59,12 +60,28 @@ namespace Study.CopleFinder
             if (Dead) return;
 
 
-            if (IsFirst || CanUseVoiceToSecond)
-            {
-                if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-                    EasyTTSUtil.SpeechAdd(TextSEllectedtext);
+            //if (IsFirst || CanUseVoiceToSecond)
+                if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) 
+                {
+                    if (!IsFirst && !Regex.IsMatch(TextSEllectedtext, "^[a-zA-Z0-9]*$"))
+                    {
+                        EasyTTSUtil.Initialize(EasyTTSUtil.Russia);
+                        EasyTTSUtil.SpeechAdd(TextSEllectedtext);
+
+
+                    }
+                    else 
+                    {
+                        EasyTTSUtil.Initialize(EasyTTSUtil.UnitedStates);
+                        EasyTTSUtil.SpeechAdd(TextSEllectedtext); 
+                    }
+
+
+
+
+
+                }
                 else Debug.Log(TextSEllectedtext + " Speeking");
-            }
 
             if (IsFirst)
             {
