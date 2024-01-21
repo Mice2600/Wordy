@@ -168,6 +168,7 @@ public class GeneralCommands : MonoBehaviour
     public void SignUp() => SignUp(UserName.text, password.text);
     async Task SignUpWithUsernamePassword(string username, string password)
     {
+        
         if (AuthenticationService.Instance.IsSignedIn) return;
         try
         {

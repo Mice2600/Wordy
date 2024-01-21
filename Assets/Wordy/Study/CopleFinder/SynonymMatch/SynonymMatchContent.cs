@@ -16,6 +16,8 @@ namespace Study.CopleFinder.SynonymMatch
             {
                 if (!IsFirst) 
                 {
+                    if ((Content as Synonym).attachments.Count < 1)
+                        Debug.Log((Content as Synonym).EnglishSource);
                     TextSEllectedtext = (Content as Synonym).attachments.RandomItem();
                     return TextUtulity.UnderLine(TextSEllectedtext);
 

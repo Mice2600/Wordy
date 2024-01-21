@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AccsesButton : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Start is called before the first frame update*
     void Start()
     {
 
@@ -25,6 +25,6 @@ public class AccsesButton : MonoBehaviour
             gameObject.SetActive(false);
             return;
         }
-        CohereWordExampls.CreatSentencs(GetComponentInParent<ContentObject>().Content);
+        WordExampls.CreatSentencs(GetComponentInParent<ContentObject>().Content);
     }
 }

@@ -89,7 +89,17 @@ namespace WordCreator.WordCretor
                 }
             }
         }
-
+        public void OnAIDefenitionButton() 
+        {
+            GPTAI.GenerateDefenition(Content.EnglishSource, OnAiResponded);
+            void OnAiResponded(List<string> Words)
+            {
+                DiscreptionWriter.text = "";
+                Words.ForEach(WI => {
+                    DiscreptionWriter.text += WI + "\n";
+                });
+            }
+        }
         
         public void OnDestroyUrself()
         {

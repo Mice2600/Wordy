@@ -9,6 +9,7 @@ namespace Study.CopleFinder.AntonymMatch
     public class AntonymMatch : CopleFinder
     {
 
+
         public override bool GiveNewContent(
             TList<Content> FirstWords,
             TList<Content> SecondWords,
@@ -27,7 +28,7 @@ namespace Study.CopleFinder.AntonymMatch
                 else
                 {
 
-                    List<string> strings = AntonymBase.Antonyms[FirstWords[i]].attachments;
+                    List<string> strings = SynonymBase.Synonyms[FirstWords[i]].attachments;
                     if (SecondWords.Find(d => strings.Contains(d.EnglishSource)) != null) IsThereSomeOneTrue++;
                 }
             }
@@ -45,9 +46,9 @@ namespace Study.CopleFinder.AntonymMatch
                     SecondOne = ContentsUse.RemoveRandomItem();
                     return true;
                 }
-                else return false;
+                else { return false; }
             }
-            else return false;
+            else { return false; }
 
         }
 
@@ -61,24 +62,53 @@ namespace Study.CopleFinder.AntonymMatch
             TList<Content> SecondCopleless = new TList<Content>();
 
             for (int i = 0; i < FirstWords.Count; i++)
-                for (int DI = 0; DI < SecondWords.Count; DI++)
-                    if (!(SecondWords[DI] as Antonym).attachments.Contains(FirstWords[i].EnglishSource))
-                        FirstCopleless.Add(SecondWords[DI]);
-
-
+            {
+                bool isThere = false;
+                for (int X = 0; X < SecondWords.Count; X++)
+                {
+                    if ((SecondWords[X] as Antonym) == FirstWords[i] || (SecondWords[X] as Antonym).attachments.Contains(FirstWords[i].EnglishSource))
+                    {
+                        isThere = true;
+                        break;
+                    }
+                }
+                if (!isThere) FirstCopleless.Add(FirstWords[i]);
+            }
             for (int i = 0; i < SecondWords.Count; i++)
-                for (int DI = 0; DI < FirstWords.Count; DI++)
-                    if (!(FirstWords[DI] as Antonym).attachments.Contains(SecondWords[i].EnglishSource))
-                        SecondCopleless.Add(FirstWords[DI]);
+            {
+                bool isThere = false;
+                for (int X = 0; X < FirstWords.Count; X++)
+                {
+                    if ((FirstWords[X] as Antonym) == SecondWords[i] || (FirstWords[X] as Antonym).attachments.Contains(SecondWords[i].EnglishSource))
+                    {
+                        isThere = true;
+                        break;
+                    }
+                }
+                if (!isThere) SecondCopleless.Add(SecondWords[i]);
+            }
+
+            bool NEWContentUsed = false;
             if (FirstCopleless.Count == 0)
-                FirstOne = SecondWords.RandomItem;
-            else FirstOne = FirstCopleless.RandomItem;
+            {
+                if (ContentsUse.Count > 0) { NEWContentUsed = true; SecondOne = ContentsUse.RemoveRandomItem(); }
+
+            }
+
+            else { SecondOne = FirstCopleless.RandomItem; }
 
             if (SecondCopleless.Count == 0)
-                SecondOne = FirstWords.RandomItem;
-            else SecondOne = SecondCopleless.RandomItem;
-            return FirstOne != null && SecondOne != null;
+            {
+                if (ContentsUse.Count > 0) { NEWContentUsed = true; FirstOne = ContentsUse.RemoveRandomItem(); }
+            }
+            else { FirstOne = SecondCopleless.RandomItem; }
+            if (NEWContentUsed && (FirstOne == null || SecondOne == null))
+            {
+                FirstOne = SecondOne ?? FirstOne;
+                SecondOne = FirstOne ?? SecondOne;
+            }
 
+            return FirstOne != null && SecondOne != null;
         }
     }
 }

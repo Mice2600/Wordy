@@ -38,8 +38,6 @@ public class GPTAI : MonoBehaviour
                 SikretKey = SikretKey.Remove(0, 3);
             }
 
-            
-            //CharNumbered.Split('*').ToList().ForEach(c => AAKKK += (char)int.Parse(c));
 
             
             return AAKKK;
@@ -63,7 +61,18 @@ public class GPTAI : MonoBehaviour
     }
     public static void GenerateDefenition(string Word, System.Action<List<string>> Resolt, System.Action OnFailed = null)
     {
-    
+        AICommand.OpenAIUtil.InvokeChat(WrapPrompt(), (a) =>
+        {
+            for (int i = 1; i < 20; i++) a = a.Replace(i + ". ", "");
+            a = a.Replace("- ", "|").Replace(", ", "|").Replace("\n", "|");
+            a = a.Replace("||||", "|").Replace("|||", "|").Replace("||", "|");
+            if (a[0] == '|') a = a.Remove(0, 1);
+            a.Split("|").ToList().ForEach(d => Debug.Log(d));
+            Resolt?.Invoke(a.Split("|").ToList());
+        }, () => { OnFailed?.Invoke(); Debug.Log("unseccsese"); });
+        string WrapPrompt()
+          => $"give definition of {Word}.\n" +
+            " - I only need the sentences. Don't add any explanation.\n";
     }
     public static void GenerateSinonim(string Word, System.Action<List<string>> Resolt, System.Action OnFailed = null) 
     {
@@ -75,9 +84,9 @@ public class GPTAI : MonoBehaviour
                 return;
             }
             for (int i = 1; i < 20; i++) a = a.Replace(i + ". ", "");
-            a = a.Replace("- ", "|");
-            a = a.Replace(", ", "|");
-            a = a.Replace("\n", "|");
+            a = a.Replace("- ", "|").Replace(", ", "|").Replace("\n", "|");
+            a = a.Replace("||||", "|").Replace("|||", "|").Replace("||", "|");
+            if(a[0] == '|') a = a.Remove(0, 1);
             a.Split("|").ToList().ForEach(d => Debug.Log(d));
             Resolt?.Invoke(a.Split("|").ToList());
         }, () => { OnFailed?.Invoke(); Debug.Log("unseccsese"); });

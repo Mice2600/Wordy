@@ -1,4 +1,6 @@
 using Sirenix.OdinInspector;
+using System.Collections.Generic;
+using System;
 using System.Linq;
 using SystemBox;
 using UnityEngine;
@@ -18,6 +20,25 @@ namespace Base.Synonym
             //DefaultBase = new List<WordDefoult>(JsonHelper.FromJson<WordDefoult>(ProjectSettings.ProjectSettings.Mine.DefalultWords.text));
             Synonyms = new SynonymBase();
         }
+
+        public SynonymBase()  : base() 
+        {
+
+            List<Synonym> dd = JsonHelper.FromJson<Synonym>(PlayerPrefs.GetString(DataID)).ToList();
+            dd = dd.Where(d => d.attachments.Count > 0).ToList();
+            //Sirenix.Utilities.StringExtensions.CalculateLevenshteinDistance("aa", "aa");
+            string NewData = JsonHelper.ToJson(dd);
+                //JsonHelper.ToJson(JsonHelper.FromJson<Synonym>(PlayerPrefs.GetString(DataID)).Where(d => d.attachments.Count > 0));
+            PlayerPrefs.SetString(DataID, NewData);
+
+            /*for (int i = 0; i < Synonyms.Count; i++)
+                if (Synonyms[i].attachments.Count == 0) 
+                {
+                    Synonyms.RemoveAt(i);
+                    i = i - 1;
+                }*/
+        }
+
         public Synonym this[Content index]
         {
             get

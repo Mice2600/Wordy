@@ -16,11 +16,11 @@ namespace ProjectSettings
     }
 }
 
-public class CohereWordExampls : ContentObject
+public class WordExampls : ContentObject
 {
     public static void CreatSentencs(Content content)
     {
-        CohereWordExampls D = Instantiate(ProjectSettings.ProjectSettings.Mine.CohereWordExamplsViwe).GetComponent<CohereWordExampls>();
+        WordExampls D = Instantiate(ProjectSettings.ProjectSettings.Mine.CohereWordExamplsViwe).GetComponent<WordExampls>();
         D.Content = content;
         GPTAI.GenerateSentences(content.EnglishSource, 
             (List) => { if (D != null) D.Set(List); D.Sentences = List; });
@@ -38,7 +38,7 @@ public class CohereWordExampls : ContentObject
             Instantiate(DI.ContentObject, ContentParrent).GetComponent<ContentObject>().Content = DI;
         }
     }
-
+    //
     [SerializeField]
     private GameObject LoadingViwe;
     

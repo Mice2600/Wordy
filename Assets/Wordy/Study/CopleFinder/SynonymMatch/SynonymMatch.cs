@@ -48,9 +48,9 @@ namespace Study.CopleFinder.SynonymMatch
                     SecondOne = ContentsUse.RemoveRandomItem();
                     return true;
                 }
-                else return false;
+                else {  return false; }
             }
-            else return false;
+            else { return false; }
 
         }
 
@@ -64,22 +64,52 @@ namespace Study.CopleFinder.SynonymMatch
             TList<Content> SecondCopleless = new TList<Content>();
 
             for (int i = 0; i < FirstWords.Count; i++)
-                for (int DI = 0; DI < SecondWords.Count; DI++)
-                    if (!(SecondWords[DI] as Synonym).attachments.Contains(FirstWords[i].EnglishSource)) 
-                        FirstCopleless.Add(SecondWords[DI]);
-
-
+            {
+                bool isThere = false;
+                for (int X = 0; X < SecondWords.Count; X++)
+                {
+                    if ((SecondWords[X] as Synonym) == FirstWords[i] || (SecondWords[X] as Synonym).attachments.Contains(FirstWords[i].EnglishSource)) 
+                    {
+                        isThere = true;
+                        break;
+                    }
+                }    
+                if(!isThere) FirstCopleless.Add(FirstWords[i]);
+            }
             for (int i = 0; i < SecondWords.Count; i++)
-                for (int DI = 0; DI < FirstWords.Count; DI++)
-                    if (!(FirstWords[DI] as Synonym).attachments.Contains(SecondWords[i].EnglishSource))
-                        SecondCopleless.Add(FirstWords[DI]);
-            if (FirstCopleless.Count == 0) 
-                FirstOne = SecondWords.RandomItem;
-            else FirstOne = FirstCopleless.RandomItem;
+            {
+                bool isThere = false;
+                for (int X = 0; X < FirstWords.Count; X++)
+                {
+                    if ((FirstWords[X] as Synonym) == SecondWords[i] || (FirstWords[X] as Synonym).attachments.Contains(SecondWords[i].EnglishSource))
+                    {
+                        isThere = true;
+                        break;
+                    }
+                }
+                if (!isThere) SecondCopleless.Add(SecondWords[i]);
+            }
 
-            if (SecondCopleless.Count == 0)
-                SecondOne = FirstWords.RandomItem;
-            else SecondOne = SecondCopleless.RandomItem;
+            bool NEWContentUsed = false;
+            if (FirstCopleless.Count == 0) 
+            {
+                if (ContentsUse.Count > 0) {  NEWContentUsed = true; SecondOne = ContentsUse.RemoveRandomItem();  }
+            
+            }
+            
+            else {  SecondOne = FirstCopleless.RandomItem; }
+
+            if (SecondCopleless.Count == 0) 
+            {
+                if (ContentsUse.Count > 0) { NEWContentUsed = true; FirstOne = ContentsUse.RemoveRandomItem(); }
+            }
+            else { FirstOne = SecondCopleless.RandomItem; }
+            if (NEWContentUsed && (FirstOne == null || SecondOne == null)) 
+            {
+                FirstOne = SecondOne ?? FirstOne;
+                SecondOne = FirstOne ?? SecondOne;
+            }
+
             return FirstOne != null && SecondOne != null;
         }
     }

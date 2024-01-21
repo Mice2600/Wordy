@@ -18,6 +18,13 @@ public static class JsonHelper
         return wrapper.Items;
     }
 
+    public static string ToJson<T>(IEnumerable<T> array)
+    {
+        Wrapper<T> wrapper = new Wrapper<T>();
+        wrapper.Items = new List<T>(array);
+        return JsonUtility.ToJson(wrapper);
+    }
+
     public static string ToJson<T>(List<T> array)
     {
         Wrapper<T> wrapper = new Wrapper<T>();

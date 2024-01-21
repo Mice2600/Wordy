@@ -81,7 +81,7 @@ namespace Study.CopleFinder
 
 
                 }
-                else Debug.Log(TextSEllectedtext + " Speeking");
+                //else Debug.Log(TextSEllectedtext + " Speeking");
 
             if (IsFirst)
             {
