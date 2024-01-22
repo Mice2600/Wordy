@@ -41,16 +41,18 @@ namespace Study.CopleFinder
             InsideText.gameObject.SetActive(true);
             InsideText.text = Text;
             VoisOB.SetActive(false);
-            if (Random.Range(0, 10) > 5)
+
+            Base.Word.Word NW = Base.Word.WordBase.Wordgs[new Base.Word.Word(Content.EnglishSource, "", 0, false, "", "")];
+            float NScore = (NW as IPersanalData).ScoreConculeated;
+
+            if (NScore > 20 && Random.Range(0, 10) > 5)
             {
-                    if ((IsFirst && CanUseVoiceToFirst) || (!IsFirst && CanUseVoiceToSecond))
-                    {
+                if ((IsFirst && CanUseVoiceToFirst) || (!IsFirst && CanUseVoiceToSecond))
+                {
                     VoisOB.SetActive(true);
                     InsideText.gameObject.SetActive(false);
                 }
-                
             }
-            
         }
 
         private CopleFinder CopleFinder => _CopleFinder ??= FindObjectOfType<CopleFinder>();
