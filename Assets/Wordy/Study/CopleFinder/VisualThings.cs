@@ -1,7 +1,5 @@
-using System.Collections.Generic;
 using SystemBox.Simpls;
 using UnityEngine;
-using UnityEngine.UI;
 namespace Study.CopleFinder
 {
     public class VisualThings : MonoBehaviour
@@ -10,10 +8,7 @@ namespace Study.CopleFinder
         private CopleFinderContent _twoWordSystemContent;
         private Animator animator => _animator ??= GetComponent<Animator>();
         private Animator _animator;
-
-        private Image _image;
-        [SerializeField]
-        private List<Sprite> Sprites;
+        
         void Update()
         {
             animator.SetBool("Dead", twoWordSystemContent.Dead);
