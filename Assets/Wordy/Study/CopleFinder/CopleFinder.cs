@@ -9,19 +9,25 @@ namespace Study.CopleFinder
 {
     public class CopleFinder : MonoBehaviour
     {
-
+        [SerializeField, Required]
+        private GameObject CurrectContentPrefab;
+        [SerializeField, Required]
+        private Transform CurrectContentParrent;
         public GameObject ContntPrefab;
         public Transform ContentParrent;
-        public Gradient HelpColor;
         private protected virtual TList<Content> Contents { get => GetComponent<Quest>().NeedContentList; }
         private protected TList<Content> ContentsUse { get; set; }
         private TList<Content> ContentsUSED { get; set; }
 
         public void Start()
         {
+            CurrectContentParrent.ClearChilds();
+
             ContentsUse = Contents;
             ContentsUSED = new TList<Content>();
             ContentParrent.ClearChilds();
+
+
             int CC = Random.Range(2, 9);
             for (int i = 0; i < CC; i++)
             {
@@ -191,7 +197,14 @@ namespace Study.CopleFinder
             return FirstOne != null && SecondOne != null; 
         }
 
-        public void WrongChose(Content FirstOnes, Content SecondOnes)
+        public void CurrectChose(CopleFinderContent FirstOnes, CopleFinderContent SecondOnes) 
+        {
+            Instantiate(CurrectContentPrefab, CurrectContentParrent).GetComponent<CorrectContent>().values = new List<(string text, Content content)>() 
+            {
+                (FirstOnes.TextSEllectedtext, FirstOnes.Content),(SecondOnes.TextSEllectedtext, SecondOnes.Content)
+            };
+        }
+        public void WrongChose(CopleFinderContent FirstOnes, CopleFinderContent SecondOnes)
         {
 
         }

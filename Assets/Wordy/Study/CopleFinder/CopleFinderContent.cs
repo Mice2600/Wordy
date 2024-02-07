@@ -16,7 +16,9 @@ namespace Study.CopleFinder
         public static CopleFinderContent FirstSellected;
         public static CopleFinderContent SecondSellected;
 
-        protected string TextSEllectedtext;
+        public System.Action OnRefreshed;
+        [System.NonSerialized]
+        public string TextSEllectedtext;
         protected abstract string Text { get; }
         protected abstract bool CanUseVoiceToFirst { get; }
         protected abstract bool CanUseVoiceToSecond { get; }
@@ -37,10 +39,12 @@ namespace Study.CopleFinder
 
         public virtual void Refresh()
         {
+
             TMP_Text InsideText = GetComponentInChildren<TMP_Text>(true);
             InsideText.gameObject.SetActive(true);
             InsideText.text = Text;
             VoisOB.SetActive(false);
+
 
             Base.Word.Word NW = Base.Word.WordBase.Wordgs[new Base.Word.Word(Content.EnglishSource, "", 0, false, "", "")];
             float NScore = (NW as IPersanalData).ScoreConculeated;
@@ -53,6 +57,7 @@ namespace Study.CopleFinder
                     InsideText.gameObject.SetActive(false);
                 }
             }
+            OnRefreshed?.Invoke();
         }
 
         private CopleFinder CopleFinder => _CopleFinder ??= FindObjectOfType<CopleFinder>();
@@ -99,6 +104,7 @@ namespace Study.CopleFinder
             {
                 if (FirstSellected.IsThereEqualnest())
                 {
+                    CopleFinder.CurrectChose(FirstSellected, SecondSellected);
                     CopleFinderContent Ones = FirstSellected;
                     FirstSellected = null;
                     Ones.Dead = true;
@@ -123,7 +129,7 @@ namespace Study.CopleFinder
                 }
                 else
                 {
-                    CopleFinder.WrongChose(FirstSellected.Content, SecondSellected.Content);
+                    CopleFinder.WrongChose(FirstSellected, SecondSellected);
                     FirstSellected = null;
                     SecondSellected = null;
                 }
