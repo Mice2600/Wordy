@@ -10,150 +10,82 @@ using UnityEngine;
 
 public static class TagSystem 
 {
-    private static List<Tag> Tags 
+    private static List<string> Tags 
     {
         get 
         {
             if (_Tags == null) 
             {
-                _Tags = new List<Tag>();
+                _Tags = new List<string>();
                 if (PlayerPrefs.GetInt("TagSystemDefaultLode") == 0) 
                 {
                     PlayerPrefs.SetInt("TagSystemDefaultLode", 1);//
                     PlayerPrefs.SetString("TagSystemSaver", ProjectSettings.ProjectSettings.Mine.DefaultTags.text);
                 }
-                JsonHelper.FromJsonList<Tag>(PlayerPrefs.GetString("TagSystemSaver")).ForEach((a) => Tags.Add(a));
-                if(_Tags.Find((a) => a.ID == ActiveID) == null) _Tags.AddTo(0, new Tag(ActiveID));
+                JsonHelper.FromJsonList<string>(PlayerPrefs.GetString("TagSystemSaver")).ForEach((a) => Tags.Add(a));
+                if(_Tags.Find((a) => a == ActiveID) == null) _Tags.AddTo(0, ActiveID);
             }
             return _Tags;
         }
     }
+    private static List<string> _Tags;
     public static string ActiveID => "Active";
-    private static List<Tag> _Tags;
-    public static TList<string> GetAllTagIdes() 
+    public static string VerbID => "Verb";
+    public static string AdjectiveID => "Verb";
+    public static string NounID => "Verb";
+    public static string NounID => "Verb";
+    
+    public static bool IsContentBlongToTag(string Tag, string ContentID) 
     {
-        TList<string> TagNames = new TList<string>();
-        for (int i = 0; i < Tags.Count; i++) TagNames.Add(Tags[i].ID);
-        return TagNames;
+        string Resolt = GetTag(Tag).Contents.Find(TC => TC == ContentID);
+        return  !string.IsNullOrEmpty(Resolt);
     }
-    public static Tag GetTag(string ID) => Tags.Find((a) => a.ID == ID);
-    public static List<Tag> GetAllTags() => Tags;
-    public static TList<string> GetBlongTags(string contentID) 
-    {
-        TList<string> TagNames = new TList<string>();
-        for (int i = 0; i < Tags.Count; i++) TagNames.AddIf(Tags[i].ID, Tags[i].Contains(contentID));
-        return TagNames;
-    }
-    public static TList<string> GetAllContentsFromTag(string TagID) 
-    {
-        if (TagID == ActiveID) 
-        {
-            TList<string> contents = new TList<string>();
-            IDataListComands.DataLists.ForEach(
-                (Lisss) =>
-                {
-                    int Count = Lisss.GetCount();
-                    for (int i = 0; i < Count; i++)
-                    {
-                        Content content = Lisss.GetContent(i);
-                        if ((content is IPersanalData))
-                            if ((Lisss.GetContent(i) as IPersanalData).Active)
-                                contents.Add(content.EnglishSource);
-                    }
-                }
-            );
-            return contents;
-        }
 
-        return GetTag(TagID).Contents;
-        /*
-        */
+
+    public static List<Content> WhereTegHasContent(string Tag, List<Content> Contents)
+    {
+        List<string> TagContents = GetTag(Tag).Contents;
+        return Contents.Where(I => TagContents.Contains(I.EnglishSource)).ToList();
     }
+
+
+
     public static bool ContainsTag(string ID) => GetTag(ID) != null;
     public static bool CreatTag(string NewID) 
     {
-        if (string.IsNullOrEmpty(NewID)) return false;
-        if (NewID[0] != '@') NewID = "@" + NewID;
-        if (ContainsTag(NewID)) return false;
-        Tags.Add(new Tag(NewID));
-        Save();
+       
         return true;
     }
     public static bool DestroyTag(string NewID)
     {
-        if (string.IsNullOrEmpty(NewID)) return false;
-        if (NewID[0] != '@') NewID = "@" + NewID;
-        if (!ContainsTag(NewID)) return true;
-        Tags.Remove(GetTag(NewID));
-        Save();
-        return true;
+        return false;
     }
-    public static bool ChangeTagID(string OldID, string NewID)
-    {
-        if (string.IsNullOrEmpty(OldID)) return false;
-        if (string.IsNullOrEmpty(NewID)) return false;
-        if (OldID[0] != '@') OldID = "@" + OldID;
-        if (NewID[0] != '@') NewID = "@" + NewID;
-        if (!ContainsTag(OldID)) return false;
-        if (ContainsTag(NewID)) return false;
-        GetTag(OldID).ID = NewID;
-        Save();
-        return true;
-    }
-    public static void SaveToDefault() 
-    {
-        Save();
-    }
+   
     public static void Save() 
     {
-        PlayerPrefs.SetString("TagSystemSaver", JsonHelper.ToJson<Tag>(Tags));
+        PlayerPrefs.SetString("TagSystemSaver", JsonHelper.ToJson<string>(Tags));
         string All = "";/////
-        if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Tags.txt"))
-            All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Tags.txt");
-        else Directory.CreateDirectory("Assets/Base/Resources");
+        if (System.IO.File.Exists(Application.dataPath + "/Wordy/Base/Resources/Default Tags.txt"))
+            All = System.IO.File.ReadAllText(Application.dataPath + "/Wordy/Base/Resources/Default Tags.txt");
+        else Directory.CreateDirectory("Assets/Wordy/Base/Resources");
         string SD = JsonHelper.ToJson(TagSystem.GetAllTags());
-        SD = SD.Replace("{", "\n{");
-        SD = SD.Replace("},", "\n},");
-        SD = SD.Replace("\",\"", "\",\n\"");
-        System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Tags.txt", SD);
+        System.IO.File.WriteAllText(Application.dataPath + "/Wordy/Base/Resources/Default Tags.txt", SD);
         ProjectSettings.ProjectSettings.Mine.DefaultTags = UnityEngine.Resources.Load("Default Tags", typeof(TextAsset)) as TextAsset;
     }
 
 
     public static void AddContent(string TagID, string ContentID) 
     {
-        if (!ContainsTag(TagID)) return;
-        GetTag(TagID).Add(ContentID);
+
         Save();
     }
     public static void RemoveContent(string TagID, string ContentID) 
     {
-        if (!ContainsTag(TagID)) return;
-        GetTag(TagID).Remove(ContentID);
-        Save();
-    }
-    public static void AddDeafauldText(string TagID, string Text)
-    {
-        
-        if (!ContainsTag(TagID)) return;
-        Tag tag = GetTag(TagID);
-        Debug.Log(tag.Contents.Count);
-        Text = Text.Replace("\n", "|").Replace("\t", "|").Replace(" ", "|").Replace("||", "|");
-        Text.Split("|").ToList().ForEach((OneN)=> { if(!tag.Contents.Contains(OneN.ToUpper())) tag.Contents.Add(OneN.ToUpper()); });
-        Debug.Log(Text.Split("|").Length);
-        string All = "";///
-        if (System.IO.File.Exists(Application.dataPath + "/Base/Resources/Default Tags.txt"))
-            All = System.IO.File.ReadAllText(Application.dataPath + "/Base/Resources/Default Tags.txt");
-        else Directory.CreateDirectory("Assets/Base/Resources");
-        string SD = JsonHelper.ToJson(TagSystem.GetAllTags());
-        SD = SD.Replace("{", "\n{");
-        SD = SD.Replace("},", "\n},");
-        System.IO.File.WriteAllText(Application.dataPath + "/Base/Resources/Default Tags.txt", SD);
-        ProjectSettings.ProjectSettings.Mine.DefaultTags = UnityEngine.Resources.Load("Default Tags", typeof(TextAsset)) as TextAsset;
         Save();
     }
 
 }
+
 namespace ProjectSettings
 {
     public partial class ProjectSettings
@@ -162,4 +94,14 @@ namespace ProjectSettings
         [HorizontalGroup("DefalultBaseWord")]//
         public TextAsset DefaultTags;
     }
+}
+
+
+interface Tagable
+{
+    public List<string> Tags { get; set; }
+    public bool IsAnyThereTag() => !Tags.IsEnpty();
+    public bool IsThereTag(string NeedTag) => !string.IsNullOrEmpty(Tags.Find(F => F == NeedTag));
+    public bool RemoveTag(string Tag) => Tags.Remove(Tag);
+    public void AddTag(string Tag) => Tags.Add(Tag);
 }

@@ -29,19 +29,6 @@ namespace Servises.BaseList
 
         public TList<Content> Filtered;//
 
-        public static Dictionary<string, bool> TagFillterValues
-        {
-            get
-            {
-                if (_TagFillterValues == null)
-                {
-                    _TagFillterValues = new Dictionary<string, bool>();
-                    TagSystem.GetAllTagIdes().ForEach((a) => { _TagFillterValues.Add(a, false); });
-                }
-                return _TagFillterValues;
-            }
-        }
-        private static Dictionary<string, bool> _TagFillterValues;
         public void OnFilter() => Refresh();
         #endregion
 
@@ -77,7 +64,7 @@ namespace Servises.BaseList
                 SerchedContents = null;
 
                 Filtered = new List<Content>();
-                TagSystem.GetAllTagIdes().Where((s) => TagFillterValues[s]).
+                TagSystem.GetAllTagIdes().Where((s) => TagFilterViwe.TagFillterValues[s]).
                     ForEach((id) => {
                         List<string> BlongsContents = TagSystem.GetAllContentsFromTag(id);
                         List<Content> CorrentContents = AllContents;

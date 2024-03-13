@@ -20,10 +20,10 @@ public class FillterButton : MonoBehaviour, IBaseToolItem
     private CanvasGroup _CanvasGroup;
     private void Update()
     {
-        List<string> kk = new List<string>(BaseListWithFillter.TagFillterValues.Keys);
+        List<string> kk = new List<string>(TagFilterViwe.TagFillterValues.Keys);
         foreach (string k in kk)
         {
-            if (BaseListWithFillter.TagFillterValues[k]) 
+            if (TagFilterViwe.TagFillterValues[k]) 
             {
                 CanvasGroup.alpha = 1f;
                 return;

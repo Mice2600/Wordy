@@ -9,6 +9,23 @@ using UnityEngine.UI;
 
 public class TagFilterViwe : MonoBehaviour
 {
+
+    public static Dictionary<string, bool> TagFillterValues
+    {
+        get
+        {
+            if (_TagFillterValues == null)
+            {
+                _TagFillterValues = new Dictionary<string, bool>();
+                TagSystem.GetAllTagIdes().ForEach((a) => { _TagFillterValues.Add(a, false); });
+            }
+            return _TagFillterValues;
+        }
+    }
+    
+    private static Dictionary<string, bool> _TagFillterValues;
+
+
     public System.Action OnDone;
     [SerializeField, Required]
     private TogelContent TagButtonPrefab;
@@ -22,10 +39,10 @@ public class TagFilterViwe : MonoBehaviour
         AllTages.ForEach((a) =>
         {
             TogelContent Toggel = Instantiate(TagButtonPrefab, ConentParrent);
-            Toggel.isOn = BaseListWithFillter.TagFillterValues[a];
+            Toggel.isOn = TagFillterValues[a];
             Toggel.GetComponentInChildren<TextMeshProUGUI>().text = a + " ";// +  TagSystem.GetAllContentsFromTag(a).Count;
             string Ass = a;
-            Toggel.OnBoolChanged += (GG) => { BaseListWithFillter.TagFillterValues[Ass] = GG; };
+            Toggel.OnBoolChanged += (GG) => { TagFillterValues[Ass] = GG; };
             Toggel.OnDestroyButton += () => TagDeleter.Delet(Start, TagSystem.GetTag(Ass));
         });
     }
@@ -37,8 +54,8 @@ public class TagFilterViwe : MonoBehaviour
     }
     public void OnDefaultButton() 
     {
-        List<string> kk = new List<string>(BaseListWithFillter.TagFillterValues.Keys);
-        kk.ForEach(a => BaseListWithFillter.TagFillterValues[a] = false);
+        List<string> kk = new List<string>(TagFillterValues.Keys);
+        kk.ForEach(a => TagFillterValues[a] = false);
         new List<Toggle>(GetComponentsInChildren<Toggle>()).ForEach(a => a.isOn = false);
     }
 }
