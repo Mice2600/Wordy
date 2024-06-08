@@ -38,6 +38,6 @@ public class BaseFounder : MonoBehaviour
     public void OnButton()
     {
         transform.GetComponentInParent<DiscretionObject>().DestroyUrself();
-        SceneComands.OpenSceneBaseSearch(Content.EnglishSource, 1);
+        
     }
 }

@@ -1,6 +1,3 @@
-using Base.Word;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using Sirenix.OdinInspector;
@@ -8,10 +5,6 @@ using TMPro;
 using Base;
 using Traonsletor;
 using Base.Dialog;
-using BaseViwe.WordViwe;
-using SystemBox.Engine;
-using UnityEngine.SceneManagement;
-using BaseViwe.DialogViwe;
 
 namespace ProjectSettings
 {
@@ -58,7 +51,6 @@ public class DialogChanger : ContentObject
 
         OnDestroyUrself();
 
-        SceneComands.OpenSceneSellecetDialogBase(Content as Dialog);
     }
     public void TryCancel()
     {
@@ -87,21 +79,3 @@ public class DialogChanger : ContentObject
     }
 }
 
-public static partial class SceneComands // WordBaseViwe 
-{
-    public static void OpenSceneSellecetDialogBase(Dialog word)
-    {
-        Engine.Get_Engine("Game").StartCoroutine(enumerator());
-        IEnumerator enumerator()
-        {
-            if (SceneManager.GetActiveScene().name != "DialogBaseViwe")
-            {
-                SceneManager.LoadScene("DialogBaseViwe", LoadSceneMode.Single);
-                yield return null;
-                yield return null;
-                yield return null;
-            }
-            GameObject.FindObjectOfType<DialogBaseViwe>().Lode(DialogBase.Dialogs.IndexOf(word));
-        }
-    }
-}

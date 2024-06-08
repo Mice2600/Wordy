@@ -1,5 +1,4 @@
 using Newtonsoft.Json.Linq;
-using Servises.BaseList;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,7 +13,7 @@ public interface ISearchUser
     public void OnSearchEnded();
     public void OnValueChanged(string Value);
 }
-public class SearchViwe : MonoBehaviour, IBaseToolItem
+public class SearchViwe : MonoBehaviour
 {
     public System.Action OnSearchStarted;
     public System.Action OnSearchEnded;

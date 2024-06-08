@@ -26,9 +26,9 @@ namespace WordCreator.WordCretor
             if (wordChanger.OnApple != OnApplay) 
                 wordChanger.OnApple += OnApplay;
 
-            List<string> AllTages = TagSystem.GetAllTagIdes();
-            List<string> BellongTages = TagSystem.GetBlongTags(Content.EnglishSource);
-
+            List<string> AllTages = Tagable.GetListOfTags();
+            List<string> BellongTages = (Content as Tagable).Tags;
+            if (BellongTages == null) BellongTages = new List<string>();
             Toggle[] toggle = GetComponentsInChildren<Toggle>();
             toggle.DestroyAll(true);
             AllTages.ForEach((a) =>
@@ -49,11 +49,11 @@ namespace WordCreator.WordCretor
         public void OnApplay() 
         {
             TagSituation.Keys.ToList().ForEach((a) => {
-                if (TagSituation[a]) TagSystem.AddContent(a, Content.EnglishSource);
-                else TagSystem.RemoveContent(a, Content.EnglishSource);
+                if (TagSituation[a]) Tagable.AddContent(a, Content);
+                else Tagable.RemoveContent(a, Content);
             });
         }//
-        public void OnAddButton() => TagCreator.Open(Start);
+        public void OnAddButton() => TagCreator.Open(Content as Tagable, Start);
     }
 }
 

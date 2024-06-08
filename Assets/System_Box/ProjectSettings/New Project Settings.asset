@@ -32,8 +32,6 @@ MonoBehaviour:
   TagContentListViwe: {fileID: 2726195047587263085, guid: 6f89b5a20b2290846a7aaf149b8a222d, type: 3}
   TagCreatorViwe: {fileID: 6608090224564072100, guid: 9957a4fa4ce74de47aa835febb52c857, type: 3}
   TagDeletViwe: {fileID: 2907046969659145311, guid: ed99d274d69b6804bb627eda7d02f062, type: 3}
-  DefaultTags: {fileID: 4900000, guid: 37950f5dfb232254c9246227a09a3a91, type: 3}
-  CohereWordExamplsViwe: {fileID: 8284152216871096949, guid: a9086ed8b25af494baa060949b9b13a1, type: 3}
   ContentLoopColors:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 0, a: 1}
@@ -64,6 +62,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
+  CohereWordExamplsViwe: {fileID: 8284152216871096949, guid: a9086ed8b25af494baa060949b9b13a1, type: 3}
   StandartWinUI: {fileID: 4791788466054964576, guid: 95d382ca6e181904e9aa0333d0712383, type: 3}
   BuildDialog:
     Prefab: {fileID: 390680359857516665, guid: 2759553e8d9f7da498f7c580651883d9, type: 3}
@@ -102,6 +101,9 @@ MonoBehaviour:
     SceneName: Crossword
     <AddScoreWord>k__BackingField: 5
     <RemoveScoreWord>k__BackingField: 5
+  questEnglishTest:
+    Prefab: {fileID: 5958486638063814859, guid: 72dc09af55db78e499adf41803b2e56b, type: 3}
+    SceneName: EnglishTest
   questFillTheSpace:
     Prefab: {fileID: 3118217960735825422, guid: f9531d27d334f3547b0c433ea15a0827, type: 3}
     SceneName: FillTheSpace

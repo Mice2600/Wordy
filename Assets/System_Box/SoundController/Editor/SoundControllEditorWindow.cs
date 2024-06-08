@@ -76,7 +76,7 @@ public class SoundControllEditorWindow : OdinMenuEditorWindow
 
         [HideIf("Audio_Test_Show_Grope")]
         public SoundProduct_Clip Audio;
-        [ListDrawerSettings(ShowItemCount = true, Expanded = true)]
+        [ListDrawerSettings(ShowItemCount = true)]
         [InfoBox("Audio is requared ", InfoMessageType = InfoMessageType.Error, VisibleIf = "Audio_Grope_Test")]
         [ShowIf("Audio_Test_Show_Grope")]
         public List<SoundProduct_Clip> Audio_Grope;

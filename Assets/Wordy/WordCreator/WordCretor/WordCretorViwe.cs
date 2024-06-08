@@ -1,6 +1,5 @@
 using Base;
 using Base.Word;
-using BaseViwe.WordViwe;
 using Newtonsoft.Json.Linq;
 using System.Collections;
 using SystemBox.Engine;
@@ -47,7 +46,6 @@ namespace WordCreator.WordCretor
         {
             WordBase.Wordgs.Add(Content as Word);
             WordBase.Sort();
-            SceneComands.OpenSceneSellecetWordBase(Content as Word);
         }
 
 

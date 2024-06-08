@@ -543,6 +543,17 @@ namespace SystemBox
             }
             catch (System.Exception XX) { throw Tools.ExceptionThrow(XX, 2); }
         }
+        public static void ForEach<T>(this T[] list, System.Action<T> action)
+        {
+            try
+            {
+                int HowMatch = list.Length;
+                for (int i = 0; i < HowMatch; i++) action.Invoke(list[i]);
+            }
+            catch (System.Exception XX) { throw Tools.ExceptionThrow(XX, 2); }
+        }
+
+
 
         public static void RemoveNulls<T>(this List<T> list) where T : class
         {

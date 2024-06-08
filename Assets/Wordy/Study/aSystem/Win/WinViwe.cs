@@ -21,13 +21,13 @@ namespace Study.aSystem
 
         [System.NonSerialized]
         public List<Content> contents;
-        private Quest Quest => _Quest ??= FindObjectOfType<Quest>();
+        private Quest Quest => _Quest ??= GameObject.FindFirstObjectByType<Quest>();
         private Quest _Quest;
         public GameObject SingelScorePrefab;
         void Start()
         {
 
-            Quest d = FindObjectOfType<Quest>();
+            Quest d = GameObject.FindFirstObjectByType<Quest>();
             contents.ForEach(ss => { if (ss is Word) d.OnWordWin?.Invoke(ss as Word); });
             d.OnGameWin?.Invoke();
             ContentGropper LLD = GetComponentInChildren<ContentGropper>();

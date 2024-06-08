@@ -73,7 +73,7 @@ namespace SystemBox.ObjectCretor.Editor
 
             [HideIf("Audio_Test_Show_Grope")]
             public GameObject Prefab;
-            [ListDrawerSettings(ShowItemCount = true, Expanded = true)]
+            [ListDrawerSettings(ShowItemCount = true)]
             [InfoBox("Prefab is requared ", InfoMessageType = InfoMessageType.Error, VisibleIf = "Audio_Grope_Test")]
             [ShowIf("Audio_Test_Show_Grope")]
             public List<GameObject> Prefab_Grope;

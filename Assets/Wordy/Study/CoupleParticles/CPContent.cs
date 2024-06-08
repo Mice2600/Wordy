@@ -16,11 +16,11 @@ namespace Study.CoupleParticles
             Flayer.transform.position = Vector3.left + Vector3.up * 9999f;
             Flayer.transform.transform.SetParent(transform.root);
             Flayer.GetComponentInChildren<TextMeshProUGUI>().text = Content.EnglishSource;
-            FindObjectOfType<CoupleParticles>().OncontentFound += (C) =>
+            GameObject.FindFirstObjectByType<CoupleParticles>().OncontentFound += (C) =>
             {
                 if (C == Content)
                 {
-                    Flayer.transform.position = FindObjectOfType<Indecator>().transform.position;
+                    Flayer.transform.position = GameObject.FindFirstObjectByType<Indecator>().transform.position;
                     Flayer.transform.SetAsLastSibling();
                     StartCoroutine(AA());
                 }

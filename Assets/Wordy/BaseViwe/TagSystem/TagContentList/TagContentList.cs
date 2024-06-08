@@ -17,7 +17,11 @@ namespace ProjectSettings
 }
 public class TagContentList : ContentObject
 {
-    public static void Open(Content content, System.Action OnDone) => Instantiate(ProjectSettings.ProjectSettings.Mine.TagContentListViwe).GetComponent<TagContentList>().Set(content, OnDone);
+    public static void Open(Tagable content, System.Action OnDone) 
+    {
+        if (content == null) return;
+        Instantiate(ProjectSettings.ProjectSettings.Mine.TagContentListViwe).GetComponent<TagContentList>().Set(content as Content, OnDone); 
+    }
     [SerializeField, Required]
     private GameObject TagButtonPrefab;
     [SerializeField, Required]
@@ -31,8 +35,8 @@ public class TagContentList : ContentObject
     }
     private void Start()
     {
-        List<string> AllTages= TagSystem.GetAllTagIdes();
-        List<string> BellongTages= TagSystem.GetBlongTags(Content.EnglishSource);
+        List<string> AllTages= Tagable.GetListOfTags();
+        List<string> BellongTages= (Content as Tagable).Tags;
         
         Toggle[] toggle = GetComponentsInChildren<Toggle>();
         toggle.DestroyAll(true);
@@ -47,11 +51,11 @@ public class TagContentList : ContentObject
 
         void OnCliced(bool Value, string Tag) 
         {
-            if(Value) TagSystem.AddContent(Tag, Content.EnglishSource);
-            else TagSystem.RemoveContent(Tag, Content.EnglishSource);
+            if(Value) (Content as Tagable).AddTag(Tag);
+            else (Content as Tagable).RemoveTag(Tag);
         }
     }
-    public void OnAddButton() => TagCreator.Open(Start);
+    public void OnAddButton() => TagCreator.Open(Content as Tagable,Start);
     public void DestroyUrself()
     {
         OnDone?.Invoke();

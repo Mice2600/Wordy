@@ -15,7 +15,10 @@ namespace Study.Crossword
         void Start()
         {
             TList<string> vs = new TList<string>();
-            FindObjectOfType<QuestCrossword>().NeedWordList.ForEach(a => vs.Add(a.EnglishSource));
+
+
+
+            GameObject.FindFirstObjectByType<QuestCrossword>().NeedWordList.ForEach(a => vs.Add(a.EnglishSource));
             ToBuild = Generaton.tryGnereat(vs, (Vector2Int.one * 10, -(Vector2Int.one * 10)));
 
 
@@ -177,7 +180,7 @@ namespace Study.Crossword
         public static void TrayJoin(Transform ToTest)
         {
 
-            List<OneBox> AllOtheres = FindObjectsOfType<OneBox>().ToList();
+            List<OneBox> AllOtheres = GameObject.FindObjectsByType<OneBox>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).ToList();
             List<OneBox> ToCheakBoxes = new List<OneBox>();
             ToTest.transform.Childs().ForEach(a => ToCheakBoxes.Add(a.GetComponent<OneBox>()));
             ToCheakBoxes.ForEach(a => AllOtheres.Remove(a));
@@ -198,14 +201,18 @@ namespace Study.Crossword
                 }
             }
 
-            FindObjectOfType<CrosswordSystem>().StartCoroutine(DD());
+
+
+
+            GameObject.FindFirstObjectByType<CrosswordSystem>().StartCoroutine(DD());
             IEnumerator DD()
             {
                 yield return new WaitForSeconds(1f);
 
-                if (FindObjectsOfType<InputTest>().Length == 1)
+                if (GameObject.FindObjectsByType<InputTest>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).Length == 1)
                 {
-                    FindObjectOfType<CrosswordSystem>().OnWin();
+                    
+                    GameObject.FindFirstObjectByType<CrosswordSystem>().OnWin();
                 }
             }
 

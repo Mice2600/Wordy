@@ -1,0 +1,2618 @@
+{	
+"Items":
+	[
+
+  {
+    "Level": 4,
+    "RuleInfo": "Choose the Correct Sentence",
+    "Question": "Which sentence is grammatically correct?",
+    "Answers": [
+      {
+        "AnswerText": "She went to the store yesterday.",
+        "AnswerReason": "Correct",
+        "Score": 10
+      },
+      {
+        "AnswerText": "She goed to the store yesterday.",
+        "AnswerReason": "Incorrect",
+        "Score": 0
+      },
+      {
+        "AnswerText": "She go to the store yesterday.",
+        "AnswerReason": "Incorrect",
+        "Score": 0
+      }
+    ]
+  },
+  {
+    "Level": 1,
+    "RuleInfo": "Error Identification",
+    "Question": "Which sentence has a grammar mistake?",
+    "Answers": [
+      {
+        "AnswerText": "They is going to the market.",
+        "AnswerReason": "Subject-verb agreement error",
+        "Score": 0
+      },
+      {
+        "AnswerText": "She runned quickly to catch the bus.",
+        "AnswerReason": "Incorrect verb form",
+        "Score": 0
+      },
+      {
+        "AnswerText": "He doesn't likes ice cream.",
+        "AnswerReason": "Incorrect verb form",
+        "Score": 0
+      },
+      {
+        "AnswerText": "I have went to the store.",
+        "AnswerReason": "Incorrect verb form",
+        "Score": 10
+      }
+    ]
+  },
+  {
+    "Level": 2,
+    "RuleInfo": "Choose the Correct Definition",
+    "Question": "What does 'vivid' mean?",
+    "Answers": [
+      {
+        "AnswerText": "Dull",
+        "AnswerReason": "Incorrect",
+        "Score": 0
+      },
+      {
+        "AnswerText": "Bright and intense",
+        "AnswerReason": "Correct",
+        "Score": 10
+      },
+      {
+        "AnswerText": "Mysterious",
+        "AnswerReason": "Incorrect",
+        "Score": 0
+      }
+    ]
+  },
+  {
+    "Level": 3,
+    "RuleInfo": "Gap-filling",
+    "Question": "He _______ to the cinema last night.",
+    "Answers": [
+      {
+        "AnswerText": "went",
+        "AnswerReason": "Correct",
+        "Score": 10
+      },
+      {
+        "AnswerText": "goes",
+        "AnswerReason": "Incorrect",
+        "Score": 5
+      },
+      {
+        "AnswerText": "is going",
+        "AnswerReason": "Incorrect",
+        "Score": 0
+      }
+    ]
+  },
+  {
+    "Level": 4,
+    "RuleInfo": "Sentence Transformation",
+    "Question": "Transform the sentence 'He is not playing football.' to a positive form.",
+    "Answers": [
+      {
+        "AnswerText": "He is playing football.",
+        "AnswerReason": "Correct transformation",
+        "Score": 10
+      },
+      {
+        "AnswerText": "He is not football playing.",
+        "AnswerReason": "Incorrect transformation",
+        "Score": 0
+      }
+    ]
+  },
+  {
+    "Level": 1,
+    "RuleInfo": "Paraphrasing",
+    "Question": "Rewrite the sentence 'The cat is on the mat.'",
+    "Answers": [
+      {
+        "AnswerText": "The mat has a cat on it.",
+        "AnswerReason": "Incorrect paraphrasing",
+        "Score": 0
+      },
+      {
+        "AnswerText": "There is a cat on the mat.",
+        "AnswerReason": "Correct paraphrasing",
+        "Score": 10
+      }
+    ]
+  },
+  {
+    "Level": 2,
+    "RuleInfo": "Short Answer",
+    "Question": "What is the opposite of 'big'?",
+    "Answers": [
+      {
+        "AnswerText": "Small",
+        "AnswerReason": "Correct",
+        "Score": 10
+      },
+      {
+        "AnswerText": "Large",
+        "AnswerReason": "Incorrect",
+        "Score": 0
+      }
+    ]
+  },
+  {
+        "Levle": 1,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following is a synonym for 'happy'?",
+        "Answers": [
+            {"AnswerText": "Joyful", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Sad", "AnswerReason": "Opposite meaning", "Score": 0},
+            {"AnswerText": "Angry", "AnswerReason": "Opposite meaning", "Score": 0},
+            {"AnswerText": "Anxious", "AnswerReason": "Different meaning", "Score": 5}
+        ]
+    },
+    {
+        "Levle": 2,
+        "RuleInfo": "True/False",
+        "Question": "Mount Everest is the tallest mountain on Earth.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "False", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Levle": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "I _______ to Paris last summer.",
+        "Answers": [
+            {"AnswerText": "traveled", "AnswerReason": "Correct past tense of 'travel'", "Score": 10},
+            {"AnswerText": "traveling", "AnswerReason": "Present tense", "Score": 7},
+            {"AnswerText": "will travel", "AnswerReason": "Future tense", "Score": 5},
+            {"AnswerText": "travel", "AnswerReason": "Infinitive form", "Score": 3},
+            {"AnswerText": "travels", "AnswerReason": "Third person singular", "Score": 7}
+        ]
+    },
+    {
+        "Levle": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "He has been working hard all day.", "AnswerReason": "Correct sentence structure", "Score": 10},
+            {"AnswerText": "All day he has been working hard.", "AnswerReason": "Word order is unusual", "Score": 7},
+            {"AnswerText": "Working hard he has been all day.", "AnswerReason": "Incorrect word order", "Score": 5},
+            {"AnswerText": "He has all day been working hard.", "AnswerReason": "Unnatural word order", "Score": 3}
+        ]
+    },
+    {
+        "Levle": 1,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error: She have a cat.",
+        "Answers": [
+            {"AnswerText": "have", "AnswerReason": "Incorrect verb form", "Score": 10},
+            {"AnswerText": "She", "AnswerReason": "Subject is correct", "Score": 7},
+            {"AnswerText": "a cat", "AnswerReason": "Object is correct", "Score": 7},
+            {"AnswerText": "She have", "AnswerReason": "Subject-verb agreement error", "Score": 10}
+        ]
+    },
+    {
+        "Levle": 2,
+        "RuleInfo": "Choose the correct definition",
+        "Question": "What does 'ambivalent' mean?",
+        "Answers": [
+            {"AnswerText": "Having mixed feelings about something", "AnswerReason": "Correct definition", "Score": 10},
+            {"AnswerText": "Feeling strongly about something", "AnswerReason": "Opposite meaning", "Score": 0},
+            {"AnswerText": "Having no feelings about something", "AnswerReason": "Incorrect definition", "Score": 2},
+            {"AnswerText": "Indifferent towards something", "AnswerReason": "Related but not exact meaning", "Score": 5}
+        ]
+    },
+    {
+        "Levle": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "Please ________ the door when you leave.",
+        "Answers": [
+            {"AnswerText": "close", "AnswerReason": "Correct verb to fill the gap", "Score": 10},
+            {"AnswerText": "closed", "AnswerReason": "Past tense", "Score": 7},
+            {"AnswerText": "closing", "AnswerReason": "Gerund form", "Score": 7},
+            {"AnswerText": "closes", "AnswerReason": "Third person singular", "Score": 7}
+        ]
+    },
+    {
+        "Levle": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Transform the sentence 'He is too young to drive' into one with the same meaning using 'not old enough'.",
+        "Answers": [
+            {"AnswerText": "He is not old enough to drive.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "He is too young to not drive.", "AnswerReason": "Negation is incorrect", "Score": 5},
+            {"AnswerText": "Driving is not old enough for him.", "AnswerReason": "Incorrect structure", "Score": 3},
+            {"AnswerText": "He is old enough to drive.", "AnswerReason": "Opposite meaning", "Score": 0}
+        ]
+    },
+    {
+        "Levle": 1,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Rewrite the sentence 'The dog chased the cat' using different words.",
+        "Answers": [
+            {"AnswerText": "The cat was chased by the dog.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "The cat chased the dog.", "AnswerReason": "Opposite meaning", "Score": 0},
+            {"AnswerText": "The cat chased by the dog.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "The dog was chased by the cat.", "AnswerReason": "Correct but passive voice", "Score": 7}
+        ]
+    },
+    {
+        "Levle": 2,
+        "RuleInfo": "Short Answer",
+        "Question": "What is the capital of France?",
+        "Answers": [
+            {"AnswerText": "Paris", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "London", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Berlin", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Rome", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following is a synonym for 'happy'?",
+        "Answers": [
+            {"AnswerText": "Joyful", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "Sad", "AnswerReason": "Opposite meaning", "Score": 0},
+            {"AnswerText": "Angry", "AnswerReason": "Opposite meaning", "Score": 0},
+            {"AnswerText": "Tired", "AnswerReason": "Unrelated meaning", "Score": 3}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "True/False",
+        "Question": "An ostrich is the fastest bird on land.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect, it is the fastest running bird, not flying", "Score": 3},
+            {"AnswerText": "False", "AnswerReason": "Correct, ostriches are flightless birds", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "The ___________ of the crime scene suggested foul play.",
+        "Answers": [
+            {"AnswerText": "evidence", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "solution", "AnswerReason": "Incorrect, unrelated meaning", "Score": 2},
+            {"AnswerText": "outcome", "AnswerReason": "Incorrect, related but not specific enough", "Score": 5},
+            {"AnswerText": "discovery", "AnswerReason": "Related but not specific enough", "Score": 7}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "She had went to the store yesterday.", "AnswerReason": "Incorrect verb tense", "Score": 0},
+            {"AnswerText": "He has ate breakfast already.", "AnswerReason": "Incorrect verb form", "Score": 2},
+            {"AnswerText": "They have already eaten breakfast.", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "We was going to the party last night.", "AnswerReason": "Incorrect subject-verb agreement", "Score": 3}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error: He don't like chocolate.",
+        "Answers": [
+            {"AnswerText": "don't", "AnswerReason": "Incorrect, should be 'doesn't'", "Score": 2},
+            {"AnswerText": "like", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "He", "AnswerReason": "Incorrect, subject pronoun is correct", "Score": 3},
+            {"AnswerText": "chocolate", "AnswerReason": "Incorrect, no error in the object", "Score": 5}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Choose the Correct Definition",
+        "Question": "What does 'resilient' mean?",
+        "Answers": [
+            {"AnswerText": "Fragile", "AnswerReason": "Opposite meaning", "Score": 0},
+            {"AnswerText": "Flexible", "AnswerReason": "Related but not specific enough", "Score": 7},
+            {"AnswerText": "Strong and adaptable", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "Unbreakable", "AnswerReason": "Related but not specific enough", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "I ___________ my keys at home this morning.",
+        "Answers": [
+            {"AnswerText": "forget", "AnswerReason": "Incorrect verb form", "Score": 3},
+            {"AnswerText": "have forgotten", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "forgot", "AnswerReason": "Incorrect tense", "Score": 5},
+            {"AnswerText": "forgotten", "AnswerReason": "Incorrect verb form", "Score": 2}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Transform the sentence 'She is the youngest in the family' into negative form.",
+        "Answers": [
+            {"AnswerText": "She is not the youngest in the family.", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "She isn't youngest in the family.", "AnswerReason": "Incorrect word order", "Score": 5},
+            {"AnswerText": "She not is the youngest in the family.", "AnswerReason": "Incorrect word order", "Score": 3},
+            {"AnswerText": "She youngest in the family is not.", "AnswerReason": "Incorrect word order", "Score": 2}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'The cat is on the mat.'",
+        "Answers": [
+            {"AnswerText": "The mat has the cat on it.", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "The cat is under the mat.", "AnswerReason": "Incorrect, changes meaning", "Score": 3},
+            {"AnswerText": "The mat is under the cat.", "AnswerReason": "Incorrect, changes meaning", "Score": 2},
+            {"AnswerText": "The mat is beside the cat.", "AnswerReason": "Incorrect, changes meaning", "Score": 5}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Short Answer",
+        "Question": "What is the capital city of France?",
+        "Answers": [
+            {"AnswerText": "Paris", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "Rome", "AnswerReason": "Incorrect", "Score": 3},
+            {"AnswerText": "Berlin", "AnswerReason": "Incorrect", "Score": 2},
+            {"AnswerText": "London", "AnswerReason": "Incorrect", "Score": 2}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Fill in the blank",
+        "Question": "My sister ___ to school by bus every day.",
+        "Answers": [
+            {"AnswerText": "goes", "AnswerReason": "correct", "Score": 10},
+            {"AnswerText": "gone", "AnswerReason": "incorrect tense", "Score": 4},
+            {"AnswerText": "going", "AnswerReason": "incorrect form", "Score": 5},
+            {"AnswerText": "went", "AnswerReason": "incorrect tense", "Score": 2}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "True/False",
+        "Question": "The sun rises in the west.",
+        "Answers": [
+            {"AnswerText": "False", "AnswerReason": "correct", "Score": 10},
+            {"AnswerText": "True", "AnswerReason": "incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Error Identification",
+        "Question": "Which sentence has a grammatical error?",
+        "Answers": [
+            {"AnswerText": "She drink coffee every morning.", "AnswerReason": "incorrect verb form", "Score": 10},
+            {"AnswerText": "He usually eats cereal for breakfast.", "AnswerReason": "no error", "Score": 0},
+            {"AnswerText": "I have go to the store.", "AnswerReason": "incorrect verb form", "Score": 8},
+            {"AnswerText": "They is playing outside.", "AnswerReason": "incorrect subject-verb agreement", "Score": 6}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Choose the correct sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "She don't like sushi.", "AnswerReason": "incorrect subject-verb agreement", "Score": 3},
+            {"AnswerText": "They plays tennis every weekend.", "AnswerReason": "incorrect verb form", "Score": 5},
+            {"AnswerText": "He has do his homework.", "AnswerReason": "incorrect verb form", "Score": 4},
+            {"AnswerText": "We are going to the park.", "AnswerReason": "correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "She ___ to London twice.",
+        "Answers": [
+            {"AnswerText": "went", "AnswerReason": "correct", "Score": 10},
+            {"AnswerText": "goes", "AnswerReason": "incorrect tense", "Score": 5},
+            {"AnswerText": "will go", "AnswerReason": "incorrect tense", "Score": 7},
+            {"AnswerText": "going", "AnswerReason": "incorrect form", "Score": 6}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Rewrite the sentence: 'He is not accustomed to cold weather.'",
+        "Answers": [
+            {"AnswerText": "Cold weather is not something he is used to.", "AnswerReason": "correct", "Score": 10},
+            {"AnswerText": "He never likes cold weather.", "AnswerReason": "incorrect", "Score": 4},
+            {"AnswerText": "He isn't familiar with cold weather.", "AnswerReason": "correct meaning but different wording", "Score": 8},
+            {"AnswerText": "Cold weather isn't familiar to him.", "AnswerReason": "correct meaning but awkward phrasing", "Score": 9}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Short Answer",
+        "Question": "Define 'ubiquitous'.",
+        "Answers": [
+            {"AnswerText": "present, appearing, or found everywhere", "AnswerReason": "correct", "Score": 10},
+            {"AnswerText": "unique and rare", "AnswerReason": "incorrect", "Score": 3},
+            {"AnswerText": "only found in specific places", "AnswerReason": "incorrect", "Score": 2},
+            {"AnswerText": "related to technology", "AnswerReason": "incorrect", "Score": 1}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Chosen synonym",
+        "Question": "Choose the synonym of 'ennui'.",
+        "Answers": [
+            {"AnswerText": "boredom", "AnswerReason": "correct", "Score": 10},
+            {"AnswerText": "excitement", "AnswerReason": "incorrect", "Score": 2},
+            {"AnswerText": "joy", "AnswerReason": "incorrect", "Score": 3},
+            {"AnswerText": "enthusiasm", "AnswerReason": "incorrect", "Score": 1}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following is a synonym for 'happy'?",
+        "Answers": [
+            {"AnswerText": "Joyful", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Sad", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Angry", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Tired", "AnswerReason": "Incorrect synonym", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "True/False",
+        "Question": "London is the capital of France.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "She _______ to Italy last summer.",
+        "Answers": [
+            {"AnswerText": "went", "AnswerReason": "Correct past tense", "Score": 10},
+            {"AnswerText": "goes", "AnswerReason": "Incorrect tense", "Score": 5},
+            {"AnswerText": "going", "AnswerReason": "Incorrect form", "Score": 3}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "They is playing soccer.", "AnswerReason": "Incorrect subject-verb agreement", "Score": 2},
+            {"AnswerText": "He have a lot of friends.", "AnswerReason": "Incorrect verb form", "Score": 3},
+            {"AnswerText": "She is going to the store.", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'The book laying on the table.'",
+        "Answers": [
+            {"AnswerText": "The", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "book", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "laying", "AnswerReason": "Incorrect verb form", "Score": 5},
+            {"AnswerText": "on", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "the", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "table", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "______ you like some more tea?",
+        "Answers": [
+            {"AnswerText": "Do", "AnswerReason": "Correct question form", "Score": 10},
+            {"AnswerText": "Are", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "Does", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'He plays tennis every Sunday.' using 'used to'.",
+        "Answers": [
+            {"AnswerText": "He used to play tennis every Sunday.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "He plays tennis every Sunday used to.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "He playing tennis every Sunday.", "AnswerReason": "Incorrect tense", "Score": 3}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'The concert was canceled due to bad weather.'",
+        "Answers": [
+            {"AnswerText": "Bad weather caused the cancellation of the concert.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "The concert was called off because of poor weather.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "The concert had to be stopped because of bad weather.", "AnswerReason": "Correct paraphrasing", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'big'.",
+        "Answers": [
+            {"AnswerText": "Large", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Small", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Tiny", "AnswerReason": "Incorrect synonym", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'hot'.",
+        "Answers": [
+            {"AnswerText": "Cold", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Warm", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Cool", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+    "Level": 3,
+    "RuleInfo": "Choose the Correct Definition",
+    "Question": "What does the word 'ubiquitous' mean?",
+    "Answers": [
+        {"AnswerText": "Present, appearing, or found everywhere", "AnswerReason": "Correct definition", "Score": 10},
+        {"AnswerText": "Exclusive to a particular place or group", "AnswerReason": "Incorrect definition", "Score": 2},
+        {"AnswerText": "Occurring only rarely", "AnswerReason": "Incorrect definition", "Score": 3},
+        {"AnswerText": "Being aware of everything", "AnswerReason": "Incorrect definition", "Score": 0}
+    ]
+},
+{
+        "Level": 1,
+        "RuleInfo": "Multiple Choice",
+        "Question": "What is the capital of France?",
+        "Answers": [
+            {"AnswerText": "Paris", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "London", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Berlin", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Rome", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "True/False",
+        "Question": "English is the official language of Brazil.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "I ____ to the supermarket yesterday.",
+        "Answers": [
+            {"AnswerText": "went", "AnswerReason": "Correct past tense", "Score": 10},
+            {"AnswerText": "go", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "goes", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "She has been studying English for five years.", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "She been studying English for five years.", "AnswerReason": "Incorrect", "Score": 2},
+            {"AnswerText": "She is studying English for five years.", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'He don't like coffee.'",
+        "Answers": [
+            {"AnswerText": "He", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "don't", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "like", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "coffee", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "He doesn't like coffee.", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Gap-filling",
+        "Question": "______ you like some more cake?",
+        "Answers": [
+            {"AnswerText": "Would", "AnswerReason": "Correct question form", "Score": 10},
+            {"AnswerText": "Could", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "Can", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'She has never visited Paris before.' using 'ever'.",
+        "Answers": [
+            {"AnswerText": "She has never ever visited Paris.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "She ever visited Paris before.", "AnswerReason": "Incorrect structure", "Score": 3},
+            {"AnswerText": "Has she ever visited Paris before?", "AnswerReason": "Correct transformation", "Score": 10}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It's important to exercise regularly.'",
+        "Answers": [
+            {"AnswerText": "Exercising regularly is vital.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "It's important that you exercise regularly.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Regular exercise is significant.", "AnswerReason": "Correct paraphrasing", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'happy'.",
+        "Answers": [
+            {"AnswerText": "Joyful", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Sad", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Angry", "AnswerReason": "Incorrect antonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'hot'.",
+        "Answers": [
+            {"AnswerText": "Cold", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Warm", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Cool", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+
+
+    {
+        "Level": 2,
+        "RuleInfo": "Multiple Choice",
+        "Question": "What is the plural form of 'child'?",
+        "Answers": [
+            {"AnswerText": "Children", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "Childs", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Childes", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Childies", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "True/False",
+        "Question": "Elephants are the largest land animals.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "False", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "She ____ studying for her exam tomorrow.",
+        "Answers": [
+            {"AnswerText": "will be", "AnswerReason": "Correct future continuous tense", "Score": 10},
+            {"AnswerText": "is", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "was", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "My sister and I are going to the cinema.", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "Me and my sister is going to the cinema.", "AnswerReason": "Incorrect", "Score": 2},
+            {"AnswerText": "Me and my sister are going to the cinema.", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'He don't have any money.'",
+        "Answers": [
+            {"AnswerText": "He", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "don't", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "have", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "any", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "He doesn't have any money.", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Gap-filling",
+        "Question": "______ you like some more pizza?",
+        "Answers": [
+            {"AnswerText": "Would", "AnswerReason": "Correct question form", "Score": 10},
+            {"AnswerText": "Could", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "Can", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'They are building a new bridge across the river.' using 'being'.",
+        "Answers": [
+            {"AnswerText": "A new bridge is being built across the river by them.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "Being built a new bridge across the river by them.", "AnswerReason": "Incorrect structure", "Score": 3},
+            {"AnswerText": "They are being building a new bridge across the river.", "AnswerReason": "Incorrect structure", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'She is expected to arrive at 8 o'clock.'",
+        "Answers": [
+            {"AnswerText": "It's anticipated that she will arrive at 8 o'clock.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "She's anticipated to come at 8 o'clock.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "It's expected for her to arrive at 8 o'clock.", "AnswerReason": "Correct paraphrasing", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'sad'.",
+        "Answers": [
+            {"AnswerText": "Unhappy", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Happy", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Joyful", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'fast'.",
+        "Answers": [
+            {"AnswerText": "Slow", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Quick", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Rapid", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following is an adverb?",
+        "Answers": [
+            {"AnswerText": "Quickly", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "House", "AnswerReason": "Incorrect (noun)", "Score": 0},
+            {"AnswerText": "Beautiful", "AnswerReason": "Incorrect (adjective)", "Score": 0},
+            {"AnswerText": "Running", "AnswerReason": "Incorrect (verb)", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "True/False",
+        "Question": "The Pacific Ocean is the largest ocean on Earth.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "False", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "She _____ to the party last night.",
+        "Answers": [
+            {"AnswerText": "went", "AnswerReason": "Correct past tense", "Score": 10},
+            {"AnswerText": "go", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "going", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "He is singing in the shower.", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "He singing in the shower.", "AnswerReason": "Incorrect", "Score": 2},
+            {"AnswerText": "Is he singing in the shower?", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'She is cook dinner now.'",
+        "Answers": [
+            {"AnswerText": "She", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "is", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "cook", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "dinner", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "now", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "She is cooking dinner now.", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Gap-filling",
+        "Question": "______ you like a cup of tea?",
+        "Answers": [
+            {"AnswerText": "Would", "AnswerReason": "Correct question form", "Score": 10},
+            {"AnswerText": "Could", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "Can", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'They have already finished their homework.' using 'yet'.",
+        "Answers": [
+            {"AnswerText": "They have not finished their homework yet.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "They already finished their homework yet.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "They have yet finished their homework.", "AnswerReason": "Incorrect structure", "Score": 3}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It is imperative that you arrive on time.'",
+        "Answers": [
+            {"AnswerText": "You must arrive on time.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Arriving on time is crucial.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "You should arrive on time.", "AnswerReason": "Correct paraphrasing", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'big'.",
+        "Answers": [
+            {"AnswerText": "Large", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Small", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Tiny", "AnswerReason": "Incorrect synonym", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'happy'.",
+        "Answers": [
+            {"AnswerText": "Sad", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Joyful", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Cheerful", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following is a conjunction?",
+        "Answers": [
+            {"AnswerText": "And", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "Cat", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Jumped", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "Quickly", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "True/False",
+        "Question": "The Nile is the longest river in the world.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "False", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "He ____ his homework every day.",
+        "Answers": [
+            {"AnswerText": "does", "AnswerReason": "Correct verb form", "Score": 10},
+            {"AnswerText": "doing", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "did", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {"AnswerText": "They were running in the park.", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "They running in the park.", "AnswerReason": "Incorrect", "Score": 2},
+            {"AnswerText": "Were they running in the park?", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'The dog barks loudly.'",
+        "Answers": [
+            {"AnswerText": "The", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "dog", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "barks", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "loudly", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Gap-filling",
+        "Question": "______ you like some more water?",
+        "Answers": [
+            {"AnswerText": "Would", "AnswerReason": "Correct question form", "Score": 10},
+            {"AnswerText": "Could", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "Can", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'She has already read the book.' using 'yet'.",
+        "Answers": [
+            {"AnswerText": "She has not yet read the book.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "She has read the book yet.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "She yet read the book.", "AnswerReason": "Incorrect structure", "Score": 3}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It is essential to get enough sleep.'",
+        "Answers": [
+            {"AnswerText": "Getting sufficient sleep is crucial.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Having enough sleep is necessary.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "It is important to sleep well.", "AnswerReason": "Correct paraphrasing", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'fast'.",
+        "Answers": [
+            {"AnswerText": "Quick", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Slow", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Small", "AnswerReason": "Incorrect synonym", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'cold'.",
+        "Answers": [
+            {"AnswerText": "Hot", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Warm", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Cool", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following words is a synonym for 'happy'?",
+        "Answers": [
+            {"AnswerText": "Joyful", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Sad", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Angry", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Tired", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "True/False",
+        "Question": "The word 'ubiquitous' means rare or scarce.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "The sun provides _____ to the earth.",
+        "Answers": [
+            {"AnswerText": "light", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "water", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "food", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the word 'meticulous' correctly?",
+        "Answers": [
+            {"AnswerText": "She was meticulous in her work, paying attention to every detail.", "AnswerReason": "Correct usage", "Score": 10},
+            {"AnswerText": "He made a meticulous mistake on the report.", "AnswerReason": "Incorrect usage", "Score": 0},
+            {"AnswerText": "The teacher praised her for being meticulous in her handwriting.", "AnswerReason": "Correct usage", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'The cat is lay on the mat.'",
+        "Answers": [
+            {"AnswerText": "The", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "cat", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "is", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "lay", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Gap-filling",
+        "Question": "Would you like a _____ of water?",
+        "Answers": [
+            {"AnswerText": "glass", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "bottle", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "jug", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'He is very wealthy.' using 'rich'.",
+        "Answers": [
+            {"AnswerText": "He is very rich.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "He has a lot of wealth.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "He is extremely well-off.", "AnswerReason": "Incorrect structure", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It's essential to maintain a healthy diet.'",
+        "Answers": [
+            {"AnswerText": "Keeping a balanced diet is crucial.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Maintaining an unhealthy diet is important.", "AnswerReason": "Incorrect meaning", "Score": 5},
+            {"AnswerText": "It's vital to avoid a healthy diet.", "AnswerReason": "Incorrect meaning", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'big'.",
+        "Answers": [
+            {"AnswerText": "Large", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Small", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Tiny", "AnswerReason": "Incorrect synonym", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'hot'.",
+        "Answers": [
+            {"AnswerText": "Cold", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Warm", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Cool", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following words is a synonym for 'angry'?",
+        "Answers": [
+            {"AnswerText": "Furious", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Happy", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Sad", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Excited", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "True/False",
+        "Question": "The word 'ubiquitous' means uncommon or rare.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "The sun provides _____ to the earth.",
+        "Answers": [
+            {"AnswerText": "light", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "water", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "food", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the word 'meticulous' correctly?",
+        "Answers": [
+            {"AnswerText": "She was meticulous in her work, paying attention to every detail.", "AnswerReason": "Correct usage", "Score": 10},
+            {"AnswerText": "He made a meticulous mistake on the report.", "AnswerReason": "Incorrect usage", "Score": 0},
+            {"AnswerText": "The teacher praised her for being meticulous in her handwriting.", "AnswerReason": "Correct usage", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'The cat is lay on the mat.'",
+        "Answers": [
+            {"AnswerText": "The", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "cat", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "is", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "lay", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Gap-filling",
+        "Question": "Would you like a _____ of water?",
+        "Answers": [
+            {"AnswerText": "glass", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "bottle", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "jug", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'He is very wealthy.' using 'rich'.",
+        "Answers": [
+            {"AnswerText": "He is very rich.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "He has a lot of wealth.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "He is extremely well-off.", "AnswerReason": "Incorrect structure", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It's essential to maintain a healthy diet.'",
+        "Answers": [
+            {"AnswerText": "Keeping a balanced diet is crucial.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Maintaining an unhealthy diet is important.", "AnswerReason": "Incorrect meaning", "Score": 5},
+            {"AnswerText": "It's vital to avoid a healthy diet.", "AnswerReason": "Incorrect meaning", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'big'.",
+        "Answers": [
+            {"AnswerText": "Large", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Small", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Tiny", "AnswerReason": "Incorrect synonym", "Score": 5}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'hot'.",
+        "Answers": [
+            {"AnswerText": "Cold", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Warm", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Cool", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following words is a synonym for 'ubiquitous'?",
+        "Answers": [
+            {"AnswerText": "Pervasive", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Scarce", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Limited", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Sparse", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "The word 'laconic' means using many words.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "His ______ vocabulary impressed everyone in the room.",
+        "Answers": [
+            {"AnswerText": "expansive", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "limited", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "basic", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the word 'perplexing' correctly?",
+        "Answers": [
+            {"AnswerText": "The perplexing question stumped even the experts.", "AnswerReason": "Correct usage", "Score": 10},
+            {"AnswerText": "He had a perplexing solution to the problem.", "AnswerReason": "Incorrect usage", "Score": 0},
+            {"AnswerText": "The perplexing answer resolved the issue.", "AnswerReason": "Incorrect usage", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'His erudition on the subject is well-known.'",
+        "Answers": [
+            {"AnswerText": "His", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "erudition", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "on", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "is", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "She won the Nobel Prize for her _____ in the field of medicine.",
+        "Answers": [
+            {"AnswerText": "innovations", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "traditions", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "conventions", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'His vocabulary is very extensive.' using 'vast'.",
+        "Answers": [
+            {"AnswerText": "His vocabulary is vast.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "He has an extensive vocabulary.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "His wide range of vocabulary is well-known.", "AnswerReason": "Incorrect structure", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It's imperative to foster creativity in young minds.'",
+        "Answers": [
+            {"AnswerText": "Encouraging creativity in young minds is crucial.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Developing creativity is important for young minds.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "It's important to stifle creativity in young minds.", "AnswerReason": "Incorrect meaning", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'precipitous'.",
+        "Answers": [
+            {"AnswerText": "Steep", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Gentle", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Shallow", "AnswerReason": "Incorrect antonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'ephemeral'.",
+        "Answers": [
+            {"AnswerText": "Permanent", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Temporary", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Eternal", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following words is a synonym for 'ephemeral'?",
+        "Answers": [
+            {"AnswerText": "Transient", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Permanent", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Enduring", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Everlasting", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "The word 'idiosyncratic' means conventional or typical.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "The politician's speech was filled with _____ promises.",
+        "Answers": [
+            {"AnswerText": "empty", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "fulfilled", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "profound", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the word 'esoteric' correctly?",
+        "Answers": [
+            {"AnswerText": "Only a few students understood the esoteric concepts discussed in the lecture.", "AnswerReason": "Correct usage", "Score": 10},
+            {"AnswerText": "The esoteric information was widely known to the public.", "AnswerReason": "Incorrect usage", "Score": 0},
+            {"AnswerText": "The teacher simplified the esoteric topic for the students.", "AnswerReason": "Incorrect usage", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'Her eloquent speech left the audience awed.'",
+        "Answers": [
+            {"AnswerText": "Her", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "eloquent", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "speech", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "left", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "His expertise in the field is ________.",
+        "Answers": [
+            {"AnswerText": "unparalleled", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "adequate", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "common", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'The situation is quite precarious.' using 'unstable'.",
+        "Answers": [
+            {"AnswerText": "The situation is unstable.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "The situation is quite stable.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "The situation is very precarious.", "AnswerReason": "Incorrect structure", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It's essential to foster creativity in young minds.'",
+        "Answers": [
+            {"AnswerText": "Encouraging creativity in young minds is vital.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Developing creativity is important for young minds.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "It's important to stifle creativity in young minds.", "AnswerReason": "Incorrect meaning", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'ubiquitous'.",
+        "Answers": [
+            {"AnswerText": "Pervasive", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Scarce", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Limited", "AnswerReason": "Incorrect antonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'arcane'.",
+        "Answers": [
+            {"AnswerText": "Common", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Public", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Familiar", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which of the following words is a synonym for 'exacerbate'?",
+        "Answers": [
+            {"AnswerText": "Aggravate", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Alleviate", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Ameliorate", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Pacify", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "The word 'ubiquitous' means rare or scarce.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "The ________ of technology has transformed our lives.",
+        "Answers": [
+            {"AnswerText": "ubiquity", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "scarcity", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "abundance", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the word 'surreptitious' correctly?",
+        "Answers": [
+            {"AnswerText": "She made a surreptitious entrance into the party.", "AnswerReason": "Correct usage", "Score": 10},
+            {"AnswerText": "His surreptitious behavior attracted attention.", "AnswerReason": "Incorrect usage", "Score": 0},
+            {"AnswerText": "The surreptitious plan was executed flawlessly.", "AnswerReason": "Correct usage", "Score": 10}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'The book provided a lot of insightful informations.'",
+        "Answers": [
+            {"AnswerText": "The", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "book", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "provided", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "informations", "AnswerReason": "Incorrect plural form", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "His ________ in the field of mathematics is unparalleled.",
+        "Answers": [
+            {"AnswerText": "expertise", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "ignorance", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "novice", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'The situation is extremely precarious.' using 'precariousness'.",
+        "Answers": [
+            {"AnswerText": "The precariousness of the situation is extreme.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "The situation's precariousness is extremely.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "The situation's precariousness is extreme.", "AnswerReason": "Incorrect structure", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'It's imperative to nurture creativity in children.'",
+        "Answers": [
+            {"AnswerText": "Encouraging creativity in children is essential.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Developing creativity is crucial in children.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "It's crucial to stifle creativity in children.", "AnswerReason": "Incorrect meaning", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'quintessential'.",
+        "Answers": [
+            {"AnswerText": "Exemplary", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Atypical", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Conventional", "AnswerReason": "Incorrect antonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'mundane'.",
+        "Answers": [
+            {"AnswerText": "Extraordinary", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Routine", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Common", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which sentence uses the present perfect tense correctly?",
+        "Answers": [
+            {"AnswerText": "I have visited Paris twice this year.", "AnswerReason": "Correct usage of present perfect tense", "Score": 10},
+            {"AnswerText": "I visit Paris twice this year.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "I will visit Paris twice this year.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "I visited Paris twice this year.", "AnswerReason": "Incorrect tense", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "The past perfect tense is used to describe an action that happened after another action in the past.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "False", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "By the time we get there, they ________ dinner.",
+        "Answers": [
+            {"AnswerText": "will have finished", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "finish", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "finished", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the past continuous tense correctly?",
+        "Answers": [
+            {"AnswerText": "She was studying when the phone rang.", "AnswerReason": "Correct usage of past continuous tense", "Score": 10},
+            {"AnswerText": "She studies when the phone rang.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "She studied when the phone was ringing.", "AnswerReason": "Incorrect tense", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'He has been knowing her for years.'",
+        "Answers": [
+            {"AnswerText": "He", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "has", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "been", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "knowing", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "By next month, they ________ their new house.",
+        "Answers": [
+            {"AnswerText": "will have bought", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "buy", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "bought", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'She will have finished her work by the time we arrive.' using 'had'.",
+        "Answers": [
+            {"AnswerText": "She had finished her work by the time we arrived.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "She will finish her work by the time we arrive.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "She finished her work by the time we arrive.", "AnswerReason": "Incorrect tense", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'He had already left when I arrived.'",
+        "Answers": [
+            {"AnswerText": "When I arrived, he had already departed.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "He had left after I arrived.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "He left before I arrived.", "AnswerReason": "Incorrect meaning", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'reside'.",
+        "Answers": [
+            {"AnswerText": "Dwell", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Roam", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Travel", "AnswerReason": "Incorrect antonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'accelerate'.",
+        "Answers": [
+            {"AnswerText": "Decelerate", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Hasten", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Quicken", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which sentence uses the future perfect tense correctly?",
+        "Answers": [
+            {"AnswerText": "By next year, he will have graduated from college.", "AnswerReason": "Correct usage of future perfect tense", "Score": 10},
+            {"AnswerText": "By next year, he graduates from college.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "By next year, he will graduate from college.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "By next year, he has graduated from college.", "AnswerReason": "Incorrect tense", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "The present continuous tense is used to describe actions happening at the moment of speaking.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "False", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "They ________ the party before I arrived.",
+        "Answers": [
+            {"AnswerText": "had already left", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "already leave", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "already left", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the present perfect continuous tense correctly?",
+        "Answers": [
+            {"AnswerText": "She has been working hard all morning.", "AnswerReason": "Correct usage of present perfect continuous tense", "Score": 10},
+            {"AnswerText": "She was working hard all morning.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "She is working hard all morning.", "AnswerReason": "Incorrect tense", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'He has gone to the store tomorrow.'",
+        "Answers": [
+            {"AnswerText": "He", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "has gone", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "to the store", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "tomorrow", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "By next summer, they ________ Spanish for five years.",
+        "Answers": [
+            {"AnswerText": "will have been studying", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "study", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "studied", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'She had finished her homework before her friends arrived.' using 'by the time'.",
+        "Answers": [
+            {"AnswerText": "By the time her friends arrived, she had finished her homework.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "She finished her homework before her friends arrived by the time.", "AnswerReason": "Incorrect structure", "Score": 0},
+            {"AnswerText": "She finished her homework by the time her friends arrived.", "AnswerReason": "Incorrect transformation", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'I will have completed my project by the end of this month.'",
+        "Answers": [
+            {"AnswerText": "By the end of this month, my project will be completed.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "I will complete my project at the end of this month.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "My project will be completed at the end of this month by me.", "AnswerReason": "Incorrect structure", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'procrastinate'.",
+        "Answers": [
+            {"AnswerText": "Delay", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Complete", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Advance", "AnswerReason": "Incorrect antonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'abandon'.",
+        "Answers": [
+            {"AnswerText": "Maintain", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Discard", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Neglect", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which sentence uses the past perfect continuous tense correctly?",
+        "Answers": [
+            {"AnswerText": "She had been studying for hours when the power went out.", "AnswerReason": "Correct usage of past perfect continuous tense", "Score": 10},
+            {"AnswerText": "She was studying for hours when the power went out.", "AnswerReason": "Incorrect tense", "Score": 0},
+            {"AnswerText": "She has been studying for hours when the power went out.", "AnswerReason": "Incorrect tense", "Score": 0}
+        ]
+    },{
+        "Level": 3,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which sentence uses the first conditional correctly?",
+        "Answers": [
+            {"AnswerText": "If it rains, we will stay indoors.", "AnswerReason": "Correct usage of first conditional", "Score": 10},
+            {"AnswerText": "If it rains, we would stay indoors.", "AnswerReason": "Incorrect conditional form", "Score": 0},
+            {"AnswerText": "If it would rain, we will stay indoors.", "AnswerReason": "Incorrect conditional form", "Score": 0},
+            {"AnswerText": "If it rains, we stay indoors.", "AnswerReason": "Incorrect conditional form", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "The second conditional is used to talk about hypothetical situations in the past.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "False", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "If she ________ the bus, she will be late for work.",
+        "Answers": [
+            {"AnswerText": "misses", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "missed", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "will miss", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the zero conditional correctly?",
+        "Answers": [
+            {"AnswerText": "If you heat ice, it melts.", "AnswerReason": "Correct usage of zero conditional", "Score": 10},
+            {"AnswerText": "If you heat ice, it will melt.", "AnswerReason": "Incorrect conditional form", "Score": 0},
+            {"AnswerText": "If you heated ice, it melts.", "AnswerReason": "Incorrect conditional form", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'If I will go to the party, I will meet John.'",
+        "Answers": [
+            {"AnswerText": "If I", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "will go", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "to the party", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "I will meet John", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "If you ________ hard, you will succeed.",
+        "Answers": [
+            {"AnswerText": "work", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "worked", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "will work", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'If I had studied harder, I would have passed the exam.' using 'If only'.",
+        "Answers": [
+            {"AnswerText": "If only I had studied harder, I would have passed the exam.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "If I only studied harder, I would have passed the exam.", "AnswerReason": "Incorrect structure", "Score": 5},
+            {"AnswerText": "If only I studied harder, I will pass the exam.", "AnswerReason": "Incorrect tense", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'If you don't water the plants, they will die.'",
+        "Answers": [
+            {"AnswerText": "Failure to water the plants will result in their death.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "The plants will die if you don't water them.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "Unless you water the plants, they will die.", "AnswerReason": "Correct paraphrasing", "Score": 10}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'ought to'.",
+        "Answers": [
+            {"AnswerText": "Should", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Would", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Can", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'might'.",
+        "Answers": [
+            {"AnswerText": "Must", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Could", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "May", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Multiple Choice",
+        "Question": "Which sentence uses the third conditional correctly?",
+        "Answers": [
+            {"AnswerText": "If I had known, I would have helped.", "AnswerReason": "Correct usage of third conditional", "Score": 10},
+            {"AnswerText": "If I know, I would have helped.", "AnswerReason": "Incorrect conditional form", "Score": 0},
+            {"AnswerText": "If I knew, I will have helped.", "AnswerReason": "Incorrect conditional form", "Score": 0},
+            {"AnswerText": "If I know, I will help.", "AnswerReason": "Incorrect conditional form", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "True/False",
+        "Question": "The mixed conditional is used to talk about unreal past situations and their consequences in the present.",
+        "Answers": [
+            {"AnswerText": "True", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "False", "AnswerReason": "Incorrect", "Score": 0}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "If she ________ harder, she might have passed the exam.",
+        "Answers": [
+            {"AnswerText": "had studied", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "studied", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "studies", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses the mixed conditional correctly?",
+        "Answers": [
+            {"AnswerText": "If I had studied more, I would be fluent in French now.", "AnswerReason": "Correct usage of mixed conditional", "Score": 10},
+            {"AnswerText": "If I study more, I would be fluent in French now.", "AnswerReason": "Incorrect conditional form", "Score": 0},
+            {"AnswerText": "If I had studied more, I will be fluent in French now.", "AnswerReason": "Incorrect conditional form", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Error Identification",
+        "Question": "Identify the error in the following sentence: 'If she would have come earlier, we wouldn't have missed the train.'",
+        "Answers": [
+            {"AnswerText": "If she", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "would have come", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "earlier", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "we wouldn't have missed", "AnswerReason": "Incorrect", "Score": 0},
+            {"AnswerText": "No error", "AnswerReason": "Correct", "Score": 10}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Gap-filling",
+        "Question": "If he ________ about the job, he would have applied.",
+        "Answers": [
+            {"AnswerText": "had known", "AnswerReason": "Correct", "Score": 10},
+            {"AnswerText": "know", "AnswerReason": "Incorrect", "Score": 5},
+            {"AnswerText": "knows", "AnswerReason": "Incorrect", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Rewrite the sentence: 'If she had arrived on time, she wouldn't have missed the meeting.' using 'but for'.",
+        "Answers": [
+            {"AnswerText": "But for her late arrival, she wouldn't have missed the meeting.", "AnswerReason": "Correct transformation", "Score": 10},
+            {"AnswerText": "She would have missed the meeting if she hadn't arrived on time.", "AnswerReason": "Incorrect transformation", "Score": 5},
+            {"AnswerText": "She wouldn't have missed the meeting if she had arrived on time.", "AnswerReason": "Incorrect transformation", "Score": 5}
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Paraphrase the sentence: 'If I were you, I would take the job offer.'",
+        "Answers": [
+            {"AnswerText": "You should take the job offer if I were you.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "You would take the job offer if I were you.", "AnswerReason": "Correct paraphrasing", "Score": 10},
+            {"AnswerText": "If I am you, I will take the job offer.", "AnswerReason": "Incorrect structure", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "Choose the synonym for 'suppose'.",
+        "Answers": [
+            {"AnswerText": "Assume", "AnswerReason": "Correct synonym", "Score": 10},
+            {"AnswerText": "Doubt", "AnswerReason": "Incorrect antonym", "Score": 0},
+            {"AnswerText": "Conclude", "AnswerReason": "Incorrect antonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "Choose the antonym for 'must'.",
+        "Answers": [
+            {"AnswerText": "May not", "AnswerReason": "Correct antonym", "Score": 10},
+            {"AnswerText": "Should", "AnswerReason": "Incorrect synonym", "Score": 0},
+            {"AnswerText": "Can", "AnswerReason": "Incorrect synonym", "Score": 0}
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Multiple Choice",
+        "Question": "What is the capital of France?",
+        "Answers": [
+            {
+                "AnswerText": "London",
+                "AnswerReason": "Incorrect",
+                "Score": 0
+            },
+            {
+                "AnswerText": "Paris",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Berlin",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Madrid",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "True/False",
+        "Question": "Shakespeare wrote 'To be or not to be, that is the question.'",
+        "Answers": [
+            {
+                "AnswerText": "True",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "False",
+                "AnswerReason": "Incorrect",
+                "Score": 0
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "The cat ____ the tree.",
+        "Answers": [
+            {
+                "AnswerText": "is climbing",
+                "AnswerReason": "Incorrect tense",
+                "Score": 2
+            },
+            {
+                "AnswerText": "climbs",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "climbed",
+                "AnswerReason": "Incorrect tense",
+                "Score": 5
+            },
+            {
+                "AnswerText": "climb",
+                "AnswerReason": "Incorrect form",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence is grammatically correct?",
+        "Answers": [
+            {
+                "AnswerText": "She don't like chocolate.",
+                "AnswerReason": "Subject-verb agreement error",
+                "Score": 2
+            },
+            {
+                "AnswerText": "He go to school every day.",
+                "AnswerReason": "Verb form error",
+                "Score": 1
+            },
+            {
+                "AnswerText": "They are going to the movies tonight.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "I have went to the store.",
+                "AnswerReason": "Incorrect verb form",
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Error Identification",
+        "Question": "Find the error: He don't like apples.",
+        "Answers": [
+            {
+                "AnswerText": "He",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "don't",
+                "AnswerReason": "Subject-verb agreement error",
+                "Score": 5
+            },
+            {
+                "AnswerText": "like",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "apples",
+                "AnswerReason": "Correct",
+                "Score": 10
+            }
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Choose the correct definition",
+        "Question": "What does 'eccentric' mean?",
+        "Answers": [
+            {
+                "AnswerText": "Ordinary",
+                "AnswerReason": "Incorrect",
+                "Score": 0
+            },
+            {
+                "AnswerText": "Strange or unconventional",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Calm",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Typical",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Gap-filling",
+        "Question": "____ is the largest planet in our solar system.",
+        "Answers": [
+            {
+                "AnswerText": "Venus",
+                "AnswerReason": "Incorrect",
+                "Score": 0
+            },
+            {
+                "AnswerText": "Mars",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            },
+            {
+                "AnswerText": "Jupiter",
+                "AnswerReason": "Correct",
+                "Score": 10
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Sentence Transformation",
+        "Question": "Transform the sentence: 'She speaks French fluently.' to negative form.",
+        "Answers": [
+            {
+                "AnswerText": "She doesn't speak French fluently.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "She speaks French with difficulty.",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "She can't speak French fluently.",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Short Answer",
+        "Question": "What is the opposite of 'hot'?",
+        "Answers": [
+            {
+                "AnswerText": "Cold",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Warm",
+                "AnswerReason": "Incorrect",
+                "Score": 5
+            },
+            {
+                "AnswerText": "Cool",
+                "AnswerReason": "Incorrect",
+                "Score": 7
+            }
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "What is the antonym of 'joy'?",
+        "Answers": [
+            {
+                "AnswerText": "Sorrow",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Happiness",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            },
+            {
+                "AnswerText": "Excitement",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },{
+        "Level": 3,
+        "RuleInfo": "Multiple Choice",
+        "Question": "What is the synonym of 'ubiquitous'?",
+        "Answers": [
+            {
+                "AnswerText": "Scarce",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Pervasive",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Sparse",
+                "AnswerReason": "Incorrect",
+                "Score": 4
+            },
+            {
+                "AnswerText": "Limited",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "An 'epiphany' refers to a sudden realization or insight.",
+        "Answers": [
+            {
+                "AnswerText": "True",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "False",
+                "AnswerReason": "Incorrect",
+                "Score": 0
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "Her erudition and ____ made her the most respected professor in the department.",
+        "Answers": [
+            {
+                "AnswerText": "eloquence",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "ignorance",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            },
+            {
+                "AnswerText": "simplicity",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "confusion",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses 'plethora' correctly?",
+        "Answers": [
+            {
+                "AnswerText": "He has a plethora of friends.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "The party was a plethora of fun.",
+                "AnswerReason": "Incorrect usage",
+                "Score": 2
+            },
+            {
+                "AnswerText": "She was overwhelmed by a plethora of options.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Find the error: The scientist conducted an expiriment to test her hypothesis.",
+        "Answers": [
+            {
+                "AnswerText": "scientist",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "expiriment",
+                "AnswerReason": "Spelling error",
+                "Score": 4
+            },
+            {
+                "AnswerText": "test",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "hypothesis",
+                "AnswerReason": "Correct",
+                "Score": 10
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the correct definition",
+        "Question": "What does 'ennui' mean?",
+        "Answers": [
+            {
+                "AnswerText": "Excitement",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            },
+            {
+                "AnswerText": "Boredom",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Fulfillment",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Enthusiasm",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Gap-filling",
+        "Question": "The musician's virtuosity on the piano left the audience ____.",
+        "Answers": [
+            {
+                "AnswerText": "apathetic",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            },
+            {
+                "AnswerText": "enraptured",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "disenchanted",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Rewrite the sentence: 'His effervescent personality brightened the room.'",
+        "Answers": [
+            {
+                "AnswerText": "His bubbly character illuminated the space.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "He was so happy that the room became brighter.",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "His dull personality darkened the room.",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "What is a synonym of 'ubiquitous'?",
+        "Answers": [
+            {
+                "AnswerText": "Omnipresent",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Limited",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Rare",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "What is the antonym of 'ephemeral'?",
+        "Answers": [
+            {
+                "AnswerText": "Permanent",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Temporary",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            },
+            {
+                "AnswerText": "Lasting",
+                "AnswerReason": "Incorrect",
+                "Score": 4
+            }
+        ]
+    },{
+        "Level": 3,
+        "RuleInfo": "Multiple Choice",
+        "Question": "What is the synonym of 'serendipity'?",
+        "Answers": [
+            {
+                "AnswerText": "Misfortune",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            },
+            {
+                "AnswerText": "Luck",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Chaos",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Calamity",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "True/False",
+        "Question": "An 'adumbrate' is a preliminary outline or sketch of a plan.",
+        "Answers": [
+            {
+                "AnswerText": "True",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "False",
+                "AnswerReason": "Incorrect",
+                "Score": 0
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Fill in the Blank",
+        "Question": "The _____ of her speech captivated the audience.",
+        "Answers": [
+            {
+                "AnswerText": "verbosity",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            },
+            {
+                "AnswerText": "eloquence",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "rambling",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "conciseness",
+                "AnswerReason": "Incorrect",
+                "Score": 4
+            }
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Choose the Correct Sentence",
+        "Question": "Which sentence uses 'aplomb' correctly?",
+        "Answers": [
+            {
+                "AnswerText": "She handled the situation with aplomb.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "His lack of aplomb was evident in the interview.",
+                "AnswerReason": "Incorrect usage",
+                "Score": 2
+            },
+            {
+                "AnswerText": "The actor displayed great aplomb in the performance.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Error Identification",
+        "Question": "Find the error: His veracity and honesty is beyond doubt.",
+        "Answers": [
+            {
+                "AnswerText": "veracity",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "honesty",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "is",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "beyond",
+                "AnswerReason": "Correct",
+                "Score": 10
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Choose the correct definition",
+        "Question": "What does 'ephemeral' mean?",
+        "Answers": [
+            {
+                "AnswerText": "Enduring",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Temporary",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Everlasting",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            },
+            {
+                "AnswerText": "Permanent",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 4,
+        "RuleInfo": "Gap-filling",
+        "Question": "His _____ vocabulary impressed the professor.",
+        "Answers": [
+            {
+                "AnswerText": "obtuse",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            },
+            {
+                "AnswerText": "astute",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "banal",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Level": 3,
+        "RuleInfo": "Paraphrasing",
+        "Question": "Rewrite the sentence: 'The grandiose palace stood majestically atop the hill.'",
+        "Answers": [
+            {
+                "AnswerText": "The magnificent palace rose grandly on the hill.",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "The beautiful castle sat quietly at the top of the hill.",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "The small mansion stood proudly at the bottom of the hill.",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 2,
+        "RuleInfo": "Chosen Synonym",
+        "Question": "What is a synonym of 'quintessential'?",
+        "Answers": [
+            {
+                "AnswerText": "Typical",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Atypical",
+                "AnswerReason": "Incorrect",
+                "Score": 2
+            },
+            {
+                "AnswerText": "Unusual",
+                "AnswerReason": "Incorrect",
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Level": 1,
+        "RuleInfo": "Chosen Antonym",
+        "Question": "What is the antonym of 'venerate'?",
+        "Answers": [
+            {
+                "AnswerText": "Despise",
+                "AnswerReason": "Correct",
+                "Score": 10
+            },
+            {
+                "AnswerText": "Respect",
+                "AnswerReason": "Incorrect",
+                "Score": 3
+            },
+            {
+                "AnswerText": "Admire",
+                "AnswerReason": "Incorrect",
+                "Score": 4
+            }
+        ]
+    }
+
+
+
+		
+	]
+}

@@ -275,8 +275,10 @@ namespace SystemBox.UI
                 if (showType == ShowType.Animation) { ShowAnimation = true; ShowEvents = false; }
                 if (showType == ShowType.Events) { ShowAnimation = false; ShowEvents = true; }
             }
-            private bool ShowAnimation = true;
-            private bool ShowEvents;
+            [NonSerialized]
+            public bool ShowAnimation = true;
+            [NonSerialized]
+            public bool ShowEvents;
 
             [HorizontalGroup("Events", VisibleIf = "ShowEvents")]
             public UnityEvent OnStart;

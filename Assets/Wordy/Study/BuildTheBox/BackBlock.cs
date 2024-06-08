@@ -31,7 +31,9 @@ namespace Study.BuildTheBox
                 yield return new WaitForEndOfFrame();
 
                 Dictionary<Vector2Int, BackBlock> Boxes = new Dictionary<Vector2Int, BackBlock>();
-                Boxes = FindObjectsOfType<BackBlock>().ToDictionary((B) => new Vector2Int(B.transform.localPosition.x.ToInt(), B.transform.localPosition.y.ToInt()));
+                
+                Boxes = FindObjectsByType<BackBlock>(FindObjectsInactive.Exclude, FindObjectsSortMode.None)
+                    .ToDictionary((B) => new Vector2Int(B.transform.localPosition.x.ToInt(), B.transform.localPosition.y.ToInt()));
 
 
                 Up = FindBox(new Vector2Int(transform.localPosition.x.ToInt(), transform.localPosition.y.ToInt()) + Vector2Int.up);

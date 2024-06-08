@@ -19,7 +19,8 @@ public class ContentTagViwe : MonoBehaviour
     }
     private void Change(Content content) 
     {
-        TList<string> Tages = TagSystem.GetBlongTags(content.EnglishSource);
+        if (content is not Tagable) return;
+        TList<string> Tages = (content as Tagable).Tags;
         string Resolt = " ";
         for (int i = 0; i < Tages.Count; i++) Resolt += Tages[i] + " ";
         Resolt = Resolt.Replace("@", " @");
@@ -27,7 +28,8 @@ public class ContentTagViwe : MonoBehaviour
     }
     public void onButton() 
     {
-        TagContentList.Open(ContentObject.Content, () => { Change(ContentObject.Content); });
+        if (ContentObject.Content is not Tagable) return;
+        TagContentList.Open(ContentObject.Content as Tagable , () => { Change(ContentObject.Content); });
     }
 
 

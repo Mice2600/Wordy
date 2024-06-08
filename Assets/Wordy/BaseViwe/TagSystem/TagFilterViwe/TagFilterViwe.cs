@@ -1,7 +1,9 @@
-using Servises.BaseList;
+using Base;
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using SystemBox;
 using TMPro;
 using UnityEngine;
@@ -17,9 +19,17 @@ public class TagFilterViwe : MonoBehaviour
             if (_TagFillterValues == null)
             {
                 _TagFillterValues = new Dictionary<string, bool>();
-                TagSystem.GetAllTagIdes().ForEach((a) => { _TagFillterValues.Add(a, false); });
+
+                Tagable.GetListOfTags().ForEach((a) => { _TagFillterValues.Add(a, false); });
             }
-            return _TagFillterValues;
+            Dictionary<string, bool> NewList = new Dictionary<string, bool>();
+            Tagable.GetListOfTags().ForEach((a) => {
+                NewList.Add(a, false);
+                if (_TagFillterValues.ContainsKey(a)) 
+                    NewList[a] = _TagFillterValues[a];
+            });
+            _TagFillterValues = NewList;
+            return NewList;
         }
     }
     
@@ -33,7 +43,8 @@ public class TagFilterViwe : MonoBehaviour
     private Transform ConentParrent;
     private void Start()
     {
-        List<string> AllTages = TagSystem.GetAllTagIdes();
+        Dictionary<string, bool> TagFillterValues = TagFilterViwe.TagFillterValues;
+        List<string> AllTages = TagFillterValues.Keys.ToList();
         Toggle[] toggle = GetComponentsInChildren<Toggle>();
         toggle.DestroyAll(true);
         AllTages.ForEach((a) =>
@@ -43,10 +54,9 @@ public class TagFilterViwe : MonoBehaviour
             Toggel.GetComponentInChildren<TextMeshProUGUI>().text = a + " ";// +  TagSystem.GetAllContentsFromTag(a).Count;
             string Ass = a;
             Toggel.OnBoolChanged += (GG) => { TagFillterValues[Ass] = GG; };
-            Toggel.OnDestroyButton += () => TagDeleter.Delet(Start, TagSystem.GetTag(Ass));
+            Toggel.OnDestroyButton += () => TagDeleter.Delet(Start, Ass);
         });
     }
-    public void OnAddButton() => TagCreator.Open(Start);
     public void DestroyUrself()
     {
         OnDone?.Invoke();

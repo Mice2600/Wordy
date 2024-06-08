@@ -9,7 +9,6 @@ using UnityEngine;
 
 public class GameBaseViwe : MonoBehaviour, IBaseNameUser
 {
-    Sprite IBaseNameUser.BaseImage => BaseImage;
     [SerializeField, Required]
     private Sprite BaseImage;
     string IBaseNameUser.BaseName => BaseName;

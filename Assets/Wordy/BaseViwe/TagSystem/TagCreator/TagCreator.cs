@@ -1,24 +1,26 @@
-using Newtonsoft.Json.Linq;
+using Base;
 using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
 
 
-namespace ProjectSettings 
+namespace ProjectSettings
 {
-    public partial class ProjectSettings 
+    public partial class ProjectSettings
     {
         [Required, HorizontalGroup("TagCreat")]
         public TagCreator TagCreatorViwe;
     }
 }
 
-public class TagCreator : MonoBehaviour
+public class TagCreator : ContentObject
 {
-    public static void Open(System.Action OnNewTagCreated) => Instantiate(ProjectSettings.ProjectSettings.Mine.TagCreatorViwe).OnNewTagCreated = OnNewTagCreated;
-    
+    public static void Open(Tagable content, System.Action OnNewTagCreated)
+    {
+        TagCreator Item = Instantiate(ProjectSettings.ProjectSettings.Mine.TagCreatorViwe);
+        Item.Content = content as Content;
+        Item.OnNewTagCreated = OnNewTagCreated;
+
+    }
+
     private TMPro.TMP_InputField textContainer => _textContainer ??= GetComponentInChildren<TMPro.TMP_InputField>();
     private TMPro.TMP_InputField _textContainer;
     public System.Action OnNewTagCreated;
@@ -27,7 +29,7 @@ public class TagCreator : MonoBehaviour
     {
         textContainer.onValueChanged.AddListener(OnValuechanged);
     }
-    public void OnValuechanged(string Value) 
+    public void OnValuechanged(string Value)
     {
         Value = Value.Replace(" ", "").Replace("/", "").Replace(@"\", "").
             Replace(@"(", "").Replace(@")", "").Replace(@"{", "").Replace(@"}", "").
@@ -37,24 +39,27 @@ public class TagCreator : MonoBehaviour
             Replace(@"=", "").Replace(@"+", "").Replace(@"`", "").Replace(@"~", "").
             Replace(@"|", "").Replace(@"'", "").Replace('"', ' ').Replace(@";", "").
             Replace(@":", "").Replace(@"?", "").Replace(@".", "").Replace(@",", "");
-        
-        if (Value.Length > 15)Value = Value.Remove(15);
+
+        if (Value.Length > 15) Value = Value.Remove(15);
         textContainer.text = Value;
         CurrentValue = Value;
     }
-    
-    
-    public void Creat() 
+
+
+    public void Creat()
     {
         if (!TestText(out string Massage)) return;
-        if (TagSystem.CreatTag(CurrentValue)) { Destroy(gameObject); OnNewTagCreated?.Invoke(); }
+        (Content as Tagable).AddTag(CurrentValue);
+        Destroy(gameObject);
+        OnNewTagCreated?.Invoke();
+
     }
 
     public bool TestText(out string Massage)
     {
-        if (string.IsNullOrEmpty(this.CurrentValue)) { Massage = "Write"; return false;}
+        if (string.IsNullOrEmpty(this.CurrentValue)) { Massage = "Write"; return false; }
         string CurrentValue = "@" + this.CurrentValue;
-        if (TagSystem.ContainsTag(CurrentValue)) { Massage = "Allredy Have"; return false; }
+        if (Tagable.GetListOfTags().Contains(CurrentValue)) { Massage = "Allredy Have"; return false; }
         Massage = "Applay";
         return true;
     }

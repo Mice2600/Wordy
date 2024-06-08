@@ -1,12 +1,7 @@
 using Base;
 using Base.Dialog;
-using Base.Word;
-using BaseViwe.DialogViwe;
-using System.Collections;
-using SystemBox.Engine;
 using Traonsletor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 namespace WordCreator.DialogCreator
 {
     public class DialogCreator : ContentObject
@@ -41,7 +36,6 @@ namespace WordCreator.DialogCreator
         {
             DialogBase.Dialogs.Add((Content as Dialog));
             DialogBase.Sort();
-            SceneComands.OpenSceneSellecetDialogBase((Content as Dialog));
         }
     }
 }

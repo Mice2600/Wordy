@@ -3,20 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 namespace Servises.SmartText
 {
     public class SmartSizer : MonoBehaviour
     {
-        public System.Action<(RectTransform rectTransform, Vector2 OlldSize)> OnSizeChanged;
-        [SerializeField]
-        private bool ChangeX = true, ChangeY = true;
-        [SerializeField]
-        private float OfsetSize = 2;
-        [Required]
-        public TMP_Text NText;
-        private RectTransform rectTransform => _rectTransform ??= GetComponent<RectTransform>();
-        private RectTransform _rectTransform;
-        public virtual void Update()
+        public RectOffset Padding;
+        
+        [Required] public TMP_Text NText;
+        
+        private void LateUpdate()
         {
             FixtSize();
         }
@@ -24,26 +20,76 @@ namespace Servises.SmartText
         private protected void FixtSize()
         {
 
-            Vector2 OlldSize = new Vector2(rectTransform.rect.width, rectTransform.rect.height);
-            Vector3 oldpos = transform.position;
-            Vector2 ds = NText.GetRenderedValues(true);
+
             
-            if (ds.y < 0) ds = new Vector2(0,0);
-            ds *= 1.15f;
-            Vector2 ResoltOfsetSize = ds / OfsetSize;
-            if (!ChangeX) ResoltOfsetSize.x = rectTransform.offsetMax.x;
-            if (!ChangeY) ResoltOfsetSize.y = rectTransform.offsetMax.y;
-            rectTransform.offsetMax = ResoltOfsetSize;
+            #region Conculate Size and Pos
 
-            Vector2 ResoltoffsetMin = -ds / OfsetSize;
-            if (!ChangeX) ResoltoffsetMin.x = rectTransform.offsetMin.x;
-            if (!ChangeY) ResoltoffsetMin.y = rectTransform.offsetMin.y;
-            rectTransform.offsetMin = ResoltoffsetMin;
 
-            transform.position = oldpos;
+            Vector2 Min = Vector2.zero;
 
-            Vector2 NewdSize = new Vector2(rectTransform.rect.width, rectTransform.rect.height);
-            if (NewdSize != OlldSize) OnSizeChanged?.Invoke((rectTransform, OlldSize));
+            Vector2 Max = Vector2.zero;
+
+            if (!string.IsNullOrWhiteSpace(NText.text) && !string.IsNullOrEmpty(NText.text))
+            {
+
+                 Min = new
+                (NText.textInfo.characterInfo[0].topLeft.x,
+                NText.textInfo.characterInfo[NText.textInfo.characterInfo.Length - 1].bottomRight.y);
+
+                 Max = new
+                    (NText.textInfo.characterInfo[NText.textInfo.characterInfo.Length - 1].bottomRight.x,
+                    NText.textInfo.characterInfo[0].topLeft.y);
+                for (int i = 0; i < NText.textInfo.lineCount; i++)
+                {
+                    int NIndex = NText.textInfo.lineInfo[i].lastVisibleCharacterIndex;
+                    var NMaxX = NText.textInfo.characterInfo[NIndex].bottomLeft.x;
+                    if (NMaxX > Max.x) Max.x = NMaxX;
+                }
+                if (NText.textInfo.lineCount > 0) 
+                {
+                    int firstCharacterIndex = NText.textInfo.lineInfo[NText.textInfo.lineCount - 1].firstCharacterIndex;
+                    for (int i = firstCharacterIndex; i < NText.textInfo.characterCount; i++)
+                    {
+                        var NMinY = NText.textInfo.characterInfo[i].bottomLeft.y;
+                        if (NMinY > Min.y) Min.y = NMinY;
+                    }
+                }
+                
+                
+
+
+
+
+                Vector2 NeedResalution = NText.GetRenderedValues(true);
+
+
+                (transform as RectTransform).anchorMax = (NText.transform as RectTransform).anchorMax;
+                (transform as RectTransform).anchorMin = (NText.transform as RectTransform).anchorMin;
+
+                Vector2 CenterArchor =
+                    ((transform as RectTransform).anchorMax + (transform as RectTransform).anchorMin) / 2;
+                (transform as RectTransform).anchorMax = CenterArchor;
+                (transform as RectTransform).anchorMin = CenterArchor;
+
+                //(transform as RectTransform).anchoredPosition = (NText.transform as RectTransform).anchoredPosition;
+                Max += (NText.transform as RectTransform).anchoredPosition;
+                Min += (NText.transform as RectTransform).anchoredPosition;
+
+
+            }
+
+            #endregion
+
+
+            Max.y += Padding.top;
+            Min.y -= Padding.bottom;
+
+            Max.x += Padding.right;
+            Min.x -= Padding.left;
+
+
+            (transform as RectTransform).offsetMax = Max;
+            (transform as RectTransform).offsetMin = Min;
         }
     }
 }

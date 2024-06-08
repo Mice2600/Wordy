@@ -14,7 +14,7 @@ public class QuestSceneLoop : MonoBehaviour
     private void Awake()
     {
         Quest quest = FindObjectOfType<Quest>();
-        
+        if (quest == null) return;
         StudyContentData QuestPrefab = quest.QuestData;
 
         quest.gameObject.SetActive(false);

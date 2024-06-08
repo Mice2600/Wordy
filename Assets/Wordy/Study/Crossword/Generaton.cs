@@ -19,7 +19,7 @@ namespace Study.Crossword
         public static LevlData tryGnereat(List<string> Contents, (Vector2Int Max, Vector2Int Min) Limits)
         {
             Generaton.Limits = Limits;
-            GameObject.FindObjectsOfType<TextMesh>().ToList().ForEach(t => { GameObject g = t.gameObject; DestroyImmediate(g); });
+            FindObjectsByType<TextMesh>( FindObjectsInactive.Exclude, FindObjectsSortMode.None).ToList().ForEach(t => { GameObject g = t.gameObject; DestroyImmediate(g); });
 
             TList<string> vs = Contents;
 

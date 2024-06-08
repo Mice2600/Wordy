@@ -15,7 +15,7 @@ public class EditButton : Button
 
             Content d = transform.GetComponentInParent<ContentObject>().Content;
             if (d == null) return   ;
-            if (d is Word) WordCreator.WordCretor.WordChanger.StartChanging(d as Word);
+            if (d is Word) WordCreator.WordCretor.WordChanger.StartChanging(d as Word, OnFinsh: () => { GameObject.FindAnyObjectByType<WordListView>().Refresh(); });
             if (d is Dialog) DialogChanger.StartChanging(d as Dialog);
         });
     }

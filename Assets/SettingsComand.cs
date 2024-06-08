@@ -1,14 +1,8 @@
-using Base;
-using Base.Dialog;
-using Base.Word;
-using BaseViwe.DialogViwe;
-using BaseViwe.WordViwe;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SettingsComand : MonoBehaviour
 {
+    /*
     public void Import()
     {
         Servises.BaseList.BaseListViwe List = FindObjectOfType<Servises.BaseList.BaseListViwe>();
@@ -37,7 +31,9 @@ public class SettingsComand : MonoBehaviour
             DialogBase.Dialogs.Export().CopyToClipboard();
         }
         ConsoleLog.Log("Data Copy");
-    }
+    } 
+     */
+    /*
     public void ActivePassiveAll(bool Active) 
     {
         Servises.BaseList.BaseListViwe List = FindObjectOfType<Servises.BaseList.BaseListViwe>();
@@ -66,8 +62,8 @@ public class SettingsComand : MonoBehaviour
         {
 
         }
-
-    }
+    
+    }*/
     public void SpeechSpeedChanger(float speed) 
     {
         EasyTTSUtil.StopSpeech();

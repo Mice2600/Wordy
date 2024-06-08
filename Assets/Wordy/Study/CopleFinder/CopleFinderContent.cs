@@ -60,7 +60,7 @@ namespace Study.CopleFinder
             OnRefreshed?.Invoke();
         }
 
-        private CopleFinder CopleFinder => _CopleFinder ??= FindObjectOfType<CopleFinder>();
+        private CopleFinder CopleFinder => _CopleFinder ??= GameObject.FindFirstObjectByType<CopleFinder>();
         private CopleFinder _CopleFinder;
         public void TrySellect()
         {

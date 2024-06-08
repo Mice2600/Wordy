@@ -60,42 +60,6 @@ namespace Base.Word
         }
 
 
-#if UNITY_EDITOR
-        public static void AddAllToDefaultBase() 
-        {
-            ProjectSettings.ProjectSettings.Mine.AddWords(Wordgs);
-        }
-
-        public static void TransleteAndAddAllCommonWords() 
-        {
-            List<string> Words = TagSystem.GetTag("@Common").Contents;
-            if (!Application.isPlaying) return;
-            GameObject.FindObjectOfType<MonoBehaviour>().StartCoroutine(enumerator());
-            IEnumerator enumerator() 
-            {
-                for (int i = 0; i < Words.Count; i++)
-                {
-                    if (!WordBase.DefaultBase.Contains( new WordDefoult(Words[i], "", "", ""))) 
-                    {
-                        yield return new WaitForEndOfFrame();
-
-                        string WordO = Words[i];
-                        GameObject.FindObjectOfType<MonoBehaviour>().StartCoroutine(Translator.Process("en", "ru", Words[i], aa));
-                        void aa(string tt)
-                        {
-                            Word NEwww = new Word(WordO, tt, 0, false, "", "");
-                            WordBase.Wordgs.Add(NEwww);
-                            Debug.Log((WordO, tt));
-                        }
-                    }
-                }
-                AddAllToDefaultBase();
-                Debug.Break();
-            }
-            
-        }
-
-#endif
     }
 }
 namespace ProjectSettings

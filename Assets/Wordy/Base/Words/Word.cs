@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Base.Word
@@ -10,5 +11,6 @@ namespace Base.Word
         [JsonProperty, SerializeField] public string RusianDiscretion;
         [JsonProperty, SerializeField] public float Score;
         [JsonProperty, SerializeField] public bool Active;
+        [JsonProperty, SerializeField] public List<string> Tags;
     }
 }

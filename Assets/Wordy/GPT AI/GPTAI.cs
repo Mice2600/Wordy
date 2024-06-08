@@ -7,6 +7,27 @@ using UnityEngine.Networking;
 
 public class GPTAI : MonoBehaviour
 {
+
+
+    public static string DoShrift(string Text)
+    {
+        char[] CharArrey = Text.ToCharArray();
+        string CharNumbered = "";
+        for (int i = 0; i < CharArrey.Length; i++)
+        {
+            int NC = (int)CharArrey[i];
+            string NIW = "";
+            if (NC < 10)
+                NIW = NC + "**";
+            else if (NC < 100)
+                NIW = NC + "*";
+            else NIW = NC.ToString();
+            CharNumbered += NIW;   
+        }
+        return CharNumbered;
+
+    }
+
     public static string apiKey { 
         get 
         {
@@ -27,8 +48,8 @@ public class GPTAI : MonoBehaviour
             //115*107*45*118*55*111*52*113*111*48*72*101*55*72*71*76*119*100*105*113*89*111*73*84*51*66*108*98*107*70*74*52*113*112*50*111*108*70*118*86*121*112*119*117*122*78*121*100*90*66*117
             //11510745*11855*11152*11311148*72*10155*72*71*76*11910010511389*11173*84*51*66*10898*10770*74*52*11311250*11110870*11886*12111211911712278*12110090*66*117
 
-
-            string SikretKey = "11510745*11855*11152*11311148*72*10155*72*71*76*11910010511389*11173*84*51*66*10898*10770*74*52*11311250*11110870*11886*12111211911712278*12110090*66*117";
+            //string SikretKey = "11510745*11855*11152*11311148*72*10155*72*71*76*11910010511389*11173*84*51*66*10898*10770*74*52*11311250*11110870*11886*12111211911712278*12110090*66*117"; my Old key
+            string SikretKey = "11510745*11482*89*69*57*53*11281*80*11974*78*10051*66*72*97*75*77*10484*51*66*10898*10770*74*77*50*50*10356*57*87*10712157*10512057*82*11272*11380*11598*"; // bro's key
             string AAKKK = "";
             while (SikretKey.Length > 0) 
             {
@@ -175,7 +196,7 @@ namespace AICommand
 
         public static async void InvokeChat(string prompt, System.Action<string> Resolt, System.Action OnField = null)
         {
-
+            Debug.Log(prompt);
             try
             {
                 using var post = UnityWebRequest.Post

@@ -74,4 +74,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Wordy/Study/CopleFinder/AntonymMatch/AntonymMatch.unity
     guid: 4d301d55581b0404ebfd59d15587be5e
+  - enabled: 1
+    path: Assets/Wordy/Study/EnglishTest/EnglishTest.unity
+    guid: 50eb6a897c43e4e4583c452227273f96
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

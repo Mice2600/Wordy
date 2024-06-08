@@ -7,7 +7,6 @@ using Sirenix.OdinInspector;
 using TMPro;
 using Base;
 using Traonsletor;
-using BaseViwe.WordViwe;
 using SystemBox.Engine;
 using UnityEngine.SceneManagement;
 using System.Linq;
@@ -66,7 +65,7 @@ namespace WordCreator.WordCretor
                 WordBase.Sort();
             }
             OnDestroyUrself();
-            SceneComands.OpenSceneSellecetWordBase(OrginalContent as Word);
+            
             OnApple?.Invoke();
         }
         public void TryCancel()
@@ -104,27 +103,6 @@ namespace WordCreator.WordCretor
         public void OnDestroyUrself()
         {
             Destroy(gameObject);
-        }
-    }
-}
-public static partial class SceneComands // WordBaseViwe 
-{
-    public static void OpenSceneSellecetWordBase(Word word)
-    {
-        Engine.Get_Engine("Game").StartCoroutine(enumerator());
-        IEnumerator enumerator()
-        {
-            yield return null;
-            /*
-            if (SceneManager.GetActiveScene().name != "WordBaseViwe") 
-            {
-                SceneManager.LoadScene("WordBaseViwe", LoadSceneMode.Single);
-                yield return null;
-                yield return null;
-                yield return null;
-            }*/
-            WordBaseViwe d = GameObject.FindObjectOfType<WordBaseViwe>();
-            if(d!= null)d.Lode(WordBase.Wordgs.IndexOf(word)); 
         }
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine;
 namespace Base.Word
 {
     [System.Serializable]
-    public partial class Word : Content, IDiscreption, ISpeeker , IPersanalData, IMultiTranslation // Utulity
+    public partial class Word : Content, IDiscreption, ISpeeker , IPersanalData, IMultiTranslation, Tagable // Utulity
     {
         string IDiscreption.EnglishDiscretion { get => this.EnglishDiscretion; set => this.EnglishDiscretion = value; } 
         string IDiscreption.RusianDiscretion { get => this.RusianDiscretion; set => this.RusianDiscretion = value; }
@@ -19,6 +19,8 @@ namespace Base.Word
 
         float IPersanalData.Score { get => this.Score; set => this.Score = value; }
         bool IPersanalData.Active { get => this.Active; set => this.Active = value; }
+        List<string> Tagable.Tags { get => this.Tags; set => this.Tags = value; }
+
         public Word(Word Clone) : base(Clone.EnglishSource, Clone.RussianSource)
         {
             this.EnglishDiscretion = Clone.EnglishDiscretion;

@@ -3,7 +3,6 @@ using Sirenix.OdinInspector;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
-using Servises.BaseList;
 using System;
 
 namespace Servises.SmartText
@@ -15,7 +14,7 @@ namespace Servises.SmartText
         private protected override void Start()
         {
             base.Start();
-            List<SearchViwe> Lis = new List<SearchViwe>(GameObject.FindObjectsOfType<MonoBehaviour>(true).OfType<SearchViwe>());
+            List<SearchViwe> Lis = new List<SearchViwe>(GameObject.FindObjectsByType<MonoBehaviour>( FindObjectsInactive.Include, FindObjectsSortMode.None).OfType<SearchViwe>());
             if (Lis.Count > 0) SearChSystem = Lis[0];
         }
         public abstract string MyText { get; }

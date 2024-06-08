@@ -1,6 +1,4 @@
-using Servises.BaseList;
-using System.Collections;
-using System.Collections.Generic;
+using NUnit.Framework;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,21 +7,25 @@ public interface ICreatNewUser
 {
     public void OnButton();
 }
-public class CreatNewButton : MonoBehaviour, IBaseToolItem
+public class CreatNewButton : MonoBehaviour, IBaseTools
 {
     private void Start()
     {
         GetComponent<Button>().onClick.AddListener(OnButton);
     }
-    ICreatNewUser CorrentUser;
-    public void OnNewViweOpend(GameObject baseList)
-    {
-        var r = baseList.GetComponent<ICreatNewUser>();
-        gameObject.SetActive(r != null);
-        CorrentUser = r;
-    }
+    
     public void OnButton()
     {
-        if (CorrentUser != null) CorrentUser.OnButton();
+        var Liss = Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).ToList().Where(a => a is ICreatNewUser).ToList();
+        if(Liss.Count > 0) (Liss[0] as ICreatNewUser).OnButton();
     }
+
+    void IBaseTools.Refresh()
+    {
+
+        gameObject.SetActive(false);
+        var Liss = Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).ToList().Where(a => a is ICreatNewUser).ToList();
+        if (Liss.Count > 0) gameObject.SetActive(true);
+    }
+
 }

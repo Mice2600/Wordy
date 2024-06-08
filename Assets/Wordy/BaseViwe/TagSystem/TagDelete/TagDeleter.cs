@@ -1,3 +1,4 @@
+using Base;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace ProjectSettings
 
 public class TagDeleter : MonoBehaviour
 {
-    public static void Delet(System.Action OnNewTagDeleted, Tag tag) 
+    public static void Delet(System.Action OnNewTagDeleted, string tag) 
     {
         TagDeleter D = Instantiate(ProjectSettings.ProjectSettings.Mine.TagDeletViwe); 
         D.OnNewTagDaleted = OnNewTagDeleted; 
@@ -29,15 +30,17 @@ public class TagDeleter : MonoBehaviour
     public System.Action OnNewTagDaleted;
     private string CurrentValue;
     [System.NonSerialized]
-    public Tag CrrentTag;
+    public string CrrentTag;
     private void Start()
     {
-        textContainer.text = CrrentTag.ID;
+        textContainer.text = CrrentTag;
     }
 
     public void Delete()
     {
-        if (TagSystem.DestroyTag(CrrentTag.ID)) { Destroy(gameObject); OnNewTagDaleted?.Invoke(); }
+        Tagable.DestroyTag(CrrentTag);
+        Destroy(gameObject); 
+        OnNewTagDaleted?.Invoke();
     }
     public void OnUrself()
     {
