@@ -31,12 +31,23 @@ namespace Study.aSystem
             contents.ForEach(ss => { if (ss is Word) d.OnWordWin?.Invoke(ss as Word); });
             d.OnGameWin?.Invoke();
             ContentGropper LLD = GetComponentInChildren<ContentGropper>();
+            
             contents.ForEach(a =>
             {
                 GameObject G = Instantiate(SingelScorePrefab);
                 G.GetComponent<ScoreChanginInfo>().Set(a, (Quest.QuestData as IWordScorer).AddScoreWord);
                 LLD.AddNewContent(G.transform);
             });
+            LLD.MaualUpdate = true;
+            StartCoroutine(dd());
+            IEnumerator dd() 
+            {
+                LLD.FixPos();
+                yield return new WaitForSeconds(1);
+                LLD.FixPos();
+            }
+
+
         }
         public void DestroyUrself()
         {

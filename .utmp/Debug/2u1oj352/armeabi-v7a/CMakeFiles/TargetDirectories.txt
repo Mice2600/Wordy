@@ -1,0 +1,5 @@
+D:/Wordy/.utmp/Debug/2u1oj352/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Wordy/.utmp/Debug/2u1oj352/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/Wordy/.utmp/Debug/2u1oj352/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+D:/Wordy/.utmp/Debug/2u1oj352/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+D:/Wordy/.utmp/Debug/2u1oj352/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

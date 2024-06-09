@@ -19,7 +19,9 @@ public class Word_Founder : MonoBehaviour
         ChangedContents.Add(content);
         GameObject N = Instantiate(SingleWord);
         N.GetComponent<ScoreChanginInfo>().Set(content, 0);
-        GetComponent<ContentGropper>().AddNewContent(N.transform);
+        var LLD = GetComponent<ContentGropper>();
+        LLD.AddNewContent(N.transform);
+        LLD.MaualUpdate = true;
     }
 
     private IEnumerator FindContentsFromStringCoroutine(string Todiagnist, System.Action<Content> Founded)
@@ -28,7 +30,15 @@ public class Word_Founder : MonoBehaviour
         for (int i = 0; i < WordBase.DefaultBase.Count; i++)
         {
             if (Todiagnist.Contains(WordBase.DefaultBase[i].EnglishSource, StringComparison.OrdinalIgnoreCase)) Founded?.Invoke(WordBase.DefaultBase[i]);
-            if (TCount > 100) { yield return null; TCount = 0; }
+            if (TCount > 100) {
+                
+                yield return null;
+
+                var LLD = GetComponent<ContentGropper>();
+                LLD.MaualUpdate = true;
+                LLD.FixPos();
+
+                TCount = 0; }
         }
     }
 }

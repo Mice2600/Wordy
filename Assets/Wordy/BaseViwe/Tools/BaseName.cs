@@ -94,7 +94,7 @@ public class BaseName : MonoBehaviour
             while (true)
             {
                 Line.transform.position = Vector3.Lerp(StartPos, Item.Item2.transform.position, Lerp);
-                Lerp += Time.deltaTime * 2;
+                Lerp += Time.deltaTime * 10;
                 if (Lerp > 1) break;
                 yield return null;
             }

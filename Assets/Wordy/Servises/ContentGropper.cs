@@ -23,9 +23,11 @@ public class ContentGropper : MonoBehaviour
     }
     private TList<RectTransform> Lines;
 
+    public bool MaualUpdate;
     private float Pertime;
-    private void Update()
+    public void Update()
     {
+        if (MaualUpdate) return;
         Pertime += Time.deltaTime;
         if (Pertime > .2f) 
         {
